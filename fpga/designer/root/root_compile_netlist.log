@@ -1,0 +1,27 @@
+
+===============================================================================.
+
+Info: Global design data: 
+      Total globals:                       4 
+      Globals that cannot be demoted:      1 
+      Globals considered for demotion:     3 
+
+
+Info: List of globals that cannot be demoted: 
+    CLK    ASYN   DATA   Instance Name 
+    ---    ----   ----   ------------- 
+    2090   0      0      'MSS/CCC_0/GL0_INST' 
+
+Info: List of globals considered for demotion: 
+    CLK    ASYN   DATA   Instance Name 
+    ---    ----   ----   ------------- 
+    7      0      0      'MSS/FABOSC_0/I_RCOSC_25_50MHZ_FAB_CLKINT' 
+    0      1020   0      'AND3_0_RNILQT1' 
+    0      20     0      'MSS/CORERESETP_0/sm0_areset_n_clk_base_RNIDQJD' 
+
+Info: Demotion information: 
+Info: CMPG4-302: Added 0 row global instances.
+Info: CMPG4-303: Deleted 0 global instances.
+
+===============================================================================.
+

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SynplifyOutput>
+	<result>Success</result>
+	<design>root</design>
+	<target_verilog>C:\Users\jl\source\repos\hermess\hermess-MCU\hermess\synthesis\root.vm</target_verilog>
+</SynplifyOutput>

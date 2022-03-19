@@ -1,0 +1,448 @@
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: R-2021.03M-SP1
+Install: J:\LiberoSoC\SynplifyPro
+OS: Windows 6.2
+
+Hostname: LUS210
+
+Implementation : synthesis
+
+#### START OF AREA REPORT #####[
+
+Part:			M2S010VF400STD (Microchip)
+
+--------------------------------------------------------------------
+########   Utilization report for  Top level view:   root   ########
+====================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      2096               100 %                
+=================================================
+Total SEQUENTIAL ELEMENTS in the block root:	2096 (39.47 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+CFG           2381               100 %                
+ARI1          712                100 %                
+BLACK BOX     6                  100 %                
+======================================================
+Total COMBINATIONAL LOGIC in the block root:	3099 (58.35 % Utilization)
+
+
+GLOBAL BUFFERS
+Name       Total elements     Utilization     Notes
+---------------------------------------------------
+GLOBAL     4                  100 %                
+===================================================
+Total GLOBAL BUFFERS in the block root:	4 (0.08 % Utilization)
+
+
+IO PADS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+IO       72                 100 %                
+=================================================
+Total IO PADS in the block root:	72 (1.36 % Utilization)
+
+--------------------------------------------------------------
+########   Utilization report for  cell:   STAMP_10   ########
+Instance path:   root.STAMP_10                                
+==============================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      343                16.4 %               
+=================================================
+Total SEQUENTIAL ELEMENTS in the block root.STAMP_10:	343 (6.46 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+CFG      385                16.2 %               
+ARI1     108                15.2 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block root.STAMP_10:	493 (9.28 % Utilization)
+
+------------------------------------------------------------------
+########   Utilization report for  cell:   spi_master_5   ########
+Instance path:   STAMP_10.spi_master_5                            
+==================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      93                 4.44 %               
+=================================================
+Total SEQUENTIAL ELEMENTS in the block STAMP_10.spi_master_5:	93 (1.75 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+CFG      313                13.1 %               
+ARI1     38                 5.34 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block STAMP_10.spi_master_5:	351 (6.61 % Utilization)
+
+----------------------------------------------------------------
+########   Utilization report for  cell:   STAMP_10_0   ########
+Instance path:   root.STAMP_10_0                                
+================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      343                16.4 %               
+=================================================
+Total SEQUENTIAL ELEMENTS in the block root.STAMP_10_0:	343 (6.46 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+CFG      380                16 %                 
+ARI1     108                15.2 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block root.STAMP_10_0:	488 (9.19 % Utilization)
+
+--------------------------------------------------------------------
+########   Utilization report for  cell:   spi_master_5_0   ########
+Instance path:   STAMP_10_0.spi_master_5_0                          
+====================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      93                 4.44 %               
+=================================================
+Total SEQUENTIAL ELEMENTS in the block STAMP_10_0.spi_master_5_0:	93 (1.75 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+CFG      310                13 %                 
+ARI1     38                 5.34 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block STAMP_10_0.spi_master_5_0:	348 (6.55 % Utilization)
+
+----------------------------------------------------------------
+########   Utilization report for  cell:   STAMP_10_1   ########
+Instance path:   root.STAMP_10_1                                
+================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      343                16.4 %               
+=================================================
+Total SEQUENTIAL ELEMENTS in the block root.STAMP_10_1:	343 (6.46 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+CFG      379                15.9 %               
+ARI1     108                15.2 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block root.STAMP_10_1:	487 (9.17 % Utilization)
+
+--------------------------------------------------------------------
+########   Utilization report for  cell:   spi_master_5_1   ########
+Instance path:   STAMP_10_1.spi_master_5_1                          
+====================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      93                 4.44 %               
+=================================================
+Total SEQUENTIAL ELEMENTS in the block STAMP_10_1.spi_master_5_1:	93 (1.75 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+CFG      308                12.9 %               
+ARI1     38                 5.34 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block STAMP_10_1.spi_master_5_1:	346 (6.51 % Utilization)
+
+----------------------------------------------------------------
+########   Utilization report for  cell:   STAMP_10_2   ########
+Instance path:   root.STAMP_10_2                                
+================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      343                16.4 %               
+=================================================
+Total SEQUENTIAL ELEMENTS in the block root.STAMP_10_2:	343 (6.46 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+CFG      388                16.3 %               
+ARI1     108                15.2 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block root.STAMP_10_2:	496 (9.34 % Utilization)
+
+--------------------------------------------------------------------
+########   Utilization report for  cell:   spi_master_5_2   ########
+Instance path:   STAMP_10_2.spi_master_5_2                          
+====================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      93                 4.44 %               
+=================================================
+Total SEQUENTIAL ELEMENTS in the block STAMP_10_2.spi_master_5_2:	93 (1.75 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+CFG      317                13.3 %               
+ARI1     38                 5.34 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block STAMP_10_2.spi_master_5_2:	355 (6.68 % Utilization)
+
+----------------------------------------------------------------
+########   Utilization report for  cell:   STAMP_10_3   ########
+Instance path:   root.STAMP_10_3                                
+================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      343                16.4 %               
+=================================================
+Total SEQUENTIAL ELEMENTS in the block root.STAMP_10_3:	343 (6.46 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+CFG      381                16 %                 
+ARI1     108                15.2 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block root.STAMP_10_3:	489 (9.21 % Utilization)
+
+--------------------------------------------------------------------
+########   Utilization report for  cell:   spi_master_5_3   ########
+Instance path:   STAMP_10_3.spi_master_5_3                          
+====================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      93                 4.44 %               
+=================================================
+Total SEQUENTIAL ELEMENTS in the block STAMP_10_3.spi_master_5_3:	93 (1.75 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+CFG      310                13 %                 
+ARI1     38                 5.34 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block STAMP_10_3.spi_master_5_3:	348 (6.55 % Utilization)
+
+----------------------------------------------------------------
+########   Utilization report for  cell:   STAMP_10_4   ########
+Instance path:   root.STAMP_10_4                                
+================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      343                16.4 %               
+=================================================
+Total SEQUENTIAL ELEMENTS in the block root.STAMP_10_4:	343 (6.46 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+CFG      381                16 %                 
+ARI1     108                15.2 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block root.STAMP_10_4:	489 (9.21 % Utilization)
+
+--------------------------------------------------------------------
+########   Utilization report for  cell:   spi_master_5_4   ########
+Instance path:   STAMP_10_4.spi_master_5_4                          
+====================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      93                 4.44 %               
+=================================================
+Total SEQUENTIAL ELEMENTS in the block STAMP_10_4.spi_master_5_4:	93 (1.75 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+CFG      309                13 %                 
+ARI1     38                 5.34 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block STAMP_10_4.spi_master_5_4:	347 (6.53 % Utilization)
+
+-------------------------------------------------------------
+########   Utilization report for  cell:   root_sb   ########
+Instance path:   root.root_sb                                
+=============================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      38                 1.81 %               
+=================================================
+Total SEQUENTIAL ELEMENTS in the block root.root_sb:	38 (0.72 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+CFG           87                 3.65 %               
+ARI1          64                 8.99 %               
+BLACK BOX     5                  83.3 %               
+======================================================
+Total COMBINATIONAL LOGIC in the block root.root_sb:	156 (2.94 % Utilization)
+
+
+GLOBAL BUFFERS
+Name       Total elements     Utilization     Notes
+---------------------------------------------------
+GLOBAL     3                  75 %                 
+===================================================
+Total GLOBAL BUFFERS in the block root.root_sb:	3 (0.06 % Utilization)
+
+--------------------------------------------------------------
+########   Utilization report for  cell:   CoreAPB3   ########
+Instance path:   root_sb.CoreAPB3                             
+==============================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+CFG      73                 3.07 %               
+ARI1     64                 8.99 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block root_sb.CoreAPB3:	137 (2.58 % Utilization)
+
+-----------------------------------------------------------------------
+########   Utilization report for  cell:   COREAPB3_MUXPTOB3   ########
+Instance path:   CoreAPB3.COREAPB3_MUXPTOB3                            
+=======================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+CFG      66                 2.77 %               
+ARI1     64                 8.99 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block CoreAPB3.COREAPB3_MUXPTOB3:	130 (2.45 % Utilization)
+
+----------------------------------------------------------------
+########   Utilization report for  cell:   CoreResetP   ########
+Instance path:   root_sb.CoreResetP                             
+================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      38                 1.81 %               
+=================================================
+Total SEQUENTIAL ELEMENTS in the block root_sb.CoreResetP:	38 (0.72 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+CFG      9                  0.3780 %             
+=================================================
+Total COMBINATIONAL LOGIC in the block root_sb.CoreResetP:	9 (0.17 % Utilization)
+
+
+GLOBAL BUFFERS
+Name       Total elements     Utilization     Notes
+---------------------------------------------------
+GLOBAL     1                  25 %                 
+===================================================
+Total GLOBAL BUFFERS in the block root_sb.CoreResetP:	1 (0.02 % Utilization)
+
+------------------------------------------------------------------------
+########   Utilization report for  cell:   root_sb_CCC_0_FCCC   ########
+Instance path:   root_sb.root_sb_CCC_0_FCCC                             
+========================================================================
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+BLACK BOX     1                  16.7 %               
+======================================================
+Total COMBINATIONAL LOGIC in the block root_sb.root_sb_CCC_0_FCCC:	1 (0.02 % Utilization)
+
+
+GLOBAL BUFFERS
+Name       Total elements     Utilization     Notes
+---------------------------------------------------
+GLOBAL     1                  25 %                 
+===================================================
+Total GLOBAL BUFFERS in the block root_sb.root_sb_CCC_0_FCCC:	1 (0.02 % Utilization)
+
+--------------------------------------------------------------------------
+########   Utilization report for  cell:   root_sb_FABOSC_0_OSC   ########
+Instance path:   root_sb.root_sb_FABOSC_0_OSC                             
+==========================================================================
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+BLACK BOX     2                  33.3 %               
+======================================================
+Total COMBINATIONAL LOGIC in the block root_sb.root_sb_FABOSC_0_OSC:	2 (0.04 % Utilization)
+
+
+GLOBAL BUFFERS
+Name       Total elements     Utilization     Notes
+---------------------------------------------------
+GLOBAL     1                  25 %                 
+===================================================
+Total GLOBAL BUFFERS in the block root_sb.root_sb_FABOSC_0_OSC:	1 (0.02 % Utilization)
+
+-----------------------------------------------------------------
+########   Utilization report for  cell:   root_sb_MSS   ########
+Instance path:   root_sb.root_sb_MSS                             
+=================================================================
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+CFG           5                  0.210 %              
+BLACK BOX     1                  16.7 %               
+======================================================
+Total COMBINATIONAL LOGIC in the block root_sb.root_sb_MSS:	6 (0.11 % Utilization)
+
+
+##### END OF AREA REPORT #####]
+

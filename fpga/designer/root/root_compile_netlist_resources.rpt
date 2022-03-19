@@ -1,0 +1,196 @@
+Resource Report
+Microsemi Corporation - Microsemi Libero Software Release v2021.3 (Version 2021.3.0.10)
+Date: Sat Mar 19 23:50:24 2022
+
+Device Selection
++--------------------------------+----------------+
+| Family                         | SmartFusion2   |
+| Device                         | M2S010         |
+| Package                        | 144 TQ         |
+| Speed Grade                    | STD            |
+| Temp                           | -40:25:100     |
+| Voltage                        | 1.26:1.20:1.14 |
+| Core Voltage                   | 1.2V           |
+| Ramp Rate                      | 100ms Minimum  |
+| System Controller Suspend Mode | No             |
+| PLL Supply Voltage             | 3.3V           |
+| Default I/O technology         | LVCMOS 3.3V    |
+| Restrict Probe Pins            | Yes            |
+| Restrict SPI Pins              | No             |
++--------------------------------+----------------+
+
+Source Files
++---------+------------------------------------------------------------------------+
+| Topcell | root                                                                   |
+| Format  | Verilog                                                                |
+| Source  | C:\Users\jl\source\repos\hermess\hermess-MCU\hermess\synthesis\root.vm |
++---------+------------------------------------------------------------------------+
+
+Options
++----------------------------------------------------+-------+
+| Enable Single Event Transient mitigation           | false |
+| Enable Design Separation Methodology               | false |
+| Limit the number of high fanout nets to display to | 10    |
++----------------------------------------------------+-------+
+
+Resource Usage
++---------------------------+------+-------+------------+
+| Type                      | Used | Total | Percentage |
++---------------------------+------+-------+------------+
+| 4LUT                      | 3094 | 12084 | 25.60      |
+| DFF                       | 2096 | 12084 | 17.35      |
+| I/O Register              | 0    | 252   | 0.00       |
+| User I/O                  | 72   | 84    | 85.71      |
+| -- Single-ended I/O       | 72   | 84    | 85.71      |
+| -- Differential I/O Pairs | 0    | 37    | 0.00       |
+| RAM64x18                  | 0    | 22    | 0.00       |
+| RAM1K18                   | 0    | 21    | 0.00       |
+| MACC                      | 0    | 22    | 0.00       |
+| Chip Globals              | 4    | 8     | 50.00      |
+| CCC                       | 1    | 2     | 50.00      |
+| RCOSC_25_50MHZ            | 1    | 1     | 100.00     |
+| RCOSC_1MHZ                | 0    | 1     | 0.00       |
+| XTLOSC                    | 0    | 1     | 0.00       |
+| MSS                       | 1    | 1     | 100.00     |
++---------------------------+------+-------+------------+
+
+Detailed Logic Resource Usage
++--------------------------+------+------+
+| Type                     | 4LUT | DFF  |
++--------------------------+------+------+
+| Fabric Logic             | 3094 | 2096 |
+| RAM64x18 Interface Logic | 0    | 0    |
+| RAM1K18 Interface Logic  | 0    | 0    |
+| MACC Interface Logic     | 0    | 0    |
+| Total Used               | 3094 | 2096 |
++--------------------------+------+------+
+
+MSS Resource Usage
++---------------+------+-------+
+| Type          | Used | Total |
++---------------+------+-------+
+| Cortex-M3*    | 1    | 1     |
+| eNVM (256KB)* | 1    | 1     |
+| eSRAM*        | 2    | 2     |
+| TIMER*        | 2    | 2     |
+| CAN           | 0    | 1     |
+| SPI           | 1    | 2     |
+| I2C           | 0    | 2     |
+| UART          | 2    | 2     |
+| USB           | 0    | 1     |
+| MAC           | 0    | 1     |
+| MDDR          | 0    | 1     |
+| HPDMA         | 1    | 1     |
+| PDMA          | 1    | 1     |
++---------------+------+-------+
+
+* These resources are always marked as used when you are using the MSS
+
+Detailed Carry Chains Resource Usage
++--------+------+
+| Length | Used |
+| 2      | 32   |
+| 6      | 6    |
+| 7      | 6    |
+| 8      | 6    |
+| 9      | 6    |
+| 19     | 6    |
+| 28     | 6    |
+| 32     | 6    |
+| Total  | 74   |
++--------+------+
+
+I/O Function
++-------------------------------+--------------+-------------+-----------------+
+| Type                          | w/o register | w/ register | w/ DDR register |
++-------------------------------+--------------+-------------+-----------------+
+| Input I/O                     | 31           | 0           | 0               |
+| Output I/O                    | 41           | 0           | 0               |
+| Bidirectional I/O             | 0            | 0           | 0               |
+| Differential Input I/O Pairs  | 0            | 0           | 0               |
+| Differential Output I/O Pairs | 0            | 0           | 0               |
++-------------------------------+--------------+-------------+-----------------+
+
+I/O Technology
++--------------+--------+------+-------+--------+---------------+
+| I/O Standard | Vddi   | Vref | Input | Output | Bidirectional |
++--------------+--------+------+-------+--------+---------------+
+| LVCMOS33     |  3.30v |  N/A |  31   |  41    |  0            |
++--------------+--------+------+-------+--------+---------------+
+
+Nets assigned to chip global resources
++--------+---------+----------------------------------------------------------------+
+| Fanout | Type    | Name                                                           |
++--------+---------+----------------------------------------------------------------+
+| 2090   | INT_NET | Net   : MSS_FIC_0_CLK                                          |
+|        |         | Driver: MSS/CCC_0/GL0_INST/U0_RGB1                             |
+|        |         | Source: NETLIST                                                |
+| 1020   | INT_NET | Net   : LED_HB_MEMSYNC_arst                                    |
+|        |         | Driver: AND3_0_RNILQT1/U0_RGB1                                 |
+|        |         | Source: NETLIST                                                |
+| 20     | INT_NET | Net   : MSS/CORERESETP_0/sm0_areset_n_clk_base_Z               |
+|        |         | Driver: MSS/CORERESETP_0/sm0_areset_n_clk_base_RNIDQJD/U0_RGB1 |
+|        |         | Source: NETLIST                                                |
+| 7      | INT_NET | Net   : MSS/FABOSC_0_RCOSC_25_50MHZ_O2F                        |
+|        |         | Driver: MSS/FABOSC_0/I_RCOSC_25_50MHZ_FAB_CLKINT/U0_RGB1       |
+|        |         | Source: NETLIST                                                |
++--------+---------+----------------------------------------------------------------+
+
+Nets assigned to row global resources
++--------+------+------+
+| Fanout | Type | Name |
++--------+------+------+
++--------+------+------+
+
+High fanout nets
++--------+---------+---------------------------------------------+
+| Fanout | Type    | Name                                        |
++--------+---------+---------------------------------------------+
+| 377    | INT_NET | Net   : MSS_STAMP_PADDR[9]                  |
+|        |         | Driver: MSS/root_sb_MSS_0/MSS_ADLIB_INST    |
+| 180    | INT_NET | Net   : MSS_STAMP_PADDR[8]                  |
+|        |         | Driver: MSS/root_sb_MSS_0/MSS_ADLIB_INST    |
+| 133    | INT_NET | Net   : MSS/PSELSBUS[1]                     |
+|        |         | Driver: MSS/CoreAPB3_0/iPSELS_raw_1_0_a2[2] |
+| 104    | INT_NET | Net   : NN_1                                |
+|        |         | Driver: AND3_0                              |
+| 90     | INT_NET | Net   : STAMP6/component_state_4[5]         |
+|        |         | Driver: STAMP6/component_state[5]           |
+| 83     | INT_NET | Net   : MSS_STAMP_PADDR[7]                  |
+|        |         | Driver: MSS/root_sb_MSS_0/MSS_ADLIB_INST    |
+| 67     | INT_NET | Net   : STAMP2/component_state_0[5]         |
+|        |         | Driver: STAMP2/component_state[5]           |
+| 67     | INT_NET | Net   : STAMP1/component_state_Z[5]         |
+|        |         | Driver: STAMP1/component_state[5]           |
+| 67     | INT_NET | Net   : STAMP3/component_state_1[5]         |
+|        |         | Driver: STAMP3/component_state[5]           |
+| 67     | INT_NET | Net   : STAMP4/component_state_2[5]         |
+|        |         | Driver: STAMP4/component_state[5]           |
++--------+---------+---------------------------------------------+
+
+High fanout nets (through buffer trees)
++--------+---------+---------------------------------------------+
+| Fanout | Type    | Name                                        |
++--------+---------+---------------------------------------------+
+| 377    | INT_NET | Net   : MSS_STAMP_PADDR[9]                  |
+|        |         | Driver: MSS/root_sb_MSS_0/MSS_ADLIB_INST    |
+| 180    | INT_NET | Net   : MSS_STAMP_PADDR[8]                  |
+|        |         | Driver: MSS/root_sb_MSS_0/MSS_ADLIB_INST    |
+| 133    | INT_NET | Net   : MSS/PSELSBUS[1]                     |
+|        |         | Driver: MSS/CoreAPB3_0/iPSELS_raw_1_0_a2[2] |
+| 104    | INT_NET | Net   : NN_1                                |
+|        |         | Driver: AND3_0                              |
+| 90     | INT_NET | Net   : STAMP6/component_state_4[5]         |
+|        |         | Driver: STAMP6/component_state[5]           |
+| 83     | INT_NET | Net   : MSS_STAMP_PADDR[7]                  |
+|        |         | Driver: MSS/root_sb_MSS_0/MSS_ADLIB_INST    |
+| 67     | INT_NET | Net   : STAMP2/component_state_0[5]         |
+|        |         | Driver: STAMP2/component_state[5]           |
+| 67     | INT_NET | Net   : STAMP1/component_state_Z[5]         |
+|        |         | Driver: STAMP1/component_state[5]           |
+| 67     | INT_NET | Net   : STAMP3/component_state_1[5]         |
+|        |         | Driver: STAMP3/component_state[5]           |
+| 67     | INT_NET | Net   : STAMP4/component_state_2[5]         |
+|        |         | Driver: STAMP4/component_state[5]           |
++--------+---------+---------------------------------------------+
+

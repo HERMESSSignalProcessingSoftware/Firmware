@@ -1,0 +1,14 @@
+Microsemi Corporation - Microsemi Libero Software Release v2021.3 (Version 2021.3.0.10)
+
+Date      :  Sat Mar 19 23:49:49 2022
+Project   :  C:\Users\jl\source\repos\hermess\hermess-MCU\hermess
+Component :  root
+Family    :  SmartFusion2
+
+
+HDL source files for all Synthesis and Simulation tools:
+    C:/Users/jl/source/repos/hermess/hermess-MCU/hermess/component/work/root/root.vhd
+
+Stimulus files for all Simulation tools:
+    C:/Users/jl/source/repos/hermess/hermess-MCU/hermess/component/work/root/subsystem.bfm
+

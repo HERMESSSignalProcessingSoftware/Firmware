@@ -1,0 +1,117 @@
+#defaultlanguage:vhdl
+#OPTIONS:"|-layerid|0|-orig_srs|C:\\Users\\jl\\source\\repos\\hermess\\hermess-MCU\\hermess\\synthesis\\synwork\\root_comp.srs|-top|work.root|-prodtype|synplify_pro|-infer_seqShift|-primux|-dspmac|-pqdpadd|-fixsmult|-sdff_counter|-divnmod|-nram|-actel|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-vhdl2008|-ignore_undefined_lib|-lib|work|-lib|work|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|COREAPB3_LIB|-lib|work|-lib|work"
+#CUR:"J:\\LiberoSoC\\SynplifyPro\\bin64\\c_vhdl.exe":1636456230
+#CUR:"J:\\LiberoSoC\\SynplifyPro\\lib\\vhd2008\\location.map":1636456240
+#CUR:"J:\\LiberoSoC\\SynplifyPro\\lib\\vhd2008\\std.vhd":1636456240
+#CUR:"J:\\LiberoSoC\\SynplifyPro\\lib\\vhd\\snps_haps_pkg.vhd":1636456240
+#CUR:"J:\\LiberoSoC\\SynplifyPro\\lib\\vhd2008\\std1164.vhd":1636456240
+#CUR:"J:\\LiberoSoC\\SynplifyPro\\lib\\vhd2008\\std_textio.vhd":1636456240
+#CUR:"J:\\LiberoSoC\\SynplifyPro\\lib\\vhd2008\\numeric.vhd":1636456240
+#CUR:"J:\\LiberoSoC\\SynplifyPro\\lib\\vhd\\umr_capim.vhd":1636456240
+#CUR:"J:\\LiberoSoC\\SynplifyPro\\lib\\vhd2008\\arith.vhd":1636456240
+#CUR:"J:\\LiberoSoC\\SynplifyPro\\lib\\vhd2008\\unsigned.vhd":1636456240
+#CUR:"J:\\LiberoSoC\\SynplifyPro\\lib\\vhd\\hyperents.vhd":1636456240
+#CUR:"C:\\Users\\jl\\source\\repos\\hermess\\hermess-MCU\\hermess\\hdl\\spi_master.vhd":1647725317
+#CUR:"C:\\Users\\jl\\source\\repos\\hermess\\hermess-MCU\\hermess\\hdl\\STAMP.vhd":1647725317
+#CUR:"C:\\Users\\jl\\source\\repos\\hermess\\hermess-MCU\\hermess\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vhdl\\core\\coreapb3_muxptob3.vhd":1647546193
+#CUR:"C:\\Users\\jl\\source\\repos\\hermess\\hermess-MCU\\hermess\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vhdl\\core\\coreapb3_iaddr_reg.vhd":1647546193
+#CUR:"C:\\Users\\jl\\source\\repos\\hermess\\hermess-MCU\\hermess\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vhdl\\core\\coreapb3.vhd":1647546193
+#CUR:"C:\\Users\\jl\\source\\repos\\hermess\\hermess-MCU\\hermess\\component\\Actel\\DirectCore\\CoreResetP\\7.1.100\\rtl\\vhdl\\core\\coreresetp_pcie_hotreset.vhd":1647523624
+#CUR:"C:\\Users\\jl\\source\\repos\\hermess\\hermess-MCU\\hermess\\component\\Actel\\DirectCore\\CoreResetP\\7.1.100\\rtl\\vhdl\\core\\coreresetp.vhd":1647523624
+#CUR:"C:\\Users\\jl\\source\\repos\\hermess\\hermess-MCU\\hermess\\component\\work\\root_sb\\CCC_0\\root_sb_CCC_0_FCCC.vhd":1647730117
+#CUR:"C:\\Users\\jl\\source\\repos\\hermess\\hermess-MCU\\hermess\\component\\Actel\\SgCore\\OSC\\2.0.101\\osc_comps.vhd":1647523625
+#CUR:"C:\\Users\\jl\\source\\repos\\hermess\\hermess-MCU\\hermess\\component\\work\\root_sb\\FABOSC_0\\root_sb_FABOSC_0_OSC.vhd":1647730119
+#CUR:"C:\\Users\\jl\\source\\repos\\hermess\\hermess-MCU\\hermess\\component\\work\\root_sb_MSS\\root_sb_MSS_syn.vhd":1647730114
+#CUR:"C:\\Users\\jl\\source\\repos\\hermess\\hermess-MCU\\hermess\\component\\work\\root_sb_MSS\\root_sb_MSS.vhd":1647730114
+#CUR:"C:\\Users\\jl\\source\\repos\\hermess\\hermess-MCU\\hermess\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vhdl\\core\\components.vhd":1647546193
+#CUR:"C:\\Users\\jl\\source\\repos\\hermess\\hermess-MCU\\hermess\\component\\work\\root_sb\\root_sb.vhd":1647730119
+#CUR:"C:\\Users\\jl\\source\\repos\\hermess\\hermess-MCU\\hermess\\component\\work\\root\\root.vhd":1647730188
+0 "C:\Users\jl\source\repos\hermess\hermess-MCU\hermess\hdl\spi_master.vhd" vhdl
+1 "C:\Users\jl\source\repos\hermess\hermess-MCU\hermess\hdl\STAMP.vhd" vhdl
+2 "C:\Users\jl\source\repos\hermess\hermess-MCU\hermess\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3_muxptob3.vhd" vhdl
+3 "C:\Users\jl\source\repos\hermess\hermess-MCU\hermess\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3_iaddr_reg.vhd" vhdl
+4 "C:\Users\jl\source\repos\hermess\hermess-MCU\hermess\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd" vhdl
+5 "C:\Users\jl\source\repos\hermess\hermess-MCU\hermess\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp_pcie_hotreset.vhd" vhdl
+6 "C:\Users\jl\source\repos\hermess\hermess-MCU\hermess\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd" vhdl
+7 "C:\Users\jl\source\repos\hermess\hermess-MCU\hermess\component\work\root_sb\CCC_0\root_sb_CCC_0_FCCC.vhd" vhdl
+8 "C:\Users\jl\source\repos\hermess\hermess-MCU\hermess\component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd" vhdl
+9 "C:\Users\jl\source\repos\hermess\hermess-MCU\hermess\component\work\root_sb\FABOSC_0\root_sb_FABOSC_0_OSC.vhd" vhdl
+10 "C:\Users\jl\source\repos\hermess\hermess-MCU\hermess\component\work\root_sb_MSS\root_sb_MSS_syn.vhd" vhdl
+11 "C:\Users\jl\source\repos\hermess\hermess-MCU\hermess\component\work\root_sb_MSS\root_sb_MSS.vhd" vhdl
+12 "C:\Users\jl\source\repos\hermess\hermess-MCU\hermess\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\components.vhd" vhdl
+13 "C:\Users\jl\source\repos\hermess\hermess-MCU\hermess\component\work\root_sb\root_sb.vhd" vhdl
+14 "C:\Users\jl\source\repos\hermess\hermess-MCU\hermess\component\work\root\root.vhd" vhdl
+
+# Dependency Lists (Uses list)
+0 -1
+1 0 
+2 -1
+3 -1
+4 2 3 
+5 -1
+6 5 
+7 -1
+8 -1
+9 8 
+10 -1
+11 10 
+12 -1
+13 7 4 6 9 11 12 
+14 13 1 
+
+# Dependency Lists (Users Of)
+0 1 
+1 14 
+2 4 
+3 4 
+4 13 
+5 6 
+6 13 
+7 13 
+8 9 
+9 13 
+10 11 
+11 13 
+12 13 
+13 14 
+14 -1
+
+# Design Unit to File Association
+arch work spi_master logic 0
+module work spi_master 0
+arch work stamp architecture_stamp 1
+module work stamp 1
+arch coreapb3_lib coreapb3_muxptob3 coreapb3_muxptob3_arch 2
+module coreapb3_lib coreapb3_muxptob3 2
+arch coreapb3_lib coreapb3_iaddr_reg rtl 3
+module coreapb3_lib coreapb3_iaddr_reg 3
+arch coreapb3_lib coreapb3 coreapb3_arch 4
+module coreapb3_lib coreapb3 4
+arch work coreresetp_pcie_hotreset rtl 5
+module work coreresetp_pcie_hotreset 5
+arch work coreresetp rtl 6
+module work coreresetp 6
+arch work root_sb_ccc_0_fccc def_arch 7
+module work root_sb_ccc_0_fccc 7
+arch work xtlosc_fab def_arch 8
+module work xtlosc_fab 8
+arch work rcosc_25_50mhz_fab def_arch 8
+module work rcosc_25_50mhz_fab 8
+arch work rcosc_1mhz_fab def_arch 8
+module work rcosc_1mhz_fab 8
+arch work xtlosc def_arch 8
+module work xtlosc 8
+arch work rcosc_25_50mhz def_arch 8
+module work rcosc_25_50mhz 8
+arch work rcosc_1mhz def_arch 8
+module work rcosc_1mhz 8
+arch work root_sb_fabosc_0_osc def_arch 9
+module work root_sb_fabosc_0_osc 9
+arch work mss_010 def_arch 10
+module work mss_010 10
+arch work root_sb_mss rtl 11
+module work root_sb_mss 11
+arch work root_sb rtl 13
+module work root_sb 13
+arch work root rtl 14
+module work root 14

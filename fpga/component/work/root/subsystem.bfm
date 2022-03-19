@@ -1,0 +1,31 @@
+#===========================================================
+# Created by Microsemi SmartDesign Sat Mar 19 23:49:48 2022
+#
+# Syntax: 
+# ------- 
+#
+# memmap    resource_name base_address;
+#
+# write     width resource_name byte_offset data;
+# read      width resource_name byte_offset;
+# readcheck width resource_name byte_offset data;
+#
+#===========================================================
+
+#-----------------------------------------------------------
+# Memory Map
+# Define name and base address of each resource.
+#-----------------------------------------------------------
+
+memmap MSS_MemSync 0x5000_0000;
+memmap STAMP1 0x5000_1000;
+memmap STAMP2 0x5000_2000;
+memmap STAMP3 0x5000_3000;
+memmap STAMP4 0x5000_4000;
+memmap STAMP5 0x5000_5000;
+memmap STAMP6 0x5000_6000;
+memmap MSS_TM 0x5000_7000;
+#-----------------------------------------------------------
+# Include resource scriptlets
+#-----------------------------------------------------------
+
