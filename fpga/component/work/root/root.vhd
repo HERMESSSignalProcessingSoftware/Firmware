@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- Created by SmartDesign Sat Mar 19 23:49:48 2022
+-- Created by SmartDesign Sun May 22 14:12:17 2022
 -- Version: 2021.3 2021.3.0.10
 ----------------------------------------------------------------------
 
@@ -534,28 +534,20 @@ MSS : root_sb
         STAMP_1_INTR_0_top   => STAMP2_new_avail,
         STAMP_0_INTR_0_top   => STAMP1_new_avail,
         TM_0_INTR_0_top      => GND_net,
-        MemSync_PRDATAS0     => MemSync_PRDATAS0_const_net_0, -- tied to X"0" from definition
         MemSync_PREADYS0     => VCC_net, -- tied to '1' from definition
         MemSync_PSLVERRS0    => GND_net, -- tied to '0' from definition
-        STAMP_PRDATAS1       => MSS_STAMP_PRDATA,
         STAMP_PREADYS1       => MSS_STAMP_PREADY,
         STAMP_PSLVERRS1      => MSS_STAMP_PSLVERR,
-        STAMP_1_PRDATAS2     => MSS_STAMP_1_PRDATA,
         STAMP_1_PREADYS2     => MSS_STAMP_1_PREADY,
         STAMP_1_PSLVERRS2    => MSS_STAMP_1_PSLVERR,
-        STAMP_2_PRDATAS3     => MSS_STAMP_2_PRDATA,
         STAMP_2_PREADYS3     => MSS_STAMP_2_PREADY,
         STAMP_2_PSLVERRS3    => MSS_STAMP_2_PSLVERR,
-        STAMP_3_PRDATAS4     => MSS_STAMP_3_PRDATA,
         STAMP_3_PREADYS4     => MSS_STAMP_3_PREADY,
         STAMP_3_PSLVERRS4    => MSS_STAMP_3_PSLVERR,
-        STAMP_4_PRDATAS5     => MSS_STAMP_4_PRDATA,
         STAMP_4_PREADYS5     => MSS_STAMP_4_PREADY,
         STAMP_4_PSLVERRS5    => MSS_STAMP_4_PSLVERR,
-        STAMP_5_PRDATAS6     => MSS_STAMP_5_PRDATA,
         STAMP_5_PREADYS6     => MSS_STAMP_5_PREADY,
         STAMP_5_PSLVERRS6    => MSS_STAMP_5_PSLVERR,
-        TM_PRDATAS7          => TM_PRDATAS7_const_net_0, -- tied to X"0" from definition
         TM_PREADYS7          => VCC_net, -- tied to '1' from definition
         TM_PSLVERRS7         => GND_net, -- tied to '0' from definition
         DEVRST_N             => DEVRST_N,
@@ -568,49 +560,41 @@ MSS : root_sb
         SPI_0_DI_F2M         => F_MISO,
         SPI_0_CLK_F2M        => GND_net,
         SPI_0_SS0_F2M        => GND_net,
+        MemSync_PRDATAS0     => MemSync_PRDATAS0_const_net_0, -- tied to X"0" from definition
+        STAMP_PRDATAS1       => MSS_STAMP_PRDATA,
+        STAMP_1_PRDATAS2     => MSS_STAMP_1_PRDATA,
+        STAMP_2_PRDATAS3     => MSS_STAMP_2_PRDATA,
+        STAMP_3_PRDATAS4     => MSS_STAMP_3_PRDATA,
+        STAMP_4_PRDATAS5     => MSS_STAMP_4_PRDATA,
+        STAMP_5_PRDATAS6     => MSS_STAMP_5_PRDATA,
+        TM_PRDATAS7          => TM_PRDATAS7_const_net_0, -- tied to X"0" from definition
         -- Outputs
         POWER_ON_RESET_N     => MSS_POWER_ON_RESET_N,
         INIT_DONE            => MSS_INIT_DONE,
-        MemSync_PADDRS       => OPEN,
         MemSync_PSELS0       => OPEN,
         MemSync_PENABLES     => OPEN,
         MemSync_PWRITES      => OPEN,
-        MemSync_PWDATAS      => OPEN,
-        STAMP_PADDRS         => MSS_STAMP_PADDR,
         STAMP_PSELS1         => MSS_STAMP_PSELx,
         STAMP_PENABLES       => MSS_STAMP_PENABLE,
         STAMP_PWRITES        => MSS_STAMP_PWRITE,
-        STAMP_PWDATAS        => MSS_STAMP_PWDATA,
-        STAMP_1_PADDRS       => MSS_STAMP_1_PADDR,
         STAMP_1_PSELS2       => MSS_STAMP_1_PSELx,
         STAMP_1_PENABLES     => MSS_STAMP_1_PENABLE,
         STAMP_1_PWRITES      => MSS_STAMP_1_PWRITE,
-        STAMP_1_PWDATAS      => MSS_STAMP_1_PWDATA,
-        STAMP_2_PADDRS       => MSS_STAMP_2_PADDR,
         STAMP_2_PSELS3       => MSS_STAMP_2_PSELx,
         STAMP_2_PENABLES     => MSS_STAMP_2_PENABLE,
         STAMP_2_PWRITES      => MSS_STAMP_2_PWRITE,
-        STAMP_2_PWDATAS      => MSS_STAMP_2_PWDATA,
-        STAMP_3_PADDRS       => MSS_STAMP_3_PADDR,
         STAMP_3_PSELS4       => MSS_STAMP_3_PSELx,
         STAMP_3_PENABLES     => MSS_STAMP_3_PENABLE,
         STAMP_3_PWRITES      => MSS_STAMP_3_PWRITE,
-        STAMP_3_PWDATAS      => MSS_STAMP_3_PWDATA,
-        STAMP_4_PADDRS       => MSS_STAMP_4_PADDR,
         STAMP_4_PSELS5       => MSS_STAMP_4_PSELx,
         STAMP_4_PENABLES     => MSS_STAMP_4_PENABLE,
         STAMP_4_PWRITES      => MSS_STAMP_4_PWRITE,
-        STAMP_4_PWDATAS      => MSS_STAMP_4_PWDATA,
-        STAMP_5_PADDRS       => MSS_STAMP_5_PADDR,
         STAMP_5_PSELS6       => MSS_STAMP_5_PSELx,
         STAMP_5_PENABLES     => MSS_STAMP_5_PENABLE,
         STAMP_5_PWRITES      => MSS_STAMP_5_PWRITE,
-        STAMP_5_PWDATAS      => MSS_STAMP_5_PWDATA,
-        TM_PADDRS            => OPEN,
         TM_PSELS7            => OPEN,
         TM_PENABLES          => OPEN,
         TM_PWRITES           => OPEN,
-        TM_PWDATAS           => OPEN,
         FIC_0_CLK            => MSS_FIC_0_CLK,
         FIC_0_LOCK           => OPEN,
         MSS_READY            => MSS_MSS_READY,
@@ -624,7 +608,23 @@ MSS : root_sb
         SPI_0_CLK_M2F        => F_CLK_net_0,
         SPI_0_SS0_M2F        => F_CS1_net_0,
         SPI_0_SS0_M2F_OE     => OPEN,
-        SPI_0_SS1_M2F        => F_CS2_net_0 
+        SPI_0_SS1_M2F        => F_CS2_net_0,
+        MemSync_PADDRS       => OPEN,
+        MemSync_PWDATAS      => OPEN,
+        STAMP_PADDRS         => MSS_STAMP_PADDR,
+        STAMP_PWDATAS        => MSS_STAMP_PWDATA,
+        STAMP_1_PADDRS       => MSS_STAMP_1_PADDR,
+        STAMP_1_PWDATAS      => MSS_STAMP_1_PWDATA,
+        STAMP_2_PADDRS       => MSS_STAMP_2_PADDR,
+        STAMP_2_PWDATAS      => MSS_STAMP_2_PWDATA,
+        STAMP_3_PADDRS       => MSS_STAMP_3_PADDR,
+        STAMP_3_PWDATAS      => MSS_STAMP_3_PWDATA,
+        STAMP_4_PADDRS       => MSS_STAMP_4_PADDR,
+        STAMP_4_PWDATAS      => MSS_STAMP_4_PWDATA,
+        STAMP_5_PADDRS       => MSS_STAMP_5_PADDR,
+        STAMP_5_PWDATAS      => MSS_STAMP_5_PWDATA,
+        TM_PADDRS            => OPEN,
+        TM_PWDATAS           => OPEN 
         );
 -- STAMP1
 STAMP1 : entity work.STAMP
@@ -633,26 +633,26 @@ STAMP1 : entity work.STAMP
         reset_status => GND_net,
         CLK          => MSS_FIC_0_CLK,
         RESET_N      => LED_HB_MEMSYNC_net_0,
-        PADDR        => MSS_STAMP_PADDR_0,
         PSEL         => MSS_STAMP_PSELx,
         PENABLE      => MSS_STAMP_PENABLE,
         PWRITE       => MSS_STAMP_PWRITE,
-        PWDATA       => MSS_STAMP_PWDATA,
         spi_miso     => STAMP1_MISO,
         ready_dms1   => STAMP1_DRDY_SGR1,
         ready_dms2   => STAMP1_DRDY_SGR2,
         ready_temp   => STAMP1_DRDY_TEMP,
+        PADDR        => MSS_STAMP_PADDR_0,
+        PWDATA       => MSS_STAMP_PWDATA,
         -- Outputs
         new_avail    => STAMP1_new_avail,
-        data_frame   => OPEN,
-        PRDATA       => MSS_STAMP_PRDATA,
         PREADY       => MSS_STAMP_PREADY,
         PSLVERR      => MSS_STAMP_PSLVERR,
         spi_clock    => STAMP1_SCLK_net_0,
         spi_mosi     => STAMP1_MOSI_net_0,
         spi_dms1_cs  => STAMP1_CS_SGR1_net_0,
         spi_dms2_cs  => STAMP1_CS_SGR2_net_0,
-        spi_temp_cs  => STAMP1_CS_TEMP_net_0 
+        spi_temp_cs  => STAMP1_CS_TEMP_net_0,
+        data_frame   => OPEN,
+        PRDATA       => MSS_STAMP_PRDATA 
         );
 -- STAMP2
 STAMP2 : entity work.STAMP
@@ -661,26 +661,26 @@ STAMP2 : entity work.STAMP
         reset_status => GND_net,
         CLK          => MSS_FIC_0_CLK,
         RESET_N      => LED_HB_MEMSYNC_net_0,
-        PADDR        => MSS_STAMP_1_PADDR_0,
         PSEL         => MSS_STAMP_1_PSELx,
         PENABLE      => MSS_STAMP_1_PENABLE,
         PWRITE       => MSS_STAMP_1_PWRITE,
-        PWDATA       => MSS_STAMP_1_PWDATA,
         spi_miso     => STAMP2_MISO,
         ready_dms1   => STAMP2_DRDY_SGR1,
         ready_dms2   => STAMP2_DRDY_SGR2,
         ready_temp   => STAMP2_DRDY_TEMP,
+        PADDR        => MSS_STAMP_1_PADDR_0,
+        PWDATA       => MSS_STAMP_1_PWDATA,
         -- Outputs
         new_avail    => STAMP2_new_avail,
-        data_frame   => OPEN,
-        PRDATA       => MSS_STAMP_1_PRDATA,
         PREADY       => MSS_STAMP_1_PREADY,
         PSLVERR      => MSS_STAMP_1_PSLVERR,
         spi_clock    => STAMP2_SCLK_net_0,
         spi_mosi     => STAMP2_MOSI_net_0,
         spi_dms1_cs  => STAMP2_CS_SGR1_net_0,
         spi_dms2_cs  => STAMP2_CS_SGR2_net_0,
-        spi_temp_cs  => STAMP2_CS_TEMP_net_0 
+        spi_temp_cs  => STAMP2_CS_TEMP_net_0,
+        data_frame   => OPEN,
+        PRDATA       => MSS_STAMP_1_PRDATA 
         );
 -- STAMP3
 STAMP3 : entity work.STAMP
@@ -689,26 +689,26 @@ STAMP3 : entity work.STAMP
         reset_status => GND_net,
         CLK          => MSS_FIC_0_CLK,
         RESET_N      => LED_HB_MEMSYNC_net_0,
-        PADDR        => MSS_STAMP_2_PADDR_0,
         PSEL         => MSS_STAMP_2_PSELx,
         PENABLE      => MSS_STAMP_2_PENABLE,
         PWRITE       => MSS_STAMP_2_PWRITE,
-        PWDATA       => MSS_STAMP_2_PWDATA,
         spi_miso     => STAMP3_MISO,
         ready_dms1   => STAMP3_DRDY_SGR1,
         ready_dms2   => STAMP3_DRDY_SGR2,
         ready_temp   => STAMP3_DRDY_TEMP,
+        PADDR        => MSS_STAMP_2_PADDR_0,
+        PWDATA       => MSS_STAMP_2_PWDATA,
         -- Outputs
         new_avail    => STAMP3_new_avail,
-        data_frame   => OPEN,
-        PRDATA       => MSS_STAMP_2_PRDATA,
         PREADY       => MSS_STAMP_2_PREADY,
         PSLVERR      => MSS_STAMP_2_PSLVERR,
         spi_clock    => STAMP3_SCLK_net_0,
         spi_mosi     => STAMP3_MOSI_net_0,
         spi_dms1_cs  => STAMP3_CS_SGR1_net_0,
         spi_dms2_cs  => STAMP3_CS_SGR2_net_0,
-        spi_temp_cs  => STAMP3_CS_TEMP_net_0 
+        spi_temp_cs  => STAMP3_CS_TEMP_net_0,
+        data_frame   => OPEN,
+        PRDATA       => MSS_STAMP_2_PRDATA 
         );
 -- STAMP4
 STAMP4 : entity work.STAMP
@@ -717,26 +717,26 @@ STAMP4 : entity work.STAMP
         reset_status => GND_net,
         CLK          => MSS_FIC_0_CLK,
         RESET_N      => LED_HB_MEMSYNC_net_0,
-        PADDR        => MSS_STAMP_3_PADDR_0,
         PSEL         => MSS_STAMP_3_PSELx,
         PENABLE      => MSS_STAMP_3_PENABLE,
         PWRITE       => MSS_STAMP_3_PWRITE,
-        PWDATA       => MSS_STAMP_3_PWDATA,
         spi_miso     => STAMP4_MISO,
         ready_dms1   => STAMP4_DRDY_SGR1,
         ready_dms2   => STAMP4_DRDY_SGR2,
         ready_temp   => STAMP4_DRDY_TEMP,
+        PADDR        => MSS_STAMP_3_PADDR_0,
+        PWDATA       => MSS_STAMP_3_PWDATA,
         -- Outputs
         new_avail    => STAMP4_new_avail,
-        data_frame   => OPEN,
-        PRDATA       => MSS_STAMP_3_PRDATA,
         PREADY       => MSS_STAMP_3_PREADY,
         PSLVERR      => MSS_STAMP_3_PSLVERR,
         spi_clock    => STAMP4_SCLK_net_0,
         spi_mosi     => STAMP4_MOSI_net_0,
         spi_dms1_cs  => STAMP4_CS_SGR1_net_0,
         spi_dms2_cs  => STAMP4_CS_SGR2_net_0,
-        spi_temp_cs  => STAMP4_CS_TEMP_net_0 
+        spi_temp_cs  => STAMP4_CS_TEMP_net_0,
+        data_frame   => OPEN,
+        PRDATA       => MSS_STAMP_3_PRDATA 
         );
 -- STAMP5
 STAMP5 : entity work.STAMP
@@ -745,26 +745,26 @@ STAMP5 : entity work.STAMP
         reset_status => GND_net,
         CLK          => MSS_FIC_0_CLK,
         RESET_N      => LED_HB_MEMSYNC_net_0,
-        PADDR        => MSS_STAMP_4_PADDR_0,
         PSEL         => MSS_STAMP_4_PSELx,
         PENABLE      => MSS_STAMP_4_PENABLE,
         PWRITE       => MSS_STAMP_4_PWRITE,
-        PWDATA       => MSS_STAMP_4_PWDATA,
         spi_miso     => STAMP5_MISO,
         ready_dms1   => STAMP5_DRDY_SGR1,
         ready_dms2   => STAMP5_DRDY_SGR2,
         ready_temp   => STAMP5_DRDY_TEMP,
+        PADDR        => MSS_STAMP_4_PADDR_0,
+        PWDATA       => MSS_STAMP_4_PWDATA,
         -- Outputs
         new_avail    => STAMP5_new_avail,
-        data_frame   => OPEN,
-        PRDATA       => MSS_STAMP_4_PRDATA,
         PREADY       => MSS_STAMP_4_PREADY,
         PSLVERR      => MSS_STAMP_4_PSLVERR,
         spi_clock    => STAMP5_SCLK_net_0,
         spi_mosi     => STAMP5_MOSI_net_0,
         spi_dms1_cs  => STAMP5_CS_SGR1_net_0,
         spi_dms2_cs  => STAMP5_CS_SGR2_net_0,
-        spi_temp_cs  => STAMP5_CS_TEMP_net_0 
+        spi_temp_cs  => STAMP5_CS_TEMP_net_0,
+        data_frame   => OPEN,
+        PRDATA       => MSS_STAMP_4_PRDATA 
         );
 -- STAMP6
 STAMP6 : entity work.STAMP
@@ -773,26 +773,26 @@ STAMP6 : entity work.STAMP
         reset_status => GND_net,
         CLK          => MSS_FIC_0_CLK,
         RESET_N      => LED_HB_MEMSYNC_net_0,
-        PADDR        => MSS_STAMP_5_PADDR_0,
         PSEL         => MSS_STAMP_5_PSELx,
         PENABLE      => MSS_STAMP_5_PENABLE,
         PWRITE       => MSS_STAMP_5_PWRITE,
-        PWDATA       => MSS_STAMP_5_PWDATA,
         spi_miso     => STAMP6_MISO,
         ready_dms1   => STAMP6_DRDY_SGR1,
         ready_dms2   => STAMP6_DRDY_SGR2,
         ready_temp   => STAMP6_DRDY_TEMP,
+        PADDR        => MSS_STAMP_5_PADDR_0,
+        PWDATA       => MSS_STAMP_5_PWDATA,
         -- Outputs
         new_avail    => STAMP6_new_avail,
-        data_frame   => OPEN,
-        PRDATA       => MSS_STAMP_5_PRDATA,
         PREADY       => MSS_STAMP_5_PREADY,
         PSLVERR      => MSS_STAMP_5_PSLVERR,
         spi_clock    => STAMP6_SCLK_net_0,
         spi_mosi     => STAMP6_MOSI_net_0,
         spi_dms1_cs  => STAMP6_CS_SGR1_net_0,
         spi_dms2_cs  => STAMP6_CS_SGR2_net_0,
-        spi_temp_cs  => STAMP6_CS_TEMP_net_0 
+        spi_temp_cs  => STAMP6_CS_TEMP_net_0,
+        data_frame   => OPEN,
+        PRDATA       => MSS_STAMP_5_PRDATA 
         );
 
 end RTL;

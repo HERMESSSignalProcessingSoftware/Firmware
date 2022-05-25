@@ -1,32 +1,32 @@
 Microsemi Corporation - Microsemi Libero Software Release v2021.3 (Version 2021.3.0.10)
 
-Date      :  Sat Mar 19 23:48:34 2022
-Project   :  C:\Users\jl\source\repos\hermess\hermess-MCU\hermess
+Date      :  Sun May 22 14:11:35 2022
+Project   :  C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga
 Component :  root_sb_MSS
 Family    :  SmartFusion2
 
 
 HDL source files for all Synthesis and Simulation tools:
-    C:/Users/jl/source/repos/hermess/hermess-MCU/hermess/component/work/root_sb_MSS/root_sb_MSS.vhd
+    C:/Users/jl/source/repos/hermess/hermess-Firmware/fpga/component/work/root_sb_MSS/root_sb_MSS.vhd
 
 HDL source files for Synopsys SynplifyPro Synthesis tool:
-    C:/Users/jl/source/repos/hermess/hermess-MCU/hermess/component/work/root_sb_MSS/root_sb_MSS_syn.vhd
+    C:/Users/jl/source/repos/hermess/hermess-Firmware/fpga/component/work/root_sb_MSS/root_sb_MSS_syn.vhd
 
 HDL source files for Mentor Precision Synthesis tool:
-    C:/Users/jl/source/repos/hermess/hermess-MCU/hermess/component/work/root_sb_MSS/root_sb_MSS_pre.vhd
+    C:/Users/jl/source/repos/hermess/hermess-Firmware/fpga/component/work/root_sb_MSS/root_sb_MSS_pre.vhd
 
 Stimulus files for all Simulation tools:
-    C:/Users/jl/source/repos/hermess/hermess-MCU/hermess/component/work/root_sb_MSS/CM3_compile_bfm.tcl
-    C:/Users/jl/source/repos/hermess/hermess-MCU/hermess/component/work/root_sb_MSS/user.bfm
-    C:/Users/jl/source/repos/hermess/hermess-MCU/hermess/component/work/root_sb_MSS/test.bfm
-    C:/Users/jl/source/repos/hermess/hermess-MCU/hermess/component/Actel/SmartFusion2MSS/MSS/1.1.500/peripheral_init.bfm
+    C:/Users/jl/source/repos/hermess/hermess-Firmware/fpga/component/work/root_sb_MSS/CM3_compile_bfm.tcl
+    C:/Users/jl/source/repos/hermess/hermess-Firmware/fpga/component/work/root_sb_MSS/user.bfm
+    C:/Users/jl/source/repos/hermess/hermess-Firmware/fpga/component/work/root_sb_MSS/test.bfm
+    C:/Users/jl/source/repos/hermess/hermess-Firmware/fpga/component/Actel/SmartFusion2MSS/MSS/1.1.500/peripheral_init.bfm
 
 Firmware files for all Software IDE tools:
-    C:/Users/jl/source/repos/hermess/hermess-MCU/hermess/component/work/root_sb_MSS/sys_config_mss_clocks.h
+    C:/Users/jl/source/repos/hermess/hermess-Firmware/fpga/component/work/root_sb_MSS/sys_config_mss_clocks.h
 
 Configuration files to be used for Programming:
-    C:/Users/jl/source/repos/hermess/hermess-MCU/hermess/component/work/root_sb_MSS/ENVM.cfg
+    C:/Users/jl/source/repos/hermess/hermess-Firmware/fpga/component/work/root_sb_MSS/ENVM.cfg
 
 Configuration files to be used for all Simulation tools:
-    C:/Users/jl/source/repos/hermess/hermess-MCU/hermess/component/work/root_sb_MSS/ENVM.cfg
+    C:/Users/jl/source/repos/hermess/hermess-Firmware/fpga/component/work/root_sb_MSS/ENVM.cfg
 

@@ -32,7 +32,7 @@ KEY VendorTechnology_VCCI_1.8_VOLTR "COM"
 KEY VendorTechnology_VCCI_2.5_VOLTR "COM"
 KEY VendorTechnology_VCCI_3.3_VOLTR "COM"
 KEY VendorTechnology_VOLTR "IND"
-KEY ProjectLocation "C:\Users\jl\source\repos\hermess\hermess-MCU\fpga"
+KEY ProjectLocation "C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga"
 KEY ProjectDescription ""
 KEY UseRootLocationForLinkedFiles "FALSE"
 KEY RootLocationENVForLinkedFiles ""
@@ -516,8 +516,8 @@ SIZE="1404443"
 ENDFILE
 VALUE "<project>\synthesis\root_syn.prj,prj"
 STATE="utd"
-TIME="1647730217"
-SIZE="4347"
+TIME="1647763205"
+SIZE="4381"
 ENDFILE
 VALUE "<project>\synthesis\root_vm.sdc,syn_sdc"
 STATE="utd"
@@ -776,11 +776,8 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
-Constraint Manager;Constraint Manager;0
-Reports;Reports;0
-ReportsCurrentItem;Generate Bitstream:root_generateBitstream.log
-SmartDesign;root;0
-ACTIVEVIEW;Reports
+StartPage;StartPage;0
+ACTIVEVIEW;StartPage
 ENDLIST
 LIST ModuleSubBlockList
 LIST "coreresetp_pcie_hotreset::work","component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp_pcie_hotreset.vhd","FALSE","FALSE"
