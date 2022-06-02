@@ -1,6 +1,8 @@
 #ifndef COMPONENTS_MEASUREMENT_H_
 #define COMPONENTS_MEASUREMENT_H_
 
+#include "../tools/tools.h"
+#include "../tools/queue.h"
 #include "../apbdrivers/STAMP/apb_stamp.h"
 #include "../apbdrivers/STAMP/adc_command.h"
 #include "../sb_hw_platform.h"
@@ -9,7 +11,14 @@
 /**
  * Measurement Singleton Class
  *
- * Uses Timer2 as 32 bit timer for Timestamp generation
+ * Uses Timer2 as 32 bit timer for Timestamp generation.
+ *
+ * After initialization the ADCs are configured for continuous 1kSPS operation
+ * and the VHDL Stamp components are ready to capture interrupts. The ADCs are
+ * system offset calibrated. Also by default the measurement is turned off and
+ * must be turned on through a call to setDataStorage(true).
+ *
+ * Call worker() in main loop for data processing.
  */
 class Measurement {
 public:
@@ -30,25 +39,41 @@ public:
      */
     void setDataStorage (bool start);
 
-    // !!! calibrate and get values, push calibration values
+    /** Worker function
+     *
+     * Call this function in main loop.
+     */
+    void worker ();
+
+    /** Timestamp getter
+     *
+     * @return the current timestamp in 250us increments after starting data
+     * storage
+     */
+    uint64_t getTimestamp () const;
 
 private:
     apb_stamp::Stamp stamps[6]; /**< contains all Stamp instances */
-
     volatile uint64_t timestamp; /**< Timestamp in units of 250us (=1/4kHz) */
 
-    /** Stamp ISR template
-     *
-     * This function is called by all six STAMP data_available interrupts.
-     * @param stamp The calling STAMP component in range [0, 5]
-     */
-    static inline void handleStampInterrupt (uint8_t stamp);
+    uint16_t heartbeatCounter = 0;
+
+    bool ledOutputState = false;
+
+    Queue<apb_stamp::StampDataframe> dfQueue;
 
     /** Constructor
      *
      * Initializes all components so that they are ready to operate.
      */
     Measurement ();
+
+    /** Stamp ISR template
+     *
+     * This function is called by all six STAMP data_available interrupts.
+     * @param stamp The calling STAMP component in range [0, 5]
+     */
+    void handleStampInterrupt (uint8_t stamp);
 
     /** Reset and start the timestamp generator
      *
@@ -65,12 +90,8 @@ private:
      */
     void stopTimestampGenerator ();
 
-    /** Timer 2 ISR
-     *
-     * Allow the Timer2 ISR to access private members
-     */
+    // define friend functions
     friend void Timer2_IRQHandler ();
-
     friend void F2M_INT_STAMP1_HANDLER ();
     friend void F2M_INT_STAMP2_HANDLER ();
     friend void F2M_INT_STAMP3_HANDLER ();

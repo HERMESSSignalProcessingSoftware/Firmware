@@ -2,7 +2,7 @@
 #define COMPONENTS_DAPI_H_
 
 #include <string>
-#include <queue>
+#include "../tools/queue.h"
 
 
 class Dapi {
@@ -70,15 +70,22 @@ private:
          * @param ptr the starting address
          * @param size the size to be transmitted in bytes
          */
-        Message(uint8_t const * const ptr, const uint32_t size);
+        Message (const uint8_t * const ptr, const uint32_t size);
+
+        /** Copy constructor
+         *
+         * Also copies the underlying string
+         * @param other The object to copy
+         */
+        Message (const Message &other);
 
         /** Message object destructor
          *
          * Deletes the array behind ptr
          */
-        ~Message();
+        ~Message ();
 
-        const uint8_t * ptr; /**< the start address of the array */
+        const uint8_t *ptr; /**< the start address of the array */
 
         const uint32_t size; /**< size of the array */
     };
@@ -92,7 +99,7 @@ private:
     bool transferInProgress; /**< Indicates, if a transfer is
     in progress and if the next msgQueue item should be retained. */
 
-    std::queue<Message> msgQueue; /**< A list of C style strings to be
+    Queue<Message> msgQueue; /**< A list of C style strings to be
     transmitted */
 };
 

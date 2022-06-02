@@ -6,7 +6,7 @@
 
 # Family: SmartFusion2 , Die: M2S010 , Package: 144 TQ
 
-# Date generated: Sat Mar 19 23:35:04 2022 
+# Date generated: Mon May 30 20:24:31 2022 
 
 
 # 
@@ -104,6 +104,13 @@ set_io LED_FPGA_LOADED  \
     -pinname 23         \
     -fixed yes          \
     -iostd LVCMOS12     \
+    -DIRECTION OUTPUT
+
+
+set_io LED_HB_MEMSYNC  \
+    -pinname 28        \
+    -fixed yes         \
+    -iostd LVCMOS12    \
     -DIRECTION OUTPUT
 
 
@@ -465,6 +472,20 @@ set_io STAMP6_MOSI     \
 set_io STAMP6_SCLK     \
     -pinname 1         \
     -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io TM_RXD         \
+    -pinname 144      \
+    -fixed yes        \
+    -iostd LVCMOS12   \
+    -DIRECTION INPUT
+
+
+set_io TM_TXD          \
+    -pinname 143       \
+    -fixed yes         \
+    -iostd LVCMOS12    \
     -DIRECTION OUTPUT
 
 

@@ -1,8 +1,9 @@
 #include "measurement.h"
 #include "../sf2drivers/drivers/mss_gpio/mss_gpio.h"
 #include "../sf2drivers/drivers/mss_timer/mss_timer.h"
-#include "msghandler.h"
-#include "tools.h"
+#include "../tools/msghandler.h"
+#include "../tools/tools.h"
+#include "dapi.h"
 
 
 
@@ -21,6 +22,10 @@ Measurement::Measurement ():
         apb_stamp::Stamp(ADDR_STAMP5, F2M_INT_STAMP5_PIN),
         apb_stamp::Stamp(ADDR_STAMP6, F2M_INT_STAMP6_PIN)
     }, timestamp{0} {
+    // initialize recording LED
+    MSS_GPIO_config(LED_FPGA_LOADED, MSS_GPIO_OUTPUT_MODE);
+    MSS_GPIO_set_output(LED_FPGA_LOADED, 0);
+
     // start ADC and let it settle
     MSS_GPIO_config(OUT_ADC_START, MSS_GPIO_OUTPUT_MODE);
     MSS_GPIO_set_output(OUT_ADC_START, 1);
@@ -46,9 +51,12 @@ Measurement::Measurement ():
     // prepare the ADC default configuration
     apb_stamp::AdcCommandConfigure cmdConf(
             [] (uint8_t attempt, std::string msg) -> bool {
+        // enrich message
+        msg.append(" (attempt ").append(std::to_string(attempt)).append(")");
 
         // in case of errors try three times and log the messages
         MsgHandler &msgHandler = MsgHandler::getInstance();
+
         if (attempt < 3) {
             msgHandler.warning(msg);
             return true; // retry
@@ -58,12 +66,19 @@ Measurement::Measurement ():
 
     });
 
+    // prepare ADC system offset calibration
+    apb_stamp::AdcCommandCalibrate cmdCal(
+            apb_stamp::AdcCommandCalibrate::sysocal);
+
+
     for (uint8_t i = 0; i < 6; i++) {
         // reset ADCs
         cmdReset(stamps[i], allAdcs);
 
         // configure ADCs
         cmdConf(stamps[i], allAdcs);
+
+
     }
 
     // pull ADC start low to disable continuous mode
@@ -76,41 +91,93 @@ Measurement::Measurement ():
         conf.id = i;
         stamps[i].writeConfig(conf);
 
-        // enable STAMP interrupts
-        stamps[i].enableInterrupt();
+        // calibrate ADCs
+        cmdCal(stamps[i], allAdcs);
     }
 
     // enable MSS timer 2 for the timestamp generator
     MSS_TIM2_init(MSS_TIMER_PERIODIC_MODE);
-    MSS_TIM2_enable_irq();
     MSS_TIM2_load_background(25000);
+
+    // push info about finishing stamp initialization
+    MsgHandler::getInstance().info("STAMP init complete");
 }
 
 
 
 void Measurement::setDataStorage (bool start) {
     if (start) {
-        MSS_GPIO_set_output(OUT_ADC_START, 1);
         startTimestampGenerator();
+        for (uint8_t i = 0; i < 6; i++)
+            stamps[i].enableInterrupt();
+        MSS_GPIO_set_output(OUT_ADC_START, 1);
+        MsgHandler::getInstance().info("Measurement started");
     }
     else {
+        for (uint8_t i = 0; i < 6; i++)
+            stamps[i].disableInterrupt();
         MSS_GPIO_set_output(OUT_ADC_START, 0);
         stopTimestampGenerator();
+        MsgHandler::getInstance().info("Measurement stopped");
+    }
+}
+
+
+
+uint64_t Measurement::getTimestamp () const {
+    return timestamp;
+}
+
+
+
+void Measurement::worker () {
+    if (dfQueue.size() >= 6) {
+        if (++heartbeatCounter >= 500) {
+            heartbeatCounter = 0;
+            ledOutputState = !ledOutputState;
+            MSS_GPIO_set_output(LED_FPGA_LOADED, ledOutputState ? 1 : 0);
+        }
+
+        while (!dfQueue.empty())
+            dfQueue.pop();
+        /*for (uint8_t i = 0; i < 6; i++)
+            */
+
+        // pop first six elements and check, if all elements are within a
+        // time limit
+        /*uint64_t firstTime = dfQueue.front().timestamp;
+        bool withinTime[6];
+        for (uint8_t i = 0; i < 6; i++) {
+            int8_t diff = dfQueue.front().timestamp - firstTime;
+            withinTime[dfQueue.front().status.id] = (bool) ((diff & 0x7F) <= 1);
+            dfQueue.pop();
+        }
+
+        for (uint8_t i = 0; i < 6; i++) {
+            if (!withinTime[i])
+                MsgHandler::getInstance().error("NE");
+        }*/
     }
 }
 
 
 
 void Measurement::handleStampInterrupt (uint8_t stamp) {
-    Measurement &instance = Measurement::getInstance();
+    // do not allow nested stamp retrieval interrupts
+    psr_t enabledInterrupts = HAL_disable_interrupts();
     // reset the pending IRQ and allow further processing
-    NVIC_ClearPendingIRQ(instance.stamps[stamp].interruptPin);
+    NVIC_ClearPendingIRQ(stamps[stamp].interruptPin);
+    // read ADCs data and enqueue
+    dfQueue.push(stamps[stamp].readDataframe());
+    // allow further interrupts
+    HAL_restore_interrupts(enabledInterrupts);
 }
 
 
 
 void Measurement::startTimestampGenerator () {
     timestamp = 0;
+    MSS_TIM2_enable_irq();
     MSS_TIM2_load_immediate(25000);
     MSS_TIM2_start();
 }
@@ -119,32 +186,5 @@ void Measurement::startTimestampGenerator () {
 
 void Measurement::stopTimestampGenerator () {
     MSS_TIM2_stop();
-}
-
-
-
-void Timer2_IRQHandler () {
-    Measurement::getInstance().timestamp++;
-    MSS_TIM2_clear_irq();
-}
-
-
-
-void F2M_INT_STAMP1_HANDLER () {
-    Measurement::handleStampInterrupt(0);
-}
-void F2M_INT_STAMP2_HANDLER () {
-    Measurement::handleStampInterrupt(1);
-}
-void F2M_INT_STAMP3_HANDLER () {
-    Measurement::handleStampInterrupt(2);
-}
-void F2M_INT_STAMP4_HANDLER () {
-    Measurement::handleStampInterrupt(3);
-}
-void F2M_INT_STAMP5_HANDLER () {
-    Measurement::handleStampInterrupt(4);
-}
-void F2M_INT_STAMP6_HANDLER () {
-    Measurement::handleStampInterrupt(5);
+    MSS_TIM2_disable_irq();
 }

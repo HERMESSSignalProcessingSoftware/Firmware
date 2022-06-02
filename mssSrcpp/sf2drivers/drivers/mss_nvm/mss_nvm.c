@@ -7,11 +7,10 @@
  * SVN $Date: 2016-06-23 12:32:32 +0530 (Thu, 23 Jun 2016) $
  */
 
-#include "../../../sf2drivers/drivers/mss_nvm/mss_nvm.h"
-
-#include "../../../sf2drivers/CMSIS/m2sxxx.h"
-#include "../../../sf2drivers/CMSIS/mss_assert.h"
-#include "../../../sf2drivers/CMSIS/system_m2sxxx.h"
+#include "../../CMSIS/m2sxxx.h"
+#include "../../CMSIS/mss_assert.h"
+#include "../../CMSIS/system_m2sxxx.h"
+#include "mss_nvm.h"
 
 #ifdef __cplusplus
 extern "C" {

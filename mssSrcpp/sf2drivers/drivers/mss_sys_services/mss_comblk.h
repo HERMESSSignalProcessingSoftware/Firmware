@@ -9,8 +9,8 @@
 #ifndef __MSS_COMBLK_H_
 #define __MSS_COMBLK_H_ 1
 
-#include "../../../sf2drivers/CMSIS/m2sxxx.h"
-#include "../../../sf2drivers/drivers/mss_sys_services/mss_comblk_page_handler.h"
+#include "../../CMSIS/m2sxxx.h"
+#include "mss_comblk_page_handler.h"
 
 #ifdef __cplusplus
 extern "C" {

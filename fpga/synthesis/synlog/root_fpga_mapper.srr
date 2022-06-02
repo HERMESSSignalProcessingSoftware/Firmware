@@ -1,4 +1,4 @@
-# Sat Mar 19 23:50:05 2022
+# Thu Jun  2 21:33:07 2022
 
 
 Copyright (C) 1994-2021 Synopsys, Inc.
@@ -32,31 +32,31 @@ Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0
 Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 122MB peak: 130MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 123MB peak: 130MB)
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 124MB peak: 130MB)
 
 
 
-Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 163MB peak: 163MB)
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 164MB peak: 164MB)
 
-@W: BN132 :"c:\users\jl\source\repos\hermess\hermess-mcu\hermess\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":936:8:936:9|Removing sequential instance MSS.CORERESETP_0.sdif3_spll_lock_q1 because it is equivalent to instance MSS.CORERESETP_0.CONFIG2_DONE_q1. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\jl\source\repos\hermess\hermess-mcu\hermess\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":922:8:922:9|Removing sequential instance MSS.CORERESETP_0.CONFIG2_DONE_q1 because it is equivalent to instance MSS.CORERESETP_0.CONFIG1_DONE_q1. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\jl\source\repos\hermess\hermess-mcu\hermess\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":922:8:922:9|Removing sequential instance MSS.CORERESETP_0.CONFIG2_DONE_clk_base because it is equivalent to instance MSS.CORERESETP_0.sdif3_spll_lock_q2. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\jl\source\repos\hermess\hermess-mcu\hermess\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":908:8:908:9|Removing sequential instance MSS.CORERESETP_0.CONFIG1_DONE_clk_base because it is equivalent to instance MSS.CORERESETP_0.sdif3_spll_lock_q2. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\jl\source\repos\hermess\hermess-mcu\hermess\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":894:8:894:9|Removing sequential instance MSS.CORERESETP_0.sdif3_areset_n_rcosc_q1 because it is equivalent to instance MSS.CORERESETP_0.sdif2_areset_n_rcosc_q1. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\jl\source\repos\hermess\hermess-mcu\hermess\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":883:8:883:9|Removing sequential instance MSS.CORERESETP_0.sdif2_areset_n_rcosc_q1 because it is equivalent to instance MSS.CORERESETP_0.sdif1_areset_n_rcosc_q1. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\jl\source\repos\hermess\hermess-mcu\hermess\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":872:8:872:9|Removing sequential instance MSS.CORERESETP_0.sdif1_areset_n_rcosc_q1 because it is equivalent to instance MSS.CORERESETP_0.sdif0_areset_n_rcosc_q1. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\jl\source\repos\hermess\hermess-mcu\hermess\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":850:8:850:9|Removing sequential instance MSS.CORERESETP_0.sm0_areset_n_rcosc_q1 because it is equivalent to instance MSS.CORERESETP_0.sdif0_areset_n_rcosc_q1. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\jl\source\repos\hermess\hermess-mcu\hermess\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":883:8:883:9|Removing sequential instance MSS.CORERESETP_0.sdif2_areset_n_rcosc because it is equivalent to instance MSS.CORERESETP_0.sm0_areset_n_rcosc. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\jl\source\repos\hermess\hermess-mcu\hermess\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":894:8:894:9|Removing sequential instance MSS.CORERESETP_0.sdif3_areset_n_rcosc because it is equivalent to instance MSS.CORERESETP_0.sm0_areset_n_rcosc. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\jl\source\repos\hermess\hermess-mcu\hermess\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":872:8:872:9|Removing sequential instance MSS.CORERESETP_0.sdif1_areset_n_rcosc because it is equivalent to instance MSS.CORERESETP_0.sm0_areset_n_rcosc. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\jl\source\repos\hermess\hermess-mcu\hermess\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":861:8:861:9|Removing sequential instance MSS.CORERESETP_0.sdif0_areset_n_rcosc because it is equivalent to instance MSS.CORERESETP_0.sm0_areset_n_rcosc. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\jl\source\repos\hermess\hermess-firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":936:8:936:9|Removing sequential instance MSS.CORERESETP_0.sdif3_spll_lock_q1 because it is equivalent to instance MSS.CORERESETP_0.CONFIG2_DONE_q1. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\jl\source\repos\hermess\hermess-firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":922:8:922:9|Removing sequential instance MSS.CORERESETP_0.CONFIG2_DONE_q1 because it is equivalent to instance MSS.CORERESETP_0.CONFIG1_DONE_q1. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\jl\source\repos\hermess\hermess-firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":922:8:922:9|Removing sequential instance MSS.CORERESETP_0.CONFIG2_DONE_clk_base because it is equivalent to instance MSS.CORERESETP_0.sdif3_spll_lock_q2. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\jl\source\repos\hermess\hermess-firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":908:8:908:9|Removing sequential instance MSS.CORERESETP_0.CONFIG1_DONE_clk_base because it is equivalent to instance MSS.CORERESETP_0.sdif3_spll_lock_q2. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\jl\source\repos\hermess\hermess-firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":894:8:894:9|Removing sequential instance MSS.CORERESETP_0.sdif3_areset_n_rcosc_q1 because it is equivalent to instance MSS.CORERESETP_0.sdif2_areset_n_rcosc_q1. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\jl\source\repos\hermess\hermess-firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":883:8:883:9|Removing sequential instance MSS.CORERESETP_0.sdif2_areset_n_rcosc_q1 because it is equivalent to instance MSS.CORERESETP_0.sdif1_areset_n_rcosc_q1. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\jl\source\repos\hermess\hermess-firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":872:8:872:9|Removing sequential instance MSS.CORERESETP_0.sdif1_areset_n_rcosc_q1 because it is equivalent to instance MSS.CORERESETP_0.sdif0_areset_n_rcosc_q1. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\jl\source\repos\hermess\hermess-firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":850:8:850:9|Removing sequential instance MSS.CORERESETP_0.sm0_areset_n_rcosc_q1 because it is equivalent to instance MSS.CORERESETP_0.sdif0_areset_n_rcosc_q1. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\jl\source\repos\hermess\hermess-firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":883:8:883:9|Removing sequential instance MSS.CORERESETP_0.sdif2_areset_n_rcosc because it is equivalent to instance MSS.CORERESETP_0.sm0_areset_n_rcosc. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\jl\source\repos\hermess\hermess-firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":894:8:894:9|Removing sequential instance MSS.CORERESETP_0.sdif3_areset_n_rcosc because it is equivalent to instance MSS.CORERESETP_0.sm0_areset_n_rcosc. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\jl\source\repos\hermess\hermess-firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":872:8:872:9|Removing sequential instance MSS.CORERESETP_0.sdif1_areset_n_rcosc because it is equivalent to instance MSS.CORERESETP_0.sm0_areset_n_rcosc. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\jl\source\repos\hermess\hermess-firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":861:8:861:9|Removing sequential instance MSS.CORERESETP_0.sdif0_areset_n_rcosc because it is equivalent to instance MSS.CORERESETP_0.sm0_areset_n_rcosc. To keep the instance, apply constraint syn_preserve=1 on the instance.
 
 #### START OF SSF LOG MESSAGES ####
 
 #### END OF SSF LOG MESSAGES ####
-@W: FA239 :"c:\users\jl\source\repos\hermess\hermess-mcu\hermess\component\actel\directcore\coreapb3\4.1.100\rtl\vhdl\core\coreapb3.vhd":648:12:648:15|ROM iPSELS_raw_11[7:0] (in view: coreapb3_lib.CoreAPB3(coreapb3_arch)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
-@W: FA239 :"c:\users\jl\source\repos\hermess\hermess-mcu\hermess\component\actel\directcore\coreapb3\4.1.100\rtl\vhdl\core\coreapb3.vhd":648:12:648:15|ROM iPSELS_raw_11[7:0] (in view: coreapb3_lib.CoreAPB3(coreapb3_arch)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
-@N: MO106 :"c:\users\jl\source\repos\hermess\hermess-mcu\hermess\component\actel\directcore\coreapb3\4.1.100\rtl\vhdl\core\coreapb3.vhd":648:12:648:15|Found ROM iPSELS_raw_11[7:0] (in view: coreapb3_lib.CoreAPB3(coreapb3_arch)) with 16 words by 8 bits.
+@W: FA239 :"c:\users\jl\source\repos\hermess\hermess-firmware\fpga\component\actel\directcore\coreapb3\4.1.100\rtl\vhdl\core\coreapb3.vhd":648:12:648:15|ROM iPSELS_raw_10[6:0] (in view: coreapb3_lib.CoreAPB3(coreapb3_arch)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"c:\users\jl\source\repos\hermess\hermess-firmware\fpga\component\actel\directcore\coreapb3\4.1.100\rtl\vhdl\core\coreapb3.vhd":648:12:648:15|ROM iPSELS_raw_10[6:0] (in view: coreapb3_lib.CoreAPB3(coreapb3_arch)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@N: MO106 :"c:\users\jl\source\repos\hermess\hermess-firmware\fpga\component\actel\directcore\coreapb3\4.1.100\rtl\vhdl\core\coreapb3.vhd":648:12:648:15|Found ROM iPSELS_raw_10[6:0] (in view: coreapb3_lib.CoreAPB3(coreapb3_arch)) with 16 words by 7 bits.
 
 Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 173MB peak: 173MB)
 
@@ -82,16 +82,16 @@ original code -> new code
    00 -> 00
    01 -> 01
    10 -> 10
-@N: MO231 :"c:\users\jl\source\repos\hermess\hermess-mcu\hermess\hdl\stamp.vhd":199:8:199:9|Found counter in view:work.STAMP(architecture_stamp) instance delay_counter[27:0] 
-@N: MO231 :"c:\users\jl\source\repos\hermess\hermess-mcu\hermess\hdl\stamp.vhd":199:8:199:9|Found counter in view:work.STAMP(architecture_stamp) instance polling_timeout_counter[7:0] 
-@N: MO231 :"c:\users\jl\source\repos\hermess\hermess-mcu\hermess\hdl\spi_master.vhd":74:4:74:5|Found counter in view:work.spi_master(logic) instance clk_toggles[5:0] 
-@N: MO231 :"c:\users\jl\source\repos\hermess\hermess-mcu\hermess\hdl\spi_master.vhd":74:4:74:5|Found counter in view:work.spi_master(logic) instance count[31:0] 
-@W: MO161 :"c:\users\jl\source\repos\hermess\hermess-mcu\hermess\hdl\spi_master.vhd":74:4:74:5|Register bit clk_ratio[3] (in view view:work.spi_master(logic)) is always 1. To keep the instance, apply syn_preserve=1 on the instance.
-@W: MO161 :"c:\users\jl\source\repos\hermess\hermess-mcu\hermess\hdl\spi_master.vhd":74:4:74:5|Register bit clk_ratio[2] (in view view:work.spi_master(logic)) is always 1. To keep the instance, apply syn_preserve=1 on the instance.
-@W: MO161 :"c:\users\jl\source\repos\hermess\hermess-mcu\hermess\hdl\spi_master.vhd":74:4:74:5|Register bit clk_ratio[1] (in view view:work.spi_master(logic)) is always 1. To keep the instance, apply syn_preserve=1 on the instance.
-@W: MO161 :"c:\users\jl\source\repos\hermess\hermess-mcu\hermess\hdl\spi_master.vhd":74:4:74:5|Register bit clk_ratio[0] (in view view:work.spi_master(logic)) is always 1. To keep the instance, apply syn_preserve=1 on the instance.
+@N: MO231 :"c:\users\jl\source\repos\hermess\hermess-firmware\fpga\hdl\stamp.vhd":199:8:199:9|Found counter in view:work.STAMP(architecture_stamp) instance delay_counter[27:0] 
+@N: MO231 :"c:\users\jl\source\repos\hermess\hermess-firmware\fpga\hdl\stamp.vhd":199:8:199:9|Found counter in view:work.STAMP(architecture_stamp) instance polling_timeout_counter[7:0] 
+@N: MO231 :"c:\users\jl\source\repos\hermess\hermess-firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Found counter in view:work.spi_master(logic) instance clk_toggles[5:0] 
+@N: MO231 :"c:\users\jl\source\repos\hermess\hermess-firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Found counter in view:work.spi_master(logic) instance count[31:0] 
+@W: MO161 :"c:\users\jl\source\repos\hermess\hermess-firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Register bit clk_ratio[3] (in view view:work.spi_master(logic)) is always 1. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO161 :"c:\users\jl\source\repos\hermess\hermess-firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Register bit clk_ratio[2] (in view view:work.spi_master(logic)) is always 1. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO161 :"c:\users\jl\source\repos\hermess\hermess-firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Register bit clk_ratio[1] (in view view:work.spi_master(logic)) is always 1. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO161 :"c:\users\jl\source\repos\hermess\hermess-firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Register bit clk_ratio[0] (in view view:work.spi_master(logic)) is always 1. To keep the instance, apply syn_preserve=1 on the instance.
 
-Starting factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
+Starting factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
 
 Auto Dissolve of spi (inst of view:work.spi_master(logic))
 
@@ -102,68 +102,60 @@ Available hyper_sources - for debug and ip models
 	None Found
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 194MB peak: 194MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 187MB peak: 194MB)
 
-@N: BN362 :"c:\users\jl\source\repos\hermess\hermess-mcu\hermess\hdl\spi_master.vhd":74:4:74:5|Removing sequential instance STAMP1.spi.continue (in view: work.root(rtl)) because it does not drive other instances.
-@N: BN362 :"c:\users\jl\source\repos\hermess\hermess-mcu\hermess\hdl\spi_master.vhd":74:4:74:5|Removing sequential instance STAMP2.spi.continue (in view: work.root(rtl)) because it does not drive other instances.
-@N: BN362 :"c:\users\jl\source\repos\hermess\hermess-mcu\hermess\hdl\spi_master.vhd":74:4:74:5|Removing sequential instance STAMP3.spi.continue (in view: work.root(rtl)) because it does not drive other instances.
-@N: BN362 :"c:\users\jl\source\repos\hermess\hermess-mcu\hermess\hdl\spi_master.vhd":74:4:74:5|Removing sequential instance STAMP4.spi.continue (in view: work.root(rtl)) because it does not drive other instances.
-@N: BN362 :"c:\users\jl\source\repos\hermess\hermess-mcu\hermess\hdl\spi_master.vhd":74:4:74:5|Removing sequential instance STAMP5.spi.continue (in view: work.root(rtl)) because it does not drive other instances.
-@N: BN362 :"c:\users\jl\source\repos\hermess\hermess-mcu\hermess\hdl\spi_master.vhd":74:4:74:5|Removing sequential instance STAMP6.spi.continue (in view: work.root(rtl)) because it does not drive other instances.
+@N: BN362 :"c:\users\jl\source\repos\hermess\hermess-firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Removing sequential instance STAMP1.spi.continue (in view: work.root(rtl)) because it does not drive other instances.
+@N: BN362 :"c:\users\jl\source\repos\hermess\hermess-firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Removing sequential instance STAMP2.spi.continue (in view: work.root(rtl)) because it does not drive other instances.
+@N: BN362 :"c:\users\jl\source\repos\hermess\hermess-firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Removing sequential instance STAMP3.spi.continue (in view: work.root(rtl)) because it does not drive other instances.
+@N: BN362 :"c:\users\jl\source\repos\hermess\hermess-firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Removing sequential instance STAMP4.spi.continue (in view: work.root(rtl)) because it does not drive other instances.
+@N: BN362 :"c:\users\jl\source\repos\hermess\hermess-firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Removing sequential instance STAMP5.spi.continue (in view: work.root(rtl)) because it does not drive other instances.
+@N: BN362 :"c:\users\jl\source\repos\hermess\hermess-firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Removing sequential instance STAMP6.spi.continue (in view: work.root(rtl)) because it does not drive other instances.
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 195MB peak: 195MB)
-
-
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 195MB peak: 195MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 189MB peak: 194MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 195MB peak: 195MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 189MB peak: 194MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 195MB peak: 195MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 189MB peak: 194MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 230MB peak: 230MB)
+Finished preparing to map (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 189MB peak: 194MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 225MB peak: 225MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:07s		    -1.74ns		3348 /      2096
-   2		0h:00m:07s		    -1.74ns		3269 /      2096
-   3		0h:00m:07s		    -1.66ns		3269 /      2096
-@N: FX271 :"c:\users\jl\source\repos\hermess\hermess-mcu\hermess\hdl\stamp.vhd":373:27:373:59|Replicating instance STAMP2.spi.un1_spi_rx_data_sn_m3_i_o2 (in view: work.root(rtl)) with 57 loads 3 times to improve timing.
-@N: FX271 :"c:\users\jl\source\repos\hermess\hermess-mcu\hermess\hdl\stamp.vhd":373:27:373:59|Replicating instance STAMP1.spi.un1_spi_rx_data_sn_m3_i_o2 (in view: work.root(rtl)) with 57 loads 3 times to improve timing.
-@N: FX271 :"c:\users\jl\source\repos\hermess\hermess-mcu\hermess\hdl\stamp.vhd":373:27:373:59|Replicating instance STAMP3.spi.un1_spi_rx_data_sn_m3_i_o2 (in view: work.root(rtl)) with 57 loads 3 times to improve timing.
-@N: FX271 :"c:\users\jl\source\repos\hermess\hermess-mcu\hermess\hdl\stamp.vhd":373:27:373:59|Replicating instance STAMP6.spi.un1_spi_rx_data_sn_m3_i_o2 (in view: work.root(rtl)) with 57 loads 3 times to improve timing.
-@N: FX271 :"c:\users\jl\source\repos\hermess\hermess-mcu\hermess\hdl\stamp.vhd":373:27:373:59|Replicating instance STAMP4.spi.un1_spi_rx_data_sn_m3_i_o2 (in view: work.root(rtl)) with 57 loads 3 times to improve timing.
-@N: FX271 :"c:\users\jl\source\repos\hermess\hermess-mcu\hermess\hdl\stamp.vhd":373:27:373:59|Replicating instance STAMP5.spi.un1_spi_rx_data_sn_m3_i_o2 (in view: work.root(rtl)) with 57 loads 3 times to improve timing.
-@N: FX271 :"c:\users\jl\source\repos\hermess\hermess-mcu\hermess\hdl\stamp.vhd":440:12:440:13|Replicating instance STAMP4.status_async_cycles_14_axb_0 (in view: work.root(rtl)) with 2 loads 1 time(s) to improve timing.
-@N: FX271 :"c:\users\jl\source\repos\hermess\hermess-mcu\hermess\hdl\stamp.vhd":440:12:440:13|Replicating instance STAMP5.status_async_cycles_14_axb_0 (in view: work.root(rtl)) with 2 loads 1 time(s) to improve timing.
-@N: FX271 :"c:\users\jl\source\repos\hermess\hermess-mcu\hermess\hdl\stamp.vhd":440:12:440:13|Replicating instance STAMP2.status_async_cycles_14_axb_0 (in view: work.root(rtl)) with 2 loads 1 time(s) to improve timing.
-@N: FX271 :"c:\users\jl\source\repos\hermess\hermess-mcu\hermess\hdl\stamp.vhd":440:12:440:13|Replicating instance STAMP1.status_async_cycles_14_axb_0 (in view: work.root(rtl)) with 2 loads 1 time(s) to improve timing.
-@N: FX271 :"c:\users\jl\source\repos\hermess\hermess-mcu\hermess\hdl\stamp.vhd":440:12:440:13|Replicating instance STAMP6.status_async_cycles_14_axb_0 (in view: work.root(rtl)) with 2 loads 1 time(s) to improve timing.
-@N: FX271 :"c:\users\jl\source\repos\hermess\hermess-mcu\hermess\hdl\stamp.vhd":440:12:440:13|Replicating instance STAMP3.status_async_cycles_14_axb_0 (in view: work.root(rtl)) with 2 loads 1 time(s) to improve timing.
+   1		0h:00m:06s		    -2.08ns		3360 /      2096
+   2		0h:00m:06s		    -2.07ns		3300 /      2096
+   3		0h:00m:06s		    -2.07ns		3300 /      2096
+@N: FX271 :"c:\users\jl\source\repos\hermess\hermess-firmware\fpga\hdl\stamp.vhd":373:27:373:59|Replicating instance STAMP2.spi.un1_spi_rx_data_sn_m3_i_o2 (in view: work.root(rtl)) with 57 loads 3 times to improve timing.
+@N: FX271 :"c:\users\jl\source\repos\hermess\hermess-firmware\fpga\hdl\stamp.vhd":373:27:373:59|Replicating instance STAMP5.spi.un1_spi_rx_data_sn_m3_i_o2 (in view: work.root(rtl)) with 57 loads 3 times to improve timing.
+@N: FX271 :"c:\users\jl\source\repos\hermess\hermess-firmware\fpga\hdl\stamp.vhd":373:27:373:59|Replicating instance STAMP3.spi.un1_spi_rx_data_sn_m3_i_o2 (in view: work.root(rtl)) with 57 loads 3 times to improve timing.
+@N: FX271 :"c:\users\jl\source\repos\hermess\hermess-firmware\fpga\hdl\stamp.vhd":373:27:373:59|Replicating instance STAMP1.spi.un1_spi_rx_data_sn_m3_i_o2 (in view: work.root(rtl)) with 57 loads 3 times to improve timing.
+@N: FX271 :"c:\users\jl\source\repos\hermess\hermess-firmware\fpga\hdl\stamp.vhd":373:27:373:59|Replicating instance STAMP6.spi.un1_spi_rx_data_sn_m3_i_o2 (in view: work.root(rtl)) with 57 loads 3 times to improve timing.
+@N: FX271 :"c:\users\jl\source\repos\hermess\hermess-firmware\fpga\hdl\stamp.vhd":373:27:373:59|Replicating instance STAMP4.spi.un1_spi_rx_data_sn_m3_i_o2 (in view: work.root(rtl)) with 57 loads 3 times to improve timing.
 Timing driven replication report
 Added 0 Registers via timing driven replication
-Added 24 LUTs via timing driven replication
+Added 18 LUTs via timing driven replication
 
-   4		0h:00m:07s		    -1.08ns		3299 /      2096
-   5		0h:00m:07s		    -1.02ns		3300 /      2096
-   6		0h:00m:07s		    -1.02ns		3300 /      2096
+   4		0h:00m:07s		    -1.71ns		3326 /      2096
 
 
-   7		0h:00m:08s		    -1.02ns		3300 /      2096
-@N: FP130 |Promoting Net LED_HB_MEMSYNC_arst on CLKINT  I_1021 
-@N: FP130 |Promoting Net MSS.CORERESETP_0.sm0_areset_n_clk_base on CLKINT  I_1022 
+   5		0h:00m:07s		    -1.71ns		3317 /      2096
+@N: FP130 |Promoting Net LED_HB_MEMSYNC_arst on CLKINT  I_1027 
+@N: FP130 |Promoting Net MSS.CORERESETP_0.sm0_areset_n_clk_base on CLKINT  I_1028 
 
 Added 0 Buffers
 Added 0 Cells via replication
 	Added 0 Sequential Cells via replication
 	Added 0 Combinational Cells via replication
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 233MB peak: 233MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 228MB peak: 228MB)
 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 233MB peak: 233MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 229MB peak: 229MB)
 
 
 
@@ -188,11 +180,11 @@ Clock Tree ID     Driving Element                   Drive Element Type     Fanou
 ##### END OF CLOCK OPTIMIZATION REPORT ######]
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:09s; Memory used current: 192MB peak: 234MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 189MB peak: 229MB)
 
-Writing Analyst data base C:\Users\jl\source\repos\hermess\hermess-MCU\hermess\synthesis\synwork\root_m.srm
+Writing Analyst data base C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\synthesis\synwork\root_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:09s; Memory used current: 229MB peak: 234MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 226MB peak: 229MB)
 
 Writing Verilog Simulation files
 @W: BW110 :|Renaming port spi_master_5 due to collision with Verilog/ System Verilog reserved word 
@@ -210,21 +202,21 @@ Writing Verilog Simulation files
 @N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
 @N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
 
-Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:10s; Memory used current: 230MB peak: 234MB)
+Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:10s; Memory used current: 227MB peak: 229MB)
 
 
-Finished Writing Netlists (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 230MB peak: 234MB)
+Finished Writing Netlists (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:10s; Memory used current: 227MB peak: 229MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 226MB peak: 234MB)
+Start final timing analysis (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:10s; Memory used current: 222MB peak: 229MB)
 
-@W: MT246 :"c:\users\jl\source\repos\hermess\hermess-mcu\hermess\component\work\root_sb\ccc_0\root_sb_ccc_0_fccc.vhd":106:4:106:11|Blackbox CCC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"c:\users\jl\source\repos\hermess\hermess-firmware\fpga\component\work\root_sb\ccc_0\root_sb_ccc_0_fccc.vhd":106:4:106:11|Blackbox CCC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @W: MT420 |Found inferred clock root_sb_CCC_0_FCCC|GL0_net_inferred_clock with period 10.00ns. Please declare a user-defined clock on net MSS.CCC_0.GL0_net.
 @W: MT420 |Found inferred clock root_sb_FABOSC_0_OSC|RCOSC_25_50MHZ_CCC_inferred_clock with period 10.00ns. Please declare a user-defined clock on net MSS.FABOSC_0.FABOSC_0_RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC.
 
 
 ##### START OF TIMING REPORT #####[
-# Timing report written on Sat Mar 19 23:50:16 2022
+# Timing report written on Thu Jun  2 21:33:18 2022
 #
 
 
@@ -232,7 +224,7 @@ Top view:               root
 Requested Frequency:    100.0 MHz
 Wire load mode:         top
 Paths requested:        5
-Constraint File(s):    C:\Users\jl\source\repos\hermess\hermess-MCU\hermess\designer\root\synthesis.fdc
+Constraint File(s):    C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\designer\root\synthesis.fdc
                        
 @N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
 
@@ -244,12 +236,12 @@ Performance Summary
 *******************
 
 
-Worst slack in design: -0.359
+Worst slack in design: -1.152
 
                                                            Requested     Estimated      Requested     Estimated                Clock        Clock              
 Starting Clock                                             Frequency     Frequency      Period        Period        Slack      Type         Group              
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
-root_sb_CCC_0_FCCC|GL0_net_inferred_clock                  100.0 MHz     96.5 MHz       10.000        10.360        -0.359     inferred     Inferred_clkgroup_0
+root_sb_CCC_0_FCCC|GL0_net_inferred_clock                  100.0 MHz     89.7 MHz       10.000        11.152        -1.152     inferred     Inferred_clkgroup_0
 root_sb_FABOSC_0_OSC|RCOSC_25_50MHZ_CCC_inferred_clock     100.0 MHz     1691.2 MHz     10.000        0.591         9.409      inferred     Inferred_clkgroup_1
 ===============================================================================================================================================================
 
@@ -264,7 +256,7 @@ Clocks                                                                          
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Starting                                                Ending                                                  |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-root_sb_CCC_0_FCCC|GL0_net_inferred_clock               root_sb_CCC_0_FCCC|GL0_net_inferred_clock               |  10.000      -0.360  |  No paths    -      |  No paths    -      |  No paths    -    
+root_sb_CCC_0_FCCC|GL0_net_inferred_clock               root_sb_CCC_0_FCCC|GL0_net_inferred_clock               |  10.000      -1.152  |  No paths    -      |  No paths    -      |  No paths    -    
 root_sb_FABOSC_0_OSC|RCOSC_25_50MHZ_CCC_inferred_clock  root_sb_CCC_0_FCCC|GL0_net_inferred_clock               |  Diff grp    -       |  No paths    -      |  No paths    -      |  No paths    -    
 root_sb_FABOSC_0_OSC|RCOSC_25_50MHZ_CCC_inferred_clock  root_sb_FABOSC_0_OSC|RCOSC_25_50MHZ_CCC_inferred_clock  |  10.000      9.409   |  No paths    -      |  No paths    -      |  No paths    -    
 =======================================================================================================================================================================================================
@@ -293,37 +285,37 @@ Starting Points with Worst Slack
 Instance                             Reference                                     Type        Pin                Net                                          Time        Slack 
                                      Clock                                                                                                                                       
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-MSS.root_sb_MSS_0.MSS_ADLIB_INST     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[13]     TM_PADDRS[13]                                3.682       -0.359
-MSS.root_sb_MSS_0.MSS_ADLIB_INST     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[15]     TM_PADDRS[15]                                3.614       -0.161
-MSS.root_sb_MSS_0.MSS_ADLIB_INST     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_SEL          root_sb_MSS_TMP_0_FIC_0_APB_MASTER_PSELx     3.524       -0.010
-MSS.root_sb_MSS_0.MSS_ADLIB_INST     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[12]     TM_PADDRS[12]                                3.713       0.072 
-MSS.root_sb_MSS_0.MSS_ADLIB_INST     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[8]      MSS_STAMP_PADDR[8]                           3.983       0.340 
-MSS.root_sb_MSS_0.MSS_ADLIB_INST     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[5]      MSS_STAMP_PADDR[5]                           3.695       0.351 
-MSS.root_sb_MSS_0.MSS_ADLIB_INST     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[9]      MSS_STAMP_PADDR[9]                           3.771       0.447 
-MSS.root_sb_MSS_0.MSS_ADLIB_INST     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[4]      MSS_STAMP_PADDR[4]                           3.594       0.468 
-MSS.root_sb_MSS_0.MSS_ADLIB_INST     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[6]      MSS_STAMP_PADDR[6]                           3.783       0.476 
-MSS.root_sb_MSS_0.MSS_ADLIB_INST     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[14]     TM_PADDRS[14]                                3.688       0.733 
+MSS.root_sb_MSS_0.MSS_ADLIB_INST     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[9]      MSS_STAMP_PADDR[9]                           3.771       -1.152
+MSS.root_sb_MSS_0.MSS_ADLIB_INST     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[3]      MSS_STAMP_PADDR[3]                           3.610       -0.700
+MSS.root_sb_MSS_0.MSS_ADLIB_INST     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[2]      MSS_STAMP_PADDR[2]                           3.611       -0.658
+MSS.root_sb_MSS_0.MSS_ADLIB_INST     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[8]      MSS_STAMP_PADDR[8]                           3.983       -0.613
+MSS.root_sb_MSS_0.MSS_ADLIB_INST     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[6]      MSS_STAMP_PADDR[6]                           3.783       -0.608
+MSS.root_sb_MSS_0.MSS_ADLIB_INST     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[5]      MSS_STAMP_PADDR[5]                           3.695       -0.523
+MSS.root_sb_MSS_0.MSS_ADLIB_INST     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[15]     TM_PADDRS[15]                                3.614       -0.417
+MSS.root_sb_MSS_0.MSS_ADLIB_INST     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_SEL          root_sb_MSS_TMP_0_FIC_0_APB_MASTER_PSELx     3.524       -0.391
+MSS.root_sb_MSS_0.MSS_ADLIB_INST     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[7]      MSS_STAMP_PADDR[7]                           3.628       -0.331
+MSS.root_sb_MSS_0.MSS_ADLIB_INST     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[12]     TM_PADDRS[12]                                3.713       -0.245
 =================================================================================================================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                                     Starting                                                                                                                Required           
-Instance                             Reference                                     Type        Pin             Net                                           Time         Slack 
-                                     Clock                                                                                                                                      
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-MSS.root_sb_MSS_0.MSS_ADLIB_INST     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_READY     root_sb_MSS_TMP_0_FIC_0_APB_MASTER_PREADY     8.471        -0.359
-STAMP5.PRDATA[0]                     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     SLE         EN              un1_reset_n_inv_i                             9.662        0.340 
-STAMP4.PRDATA[0]                     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     SLE         EN              un1_reset_n_inv_i                             9.662        0.340 
-STAMP2.PRDATA[0]                     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     SLE         EN              un1_reset_n_inv_i                             9.662        0.340 
-STAMP3.PRDATA[0]                     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     SLE         EN              un1_reset_n_inv_i                             9.662        0.340 
-STAMP2.PRDATA[1]                     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     SLE         EN              un1_reset_n_inv_i                             9.662        0.340 
-STAMP4.PRDATA[1]                     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     SLE         EN              un1_reset_n_inv_i                             9.662        0.340 
-STAMP5.PRDATA[1]                     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     SLE         EN              un1_reset_n_inv_i                             9.662        0.340 
-STAMP3.PRDATA[1]                     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     SLE         EN              un1_reset_n_inv_i                             9.662        0.340 
-STAMP5.PRDATA[2]                     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     SLE         EN              un1_reset_n_inv_i                             9.662        0.340 
-================================================================================================================================================================================
+                      Starting                                                                           Required           
+Instance              Reference                                     Type     Pin     Net                 Time         Slack 
+                      Clock                                                                                                 
+----------------------------------------------------------------------------------------------------------------------------
+STAMP5.PRDATA[16]     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     SLE      EN      PRDATA_or_1[17]     9.662        -1.152
+STAMP4.PRDATA[16]     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     SLE      EN      PRDATA_or_0[17]     9.662        -1.152
+STAMP3.PRDATA[16]     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     SLE      EN      PRDATA_or[17]       9.662        -1.152
+STAMP4.PRDATA[17]     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     SLE      EN      PRDATA_or_0[17]     9.662        -1.152
+STAMP5.PRDATA[17]     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     SLE      EN      PRDATA_or_1[17]     9.662        -1.152
+STAMP3.PRDATA[17]     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     SLE      EN      PRDATA_or[17]       9.662        -1.152
+STAMP4.PRDATA[18]     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     SLE      EN      PRDATA_or_0[17]     9.662        -1.152
+STAMP3.PRDATA[18]     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     SLE      EN      PRDATA_or[17]       9.662        -1.152
+STAMP5.PRDATA[18]     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     SLE      EN      PRDATA_or_1[17]     9.662        -1.152
+STAMP4.PRDATA[19]     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     SLE      EN      PRDATA_or_0[17]     9.662        -1.152
+============================================================================================================================
 
 
 
@@ -333,181 +325,211 @@ Worst Path Information
 
 Path information for path number 1: 
       Requested Period:                      10.000
-    - Setup time:                            1.529
+    - Setup time:                            0.338
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         8.471
+    = Required time:                         9.662
 
-    - Propagation time:                      8.831
+    - Propagation time:                      10.815
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     -0.360
+    = Slack (critical) :                     -1.152
 
-    Number of logic level(s):                3
-    Starting point:                          MSS.root_sb_MSS_0.MSS_ADLIB_INST / F_HM0_ADDR[13]
-    Ending point:                            MSS.root_sb_MSS_0.MSS_ADLIB_INST / F_HM0_READY
+    Number of logic level(s):                5
+    Starting point:                          MSS.root_sb_MSS_0.MSS_ADLIB_INST / F_HM0_ADDR[9]
+    Ending point:                            STAMP5.PRDATA[16] / EN
     The start point is clocked by            root_sb_CCC_0_FCCC|GL0_net_inferred_clock [rising] (rise=0.000 fall=5.000 period=10.000) on pin CLK_BASE
-    The end   point is clocked by            root_sb_CCC_0_FCCC|GL0_net_inferred_clock [rising] (rise=0.000 fall=5.000 period=10.000) on pin CLK_BASE
+    The end   point is clocked by            root_sb_CCC_0_FCCC|GL0_net_inferred_clock [rising] (rise=0.000 fall=5.000 period=10.000) on pin CLK
 
-Instance / Net                                            Pin                Pin               Arrival     No. of    
-Name                                          Type        Name               Dir     Delay     Time        Fan Out(s)
----------------------------------------------------------------------------------------------------------------------
-MSS.root_sb_MSS_0.MSS_ADLIB_INST              MSS_010     F_HM0_ADDR[13]     Out     3.682     3.682 f     -         
-TM_PADDRS[13]                                 Net         -                  -       0.815     -           4         
-MSS.CoreAPB3_0.iPSELS_raw_1_0_a2[2]           CFG3        C                  In      -         4.497 f     -         
-MSS.CoreAPB3_0.iPSELS_raw_1_0_a2[2]           CFG3        Y                  Out     0.210     4.706 f     -         
-PSELSBUS[1]                                   Net         -                  -       2.207     -           133       
-MSS.root_sb_MSS_0.MSS_ADLIB_INST_RNO_1        CFG4        D                  In      -         6.913 f     -         
-MSS.root_sb_MSS_0.MSS_ADLIB_INST_RNO_1        CFG4        Y                  Out     0.326     7.239 r     -         
-N_11_0                                        Net         -                  -       0.248     -           1         
-MSS.root_sb_MSS_0.MSS_ADLIB_INST_RNO          CFG3        C                  In      -         7.488 r     -         
-MSS.root_sb_MSS_0.MSS_ADLIB_INST_RNO          CFG3        Y                  Out     0.226     7.713 f     -         
-root_sb_MSS_TMP_0_FIC_0_APB_MASTER_PREADY     Net         -                  -       1.117     -           1         
-MSS.root_sb_MSS_0.MSS_ADLIB_INST              MSS_010     F_HM0_READY        In      -         8.831 f     -         
-=====================================================================================================================
-Total path delay (propagation time + setup) of 10.360 is 5.973(57.7%) logic and 4.387(42.3%) route.
+Instance / Net                                   Pin               Pin               Arrival      No. of    
+Name                                 Type        Name              Dir     Delay     Time         Fan Out(s)
+------------------------------------------------------------------------------------------------------------
+MSS.root_sb_MSS_0.MSS_ADLIB_INST     MSS_010     F_HM0_ADDR[9]     Out     3.771     3.771 f      -         
+MSS_STAMP_PADDR[9]                   Net         -                 -       2.387     -            273       
+STAMP5.spi.g0_1_4                    CFG4        D                 In      -         6.158 f      -         
+STAMP5.spi.g0_1_4                    CFG4        Y                 Out     0.288     6.446 f      -         
+g0_1_4                               Net         -                 -       0.248     -            1         
+STAMP5.spi.g0_1                      CFG4        D                 In      -         6.694 f      -         
+STAMP5.spi.g0_1                      CFG4        Y                 Out     0.288     6.982 f      -         
+un80_paddr                           Net         -                 -       0.745     -            3         
+STAMP5.spi.g0_0                      CFG4        B                 In      -         7.727 f      -         
+STAMP5.spi.g0_0                      CFG4        Y                 Out     0.164     7.891 f      -         
+un89_paddr                           Net         -                 -       0.497     -            2         
+STAMP5.spi.g0                        CFG2        A                 In      -         8.388 f      -         
+STAMP5.spi.g0                        CFG2        Y                 Out     0.087     8.476 f      -         
+un1_reset_n_inv_i                    Net         -                 -       1.155     -            19        
+STAMP5.PRDATA_or[17]                 CFG2        A                 In      -         9.630 f      -         
+STAMP5.PRDATA_or[17]                 CFG2        Y                 Out     0.087     9.717 f      -         
+PRDATA_or_1[17]                      Net         -                 -       1.097     -            14        
+STAMP5.PRDATA[16]                    SLE         EN                In      -         10.815 f     -         
+============================================================================================================
+Total path delay (propagation time + setup) of 11.152 is 5.022(45.0%) logic and 6.130(55.0%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 2: 
       Requested Period:                      10.000
-    - Setup time:                            1.529
+    - Setup time:                            0.338
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         8.471
+    = Required time:                         9.662
 
-    - Propagation time:                      8.705
+    - Propagation time:                      10.815
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -0.234
+    = Slack (critical) :                     -1.152
 
-    Number of logic level(s):                3
-    Starting point:                          MSS.root_sb_MSS_0.MSS_ADLIB_INST / F_HM0_ADDR[13]
-    Ending point:                            MSS.root_sb_MSS_0.MSS_ADLIB_INST / F_HM0_READY
+    Number of logic level(s):                5
+    Starting point:                          MSS.root_sb_MSS_0.MSS_ADLIB_INST / F_HM0_ADDR[9]
+    Ending point:                            STAMP4.PRDATA[16] / EN
     The start point is clocked by            root_sb_CCC_0_FCCC|GL0_net_inferred_clock [rising] (rise=0.000 fall=5.000 period=10.000) on pin CLK_BASE
-    The end   point is clocked by            root_sb_CCC_0_FCCC|GL0_net_inferred_clock [rising] (rise=0.000 fall=5.000 period=10.000) on pin CLK_BASE
+    The end   point is clocked by            root_sb_CCC_0_FCCC|GL0_net_inferred_clock [rising] (rise=0.000 fall=5.000 period=10.000) on pin CLK
 
-Instance / Net                                            Pin                Pin               Arrival     No. of    
-Name                                          Type        Name               Dir     Delay     Time        Fan Out(s)
----------------------------------------------------------------------------------------------------------------------
-MSS.root_sb_MSS_0.MSS_ADLIB_INST              MSS_010     F_HM0_ADDR[13]     Out     3.682     3.682 f     -         
-TM_PADDRS[13]                                 Net         -                  -       0.815     -           4         
-MSS.CoreAPB3_0.iPSELS_raw_1_0_a2[2]           CFG3        C                  In      -         4.497 f     -         
-MSS.CoreAPB3_0.iPSELS_raw_1_0_a2[2]           CFG3        Y                  Out     0.210     4.706 f     -         
-PSELSBUS[1]                                   Net         -                  -       2.207     -           133       
-MSS.root_sb_MSS_0.MSS_ADLIB_INST_RNO_0        CFG4        D                  In      -         6.913 f     -         
-MSS.root_sb_MSS_0.MSS_ADLIB_INST_RNO_0        CFG4        Y                  Out     0.326     7.239 r     -         
-N_6                                           Net         -                  -       0.248     -           1         
-MSS.root_sb_MSS_0.MSS_ADLIB_INST_RNO          CFG3        A                  In      -         7.488 r     -         
-MSS.root_sb_MSS_0.MSS_ADLIB_INST_RNO          CFG3        Y                  Out     0.100     7.588 f     -         
-root_sb_MSS_TMP_0_FIC_0_APB_MASTER_PREADY     Net         -                  -       1.117     -           1         
-MSS.root_sb_MSS_0.MSS_ADLIB_INST              MSS_010     F_HM0_READY        In      -         8.705 f     -         
-=====================================================================================================================
-Total path delay (propagation time + setup) of 10.234 is 5.847(57.1%) logic and 4.387(42.9%) route.
+Instance / Net                                   Pin               Pin               Arrival      No. of    
+Name                                 Type        Name              Dir     Delay     Time         Fan Out(s)
+------------------------------------------------------------------------------------------------------------
+MSS.root_sb_MSS_0.MSS_ADLIB_INST     MSS_010     F_HM0_ADDR[9]     Out     3.771     3.771 f      -         
+MSS_STAMP_PADDR[9]                   Net         -                 -       2.387     -            273       
+STAMP4.spi.g0_1_4                    CFG4        D                 In      -         6.158 f      -         
+STAMP4.spi.g0_1_4                    CFG4        Y                 Out     0.288     6.446 f      -         
+g0_1_4                               Net         -                 -       0.248     -            1         
+STAMP4.spi.g0_1                      CFG4        D                 In      -         6.694 f      -         
+STAMP4.spi.g0_1                      CFG4        Y                 Out     0.288     6.982 f      -         
+un80_paddr                           Net         -                 -       0.745     -            3         
+STAMP4.spi.g0_0                      CFG4        B                 In      -         7.727 f      -         
+STAMP4.spi.g0_0                      CFG4        Y                 Out     0.164     7.891 f      -         
+un89_paddr                           Net         -                 -       0.497     -            2         
+STAMP4.spi.g0                        CFG2        A                 In      -         8.388 f      -         
+STAMP4.spi.g0                        CFG2        Y                 Out     0.087     8.476 f      -         
+un1_reset_n_inv_i                    Net         -                 -       1.155     -            19        
+STAMP4.PRDATA_or[17]                 CFG2        A                 In      -         9.630 f      -         
+STAMP4.PRDATA_or[17]                 CFG2        Y                 Out     0.087     9.717 f      -         
+PRDATA_or_0[17]                      Net         -                 -       1.097     -            14        
+STAMP4.PRDATA[16]                    SLE         EN                In      -         10.815 f     -         
+============================================================================================================
+Total path delay (propagation time + setup) of 11.152 is 5.022(45.0%) logic and 6.130(55.0%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 3: 
       Requested Period:                      10.000
-    - Setup time:                            1.529
+    - Setup time:                            0.338
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         8.471
+    = Required time:                         9.662
 
-    - Propagation time:                      8.632
+    - Propagation time:                      10.815
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -0.161
+    = Slack (critical) :                     -1.152
 
-    Number of logic level(s):                3
-    Starting point:                          MSS.root_sb_MSS_0.MSS_ADLIB_INST / F_HM0_ADDR[15]
-    Ending point:                            MSS.root_sb_MSS_0.MSS_ADLIB_INST / F_HM0_READY
+    Number of logic level(s):                5
+    Starting point:                          MSS.root_sb_MSS_0.MSS_ADLIB_INST / F_HM0_ADDR[9]
+    Ending point:                            STAMP3.PRDATA[16] / EN
     The start point is clocked by            root_sb_CCC_0_FCCC|GL0_net_inferred_clock [rising] (rise=0.000 fall=5.000 period=10.000) on pin CLK_BASE
-    The end   point is clocked by            root_sb_CCC_0_FCCC|GL0_net_inferred_clock [rising] (rise=0.000 fall=5.000 period=10.000) on pin CLK_BASE
+    The end   point is clocked by            root_sb_CCC_0_FCCC|GL0_net_inferred_clock [rising] (rise=0.000 fall=5.000 period=10.000) on pin CLK
 
-Instance / Net                                            Pin                Pin               Arrival     No. of    
-Name                                          Type        Name               Dir     Delay     Time        Fan Out(s)
----------------------------------------------------------------------------------------------------------------------
-MSS.root_sb_MSS_0.MSS_ADLIB_INST              MSS_010     F_HM0_ADDR[15]     Out     3.614     3.614 f     -         
-TM_PADDRS[15]                                 Net         -                  -       0.745     -           3         
-MSS.CoreAPB3_0.iPSELS_raw_1_0_a2[2]           CFG3        B                  In      -         4.359 f     -         
-MSS.CoreAPB3_0.iPSELS_raw_1_0_a2[2]           CFG3        Y                  Out     0.148     4.508 r     -         
-PSELSBUS[1]                                   Net         -                  -       2.207     -           133       
-MSS.root_sb_MSS_0.MSS_ADLIB_INST_RNO_1        CFG4        D                  In      -         6.715 r     -         
-MSS.root_sb_MSS_0.MSS_ADLIB_INST_RNO_1        CFG4        Y                  Out     0.326     7.041 r     -         
-N_11_0                                        Net         -                  -       0.248     -           1         
-MSS.root_sb_MSS_0.MSS_ADLIB_INST_RNO          CFG3        C                  In      -         7.289 r     -         
-MSS.root_sb_MSS_0.MSS_ADLIB_INST_RNO          CFG3        Y                  Out     0.226     7.515 f     -         
-root_sb_MSS_TMP_0_FIC_0_APB_MASTER_PREADY     Net         -                  -       1.117     -           1         
-MSS.root_sb_MSS_0.MSS_ADLIB_INST              MSS_010     F_HM0_READY        In      -         8.632 f     -         
-=====================================================================================================================
-Total path delay (propagation time + setup) of 10.161 is 5.843(57.5%) logic and 4.318(42.5%) route.
+Instance / Net                                   Pin               Pin               Arrival      No. of    
+Name                                 Type        Name              Dir     Delay     Time         Fan Out(s)
+------------------------------------------------------------------------------------------------------------
+MSS.root_sb_MSS_0.MSS_ADLIB_INST     MSS_010     F_HM0_ADDR[9]     Out     3.771     3.771 f      -         
+MSS_STAMP_PADDR[9]                   Net         -                 -       2.387     -            273       
+STAMP3.spi.g0_1_4                    CFG4        D                 In      -         6.158 f      -         
+STAMP3.spi.g0_1_4                    CFG4        Y                 Out     0.288     6.446 f      -         
+g0_1_4                               Net         -                 -       0.248     -            1         
+STAMP3.spi.g0_1                      CFG4        D                 In      -         6.694 f      -         
+STAMP3.spi.g0_1                      CFG4        Y                 Out     0.288     6.982 f      -         
+un80_paddr                           Net         -                 -       0.745     -            3         
+STAMP3.spi.g0_0                      CFG4        B                 In      -         7.727 f      -         
+STAMP3.spi.g0_0                      CFG4        Y                 Out     0.164     7.891 f      -         
+un89_paddr                           Net         -                 -       0.497     -            2         
+STAMP3.spi.g0                        CFG2        A                 In      -         8.388 f      -         
+STAMP3.spi.g0                        CFG2        Y                 Out     0.087     8.476 f      -         
+un1_reset_n_inv_i                    Net         -                 -       1.155     -            19        
+STAMP3.PRDATA_or[17]                 CFG2        A                 In      -         9.630 f      -         
+STAMP3.PRDATA_or[17]                 CFG2        Y                 Out     0.087     9.717 f      -         
+PRDATA_or[17]                        Net         -                 -       1.097     -            14        
+STAMP3.PRDATA[16]                    SLE         EN                In      -         10.815 f     -         
+============================================================================================================
+Total path delay (propagation time + setup) of 11.152 is 5.022(45.0%) logic and 6.130(55.0%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 4: 
       Requested Period:                      10.000
-    - Setup time:                            1.529
+    - Setup time:                            0.338
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         8.471
+    = Required time:                         9.662
 
-    - Propagation time:                      8.507
+    - Propagation time:                      10.815
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -0.036
+    = Slack (critical) :                     -1.152
 
-    Number of logic level(s):                3
-    Starting point:                          MSS.root_sb_MSS_0.MSS_ADLIB_INST / F_HM0_ADDR[15]
-    Ending point:                            MSS.root_sb_MSS_0.MSS_ADLIB_INST / F_HM0_READY
+    Number of logic level(s):                5
+    Starting point:                          MSS.root_sb_MSS_0.MSS_ADLIB_INST / F_HM0_ADDR[9]
+    Ending point:                            STAMP5.PRDATA[17] / EN
     The start point is clocked by            root_sb_CCC_0_FCCC|GL0_net_inferred_clock [rising] (rise=0.000 fall=5.000 period=10.000) on pin CLK_BASE
-    The end   point is clocked by            root_sb_CCC_0_FCCC|GL0_net_inferred_clock [rising] (rise=0.000 fall=5.000 period=10.000) on pin CLK_BASE
+    The end   point is clocked by            root_sb_CCC_0_FCCC|GL0_net_inferred_clock [rising] (rise=0.000 fall=5.000 period=10.000) on pin CLK
 
-Instance / Net                                            Pin                Pin               Arrival     No. of    
-Name                                          Type        Name               Dir     Delay     Time        Fan Out(s)
----------------------------------------------------------------------------------------------------------------------
-MSS.root_sb_MSS_0.MSS_ADLIB_INST              MSS_010     F_HM0_ADDR[15]     Out     3.614     3.614 f     -         
-TM_PADDRS[15]                                 Net         -                  -       0.745     -           3         
-MSS.CoreAPB3_0.iPSELS_raw_1_0_a2[2]           CFG3        B                  In      -         4.359 f     -         
-MSS.CoreAPB3_0.iPSELS_raw_1_0_a2[2]           CFG3        Y                  Out     0.148     4.508 r     -         
-PSELSBUS[1]                                   Net         -                  -       2.207     -           133       
-MSS.root_sb_MSS_0.MSS_ADLIB_INST_RNO_0        CFG4        D                  In      -         6.715 r     -         
-MSS.root_sb_MSS_0.MSS_ADLIB_INST_RNO_0        CFG4        Y                  Out     0.326     7.041 r     -         
-N_6                                           Net         -                  -       0.248     -           1         
-MSS.root_sb_MSS_0.MSS_ADLIB_INST_RNO          CFG3        A                  In      -         7.289 r     -         
-MSS.root_sb_MSS_0.MSS_ADLIB_INST_RNO          CFG3        Y                  Out     0.100     7.390 f     -         
-root_sb_MSS_TMP_0_FIC_0_APB_MASTER_PREADY     Net         -                  -       1.117     -           1         
-MSS.root_sb_MSS_0.MSS_ADLIB_INST              MSS_010     F_HM0_READY        In      -         8.507 f     -         
-=====================================================================================================================
-Total path delay (propagation time + setup) of 10.036 is 5.718(57.0%) logic and 4.318(43.0%) route.
+Instance / Net                                   Pin               Pin               Arrival      No. of    
+Name                                 Type        Name              Dir     Delay     Time         Fan Out(s)
+------------------------------------------------------------------------------------------------------------
+MSS.root_sb_MSS_0.MSS_ADLIB_INST     MSS_010     F_HM0_ADDR[9]     Out     3.771     3.771 f      -         
+MSS_STAMP_PADDR[9]                   Net         -                 -       2.387     -            273       
+STAMP5.spi.g0_1_4                    CFG4        D                 In      -         6.158 f      -         
+STAMP5.spi.g0_1_4                    CFG4        Y                 Out     0.288     6.446 f      -         
+g0_1_4                               Net         -                 -       0.248     -            1         
+STAMP5.spi.g0_1                      CFG4        D                 In      -         6.694 f      -         
+STAMP5.spi.g0_1                      CFG4        Y                 Out     0.288     6.982 f      -         
+un80_paddr                           Net         -                 -       0.745     -            3         
+STAMP5.spi.g0_0                      CFG4        B                 In      -         7.727 f      -         
+STAMP5.spi.g0_0                      CFG4        Y                 Out     0.164     7.891 f      -         
+un89_paddr                           Net         -                 -       0.497     -            2         
+STAMP5.spi.g0                        CFG2        A                 In      -         8.388 f      -         
+STAMP5.spi.g0                        CFG2        Y                 Out     0.087     8.476 f      -         
+un1_reset_n_inv_i                    Net         -                 -       1.155     -            19        
+STAMP5.PRDATA_or[17]                 CFG2        A                 In      -         9.630 f      -         
+STAMP5.PRDATA_or[17]                 CFG2        Y                 Out     0.087     9.717 f      -         
+PRDATA_or_1[17]                      Net         -                 -       1.097     -            14        
+STAMP5.PRDATA[17]                    SLE         EN                In      -         10.815 f     -         
+============================================================================================================
+Total path delay (propagation time + setup) of 11.152 is 5.022(45.0%) logic and 6.130(55.0%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 5: 
       Requested Period:                      10.000
-    - Setup time:                            1.529
+    - Setup time:                            0.338
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         8.471
+    = Required time:                         9.662
 
-    - Propagation time:                      8.481
+    - Propagation time:                      10.815
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -0.010
+    = Slack (critical) :                     -1.152
 
-    Number of logic level(s):                3
-    Starting point:                          MSS.root_sb_MSS_0.MSS_ADLIB_INST / F_HM0_SEL
-    Ending point:                            MSS.root_sb_MSS_0.MSS_ADLIB_INST / F_HM0_READY
+    Number of logic level(s):                5
+    Starting point:                          MSS.root_sb_MSS_0.MSS_ADLIB_INST / F_HM0_ADDR[9]
+    Ending point:                            STAMP5.PRDATA[30] / EN
     The start point is clocked by            root_sb_CCC_0_FCCC|GL0_net_inferred_clock [rising] (rise=0.000 fall=5.000 period=10.000) on pin CLK_BASE
-    The end   point is clocked by            root_sb_CCC_0_FCCC|GL0_net_inferred_clock [rising] (rise=0.000 fall=5.000 period=10.000) on pin CLK_BASE
+    The end   point is clocked by            root_sb_CCC_0_FCCC|GL0_net_inferred_clock [rising] (rise=0.000 fall=5.000 period=10.000) on pin CLK
 
-Instance / Net                                            Pin             Pin               Arrival     No. of    
-Name                                          Type        Name            Dir     Delay     Time        Fan Out(s)
-------------------------------------------------------------------------------------------------------------------
-MSS.root_sb_MSS_0.MSS_ADLIB_INST              MSS_010     F_HM0_SEL       Out     3.524     3.524 f     -         
-root_sb_MSS_TMP_0_FIC_0_APB_MASTER_PSELx      Net         -               -       0.745     -           3         
-MSS.CoreAPB3_0.iPSELS_raw_1_0_a2[2]           CFG3        A               In      -         4.269 f     -         
-MSS.CoreAPB3_0.iPSELS_raw_1_0_a2[2]           CFG3        Y               Out     0.087     4.356 f     -         
-PSELSBUS[1]                                   Net         -               -       2.207     -           133       
-MSS.root_sb_MSS_0.MSS_ADLIB_INST_RNO_1        CFG4        D               In      -         6.563 f     -         
-MSS.root_sb_MSS_0.MSS_ADLIB_INST_RNO_1        CFG4        Y               Out     0.326     6.889 r     -         
-N_11_0                                        Net         -               -       0.248     -           1         
-MSS.root_sb_MSS_0.MSS_ADLIB_INST_RNO          CFG3        C               In      -         7.138 r     -         
-MSS.root_sb_MSS_0.MSS_ADLIB_INST_RNO          CFG3        Y               Out     0.226     7.364 f     -         
-root_sb_MSS_TMP_0_FIC_0_APB_MASTER_PREADY     Net         -               -       1.117     -           1         
-MSS.root_sb_MSS_0.MSS_ADLIB_INST              MSS_010     F_HM0_READY     In      -         8.481 f     -         
-==================================================================================================================
-Total path delay (propagation time + setup) of 10.010 is 5.692(56.9%) logic and 4.318(43.1%) route.
+Instance / Net                                   Pin               Pin               Arrival      No. of    
+Name                                 Type        Name              Dir     Delay     Time         Fan Out(s)
+------------------------------------------------------------------------------------------------------------
+MSS.root_sb_MSS_0.MSS_ADLIB_INST     MSS_010     F_HM0_ADDR[9]     Out     3.771     3.771 f      -         
+MSS_STAMP_PADDR[9]                   Net         -                 -       2.387     -            273       
+STAMP5.spi.g0_1_4                    CFG4        D                 In      -         6.158 f      -         
+STAMP5.spi.g0_1_4                    CFG4        Y                 Out     0.288     6.446 f      -         
+g0_1_4                               Net         -                 -       0.248     -            1         
+STAMP5.spi.g0_1                      CFG4        D                 In      -         6.694 f      -         
+STAMP5.spi.g0_1                      CFG4        Y                 Out     0.288     6.982 f      -         
+un80_paddr                           Net         -                 -       0.745     -            3         
+STAMP5.spi.g0_0                      CFG4        B                 In      -         7.727 f      -         
+STAMP5.spi.g0_0                      CFG4        Y                 Out     0.164     7.891 f      -         
+un89_paddr                           Net         -                 -       0.497     -            2         
+STAMP5.spi.g0                        CFG2        A                 In      -         8.388 f      -         
+STAMP5.spi.g0                        CFG2        Y                 Out     0.087     8.476 f      -         
+un1_reset_n_inv_i                    Net         -                 -       1.155     -            19        
+STAMP5.PRDATA_or[17]                 CFG2        A                 In      -         9.630 f      -         
+STAMP5.PRDATA_or[17]                 CFG2        Y                 Out     0.087     9.717 f      -         
+PRDATA_or_1[17]                      Net         -                 -       1.097     -            14        
+STAMP5.PRDATA[30]                    SLE         EN                In      -         10.815 f     -         
+============================================================================================================
+Total path delay (propagation time + setup) of 11.152 is 5.022(45.0%) logic and 6.130(55.0%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -578,10 +600,10 @@ Path delay compensated for clock skew. Clock skew is added to clock-to-out value
 
 Timing exceptions that could not be applied
 
-Finished final timing analysis (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 228MB peak: 234MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:10s; Memory used current: 224MB peak: 229MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 228MB peak: 234MB)
+Finished timing report (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:10s; Memory used current: 224MB peak: 229MB)
 
 ---------------------------------------
 Resource Usage Report for root 
@@ -595,15 +617,13 @@ MSS_010         1 use
 RCOSC_25_50MHZ  1 use
 RCOSC_25_50MHZ_FAB  1 use
 SYSRESET        1 use
-CFG1           31 uses
-CFG2           483 uses
-CFG3           656 uses
-CFG4           1211 uses
+CFG1           34 uses
+CFG2           543 uses
+CFG3           813 uses
+CFG4           1070 uses
 
 Carry cells:
 ARI1            648 uses - used for arithmetic functions
-ARI1            64 uses - used for Wide-Mux implementation
-Total ARI1      712 uses
 
 
 Sequential Cells: 
@@ -620,7 +640,7 @@ TRIBUFF        6 uses
 
 Global Clock Buffers: 4
 
-Total LUTs:    3093
+Total LUTs:    3108
 
 Extra resources required for RAM and MACC interface logic during P&R:
 
@@ -629,13 +649,13 @@ RAM1K18  Interface Logic : SLEs = 0; LUTs = 0;
 MACC     Interface Logic : SLEs = 0; LUTs = 0;
 
 Total number of SLEs after P&R:  2096 + 0 + 0 + 0 = 2096;
-Total number of LUTs after P&R:  3093 + 0 + 0 + 0 = 3093;
+Total number of LUTs after P&R:  3108 + 0 + 0 + 0 = 3108;
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 70MB peak: 234MB)
+At Mapper Exit (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:10s; Memory used current: 70MB peak: 229MB)
 
-Process took 0h:00m:11s realtime, 0h:00m:11s cputime
-# Sat Mar 19 23:50:17 2022
+Process took 0h:00m:10s realtime, 0h:00m:10s cputime
+# Thu Jun  2 21:33:18 2022
 
 ###########################################################]

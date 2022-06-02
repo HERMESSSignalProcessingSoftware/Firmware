@@ -100,7 +100,7 @@
 #define MSS_TIMER_H_
 
 
-#include "../../../sf2drivers/CMSIS/m2sxxx.h"
+#include "../../CMSIS/m2sxxx.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -128,7 +128,7 @@ typedef enum __mss_timer_mode_t
 /*-------------------------------------------------------------------------*//**
   The MSS_TIM1_init() function initializes the SmartFusion2 MSS Timer block for
   use as a 32-bit timer and selects the operating mode for Timer 1. This function
-  takes the MSS Timer block out of reset in case this hasnï¿½t been done already,
+  takes the MSS Timer block out of reset in case this hasn’t been done already,
   stops Timer 1, disables its interrupt and sets the Timer 1 operating mode.
   Please note that the SmartFusion2 MSS Timer block cannot be used both as a
   64-bit and 32-bit timer. Calling MSS_TIM1_init() will overwrite any previous
@@ -270,7 +270,7 @@ static __INLINE void MSS_TIM1_clear_irq(void)
     TIMER->TIM1_RIS = 1u;
     /*
       To ensure all the previous instructions are completed, data barrier 
-      instruction is used. The ï¿½dsbï¿½ data barriers instruction completes,
+      instruction is used. The “dsb” data barriers instruction completes,
       only after all the previous instruction are completed. 
      */
     __ASM volatile ("dsb");
@@ -279,7 +279,7 @@ static __INLINE void MSS_TIM1_clear_irq(void)
 /*-------------------------------------------------------------------------*//**
   The MSS_TIM2_init() function initializes the SmartFusion2 MSS Timer block for
   use as a 32-bit timer and selects the operating mode for Timer 2. This function
-  takes the MSS Timer block out of reset in case this hasnï¿½t been done already,
+  takes the MSS Timer block out of reset in case this hasn’t been done already,
   stops Timer 2, disables its interrupt and sets the Timer 2 operating mode.
   Note: Please note that the SmartFusion2 MSS Timer block cannot be used both as
   a 64-bit and 32-bit timer. Calling MSS_TIM2_init() will overwrite any previous
@@ -416,7 +416,7 @@ static __INLINE void MSS_TIM2_clear_irq(void)
     TIMER->TIM2_RIS = 1u;
     /*
       To ensure all the previous instructions are completed, data barrier 
-      instruction is used. The ï¿½dsbï¿½ data barriers instruction completes,
+      instruction is used. The “dsb” data barriers instruction completes,
       only after all the previous instruction are completed. 
      */
     __ASM volatile ("dsb");
@@ -425,7 +425,7 @@ static __INLINE void MSS_TIM2_clear_irq(void)
 /*-------------------------------------------------------------------------*//**
   The MSS_TIM64_init() function initializes the SmartFusion2 MSS Timer block for
   use as a single 64-bit timer and selects the operating mode of the timer. This
-  function takes the MSS Timer block out of reset in case this hasnï¿½t been done
+  function takes the MSS Timer block out of reset in case this hasn’t been done
   already, stops the timer, disables its interrupts and sets the timer's
   operating mode.
   Note: Please note that the SmartFusion2 MSS Timer block cannot be used both as
@@ -614,7 +614,7 @@ static __INLINE void MSS_TIM64_clear_irq(void)
     TIMER->TIM64_RIS = 1u;
     /*
       To ensure all the previous instructions are completed, data barrier 
-      instruction is used. The ï¿½dsbï¿½ data barriers instruction completes,
+      instruction is used. The “dsb” data barriers instruction completes,
       only after all the previous instruction are completed. 
      */
     __ASM volatile ("dsb");

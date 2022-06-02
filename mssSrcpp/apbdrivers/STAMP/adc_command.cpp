@@ -1,4 +1,4 @@
-#include "../../components/tools.h"
+#include "../../tools/tools.h"
 #include "adc_command.h"
 
 
@@ -41,7 +41,7 @@ AdcCommand::~AdcCommand () {}
 
 
 bool AdcCommand::operator() (Stamp &stamp, uint8_t adcs) {
-    uint8_t attempt = 0;
+    uint8_t attempt = 1;
     std::string msg;
     do {
         // execute the action
@@ -156,10 +156,14 @@ std::string AdcCommandConfigure::execute (Stamp &stamp, uint8_t adcs) {
                     reader[9] != (fsc[i] & 0xFFU) ||
                     reader[10] != idac0[i] ||
                     reader[11] != idac1[i]) {
-
-                msg += "Invalid configuration for STAMP with base address ";
-                msg += std::to_string(stamp.baseAddr);
-                msg += " ADC ";
+                // invalid configuration detected
+                if (msg.empty()) {
+                    msg += "Invalid configuration for STAMP with base address ";
+                    msg += std::to_string(stamp.baseAddr);
+                    msg += " ADC ";
+                }
+                else
+                    msg += ", ";
                 msg += std::to_string(i);
             }
         }

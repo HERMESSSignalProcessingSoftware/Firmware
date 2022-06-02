@@ -8,11 +8,11 @@
  * SVN $Revision: 7375 $
  * SVN $Date: 2015-05-01 14:57:40 +0100 (Fri, 01 May 2015) $
  */
-#include "../../../sf2drivers/hal/CortexM3/cortex_nvic.h"
+#include "cortex_nvic.h"
 #ifdef MSCC_NO_RELATIVE_PATHS
 #include "mss_assert.h"
 #else
-#include "../../../sf2drivers/CMSIS/mss_assert.h"
+#include "../../CMSIS/mss_assert.h"
 #endif
 
 

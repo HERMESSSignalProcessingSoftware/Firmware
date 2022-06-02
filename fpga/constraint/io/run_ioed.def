@@ -1,8 +1,8 @@
 data HELP_TYPE_DES 2
 data DESIGN root
-data HPATH 'C:/Users/jl/source/repos/hermess/hermess-MCU/hermess/designer/root'
-data CPATH 'C:/Users/jl/source/repos/hermess/hermess-MCU/hermess/constraint/io'
-data CDIR 'C:/Users/jl/source/repos/hermess/hermess-MCU/hermess/constraint'
+data HPATH 'C:/Users/jl/source/repos/hermess/hermess-Firmware/fpga/designer/root'
+data CPATH 'C:/Users/jl/source/repos/hermess/hermess-Firmware/fpga/constraint/io'
+data CDIR 'C:/Users/jl/source/repos/hermess/hermess-Firmware/fpga/constraint'
 data NLV_HIDE_OPTION_DLG 1
 data REGION_DEFCOLOR_EMPTY 2143322112
 data REGION_DEFCOLOR_INCLUSIVE 2147442270
@@ -22,14 +22,15 @@ data VCCI_2.5_VOLTR COM
 data VCCI_3.3_VOLTR COM
 data FLOW_TYPE NEW
 data PLANNER_IOMODE 1
-data AFL 'C:/Users/jl/source/repos/hermess/hermess-MCU/hermess/designer/root/COMPILE/root.afl'
-data ADL 'C:/Users/jl/source/repos/hermess/hermess-MCU/hermess/designer/root/root.adl'
-data LOC 'C:/Users/jl/source/repos/hermess/hermess-MCU/hermess/designer/root/COMPILE/root.loc'
-data SEG 'C:/Users/jl/source/repos/hermess/hermess-MCU/hermess/designer/root/COMPILE/root.seg'
+data AFL 'C:/Users/jl/source/repos/hermess/hermess-Firmware/fpga/designer/root/root.afl'
+data ADL 'C:/Users/jl/source/repos/hermess/hermess-Firmware/fpga/designer/root/root.adl'
+data LOC 'C:/Users/jl/source/repos/hermess/hermess-Firmware/fpga/designer/root/root.loc'
+data SEG 'C:/Users/jl/source/repos/hermess/hermess-Firmware/fpga/designer/root/root.seg'
+data NMAT_PDC 'C:/Users/jl/source/repos/hermess/hermess-Firmware/fpga/designer/root/root.nmatinit.pdc'
 
-data IO_PDC_0 'C:/Users/jl/source/repos/hermess/hermess-MCU/hermess/constraint/io/user1.pdc'
-data TARGET_IOPDC  'C:/Users/jl/source/repos/hermess/hermess-MCU/hermess/constraint/io/user.pdc'
-data TARGET_FPPDC  'C:/Users/jl/source/repos/hermess/hermess-MCU/hermess/constraint/fp/user.pdc'
+data IO_PDC_0 'C:/Users/jl/source/repos/hermess/hermess-Firmware/fpga/constraint/io/user1.pdc'
+data TARGET_IOPDC  'C:/Users/jl/source/repos/hermess/hermess-Firmware/fpga/constraint/io/user.pdc'
+data TARGET_FPPDC  'C:/Users/jl/source/repos/hermess/hermess-Firmware/fpga/constraint/fp/user.pdc'
 data TARGET_DEVICES_FOR_MIGRATION 'PA4M1000_N '
 data RESTRICTPROBEPINS 1
 data RESTRICTSPIPINS 0

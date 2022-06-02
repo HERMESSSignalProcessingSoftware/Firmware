@@ -41,22 +41,31 @@ Dapi &Dapi::operator<< (const std::string msg) {
 }
 
 
-Dapi &Dapi::operator<< (char const * const msg) {
+Dapi &Dapi::operator<< (const char * const msg) {
     // get message length and add null terminator
     uint32_t strLen = std::strlen(msg) + 1;
 
     // append to transmission queue
-    msgQueue.push(Message((uint8_t const * const) msg, strLen));
+    msgQueue.push(Message((uint8_t*) msg, strLen));
 
     return *this;
 }
 
 
-Dapi::Message::Message (uint8_t const * const ptr, const uint32_t size):
+Dapi::Message::Message (const uint8_t * const ptr, const uint32_t size):
         size{size}, ptr{nullptr} {
     // get appropriately sized array and make string copy
-    uint8_t *copy = new unsigned char[size];
+    uint8_t *copy = new uint8_t[size];
     std::memcpy(copy, ptr, size);
+    this->ptr = copy;
+}
+
+
+Dapi::Message::Message (const Message &other):
+        size{other.size}, ptr{nullptr} {
+    // get appropriately sized array and make string copy
+    uint8_t *copy = new uint8_t[size];
+    std::memcpy(copy, other.ptr, size);
     this->ptr = copy;
 }
 
@@ -68,8 +77,10 @@ Dapi::Message::~Message () {
 
 
 Dapi::Dapi (): transferInProgress{false} {
-    MSS_UART_init(&g_mss_uart0, MSS_UART_57600_BAUD,
+    MSS_UART_init(&g_mss_uart0, MSS_UART_115200_BAUD,
             MSS_UART_DATA_8_BITS
             | MSS_UART_EVEN_PARITY
             | MSS_UART_ONE_STOP_BIT);
+    MSS_UART_set_tx_endian(&g_mss_uart0, MSS_UART_LITTLEEND);
+    MSS_UART_set_rx_endian(&g_mss_uart0, MSS_UART_LITTLEEND);
 }

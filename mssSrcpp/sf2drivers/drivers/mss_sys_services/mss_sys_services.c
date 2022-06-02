@@ -6,11 +6,10 @@
  * SVN $Revision: 8688 $
  * SVN $Date: 2016-11-27 17:46:49 +0530 (Sun, 27 Nov 2016) $
  */
-#include "../../../sf2drivers/drivers/mss_sys_services/mss_sys_services.h"
-
+#include "mss_sys_services.h"
+#include "mss_comblk.h"
+#include "../../CMSIS/mss_assert.h"
 #include <string.h>
-#include "../../../sf2drivers/CMSIS/mss_assert.h"
-#include "../../../sf2drivers/drivers/mss_sys_services/mss_comblk.h"
 
 /*==============================================================================
  *

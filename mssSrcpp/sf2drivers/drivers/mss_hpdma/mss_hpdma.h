@@ -43,14 +43,14 @@
   
   Data Transfer Control
   The driver provides the following functions to control HPDMA data transfers:
-    - MSS_HPDMA_start()  ï¿½ This function starts a HPDMA data transfer. You must
+    - MSS_HPDMA_start()  – This function starts a HPDMA data transfer. You must
                            provide the source and destination addresses along
                            with transfer size and transfer direction.
-    - MSS_HPDMA_pause()  ï¿½ This function pauses the HPDMA transfer that is
+    - MSS_HPDMA_pause()  – This function pauses the HPDMA transfer that is
                            currently in progress.
-    - MSS_HPDMA_resume() ï¿½ This function resumes a HPDMA transfer that was
+    - MSS_HPDMA_resume() – This function resumes a HPDMA transfer that was
                            previously paused.
-    - MSS_HPDMA_abort()  ï¿½ This function aborts the HPDMA transfer that is
+    - MSS_HPDMA_abort()  – This function aborts the HPDMA transfer that is
                            currently in progress.
     
   Data Transfer Status
@@ -75,7 +75,7 @@
 extern "C" {
 #endif 
 
-#include "../../../sf2drivers/CMSIS/m2sxxx.h"
+#include "../../CMSIS/m2sxxx.h"
 
 /*-------------------------------------------------------------------------*//**
   The HPDMA_TO_DDR constant is used to specify the data transfer direction. It

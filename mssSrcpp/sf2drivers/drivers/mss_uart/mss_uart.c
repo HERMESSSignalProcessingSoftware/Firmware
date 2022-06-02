@@ -7,12 +7,11 @@
  * SVN $Revision: 5610 $
  * SVN $Date: 2013-04-05 18:49:30 +0530 (Fri, 05 Apr 2013) $
  */
-#include "../../../sf2drivers/drivers/mss_uart/mss_uart.h"
-
-#include "../../../sf2drivers/CMSIS/hw_reg_io.h"
-#include "../../../sf2drivers/CMSIS/mss_assert.h"
-#include "../../../sf2drivers/CMSIS/system_m2sxxx.h"
-#include "../../../sf2drivers/drivers/mss_uart/mss_uart_regs.h"
+#include "mss_uart.h"
+#include "mss_uart_regs.h"
+#include "../../CMSIS/mss_assert.h"
+#include "../../CMSIS/hw_reg_io.h"
+#include "../../CMSIS/system_m2sxxx.h"
 
 #ifdef __cplusplus
 extern "C" {

@@ -6,13 +6,13 @@
  * SVN $Revision: 7375 $
  * SVN $Date: 2015-05-01 14:57:40 +0100 (Fri, 01 May 2015) $
  */
-#include "../../sf2drivers/CMSIS/m2sxxx.h"
+#include "m2sxxx.h"
 #if MSCC_NO_RELATIVE_PATHS
 #include "sys_config.h"
 #else
-#include "../../sf2drivers/drivers_config/sys_config/sys_config.h"
+#include "../drivers_config/sys_config/sys_config.h"
 #endif
-#include "../../sf2drivers/CMSIS/sys_init_cfg_types.h"
+#include "sys_init_cfg_types.h"
 
 /*------------------------------------------------------------------------------
   Silicon revisions.

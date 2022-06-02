@@ -11,7 +11,7 @@
 /*==============================================================================
  * Clock configuration
  */
-#include "../../../sf2drivers/drivers_config/sys_config/sys_config_mss_clocks.h"
+#include "sys_config_mss_clocks.h"
  
 /*==============================================================================
  * Memory remapping configuration

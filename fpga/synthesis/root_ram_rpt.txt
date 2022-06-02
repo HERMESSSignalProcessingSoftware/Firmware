@@ -17,7 +17,7 @@ INSTANTIATED     RTL_INSTANCE     PRIMITIVE_TYPE     USER_ATTRIBUTE     MAPPED_I
 
 RTL_INSTANCE                          PRIMITIVE_TYPE     USER_ATTRIBUTE     COMMENTS                                                                    
 --------------------------------------------------------------------------------------------------------------------------------------------------------
-MSS.CoreAPB3_0.iPSELS_raw_11[7:0]     ROM                NA                 Technology does not support initial value. Mapping ROM instance using logic.
+MSS.CoreAPB3_0.iPSELS_raw_10[6:0]     ROM                NA                 Technology does not support initial value. Mapping ROM instance using logic.
 ========================================================================================================================================================
 
 #####  END OF RAM REPORT  #####

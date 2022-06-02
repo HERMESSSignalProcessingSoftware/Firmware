@@ -7,10 +7,9 @@
  *
  */
 
-#include "../../../sf2drivers/drivers_config/sys_config/sys_config.h"
-
-#include "../../../sf2drivers/CMSIS/m2sxxx.h"
-#include "../../../sf2drivers/CMSIS/sys_init_cfg_types.h"
+#include "../../CMSIS/m2sxxx.h"
+#include "../../CMSIS/sys_init_cfg_types.h"
+#include "sys_config.h"
 
 /*==============================================================================
  *                             !!! WARNING !!!

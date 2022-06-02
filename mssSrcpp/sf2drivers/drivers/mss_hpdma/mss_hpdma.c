@@ -6,9 +6,8 @@
  * SVN $Revision: 7146 $
  * SVN $Date: 2015-01-30 15:37:25 +0530 (Fri, 30 Jan 2015) $
  */
-#include "../../../sf2drivers/drivers/mss_hpdma/mss_hpdma.h"
-
-#include "../../../sf2drivers/CMSIS/mss_assert.h"
+#include "../../CMSIS/mss_assert.h"
+#include "mss_hpdma.h"
 
 #ifdef __cplusplus
 extern "C" {

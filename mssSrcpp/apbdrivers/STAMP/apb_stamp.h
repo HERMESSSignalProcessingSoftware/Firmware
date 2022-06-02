@@ -76,6 +76,7 @@ namespace apb_stamp {
         const uint16_t dataSgr2;
         const uint16_t dataRtd;
         const StampStatus status;
+        const uint64_t timestamp;
         StampDataframe (uint32_t Sgr12, uint32_t RtdStatus);
     };
 

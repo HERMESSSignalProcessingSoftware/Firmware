@@ -1,3 +1,3 @@
-project -load "C:/Users/jl/source/repos/hermess/hermess-MCU/hermess/synthesis/root_syn.prj"
+project -load "C:/Users/jl/source/repos/hermess/hermess-Firmware/fpga/synthesis/root_syn.prj"
 project -run
 project -save

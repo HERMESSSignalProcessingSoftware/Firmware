@@ -9,8 +9,8 @@
 #ifndef HAL_H_
 #define HAL_H_
 
-#include "../../sf2drivers/hal/hw_reg_access.h"
 #include "cpu_types.h"
+#include "hw_reg_access.h"
 
 /***************************************************************************//**
  * Enable all interrupts at the processor level.

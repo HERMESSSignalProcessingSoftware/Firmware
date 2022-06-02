@@ -10,7 +10,7 @@
 #ifdef MSCC_NO_RELATIVE_PATHS
 #include "mss_assert.h"
 #else
-#include "../../sf2drivers/CMSIS/mss_assert.h"
+#include "../CMSIS/mss_assert.h"
 #endif
 
 #if defined(NDEBUG)

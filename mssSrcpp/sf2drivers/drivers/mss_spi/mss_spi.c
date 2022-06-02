@@ -7,10 +7,9 @@
  * SVN $Revision: 7709 $
  * SVN $Date: 2015-08-31 14:52:39 +0530 (Mon, 31 Aug 2015) $
  */
-#include "../../../sf2drivers/drivers/mss_spi/mss_spi.h"
-
+#include "mss_spi.h"
+#include "../../CMSIS/mss_assert.h"
 #include <string.h>
-#include "../../../sf2drivers/CMSIS/mss_assert.h"
 
 #ifdef __cplusplus
 extern "C" {

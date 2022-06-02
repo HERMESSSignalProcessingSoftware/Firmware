@@ -1,4 +1,5 @@
 #include "apb_stamp.h"
+#include "../../components/measurement.h"
 
 using namespace apb_stamp;
 
@@ -71,7 +72,8 @@ StampDataframe::StampDataframe (uint32_t dataSgr12, uint32_t dataRtdStatus):
         dataSgr1{(uint16_t) (dataSgr12 >> 16)},
         dataSgr2{(uint16_t) (dataSgr12 & 0xFFFFU)},
         dataRtd{(uint16_t) (dataRtdStatus >> 16)},
-        status(dataRtdStatus & 0xFFFFU) {}
+        status(dataRtdStatus & 0xFFFFU),
+        timestamp{Measurement::getInstance().getTimestamp()} {}
 
 
 
@@ -93,8 +95,10 @@ StampConfig Stamp::readConfig () const {
 
 
 StampDataframe Stamp::readDataframe () const {
-    return StampDataframe(HW_get_32bit_reg(baseAddr | STAMP_REG_READ_SGR12),
-            HW_get_32bit_reg(baseAddr | STAMP_REG_READ_RTDSR));
+    return StampDataframe(
+            HW_get_32bit_reg(baseAddr | STAMP_REG_READ_SGR12 | ModAtomic),
+            HW_get_32bit_reg(baseAddr | STAMP_REG_READ_RTDSR | ModStatusReset)
+    );
 }
 
 
@@ -110,6 +114,7 @@ uint16_t Stamp::readAdc (uint16_t mod) const {
 
 
 void Stamp::enableInterrupt () const {
+    NVIC_ClearPendingIRQ(interruptPin);
     NVIC_EnableIRQ(interruptPin);
 }
 

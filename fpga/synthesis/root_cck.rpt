@@ -13,12 +13,12 @@ Hostname: LUS210
 
 Implementation : synthesis
 
-# Written on Sat Mar 19 23:50:04 2022
+# Written on Thu Jun  2 21:33:07 2022
 
 ##### DESIGN INFO #######################################################
 
 Top View:                "root"
-Constraint File(s):      "C:\Users\jl\source\repos\hermess\hermess-MCU\hermess\designer\root\synthesis.fdc"
+Constraint File(s):      "C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\designer\root\synthesis.fdc"
 
 
 

@@ -1,14 +1,14 @@
 Software Version: 2021.3.0.10
-Opened 'C:\Users\jl\source\repos\hermess\hermess-MCU\hermess\designer\root\root_fp\root.pro'
-PDB file 'C:\Users\jl\source\repos\hermess\hermess-MCU\hermess\designer\root\root.pdb' has been loaded successfully.
-DESIGN : root;  CHECKSUM : ABA8;  PDB_VERSION : 1.9
+Opened 'C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\designer\root\root_fp\root.pro'
+PDB file 'C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\designer\root\root.pdb' has been loaded successfully.
+DESIGN : root;  CHECKSUM : 268E;  PDB_VERSION : 1.9
 Info: Programming Interface selected is JTAG.
-File/Folder 'C:\Users\jl\source\repos\hermess\hermess-MCU\hermess\designer\root\root.ppd' will be overwritten.
-Successfully exported PPD file for currently secured device: 'C:\Users\jl\source\repos\hermess\hermess-MCU\hermess\designer\root\root.ppd'; file programs Fabric and eNVM.
-Fabric component bitstream digest: d010862b1f4e91ec08df30f48e0da6d916a3756933052e7cab55b0702b0bfc17
-eNVM component bitstream digest: 074bd68e74e9af9114ec2ed2ad9585dce6de63c9d56d3655d2d363bbe4d1f006
-Entire bitstream digest: 065383deb6ce06f68de2a8995a9e36d4b478a0547fb22c904ecd05e24837f4e1
-Finished: Sun Mar 20 00:04:33 2022 (Elapsed time 00:00:07)
+File/Folder 'C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\designer\root\root.ppd' will be overwritten.
+Successfully exported PPD file for currently secured device: 'C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\designer\root\root.ppd'; file programs Fabric and eNVM.
+Fabric component bitstream digest: 86bf718a7ec4c4f18eb7284420ee2b436494817b6325aadb88b094fb8036ee44
+eNVM component bitstream digest: ed664ec0c62f8e090ef47a6dffe176175c90c014be7c45fd966ea185f3fbd2d4
+Entire bitstream digest: 2ae7f251c3bff7a76c71367bfcabe872d00d37459ce8b46da30b8ae6f2cf6ee8
+Finished: Thu Jun 02 21:34:30 2022 (Elapsed time 00:00:07)
 
 Project saved.
 Project closed.

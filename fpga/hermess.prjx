@@ -62,13 +62,13 @@ ENDLIST
 LIST FileManager
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf,actgen_cxf"
 STATE="utd"
-TIME="1647730117"
+TIME="1654198183"
 SIZE="3259"
 PARENT="<project>\component\work\root_sb\root_sb.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\coreparameters.vhd,tb_hdl"
 STATE="utd"
-TIME="1647730117"
+TIME="1654198183"
 SIZE="2013"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -189,7 +189,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreResetP\7.1.100\CoreResetP.cxf,actgen_cxf"
 STATE="utd"
-TIME="1647730117"
+TIME="1654198183"
 SIZE="582"
 PARENT="<project>\component\work\root_sb\root_sb.cxf"
 ENDFILE
@@ -209,13 +209,13 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\SgCore\FCCC\2.0.201\FCCC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1647730117"
+TIME="1654198183"
 SIZE="241"
 PARENT="<project>\component\work\root_sb\root_sb.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SgCore\OSC\2.0.101\OSC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1647730119"
+TIME="1654198185"
 SIZE="682"
 PARENT="<project>\component\work\root_sb\root_sb.cxf"
 ENDFILE
@@ -245,171 +245,176 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS\1.1.500\MSS.cxf,actgen_cxf"
 STATE="utd"
-TIME="1647730114"
+TIME="1654198179"
 SIZE="526"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_CCC\1.0.100\MSS_CCC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1647730110"
+TIME="1654198173"
 SIZE="253"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_CC\1.0.100\MSS_CC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1647730110"
+TIME="1654198173"
 SIZE="252"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_CFGM\1.1.100\MSS_CFGM.cxf,actgen_cxf"
 STATE="utd"
-TIME="1647730110"
+TIME="1654198173"
 SIZE="254"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_CM3\1.0.200\MSS_CM3.cxf,actgen_cxf"
 STATE="utd"
-TIME="1647730110"
+TIME="1654198173"
 SIZE="253"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_DDRB\1.0.200\MSS_DDRB.cxf,actgen_cxf"
 STATE="utd"
-TIME="1647730110"
+TIME="1654198173"
 SIZE="254"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_EDAC\1.0.101\MSS_EDAC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1647730110"
+TIME="1654198173"
 SIZE="254"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_ENVM\1.0.101\MSS_ENVM.cxf,actgen_cxf"
 STATE="utd"
-TIME="1647730110"
+TIME="1654198173"
 SIZE="254"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_FIC32\1.0.100\MSS_FIC32.cxf,actgen_cxf"
 STATE="utd"
-TIME="1647730110"
+TIME="1654198173"
 SIZE="255"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_GPIO\1.0.100\MSS_GPIO.cxf,actgen_cxf"
 STATE="utd"
-TIME="1647730110"
+TIME="1654198173"
 SIZE="254"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_INTR\1.0.200\MSS_INTR.cxf,actgen_cxf"
 STATE="utd"
-TIME="1647730110"
+TIME="1654198173"
 SIZE="254"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_MMUART\1.0.100\MSS_MMUART.cxf,actgen_cxf"
 STATE="utd"
-TIME="1647730110"
+TIME="1654198173"
 SIZE="256"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_RESET\1.0.100\MSS_RESET.cxf,actgen_cxf"
 STATE="utd"
-TIME="1647730110"
+TIME="1654198173"
 SIZE="255"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_SECURITY\1.0.100\MSS_SECURITY.cxf,actgen_cxf"
 STATE="utd"
-TIME="1647730110"
+TIME="1654198173"
 SIZE="258"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_SPI\1.0.100\MSS_SPI.cxf,actgen_cxf"
 STATE="utd"
-TIME="1647730110"
+TIME="1654198173"
 SIZE="253"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_SWITCH\1.0.101\MSS_SWITCH.cxf,actgen_cxf"
 STATE="utd"
-TIME="1647730110"
+TIME="1654198173"
 SIZE="256"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_WATCHDOG\1.0.100\MSS_WATCHDOG.cxf,actgen_cxf"
 STATE="utd"
-TIME="1647730110"
+TIME="1654198173"
 SIZE="258"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
+VALUE "<project>\component\work\DESIGN_FIRMWARE\DESIGN_FIRMWARE.cxf,actgen_cxf"
+STATE="utd"
+TIME="1654198670"
+SIZE="2298"
+ENDFILE
 VALUE "<project>\component\work\root\root.cxf,actgen_cxf"
 STATE="utd"
-TIME="1647730189"
+TIME="1654199089"
 SIZE="14227"
 ENDFILE
 VALUE "<project>\component\work\root\root.vhd,hdl"
 STATE="utd"
-TIME="1647730188"
-SIZE="35199"
+TIME="1654198349"
+SIZE="33500"
 PARENT="<project>\component\work\root\root.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\root_sb\CCC_0\root_sb_CCC_0_FCCC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1647730117"
+TIME="1654198183"
 SIZE="689"
 PARENT="<project>\component\work\root_sb\root_sb.cxf"
 ENDFILE
 VALUE "<project>\component\work\root_sb\CCC_0\root_sb_CCC_0_FCCC.vhd,hdl"
 STATE="utd"
-TIME="1647730117"
+TIME="1654198183"
 SIZE="5562"
 PARENT="<project>\component\work\root_sb\CCC_0\root_sb_CCC_0_FCCC.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\root_sb\FABOSC_0\root_sb_FABOSC_0_OSC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1647730119"
+TIME="1654198185"
 SIZE="462"
 PARENT="<project>\component\work\root_sb\root_sb.cxf"
 ENDFILE
 VALUE "<project>\component\work\root_sb\FABOSC_0\root_sb_FABOSC_0_OSC.vhd,hdl"
 STATE="utd"
-TIME="1647730119"
+TIME="1654198185"
 SIZE="1570"
 PARENT="<project>\component\work\root_sb\FABOSC_0\root_sb_FABOSC_0_OSC.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\root_sb\root_sb.cxf,actgen_cxf"
 STATE="utd"
-TIME="1647730120"
-SIZE="33741"
+TIME="1654198186"
+SIZE="30197"
 ENDFILE
 VALUE "<project>\component\work\root_sb\root_sb.vhd,hdl"
 STATE="utd"
-TIME="1647730119"
-SIZE="47788"
+TIME="1654198185"
+SIZE="45663"
 PARENT="<project>\component\work\root_sb\root_sb.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\root_sb_MSS\root_sb_MSS.cxf,actgen_cxf"
 STATE="utd"
-TIME="1647730114"
-SIZE="21838"
+TIME="1654198179"
+SIZE="21055"
 ENDFILE
 VALUE "<project>\component\work\root_sb_MSS\root_sb_MSS.vhd,hdl"
 STATE="utd"
-TIME="1647730114"
-SIZE="83806"
+TIME="1654198179"
+SIZE="83480"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\root_sb_MSS\root_sb_MSS_pre.vhd,hdl"
 STATE="utd"
-TIME="1647730114"
+TIME="1654198178"
 SIZE="70620"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 BEGIN_USE_CONSTRAINT
@@ -421,7 +426,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\root_sb_MSS\root_sb_MSS_syn.vhd,hdl"
 STATE="utd"
-TIME="1647730114"
+TIME="1654198178"
 SIZE="70600"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 BEGIN_USE_CONSTRAINT
@@ -469,7 +474,7 @@ PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 ENDFILE
 VALUE "<project>\simulation\CM3_compile_bfm.tcl,sim"
 STATE="utd"
-TIME="1647730114"
+TIME="1654198179"
 SIZE="504"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
@@ -487,14 +492,14 @@ PARENT="<project>\component\Actel\SmartFusion2MSS\MSS\1.1.500\MSS.cxf"
 ENDFILE
 VALUE "<project>\simulation\subsystem.bfm,sim"
 STATE="utd"
-TIME="1647730188"
-SIZE="988"
+TIME="1654198349"
+SIZE="952"
 PARENT="<project>\component\work\root\root.cxf"
 PARENT="<project>\component\work\root_sb\root_sb.cxf"
 ENDFILE
 VALUE "<project>\simulation\test.bfm,sim"
 STATE="utd"
-TIME="1647730114"
+TIME="1654198179"
 SIZE="734"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
@@ -506,22 +511,22 @@ PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\synthesis\root.so,so"
 STATE="utd"
-TIME="1647730217"
-SIZE="235"
+TIME="1654198398"
+SIZE="237"
 ENDFILE
 VALUE "<project>\synthesis\root.vm,syn_vm"
 STATE="utd"
-TIME="1647730216"
-SIZE="1404443"
+TIME="1654198397"
+SIZE="1392855"
 ENDFILE
 VALUE "<project>\synthesis\root_syn.prj,prj"
 STATE="utd"
-TIME="1647763205"
+TIME="1654198399"
 SIZE="4381"
 ENDFILE
 VALUE "<project>\synthesis\root_vm.sdc,syn_sdc"
 STATE="utd"
-TIME="1647730216"
+TIME="1654198397"
 SIZE="1081"
 ENDFILE
 ENDLIST
@@ -547,9 +552,6 @@ ENDLIST
 Used_File_List
 ENDUsed_File_List
 ENDLIST
-ENDLIST
-LIST synthesis_implementations
-VALUE "synthesis"
 ENDLIST
 ENDLIST
 LIST "root_sb::work"
@@ -776,8 +778,11 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
-StartPage;StartPage;0
-ACTIVEVIEW;StartPage
+Reports;Reports;0
+ReportsCurrentItem;Generate Memory Map:root_DataSheet.xml
+HDL;hdl\STAMP.vhd;0
+SmartDesign;root;0
+ACTIVEVIEW;hdl\STAMP.vhd
 ENDLIST
 LIST ModuleSubBlockList
 LIST "coreresetp_pcie_hotreset::work","component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp_pcie_hotreset.vhd","FALSE","FALSE"

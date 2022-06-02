@@ -82,7 +82,7 @@
 extern "C" {
 #endif 
 
-#include "../../../sf2drivers/CMSIS/m2sxxx.h"
+#include "../../CMSIS/m2sxxx.h"
 
 /*-------------------------------------------------------------------------*//**
   The mss_gpio_id_t enumeration is used to identify individual GPIO ports as an

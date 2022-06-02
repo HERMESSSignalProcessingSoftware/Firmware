@@ -25,14 +25,13 @@
 * CM3 subsystem memory map
 * Initiator(s) for this subsystem: CM3 
 *---------------------------------------------------------------------------*/
-#define ADDR_MEMSYNC                    0x50000000U
-#define ADDR_STAMP1                     0x50001000U
-#define ADDR_STAMP2                     0x50002000U
-#define ADDR_STAMP3                     0x50003000U
-#define ADDR_STAMP4                     0x50004000U
-#define ADDR_STAMP5                     0x50005000U
-#define ADDR_STAMP6                     0x50006000U
-#define ADDR_TM                         0x50007000U
+#define ADDR_STAMP1                     0x50000000U
+#define ADDR_STAMP2                     0x50001000U
+#define ADDR_STAMP3                     0x50002000U
+#define ADDR_STAMP4                     0x50003000U
+#define ADDR_STAMP5                     0x50004000U
+#define ADDR_STAMP6                     0x50005000U
+#define ADDR_TM                         0x50006000U
 
 /*-----------------------------------------------------------------------------
 * F2M INTERRUPTS

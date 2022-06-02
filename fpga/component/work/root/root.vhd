@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- Created by SmartDesign Sun May 22 14:12:17 2022
+-- Created by SmartDesign Thu Jun  2 21:32:29 2022
 -- Version: 2021.3 2021.3.0.10
 ----------------------------------------------------------------------
 
@@ -118,106 +118,95 @@ component root_sb
     -- Port list
     port(
         -- Inputs
-        DEVRST_N             : in  std_logic;
-        FAB_RESET_N          : in  std_logic;
-        GPIO_0_F2M           : in  std_logic;
-        GPIO_1_F2M           : in  std_logic;
-        GPIO_2_F2M           : in  std_logic;
-        GPIO_3_F2M           : in  std_logic;
-        MMUART_0_RXD_F2M     : in  std_logic;
-        MMUART_1_RXD_F2M     : in  std_logic;
-        MemSync_0_INTR_0_top : in  std_logic;
-        MemSync_PRDATAS0     : in  std_logic_vector(31 downto 0);
-        MemSync_PREADYS0     : in  std_logic;
-        MemSync_PSLVERRS0    : in  std_logic;
-        SPI_0_CLK_F2M        : in  std_logic;
-        SPI_0_DI_F2M         : in  std_logic;
-        SPI_0_SS0_F2M        : in  std_logic;
-        STAMP_0_INTR_0_top   : in  std_logic;
-        STAMP_1_INTR_0_top   : in  std_logic;
-        STAMP_1_PRDATAS2     : in  std_logic_vector(31 downto 0);
-        STAMP_1_PREADYS2     : in  std_logic;
-        STAMP_1_PSLVERRS2    : in  std_logic;
-        STAMP_2_INTR_0_top   : in  std_logic;
-        STAMP_2_PRDATAS3     : in  std_logic_vector(31 downto 0);
-        STAMP_2_PREADYS3     : in  std_logic;
-        STAMP_2_PSLVERRS3    : in  std_logic;
-        STAMP_3_INTR_0_top   : in  std_logic;
-        STAMP_3_PRDATAS4     : in  std_logic_vector(31 downto 0);
-        STAMP_3_PREADYS4     : in  std_logic;
-        STAMP_3_PSLVERRS4    : in  std_logic;
-        STAMP_4_INTR_0_top   : in  std_logic;
-        STAMP_4_PRDATAS5     : in  std_logic_vector(31 downto 0);
-        STAMP_4_PREADYS5     : in  std_logic;
-        STAMP_4_PSLVERRS5    : in  std_logic;
-        STAMP_5_INTR_0_top   : in  std_logic;
-        STAMP_5_PRDATAS6     : in  std_logic_vector(31 downto 0);
-        STAMP_5_PREADYS6     : in  std_logic;
-        STAMP_5_PSLVERRS6    : in  std_logic;
-        STAMP_PRDATAS1       : in  std_logic_vector(31 downto 0);
-        STAMP_PREADYS1       : in  std_logic;
-        STAMP_PSLVERRS1      : in  std_logic;
-        TM_0_INTR_0_top      : in  std_logic;
-        TM_PRDATAS7          : in  std_logic_vector(31 downto 0);
-        TM_PREADYS7          : in  std_logic;
-        TM_PSLVERRS7         : in  std_logic;
+        DEVRST_N           : in  std_logic;
+        FAB_RESET_N        : in  std_logic;
+        GPIO_0_F2M         : in  std_logic;
+        GPIO_1_F2M         : in  std_logic;
+        GPIO_2_F2M         : in  std_logic;
+        GPIO_3_F2M         : in  std_logic;
+        MMUART_0_RXD_F2M   : in  std_logic;
+        SPI_0_CLK_F2M      : in  std_logic;
+        SPI_0_DI_F2M       : in  std_logic;
+        SPI_0_SS0_F2M      : in  std_logic;
+        STAMP_0_INTR_0_top : in  std_logic;
+        STAMP_1_INTR_0_top : in  std_logic;
+        STAMP_1_PRDATAS1   : in  std_logic_vector(31 downto 0);
+        STAMP_1_PREADYS1   : in  std_logic;
+        STAMP_1_PSLVERRS1  : in  std_logic;
+        STAMP_2_INTR_0_top : in  std_logic;
+        STAMP_2_PRDATAS2   : in  std_logic_vector(31 downto 0);
+        STAMP_2_PREADYS2   : in  std_logic;
+        STAMP_2_PSLVERRS2  : in  std_logic;
+        STAMP_3_INTR_0_top : in  std_logic;
+        STAMP_3_PRDATAS3   : in  std_logic_vector(31 downto 0);
+        STAMP_3_PREADYS3   : in  std_logic;
+        STAMP_3_PSLVERRS3  : in  std_logic;
+        STAMP_4_INTR_0_top : in  std_logic;
+        STAMP_4_PRDATAS4   : in  std_logic_vector(31 downto 0);
+        STAMP_4_PREADYS4   : in  std_logic;
+        STAMP_4_PSLVERRS4  : in  std_logic;
+        STAMP_5_INTR_0_top : in  std_logic;
+        STAMP_5_PRDATAS5   : in  std_logic_vector(31 downto 0);
+        STAMP_5_PREADYS5   : in  std_logic;
+        STAMP_5_PSLVERRS5  : in  std_logic;
+        STAMP_PRDATAS0     : in  std_logic_vector(31 downto 0);
+        STAMP_PREADYS0     : in  std_logic;
+        STAMP_PSLVERRS0    : in  std_logic;
+        TM_0_INTR_0_top    : in  std_logic;
+        TM_PRDATAS6        : in  std_logic_vector(31 downto 0);
+        TM_PREADYS6        : in  std_logic;
+        TM_PSLVERRS6       : in  std_logic;
         -- Outputs
-        FIC_0_CLK            : out std_logic;
-        FIC_0_LOCK           : out std_logic;
-        GPIO_28_M2F          : out std_logic;
-        GPIO_29_M2F          : out std_logic;
-        GPIO_30_M2F          : out std_logic;
-        GPIO_31_M2F          : out std_logic;
-        INIT_DONE            : out std_logic;
-        MMUART_0_TXD_M2F     : out std_logic;
-        MMUART_1_TXD_M2F     : out std_logic;
-        MSS_READY            : out std_logic;
-        MemSync_PADDRS       : out std_logic_vector(31 downto 0);
-        MemSync_PENABLES     : out std_logic;
-        MemSync_PSELS0       : out std_logic;
-        MemSync_PWDATAS      : out std_logic_vector(31 downto 0);
-        MemSync_PWRITES      : out std_logic;
-        POWER_ON_RESET_N     : out std_logic;
-        SPI_0_CLK_M2F        : out std_logic;
-        SPI_0_DO_M2F         : out std_logic;
-        SPI_0_SS0_M2F        : out std_logic;
-        SPI_0_SS0_M2F_OE     : out std_logic;
-        SPI_0_SS1_M2F        : out std_logic;
-        STAMP_1_PADDRS       : out std_logic_vector(31 downto 0);
-        STAMP_1_PENABLES     : out std_logic;
-        STAMP_1_PSELS2       : out std_logic;
-        STAMP_1_PWDATAS      : out std_logic_vector(31 downto 0);
-        STAMP_1_PWRITES      : out std_logic;
-        STAMP_2_PADDRS       : out std_logic_vector(31 downto 0);
-        STAMP_2_PENABLES     : out std_logic;
-        STAMP_2_PSELS3       : out std_logic;
-        STAMP_2_PWDATAS      : out std_logic_vector(31 downto 0);
-        STAMP_2_PWRITES      : out std_logic;
-        STAMP_3_PADDRS       : out std_logic_vector(31 downto 0);
-        STAMP_3_PENABLES     : out std_logic;
-        STAMP_3_PSELS4       : out std_logic;
-        STAMP_3_PWDATAS      : out std_logic_vector(31 downto 0);
-        STAMP_3_PWRITES      : out std_logic;
-        STAMP_4_PADDRS       : out std_logic_vector(31 downto 0);
-        STAMP_4_PENABLES     : out std_logic;
-        STAMP_4_PSELS5       : out std_logic;
-        STAMP_4_PWDATAS      : out std_logic_vector(31 downto 0);
-        STAMP_4_PWRITES      : out std_logic;
-        STAMP_5_PADDRS       : out std_logic_vector(31 downto 0);
-        STAMP_5_PENABLES     : out std_logic;
-        STAMP_5_PSELS6       : out std_logic;
-        STAMP_5_PWDATAS      : out std_logic_vector(31 downto 0);
-        STAMP_5_PWRITES      : out std_logic;
-        STAMP_PADDRS         : out std_logic_vector(31 downto 0);
-        STAMP_PENABLES       : out std_logic;
-        STAMP_PSELS1         : out std_logic;
-        STAMP_PWDATAS        : out std_logic_vector(31 downto 0);
-        STAMP_PWRITES        : out std_logic;
-        TM_PADDRS            : out std_logic_vector(31 downto 0);
-        TM_PENABLES          : out std_logic;
-        TM_PSELS7            : out std_logic;
-        TM_PWDATAS           : out std_logic_vector(31 downto 0);
-        TM_PWRITES           : out std_logic
+        FIC_0_CLK          : out std_logic;
+        FIC_0_LOCK         : out std_logic;
+        GPIO_28_M2F        : out std_logic;
+        GPIO_29_M2F        : out std_logic;
+        GPIO_30_M2F        : out std_logic;
+        GPIO_31_M2F        : out std_logic;
+        INIT_DONE          : out std_logic;
+        MMUART_0_TXD_M2F   : out std_logic;
+        MSS_READY          : out std_logic;
+        POWER_ON_RESET_N   : out std_logic;
+        SPI_0_CLK_M2F      : out std_logic;
+        SPI_0_DO_M2F       : out std_logic;
+        SPI_0_SS0_M2F      : out std_logic;
+        SPI_0_SS0_M2F_OE   : out std_logic;
+        SPI_0_SS1_M2F      : out std_logic;
+        STAMP_1_PADDRS     : out std_logic_vector(31 downto 0);
+        STAMP_1_PENABLES   : out std_logic;
+        STAMP_1_PSELS1     : out std_logic;
+        STAMP_1_PWDATAS    : out std_logic_vector(31 downto 0);
+        STAMP_1_PWRITES    : out std_logic;
+        STAMP_2_PADDRS     : out std_logic_vector(31 downto 0);
+        STAMP_2_PENABLES   : out std_logic;
+        STAMP_2_PSELS2     : out std_logic;
+        STAMP_2_PWDATAS    : out std_logic_vector(31 downto 0);
+        STAMP_2_PWRITES    : out std_logic;
+        STAMP_3_PADDRS     : out std_logic_vector(31 downto 0);
+        STAMP_3_PENABLES   : out std_logic;
+        STAMP_3_PSELS3     : out std_logic;
+        STAMP_3_PWDATAS    : out std_logic_vector(31 downto 0);
+        STAMP_3_PWRITES    : out std_logic;
+        STAMP_4_PADDRS     : out std_logic_vector(31 downto 0);
+        STAMP_4_PENABLES   : out std_logic;
+        STAMP_4_PSELS4     : out std_logic;
+        STAMP_4_PWDATAS    : out std_logic_vector(31 downto 0);
+        STAMP_4_PWRITES    : out std_logic;
+        STAMP_5_PADDRS     : out std_logic_vector(31 downto 0);
+        STAMP_5_PENABLES   : out std_logic;
+        STAMP_5_PSELS5     : out std_logic;
+        STAMP_5_PWDATAS    : out std_logic_vector(31 downto 0);
+        STAMP_5_PWRITES    : out std_logic;
+        STAMP_PADDRS       : out std_logic_vector(31 downto 0);
+        STAMP_PENABLES     : out std_logic;
+        STAMP_PSELS0       : out std_logic;
+        STAMP_PWDATAS      : out std_logic_vector(31 downto 0);
+        STAMP_PWRITES      : out std_logic;
+        TM_PADDRS          : out std_logic_vector(31 downto 0);
+        TM_PENABLES        : out std_logic;
+        TM_PSELS6          : out std_logic;
+        TM_PWDATAS         : out std_logic_vector(31 downto 0);
+        TM_PWRITES         : out std_logic
         );
 end component;
 -- STAMP
@@ -317,7 +306,6 @@ signal STAMP6_CS_TEMP_net_0  : std_logic;
 signal STAMP6_MOSI_net_0     : std_logic;
 signal STAMP6_new_avail      : std_logic;
 signal STAMP6_SCLK_net_0     : std_logic;
-signal TM_TXD_net_0          : std_logic;
 signal DAPI_TXD_net_1        : std_logic;
 signal F_CLK_net_1           : std_logic;
 signal F_CS1_net_1           : std_logic;
@@ -358,14 +346,13 @@ signal STAMP3_CS_SGR1_net_1  : std_logic;
 signal STAMP3_MOSI_net_1     : std_logic;
 signal STAMP3_CS_TEMP_net_1  : std_logic;
 signal LED_HB_MEMSYNC_net_1  : std_logic;
-signal TM_TXD_net_1          : std_logic;
+signal TM_RXD_net_0          : std_logic;
 ----------------------------------------------------------------------
 -- TiedOff Signals
 ----------------------------------------------------------------------
 signal GND_net               : std_logic;
 signal VCC_net               : std_logic;
-signal MemSync_PRDATAS0_const_net_0: std_logic_vector(31 downto 0);
-signal TM_PRDATAS7_const_net_0: std_logic_vector(31 downto 0);
+signal TM_PRDATAS6_const_net_0: std_logic_vector(31 downto 0);
 ----------------------------------------------------------------------
 -- Bus Interface Nets Declarations - Unequal Pin Widths
 ----------------------------------------------------------------------
@@ -398,10 +385,9 @@ begin
 ----------------------------------------------------------------------
 -- Constant assignments
 ----------------------------------------------------------------------
- GND_net                      <= '0';
- VCC_net                      <= '1';
- MemSync_PRDATAS0_const_net_0 <= B"00000000000000000000000000000000";
- TM_PRDATAS7_const_net_0      <= B"00000000000000000000000000000000";
+ GND_net                 <= '0';
+ VCC_net                 <= '1';
+ TM_PRDATAS6_const_net_0 <= B"00000000000000000000000000000000";
 ----------------------------------------------------------------------
 -- Top level output port assignments
 ----------------------------------------------------------------------
@@ -485,8 +471,8 @@ begin
  STAMP3_CS_TEMP        <= STAMP3_CS_TEMP_net_1;
  LED_HB_MEMSYNC_net_1  <= LED_HB_MEMSYNC_net_0;
  LED_HB_MEMSYNC        <= LED_HB_MEMSYNC_net_1;
- TM_TXD_net_1          <= TM_TXD_net_0;
- TM_TXD                <= TM_TXD_net_1;
+ TM_RXD_net_0          <= TM_RXD;
+ TM_TXD                <= TM_RXD_net_0;
 ----------------------------------------------------------------------
 -- Bus Interface Nets Assignments - Unequal Pin Widths
 ----------------------------------------------------------------------
@@ -525,106 +511,95 @@ AND3_0 : AND3
 MSS : root_sb
     port map( 
         -- Inputs
-        FAB_RESET_N          => VCC_net, -- tied to '1' from definition
-        MemSync_0_INTR_0_top => GND_net,
-        STAMP_5_INTR_0_top   => STAMP6_new_avail,
-        STAMP_4_INTR_0_top   => STAMP5_new_avail,
-        STAMP_3_INTR_0_top   => STAMP4_new_avail,
-        STAMP_2_INTR_0_top   => STAMP3_new_avail,
-        STAMP_1_INTR_0_top   => STAMP2_new_avail,
-        STAMP_0_INTR_0_top   => STAMP1_new_avail,
-        TM_0_INTR_0_top      => GND_net,
-        MemSync_PREADYS0     => VCC_net, -- tied to '1' from definition
-        MemSync_PSLVERRS0    => GND_net, -- tied to '0' from definition
-        STAMP_PREADYS1       => MSS_STAMP_PREADY,
-        STAMP_PSLVERRS1      => MSS_STAMP_PSLVERR,
-        STAMP_1_PREADYS2     => MSS_STAMP_1_PREADY,
-        STAMP_1_PSLVERRS2    => MSS_STAMP_1_PSLVERR,
-        STAMP_2_PREADYS3     => MSS_STAMP_2_PREADY,
-        STAMP_2_PSLVERRS3    => MSS_STAMP_2_PSLVERR,
-        STAMP_3_PREADYS4     => MSS_STAMP_3_PREADY,
-        STAMP_3_PSLVERRS4    => MSS_STAMP_3_PSLVERR,
-        STAMP_4_PREADYS5     => MSS_STAMP_4_PREADY,
-        STAMP_4_PSLVERRS5    => MSS_STAMP_4_PSLVERR,
-        STAMP_5_PREADYS6     => MSS_STAMP_5_PREADY,
-        STAMP_5_PSLVERRS6    => MSS_STAMP_5_PSLVERR,
-        TM_PREADYS7          => VCC_net, -- tied to '1' from definition
-        TM_PSLVERRS7         => GND_net, -- tied to '0' from definition
-        DEVRST_N             => DEVRST_N,
-        MMUART_0_RXD_F2M     => DAPI_RXD,
-        MMUART_1_RXD_F2M     => TM_RXD,
-        GPIO_0_F2M           => IN_RXSM_LO,
-        GPIO_1_F2M           => IN_RXSM_SOE,
-        GPIO_2_F2M           => IN_RXSM_SODS,
-        GPIO_3_F2M           => IN_WP,
-        SPI_0_DI_F2M         => F_MISO,
-        SPI_0_CLK_F2M        => GND_net,
-        SPI_0_SS0_F2M        => GND_net,
-        MemSync_PRDATAS0     => MemSync_PRDATAS0_const_net_0, -- tied to X"0" from definition
-        STAMP_PRDATAS1       => MSS_STAMP_PRDATA,
-        STAMP_1_PRDATAS2     => MSS_STAMP_1_PRDATA,
-        STAMP_2_PRDATAS3     => MSS_STAMP_2_PRDATA,
-        STAMP_3_PRDATAS4     => MSS_STAMP_3_PRDATA,
-        STAMP_4_PRDATAS5     => MSS_STAMP_4_PRDATA,
-        STAMP_5_PRDATAS6     => MSS_STAMP_5_PRDATA,
-        TM_PRDATAS7          => TM_PRDATAS7_const_net_0, -- tied to X"0" from definition
+        FAB_RESET_N        => VCC_net, -- tied to '1' from definition
+        STAMP_5_INTR_0_top => STAMP6_new_avail,
+        STAMP_4_INTR_0_top => STAMP5_new_avail,
+        STAMP_3_INTR_0_top => STAMP4_new_avail,
+        STAMP_2_INTR_0_top => STAMP3_new_avail,
+        STAMP_1_INTR_0_top => STAMP2_new_avail,
+        STAMP_0_INTR_0_top => STAMP1_new_avail,
+        TM_0_INTR_0_top    => GND_net,
+        STAMP_PRDATAS0     => MSS_STAMP_PRDATA,
+        STAMP_PREADYS0     => MSS_STAMP_PREADY,
+        STAMP_PSLVERRS0    => MSS_STAMP_PSLVERR,
+        STAMP_1_PRDATAS1   => MSS_STAMP_1_PRDATA,
+        STAMP_1_PREADYS1   => MSS_STAMP_1_PREADY,
+        STAMP_1_PSLVERRS1  => MSS_STAMP_1_PSLVERR,
+        STAMP_2_PRDATAS2   => MSS_STAMP_2_PRDATA,
+        STAMP_2_PREADYS2   => MSS_STAMP_2_PREADY,
+        STAMP_2_PSLVERRS2  => MSS_STAMP_2_PSLVERR,
+        STAMP_3_PRDATAS3   => MSS_STAMP_3_PRDATA,
+        STAMP_3_PREADYS3   => MSS_STAMP_3_PREADY,
+        STAMP_3_PSLVERRS3  => MSS_STAMP_3_PSLVERR,
+        STAMP_4_PRDATAS4   => MSS_STAMP_4_PRDATA,
+        STAMP_4_PREADYS4   => MSS_STAMP_4_PREADY,
+        STAMP_4_PSLVERRS4  => MSS_STAMP_4_PSLVERR,
+        STAMP_5_PRDATAS5   => MSS_STAMP_5_PRDATA,
+        STAMP_5_PREADYS5   => MSS_STAMP_5_PREADY,
+        STAMP_5_PSLVERRS5  => MSS_STAMP_5_PSLVERR,
+        TM_PRDATAS6        => TM_PRDATAS6_const_net_0, -- tied to X"0" from definition
+        TM_PREADYS6        => VCC_net, -- tied to '1' from definition
+        TM_PSLVERRS6       => GND_net, -- tied to '0' from definition
+        DEVRST_N           => DEVRST_N,
+        MMUART_0_RXD_F2M   => DAPI_RXD,
+        GPIO_0_F2M         => IN_RXSM_LO,
+        GPIO_1_F2M         => IN_RXSM_SOE,
+        GPIO_2_F2M         => IN_RXSM_SODS,
+        GPIO_3_F2M         => IN_WP,
+        SPI_0_DI_F2M       => F_MISO,
+        SPI_0_CLK_F2M      => GND_net,
+        SPI_0_SS0_F2M      => GND_net,
         -- Outputs
-        POWER_ON_RESET_N     => MSS_POWER_ON_RESET_N,
-        INIT_DONE            => MSS_INIT_DONE,
-        MemSync_PSELS0       => OPEN,
-        MemSync_PENABLES     => OPEN,
-        MemSync_PWRITES      => OPEN,
-        STAMP_PSELS1         => MSS_STAMP_PSELx,
-        STAMP_PENABLES       => MSS_STAMP_PENABLE,
-        STAMP_PWRITES        => MSS_STAMP_PWRITE,
-        STAMP_1_PSELS2       => MSS_STAMP_1_PSELx,
-        STAMP_1_PENABLES     => MSS_STAMP_1_PENABLE,
-        STAMP_1_PWRITES      => MSS_STAMP_1_PWRITE,
-        STAMP_2_PSELS3       => MSS_STAMP_2_PSELx,
-        STAMP_2_PENABLES     => MSS_STAMP_2_PENABLE,
-        STAMP_2_PWRITES      => MSS_STAMP_2_PWRITE,
-        STAMP_3_PSELS4       => MSS_STAMP_3_PSELx,
-        STAMP_3_PENABLES     => MSS_STAMP_3_PENABLE,
-        STAMP_3_PWRITES      => MSS_STAMP_3_PWRITE,
-        STAMP_4_PSELS5       => MSS_STAMP_4_PSELx,
-        STAMP_4_PENABLES     => MSS_STAMP_4_PENABLE,
-        STAMP_4_PWRITES      => MSS_STAMP_4_PWRITE,
-        STAMP_5_PSELS6       => MSS_STAMP_5_PSELx,
-        STAMP_5_PENABLES     => MSS_STAMP_5_PENABLE,
-        STAMP_5_PWRITES      => MSS_STAMP_5_PWRITE,
-        TM_PSELS7            => OPEN,
-        TM_PENABLES          => OPEN,
-        TM_PWRITES           => OPEN,
-        FIC_0_CLK            => MSS_FIC_0_CLK,
-        FIC_0_LOCK           => OPEN,
-        MSS_READY            => MSS_MSS_READY,
-        MMUART_0_TXD_M2F     => DAPI_TXD_net_0,
-        MMUART_1_TXD_M2F     => TM_TXD_net_0,
-        GPIO_28_M2F          => OUT_ADC_START_net_0,
-        GPIO_29_M2F          => LED_FPGA_LOADED_net_0,
-        GPIO_30_M2F          => LED_RECORDING_net_0,
-        GPIO_31_M2F          => LED_HB_MSS_net_0,
-        SPI_0_DO_M2F         => F_MOSI_net_0,
-        SPI_0_CLK_M2F        => F_CLK_net_0,
-        SPI_0_SS0_M2F        => F_CS1_net_0,
-        SPI_0_SS0_M2F_OE     => OPEN,
-        SPI_0_SS1_M2F        => F_CS2_net_0,
-        MemSync_PADDRS       => OPEN,
-        MemSync_PWDATAS      => OPEN,
-        STAMP_PADDRS         => MSS_STAMP_PADDR,
-        STAMP_PWDATAS        => MSS_STAMP_PWDATA,
-        STAMP_1_PADDRS       => MSS_STAMP_1_PADDR,
-        STAMP_1_PWDATAS      => MSS_STAMP_1_PWDATA,
-        STAMP_2_PADDRS       => MSS_STAMP_2_PADDR,
-        STAMP_2_PWDATAS      => MSS_STAMP_2_PWDATA,
-        STAMP_3_PADDRS       => MSS_STAMP_3_PADDR,
-        STAMP_3_PWDATAS      => MSS_STAMP_3_PWDATA,
-        STAMP_4_PADDRS       => MSS_STAMP_4_PADDR,
-        STAMP_4_PWDATAS      => MSS_STAMP_4_PWDATA,
-        STAMP_5_PADDRS       => MSS_STAMP_5_PADDR,
-        STAMP_5_PWDATAS      => MSS_STAMP_5_PWDATA,
-        TM_PADDRS            => OPEN,
-        TM_PWDATAS           => OPEN 
+        POWER_ON_RESET_N   => MSS_POWER_ON_RESET_N,
+        INIT_DONE          => MSS_INIT_DONE,
+        STAMP_PADDRS       => MSS_STAMP_PADDR,
+        STAMP_PSELS0       => MSS_STAMP_PSELx,
+        STAMP_PENABLES     => MSS_STAMP_PENABLE,
+        STAMP_PWRITES      => MSS_STAMP_PWRITE,
+        STAMP_PWDATAS      => MSS_STAMP_PWDATA,
+        STAMP_1_PADDRS     => MSS_STAMP_1_PADDR,
+        STAMP_1_PSELS1     => MSS_STAMP_1_PSELx,
+        STAMP_1_PENABLES   => MSS_STAMP_1_PENABLE,
+        STAMP_1_PWRITES    => MSS_STAMP_1_PWRITE,
+        STAMP_1_PWDATAS    => MSS_STAMP_1_PWDATA,
+        STAMP_2_PADDRS     => MSS_STAMP_2_PADDR,
+        STAMP_2_PSELS2     => MSS_STAMP_2_PSELx,
+        STAMP_2_PENABLES   => MSS_STAMP_2_PENABLE,
+        STAMP_2_PWRITES    => MSS_STAMP_2_PWRITE,
+        STAMP_2_PWDATAS    => MSS_STAMP_2_PWDATA,
+        STAMP_3_PADDRS     => MSS_STAMP_3_PADDR,
+        STAMP_3_PSELS3     => MSS_STAMP_3_PSELx,
+        STAMP_3_PENABLES   => MSS_STAMP_3_PENABLE,
+        STAMP_3_PWRITES    => MSS_STAMP_3_PWRITE,
+        STAMP_3_PWDATAS    => MSS_STAMP_3_PWDATA,
+        STAMP_4_PADDRS     => MSS_STAMP_4_PADDR,
+        STAMP_4_PSELS4     => MSS_STAMP_4_PSELx,
+        STAMP_4_PENABLES   => MSS_STAMP_4_PENABLE,
+        STAMP_4_PWRITES    => MSS_STAMP_4_PWRITE,
+        STAMP_4_PWDATAS    => MSS_STAMP_4_PWDATA,
+        STAMP_5_PADDRS     => MSS_STAMP_5_PADDR,
+        STAMP_5_PSELS5     => MSS_STAMP_5_PSELx,
+        STAMP_5_PENABLES   => MSS_STAMP_5_PENABLE,
+        STAMP_5_PWRITES    => MSS_STAMP_5_PWRITE,
+        STAMP_5_PWDATAS    => MSS_STAMP_5_PWDATA,
+        TM_PADDRS          => OPEN,
+        TM_PSELS6          => OPEN,
+        TM_PENABLES        => OPEN,
+        TM_PWRITES         => OPEN,
+        TM_PWDATAS         => OPEN,
+        FIC_0_CLK          => MSS_FIC_0_CLK,
+        FIC_0_LOCK         => OPEN,
+        MSS_READY          => MSS_MSS_READY,
+        MMUART_0_TXD_M2F   => DAPI_TXD_net_0,
+        GPIO_28_M2F        => OUT_ADC_START_net_0,
+        GPIO_29_M2F        => LED_FPGA_LOADED_net_0,
+        GPIO_30_M2F        => LED_RECORDING_net_0,
+        GPIO_31_M2F        => LED_HB_MSS_net_0,
+        SPI_0_DO_M2F       => F_MOSI_net_0,
+        SPI_0_CLK_M2F      => F_CLK_net_0,
+        SPI_0_SS0_M2F      => F_CS1_net_0,
+        SPI_0_SS0_M2F_OE   => OPEN,
+        SPI_0_SS1_M2F      => F_CS2_net_0 
         );
 -- STAMP1
 STAMP1 : entity work.STAMP

@@ -1,6 +1,6 @@
 DESIGN=root
-DESDIR=C:\Users\jl\source\repos\hermess\hermess-MCU\hermess\designer\root
-TARGET_DIR=C:\Users\jl\source\repos\hermess\hermess-MCU\hermess\designer\root
+DESDIR=C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\designer\root
+TARGET_DIR=C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\designer\root
 FAM=SmartFusion2
 DIE=PA4M1000_N
 PACKAGE=tq144
