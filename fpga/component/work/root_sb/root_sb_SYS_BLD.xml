@@ -3111,7 +3111,7 @@
 </row>
 <row>
  <cell>MODEM_MUX</cell>
- <cell>MUX_IO</cell>
+ <cell>MUX_FABRIC</cell>
 </row>
 <row>
  <cell>TX_RX_MUX</cell>
@@ -3474,11 +3474,11 @@
 </row>
 <row>
  <cell>GPIO26_TYPE</cell>
- <cell>CONNECTION_IOA</cell>
+ <cell>CONNECTION_FABRICB</cell>
 </row>
 <row>
  <cell>GPIO26_USAGE</cell>
- <cell>NOT_USED</cell>
+ <cell>USAGE_OUTPUT</cell>
 </row>
 <row>
  <cell>GPIO27_FAB_CAPT</cell>
@@ -3878,6 +3878,11 @@
 <row>
  <cell>GPIO_3_F2M</cell>
  <cell>IN</cell>
+ <cell>-</cell>
+</row>
+<row>
+ <cell>GPIO_26_M2F</cell>
+ <cell>OUT</cell>
  <cell>-</cell>
 </row>
 <row>

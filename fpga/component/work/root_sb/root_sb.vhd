@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- Created by SmartDesign Thu Jun  2 21:29:45 2022
+-- Created by SmartDesign Wed Jun 15 17:57:46 2022
 -- Version: 2021.3 2021.3.0.10
 ----------------------------------------------------------------------
 
@@ -62,6 +62,7 @@ entity root_sb is
         -- Outputs
         FIC_0_CLK          : out std_logic;
         FIC_0_LOCK         : out std_logic;
+        GPIO_26_M2F        : out std_logic;
         GPIO_28_M2F        : out std_logic;
         GPIO_29_M2F        : out std_logic;
         GPIO_30_M2F        : out std_logic;
@@ -281,6 +282,7 @@ component root_sb_MSS
         FIC_2_APB_M_PSEL       : out std_logic;
         FIC_2_APB_M_PWDATA     : out std_logic_vector(31 downto 0);
         FIC_2_APB_M_PWRITE     : out std_logic;
+        GPIO_26_M2F            : out std_logic;
         GPIO_28_M2F            : out std_logic;
         GPIO_29_M2F            : out std_logic;
         GPIO_30_M2F            : out std_logic;
@@ -312,6 +314,7 @@ signal FABOSC_0_RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC : std_logic;
 signal FABOSC_0_RCOSC_25_50MHZ_O2F                        : std_logic;
 signal FIC_0_CLK_net_0                                    : std_logic;
 signal FIC_0_LOCK_net_0                                   : std_logic;
+signal GPIO_26_M2F_net_0                                  : std_logic;
 signal GPIO_28_M2F_net_0                                  : std_logic;
 signal GPIO_29_M2F_net_0                                  : std_logic;
 signal GPIO_30_M2F_net_0                                  : std_logic;
@@ -387,6 +390,7 @@ signal FIC_0_CLK_net_1                                    : std_logic;
 signal FIC_0_LOCK_net_1                                   : std_logic;
 signal MSS_READY_net_1                                    : std_logic;
 signal MMUART_0_TXD_M2F_net_1                             : std_logic;
+signal GPIO_26_M2F_net_1                                  : std_logic;
 signal GPIO_28_M2F_net_1                                  : std_logic;
 signal GPIO_29_M2F_net_1                                  : std_logic;
 signal GPIO_30_M2F_net_1                                  : std_logic;
@@ -530,6 +534,8 @@ begin
  MSS_READY                    <= MSS_READY_net_1;
  MMUART_0_TXD_M2F_net_1       <= MMUART_0_TXD_M2F_net_0;
  MMUART_0_TXD_M2F             <= MMUART_0_TXD_M2F_net_1;
+ GPIO_26_M2F_net_1            <= GPIO_26_M2F_net_0;
+ GPIO_26_M2F                  <= GPIO_26_M2F_net_1;
  GPIO_28_M2F_net_1            <= GPIO_28_M2F_net_0;
  GPIO_28_M2F                  <= GPIO_28_M2F_net_1;
  GPIO_29_M2F_net_1            <= GPIO_29_M2F_net_0;
@@ -826,6 +832,7 @@ root_sb_MSS_0 : root_sb_MSS
         -- Outputs
         MMUART_0_TXD_M2F       => MMUART_0_TXD_M2F_net_0,
         MSS_RESET_N_M2F        => root_sb_MSS_TMP_0_MSS_RESET_N_M2F,
+        GPIO_26_M2F            => GPIO_26_M2F_net_0,
         GPIO_28_M2F            => GPIO_28_M2F_net_0,
         GPIO_29_M2F            => GPIO_29_M2F_net_0,
         GPIO_30_M2F            => GPIO_30_M2F_net_0,

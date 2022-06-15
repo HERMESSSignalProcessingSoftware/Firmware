@@ -36,7 +36,7 @@ CFG           2460               100 %
 ARI1          648                100 %                
 BLACK BOX     6                  100 %                
 ======================================================
-Total COMBINATIONAL LOGIC in the block root:	3114 (58.47 % Utilization)
+Total COMBINATIONAL LOGIC in the block root:	3114 (58.46 % Utilization)
 
 
 GLOBAL BUFFERS
@@ -50,9 +50,9 @@ Total GLOBAL BUFFERS in the block root:	4 (0.08 % Utilization)
 IO PADS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-IO       72                 100 %                
+IO       73                 100 %                
 =================================================
-Total IO PADS in the block root:	72 (1.35 % Utilization)
+Total IO PADS in the block root:	73 (1.37 % Utilization)
 
 --------------------------------------------------------------
 ########   Utilization report for  cell:   STAMP_10   ########
@@ -115,7 +115,7 @@ Name     Total elements     Utilization     Notes
 CFG      378                15.4 %               
 ARI1     108                16.7 %               
 =================================================
-Total COMBINATIONAL LOGIC in the block root.STAMP_10_0:	486 (9.13 % Utilization)
+Total COMBINATIONAL LOGIC in the block root.STAMP_10_0:	486 (9.12 % Utilization)
 
 --------------------------------------------------------------------
 ########   Utilization report for  cell:   spi_master_5_0   ########
@@ -199,7 +199,7 @@ Name     Total elements     Utilization     Notes
 CFG      378                15.4 %               
 ARI1     108                16.7 %               
 =================================================
-Total COMBINATIONAL LOGIC in the block root.STAMP_10_2:	486 (9.13 % Utilization)
+Total COMBINATIONAL LOGIC in the block root.STAMP_10_2:	486 (9.12 % Utilization)
 
 --------------------------------------------------------------------
 ########   Utilization report for  cell:   spi_master_5_2   ########
@@ -241,7 +241,7 @@ Name     Total elements     Utilization     Notes
 CFG      378                15.4 %               
 ARI1     108                16.7 %               
 =================================================
-Total COMBINATIONAL LOGIC in the block root.STAMP_10_3:	486 (9.13 % Utilization)
+Total COMBINATIONAL LOGIC in the block root.STAMP_10_3:	486 (9.12 % Utilization)
 
 --------------------------------------------------------------------
 ########   Utilization report for  cell:   spi_master_5_3   ########
@@ -283,7 +283,7 @@ Name     Total elements     Utilization     Notes
 CFG      378                15.4 %               
 ARI1     108                16.7 %               
 =================================================
-Total COMBINATIONAL LOGIC in the block root.STAMP_10_4:	486 (9.13 % Utilization)
+Total COMBINATIONAL LOGIC in the block root.STAMP_10_4:	486 (9.12 % Utilization)
 
 --------------------------------------------------------------------
 ########   Utilization report for  cell:   spi_master_5_4   ########

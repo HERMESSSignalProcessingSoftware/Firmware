@@ -22,17 +22,16 @@ data VCCI_2.5_VOLTR COM
 data VCCI_3.3_VOLTR COM
 data FLOW_TYPE NEW
 data PLANNER_IOMODE 1
-data AFL 'C:/Users/jl/source/repos/hermess/hermess-Firmware/fpga/designer/root/root.afl'
+data AFL 'C:/Users/jl/source/repos/hermess/hermess-Firmware/fpga/designer/root/COMPILE/root.afl'
 data ADL 'C:/Users/jl/source/repos/hermess/hermess-Firmware/fpga/designer/root/root.adl'
-data LOC 'C:/Users/jl/source/repos/hermess/hermess-Firmware/fpga/designer/root/root.loc'
-data SEG 'C:/Users/jl/source/repos/hermess/hermess-Firmware/fpga/designer/root/root.seg'
-data NMAT_PDC 'C:/Users/jl/source/repos/hermess/hermess-Firmware/fpga/designer/root/root.nmatinit.pdc'
+data LOC 'C:/Users/jl/source/repos/hermess/hermess-Firmware/fpga/designer/root/COMPILE/root.loc'
+data SEG 'C:/Users/jl/source/repos/hermess/hermess-Firmware/fpga/designer/root/COMPILE/root.seg'
 
 data IO_PDC_0 'C:/Users/jl/source/repos/hermess/hermess-Firmware/fpga/constraint/io/user1.pdc'
-data TARGET_IOPDC  'C:/Users/jl/source/repos/hermess/hermess-Firmware/fpga/constraint/io/user.pdc'
+data IO_PDC_1 'C:/Users/jl/source/repos/hermess/hermess-Firmware/fpga/constraint/io/user.pdc'
+data TARGET_IOPDC  'C:/Users/jl/source/repos/hermess/hermess-Firmware/fpga/constraint/io/user1.pdc'
 data TARGET_FPPDC  'C:/Users/jl/source/repos/hermess/hermess-Firmware/fpga/constraint/fp/user.pdc'
-data TARGET_DEVICES_FOR_MIGRATION 'PA4M1000_N '
-data RESTRICTPROBEPINS 1
+data RESTRICTPROBEPINS 0
 data RESTRICTSPIPINS 0
 data GDEV_SKIP_UNASSIGN_CMP_CHECK    1 
 data HIDE_MIGRATION_PINS_MENU        1 

@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- Created by SmartDesign Thu Jun  2 21:29:39 2022
+-- Created by SmartDesign Wed Jun 15 17:57:41 2022
 -- Version: 2021.3 2021.3.0.10
 ----------------------------------------------------------------------
 
@@ -49,6 +49,7 @@ entity root_sb_MSS is
         FIC_2_APB_M_PSEL       : out std_logic;
         FIC_2_APB_M_PWDATA     : out std_logic_vector(31 downto 0);
         FIC_2_APB_M_PWRITE     : out std_logic;
+        GPIO_26_M2F            : out std_logic;
         GPIO_28_M2F            : out std_logic;
         GPIO_29_M2F            : out std_logic;
         GPIO_30_M2F            : out std_logic;
@@ -589,6 +590,7 @@ signal FIC_2_APB_MASTER_0_PENABLE       : std_logic;
 signal FIC_2_APB_MASTER_0_PSELx         : std_logic;
 signal FIC_2_APB_MASTER_0_PWDATA        : std_logic_vector(31 downto 0);
 signal FIC_2_APB_MASTER_0_PWRITE        : std_logic;
+signal GPIO_26_M2F_net_0                : std_logic;
 signal GPIO_28_M2F_net_0                : std_logic;
 signal GPIO_29_M2F_net_0                : std_logic;
 signal GPIO_30_M2F_net_0                : std_logic;
@@ -602,6 +604,7 @@ signal SPI_0_SS0_M2F_OE_net_0           : std_logic;
 signal SPI_0_SS1_M2F_net_0              : std_logic;
 signal MMUART_0_TXD_M2F_net_1           : std_logic;
 signal MSS_RESET_N_M2F_net_1            : std_logic;
+signal GPIO_26_M2F_net_1                : std_logic;
 signal GPIO_28_M2F_net_1                : std_logic;
 signal GPIO_29_M2F_net_1                : std_logic;
 signal GPIO_30_M2F_net_1                : std_logic;
@@ -704,6 +707,8 @@ begin
  MMUART_0_TXD_M2F                 <= MMUART_0_TXD_M2F_net_1;
  MSS_RESET_N_M2F_net_1            <= MSS_RESET_N_M2F_net_0;
  MSS_RESET_N_M2F                  <= MSS_RESET_N_M2F_net_1;
+ GPIO_26_M2F_net_1                <= GPIO_26_M2F_net_0;
+ GPIO_26_M2F                      <= GPIO_26_M2F_net_1;
  GPIO_28_M2F_net_1                <= GPIO_28_M2F_net_0;
  GPIO_28_M2F                      <= GPIO_28_M2F_net_1;
  GPIO_29_M2F_net_1                <= GPIO_29_M2F_net_0;
@@ -1050,7 +1055,7 @@ MSS_ADLIB_INST : MSS_010
         MMUART1_RTS_MGPIO11B_H2F_A              => OPEN,
         MMUART1_RTS_MGPIO11B_H2F_B              => OPEN,
         MMUART1_RXD_MGPIO26B_H2F_A              => OPEN,
-        MMUART1_RXD_MGPIO26B_H2F_B              => OPEN,
+        MMUART1_RXD_MGPIO26B_H2F_B              => GPIO_26_M2F_net_0,
         MMUART1_SCK_MGPIO25B_H2F_A              => OPEN,
         MMUART1_SCK_MGPIO25B_H2F_B              => OPEN,
         MMUART1_TXD_MGPIO24B_H2F_A              => OPEN,

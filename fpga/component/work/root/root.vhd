@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- Created by SmartDesign Thu Jun  2 21:32:29 2022
+-- Created by SmartDesign Wed Jun 15 17:58:17 2022
 -- Version: 2021.3 2021.3.0.10
 ----------------------------------------------------------------------
 
@@ -51,6 +51,7 @@ entity root is
         STAMP6_MISO      : in  std_logic;
         TM_RXD           : in  std_logic;
         -- Outputs
+        DAPI_RTS         : out std_logic;
         DAPI_TXD         : out std_logic;
         F_CLK            : out std_logic;
         F_CS1            : out std_logic;
@@ -159,6 +160,7 @@ component root_sb
         -- Outputs
         FIC_0_CLK          : out std_logic;
         FIC_0_LOCK         : out std_logic;
+        GPIO_26_M2F        : out std_logic;
         GPIO_28_M2F        : out std_logic;
         GPIO_29_M2F        : out std_logic;
         GPIO_30_M2F        : out std_logic;
@@ -214,6 +216,7 @@ end component;
 ----------------------------------------------------------------------
 -- Signal declarations
 ----------------------------------------------------------------------
+signal DAPI_RTS_net_0        : std_logic;
 signal DAPI_TXD_net_0        : std_logic;
 signal F_CLK_net_0           : std_logic;
 signal F_CS1_net_0           : std_logic;
@@ -347,6 +350,7 @@ signal STAMP3_MOSI_net_1     : std_logic;
 signal STAMP3_CS_TEMP_net_1  : std_logic;
 signal LED_HB_MEMSYNC_net_1  : std_logic;
 signal TM_RXD_net_0          : std_logic;
+signal DAPI_RTS_net_1        : std_logic;
 ----------------------------------------------------------------------
 -- TiedOff Signals
 ----------------------------------------------------------------------
@@ -473,6 +477,8 @@ begin
  LED_HB_MEMSYNC        <= LED_HB_MEMSYNC_net_1;
  TM_RXD_net_0          <= TM_RXD;
  TM_TXD                <= TM_RXD_net_0;
+ DAPI_RTS_net_1        <= DAPI_RTS_net_0;
+ DAPI_RTS              <= DAPI_RTS_net_1;
 ----------------------------------------------------------------------
 -- Bus Interface Nets Assignments - Unequal Pin Widths
 ----------------------------------------------------------------------
@@ -591,6 +597,7 @@ MSS : root_sb
         FIC_0_LOCK         => OPEN,
         MSS_READY          => MSS_MSS_READY,
         MMUART_0_TXD_M2F   => DAPI_TXD_net_0,
+        GPIO_26_M2F        => DAPI_RTS_net_0,
         GPIO_28_M2F        => OUT_ADC_START_net_0,
         GPIO_29_M2F        => LED_FPGA_LOADED_net_0,
         GPIO_30_M2F        => LED_RECORDING_net_0,

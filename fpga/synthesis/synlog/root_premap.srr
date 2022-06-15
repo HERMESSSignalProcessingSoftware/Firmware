@@ -1,4 +1,4 @@
-# Thu Jun  2 21:33:05 2022
+# Wed Jun 15 17:58:36 2022
 
 
 Copyright (C) 1994-2021 Synopsys, Inc.
@@ -88,7 +88,7 @@ Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 @N: BN362 :"c:\users\jl\source\repos\hermess\hermess-firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":836:8:836:9|Removing sequential instance sdif3_areset_n_q1 (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
 @N: FX1184 |Applying syn_allowed_resources blockrams=21 on top level netlist root 
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 176MB peak: 176MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:01s; Memory used current: 176MB peak: 176MB)
 
 
 
@@ -220,9 +220,9 @@ Finished constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:0
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 93MB peak: 181MB)
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 94MB peak: 181MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Thu Jun  2 21:33:07 2022
+# Wed Jun 15 17:58:38 2022
 
 ###########################################################]

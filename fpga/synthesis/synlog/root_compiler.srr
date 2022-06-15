@@ -355,21 +355,21 @@ State machine has 6 reachable states with original encodings of:
    100000
 @W: CL190 :"C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\hdl\STAMP.vhd":199:8:199:9|Optimizing register bit delay_counter(28) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: CL260 :"C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\hdl\STAMP.vhd":199:8:199:9|Pruning register bit 28 of delay_counter(28 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-Finished optimization stage 2 on STAMP (CPU Time 0h:00m:00s, Memory Used current: 116MB peak: 134MB)
+Finished optimization stage 2 on STAMP (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 134MB)
 Running optimization stage 2 on root .......
-Finished optimization stage 2 on root (CPU Time 0h:00m:00s, Memory Used current: 116MB peak: 134MB)
+Finished optimization stage 2 on root (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 134MB)
 
 For a summary of runtime and memory usage per design unit, please see file:
 ==========================================================
 @L: C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\synthesis\synwork\layer0.rt.csv
 
 
-At c_vhdl Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 116MB peak: 134MB)
+At c_vhdl Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:06s; Memory used current: 116MB peak: 134MB)
 
-Process took 0h:00m:04s realtime, 0h:00m:04s cputime
+Process took 0h:00m:06s realtime, 0h:00m:06s cputime
 
 Process completed successfully.
-# Thu Jun  2 21:33:03 2022
+# Wed Jun 15 17:58:34 2022
 
 ###########################################################]
 ###########################################################[
@@ -397,7 +397,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Thu Jun  2 21:33:03 2022
+# Wed Jun 15 17:58:34 2022
 
 ###########################################################]
 
@@ -407,11 +407,11 @@ For a summary of runtime and memory usage for all design units, please see file:
 
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 23MB peak: 23MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 23MB peak: 23MB)
 
-Process took 0h:00m:05s realtime, 0h:00m:04s cputime
+Process took 0h:00m:06s realtime, 0h:00m:06s cputime
 
 Process completed successfully.
-# Thu Jun  2 21:33:04 2022
+# Wed Jun 15 17:58:34 2022
 
 ###########################################################]

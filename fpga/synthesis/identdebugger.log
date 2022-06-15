@@ -1,0 +1,29 @@
+
+                             Identify (R) Debugger 
+
+                Version R-2021.03M-SP1 for win64 - Oct 12, 2021 
+
+                    Copyright (c) 1988 - 2021 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+
+Starting:    J:\LiberoSoC\Identify\bin64\mbin\identify_debugger.exe
+Install:     J:\LiberoSoC\Identify
+Hostname:    LUS210
+Date:        Wed Jun 15 17:27:29 2022
+Version:     R-2021.03M-SP1
+
+Arguments:   -product identify_debugger root_syn.prj
+ProductType: identify_debugger
+
+License checkout: identdebugger_actel
+License: identdebugger_actel node-locked 
+Licensed Vendor: actel
+License Option: actel_oem
+
+
+
+Warning: Project 'C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\synthesis\root_syn.prj' has no debug implementation
+Note: The debugger obtained its own license

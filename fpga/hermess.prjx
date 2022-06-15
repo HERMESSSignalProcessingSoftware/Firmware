@@ -19,8 +19,8 @@ KEY VendorTechnology_IO_DEFT_STD "LVCMOS33"
 KEY VendorTechnology_OPCONR ""
 KEY VendorTechnology_PLL_SUPPLY "PLL_SUPPLY_33"
 KEY VendorTechnology_RAD_EXPOSURE ""
-KEY VendorTechnology_RESERVEMIGRATIONPINS "1"
-KEY VendorTechnology_RESTRICTPROBEPINS "1"
+KEY VendorTechnology_RESERVEMIGRATIONPINS "0"
+KEY VendorTechnology_RESTRICTPROBEPINS "0"
 KEY VendorTechnology_RESTRICTSPIPINS "0"
 KEY VendorTechnology_SYSTEM_CONTROLLER_SUSPEND_MODE "0"
 KEY VendorTechnology_TARGETDEVICESFORMIGRATION "PA4M1000_N"
@@ -62,13 +62,13 @@ ENDLIST
 LIST FileManager
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf,actgen_cxf"
 STATE="utd"
-TIME="1654198183"
+TIME="1655201568"
 SIZE="3259"
 PARENT="<project>\component\work\root_sb\root_sb.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\coreparameters.vhd,tb_hdl"
 STATE="utd"
-TIME="1654198183"
+TIME="1655201568"
 SIZE="2013"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -189,7 +189,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreResetP\7.1.100\CoreResetP.cxf,actgen_cxf"
 STATE="utd"
-TIME="1654198183"
+TIME="1655201568"
 SIZE="582"
 PARENT="<project>\component\work\root_sb\root_sb.cxf"
 ENDFILE
@@ -209,13 +209,13 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\SgCore\FCCC\2.0.201\FCCC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1654198183"
+TIME="1655201567"
 SIZE="241"
 PARENT="<project>\component\work\root_sb\root_sb.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SgCore\OSC\2.0.101\OSC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1654198185"
+TIME="1655201569"
 SIZE="682"
 PARENT="<project>\component\work\root_sb\root_sb.cxf"
 ENDFILE
@@ -245,103 +245,103 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS\1.1.500\MSS.cxf,actgen_cxf"
 STATE="utd"
-TIME="1654198179"
+TIME="1655201564"
 SIZE="526"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_CCC\1.0.100\MSS_CCC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1654198173"
+TIME="1655201558"
 SIZE="253"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_CC\1.0.100\MSS_CC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1654198173"
+TIME="1655201558"
 SIZE="252"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_CFGM\1.1.100\MSS_CFGM.cxf,actgen_cxf"
 STATE="utd"
-TIME="1654198173"
+TIME="1655201558"
 SIZE="254"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_CM3\1.0.200\MSS_CM3.cxf,actgen_cxf"
 STATE="utd"
-TIME="1654198173"
+TIME="1655201558"
 SIZE="253"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_DDRB\1.0.200\MSS_DDRB.cxf,actgen_cxf"
 STATE="utd"
-TIME="1654198173"
+TIME="1655201558"
 SIZE="254"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_EDAC\1.0.101\MSS_EDAC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1654198173"
+TIME="1655201558"
 SIZE="254"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_ENVM\1.0.101\MSS_ENVM.cxf,actgen_cxf"
 STATE="utd"
-TIME="1654198173"
+TIME="1655201558"
 SIZE="254"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_FIC32\1.0.100\MSS_FIC32.cxf,actgen_cxf"
 STATE="utd"
-TIME="1654198173"
+TIME="1655201558"
 SIZE="255"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_GPIO\1.0.100\MSS_GPIO.cxf,actgen_cxf"
 STATE="utd"
-TIME="1654198173"
+TIME="1655201558"
 SIZE="254"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_INTR\1.0.200\MSS_INTR.cxf,actgen_cxf"
 STATE="utd"
-TIME="1654198173"
+TIME="1655201558"
 SIZE="254"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_MMUART\1.0.100\MSS_MMUART.cxf,actgen_cxf"
 STATE="utd"
-TIME="1654198173"
+TIME="1655201558"
 SIZE="256"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_RESET\1.0.100\MSS_RESET.cxf,actgen_cxf"
 STATE="utd"
-TIME="1654198173"
+TIME="1655201558"
 SIZE="255"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_SECURITY\1.0.100\MSS_SECURITY.cxf,actgen_cxf"
 STATE="utd"
-TIME="1654198173"
+TIME="1655201558"
 SIZE="258"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_SPI\1.0.100\MSS_SPI.cxf,actgen_cxf"
 STATE="utd"
-TIME="1654198173"
+TIME="1655201558"
 SIZE="253"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_SWITCH\1.0.101\MSS_SWITCH.cxf,actgen_cxf"
 STATE="utd"
-TIME="1654198173"
+TIME="1655201558"
 SIZE="256"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_WATCHDOG\1.0.100\MSS_WATCHDOG.cxf,actgen_cxf"
 STATE="utd"
-TIME="1654198173"
+TIME="1655201558"
 SIZE="258"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
@@ -352,70 +352,70 @@ SIZE="2298"
 ENDFILE
 VALUE "<project>\component\work\root\root.cxf,actgen_cxf"
 STATE="utd"
-TIME="1654199089"
-SIZE="14227"
+TIME="1655306250"
+SIZE="14849"
 ENDFILE
 VALUE "<project>\component\work\root\root.vhd,hdl"
 STATE="utd"
-TIME="1654198349"
-SIZE="33500"
+TIME="1655304904"
+SIZE="34542"
 PARENT="<project>\component\work\root\root.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\root_sb\CCC_0\root_sb_CCC_0_FCCC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1654198183"
+TIME="1655201567"
 SIZE="689"
 PARENT="<project>\component\work\root_sb\root_sb.cxf"
 ENDFILE
 VALUE "<project>\component\work\root_sb\CCC_0\root_sb_CCC_0_FCCC.vhd,hdl"
 STATE="utd"
-TIME="1654198183"
+TIME="1655201567"
 SIZE="5562"
 PARENT="<project>\component\work\root_sb\CCC_0\root_sb_CCC_0_FCCC.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\root_sb\FABOSC_0\root_sb_FABOSC_0_OSC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1654198185"
+TIME="1655201569"
 SIZE="462"
 PARENT="<project>\component\work\root_sb\root_sb.cxf"
 ENDFILE
 VALUE "<project>\component\work\root_sb\FABOSC_0\root_sb_FABOSC_0_OSC.vhd,hdl"
 STATE="utd"
-TIME="1654198185"
+TIME="1655201569"
 SIZE="1570"
 PARENT="<project>\component\work\root_sb\FABOSC_0\root_sb_FABOSC_0_OSC.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\root_sb\root_sb.cxf,actgen_cxf"
 STATE="utd"
-TIME="1654198186"
-SIZE="30197"
+TIME="1655201570"
+SIZE="32128"
 ENDFILE
 VALUE "<project>\component\work\root_sb\root_sb.vhd,hdl"
 STATE="utd"
-TIME="1654198185"
-SIZE="45663"
+TIME="1655201569"
+SIZE="47076"
 PARENT="<project>\component\work\root_sb\root_sb.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\root_sb_MSS\root_sb_MSS.cxf,actgen_cxf"
 STATE="utd"
-TIME="1654198179"
-SIZE="21055"
+TIME="1655201564"
+SIZE="22986"
 ENDFILE
 VALUE "<project>\component\work\root_sb_MSS\root_sb_MSS.vhd,hdl"
 STATE="utd"
-TIME="1654198179"
-SIZE="83480"
+TIME="1655201564"
+SIZE="84185"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\root_sb_MSS\root_sb_MSS_pre.vhd,hdl"
 STATE="utd"
-TIME="1654198178"
-SIZE="70620"
+TIME="1655201563"
+SIZE="70344"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 BEGIN_USE_CONSTRAINT
 TOOL_CONSTRAINT_TYPE="ideSYNTHESIS"
@@ -426,8 +426,8 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\root_sb_MSS\root_sb_MSS_syn.vhd,hdl"
 STATE="utd"
-TIME="1654198178"
-SIZE="70600"
+TIME="1655201563"
+SIZE="70324"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 BEGIN_USE_CONSTRAINT
 TOOL_CONSTRAINT_TYPE="ideSYNTHESIS"
@@ -436,10 +436,16 @@ END_USE_CONSTRAINT
 USE_FOR_ANY_TOOL="FALSE"
 IS_READONLY="TRUE"
 ENDFILE
+VALUE "<project>\constraint\io\user.pdc,io_pdc"
+STATE="utd"
+TIME="1655240993"
+SIZE="1300"
+ENDFILE
 VALUE "<project>\constraint\io\user1.pdc,io_pdc"
 STATE="utd"
 TIME="1647725317"
 SIZE="9227"
+IS_TARGET="TRUE"
 ENDFILE
 VALUE "<project>\hdl\spi_master.vhd,hdl"
 STATE="utd"
@@ -474,7 +480,7 @@ PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 ENDFILE
 VALUE "<project>\simulation\CM3_compile_bfm.tcl,sim"
 STATE="utd"
-TIME="1654198179"
+TIME="1655201564"
 SIZE="504"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
@@ -499,7 +505,7 @@ PARENT="<project>\component\work\root_sb\root_sb.cxf"
 ENDFILE
 VALUE "<project>\simulation\test.bfm,sim"
 STATE="utd"
-TIME="1654198179"
+TIME="1655201564"
 SIZE="734"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
@@ -540,6 +546,7 @@ VALUE "<project>\simulation\subsystem.bfm,sim"
 ENDLIST
 LIST PNRConstraints
 VALUE "<project>\constraint\io\user1.pdc,io_pdc"
+VALUE "<project>\constraint\io\user.pdc,io_pdc"
 ENDLIST
 LIST ProjectState5.1
 LIST Impl1
@@ -716,8 +723,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="J:\LiberoSoC\SynplifyPro\bin\synplify_pro.exe"
-PARAM=""
-BATCH=0
+PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
+BATCH=1
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -780,12 +787,24 @@ LIST OpenedFileList
 ORIENTATION;HORIZONTAL
 Reports;Reports;0
 ReportsCurrentItem;Generate Memory Map:root_DataSheet.xml
+Constraint Manager;Constraint Manager;0
 HDL;hdl\STAMP.vhd;0
 SmartDesign;root;0
-ACTIVEVIEW;hdl\STAMP.vhd
+ACTIVEVIEW;Constraint Manager
 ENDLIST
 LIST ModuleSubBlockList
 LIST "coreresetp_pcie_hotreset::work","component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp_pcie_hotreset.vhd","FALSE","FALSE"
+ENDLIST
+LIST "DESIGN_FIRMWARE::work","component\work\DESIGN_FIRMWARE\DESIGN_FIRMWARE.cxf","TRUE","FALSE"
+SUBBLOCK "SmartFusion2_CMSIS::work","","FALSE","FALSE"
+SUBBLOCK "SmartFusion2_MSS_GPIO_Driver::work","","FALSE","FALSE"
+SUBBLOCK "SmartFusion2_MSS_HPDMA_Driver::work","","FALSE","FALSE"
+SUBBLOCK "SmartFusion2_MSS_MMUART_Driver::work","","FALSE","FALSE"
+SUBBLOCK "SmartFusion2_MSS_NVM_Driver::work","","FALSE","FALSE"
+SUBBLOCK "SmartFusion2_MSS_SPI_Driver::work","","FALSE","FALSE"
+SUBBLOCK "SmartFusion2_MSS_System_Services_Driver::work","","FALSE","FALSE"
+SUBBLOCK "SmartFusion2_MSS_Timer_Driver::work","","FALSE","FALSE"
+SUBBLOCK "SmartFusion2_MSS_Watchdog_Driver::work","","FALSE","FALSE"
 ENDLIST
 LIST "CoreResetP::work","component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd","FALSE","FALSE"
 SUBBLOCK "coreresetp_pcie_hotreset::work","component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp_pcie_hotreset.vhd","FALSE","FALSE"
@@ -821,6 +840,24 @@ SUBBLOCK "RCOSC_25_50MHZ::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vh
 ENDLIST
 LIST "root_sb_MSS::work","component\work\root_sb_MSS\root_sb_MSS.vhd","TRUE","FALSE"
 SUBBLOCK "MSS_010::work","component\work\root_sb_MSS\root_sb_MSS_syn.vhd","FALSE","FALSE"
+ENDLIST
+LIST "SmartFusion2_CMSIS::work","","FALSE","FALSE"
+ENDLIST
+LIST "SmartFusion2_MSS_GPIO_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "SmartFusion2_MSS_HPDMA_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "SmartFusion2_MSS_MMUART_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "SmartFusion2_MSS_NVM_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "SmartFusion2_MSS_SPI_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "SmartFusion2_MSS_System_Services_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "SmartFusion2_MSS_Timer_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "SmartFusion2_MSS_Watchdog_Driver::work","","FALSE","FALSE"
 ENDLIST
 LIST "STAMP::work","hdl\STAMP.vhd","FALSE","FALSE"
 SUBBLOCK "spi_master::work","hdl\spi_master.vhd","FALSE","FALSE"
@@ -880,6 +917,7 @@ LIST ActiveTestBenchList
 ENDLIST
 LIST IOTabList
 VALUE "constraint\io\user1.pdc"
+VALUE "constraint\io\user.pdc"
 ENDLIST
 LIST FPTabList
 ENDLIST

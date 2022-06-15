@@ -2,6 +2,7 @@
 #define COMPONENTS_DAPI_H_
 
 #include <string>
+#include "../sf2drivers/drivers/mss_uart/mss_uart.h"
 #include "../tools/queue.h"
 
 
@@ -39,6 +40,7 @@ public:
      * infos, warnings and errors may creep into the transmission stream. It
      * is therefore highly recommended to command the transfer of one in itself
      * consistent unit and not many partial units.
+     * The null termination will not be qeued for transmission.
      * @param msg A null terminated C style string. Can be freed after this
      * function returns.
      * @return A Dapi instance for further use
@@ -51,11 +53,24 @@ public:
      * infos, warnings and errors may creep into the transmission stream. It
      * is therefore highly recommended to command the transfer of one in itself
      * consistent unit and not many partial units.
+     * The null termination will not be qeued for transmission.
      * @param msg A null terminated C style string. Can be freed after this
      * function returns.
      * @return A Dapi instance for further use
      */
     Dapi &operator<< (const char * const msg);
+
+    /** Char transfer operator
+     *
+     * Use this method to transfer simple chars such as 0x00.
+     * Enqueues a message for asynchronous transmission via the DAPI. Note that
+     * infos, warnings and errors may creep into the transmission stream. It
+     * is therefore highly recommended to command the transfer of one in itself
+     * consistent unit and not many partial units.
+     * @param msg A simple char
+     * @return A Dapi instance for further use
+     */
+    Dapi &operator<< (char msg);
 
 private:
     /** Message container class
@@ -90,17 +105,36 @@ private:
         const uint32_t size; /**< size of the array */
     };
 
+    /**
+     * UART RX receiver function
+     *
+     * Reads UART inputs into rxBuffer.
+     * @param this_uart Ignored by this callback
+     */
+    static void rxHandler (mss_uart_instance_t *this_uart);
+
     /** Constructor
      *
      * initializes the UART0 interface for DAPI usage
      */
     Dapi ();
 
-    bool transferInProgress; /**< Indicates, if a transfer is
+    /** Handler function for echo commands
+     *
+     * @param contentSize The number of content bytes received
+     */
+    void handleCommandEcho (uint8_t contentSize);
+
+    bool transferInProgress = false; /**< Indicates, if a transfer is
     in progress and if the next msgQueue item should be retained. */
 
     Queue<Message> msgQueue; /**< A list of C style strings to be
     transmitted */
+
+    uint8_t rxBuffer[64]; /**< The contents read via UART */
+
+    uint8_t rxBufferIdx = 0; /**< The index to start writing next incoming
+    UART rx data into the rxBuffer */
 };
 
 

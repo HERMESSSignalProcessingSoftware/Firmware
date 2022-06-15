@@ -2,7 +2,7 @@
 // Written by Synplify Pro 
 // Product Version "R-2021.03M-SP1"
 // Program "Synplify Pro", Mapper "map202103act, Build 148R"
-// Thu Jun  2 21:33:17 2022
+// Wed Jun 15 17:58:47 2022
 //
 // Source file index table:
 // Object locations will have the form <file>:<line>
@@ -64,7 +64,7 @@ wire GL3 ;
 	.Y(MSS_FIC_0_CLK),
 	.A(GL0_net)
 );
-//@23:559
+//@23:565
 // @13:106
   CCC CCC_INST (
 	.Y0(Y0),
@@ -2454,7 +2454,7 @@ wire VCC ;
 	.Y(FABOSC_0_RCOSC_25_50MHZ_O2F),
 	.A(N_RCOSC_25_50MHZ_CLKINT)
 );
-//@23:792
+//@23:798
 // @21:53
   RCOSC_25_50MHZ I_RCOSC_25_50MHZ (
 	.CLKOUT(FABOSC_0_RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC)
@@ -2497,6 +2497,7 @@ module root_sb_MSS (
   F_CS1_c,
   F_MOSI_c,
   F_CLK_c,
+  DAPI_RTS_c,
   DAPI_TXD_c,
   LED_FPGA_LOADED_c,
   OUT_ADC_START_c,
@@ -2539,6 +2540,7 @@ output F_CS2_c ;
 output F_CS1_c ;
 output F_MOSI_c ;
 output F_CLK_c ;
+output DAPI_RTS_c ;
 output DAPI_TXD_c ;
 output LED_FPGA_LOADED_c ;
 output OUT_ADC_START_c ;
@@ -2574,6 +2576,7 @@ wire F_CS2_c ;
 wire F_CS1_c ;
 wire F_MOSI_c ;
 wire F_CLK_c ;
+wire DAPI_RTS_c ;
 wire DAPI_TXD_c ;
 wire LED_FPGA_LOADED_c ;
 wire OUT_ADC_START_c ;
@@ -2681,7 +2684,6 @@ wire MMUART1_DTR_MGPIO12B_H2F_A ;
 wire MMUART1_RTS_MGPIO11B_H2F_A ;
 wire MMUART1_RTS_MGPIO11B_H2F_B ;
 wire MMUART1_RXD_MGPIO26B_H2F_A ;
-wire MMUART1_RXD_MGPIO26B_H2F_B ;
 wire MMUART1_SCK_MGPIO25B_H2F_A ;
 wire MMUART1_SCK_MGPIO25B_H2F_B ;
 wire MMUART1_TXD_MGPIO24B_H2F_A ;
@@ -2896,7 +2898,7 @@ defparam MSS_ADLIB_INST_RNO_1.INIT=8'hE4;
 	.Y(root_sb_MSS_TMP_0_FIC_0_APB_MASTER_PREADY)
 );
 defparam MSS_ADLIB_INST_RNO.INIT=16'h8ADF;
-// @22:753
+// @22:758
   MSS_010 MSS_ADLIB_INST (
 	.CAN_RXBUS_MGPIO3A_H2F_A(CAN_RXBUS_MGPIO3A_H2F_A),
 	.CAN_RXBUS_MGPIO3A_H2F_B(CAN_RXBUS_MGPIO3A_H2F_B),
@@ -2973,7 +2975,7 @@ defparam MSS_ADLIB_INST_RNO.INIT=16'h8ADF;
 	.MMUART1_RTS_MGPIO11B_H2F_A(MMUART1_RTS_MGPIO11B_H2F_A),
 	.MMUART1_RTS_MGPIO11B_H2F_B(MMUART1_RTS_MGPIO11B_H2F_B),
 	.MMUART1_RXD_MGPIO26B_H2F_A(MMUART1_RXD_MGPIO26B_H2F_A),
-	.MMUART1_RXD_MGPIO26B_H2F_B(MMUART1_RXD_MGPIO26B_H2F_B),
+	.MMUART1_RXD_MGPIO26B_H2F_B(DAPI_RTS_c),
 	.MMUART1_SCK_MGPIO25B_H2F_A(MMUART1_SCK_MGPIO25B_H2F_A),
 	.MMUART1_SCK_MGPIO25B_H2F_B(MMUART1_SCK_MGPIO25B_H2F_B),
 	.MMUART1_TXD_MGPIO24B_H2F_A(MMUART1_TXD_MGPIO24B_H2F_A),
@@ -3424,6 +3426,7 @@ module root_sb (
   OUT_ADC_START_c,
   LED_FPGA_LOADED_c,
   DAPI_TXD_c,
+  DAPI_RTS_c,
   F_CLK_c,
   F_MOSI_c,
   F_CS1_c,
@@ -3474,6 +3477,7 @@ output LED_RECORDING_c ;
 output OUT_ADC_START_c ;
 output LED_FPGA_LOADED_c ;
 output DAPI_TXD_c ;
+output DAPI_RTS_c ;
 output F_CLK_c ;
 output F_MOSI_c ;
 output F_CS1_c ;
@@ -3514,6 +3518,7 @@ wire LED_RECORDING_c ;
 wire OUT_ADC_START_c ;
 wire LED_FPGA_LOADED_c ;
 wire DAPI_TXD_c ;
+wire DAPI_RTS_c ;
 wire F_CLK_c ;
 wire F_MOSI_c ;
 wire F_CS1_c ;
@@ -3552,18 +3557,18 @@ wire FIC_2_APB_M_PRESET_N ;
 wire FABOSC_0_RCOSC_25_50MHZ_O2F ;
 wire GND ;
 wire VCC ;
-// @23:852
+// @23:859
   SYSRESET SYSRESET_POR (
 	.POWER_ON_RESET_N(POWER_ON_RESET_N),
 	.DEVRST_N(DEVRST_N)
 );
-// @23:559
+// @23:565
   root_sb_CCC_0_FCCC CCC_0 (
 	.FABOSC_0_RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC(FABOSC_0_RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC),
 	.FIC_0_LOCK(FIC_0_LOCK),
 	.MSS_FIC_0_CLK(MSS_FIC_0_CLK)
 );
-// @23:568
+// @23:574
   CoreAPB3 CoreAPB3_0 (
 	.MSS_STAMP_3_PRDATA(MSS_STAMP_3_PRDATA[31:0]),
 	.MSS_STAMP_1_PRDATA(MSS_STAMP_1_PRDATA[31:0]),
@@ -3582,7 +3587,7 @@ wire VCC ;
 	.MSS_STAMP_5_PSELx(MSS_STAMP_5_PSELx),
 	.root_sb_MSS_TMP_0_FIC_0_APB_MASTER_PSELx(root_sb_MSS_TMP_0_FIC_0_APB_MASTER_PSELx)
 );
-// @23:696
+// @23:702
   CoreResetP CORERESETP_0 (
 	.MSS_INIT_DONE(MSS_INIT_DONE),
 	.MSS_MSS_READY(MSS_MSS_READY),
@@ -3592,12 +3597,12 @@ wire VCC ;
 	.FIC_2_APB_M_PRESET_N(FIC_2_APB_M_PRESET_N),
 	.FABOSC_0_RCOSC_25_50MHZ_O2F(FABOSC_0_RCOSC_25_50MHZ_O2F)
 );
-// @23:792
+// @23:798
   root_sb_FABOSC_0_OSC FABOSC_0 (
 	.FABOSC_0_RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC(FABOSC_0_RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC),
 	.FABOSC_0_RCOSC_25_50MHZ_O2F(FABOSC_0_RCOSC_25_50MHZ_O2F)
 );
-// @23:805
+// @23:811
   root_sb_MSS root_sb_MSS_0 (
 	.root_sb_MSS_TMP_0_FIC_0_APB_MASTER_PRDATA(root_sb_MSS_TMP_0_FIC_0_APB_MASTER_PRDATA[31:0]),
 	.MSS_STAMP_PWDATA(MSS_STAMP_PWDATA[31:0]),
@@ -3622,6 +3627,7 @@ wire VCC ;
 	.F_CS1_c(F_CS1_c),
 	.F_MOSI_c(F_MOSI_c),
 	.F_CLK_c(F_CLK_c),
+	.DAPI_RTS_c(DAPI_RTS_c),
 	.DAPI_TXD_c(DAPI_TXD_c),
 	.LED_FPGA_LOADED_c(LED_FPGA_LOADED_c),
 	.OUT_ADC_START_c(OUT_ADC_START_c),
@@ -6552,7 +6558,7 @@ defparam un7_count_NE_13.INIT=4'hE;
 	.Y(un10_count_0_a2_0_Z)
 );
 defparam un10_count_0_a2_0.INIT=4'h1;
-// @24:605
+// @24:612
   CFG2 delay_counterlde_0_a2_0_0 (
 	.A(component_state[2]),
 	.B(component_state[4]),
@@ -6805,7 +6811,7 @@ defparam \tx_buffer_RNO[2] .INIT=8'hCA;
 	.Y(N_1321)
 );
 defparam \tx_buffer_RNO[1] .INIT=8'hCA;
-// @24:605
+// @24:612
   CFG3 busy_RNI0TTL (
 	.A(spi_busy),
 	.B(component_state[0]),
@@ -7238,7 +7244,7 @@ defparam next_state_1_sqmuxa_0_a2.INIT=8'h40;
 	.Y(un15_delay_counter_Z)
 );
 defparam un15_delay_counter.INIT=4'h4;
-// @24:605
+// @24:612
   CFG4 un14_paddr_RNIOB6J (
 	.A(component_state[3]),
 	.B(apb_spi_finished),
@@ -8046,7 +8052,7 @@ defparam un1_dummy_0_sqmuxa.INIT=16'hECCC;
 	.Y(un1_component_state_4_i)
 );
 defparam un80_paddr_0_a2_RNIDOFQ.INIT=16'h8F80;
-// @24:605
+// @24:612
   CFG4 busy_RNIAPRM (
 	.A(spi_busy),
 	.B(component_state[0]),
@@ -8069,7 +8075,7 @@ defparam \component_state_ns_i_a2_0_a2[5] .INIT=4'h1;
 	.Y(N_299)
 );
 defparam spi_tx_data_0_sqmuxa_1.INIT=4'h4;
-// @24:605
+// @24:612
   CFG3 \component_state_ns_0_0_o2_0_RNI9HCB[0]  (
 	.A(component_state[5]),
 	.B(N_202),
@@ -8162,7 +8168,7 @@ defparam spi_dms2_cs_0_sqmuxa.INIT=4'h4;
 	.Y(spi_dms2_cs_1_sqmuxa_1_1z)
 );
 defparam spi_dms2_cs_1_sqmuxa_1.INIT=4'h8;
-// @24:605
+// @24:612
   CFG4 busy_RNIGTFS1 (
 	.A(delay_counterlde_0_a2_0),
 	.B(component_state[3]),
@@ -8429,7 +8435,7 @@ defparam spi_enable_0_sqmuxa_2_RNIGO86.INIT=4'hE;
 	.Y(un1_status_async_cycles_1_sqmuxa_0)
 );
 defparam \un1_status_async_cycles_1_sqmuxa[6] .INIT=16'hCCDC;
-// @24:605
+// @24:612
   CFG4 polling_timeout_counter_0_sqmuxa_RNIKQPN1 (
 	.A(polling_timeout_counter_0_sqmuxa_1z),
 	.B(dummy_0_sqmuxa),
@@ -16406,7 +16412,7 @@ defparam un7_count_NE_13.INIT=4'hE;
 	.Y(un10_count_0_a2_0_Z)
 );
 defparam un10_count_0_a2_0.INIT=4'h1;
-// @24:633
+// @24:640
   CFG2 delay_counterlde_0_a2_0_0 (
 	.A(component_state[2]),
 	.B(component_state[4]),
@@ -16638,7 +16644,7 @@ defparam \tx_buffer_RNO[2] .INIT=8'hCA;
 	.Y(N_1321)
 );
 defparam \tx_buffer_RNO[1] .INIT=8'hCA;
-// @24:633
+// @24:640
   CFG3 busy_RNI3CP7 (
 	.A(spi_busy),
 	.B(component_state[0]),
@@ -17048,7 +17054,7 @@ defparam \un1_spi_rx_data_i_a2_1[31] .INIT=8'h02;
 	.Y(N_272)
 );
 defparam \un1_spi_rx_data_i_a2_0[31] .INIT=8'h10;
-// @24:633
+// @24:640
   CFG4 polling_timeout_counterlde_0_o2 (
 	.A(component_state[3]),
 	.B(apb_spi_finished),
@@ -17797,7 +17803,7 @@ defparam rx_buffer_0_sqmuxa_1_0_a2.INIT=16'h8000;
 	.Y(spi_dms2_cs_1_sqmuxa_Z)
 );
 defparam spi_dms2_cs_1_sqmuxa.INIT=16'h0020;
-// @24:633
+// @24:640
   CFG3 \component_state_ns_0_0_o2_0_RNICQNB[0]  (
 	.A(component_state_0_0),
 	.B(N_202),
@@ -17826,7 +17832,7 @@ defparam \component_state_ns_i_a2_0_a2[5] .INIT=4'h1;
 	.Y(N_299)
 );
 defparam un1_new_avail_1_sqmuxa_3_i_a2.INIT=4'h4;
-// @24:633
+// @24:640
   CFG4 busy_RNIEBBC (
 	.A(spi_busy),
 	.B(component_state[0]),
@@ -17946,7 +17952,7 @@ defparam spi_dms2_cs_1_sqmuxa_1.INIT=4'h8;
 	.Y(spi_dms2_cs_0_sqmuxa_1z)
 );
 defparam spi_dms2_cs_0_sqmuxa.INIT=4'h4;
-// @24:633
+// @24:640
   CFG4 busy_RNIQNTU (
 	.A(delay_counterlde_0_a2_0),
 	.B(component_state[3]),
@@ -18213,7 +18219,7 @@ defparam \un1_status_async_cycles_1_sqmuxa[6] .INIT=16'hCCDC;
 	.Y(N_1034)
 );
 defparam spi_enable_0_sqmuxa_2_RNII5Q6.INIT=4'hE;
-// @24:633
+// @24:640
   CFG4 polling_timeout_counter_0_sqmuxa_RNIDCH32 (
 	.A(polling_timeout_counter_0_sqmuxa_1z),
 	.B(dummy_0_sqmuxa),
@@ -26185,7 +26191,7 @@ defparam un7_count_NE_13.INIT=4'hE;
 	.Y(un10_count_0_a2_0_Z)
 );
 defparam un10_count_0_a2_0.INIT=4'h1;
-// @24:661
+// @24:668
   CFG2 delay_counterlde_0_a2_0_0 (
 	.A(component_state[2]),
 	.B(component_state[4]),
@@ -26304,7 +26310,7 @@ defparam \tx_buffer_RNO[0] .INIT=4'h4;
 	.Y(PADDR_m[4])
 );
 defparam \PADDR_m_cZ[4] .INIT=4'h8;
-// @24:661
+// @24:668
   CFG3 busy_RNI6RK9 (
 	.A(spi_busy),
 	.B(component_state[0]),
@@ -26851,7 +26857,7 @@ defparam status_dms1_overwrittenVal_9_0_a2.INIT=8'h04;
 	.Y(N_87)
 );
 defparam next_state_1_sqmuxa_0_a2.INIT=8'h40;
-// @24:661
+// @24:668
   CFG4 polling_timeout_counterlde_0_o2 (
 	.A(component_state[3]),
 	.B(apb_spi_finished),
@@ -27574,7 +27580,7 @@ defparam spi_dms2_cs_1_sqmuxa.INIT=16'h0020;
 	.Y(status_async_cycles_0_sqmuxa_Z)
 );
 defparam status_async_cycles_0_sqmuxa.INIT=16'h0040;
-// @24:661
+// @24:668
   CFG3 \component_state_ns_0_0_o2_0_RNIF33C[0]  (
 	.A(component_state_1_0),
 	.B(N_202),
@@ -27598,7 +27604,7 @@ defparam un1_dummy_0_sqmuxa.INIT=16'hFF80;
 	.Y(N_627_1)
 );
 defparam \async_state_ns_0_a3_0_1[0] .INIT=4'h1;
-// @24:661
+// @24:668
   CFG4 busy_RNIITQH (
 	.A(spi_busy),
 	.B(component_state[0]),
@@ -27695,7 +27701,7 @@ defparam un1_new_avail_1_sqmuxa_3_i_0.INIT=16'hFFDC;
 	.Y(N_688)
 );
 defparam \component_state_ns_0_a3_1[1] .INIT=16'h0200;
-// @24:661
+// @24:668
   CFG4 busy_RNI4IB11 (
 	.A(delay_counterlde_0_a2_0),
 	.B(component_state[3]),
@@ -27973,7 +27979,7 @@ defparam \un1_status_async_cycles_1_sqmuxa[6] .INIT=16'h00F8;
 	.Y(N_1034)
 );
 defparam un14_delay_counter_RNIMP0L.INIT=8'hEC;
-// @24:661
+// @24:668
   CFG4 polling_timeout_counter_0_sqmuxa_RNI2D1O1 (
 	.A(polling_timeout_counter_0_sqmuxa_1z),
 	.B(dummy_0_sqmuxa),
@@ -35961,7 +35967,7 @@ defparam un7_count_NE_13.INIT=4'hE;
 	.Y(un10_count_0_a2_0_Z)
 );
 defparam un10_count_0_a2_0.INIT=4'h1;
-// @24:689
+// @24:696
   CFG2 delay_counterlde_0_a2_0_0 (
 	.A(component_state[2]),
 	.B(component_state[4]),
@@ -36080,7 +36086,7 @@ defparam \PADDR_m_cZ[6] .INIT=4'h8;
 	.Y(N_333)
 );
 defparam \tx_buffer_RNO[0] .INIT=4'h4;
-// @24:689
+// @24:696
   CFG3 busy_RNI9AGB (
 	.A(spi_busy),
 	.B(component_state[0]),
@@ -36618,7 +36624,7 @@ defparam status_dms1_overwrittenVal_9_0_a2.INIT=8'h04;
 	.Y(N_87)
 );
 defparam next_state_1_sqmuxa_0_a2.INIT=8'h40;
-// @24:689
+// @24:696
   CFG4 polling_timeout_counterlde_0_o2 (
 	.A(component_state[3]),
 	.B(apb_spi_finished),
@@ -37341,7 +37347,7 @@ defparam spi_dms2_cs_1_sqmuxa.INIT=16'h0020;
 	.Y(status_async_cycles_0_sqmuxa_Z)
 );
 defparam status_async_cycles_0_sqmuxa.INIT=16'h0040;
-// @24:689
+// @24:696
   CFG4 busy_RNIMFAN (
 	.A(spi_busy),
 	.B(component_state[0]),
@@ -37350,7 +37356,7 @@ defparam status_async_cycles_0_sqmuxa.INIT=16'h0040;
 	.Y(N_149)
 );
 defparam busy_RNIMFAN.INIT=16'h0BFF;
-// @24:689
+// @24:696
   CFG3 \component_state_ns_0_0_o2_0_RNIICEC[0]  (
 	.A(component_state_2_0),
 	.B(N_202),
@@ -37462,7 +37468,7 @@ defparam \component_state_ns_0_a3_1[1] .INIT=16'h0200;
 	.Y(N_200)
 );
 defparam un1_component_state_6_i_o2.INIT=16'hF2FF;
-// @24:689
+// @24:696
   CFG4 busy_RNIECP31 (
 	.A(delay_counterlde_0_a2_0),
 	.B(component_state[3]),
@@ -37739,7 +37745,7 @@ defparam \un1_status_async_cycles_1_sqmuxa[6] .INIT=16'h00F8;
 	.Y(N_1034)
 );
 defparam un14_delay_counter_RNIPSMR.INIT=8'hEC;
-// @24:689
+// @24:696
   CFG4 polling_timeout_counter_0_sqmuxa_RNI965O1 (
 	.A(polling_timeout_counter_0_sqmuxa_1z),
 	.B(dummy_0_sqmuxa),
@@ -45719,7 +45725,7 @@ defparam un7_count_NE_13.INIT=4'hE;
 	.Y(un10_count_0_a2_0_Z)
 );
 defparam un10_count_0_a2_0.INIT=4'h1;
-// @24:717
+// @24:724
   CFG2 delay_counterlde_0_a2_0_0 (
 	.A(component_state[2]),
 	.B(component_state[4]),
@@ -45838,7 +45844,7 @@ defparam un1_spi_rx_data_sn_m4.INIT=4'h1;
 	.Y(N_333)
 );
 defparam \tx_buffer_RNO[0] .INIT=4'h4;
-// @24:717
+// @24:724
   CFG3 busy_RNICPBT (
 	.A(spi_busy),
 	.B(component_state[0]),
@@ -46368,7 +46374,7 @@ defparam status_dms1_overwrittenVal_9_0_a2.INIT=8'h04;
 	.Y(N_87)
 );
 defparam next_state_1_sqmuxa_0_a2.INIT=8'h40;
-// @24:717
+// @24:724
   CFG4 polling_timeout_counterlde_0_o2 (
 	.A(component_state[3]),
 	.B(apb_spi_finished),
@@ -47099,7 +47105,7 @@ defparam spi_dms2_cs_1_sqmuxa.INIT=16'h0020;
 	.Y(status_async_cycles_0_sqmuxa_Z)
 );
 defparam status_async_cycles_0_sqmuxa.INIT=16'h0040;
-// @24:717
+// @24:724
   CFG4 busy_RNIQ1QC1 (
 	.A(spi_busy),
 	.B(component_state[0]),
@@ -47108,7 +47114,7 @@ defparam status_async_cycles_0_sqmuxa.INIT=16'h0040;
 	.Y(N_149)
 );
 defparam busy_RNIQ1QC1.INIT=16'h0BFF;
-// @24:717
+// @24:724
   CFG3 \component_state_ns_0_0_o2_0_RNILLPC1[0]  (
 	.A(component_state_3_0),
 	.B(N_202),
@@ -47220,7 +47226,7 @@ defparam \component_state_ns_0_a3_1[1] .INIT=16'h0200;
 	.Y(N_200)
 );
 defparam un1_component_state_6_i_o2.INIT=16'hF2FF;
-// @24:717
+// @24:724
   CFG4 busy_RNIO67M3 (
 	.A(delay_counterlde_0_a2_0),
 	.B(component_state[3]),
@@ -47497,7 +47503,7 @@ defparam \un1_status_async_cycles_1_sqmuxa[6] .INIT=16'h00F8;
 	.Y(N_1034)
 );
 defparam un14_delay_counter_RNISVCI.INIT=8'hEC;
-// @24:717
+// @24:724
   CFG4 polling_timeout_counter_0_sqmuxa_RNIGV8O1 (
 	.A(polling_timeout_counter_0_sqmuxa_1z),
 	.B(dummy_0_sqmuxa),
@@ -55464,7 +55470,7 @@ defparam un7_count_NE_13.INIT=4'hE;
 	.Y(un10_count_0_a2_0_Z)
 );
 defparam un10_count_0_a2_0.INIT=4'h1;
-// @24:745
+// @24:752
   CFG2 delay_counterlde_0_a2_0_0 (
 	.A(component_state[2]),
 	.B(component_state[4]),
@@ -55597,7 +55603,7 @@ defparam dummy_0_sqmuxa_0_a2.INIT=4'h8;
 	.Y(un1_spi_rx_data_sn_N_5)
 );
 defparam un1_spi_rx_data_sn_m4.INIT=4'h1;
-// @24:745
+// @24:752
   CFG3 busy_RNIF87V (
 	.A(spi_busy),
 	.B(component_state[0]),
@@ -56119,7 +56125,7 @@ defparam status_dms2_overwrittenVal_9_0_a2.INIT=8'h04;
 	.Y(status_dms1_overwrittenVal_9)
 );
 defparam status_dms1_overwrittenVal_9_0_a2.INIT=8'h04;
-// @24:745
+// @24:752
   CFG4 polling_timeout_counterlde_0_o2 (
 	.A(component_state[3]),
 	.B(apb_spi_finished),
@@ -56889,7 +56895,7 @@ defparam spi_dms2_cs_1_sqmuxa.INIT=16'h0020;
 	.Y(status_async_cycles_0_sqmuxa_Z)
 );
 defparam status_async_cycles_0_sqmuxa.INIT=16'h0040;
-// @24:745
+// @24:752
   CFG4 busy_RNIUJ921 (
 	.A(spi_busy),
 	.B(component_state[0]),
@@ -56898,7 +56904,7 @@ defparam status_async_cycles_0_sqmuxa.INIT=16'h0040;
 	.Y(N_149)
 );
 defparam busy_RNIUJ921.INIT=16'h0BFF;
-// @24:745
+// @24:752
   CFG3 \component_state_ns_0_0_o2_0_RNIOU4T[0]  (
 	.A(component_state_4_0),
 	.B(N_202),
@@ -57007,7 +57013,7 @@ defparam un1_component_state_6_i_o2.INIT=16'hF2FF;
 	.Y(N_688)
 );
 defparam \component_state_ns_0_a3_1[1] .INIT=16'h0200;
-// @24:745
+// @24:752
   CFG4 busy_RNI21L83 (
 	.A(delay_counterlde_0_a2_0),
 	.B(component_state[3]),
@@ -57288,7 +57294,7 @@ defparam \un1_status_async_cycles_1_sqmuxa[6] .INIT=16'hCCDC;
 	.Y(N_1034)
 );
 defparam spi_enable_0_sqmuxa_2_RNIQPVO.INIT=4'hE;
-// @24:745
+// @24:752
   CFG4 polling_timeout_counter_0_sqmuxa_RNINOC82 (
 	.A(polling_timeout_counter_0_sqmuxa_1z),
 	.B(dummy_0_sqmuxa),
@@ -62324,6 +62330,7 @@ module root (
   STAMP6_DRDY_TEMP,
   STAMP6_MISO,
   TM_RXD,
+  DAPI_RTS,
   DAPI_TXD,
   F_CLK,
   F_CS1,
@@ -62399,6 +62406,7 @@ input STAMP6_DRDY_SGR2 ;
 input STAMP6_DRDY_TEMP ;
 input STAMP6_MISO ;
 input TM_RXD ;
+output DAPI_RTS ;
 output DAPI_TXD ;
 output F_CLK ;
 output F_CS1 ;
@@ -62472,6 +62480,7 @@ wire STAMP6_DRDY_SGR2 ;
 wire STAMP6_DRDY_TEMP ;
 wire STAMP6_MISO ;
 wire TM_RXD ;
+wire DAPI_RTS ;
 wire DAPI_TXD ;
 wire F_CLK ;
 wire F_CS1 ;
@@ -62587,6 +62596,7 @@ wire STAMP6_DRDY_SGR2_c ;
 wire STAMP6_DRDY_TEMP_c ;
 wire STAMP6_MISO_c ;
 wire TM_RXD_c ;
+wire DAPI_RTS_c ;
 wire DAPI_TXD_c ;
 wire F_CLK_c ;
 wire F_CS1_c ;
@@ -62791,224 +62801,229 @@ wire mosi_cl ;
 	.PAD(TM_RXD)
 );
 // @24:54
+  OUTBUF DAPI_RTS_obuf (
+	.PAD(DAPI_RTS),
+	.D(DAPI_RTS_c)
+);
+// @24:55
   OUTBUF DAPI_TXD_obuf (
 	.PAD(DAPI_TXD),
 	.D(DAPI_TXD_c)
 );
-// @24:55
+// @24:56
   OUTBUF F_CLK_obuf (
 	.PAD(F_CLK),
 	.D(F_CLK_c)
 );
-// @24:56
+// @24:57
   OUTBUF F_CS1_obuf (
 	.PAD(F_CS1),
 	.D(F_CS1_c)
 );
-// @24:57
+// @24:58
   OUTBUF F_CS2_obuf (
 	.PAD(F_CS2),
 	.D(F_CS2_c)
 );
-// @24:58
+// @24:59
   OUTBUF F_MOSI_obuf (
 	.PAD(F_MOSI),
 	.D(F_MOSI_c)
 );
-// @24:59
+// @24:60
   OUTBUF LED_FPGA_LOADED_obuf (
 	.PAD(LED_FPGA_LOADED),
 	.D(LED_FPGA_LOADED_c)
 );
-// @24:60
+// @24:61
   OUTBUF LED_HB_MEMSYNC_obuf (
 	.PAD(LED_HB_MEMSYNC),
 	.D(NN_1)
 );
-// @24:61
+// @24:62
   OUTBUF LED_HB_MSS_obuf (
 	.PAD(LED_HB_MSS),
 	.D(LED_HB_MSS_c)
 );
-// @24:62
+// @24:63
   OUTBUF LED_RECORDING_obuf (
 	.PAD(LED_RECORDING),
 	.D(LED_RECORDING_c)
 );
-// @24:63
+// @24:64
   OUTBUF OUT_ADC_START_obuf (
 	.PAD(OUT_ADC_START),
 	.D(OUT_ADC_START_c)
 );
-// @24:64
+// @24:65
   OUTBUF STAMP1_CS_SGR1_obuf (
 	.PAD(STAMP1_CS_SGR1),
 	.D(STAMP1_CS_SGR1_c)
 );
-// @24:65
+// @24:66
   OUTBUF STAMP1_CS_SGR2_obuf (
 	.PAD(STAMP1_CS_SGR2),
 	.D(STAMP1_CS_SGR2_c)
 );
-// @24:66
+// @24:67
   OUTBUF STAMP1_CS_TEMP_obuf (
 	.PAD(STAMP1_CS_TEMP),
 	.D(STAMP1_CS_TEMP_c)
 );
-// @24:67
+// @24:68
   TRIBUFF STAMP1_MOSI_obuft (
 	.PAD(STAMP1_MOSI),
 	.D(mosi_1),
 	.E(mosi_cl)
 );
-// @24:68
+// @24:69
   OUTBUF STAMP1_SCLK_obuf (
 	.PAD(STAMP1_SCLK),
 	.D(STAMP1_SCLK_c)
 );
-// @24:69
+// @24:70
   OUTBUF STAMP2_CS_SGR1_obuf (
 	.PAD(STAMP2_CS_SGR1),
 	.D(STAMP2_CS_SGR1_c)
 );
-// @24:70
+// @24:71
   OUTBUF STAMP2_CS_SGR2_obuf (
 	.PAD(STAMP2_CS_SGR2),
 	.D(STAMP2_CS_SGR2_c)
 );
-// @24:71
+// @24:72
   OUTBUF STAMP2_CS_TEMP_obuf (
 	.PAD(STAMP2_CS_TEMP),
 	.D(STAMP2_CS_TEMP_c)
 );
-// @24:72
+// @24:73
   TRIBUFF STAMP2_MOSI_obuft (
 	.PAD(STAMP2_MOSI),
 	.D(mosi_1_0),
 	.E(mosi_cl_0)
 );
-// @24:73
+// @24:74
   OUTBUF STAMP2_SCLK_obuf (
 	.PAD(STAMP2_SCLK),
 	.D(STAMP2_SCLK_c)
 );
-// @24:74
+// @24:75
   OUTBUF STAMP3_CS_SGR1_obuf (
 	.PAD(STAMP3_CS_SGR1),
 	.D(STAMP3_CS_SGR1_c)
 );
-// @24:75
+// @24:76
   OUTBUF STAMP3_CS_SGR2_obuf (
 	.PAD(STAMP3_CS_SGR2),
 	.D(STAMP3_CS_SGR2_c)
 );
-// @24:76
+// @24:77
   OUTBUF STAMP3_CS_TEMP_obuf (
 	.PAD(STAMP3_CS_TEMP),
 	.D(STAMP3_CS_TEMP_c)
 );
-// @24:77
+// @24:78
   TRIBUFF STAMP3_MOSI_obuft (
 	.PAD(STAMP3_MOSI),
 	.D(mosi_1_1),
 	.E(mosi_cl_1)
 );
-// @24:78
+// @24:79
   OUTBUF STAMP3_SCLK_obuf (
 	.PAD(STAMP3_SCLK),
 	.D(STAMP3_SCLK_c)
 );
-// @24:79
+// @24:80
   OUTBUF STAMP4_CS_SGR1_obuf (
 	.PAD(STAMP4_CS_SGR1),
 	.D(STAMP4_CS_SGR1_c)
 );
-// @24:80
+// @24:81
   OUTBUF STAMP4_CS_SGR2_obuf (
 	.PAD(STAMP4_CS_SGR2),
 	.D(STAMP4_CS_SGR2_c)
 );
-// @24:81
+// @24:82
   OUTBUF STAMP4_CS_TEMP_obuf (
 	.PAD(STAMP4_CS_TEMP),
 	.D(STAMP4_CS_TEMP_c)
 );
-// @24:82
+// @24:83
   TRIBUFF STAMP4_MOSI_obuft (
 	.PAD(STAMP4_MOSI),
 	.D(mosi_1_2),
 	.E(mosi_cl_2)
 );
-// @24:83
+// @24:84
   OUTBUF STAMP4_SCLK_obuf (
 	.PAD(STAMP4_SCLK),
 	.D(STAMP4_SCLK_c)
 );
-// @24:84
+// @24:85
   OUTBUF STAMP5_CS_SGR1_obuf (
 	.PAD(STAMP5_CS_SGR1),
 	.D(STAMP5_CS_SGR1_c)
 );
-// @24:85
+// @24:86
   OUTBUF STAMP5_CS_SGR2_obuf (
 	.PAD(STAMP5_CS_SGR2),
 	.D(STAMP5_CS_SGR2_c)
 );
-// @24:86
+// @24:87
   OUTBUF STAMP5_CS_TEMP_obuf (
 	.PAD(STAMP5_CS_TEMP),
 	.D(STAMP5_CS_TEMP_c)
 );
-// @24:87
+// @24:88
   TRIBUFF STAMP5_MOSI_obuft (
 	.PAD(STAMP5_MOSI),
 	.D(mosi_1_3),
 	.E(mosi_cl_3)
 );
-// @24:88
+// @24:89
   OUTBUF STAMP5_SCLK_obuf (
 	.PAD(STAMP5_SCLK),
 	.D(STAMP5_SCLK_c)
 );
-// @24:89
+// @24:90
   OUTBUF STAMP6_CS_SGR1_obuf (
 	.PAD(STAMP6_CS_SGR1),
 	.D(STAMP6_CS_SGR1_c)
 );
-// @24:90
+// @24:91
   OUTBUF STAMP6_CS_SGR2_obuf (
 	.PAD(STAMP6_CS_SGR2),
 	.D(STAMP6_CS_SGR2_c)
 );
-// @24:91
+// @24:92
   OUTBUF STAMP6_CS_TEMP_obuf (
 	.PAD(STAMP6_CS_TEMP),
 	.D(STAMP6_CS_TEMP_c)
 );
-// @24:92
+// @24:93
   TRIBUFF STAMP6_MOSI_obuft (
 	.PAD(STAMP6_MOSI),
 	.D(mosi_1_4),
 	.E(mosi_cl_4)
 );
-// @24:93
+// @24:94
   OUTBUF STAMP6_SCLK_obuf (
 	.PAD(STAMP6_SCLK),
 	.D(STAMP6_SCLK_c)
 );
-// @24:94
+// @24:95
   OUTBUF TM_TXD_obuf (
 	.PAD(TM_TXD),
 	.D(TM_RXD_c)
 );
-// @24:501
+// @24:507
   AND3 AND3_0 (
 	.Y(NN_1),
 	.A(MSS_POWER_ON_RESET_N),
 	.B(MSS_MSS_READY),
 	.C(MSS_INIT_DONE)
 );
-// @24:511
+// @24:517
   root_sb MSS (
 	.MSS_STAMP_PADDR(MSS_STAMP_PADDR[11:0]),
 	.MSS_STAMP_PWDATA(MSS_STAMP_PWDATA[31:0]),
@@ -63031,6 +63046,7 @@ wire mosi_cl ;
 	.OUT_ADC_START_c(OUT_ADC_START_c),
 	.LED_FPGA_LOADED_c(LED_FPGA_LOADED_c),
 	.DAPI_TXD_c(DAPI_TXD_c),
+	.DAPI_RTS_c(DAPI_RTS_c),
 	.F_CLK_c(F_CLK_c),
 	.F_MOSI_c(F_MOSI_c),
 	.F_CS1_c(F_CS1_c),
@@ -63059,7 +63075,7 @@ wire mosi_cl ;
 	.DEVRST_N(DEVRST_N),
 	.POWER_ON_RESET_N(MSS_POWER_ON_RESET_N)
 );
-// @24:605
+// @24:612
   STAMP_10 STAMP1 (
 	.MSS_STAMP_PADDR(MSS_STAMP_PADDR[11:0]),
 	.MSS_STAMP_PRDATA(MSS_STAMP_PRDATA[31:0]),
@@ -63089,7 +63105,7 @@ wire mosi_cl ;
 	.STAMP1_DRDY_SGR2_c(STAMP1_DRDY_SGR2_c),
 	.STAMP1_DRDY_TEMP_c(STAMP1_DRDY_TEMP_c)
 );
-// @24:633
+// @24:640
   STAMP_10_0 STAMP2 (
 	.MSS_STAMP_PADDR(MSS_STAMP_PADDR[11:2]),
 	.MSS_STAMP_1_PRDATA(MSS_STAMP_1_PRDATA[31:0]),
@@ -63118,7 +63134,7 @@ wire mosi_cl ;
 	.STAMP2_DRDY_SGR2_c(STAMP2_DRDY_SGR2_c),
 	.STAMP2_DRDY_SGR1_c(STAMP2_DRDY_SGR1_c)
 );
-// @24:661
+// @24:668
   STAMP_10_1 STAMP3 (
 	.MSS_STAMP_PADDR(MSS_STAMP_PADDR[11:2]),
 	.MSS_STAMP_2_PRDATA(MSS_STAMP_2_PRDATA[31:0]),
@@ -63146,7 +63162,7 @@ wire mosi_cl ;
 	.STAMP3_DRDY_SGR2_c(STAMP3_DRDY_SGR2_c),
 	.STAMP3_DRDY_SGR1_c(STAMP3_DRDY_SGR1_c)
 );
-// @24:689
+// @24:696
   STAMP_10_2 STAMP4 (
 	.MSS_STAMP_PADDR(MSS_STAMP_PADDR[11:2]),
 	.MSS_STAMP_3_PRDATA(MSS_STAMP_3_PRDATA[31:0]),
@@ -63174,7 +63190,7 @@ wire mosi_cl ;
 	.STAMP4_DRDY_SGR2_c(STAMP4_DRDY_SGR2_c),
 	.STAMP4_DRDY_SGR1_c(STAMP4_DRDY_SGR1_c)
 );
-// @24:717
+// @24:724
   STAMP_10_3 STAMP5 (
 	.MSS_STAMP_PADDR(MSS_STAMP_PADDR[11:2]),
 	.MSS_STAMP_4_PRDATA(MSS_STAMP_4_PRDATA[31:0]),
@@ -63202,7 +63218,7 @@ wire mosi_cl ;
 	.STAMP5_DRDY_SGR2_c(STAMP5_DRDY_SGR2_c),
 	.STAMP5_DRDY_SGR1_c(STAMP5_DRDY_SGR1_c)
 );
-// @24:745
+// @24:752
   STAMP_10_4 STAMP6 (
 	.MSS_STAMP_PADDR(MSS_STAMP_PADDR[11:4]),
 	.MSS_STAMP_5_PRDATA(MSS_STAMP_5_PRDATA[31:0]),

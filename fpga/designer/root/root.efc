@@ -18,7 +18,7 @@
         </version>
     </header>
     <nvm>
-        <region name="firmware" address="0x000000" retrieveAddressFromFile="false" size="8256" format="HEX" type="Data Storage" wordSize="32" numberWords="2064" memFile="C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga" memType="" memFileTimeStamp="1654198454" clientType="public" program="true">
+        <region name="firmware" address="0x000000" retrieveAddressFromFile="false" size="8256" format="HEX" type="Data Storage" wordSize="32" numberWords="2064" memFile="C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga" memType="" memFileTimeStamp="1655309423" clientType="public" program="true">
             <read_protect/>
             <fabric_accessible/>
             <mss_accessible/>
@@ -302,7 +302,7 @@
                 0000
             </crc>
         </region>
-        <region name="conf" address="0x05dc00" retrieveAddressFromFile="false" size="128" format="HEX" type="Data Storage" wordSize="32" numberWords="32" memFile="C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga" memType="" memFileTimeStamp="1654198454" clientType="public" program="true">
+        <region name="conf" address="0x05dc00" retrieveAddressFromFile="false" size="128" format="HEX" type="Data Storage" wordSize="32" numberWords="32" memFile="C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga" memType="" memFileTimeStamp="1655309423" clientType="public" program="true">
             <fabric_accessible/>
             <mss_accessible/>
             000000000000000000000000000000000000000000000000000000000000

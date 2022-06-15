@@ -1,6 +1,6 @@
 Resource Report
 Microsemi Corporation - Microsemi Libero Software Release v2021.3 (Version 2021.3.0.10)
-Date: Thu Jun  2 21:33:27 2022
+Date: Wed Jun 15 17:58:58 2022
 
 Device Selection
 +--------------------------------+----------------+
@@ -15,7 +15,7 @@ Device Selection
 | System Controller Suspend Mode | No             |
 | PLL Supply Voltage             | 3.3V           |
 | Default I/O technology         | LVCMOS 3.3V    |
-| Restrict Probe Pins            | Yes            |
+| Restrict Probe Pins            | No             |
 | Restrict SPI Pins              | No             |
 +--------------------------------+----------------+
 
@@ -40,8 +40,8 @@ Resource Usage
 | 4LUT                      | 3106 | 12084 | 25.70      |
 | DFF                       | 2096 | 12084 | 17.35      |
 | I/O Register              | 0    | 252   | 0.00       |
-| User I/O                  | 72   | 84    | 85.71      |
-| -- Single-ended I/O       | 72   | 84    | 85.71      |
+| User I/O                  | 73   | 84    | 86.90      |
+| -- Single-ended I/O       | 73   | 84    | 86.90      |
 | -- Differential I/O Pairs | 0    | 37    | 0.00       |
 | RAM64x18                  | 0    | 22    | 0.00       |
 | RAM1K18                   | 0    | 21    | 0.00       |
@@ -104,7 +104,7 @@ I/O Function
 | Type                          | w/o register | w/ register | w/ DDR register |
 +-------------------------------+--------------+-------------+-----------------+
 | Input I/O                     | 31           | 0           | 0               |
-| Output I/O                    | 41           | 0           | 0               |
+| Output I/O                    | 42           | 0           | 0               |
 | Bidirectional I/O             | 0            | 0           | 0               |
 | Differential Input I/O Pairs  | 0            | 0           | 0               |
 | Differential Output I/O Pairs | 0            | 0           | 0               |
@@ -114,7 +114,7 @@ I/O Technology
 +--------------+--------+------+-------+--------+---------------+
 | I/O Standard | Vddi   | Vref | Input | Output | Bidirectional |
 +--------------+--------+------+-------+--------+---------------+
-| LVCMOS33     |  3.30v |  N/A |  31   |  41    |  0            |
+| LVCMOS33     |  3.30v |  N/A |  31   |  42    |  0            |
 +--------------+--------+------+-------+--------+---------------+
 
 Nets assigned to chip global resources

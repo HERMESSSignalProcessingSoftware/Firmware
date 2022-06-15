@@ -6,30 +6,32 @@ The 'open_project' command succeeded.
 Info: Programming is already enabled for device 'M2S010'.
 The 'enable_device' command succeeded.
 PPD file 'C:/Users/jl/source/repos/hermess/hermess-Firmware/fpga/designer/root/root.ppd' has been loaded successfully.
-DESIGN : root;  CHECKSUM : 268E;  PDB_VERSION : 1.0
+DESIGN : root;  CHECKSUM : 9654;  PDB_VERSION : 1.0
 The 'set_programming_file' command succeeded.
 The 'set_programming_action' command succeeded.
 programmer 'E2006QE3OZ' : Scan Chain...
 Programmer 'E2006QE3OZ' : JTAG TCK / SPI SCK frequency = 1 MHz
 programmer 'E2006QE3OZ' : Check Chain...
 programmer 'E2006QE3OZ' : Scan and Check Chain PASSED.
-Warning: programmer 'E2006QE3OZ' : device 'M2S010' : Device authentication failure: Failed to validate device certificate.
 programmer 'E2006QE3OZ' : device 'M2S010' : Executing action PROGRAM
 Programmer 'E2006QE3OZ' : JTAG TCK / SPI SCK frequency = 4 MHz
+programmer 'E2006QE3OZ' : device 'M2S010' : Family: SmartFusion2
+programmer 'E2006QE3OZ' : device 'M2S010' : Product:      M2S010
+programmer 'E2006QE3OZ' : device 'M2S010' : Cortex-M3 Enabled (M3_ALLOWED = 1)
 programmer 'E2006QE3OZ' : device 'M2S010' : Programming Interface Protocol: JTAG
-programmer 'E2006QE3OZ' : device 'M2S010' : EXPORT ISC_ENABLE_RESULT[32] = 007c6844
+programmer 'E2006QE3OZ' : device 'M2S010' : EXPORT ISC_ENABLE_RESULT[32] = 007b6744
 programmer 'E2006QE3OZ' : device 'M2S010' : EXPORT CRCERR[1] = 0
 programmer 'E2006QE3OZ' : device 'M2S010' : EXPORT EDCERR[1] = 0
 programmer 'E2006QE3OZ' : device 'M2S010' : Programming FPGA Array and eNVM...
-programmer 'E2006QE3OZ' : device 'M2S010' : EXPORT Fabric component digest[256] = 86bf718a7ec4c4f18eb7284420ee2b436494817b6325aadb88b094fb8036ee44
+programmer 'E2006QE3OZ' : device 'M2S010' : EXPORT Fabric component digest[256] = 14a0494a80ca58153ea11b53732d798d067feeed2608022e92e4338892d088ed
 programmer 'E2006QE3OZ' : device 'M2S010' : EXPORT eNVM component digest[256] = ed664ec0c62f8e090ef47a6dffe176175c90c014be7c45fd966ea185f3fbd2d4
 programmer 'E2006QE3OZ' : device 'M2S010' : ===================================================================================
 programmer 'E2006QE3OZ' : device 'M2S010' : EXPORT DSN[128] = bb71370179e52ed2328268dd9a9be778
 programmer 'E2006QE3OZ' : device 'M2S010' : ===================================================================================
-programmer 'E2006QE3OZ' : device 'M2S010' : Finished: Thu Jun  2 21:37:27 2022 (Elapsed time 00:00:26)
+programmer 'E2006QE3OZ' : device 'M2S010' : Finished: Wed Jun 15 16:57:51 2022 (Elapsed time 00:00:26)
 programmer 'E2006QE3OZ' : device 'M2S010' : Executing action PROGRAM PASSED.
 programmer 'E2006QE3OZ' : Chain programming PASSED.
-Chain Programming Finished: Thu Jun  2 21:37:27 2022 (Elapsed time 00:00:26)
+Chain Programming Finished: Wed Jun 15 16:57:51 2022 (Elapsed time 00:00:26)
 
                         o - o - o - o - o - o
 

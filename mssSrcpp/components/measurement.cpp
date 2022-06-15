@@ -77,8 +77,6 @@ Measurement::Measurement ():
 
         // configure ADCs
         cmdConf(stamps[i], allAdcs);
-
-
     }
 
     // pull ADC start low to disable continuous mode

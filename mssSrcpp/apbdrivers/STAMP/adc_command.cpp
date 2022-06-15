@@ -132,11 +132,11 @@ std::string AdcCommandConfigure::execute (Stamp &stamp, uint8_t adcs) {
                     Stamp::ModAtomic);
             stamp.writeAdc(adc, (mux1[i] << 8) | sys0Pga[i] | sys0Sps[i],
                     Stamp::ModAtomic);
-            stamp.writeAdc(adc, ofc[i] >> 8,
+            stamp.writeAdc(adc, ((ofc[i]&0xFFU) << 8) | ((ofc[i]>>8) & 0xFFU),
                     Stamp::ModAtomic);
-            stamp.writeAdc(adc, (ofc[i] << 8) | (fsc[i] & 0xFU),
+            stamp.writeAdc(adc, (ofc[i] >> 16) | (fsc[i] & 0xFFU),
                     Stamp::ModAtomic);
-            stamp.writeAdc(adc, fsc[i] << 8,
+            stamp.writeAdc(adc, (fsc[i] & 0xFF00U) | (fsc[i] >> 16),
                     Stamp::ModAtomic);
             stamp.writeAdc(adc, (idac0[i] << 8) | idac1[i],
                     Stamp::ModNone);
@@ -144,17 +144,29 @@ std::string AdcCommandConfigure::execute (Stamp &stamp, uint8_t adcs) {
             // read and compare the 12 register values
             AdcCommandReadReg reader(ADS_REG_MUX0, 12);
             reader(stamp, adc);
+            uint16_t r0Mux0 = reader[0]; // !!!
+            uint16_t r1Vbias = reader[1]; // !!!
+            uint16_t r2Mux1 = reader[2]; // !!!
+            uint16_t r3Sys0 = reader[3]; // !!!
+            uint16_t r4Ofc0 = reader[4]; // !!!
+            uint16_t r5Ofc1 = reader[5]; // !!!
+            uint16_t r6Ofc2 = reader[6]; // !!!
+            uint16_t r7Fsc0 = reader[7]; // !!!
+            uint16_t r8Fsc1 = reader[8]; // !!!
+            uint16_t r9Fsc2 = reader[9]; // !!!
+            uint16_t r10Idac0 = reader[10]; // !!!
+            uint16_t r11IDac1 = reader[11]; // !!!
             if (reader[0] != mux0[i] ||
                     reader[1] != vbias[i] ||
                     reader[2] != mux1[i] ||
                     reader[3] != (sys0Pga[i] | sys0Sps[i]) ||
-                    reader[4] != (ofc[i] >> 16) ||
+                    reader[4] != (ofc[i] & 0xFFU) ||
                     reader[5] != ((ofc[i] >> 8) & 0xFFU) ||
-                    reader[6] != (ofc[i] & 0xFFU) ||
-                    reader[7] != (fsc[i] >> 16) ||
+                    reader[6] != (ofc[i] >> 16) ||
+                    reader[7] != (fsc[i] & 0xFFU) ||
                     reader[8] != ((fsc[i] >> 8) & 0xFFU) ||
-                    reader[9] != (fsc[i] & 0xFFU) ||
-                    reader[10] != idac0[i] ||
+                    reader[9] != (fsc[i] >> 16) ||
+                    ((reader[10] & 0x0FU) != idac0[i]) ||
                     reader[11] != idac1[i]) {
                 // invalid configuration detected
                 if (msg.empty()) {

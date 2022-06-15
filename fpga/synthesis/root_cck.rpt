@@ -13,7 +13,7 @@ Hostname: LUS210
 
 Implementation : synthesis
 
-# Written on Thu Jun  2 21:33:07 2022
+# Written on Wed Jun 15 17:58:38 2022
 
 ##### DESIGN INFO #######################################################
 
@@ -49,6 +49,7 @@ root_sb_FABOSC_0_OSC|RCOSC_25_50MHZ_CCC_inferred_clock     root_sb_FABOSC_0_OSC|
 Unconstrained Start/End Points
 ******************************
 
+p:DAPI_RTS
 p:DAPI_RXD
 p:DAPI_TXD
 p:DEVRST_N

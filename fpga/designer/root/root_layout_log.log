@@ -9,15 +9,16 @@ Repair min-delay         : OFF
 Incremental              : OFF
 
 INFO: Reading User PDC file C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\constraint\io\user1.pdc. 0 error(s) and 0 warning(s)
+INFO: Reading User PDC file C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\constraint\io\user.pdc. 0 error(s) and 0 warning(s)
 
 Running the I/O Bank and Globals Assigner.
-Info:  I/O Bank and Globals Assigner identified 72 fixed I/O macros, 0 unfixed I/O macros
+Info:  I/O Bank and Globals Assigner identified 73 fixed I/O macros, 0 unfixed I/O macros
 
 I/O Bank and Globals Assigner completed successfully.
-Total time spent in I/O Bank and Globals Assigner: 1 seconds
+Total time spent in I/O Bank and Globals Assigner: 0 seconds
 
 Placer V5.0 - 2021.3.0 
-Design: root                            Started: Thu Jun  2 21:33:33 2022
+Design: root                            Started: Wed Jun 15 18:09:44 2022
 
 Initializing Normal-Effort Standard Placement ...
 Clustering ...
@@ -38,21 +39,21 @@ Improvement              : 2 seconds
 Placer completed successfully.
 
 Design: root                            
-Finished: Thu Jun  2 21:33:41 2022
-Total CPU Time:     00:00:09            Total Elapsed Time: 00:00:08
-Total Memory Usage: 130.6 Mbytes
+Finished: Wed Jun 15 18:09:51 2022
+Total CPU Time:     00:00:08            Total Elapsed Time: 00:00:07
+Total Memory Usage: 132.1 Mbytes
                         o - o - o - o - o - o
 
 
 Router 
-Design: C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\designer\root\rootStarted: Thu Jun  2 21:33:45 2022
+Design: C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\designer\root\rootStarted: Wed Jun 15 18:09:55 2022
 
 
 Router completed successfully.
 
 Design: C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\designer\root\root
-Finished: Thu Jun  2 21:33:53 2022
-Total CPU Time:     00:00:07            Total Elapsed Time: 00:00:08
+Finished: Wed Jun 15 18:10:02 2022
+Total CPU Time:     00:00:07            Total Elapsed Time: 00:00:07
 Total Memory Usage: 445.7 Mbytes
                         o - o - o - o - o - o
 
@@ -62,15 +63,15 @@ Resource Usage
 +---------------+------+-------+------------+
 | 4LUT          | 3106 | 12084 | 25.70      |
 | DFF           | 2096 | 12084 | 17.35      |
-| I/O Register  | 0    | 246   | 0.00       |
-| Logic Element | 3552 | 12084 | 29.39      |
+| I/O Register  | 0    | 252   | 0.00       |
+| Logic Element | 3563 | 12084 | 29.49      |
 +---------------+------+-------+------------+
 
 I/O Placement
 +--------+-------+------------+
 | Type   | Count | Percentage |
 +--------+-------+------------+
-| Locked |  72   | 100.00%    |
+| Locked |  73   | 100.00%    |
 | Placed |  0    | 0.00%      |
 +--------+-------+------------+
 

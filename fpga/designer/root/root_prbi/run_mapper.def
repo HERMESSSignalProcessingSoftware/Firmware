@@ -1,0 +1,7 @@
+DESIGN=root
+DESDIR=C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\designer\root/root_prbi
+FAM=PA4M
+DIE=PA4M1000_N
+PACKAGE=tq144
+NETLIST_TYPE=EDIF
+INIT_LOCK_FILE=

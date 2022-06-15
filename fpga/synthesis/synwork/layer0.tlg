@@ -282,9 +282,9 @@ State machine has 6 reachable states with original encodings of:
    100000
 @W: CL190 :"C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\hdl\STAMP.vhd":199:8:199:9|Optimizing register bit delay_counter(28) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: CL260 :"C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\hdl\STAMP.vhd":199:8:199:9|Pruning register bit 28 of delay_counter(28 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-Finished optimization stage 2 on STAMP (CPU Time 0h:00m:00s, Memory Used current: 116MB peak: 134MB)
+Finished optimization stage 2 on STAMP (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 134MB)
 Running optimization stage 2 on root .......
-Finished optimization stage 2 on root (CPU Time 0h:00m:00s, Memory Used current: 116MB peak: 134MB)
+Finished optimization stage 2 on root (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 134MB)
 
 For a summary of runtime and memory usage per design unit, please see file:
 ==========================================================

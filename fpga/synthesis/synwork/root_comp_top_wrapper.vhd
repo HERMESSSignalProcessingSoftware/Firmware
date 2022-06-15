@@ -1,6 +1,6 @@
 --
 -- Synopsys
--- Vhdl wrapper for top level design, written on Thu Jun  2 21:33:03 2022
+-- Vhdl wrapper for top level design, written on Wed Jun 15 17:58:34 2022
 --
 library ieee;
 use ieee.std_logic_1164.all;
@@ -39,6 +39,7 @@ entity wrapper_for_root is
       STAMP6_DRDY_TEMP : in std_logic;
       STAMP6_MISO : in std_logic;
       TM_RXD : in std_logic;
+      DAPI_RTS : out std_logic;
       DAPI_TXD : out std_logic;
       F_CLK : out std_logic;
       F_CS1 : out std_logic;
@@ -119,6 +120,7 @@ component root
    STAMP6_DRDY_TEMP : in std_logic;
    STAMP6_MISO : in std_logic;
    TM_RXD : in std_logic;
+   DAPI_RTS : out std_logic;
    DAPI_TXD : out std_logic;
    F_CLK : out std_logic;
    F_CS1 : out std_logic;
@@ -195,6 +197,7 @@ signal tmp_STAMP6_DRDY_SGR2 : std_logic;
 signal tmp_STAMP6_DRDY_TEMP : std_logic;
 signal tmp_STAMP6_MISO : std_logic;
 signal tmp_TM_RXD : std_logic;
+signal tmp_DAPI_RTS : std_logic;
 signal tmp_DAPI_TXD : std_logic;
 signal tmp_F_CLK : std_logic;
 signal tmp_F_CS1 : std_logic;
@@ -302,6 +305,8 @@ tmp_STAMP6_DRDY_TEMP <= STAMP6_DRDY_TEMP;
 tmp_STAMP6_MISO <= STAMP6_MISO;
 
 tmp_TM_RXD <= TM_RXD;
+
+DAPI_RTS <= tmp_DAPI_RTS;
 
 DAPI_TXD <= tmp_DAPI_TXD;
 
@@ -420,6 +425,7 @@ u1:   root port map (
 		STAMP6_DRDY_TEMP => tmp_STAMP6_DRDY_TEMP,
 		STAMP6_MISO => tmp_STAMP6_MISO,
 		TM_RXD => tmp_TM_RXD,
+		DAPI_RTS => tmp_DAPI_RTS,
 		DAPI_TXD => tmp_DAPI_TXD,
 		F_CLK => tmp_F_CLK,
 		F_CS1 => tmp_F_CS1,

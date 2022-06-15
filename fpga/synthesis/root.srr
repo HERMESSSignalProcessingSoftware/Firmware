@@ -3,7 +3,7 @@
 #OS: Windows 8 6.2
 #Hostname: LUS210
 
-# Thu Jun  2 21:32:57 2022
+# Wed Jun 15 17:58:27 2022
 
 #Implementation: synthesis
 
@@ -364,21 +364,21 @@ State machine has 6 reachable states with original encodings of:
    100000
 @W: CL190 :"C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\hdl\STAMP.vhd":199:8:199:9|Optimizing register bit delay_counter(28) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: CL260 :"C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\hdl\STAMP.vhd":199:8:199:9|Pruning register bit 28 of delay_counter(28 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-Finished optimization stage 2 on STAMP (CPU Time 0h:00m:00s, Memory Used current: 116MB peak: 134MB)
+Finished optimization stage 2 on STAMP (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 134MB)
 Running optimization stage 2 on root .......
-Finished optimization stage 2 on root (CPU Time 0h:00m:00s, Memory Used current: 116MB peak: 134MB)
+Finished optimization stage 2 on root (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 134MB)
 
 For a summary of runtime and memory usage per design unit, please see file:
 ==========================================================
 @L: C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\synthesis\synwork\layer0.rt.csv
 
 
-At c_vhdl Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 116MB peak: 134MB)
+At c_vhdl Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:06s; Memory used current: 116MB peak: 134MB)
 
-Process took 0h:00m:04s realtime, 0h:00m:04s cputime
+Process took 0h:00m:06s realtime, 0h:00m:06s cputime
 
 Process completed successfully.
-# Thu Jun  2 21:33:03 2022
+# Wed Jun 15 17:58:34 2022
 
 ###########################################################]
 ###########################################################[
@@ -406,7 +406,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Thu Jun  2 21:33:03 2022
+# Wed Jun 15 17:58:34 2022
 
 ###########################################################]
 
@@ -416,12 +416,12 @@ For a summary of runtime and memory usage for all design units, please see file:
 
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 23MB peak: 23MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 23MB peak: 23MB)
 
-Process took 0h:00m:05s realtime, 0h:00m:04s cputime
+Process took 0h:00m:06s realtime, 0h:00m:06s cputime
 
 Process completed successfully.
-# Thu Jun  2 21:33:04 2022
+# Wed Jun 15 17:58:34 2022
 
 ###########################################################]
 ###########################################################[
@@ -449,12 +449,12 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Thu Jun  2 21:33:05 2022
+# Wed Jun 15 17:58:36 2022
 
 ###########################################################]
 Premap Report
 
-# Thu Jun  2 21:33:05 2022
+# Wed Jun 15 17:58:36 2022
 
 
 Copyright (C) 1994-2021 Synopsys, Inc.
@@ -544,7 +544,7 @@ Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 @N: BN362 :"c:\users\jl\source\repos\hermess\hermess-firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":836:8:836:9|Removing sequential instance sdif3_areset_n_q1 (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
 @N: FX1184 |Applying syn_allowed_resources blockrams=21 on top level netlist root 
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 176MB peak: 176MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:01s; Memory used current: 176MB peak: 176MB)
 
 
 
@@ -676,15 +676,15 @@ Finished constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:0
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 93MB peak: 181MB)
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 94MB peak: 181MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Thu Jun  2 21:33:07 2022
+# Wed Jun 15 17:58:38 2022
 
 ###########################################################]
 Map & Optimize Report
 
-# Thu Jun  2 21:33:07 2022
+# Wed Jun 15 17:58:38 2022
 
 
 Copyright (C) 1994-2021 Synopsys, Inc.
@@ -712,7 +712,7 @@ Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:0
 Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 120MB peak: 130MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 120MB peak: 130MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 121MB peak: 130MB)
 
 
 Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 122MB peak: 130MB)
@@ -744,7 +744,7 @@ Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapse
 @W: FA239 :"c:\users\jl\source\repos\hermess\hermess-firmware\fpga\component\actel\directcore\coreapb3\4.1.100\rtl\vhdl\core\coreapb3.vhd":648:12:648:15|ROM iPSELS_raw_10[6:0] (in view: coreapb3_lib.CoreAPB3(coreapb3_arch)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
 @N: MO106 :"c:\users\jl\source\repos\hermess\hermess-firmware\fpga\component\actel\directcore\coreapb3\4.1.100\rtl\vhdl\core\coreapb3.vhd":648:12:648:15|Found ROM iPSELS_raw_10[6:0] (in view: coreapb3_lib.CoreAPB3(coreapb3_arch)) with 16 words by 7 bits.
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 173MB peak: 173MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 173MB)
 
 Encoding state machine sm0_state[0:6] (in view: work.CoreResetP(rtl))
 original code -> new code
@@ -777,7 +777,7 @@ original code -> new code
 @W: MO161 :"c:\users\jl\source\repos\hermess\hermess-firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Register bit clk_ratio[1] (in view view:work.spi_master(logic)) is always 1. To keep the instance, apply syn_preserve=1 on the instance.
 @W: MO161 :"c:\users\jl\source\repos\hermess\hermess-firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Register bit clk_ratio[0] (in view view:work.spi_master(logic)) is always 1. To keep the instance, apply syn_preserve=1 on the instance.
 
-Starting factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
+Starting factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
 
 Auto Dissolve of spi (inst of view:work.spi_master(logic))
 
@@ -788,7 +788,7 @@ Available hyper_sources - for debug and ip models
 	None Found
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 187MB peak: 194MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 188MB peak: 194MB)
 
 @N: BN362 :"c:\users\jl\source\repos\hermess\hermess-firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Removing sequential instance STAMP1.spi.continue (in view: work.root(rtl)) because it does not drive other instances.
 @N: BN362 :"c:\users\jl\source\repos\hermess\hermess-firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Removing sequential instance STAMP2.spi.continue (in view: work.root(rtl)) because it does not drive other instances.
@@ -803,7 +803,7 @@ Starting Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elaps
 Finished Early Timing Optimization (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 189MB peak: 194MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 189MB peak: 194MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 190MB peak: 194MB)
 
 
 Finished preparing to map (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 189MB peak: 194MB)
@@ -813,9 +813,9 @@ Finished technology mapping (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:0
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:06s		    -2.08ns		3360 /      2096
-   2		0h:00m:06s		    -2.07ns		3300 /      2096
-   3		0h:00m:06s		    -2.07ns		3300 /      2096
+   1		0h:00m:05s		    -2.08ns		3360 /      2096
+   2		0h:00m:05s		    -2.07ns		3300 /      2096
+   3		0h:00m:05s		    -2.07ns		3300 /      2096
 @N: FX271 :"c:\users\jl\source\repos\hermess\hermess-firmware\fpga\hdl\stamp.vhd":373:27:373:59|Replicating instance STAMP2.spi.un1_spi_rx_data_sn_m3_i_o2 (in view: work.root(rtl)) with 57 loads 3 times to improve timing.
 @N: FX271 :"c:\users\jl\source\repos\hermess\hermess-firmware\fpga\hdl\stamp.vhd":373:27:373:59|Replicating instance STAMP5.spi.un1_spi_rx_data_sn_m3_i_o2 (in view: work.root(rtl)) with 57 loads 3 times to improve timing.
 @N: FX271 :"c:\users\jl\source\repos\hermess\hermess-firmware\fpga\hdl\stamp.vhd":373:27:373:59|Replicating instance STAMP3.spi.un1_spi_rx_data_sn_m3_i_o2 (in view: work.root(rtl)) with 57 loads 3 times to improve timing.
@@ -826,10 +826,10 @@ Timing driven replication report
 Added 0 Registers via timing driven replication
 Added 18 LUTs via timing driven replication
 
-   4		0h:00m:07s		    -1.71ns		3326 /      2096
+   4		0h:00m:06s		    -1.71ns		3326 /      2096
 
 
-   5		0h:00m:07s		    -1.71ns		3317 /      2096
+   5		0h:00m:06s		    -1.71ns		3317 /      2096
 @N: FP130 |Promoting Net LED_HB_MEMSYNC_arst on CLKINT  I_1027 
 @N: FP130 |Promoting Net MSS.CORERESETP_0.sm0_areset_n_clk_base on CLKINT  I_1028 
 
@@ -841,7 +841,7 @@ Added 0 Cells via replication
 Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 228MB peak: 228MB)
 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 229MB peak: 229MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 228MB peak: 228MB)
 
 
 
@@ -866,7 +866,7 @@ Clock Tree ID     Driving Element                   Drive Element Type     Fanou
 ##### END OF CLOCK OPTIMIZATION REPORT ######]
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 189MB peak: 229MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 189MB peak: 229MB)
 
 Writing Analyst data base C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\synthesis\synwork\root_m.srm
 
@@ -888,13 +888,13 @@ Writing Verilog Simulation files
 @N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
 @N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
 
-Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:10s; Memory used current: 227MB peak: 229MB)
+Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:09s; Memory used current: 227MB peak: 229MB)
 
 
-Finished Writing Netlists (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:10s; Memory used current: 227MB peak: 229MB)
+Finished Writing Netlists (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:09s; Memory used current: 227MB peak: 229MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:10s; Memory used current: 222MB peak: 229MB)
+Start final timing analysis (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:09s; Memory used current: 222MB peak: 229MB)
 
 @W: MT246 :"c:\users\jl\source\repos\hermess\hermess-firmware\fpga\component\work\root_sb\ccc_0\root_sb_ccc_0_fccc.vhd":106:4:106:11|Blackbox CCC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @W: MT420 |Found inferred clock root_sb_CCC_0_FCCC|GL0_net_inferred_clock with period 10.00ns. Please declare a user-defined clock on net MSS.CCC_0.GL0_net.
@@ -902,7 +902,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:0
 
 
 ##### START OF TIMING REPORT #####[
-# Timing report written on Thu Jun  2 21:33:18 2022
+# Timing report written on Wed Jun 15 17:58:48 2022
 #
 
 
@@ -1317,10 +1317,10 @@ SLE            2096 uses
 
 DSP Blocks:    0 of 22 (0%)
 
-I/O ports: 73
-I/O primitives: 72
+I/O ports: 74
+I/O primitives: 73
 INBUF          31 uses
-OUTBUF         35 uses
+OUTBUF         36 uses
 TRIBUFF        6 uses
 
 
@@ -1342,6 +1342,6 @@ Mapper successful!
 At Mapper Exit (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:10s; Memory used current: 70MB peak: 229MB)
 
 Process took 0h:00m:10s realtime, 0h:00m:10s cputime
-# Thu Jun  2 21:33:18 2022
+# Wed Jun 15 17:58:49 2022
 
 ###########################################################]

@@ -1,5 +1,5 @@
 ----------------------------------------------------------------
--Pin Report - Date: Thu Jun  2 21:33:56 2022 Pinchecksum: NOT-AVAILABLE
+-Pin Report - Date: Wed Jun 15 18:10:05 2022 Pinchecksum: NOT-AVAILABLE
 -Product: Designer
 -Release: v2021.3
 -Version: 2021.3.0.10
@@ -11,6 +11,7 @@
 
 Port             |Pin |Fixed |Function                     |Bank     |I/O Std   |Direction                      |I/O state in Flash*Freeze mode |Resistor Pull                      |I/O available in Flash*Freeze mode |Schmitt Trigger |Odt_Static    |Odt Imp (Ohm)  |Low Power Exit |Input Delay |Slew         |Pre-Emphasis      |Output Drive (mA) |Output Load (pF) |
 -----------------|----|------|-----------------------------|---------|----------|-------------------------------|-------------------------------|-----------------------------------|-----------------------------------|----------------|--------------|---------------|---------------|------------|-------------|------------------|------------------|-----------------|
+DAPI_RTS          115  Yes    DDRIO35NB0                    Bank0     LVCMOS12   Output                          TRISTATE                        None                                No                                  ---              ---            ---             ---             ---          SLOW          ---                4                  5                 
 DAPI_RXD          110  Yes    DDRIO29PB0                    Bank0     LVCMOS12   Input                           TRISTATE                        None                                No                                  Off              Off            50              Off             Off          ---           ---                ---                ---               
 DAPI_TXD          111  Yes    DDRIO30PB0                    Bank0     LVCMOS12   Output                          TRISTATE                        None                                No                                  ---              ---            ---             ---             ---          SLOW          ---                4                  5                 
 DEVRST_N          72   Fixed  DEVRST_N                      ---       
