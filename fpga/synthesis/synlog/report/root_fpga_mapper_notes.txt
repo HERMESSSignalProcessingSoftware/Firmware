@@ -18,7 +18,7 @@
 @N: FX271 :"c:\users\jl\source\repos\hermess\hermess-firmware\fpga\hdl\stamp.vhd":373:27:373:59|Replicating instance STAMP1.spi.un1_spi_rx_data_sn_m3_i_o2 (in view: work.root(rtl)) with 57 loads 3 times to improve timing.
 @N: FX271 :"c:\users\jl\source\repos\hermess\hermess-firmware\fpga\hdl\stamp.vhd":373:27:373:59|Replicating instance STAMP6.spi.un1_spi_rx_data_sn_m3_i_o2 (in view: work.root(rtl)) with 57 loads 3 times to improve timing.
 @N: FX271 :"c:\users\jl\source\repos\hermess\hermess-firmware\fpga\hdl\stamp.vhd":373:27:373:59|Replicating instance STAMP4.spi.un1_spi_rx_data_sn_m3_i_o2 (in view: work.root(rtl)) with 57 loads 3 times to improve timing.
-@N: FP130 |Promoting Net LED_HB_MEMSYNC_arst on CLKINT  I_1027 
+@N: FP130 |Promoting Net LED_FPGA_LOADED_arst on CLKINT  I_1027 
 @N: FP130 |Promoting Net MSS.CORERESETP_0.sm0_areset_n_clk_base on CLKINT  I_1028 
 @N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
 @N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 

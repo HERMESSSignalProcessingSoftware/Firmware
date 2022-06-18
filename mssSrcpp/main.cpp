@@ -5,6 +5,8 @@
 #include "sf2drivers/drivers/mss_watchdog/mss_watchdog.h"
 #include "components/measurement.h"
 #include "components/dapi.h"
+#include "components/controller.h"
+#include "tools/msghandler.h"
 
 
 int main () {
@@ -21,10 +23,16 @@ int main () {
 
     // initiate the measurement
     Measurement &measurement = Measurement::getInstance();
-    measurement.setDataStorage(true);
 
     // get the DAPI
     Dapi &dapi = Dapi::getInstance();
+
+    // send error message if this is a restart after a triggered watchdog
+    if (MSS_WD_timeout_occured()) {
+        MsgHandler::getInstance().error("Watchdog triggered");
+        // !!! reload status configuration
+        MSS_WD_clear_timeout_event();
+    }
 
     for (;;) {
         MSS_WD_reload();

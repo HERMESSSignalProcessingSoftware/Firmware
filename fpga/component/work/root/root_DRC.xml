@@ -3,10 +3,10 @@
 <drcreport>
   <header>root</header>
   <drc>
-    <status>J:\LiberoSoC\Designer/data/drcreport\warn.png</status>
-    <StatusMessage>Warning</StatusMessage>
-    <message>Floating Driver</message>
-    <detail>Floating output pin root:TM_RXD</detail>
-    <crossprobe>liberoaction://cross_probe/smartdesign/root/pins/root:TM_RXD</crossprobe>
+    <status>J:\LiberoSoC\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>Undriven Pin</message>
+    <detail>Unconnected input pin STAMP1:spi_miso</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/root/pins/STAMP1:spi_miso</crossprobe>
   </drc>
 </drcreport>

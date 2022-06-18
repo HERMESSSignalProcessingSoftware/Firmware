@@ -94,11 +94,15 @@ StampConfig Stamp::readConfig () const {
 }
 
 
-StampDataframe Stamp::readDataframe () const {
-    return StampDataframe(
+StampDataframe *Stamp::readDataframe () const {
+    return new StampDataframe(
             HW_get_32bit_reg(baseAddr | STAMP_REG_READ_SGR12 | ModAtomic),
             HW_get_32bit_reg(baseAddr | STAMP_REG_READ_RTDSR | ModStatusReset)
     );
+}
+
+void Stamp::resetInterrupt () const {
+    HW_get_32bit_reg(baseAddr | STAMP_REG_NOP | ModStatusReset);
 }
 
 

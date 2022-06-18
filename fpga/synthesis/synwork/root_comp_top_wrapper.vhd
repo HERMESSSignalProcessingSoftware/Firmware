@@ -1,6 +1,6 @@
 --
 -- Synopsys
--- Vhdl wrapper for top level design, written on Wed Jun 15 17:58:34 2022
+-- Vhdl wrapper for top level design, written on Wed Jun 15 20:54:48 2022
 --
 library ieee;
 use ieee.std_logic_1164.all;
@@ -50,6 +50,8 @@ entity wrapper_for_root is
       LED_HB_MSS : out std_logic;
       LED_RECORDING : out std_logic;
       OUT_ADC_START : out std_logic;
+      PORT_A : out std_logic;
+      PORT_B : out std_logic;
       STAMP1_CS_SGR1 : out std_logic;
       STAMP1_CS_SGR2 : out std_logic;
       STAMP1_CS_TEMP : out std_logic;
@@ -131,6 +133,8 @@ component root
    LED_HB_MSS : out std_logic;
    LED_RECORDING : out std_logic;
    OUT_ADC_START : out std_logic;
+   PORT_A : out std_logic;
+   PORT_B : out std_logic;
    STAMP1_CS_SGR1 : out std_logic;
    STAMP1_CS_SGR2 : out std_logic;
    STAMP1_CS_TEMP : out std_logic;
@@ -208,6 +212,8 @@ signal tmp_LED_HB_MEMSYNC : std_logic;
 signal tmp_LED_HB_MSS : std_logic;
 signal tmp_LED_RECORDING : std_logic;
 signal tmp_OUT_ADC_START : std_logic;
+signal tmp_PORT_A : std_logic;
+signal tmp_PORT_B : std_logic;
 signal tmp_STAMP1_CS_SGR1 : std_logic;
 signal tmp_STAMP1_CS_SGR2 : std_logic;
 signal tmp_STAMP1_CS_TEMP : std_logic;
@@ -328,6 +334,10 @@ LED_RECORDING <= tmp_LED_RECORDING;
 
 OUT_ADC_START <= tmp_OUT_ADC_START;
 
+PORT_A <= tmp_PORT_A;
+
+PORT_B <= tmp_PORT_B;
+
 STAMP1_CS_SGR1 <= tmp_STAMP1_CS_SGR1;
 
 STAMP1_CS_SGR2 <= tmp_STAMP1_CS_SGR2;
@@ -436,6 +446,8 @@ u1:   root port map (
 		LED_HB_MSS => tmp_LED_HB_MSS,
 		LED_RECORDING => tmp_LED_RECORDING,
 		OUT_ADC_START => tmp_OUT_ADC_START,
+		PORT_A => tmp_PORT_A,
+		PORT_B => tmp_PORT_B,
 		STAMP1_CS_SGR1 => tmp_STAMP1_CS_SGR1,
 		STAMP1_CS_SGR2 => tmp_STAMP1_CS_SGR2,
 		STAMP1_CS_TEMP => tmp_STAMP1_CS_TEMP,

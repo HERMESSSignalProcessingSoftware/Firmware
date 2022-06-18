@@ -1,11 +1,11 @@
 add_prb \
-         -net    {DAPI_CTS_c} \
-         -port   {Probe_Insert0} \
+         -net    {STAMP1_SCLK_c} \
+         -port   {Probe_Insert1} \
          -pkgpin {47} \
          -fam    {PA4M}
 add_prb \
-         -net    {DAPI_RTS_c} \
-         -port   {Probe_Insert1} \
+         -net    {mosi_cl} \
+         -port   {Probe_Insert2} \
          -pkgpin {46} \
          -fam    {PA4M}
 prbi \

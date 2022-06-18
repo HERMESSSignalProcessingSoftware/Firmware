@@ -13,7 +13,7 @@ Hostname: LUS210
 
 Implementation : synthesis
 
-# Written on Wed Jun 15 17:58:38 2022
+# Written on Wed Jun 15 20:54:52 2022
 
 ##### DESIGN INFO #######################################################
 
@@ -67,6 +67,8 @@ p:LED_HB_MEMSYNC
 p:LED_HB_MSS
 p:LED_RECORDING
 p:OUT_ADC_START
+p:PORT_A
+p:PORT_B
 p:STAMP1_CS_SGR1
 p:STAMP1_CS_SGR2
 p:STAMP1_CS_TEMP

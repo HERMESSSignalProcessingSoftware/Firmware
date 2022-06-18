@@ -6,7 +6,7 @@
 
 # Family: SmartFusion2 , Die: M2S010 , Package: 144 TQ
 
-# Date generated: Wed Jun 15 18:08:22 2022 
+# Date generated: Wed Jun 15 18:51:30 2022 
 
 
 # 
@@ -132,6 +132,18 @@ set_io OUT_ADC_START   \
     -pinname 128       \
     -fixed yes         \
     -iostd LVCMOS12    \
+    -DIRECTION OUTPUT
+
+
+set_io PORT_A          \
+    -pinname 47        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io PORT_B          \
+    -pinname 46        \
+    -fixed yes         \
     -DIRECTION OUTPUT
 
 

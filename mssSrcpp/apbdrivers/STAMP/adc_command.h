@@ -165,7 +165,7 @@ namespace apb_stamp {
 
         const uint8_t vbias[3] = {0x00U, 0x00U, 0x00U}; /**< No Bias voltage */
 
-        const uint8_t mux1[3] = {0xB0U, 0xB0U, 0xA0U}; /**<
+        const uint8_t mux1[3] = {0xB0U, 0xB0U, 0x20U}; /**<
         Internal oscillator (read only),
         Internal reference voltage always on,
         SGR ADCs internal reference is measurement reference,
@@ -175,7 +175,7 @@ namespace apb_stamp {
         PGA sys0Pga[3] = {PGA64, PGA64, PGA16}; /**< The programmable gain
         amplifier (PGA) values defines the voltage measurement resolution */
 
-        SPS sys0Sps[3] = {SPS1000, SPS1000, SPS5}; /**< The samples per second
+        SPS sys0Sps[3] = {SPS10, SPS10, SPS5}; /**< The samples per second
         (SPS), also known as samplerate, defines the temporal resolution */
 
         uint32_t ofc[3] = {0, 0, 0}; /**< Offset calibration coefficient. Only

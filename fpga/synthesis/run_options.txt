@@ -1,7 +1,7 @@
 #--  Synopsys, Inc.
 #--  Version R-2021.03M-SP1
 #--  Project file C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\synthesis\run_options.txt
-#--  Written on Wed Jun 15 17:58:27 2022
+#--  Written on Wed Jun 15 20:54:43 2022
 
 
 #project files

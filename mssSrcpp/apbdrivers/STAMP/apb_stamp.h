@@ -56,10 +56,14 @@ namespace apb_stamp {
 
 
     struct StampStatus {
-        bool newVal[3]; // SGR1, SGR2, RTD
-        bool overwrittenVal[3];
-        int8_t asyncTime;
-        uint32_t id;
+        bool newVal[3]; /**< true, if there was a new reading since the last
+        acquisition */
+        bool overwrittenVal[3]; /**< true, if the value was overwritten because
+        value recovery took to long */
+        int8_t asyncTime; /**< Time difference SGR1-SGR2 when asserting their
+        data available signal in 0.1ms increments. Is positive, if ADC SGR1
+        was first. Negative, if ADC SGR2 was first. */
+        uint8_t id; /**< the VHDL Stamp id configured during initialization */
         StampStatus (uint16_t bitfield);
         uint16_t bitfield () const;
     };
@@ -159,9 +163,14 @@ namespace apb_stamp {
 
         /** Read a Dataframe
          *
-         * @returns The most current dataframe
+         * @returns The most current dataframe as a pointer. Must be deleted
+         * when not used.
          */
-        StampDataframe readDataframe () const;
+        StampDataframe *readDataframe () const;
+
+        /** Can be called to reset the interrupt line
+         */
+        void resetInterrupt () const;
 
         /** Write commands to the ADCs
          *

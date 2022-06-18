@@ -53,6 +53,6 @@ template <typename T> bool Queue<T>::empty () const {
 
 
 template <typename T> Queue<T>::QueueElement::QueueElement (T item):
-    content(item) {}
+    content{item} {}
 
 #endif

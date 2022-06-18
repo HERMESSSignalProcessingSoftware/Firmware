@@ -1,6 +1,8 @@
 #include <cstring>
 #include "dapi.h"
+#include "controller.h"
 #include "../tools/msghandler.h"
+#include "../tools/tools.h"
 #include "../sf2drivers/drivers/mss_gpio/mss_gpio.h"
 #include "../sb_hw_platform.h"
 
@@ -38,7 +40,7 @@ void Dapi::worker () {
         uint8_t endIdx = rxBufferIdx - 2;
         while (rxBuffer[endIdx] == 0x00 && endIdx >= 0)
             endIdx--;
-        transmissionReceived &= (endIdx > 1);
+        transmissionReceived &= (endIdx >= 1);
         // check content demarcation byte
         transmissionReceived &= (rxBuffer[endIdx] == 0x17);
 
@@ -48,7 +50,17 @@ void Dapi::worker () {
             // a seemingly valid command was received
             switch (rxBuffer[0]) {
             case 0x00:
-                handleCommandEcho(endIdx);
+                // echo command
+                transmitRaw(rxBuffer, endIdx+1);
+                (*this) << "\x0F\x17\xF0";
+                break;
+            case 0x03:
+                // Start live data acquisition
+                Controller::getInstance().setLiveDataAcquisition(true);
+                break;
+            case 0x04:
+                // Stop live data acquisition
+                Controller::getInstance().setLiveDataAcquisition(false);
                 break;
             default:
                 MsgHandler::getInstance().warning("Unknown command byte");
@@ -72,7 +84,7 @@ Dapi &Dapi::transmitRaw (const uint8_t * const ptr, const uint32_t size) {
 
 
 Dapi &Dapi::operator<< (const std::string msg) {
-    return (*this) << msg.c_str();
+    return this->transmitRaw((const uint8_t*)msg.c_str(), msg.size());
 }
 
 
@@ -87,10 +99,24 @@ Dapi &Dapi::operator<< (const char * const msg) {
 }
 
 
-Dapi &Dapi::operator<< (char msg) {
-    // append to transmission queue
-    msgQueue.push(Message((uint8_t*) &msg, 1));
-    return *this;
+Dapi &Dapi::sendLiveData (Measurement::Datapackage &dp) {
+    const uint8_t transmissionSize = 13+(dp.numReceived * 8);
+    uint8_t toTransmit[transmissionSize];
+    toTransmit[0] = 0x03U;
+    toTransmit[1] = dp.numReceived;
+    toByteArray(&toTransmit[2], dp.timestamp);
+    for (uint8_t i = 0; i < dp.numReceived; i++) {
+        const uint8_t offset = i * 8;
+        toTransmit[10 + offset] = dp.frameOrder[i];
+        toTransmit[11 + offset] = dp.errors[i];
+        toByteArray(&toTransmit[12 + offset], dp.values[i][0]);
+        toByteArray(&toTransmit[14 + offset], dp.values[i][1]);
+        toByteArray(&toTransmit[16 + offset], dp.values[i][2]);
+    }
+    toTransmit[transmissionSize - 3] = '\x0F';
+    toTransmit[transmissionSize - 2] = '\x17';
+    toTransmit[transmissionSize - 1] = '\xF0';
+    return this->transmitRaw(toTransmit, transmissionSize);
 }
 
 
@@ -140,10 +166,4 @@ Dapi::Dapi () {
     MSS_UART_set_rx_endian(&g_mss_uart0, MSS_UART_LITTLEEND);
     MSS_UART_set_rx_handler(&g_mss_uart0, &Dapi::rxHandler,
             MSS_UART_FIFO_EIGHT_BYTES);
-}
-
-
-void Dapi::handleCommandEcho (uint8_t contentSize) {
-    transmitRaw(rxBuffer, contentSize+1);
-    operator <<("\x0F\x17\xF0");
 }

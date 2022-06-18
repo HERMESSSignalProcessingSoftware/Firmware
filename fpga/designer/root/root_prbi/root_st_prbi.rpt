@@ -1,10 +1,14 @@
-No Path 
+Path 1
+  From: STAMP1/spi/sclk_buffer:Q
+  To:   Probe_Insert1
+  Delay (ns):              4.682
+  Arrival (ns):            4.682
 
 
 Path 1
-  From: MSS/root_sb_MSS_0/MSS_ADLIB_INST/INST_MSS_010_IP:MMUART0_RTS_MGPIO17B_H2F_A
-  To:   Probe_Insert1
-  Delay (ns):              6.044
-  Arrival (ns):            6.044
+  From: STAMP1/spi/mosi_cl:Q
+  To:   Probe_Insert2
+  Delay (ns):              5.114
+  Arrival (ns):            5.114
 
 

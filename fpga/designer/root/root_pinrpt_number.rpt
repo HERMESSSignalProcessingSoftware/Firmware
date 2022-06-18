@@ -1,5 +1,5 @@
 ----------------------------------------------------------------
--Pin Report - Date: Wed Jun 15 18:10:05 2022 Pinchecksum: NOT-AVAILABLE
+-Pin Report - Date: Wed Jun 15 20:55:39 2022 Pinchecksum: NOT-AVAILABLE
 -Product: Designer
 -Release: v2021.3
 -Version: 2021.3.0.10
@@ -56,8 +56,8 @@ Number |Port             |Function                     |State      |I/O Std  |Di
 43      STAMP3_DRDY_SGR2  MSIO102PB4                    Fixed       LVCMOS33  Input      TRISTATE                        None           No                                  Off              ---         ---            Off             Off          ---   ---           ---                ---               
 44      STAMP3_DRDY_TEMP  MSIO102NB4/CCC_NE1_CLKI0      Special     LVCMOS33  Input      TRISTATE                        None           No                                  Off              ---         ---            Off             Off          ---   ---           ---                ---               
 45                        VDDI4                         Reserved    
-46                        MSIO103NB4/PROBE_B            Unassigned  
-47                        MSIO103PB4/PROBE_A            Unassigned  
+46      PORT_B            MSIO103NB4/PROBE_B            Fixed       LVCMOS33  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           4                  5                 
+47      PORT_A            MSIO103PB4/PROBE_A            Fixed       LVCMOS33  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           4                  5                 
 48      STAMP3_CS_SGR1    MSIO104NB4/GB7                Special     LVCMOS33  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           4                  5                 
 49      STAMP3_CS_SGR2    MSIO104PB4/GB3                Special     LVCMOS33  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          ---   ---           4                  5                 
 50                        VDD                           Reserved    

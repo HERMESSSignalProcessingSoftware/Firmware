@@ -15,13 +15,29 @@
  *
  * After initialization the ADCs are configured for continuous 1kSPS operation
  * and the VHDL Stamp components are ready to capture interrupts. The ADCs are
- * system offset calibrated. Also by default the measurement is turned off and
+ * not calibrated by default. Also by default the measurement is turned off and
  * must be turned on through a call to setDataStorage(true).
  *
  * Call worker() in main loop for data processing.
  */
 class Measurement {
 public:
+    struct Datapackage {
+        enum errorCodes: uint8_t {
+            AdcLagging = 0x01U,
+            StampLagging = 0x02U,
+            NoNew = 0x04U,
+            Overwritten = 0x08U
+        };
+
+        uint8_t numReceived = 0;
+        uint8_t frameOrder[6] = {0, 0, 0, 0, 0, 0};
+        uint16_t values[6][3];
+        uint8_t errors[6];
+        uint64_t timestamp = 0;
+        void readDf (apb_stamp::StampDataframe &df);
+    };
+
     /** Singleton access method
      *
      * Use this method to get the Measurement instance
@@ -34,10 +50,11 @@ public:
      * Asserts the ADC_START line going to the ADCs enabling their continuous
      * mode. When they trigger the VHDL interrupts, the VHDL interrupts
      * will trigger the MSS interrupts. Any start will reset the timestamps
-     * in the storage!
+     * in the storage! USE THE CONTROLLER METHOD TO ACTUALLY TRIGGER THIS!
+     *
      * @param start true for Starting, false for Stopping
      */
-    void setDataStorage (bool start);
+    void setDataAcquisition (bool start);
 
     /** Worker function
      *
@@ -48,19 +65,37 @@ public:
     /** Timestamp getter
      *
      * @return the current timestamp in 250us increments after starting data
-     * storage
+     * acquisition
      */
     uint64_t getTimestamp () const;
 
+    /** Initiate system offset calibration
+     *
+     * Runs the system offset calibration as of the ADS114x datasheet.
+     * Can be called at any time after the measurement setup. This
+     * operation takes some time (less than 1s).
+     */
+    void performSystemOffsetCalibration ();
+
+    /** Initiate self offset calibration
+     *
+     * Runs the self offset calibration as of the ADS114x datasheet.
+     * Can be called at any time after the measurement setup. This
+     * operation takes some time (less than 1s).
+     */
+    void performSelfOffsetCalibration ();
+
 private:
     apb_stamp::Stamp stamps[6]; /**< contains all Stamp instances */
+
     volatile uint64_t timestamp; /**< Timestamp in units of 250us (=1/4kHz) */
 
-    uint16_t heartbeatCounter = 0;
+    volatile uint8_t stampDataAvailable; /**< bitmask indicating, which
+    stamps indicated that their data is available. */
 
-    bool ledOutputState = false;
+    volatile apb_stamp::StampDataframe *dfs[6];
 
-    Queue<apb_stamp::StampDataframe> dfQueue;
+    Datapackage dp;
 
     /** Constructor
      *

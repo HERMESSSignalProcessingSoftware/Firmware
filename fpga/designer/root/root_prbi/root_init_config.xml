@@ -3,7 +3,7 @@
 <doc>
 <title>Configuration Report for MSS, SERDES(s), Fabric DDR and Fabric CCC(s)</title>
 <text>Microsemi Corporation - Microsemi Libero Software Release v2021.3 (Version 2021.3.0.10)</text>
-<text>Date: Wed Jun 15 17:36:30 2022
+<text>Date: Wed Jun 15 18:46:11 2022
 </text>
 <section><name>MSS/CCC_0/CCC_INST/INST_CCC_IP</name></section>
 <table>
@@ -5969,7 +5969,7 @@
  <cell>IOMUXCELL_45_CONFIG</cell>
  <cell>MSS_IOMUXSEL2</cell>
  <cell>INIT[1320:1320]</cell>
- <cell>1&apos;h1</cell>
+ <cell>1&apos;h0</cell>
  <cell>INIT[135]</cell>
  <cell>1</cell>
 </row>
@@ -5977,7 +5977,7 @@
  <cell>IOMUXCELL_45_CONFIG</cell>
  <cell>MSS_IOMUXSEL3</cell>
  <cell>INIT[1321:1321]</cell>
- <cell>1&apos;h1</cell>
+ <cell>1&apos;h0</cell>
  <cell>INIT[135]</cell>
  <cell>1</cell>
 </row>
@@ -6049,7 +6049,7 @@
  <cell>IOMUXCELL_46_CONFIG</cell>
  <cell>MSS_IOMUXSEL2</cell>
  <cell>INIT[1330:1330]</cell>
- <cell>1&apos;h1</cell>
+ <cell>1&apos;h0</cell>
  <cell>INIT[136]</cell>
  <cell>1</cell>
 </row>
@@ -6057,7 +6057,7 @@
  <cell>IOMUXCELL_46_CONFIG</cell>
  <cell>MSS_IOMUXSEL3</cell>
  <cell>INIT[1331:1331]</cell>
- <cell>1&apos;h1</cell>
+ <cell>1&apos;h0</cell>
  <cell>INIT[136]</cell>
  <cell>1</cell>
 </row>

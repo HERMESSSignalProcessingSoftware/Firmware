@@ -1,6 +1,6 @@
 Configuration Report for MSS, SERDES(s), Fabric DDR and Fabric CCC(s)
 Microsemi Corporation - Microsemi Libero Software Release v2021.3 (Version 2021.3.0.10)
-Date: Wed Jun 15 17:36:30 2022
+Date: Wed Jun 15 18:46:11 2022
 
 MSS/CCC_0/CCC_INST/INST_CCC_IP
 +-------------------+--------------------+---------------+-------+
@@ -792,8 +792,8 @@ MSS/root_sb_MSS_0/MSS_ADLIB_INST/INST_MSS_010_IP
 | IOMUXCELL_44_CONFIG     | MSS_IOMUXSEL5LOWER          | INIT[1317:1317] | 1'h0         | INIT[134] | 1             |
 | IOMUXCELL_45_CONFIG     | MSS_IOMUXSEL0               | INIT[1318:1318] | 1'h0         | INIT[135] | 1             |
 | IOMUXCELL_45_CONFIG     | MSS_IOMUXSEL1               | INIT[1319:1319] | 1'h0         | INIT[135] | 1             |
-| IOMUXCELL_45_CONFIG     | MSS_IOMUXSEL2               | INIT[1320:1320] | 1'h1         | INIT[135] | 1             |
-| IOMUXCELL_45_CONFIG     | MSS_IOMUXSEL3               | INIT[1321:1321] | 1'h1         | INIT[135] | 1             |
+| IOMUXCELL_45_CONFIG     | MSS_IOMUXSEL2               | INIT[1320:1320] | 1'h0         | INIT[135] | 1             |
+| IOMUXCELL_45_CONFIG     | MSS_IOMUXSEL3               | INIT[1321:1321] | 1'h0         | INIT[135] | 1             |
 | IOMUXCELL_45_CONFIG     | MSS_IOMUXSEL4UPPER          | INIT[1322:1322] | 1'h0         | INIT[135] | 1             |
 | IOMUXCELL_45_CONFIG     | MSS_IOMUXSEL4MID            | INIT[1323:1323] | 1'h0         | INIT[135] | 1             |
 | IOMUXCELL_45_CONFIG     | MSS_IOMUXSEL4LOWER          | INIT[1324:1324] | 1'h0         | INIT[135] | 1             |
@@ -802,8 +802,8 @@ MSS/root_sb_MSS_0/MSS_ADLIB_INST/INST_MSS_010_IP
 | IOMUXCELL_45_CONFIG     | MSS_IOMUXSEL5LOWER          | INIT[1327:1327] | 1'h0         | INIT[135] | 1             |
 | IOMUXCELL_46_CONFIG     | MSS_IOMUXSEL0               | INIT[1328:1328] | 1'h0         | INIT[136] | 1             |
 | IOMUXCELL_46_CONFIG     | MSS_IOMUXSEL1               | INIT[1329:1329] | 1'h0         | INIT[136] | 1             |
-| IOMUXCELL_46_CONFIG     | MSS_IOMUXSEL2               | INIT[1330:1330] | 1'h1         | INIT[136] | 1             |
-| IOMUXCELL_46_CONFIG     | MSS_IOMUXSEL3               | INIT[1331:1331] | 1'h1         | INIT[136] | 1             |
+| IOMUXCELL_46_CONFIG     | MSS_IOMUXSEL2               | INIT[1330:1330] | 1'h0         | INIT[136] | 1             |
+| IOMUXCELL_46_CONFIG     | MSS_IOMUXSEL3               | INIT[1331:1331] | 1'h0         | INIT[136] | 1             |
 | IOMUXCELL_46_CONFIG     | MSS_IOMUXSEL4UPPER          | INIT[1332:1332] | 1'h0         | INIT[136] | 1             |
 | IOMUXCELL_46_CONFIG     | MSS_IOMUXSEL4MID            | INIT[1333:1333] | 1'h0         | INIT[136] | 1             |
 | IOMUXCELL_46_CONFIG     | MSS_IOMUXSEL4LOWER          | INIT[1334:1334] | 1'h0         | INIT[136] | 1             |

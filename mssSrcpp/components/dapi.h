@@ -4,6 +4,7 @@
 #include <string>
 #include "../sf2drivers/drivers/mss_uart/mss_uart.h"
 #include "../tools/queue.h"
+#include "measurement.h"
 
 
 class Dapi {
@@ -60,17 +61,13 @@ public:
      */
     Dapi &operator<< (const char * const msg);
 
-    /** Char transfer operator
+    /** Sends a live data acquisition frame
      *
-     * Use this method to transfer simple chars such as 0x00.
-     * Enqueues a message for asynchronous transmission via the DAPI. Note that
-     * infos, warnings and errors may creep into the transmission stream. It
-     * is therefore highly recommended to command the transfer of one in itself
-     * consistent unit and not many partial units.
-     * @param msg A simple char
+     * Transmits a SICD frame to the groundstation software.
+     * @param dp the datapackage to transmit
      * @return A Dapi instance for further use
      */
-    Dapi &operator<< (char msg);
+    Dapi &sendLiveData (Measurement::Datapackage &dp);
 
 private:
     /** Message container class
@@ -118,12 +115,6 @@ private:
      * initializes the UART0 interface for DAPI usage
      */
     Dapi ();
-
-    /** Handler function for echo commands
-     *
-     * @param contentSize The number of content bytes received
-     */
-    void handleCommandEcho (uint8_t contentSize);
 
     bool transferInProgress = false; /**< Indicates, if a transfer is
     in progress and if the next msgQueue item should be retained. */

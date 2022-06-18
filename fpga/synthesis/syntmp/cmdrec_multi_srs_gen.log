@@ -1,7 +1,7 @@
 J:\LiberoSoC\SynplifyPro\bin64\syn_nfilter.exe  -link  -top  work.root  -multisrs  C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\synthesis\synwork\root_comp.srs  -osyn  C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\synthesis\synwork\root_mult.srs  -log  C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\synthesis\synlog\root_multi_srs_gen.srr 
 relcom:J:\LiberoSoC\SynplifyPro\bin64\syn_nfilter.exe -link -top work.root -multisrs ..\synwork\root_comp.srs -osyn ..\synwork\root_mult.srs -log ..\synlog\root_multi_srs_gen.srr
-rc:0 success:1 runtime:1
-file:..\synwork\root_comp.srs|io:i|time:1655308714|size:96048|exec:0|csum:37FD46D34424CE06E915FF49BDB8E89E
-file:..\synwork\root_mult.srs|io:o|time:1655308716|size:10882|exec:0|csum:
-file:..\synlog\root_multi_srs_gen.srr|io:o|time:1655308716|size:1146|exec:0|csum:
+rc:0 success:1 runtime:0
+file:..\synwork\root_comp.srs|io:i|time:1655319289|size:96839|exec:0|csum:10C851C3AC660F94A0060AA0FB18D8BF
+file:..\synwork\root_mult.srs|io:o|time:1655319290|size:10353|exec:0|csum:
+file:..\synlog\root_multi_srs_gen.srr|io:o|time:1655319290|size:1146|exec:0|csum:
 file:J:\LiberoSoC\SynplifyPro\bin64\syn_nfilter.exe|io:i|time:1636456230|size:8899584|exec:1|csum:05E28BA145955944CDBFD3C078A1CBAA

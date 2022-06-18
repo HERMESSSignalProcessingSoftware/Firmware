@@ -3,7 +3,7 @@
 <doc>
 <title>Resource Report</title>
 <text>Microsemi Corporation - Microsemi Libero Software Release v2021.3 (Version 2021.3.0.10)</text>
-<text>Date: Wed Jun 15 17:58:58 2022
+<text>Date: Wed Jun 15 20:55:12 2022
 </text>
 <section><name>Device Selection</name></section>
 <table>
@@ -124,15 +124,15 @@
 </row>
 <row>
  <cell>User I/O</cell>
- <cell>73</cell>
+ <cell>75</cell>
  <cell>84</cell>
- <cell>86.90</cell>
+ <cell>89.29</cell>
 </row>
 <row>
  <cell>-- Single-ended I/O</cell>
- <cell>73</cell>
+ <cell>75</cell>
  <cell>84</cell>
- <cell>86.90</cell>
+ <cell>89.29</cell>
 </row>
 <row>
  <cell>-- Differential I/O Pairs</cell>
@@ -360,7 +360,7 @@
 </row>
 <row>
  <cell>Output I/O</cell>
- <cell>42</cell>
+ <cell>44</cell>
  <cell>0</cell>
  <cell>0</cell>
 </row>
@@ -398,7 +398,7 @@
  <cell> 3.30v</cell>
  <cell> N/A</cell>
  <cell> 31</cell>
- <cell> 42</cell>
+ <cell> 44</cell>
  <cell> 0</cell>
 </row>
 </table>
@@ -427,7 +427,7 @@
 <row>
  <cell>1020</cell>
  <cell>INT_NET</cell>
- <cell>Net   : LED_HB_MEMSYNC_arst</cell>
+ <cell>Net   : LED_FPGA_LOADED_arst</cell>
 </row>
 <row>
  <cell></cell>

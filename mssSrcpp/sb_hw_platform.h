@@ -17,7 +17,7 @@
 #define IN_WP                           MSS_GPIO_3
 #define OUT_DAPI_CTS                    MSS_GPIO_26
 #define OUT_ADC_START                   MSS_GPIO_28
-#define LED_FPGA_LOADED                 MSS_GPIO_29
+#define LED_HB_MEMSYNC                  MSS_GPIO_29
 #define LED_RECORDING                   MSS_GPIO_30
 #define LED_HB_MSS                      MSS_GPIO_31
 

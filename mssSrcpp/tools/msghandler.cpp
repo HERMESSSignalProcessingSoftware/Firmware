@@ -9,17 +9,17 @@ MsgHandler &MsgHandler::getInstance () {
 
 
 void MsgHandler::info (std::string msg) {
-    Dapi::getInstance() << '\0' << msg << "0\x0F\x17\xF0";
+    Dapi::getInstance() << (std::string("\0", 1) + msg + "0\x0F\x17\xF0");
 }
 
 
 void MsgHandler::warning (std::string msg) {
-    Dapi::getInstance() << '\0' << msg << "1\x0F\x17\xF0";
+    Dapi::getInstance() << (std::string("\0", 1) + msg + "1\x0F\x17\xF0");
 }
 
 
 void MsgHandler::error (std::string msg) {
-    Dapi::getInstance() << '\0' << msg << "2\x0F\x17\xF0";
+    Dapi::getInstance() << (std::string("\0", 1) + msg + "2\x0F\x17\xF0");
 }
 
 

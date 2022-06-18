@@ -1,4 +1,4 @@
-# Wed Jun 15 17:58:36 2022
+# Wed Jun 15 20:54:50 2022
 
 
 Copyright (C) 1994-2021 Synopsys, Inc.
@@ -20,7 +20,7 @@ Synopsys Generic Technology Pre-mapping, Version map202103act, Build 148R, Built
 Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 118MB peak: 118MB)
 
 
-Done reading skeleton netlist (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 123MB peak: 130MB)
+Done reading skeleton netlist (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 124MB peak: 130MB)
 
 Reading constraint file: C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\designer\root\synthesis.fdc
 @L: C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\synthesis\root_scck.rpt 
@@ -32,7 +32,7 @@ See clock summary report "C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga
 Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 133MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 133MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 134MB)
 
 
 Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 134MB)
@@ -88,7 +88,7 @@ Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 @N: BN362 :"c:\users\jl\source\repos\hermess\hermess-firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":836:8:836:9|Removing sequential instance sdif3_areset_n_q1 (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
 @N: FX1184 |Applying syn_allowed_resources blockrams=21 on top level netlist root 
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:01s; Memory used current: 176MB peak: 176MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 176MB peak: 176MB)
 
 
 
@@ -123,7 +123,7 @@ root_sb_FABOSC_0_OSC|RCOSC_25_50MHZ_CCC_inferred_clock     15        MSS.FABOSC_
 Finished Pre Mapping Phase.
 @N: BN225 |Writing default property annotation file C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\synthesis\root.sap.
 
-Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 176MB)
+Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 177MB)
 
 Encoding state machine sm0_state[0:6] (in view: work.CoreResetP(rtl))
 original code -> new code
@@ -216,13 +216,13 @@ original code -> new code
 Finished constraint checker preprocessing (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 178MB peak: 178MB)
 
 
-Finished constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 180MB peak: 180MB)
+Finished constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 181MB peak: 181MB)
 
 Pre-mapping successful!
 
 At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 94MB peak: 181MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Wed Jun 15 17:58:38 2022
+# Wed Jun 15 20:54:52 2022
 
 ###########################################################]

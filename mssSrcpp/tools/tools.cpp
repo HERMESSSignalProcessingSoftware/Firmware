@@ -23,6 +23,21 @@ void delay (uint32_t ms) {
 
 
 
+void toByteArray (uint8_t array[8], uint64_t val) {
+    for (uint8_t i = 0; i < 8; i++) {
+        array[i] = (uint8_t) ((val >> (8*(7-i))) & 0xFF);
+    }
+}
+
+
+
+void toByteArray (uint8_t array[2], uint16_t val) {
+    array[0] = (uint8_t) ((val >> 8) & 0xFFU);
+    array[1] = (uint8_t) (val & 0xFFU);
+}
+
+
+
 extern "C" void Timer1_IRQHandler () {
     if ((--delayCounter) < 1)
         delayCompleted = 1;

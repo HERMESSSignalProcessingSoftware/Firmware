@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- Created by SmartDesign Wed Jun 15 17:58:17 2022
+-- Created by SmartDesign Wed Jun 15 20:54:36 2022
 -- Version: 2021.3 2021.3.0.10
 ----------------------------------------------------------------------
 
@@ -62,6 +62,8 @@ entity root is
         LED_HB_MSS       : out std_logic;
         LED_RECORDING    : out std_logic;
         OUT_ADC_START    : out std_logic;
+        PORT_A           : out std_logic;
+        PORT_B           : out std_logic;
         STAMP1_CS_SGR1   : out std_logic;
         STAMP1_CS_SGR2   : out std_logic;
         STAMP1_CS_TEMP   : out std_logic;
@@ -222,6 +224,7 @@ signal F_CLK_net_0           : std_logic;
 signal F_CS1_net_0           : std_logic;
 signal F_CS2_net_0           : std_logic;
 signal F_MOSI_net_0          : std_logic;
+signal IN_WP_net_0           : std_logic;
 signal LED_FPGA_LOADED_net_0 : std_logic;
 signal LED_HB_MEMSYNC_net_0  : std_logic;
 signal LED_HB_MSS_net_0      : std_logic;
@@ -273,7 +276,6 @@ signal MSS_STAMP_5_PSLVERR   : std_logic;
 signal MSS_STAMP_5_PWDATA    : std_logic_vector(31 downto 0);
 signal MSS_STAMP_5_PWRITE    : std_logic;
 signal OUT_ADC_START_net_0   : std_logic;
-signal STAMP1_CS_SGR1_net_0  : std_logic;
 signal STAMP1_CS_SGR2_net_0  : std_logic;
 signal STAMP1_CS_TEMP_net_0  : std_logic;
 signal STAMP1_MOSI_net_0     : std_logic;
@@ -326,7 +328,7 @@ signal STAMP6_CS_TEMP_net_1  : std_logic;
 signal STAMP1_CS_TEMP_net_1  : std_logic;
 signal STAMP1_MOSI_net_1     : std_logic;
 signal STAMP1_SCLK_net_1     : std_logic;
-signal STAMP1_CS_SGR1_net_1  : std_logic;
+signal IN_WP_net_1           : std_logic;
 signal STAMP1_CS_SGR2_net_1  : std_logic;
 signal STAMP2_CS_SGR2_net_1  : std_logic;
 signal STAMP2_SCLK_net_1     : std_logic;
@@ -393,6 +395,11 @@ begin
  VCC_net                 <= '1';
  TM_PRDATAS6_const_net_0 <= B"00000000000000000000000000000000";
 ----------------------------------------------------------------------
+-- TieOff assignments
+----------------------------------------------------------------------
+ PORT_A                <= '0';
+ PORT_B                <= '0';
+----------------------------------------------------------------------
 -- Top level output port assignments
 ----------------------------------------------------------------------
  DAPI_TXD_net_1        <= DAPI_TXD_net_0;
@@ -429,8 +436,8 @@ begin
  STAMP1_MOSI           <= STAMP1_MOSI_net_1;
  STAMP1_SCLK_net_1     <= STAMP1_SCLK_net_0;
  STAMP1_SCLK           <= STAMP1_SCLK_net_1;
- STAMP1_CS_SGR1_net_1  <= STAMP1_CS_SGR1_net_0;
- STAMP1_CS_SGR1        <= STAMP1_CS_SGR1_net_1;
+ IN_WP_net_1           <= IN_WP_net_0;
+ STAMP1_CS_SGR1        <= IN_WP_net_1;
  STAMP1_CS_SGR2_net_1  <= STAMP1_CS_SGR2_net_0;
  STAMP1_CS_SGR2        <= STAMP1_CS_SGR2_net_1;
  STAMP2_CS_SGR2_net_1  <= STAMP2_CS_SGR2_net_0;
@@ -511,7 +518,7 @@ AND3_0 : AND3
         B => MSS_MSS_READY,
         C => MSS_INIT_DONE,
         -- Outputs
-        Y => LED_HB_MEMSYNC_net_0 
+        Y => LED_FPGA_LOADED_net_0 
         );
 -- MSS
 MSS : root_sb
@@ -599,7 +606,7 @@ MSS : root_sb
         MMUART_0_TXD_M2F   => DAPI_TXD_net_0,
         GPIO_26_M2F        => DAPI_RTS_net_0,
         GPIO_28_M2F        => OUT_ADC_START_net_0,
-        GPIO_29_M2F        => LED_FPGA_LOADED_net_0,
+        GPIO_29_M2F        => LED_HB_MEMSYNC_net_0,
         GPIO_30_M2F        => LED_RECORDING_net_0,
         GPIO_31_M2F        => LED_HB_MSS_net_0,
         SPI_0_DO_M2F       => F_MOSI_net_0,
@@ -614,7 +621,7 @@ STAMP1 : entity work.STAMP
         -- Inputs
         reset_status => GND_net,
         CLK          => MSS_FIC_0_CLK,
-        RESET_N      => LED_HB_MEMSYNC_net_0,
+        RESET_N      => LED_FPGA_LOADED_net_0,
         PSEL         => MSS_STAMP_PSELx,
         PENABLE      => MSS_STAMP_PENABLE,
         PWRITE       => MSS_STAMP_PWRITE,
@@ -630,7 +637,7 @@ STAMP1 : entity work.STAMP
         PSLVERR      => MSS_STAMP_PSLVERR,
         spi_clock    => STAMP1_SCLK_net_0,
         spi_mosi     => STAMP1_MOSI_net_0,
-        spi_dms1_cs  => STAMP1_CS_SGR1_net_0,
+        spi_dms1_cs  => IN_WP_net_0,
         spi_dms2_cs  => STAMP1_CS_SGR2_net_0,
         spi_temp_cs  => STAMP1_CS_TEMP_net_0,
         data_frame   => OPEN,
@@ -642,7 +649,7 @@ STAMP2 : entity work.STAMP
         -- Inputs
         reset_status => GND_net,
         CLK          => MSS_FIC_0_CLK,
-        RESET_N      => LED_HB_MEMSYNC_net_0,
+        RESET_N      => LED_FPGA_LOADED_net_0,
         PSEL         => MSS_STAMP_1_PSELx,
         PENABLE      => MSS_STAMP_1_PENABLE,
         PWRITE       => MSS_STAMP_1_PWRITE,
@@ -670,7 +677,7 @@ STAMP3 : entity work.STAMP
         -- Inputs
         reset_status => GND_net,
         CLK          => MSS_FIC_0_CLK,
-        RESET_N      => LED_HB_MEMSYNC_net_0,
+        RESET_N      => LED_FPGA_LOADED_net_0,
         PSEL         => MSS_STAMP_2_PSELx,
         PENABLE      => MSS_STAMP_2_PENABLE,
         PWRITE       => MSS_STAMP_2_PWRITE,
@@ -698,7 +705,7 @@ STAMP4 : entity work.STAMP
         -- Inputs
         reset_status => GND_net,
         CLK          => MSS_FIC_0_CLK,
-        RESET_N      => LED_HB_MEMSYNC_net_0,
+        RESET_N      => LED_FPGA_LOADED_net_0,
         PSEL         => MSS_STAMP_3_PSELx,
         PENABLE      => MSS_STAMP_3_PENABLE,
         PWRITE       => MSS_STAMP_3_PWRITE,
@@ -726,7 +733,7 @@ STAMP5 : entity work.STAMP
         -- Inputs
         reset_status => GND_net,
         CLK          => MSS_FIC_0_CLK,
-        RESET_N      => LED_HB_MEMSYNC_net_0,
+        RESET_N      => LED_FPGA_LOADED_net_0,
         PSEL         => MSS_STAMP_4_PSELx,
         PENABLE      => MSS_STAMP_4_PENABLE,
         PWRITE       => MSS_STAMP_4_PWRITE,
@@ -754,7 +761,7 @@ STAMP6 : entity work.STAMP
         -- Inputs
         reset_status => GND_net,
         CLK          => MSS_FIC_0_CLK,
-        RESET_N      => LED_HB_MEMSYNC_net_0,
+        RESET_N      => LED_FPGA_LOADED_net_0,
         PSEL         => MSS_STAMP_5_PSELx,
         PENABLE      => MSS_STAMP_5_PENABLE,
         PWRITE       => MSS_STAMP_5_PWRITE,

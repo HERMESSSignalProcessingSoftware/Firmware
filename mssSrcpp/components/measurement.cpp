@@ -1,9 +1,44 @@
 #include "measurement.h"
-#include "../sf2drivers/drivers/mss_gpio/mss_gpio.h"
 #include "../sf2drivers/drivers/mss_timer/mss_timer.h"
+#include "../sf2drivers/drivers/mss_gpio/mss_gpio.h"
 #include "../tools/msghandler.h"
 #include "../tools/tools.h"
 #include "dapi.h"
+#include "controller.h"
+
+#define ADC_LAG_THRESHOLD               2
+#define TIMESTAMP_LAG_THRESHOLD         1
+
+
+
+
+void Measurement::Datapackage::readDf (apb_stamp::StampDataframe &df) {
+    if (numReceived >= 6)
+        return;
+
+    // determine timestamp issues
+    if (numReceived == 0)
+        timestamp = df.timestamp;
+    else
+        errors[numReceived] = (StampLagging ?
+                abs(timestamp - df.timestamp) > TIMESTAMP_LAG_THRESHOLD : 0);
+
+    // copy values
+    frameOrder[numReceived] = df.status.id;
+    values[numReceived][0] = df.dataSgr1;
+    values[numReceived][1] = df.dataSgr2;
+    values[numReceived][2] = df.dataRtd;
+
+    for (uint8_t i = 0; i < 3; i++) {
+        // generate error values
+        errors[numReceived] |= (AdcLagging ?
+                (df.status.asyncTime > ADC_LAG_THRESHOLD && i == 0)
+                || (df.status.asyncTime < -ADC_LAG_THRESHOLD && i == 1) : 0)
+                | (NoNew ? !df.status.newVal[i] : 0)
+                | (Overwritten ? df.status.overwrittenVal[i] : 0);
+    }
+    numReceived++;
+}
 
 
 
@@ -11,6 +46,64 @@ Measurement &Measurement::getInstance () {
     static Measurement instance;
     return instance;
 }
+
+
+
+uint64_t Measurement::getTimestamp () const {
+    return timestamp;
+}
+
+
+
+void Measurement::worker () {
+    // !!! TODO find a better, single stamp failure resistant way
+    // when only if (stampDataAvailable) stamp3 seems to be "too slow"...
+    if (stampDataAvailable) {
+        // assemble data package
+        psr_t isr = HAL_disable_interrupts();
+        for (uint8_t i = 0; i < 6; i++) {
+            if ((stampDataAvailable >> i) & 0x1U) {
+                dp.readDf(const_cast<apb_stamp::StampDataframe&>(*dfs[i]));
+                delete dfs[i];
+                stampDataAvailable &= ~(1u << i);
+            }
+        }
+        HAL_restore_interrupts(isr);
+        if (dp.numReceived >= 6) {
+            Controller::getInstance().datapackageAvailable(dp);
+            dp.numReceived = 0;
+        }
+    }
+}
+
+
+
+void Measurement::performSystemOffsetCalibration () {
+    // prepare ADC system offset calibration
+    apb_stamp::AdcCommandCalibrate cmdCal(
+            apb_stamp::AdcCommandCalibrate::sysocal);
+
+    // calibrate ADCs
+    for (uint8_t i = 0; i < 6; i++)
+        cmdCal(stamps[i], apb_stamp::Stamp::SGR1
+                | apb_stamp::Stamp::SGR2
+                | apb_stamp::Stamp::RTD);
+}
+
+
+
+void Measurement::performSelfOffsetCalibration () {
+    // prepare ADC system offset calibration
+    apb_stamp::AdcCommandCalibrate cmdCal(
+            apb_stamp::AdcCommandCalibrate::selfocal);
+
+    // calibrate ADCs
+    for (uint8_t i = 0; i < 6; i++)
+        cmdCal(stamps[i], apb_stamp::Stamp::SGR1
+                | apb_stamp::Stamp::SGR2
+                | apb_stamp::Stamp::RTD);
+}
+
 
 
 Measurement::Measurement ():
@@ -22,10 +115,6 @@ Measurement::Measurement ():
         apb_stamp::Stamp(ADDR_STAMP5, F2M_INT_STAMP5_PIN),
         apb_stamp::Stamp(ADDR_STAMP6, F2M_INT_STAMP6_PIN)
     }, timestamp{0} {
-    // initialize recording LED
-    MSS_GPIO_config(LED_FPGA_LOADED, MSS_GPIO_OUTPUT_MODE);
-    MSS_GPIO_set_output(LED_FPGA_LOADED, 0);
-
     // start ADC and let it settle
     MSS_GPIO_config(OUT_ADC_START, MSS_GPIO_OUTPUT_MODE);
     MSS_GPIO_set_output(OUT_ADC_START, 1);
@@ -66,10 +155,6 @@ Measurement::Measurement ():
 
     });
 
-    // prepare ADC system offset calibration
-    apb_stamp::AdcCommandCalibrate cmdCal(
-            apb_stamp::AdcCommandCalibrate::sysocal);
-
 
     for (uint8_t i = 0; i < 6; i++) {
         // reset ADCs
@@ -88,9 +173,6 @@ Measurement::Measurement ():
         // enable continuous mode and set proper id
         conf.id = i;
         stamps[i].writeConfig(conf);
-
-        // calibrate ADCs
-        cmdCal(stamps[i], allAdcs);
     }
 
     // enable MSS timer 2 for the timestamp generator
@@ -103,72 +185,32 @@ Measurement::Measurement ():
 
 
 
-void Measurement::setDataStorage (bool start) {
+void Measurement::setDataAcquisition (bool start) {
     if (start) {
         startTimestampGenerator();
         for (uint8_t i = 0; i < 6; i++)
             stamps[i].enableInterrupt();
         MSS_GPIO_set_output(OUT_ADC_START, 1);
-        MsgHandler::getInstance().info("Measurement started");
     }
     else {
         for (uint8_t i = 0; i < 6; i++)
             stamps[i].disableInterrupt();
         MSS_GPIO_set_output(OUT_ADC_START, 0);
         stopTimestampGenerator();
-        MsgHandler::getInstance().info("Measurement stopped");
-    }
-}
-
-
-
-uint64_t Measurement::getTimestamp () const {
-    return timestamp;
-}
-
-
-
-void Measurement::worker () {
-    if (dfQueue.size() >= 6) {
-        if (++heartbeatCounter >= 500) {
-            heartbeatCounter = 0;
-            ledOutputState = !ledOutputState;
-            MSS_GPIO_set_output(LED_FPGA_LOADED, ledOutputState ? 1 : 0);
-        }
-
-        while (!dfQueue.empty())
-            dfQueue.pop();
-        /*for (uint8_t i = 0; i < 6; i++)
-            */
-
-        // pop first six elements and check, if all elements are within a
-        // time limit
-        /*uint64_t firstTime = dfQueue.front().timestamp;
-        bool withinTime[6];
-        for (uint8_t i = 0; i < 6; i++) {
-            int8_t diff = dfQueue.front().timestamp - firstTime;
-            withinTime[dfQueue.front().status.id] = (bool) ((diff & 0x7F) <= 1);
-            dfQueue.pop();
-        }
-
-        for (uint8_t i = 0; i < 6; i++) {
-            if (!withinTime[i])
-                MsgHandler::getInstance().error("NE");
-        }*/
     }
 }
 
 
 
 void Measurement::handleStampInterrupt (uint8_t stamp) {
-    // do not allow nested stamp retrieval interrupts
-    psr_t enabledInterrupts = HAL_disable_interrupts();
     // reset the pending IRQ and allow further processing
     NVIC_ClearPendingIRQ(stamps[stamp].interruptPin);
-    // read ADCs data and enqueue
-    dfQueue.push(stamps[stamp].readDataframe());
-    // allow further interrupts
-    HAL_restore_interrupts(enabledInterrupts);
+    if (stampDataAvailable & (1u << stamp))
+        stamps[stamp].resetInterrupt();
+    else {
+        dfs[stamp] = stamps[stamp].readDataframe();
+        stampDataAvailable |= (1u << stamp);
+    }
 }
 
 

@@ -18,6 +18,25 @@
  */
 void delay (uint32_t ms);
 
+
+/** Convert 64bit integer to byte array
+ *
+ * Output is in big endianness
+ * @param array The output array
+ * @param val the input value
+ */
+void toByteArray (uint8_t array[8], uint64_t val);
+
+
+/** Convert 16bit integer to byte array
+ *
+ * Output is in big endianness
+ * @param array The output array
+ * @param val the input value
+ */
+void toByteArray (uint8_t array[2], uint16_t val);
+
+
 // All ISRs
 extern "C" void Timer1_IRQHandler ();
 extern "C" void Timer2_IRQHandler ();

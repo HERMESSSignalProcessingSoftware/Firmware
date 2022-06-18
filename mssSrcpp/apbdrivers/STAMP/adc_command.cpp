@@ -72,10 +72,10 @@ uint8_t AdcCommandReadReg::operator[] (uint8_t index) {
 
     // if odd index, take the most significant 8 bits
     if (index & 0x1U)
-        return readValues[index>>1] >> 8;
+        return readValues[index>>1] & 0xFFU;
 
     // if even index, take the least significant 8 bits
-    return readValues[index>>1] & 0xFFU;
+    return readValues[index>>1] >> 8;
 }
 
 
@@ -91,7 +91,7 @@ AdcCommandReadReg::~AdcCommandReadReg () {
 
 
 std::string AdcCommandReadReg::execute (Stamp &stamp, uint8_t adcs) {
-    // divide num by two and round down
+    // divide num by two and round down for number of required accesses
     uint8_t size = num >> 1;
 
     // create new results array
@@ -101,7 +101,7 @@ std::string AdcCommandReadReg::execute (Stamp &stamp, uint8_t adcs) {
 
     // read the values
     for (uint8_t i = 0; i < size; i++) {
-        stamp.writeAdc(adcs, ADS_CMD_RREG(offset+i,2), Stamp::ModAtomic);
+        stamp.writeAdc(adcs, ADS_CMD_RREG(offset+(i*2),2), Stamp::ModAtomic);
         stamp.writeAdc(adcs, ADS_CMD_NOP, Stamp::ModAtomic);
         readValues[i] = stamp.readAdc(Stamp::ModNone);
     }
@@ -144,18 +144,6 @@ std::string AdcCommandConfigure::execute (Stamp &stamp, uint8_t adcs) {
             // read and compare the 12 register values
             AdcCommandReadReg reader(ADS_REG_MUX0, 12);
             reader(stamp, adc);
-            uint16_t r0Mux0 = reader[0]; // !!!
-            uint16_t r1Vbias = reader[1]; // !!!
-            uint16_t r2Mux1 = reader[2]; // !!!
-            uint16_t r3Sys0 = reader[3]; // !!!
-            uint16_t r4Ofc0 = reader[4]; // !!!
-            uint16_t r5Ofc1 = reader[5]; // !!!
-            uint16_t r6Ofc2 = reader[6]; // !!!
-            uint16_t r7Fsc0 = reader[7]; // !!!
-            uint16_t r8Fsc1 = reader[8]; // !!!
-            uint16_t r9Fsc2 = reader[9]; // !!!
-            uint16_t r10Idac0 = reader[10]; // !!!
-            uint16_t r11IDac1 = reader[11]; // !!!
             if (reader[0] != mux0[i] ||
                     reader[1] != vbias[i] ||
                     reader[2] != mux1[i] ||
