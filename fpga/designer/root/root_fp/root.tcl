@@ -1,7 +1,15 @@
-open_project -project {C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\designer\root\root_fp\root.pro}
-enable_device -name {M2S010} -enable 1
-set_programming_file -name {M2S010} -file {C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\designer\root\root.ppd}
-set_programming_action -action {PROGRAM} -name {M2S010} 
-run_selected_actions
+open_project -project {C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\designer\root\root_fp\root.pro}\
+         -connect_programmers {FALSE}
+load_programming_data \
+    -name {M2S010} \
+    -fpga {C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\designer\root\root.map} \
+    -header {C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\designer\root\root.hdr} \
+    -envm {C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\designer\root\root.efc} \
+    -spm {C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\designer\root\root.spm} \
+    -dca {C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\designer\root\root.dca}
+export_single_ppd \
+    -name {M2S010} \
+    -file {C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\designer\root\export/tempExport\root.ppd}
+
 save_project
 close_project

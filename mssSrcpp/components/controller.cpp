@@ -11,9 +11,9 @@ Controller &Controller::getInstance () {
 
 
 
-void Controller::datapackageAvailable (Measurement::Datapackage &dp) {
+void Controller::datapackageAvailable (const Measurement::Datapackage &dp) {
     // enter this if clause with 2Hz
-    if (++heartbeatCounter >= 5) {
+    if (++heartbeatCounter >= heartbeatCounterThreshold) {
         heartbeatCounter = 0;
         hbLedOutputState = !hbLedOutputState;
         MSS_GPIO_set_output(LED_HB_MEMSYNC, hbLedOutputState ? 1 : 0);
@@ -52,4 +52,40 @@ Controller::Controller () {
     MSS_GPIO_set_output(LED_HB_MEMSYNC, 0);
     MSS_GPIO_config(LED_RECORDING, MSS_GPIO_OUTPUT_MODE);
     MSS_GPIO_set_output(LED_RECORDING, 0);
+
+    // set the heartbeatCounterThreshold depending on the SGR samplerate
+    switch (configuration.sgrSps) {
+    case apb_stamp::AdcCommandConfigure::SPS5:
+        heartbeatCounterThreshold = 2;
+        break;
+    case apb_stamp::AdcCommandConfigure::SPS10:
+        heartbeatCounterThreshold = 5;
+        break;
+    case apb_stamp::AdcCommandConfigure::SPS20:
+        heartbeatCounterThreshold = 10;
+        break;
+    case apb_stamp::AdcCommandConfigure::SPS40:
+        heartbeatCounterThreshold = 20;
+        break;
+    case apb_stamp::AdcCommandConfigure::SPS160:
+        heartbeatCounterThreshold = 80;
+        break;
+    case apb_stamp::AdcCommandConfigure::SPS320:
+        heartbeatCounterThreshold = 160;
+        break;
+    case apb_stamp::AdcCommandConfigure::SPS640:
+        heartbeatCounterThreshold = 320;
+        break;
+    case apb_stamp::AdcCommandConfigure::SPS1000:
+        heartbeatCounterThreshold = 500;
+        break;
+    default:
+        heartbeatCounterThreshold = 1000;
+        break;
+    }
+
+    // inform about current configuration
+    MsgHandler::getInstance().info(std::string("Configuration loaded: \"")
+            + std::string(configuration.confName) + "\" running SPU version "
+            + SPU_VERSION);
 }

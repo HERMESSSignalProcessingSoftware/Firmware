@@ -67,7 +67,7 @@ public:
      * @param dp the datapackage to transmit
      * @return A Dapi instance for further use
      */
-    Dapi &sendLiveData (Measurement::Datapackage &dp);
+    Dapi &sendLiveData (const Measurement::Datapackage &dp);
 
 private:
     /** Message container class

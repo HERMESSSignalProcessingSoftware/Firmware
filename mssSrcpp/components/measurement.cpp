@@ -56,8 +56,6 @@ uint64_t Measurement::getTimestamp () const {
 
 
 void Measurement::worker () {
-    // !!! TODO find a better, single stamp failure resistant way
-    // when only if (stampDataAvailable) stamp3 seems to be "too slow"...
     if (stampDataAvailable) {
         // assemble data package
         psr_t isr = HAL_disable_interrupts();
@@ -78,34 +76,6 @@ void Measurement::worker () {
 
 
 
-void Measurement::performSystemOffsetCalibration () {
-    // prepare ADC system offset calibration
-    apb_stamp::AdcCommandCalibrate cmdCal(
-            apb_stamp::AdcCommandCalibrate::sysocal);
-
-    // calibrate ADCs
-    for (uint8_t i = 0; i < 6; i++)
-        cmdCal(stamps[i], apb_stamp::Stamp::SGR1
-                | apb_stamp::Stamp::SGR2
-                | apb_stamp::Stamp::RTD);
-}
-
-
-
-void Measurement::performSelfOffsetCalibration () {
-    // prepare ADC system offset calibration
-    apb_stamp::AdcCommandCalibrate cmdCal(
-            apb_stamp::AdcCommandCalibrate::selfocal);
-
-    // calibrate ADCs
-    for (uint8_t i = 0; i < 6; i++)
-        cmdCal(stamps[i], apb_stamp::Stamp::SGR1
-                | apb_stamp::Stamp::SGR2
-                | apb_stamp::Stamp::RTD);
-}
-
-
-
 Measurement::Measurement ():
     stamps{
         apb_stamp::Stamp(ADDR_STAMP1, F2M_INT_STAMP1_PIN),
@@ -115,6 +85,9 @@ Measurement::Measurement ():
         apb_stamp::Stamp(ADDR_STAMP5, F2M_INT_STAMP5_PIN),
         apb_stamp::Stamp(ADDR_STAMP6, F2M_INT_STAMP6_PIN)
     }, timestamp{0} {
+    // get the global SPU configuration
+    const Configuration &spuConf = Controller::getInstance().configuration;
+
     // start ADC and let it settle
     MSS_GPIO_config(OUT_ADC_START, MSS_GPIO_OUTPUT_MODE);
     MSS_GPIO_set_output(OUT_ADC_START, 1);
@@ -152,9 +125,19 @@ Measurement::Measurement ():
         }
         msgHandler.error(msg);
         return false;
-
     });
+    cmdConf.sys0Pga[0] = spuConf.sgrPga;
+    cmdConf.sys0Pga[1] = spuConf.sgrPga;
+    cmdConf.sys0Pga[2] = spuConf.rtdPga;
+    cmdConf.sys0Sps[0] = spuConf.sgrSps;
+    cmdConf.sys0Sps[1] = spuConf.sgrSps;
+    cmdConf.sys0Sps[2] = spuConf.rtdSps;
 
+    // prepare ADC system offset calibration
+    apb_stamp::AdcCommandCalibrate cmdCalSys(
+            apb_stamp::AdcCommandCalibrate::sysocal);
+    apb_stamp::AdcCommandCalibrate cmdCalSelf(
+            apb_stamp::AdcCommandCalibrate::selfocal);
 
     for (uint8_t i = 0; i < 6; i++) {
         // reset ADCs
@@ -162,6 +145,16 @@ Measurement::Measurement ():
 
         // configure ADCs
         cmdConf(stamps[i], allAdcs);
+
+        // calibrate ADCs
+        cmdCalSys(stamps[i],
+                (spuConf.sgrSystemOffsetCal ? apb_stamp::Stamp::SGR1
+                        | apb_stamp::Stamp::SGR2 : 0)
+                | (spuConf.rtdSystemOffsetCal ? apb_stamp::Stamp::RTD : 0));
+        cmdCalSelf(stamps[i],
+                (spuConf.sgrSelfOffsetCal ? apb_stamp::Stamp::SGR1
+                        | apb_stamp::Stamp::SGR2 : 0)
+                | (spuConf.rtdSelfOffsetCal ? apb_stamp::Stamp::RTD : 0));
     }
 
     // pull ADC start low to disable continuous mode
@@ -178,9 +171,6 @@ Measurement::Measurement ():
     // enable MSS timer 2 for the timestamp generator
     MSS_TIM2_init(MSS_TIMER_PERIODIC_MODE);
     MSS_TIM2_load_background(25000);
-
-    // push info about finishing stamp initialization
-    MsgHandler::getInstance().info("STAMP init complete");
 }
 
 

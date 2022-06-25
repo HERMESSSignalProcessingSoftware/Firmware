@@ -2,6 +2,7 @@
 #define sb_HW_PLATFORM_H_
 
 
+#define SPU_VERSION                     "1.1.0"
 
 /*-----------------------------------------------------------------------------
 * GPIO PORTS
@@ -34,6 +35,7 @@
 #define ADDR_STAMP6                     0x50005000U
 #define ADDR_TM                         0x50006000U
 
+
 /*-----------------------------------------------------------------------------
 * F2M INTERRUPTS
 *---------------------------------------------------------------------------*/
@@ -53,6 +55,12 @@
 #define F2M_INT_STAMP6_HANDLER          FabricIrq6_IRQHandler
 #define F2M_INT_TM_PIN                  FabricIrq7_IRQn
 #define F2M_INT_TM_HANDLER              FabricIrq7_IRQHandler
+
+
+/*-----------------------------------------------------------------------------
+* eNVM Addresses
+*---------------------------------------------------------------------------*/
+#define ADDR_NVM_CONF                   /*0x6002EE00U/**/0x32000U/**/
 
 
 #endif /* sb_HW_PLATFORM_H_*/

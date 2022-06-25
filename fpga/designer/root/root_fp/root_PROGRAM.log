@@ -13,23 +13,25 @@ programmer 'E2006QE3OZ' : Scan Chain...
 Programmer 'E2006QE3OZ' : JTAG TCK / SPI SCK frequency = 1 MHz
 programmer 'E2006QE3OZ' : Check Chain...
 programmer 'E2006QE3OZ' : Scan and Check Chain PASSED.
-Warning: programmer 'E2006QE3OZ' : device 'M2S010' : Device authentication failure: Failed to validate device certificate.
 programmer 'E2006QE3OZ' : device 'M2S010' : Executing action PROGRAM
 Programmer 'E2006QE3OZ' : JTAG TCK / SPI SCK frequency = 4 MHz
+programmer 'E2006QE3OZ' : device 'M2S010' : Family: SmartFusion2
+programmer 'E2006QE3OZ' : device 'M2S010' : Product:      M2S010
+programmer 'E2006QE3OZ' : device 'M2S010' : Cortex-M3 Enabled (M3_ALLOWED = 1)
 programmer 'E2006QE3OZ' : device 'M2S010' : Programming Interface Protocol: JTAG
-programmer 'E2006QE3OZ' : device 'M2S010' : EXPORT ISC_ENABLE_RESULT[32] = 007b6744
+programmer 'E2006QE3OZ' : device 'M2S010' : EXPORT ISC_ENABLE_RESULT[32] = 007b6644
 programmer 'E2006QE3OZ' : device 'M2S010' : EXPORT CRCERR[1] = 0
 programmer 'E2006QE3OZ' : device 'M2S010' : EXPORT EDCERR[1] = 0
 programmer 'E2006QE3OZ' : device 'M2S010' : Programming FPGA Array and eNVM...
 programmer 'E2006QE3OZ' : device 'M2S010' : EXPORT Fabric component digest[256] = 07f06afa80ca522fb6b2ce6b5d1f382e12d6a1b796ac96f34bcf87146391e8fc
-programmer 'E2006QE3OZ' : device 'M2S010' : EXPORT eNVM component digest[256] = ed664ec0c62f8e090ef47a6dffe176175c90c014be7c45fd966ea185f3fbd2d4
+programmer 'E2006QE3OZ' : device 'M2S010' : EXPORT eNVM component digest[256] = c71c8216557ba608191bbb485817380b95c958708181b13f4b65e3cee02c109a
 programmer 'E2006QE3OZ' : device 'M2S010' : ===================================================================================
 programmer 'E2006QE3OZ' : device 'M2S010' : EXPORT DSN[128] = bb71370179e52ed2328268dd9a9be778
 programmer 'E2006QE3OZ' : device 'M2S010' : ===================================================================================
-programmer 'E2006QE3OZ' : device 'M2S010' : Finished: Wed Jun 15 20:56:45 2022 (Elapsed time 00:00:26)
+programmer 'E2006QE3OZ' : device 'M2S010' : Finished: Sat Jun 25 18:42:48 2022 (Elapsed time 00:00:39)
 programmer 'E2006QE3OZ' : device 'M2S010' : Executing action PROGRAM PASSED.
 programmer 'E2006QE3OZ' : Chain programming PASSED.
-Chain Programming Finished: Wed Jun 15 20:56:45 2022 (Elapsed time 00:00:26)
+Chain Programming Finished: Sat Jun 25 18:42:48 2022 (Elapsed time 00:00:39)
 
                         o - o - o - o - o - o
 

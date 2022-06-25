@@ -69,22 +69,6 @@ public:
      */
     uint64_t getTimestamp () const;
 
-    /** Initiate system offset calibration
-     *
-     * Runs the system offset calibration as of the ADS114x datasheet.
-     * Can be called at any time after the measurement setup. This
-     * operation takes some time (less than 1s).
-     */
-    void performSystemOffsetCalibration ();
-
-    /** Initiate self offset calibration
-     *
-     * Runs the self offset calibration as of the ADS114x datasheet.
-     * Can be called at any time after the measurement setup. This
-     * operation takes some time (less than 1s).
-     */
-    void performSelfOffsetCalibration ();
-
 private:
     apb_stamp::Stamp stamps[6]; /**< contains all Stamp instances */
 

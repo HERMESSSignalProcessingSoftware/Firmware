@@ -175,7 +175,7 @@ namespace apb_stamp {
         PGA sys0Pga[3] = {PGA64, PGA64, PGA16}; /**< The programmable gain
         amplifier (PGA) values defines the voltage measurement resolution */
 
-        SPS sys0Sps[3] = {SPS10, SPS10, SPS5}; /**< The samples per second
+        SPS sys0Sps[3] = {SPS1000, SPS1000, SPS5}; /**< The samples per second
         (SPS), also known as samplerate, defines the temporal resolution */
 
         uint32_t ofc[3] = {0, 0, 0}; /**< Offset calibration coefficient. Only

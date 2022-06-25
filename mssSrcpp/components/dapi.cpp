@@ -2,6 +2,7 @@
 #include "dapi.h"
 #include "controller.h"
 #include "../tools/msghandler.h"
+#include "../tools/configuration.h"
 #include "../tools/tools.h"
 #include "../sf2drivers/drivers/mss_gpio/mss_gpio.h"
 #include "../sb_hw_platform.h"
@@ -62,6 +63,25 @@ void Dapi::worker () {
                 // Stop live data acquisition
                 Controller::getInstance().setLiveDataAcquisition(false);
                 break;
+            case 0x05:
+                // Read SPU configuration data
+                uint8_t txBuffer[39];
+                txBuffer[0] = 0x05U;
+                Controller::getInstance().configuration
+                        .toDapiFrame(&txBuffer[1]);
+                txBuffer[36] = 0x0FU;
+                txBuffer[37] = 0x17U;
+                txBuffer[38] = 0xF0U;
+                transmitRaw(txBuffer, 39);
+                break;
+            case 0x06:
+                // Write SPU configuration data
+                if (endIdx != 35)
+                    MsgHandler::getInstance().warning("Malformed SPU config "
+                            "frame received");
+                else
+                    Configuration(&rxBuffer[1]).writeToNVM();
+                break;
             default:
                 MsgHandler::getInstance().warning("Unknown command byte");
             }
@@ -99,7 +119,7 @@ Dapi &Dapi::operator<< (const char * const msg) {
 }
 
 
-Dapi &Dapi::sendLiveData (Measurement::Datapackage &dp) {
+Dapi &Dapi::sendLiveData (const Measurement::Datapackage &dp) {
     const uint8_t transmissionSize = 13+(dp.numReceived * 8);
     uint8_t toTransmit[transmissionSize];
     toTransmit[0] = 0x03U;
