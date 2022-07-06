@@ -10,7 +10,7 @@
  * A storage class for SPU configurations stored in the EEPROM. This
  * class requires initialized EEPROM NVM.
  */
-class Configuration {
+struct Configuration {
 public:
     char confName[17] = "SPU-DEFAULT\0\0\0\0\0"; /**< The SPU configuration
     name designator as ASCII encoded string. May not be NULL-terminated. */
@@ -52,7 +52,7 @@ public:
     samplerate of the RTD ADCs */
 
     uint64_t minTimestamp = 0; /**< Minimum value of the 250us incremented
-    timestamp that has to reached before shutting down the storage of
+    timestamp that has to be reached before shutting down the storage of
     measurements. */
 
     uint64_t maxTimestamp = 0xFFFFFFFFFFFFFFFF; /**< Maximum value of the

@@ -1,7 +1,8 @@
 #include "tools.h"
 #include "../sf2drivers/drivers/mss_timer/mss_timer.h"
+#include "../sf2drivers/drivers/mss_gpio/mss_gpio.h"
 #include "../sf2drivers/drivers/mss_watchdog/mss_watchdog.h"
-#include "../components/measurement.h"
+#include "../components/controller.h"
 
 
 static volatile uint32_t delayCompleted = 0;
@@ -46,30 +47,30 @@ extern "C" void Timer1_IRQHandler () {
 
 
 extern "C" void Timer2_IRQHandler () {
-    Measurement::getInstance().timestamp++;
+    Controller::getInstance().timestamp++;
     MSS_TIM2_clear_irq();
 }
 
-extern "C" void F2M_INT_STAMP1_HANDLER () {
+extern "C" void F2M_INT_HANDLER(INT_STAMP1) () {
     Measurement::getInstance().handleStampInterrupt(0);
 }
 
-extern "C" void F2M_INT_STAMP2_HANDLER () {
+extern "C" void F2M_INT_HANDLER(INT_STAMP2) () {
     Measurement::getInstance().handleStampInterrupt(1);
 }
 
-extern "C" void F2M_INT_STAMP3_HANDLER () {
+extern "C" void F2M_INT_HANDLER(INT_STAMP3) () {
     Measurement::getInstance().handleStampInterrupt(2);
 }
 
-extern "C" void F2M_INT_STAMP4_HANDLER () {
+extern "C" void F2M_INT_HANDLER(INT_STAMP4) () {
     Measurement::getInstance().handleStampInterrupt(3);
 }
 
-extern "C" void F2M_INT_STAMP5_HANDLER () {
+extern "C" void F2M_INT_HANDLER(INT_STAMP5) () {
     Measurement::getInstance().handleStampInterrupt(4);
 }
 
-extern "C" void F2M_INT_STAMP6_HANDLER () {
+extern "C" void F2M_INT_HANDLER(INT_STAMP6) () {
     Measurement::getInstance().handleStampInterrupt(5);
 }

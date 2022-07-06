@@ -2,6 +2,7 @@
 #define TOOLS_H
 
 #include <stdint.h>
+#include "../sf2drivers/drivers/mss_gpio/mss_gpio.h"
 #include "../sb_hw_platform.h"
 
 /**
@@ -17,6 +18,17 @@
  * the time to wait in milliseconds
  */
 void delay (uint32_t ms);
+
+
+/** Get GPIO input port
+ *
+ * Port must be initialized as input or input/output.
+ * @param port The port number
+ * @return true, if positive input, false otherwise
+ */
+inline bool getGpioInput (uint32_t port) {
+    return (MSS_GPIO_get_inputs() >> port) & 1;
+}
 
 
 /** Convert 64bit integer to byte array
@@ -40,11 +52,11 @@ void toByteArray (uint8_t array[2], uint16_t val);
 // All ISRs
 extern "C" void Timer1_IRQHandler ();
 extern "C" void Timer2_IRQHandler ();
-extern "C" void F2M_INT_STAMP1_HANDLER ();
-extern "C" void F2M_INT_STAMP2_HANDLER ();
-extern "C" void F2M_INT_STAMP3_HANDLER ();
-extern "C" void F2M_INT_STAMP4_HANDLER ();
-extern "C" void F2M_INT_STAMP5_HANDLER ();
-extern "C" void F2M_INT_STAMP6_HANDLER ();
+extern "C" void F2M_INT_HANDLER(INT_STAMP1) ();
+extern "C" void F2M_INT_HANDLER(INT_STAMP2) ();
+extern "C" void F2M_INT_HANDLER(INT_STAMP3) ();
+extern "C" void F2M_INT_HANDLER(INT_STAMP4) ();
+extern "C" void F2M_INT_HANDLER(INT_STAMP5) ();
+extern "C" void F2M_INT_HANDLER(INT_STAMP6) ();
 
 #endif

@@ -4,7 +4,7 @@
 #include <string>
 #include "../sf2drivers/drivers/mss_uart/mss_uart.h"
 #include "../tools/queue.h"
-#include "measurement.h"
+#include "../tools/datapackage.h"
 
 
 class Dapi {
@@ -67,7 +67,7 @@ public:
      * @param dp the datapackage to transmit
      * @return A Dapi instance for further use
      */
-    Dapi &sendLiveData (const Measurement::Datapackage &dp);
+    Dapi &sendLiveData (const Datapackage &dp);
 
 private:
     /** Message container class

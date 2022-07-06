@@ -1,5 +1,5 @@
 #include "apb_stamp.h"
-#include "../../components/measurement.h"
+#include "../../components/controller.h"
 
 using namespace apb_stamp;
 
@@ -73,7 +73,7 @@ StampDataframe::StampDataframe (uint32_t dataSgr12, uint32_t dataRtdStatus):
         dataSgr2{(uint16_t) (dataSgr12 & 0xFFFFU)},
         dataRtd{(uint16_t) (dataRtdStatus >> 16)},
         status(dataRtdStatus & 0xFFFFU),
-        timestamp{Measurement::getInstance().getTimestamp()} {}
+        timestamp{Controller::getInstance().getTimestamp()} {}
 
 
 

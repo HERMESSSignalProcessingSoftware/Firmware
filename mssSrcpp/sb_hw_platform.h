@@ -2,7 +2,7 @@
 #define sb_HW_PLATFORM_H_
 
 
-#define SPU_VERSION                     "1.1.0"
+#define SPU_VERSION                     "1.2.0"
 
 /*-----------------------------------------------------------------------------
 * GPIO PORTS
@@ -12,15 +12,15 @@
 #define _GPIO_HANDLER(num)              GPIO##num##_IRQHandler
 #define GPIO_HANDLER(num)               _GPIO_HANDLER(num)
 
-#define IN_RXSM_LO                      MSS_GPIO_0
-#define IN_RXSM_SOE                     MSS_GPIO_1
-#define IN_RXSM_SODS                    MSS_GPIO_2
-#define IN_WP                           MSS_GPIO_3
-#define OUT_DAPI_CTS                    MSS_GPIO_26
-#define OUT_ADC_START                   MSS_GPIO_28
-#define LED_HB_MEMSYNC                  MSS_GPIO_29
-#define LED_RECORDING                   MSS_GPIO_30
-#define LED_HB_MSS                      MSS_GPIO_31
+#define IN_RXSM_LO                      0
+#define IN_RXSM_SOE                     1
+#define IN_RXSM_SODS                    2
+#define IN_WP                           3
+#define OUT_DAPI_CTS                    26
+#define OUT_ADC_START                   28
+#define LED_HB_MEMSYNC                  29
+#define LED_RECORDING                   30
+#define LED_HB_MSS                      31
 
 
 /*-----------------------------------------------------------------------------
@@ -39,22 +39,17 @@
 /*-----------------------------------------------------------------------------
 * F2M INTERRUPTS
 *---------------------------------------------------------------------------*/
-#define F2M_INT_MEMSYNC_PIN             FabricIrq0_IRQn
-#define F2M_INT_MEMSYNC_HANDLER         FabricIrq0_IRQHandler
-#define F2M_INT_STAMP1_PIN              FabricIrq1_IRQn
-#define F2M_INT_STAMP1_HANDLER          FabricIrq1_IRQHandler
-#define F2M_INT_STAMP2_PIN              FabricIrq2_IRQn
-#define F2M_INT_STAMP2_HANDLER          FabricIrq2_IRQHandler
-#define F2M_INT_STAMP3_PIN              FabricIrq3_IRQn
-#define F2M_INT_STAMP3_HANDLER          FabricIrq3_IRQHandler
-#define F2M_INT_STAMP4_PIN              FabricIrq4_IRQn
-#define F2M_INT_STAMP4_HANDLER          FabricIrq4_IRQHandler
-#define F2M_INT_STAMP5_PIN              FabricIrq5_IRQn
-#define F2M_INT_STAMP5_HANDLER          FabricIrq5_IRQHandler
-#define F2M_INT_STAMP6_PIN              FabricIrq6_IRQn
-#define F2M_INT_STAMP6_HANDLER          FabricIrq6_IRQHandler
-#define F2M_INT_TM_PIN                  FabricIrq7_IRQn
-#define F2M_INT_TM_HANDLER              FabricIrq7_IRQHandler
+#define _F2M_INT_PIN(num)               FabricIrq##num##_IRQn
+#define F2M_INT_PIN(num)                _F2M_INT_PIN(num)
+#define _F2M_INT_HANDLER(num)           FabricIrq##num##_IRQHandler
+#define F2M_INT_HANDLER(num)            _F2M_INT_HANDLER(num)
+
+#define INT_STAMP1                      1
+#define INT_STAMP2                      2
+#define INT_STAMP3                      3
+#define INT_STAMP4                      4
+#define INT_STAMP5                      5
+#define INT_STAMP6                      6
 
 
 /*-----------------------------------------------------------------------------

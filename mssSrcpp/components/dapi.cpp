@@ -119,20 +119,11 @@ Dapi &Dapi::operator<< (const char * const msg) {
 }
 
 
-Dapi &Dapi::sendLiveData (const Measurement::Datapackage &dp) {
+Dapi &Dapi::sendLiveData (const Datapackage &dp) {
     const uint8_t transmissionSize = 13+(dp.numReceived * 8);
     uint8_t toTransmit[transmissionSize];
     toTransmit[0] = 0x03U;
-    toTransmit[1] = dp.numReceived;
-    toByteArray(&toTransmit[2], dp.timestamp);
-    for (uint8_t i = 0; i < dp.numReceived; i++) {
-        const uint8_t offset = i * 8;
-        toTransmit[10 + offset] = dp.frameOrder[i];
-        toTransmit[11 + offset] = dp.errors[i];
-        toByteArray(&toTransmit[12 + offset], dp.values[i][0]);
-        toByteArray(&toTransmit[14 + offset], dp.values[i][1]);
-        toByteArray(&toTransmit[16 + offset], dp.values[i][2]);
-    }
+    dp.toBytes(&toTransmit[1]);
     toTransmit[transmissionSize - 3] = '\x0F';
     toTransmit[transmissionSize - 2] = '\x17';
     toTransmit[transmissionSize - 1] = '\xF0';
@@ -165,18 +156,18 @@ Dapi::Message::~Message () {
 
 
 void Dapi::rxHandler (mss_uart_instance_t *this_uart) {
-    MSS_GPIO_set_output(OUT_DAPI_CTS, 1);
+    MSS_GPIO_set_output(GPIO_PORT(OUT_DAPI_CTS), 1);
     Dapi &dapi = Dapi::getInstance();
     dapi.rxBufferIdx += MSS_UART_get_rx(this_uart,
             &dapi.rxBuffer[dapi.rxBufferIdx],
             64-dapi.rxBufferIdx);
-    MSS_GPIO_set_output(OUT_DAPI_CTS, 0);
+    MSS_GPIO_set_output(GPIO_PORT(OUT_DAPI_CTS), 0);
 }
 
 
 Dapi::Dapi () {
-    MSS_GPIO_config(OUT_DAPI_CTS, MSS_GPIO_OUTPUT_MODE);
-    MSS_GPIO_set_output(OUT_DAPI_CTS, 0);
+    MSS_GPIO_config(GPIO_PORT(OUT_DAPI_CTS), MSS_GPIO_OUTPUT_MODE);
+    MSS_GPIO_set_output(GPIO_PORT(OUT_DAPI_CTS), 0);
 
     MSS_UART_init(&g_mss_uart0, MSS_UART_115200_BAUD,
             MSS_UART_DATA_8_BITS
