@@ -6,7 +6,7 @@
 
 # Family: SmartFusion2 , Die: M2S010 , Package: 144 TQ
 
-# Date generated: Wed Jun 15 18:51:30 2022 
+# Date generated: Wed Jul  6 19:35:56 2022 
 
 
 # 
@@ -518,9 +518,4 @@ set_io TM_TXD          \
 #Ports using Dedicated Pins
 
 #
-
-set_io DEVRST_N       \
-    -pinname 72       \
-    -DIRECTION INPUT
-
 

@@ -21,6 +21,7 @@ void Dapi::worker () {
 
         // delete previous item
         if (transferInProgress) {
+            queueSize -= msgQueue.front().size;
             msgQueue.pop();
             transferInProgress = false;
         }
@@ -98,7 +99,10 @@ void Dapi::worker () {
 
 
 Dapi &Dapi::transmitRaw (const uint8_t * const ptr, const uint32_t size) {
-    msgQueue.push(Message(ptr, size));
+    if ((queueSize + size) <= DAPI_MAX_BUFFER_SIZE) {
+        msgQueue.push(Message(ptr, size));
+        queueSize += size;
+    }
     return *this;
 }
 
@@ -113,7 +117,10 @@ Dapi &Dapi::operator<< (const char * const msg) {
     uint32_t strLen = std::strlen(msg);
 
     // append to transmission queue
-    msgQueue.push(Message((uint8_t*) msg, strLen));
+    if ((queueSize + strLen) <= DAPI_MAX_BUFFER_SIZE) {
+        msgQueue.push(Message((uint8_t*) msg, strLen));
+        queueSize += strLen;
+    }
 
     return *this;
 }

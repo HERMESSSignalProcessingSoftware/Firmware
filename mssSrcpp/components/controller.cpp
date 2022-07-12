@@ -1,6 +1,7 @@
 #include "controller.h"
 #include "dapi.h"
 #include "memory.h"
+#include "tm.h"
 #include "../sf2drivers/drivers/mss_gpio/mss_gpio.h"
 #include "../sf2drivers/drivers/mss_timer/mss_timer.h"
 #include "../tools/msghandler.h"
@@ -22,6 +23,8 @@ void Controller::worker () {
         last2HzTimestamp = timestamp;
         hbLedOutputState[1] = !hbLedOutputState[1];
         MSS_GPIO_set_output(GPIO_PORT(LED_HB_MSS), hbLedOutputState[1]);
+        // run the TM worker
+        Tm::getInstance().worker2Hz();
     }
 
     // toggle write protection indicator LED
@@ -100,6 +103,8 @@ void Controller::worker () {
                 msg.append(": Measurement started");
             }
         }
+        else
+            clearedMemoryBeforeSods = false;
 
         // send message
         if (type == 0)
@@ -197,8 +202,26 @@ uint64_t Controller::getTimestamp () const {
 
 
 
+uint8_t Controller::getStateByte () const {
+    uint8_t returner = (wdTriggeredFlag ? 0x80 : 0)
+            | (rxsmSignal[0] ? 0x40 : 0)
+            | (rxsmSignal[1] ? 0x20 : 0)
+            | (rxsmSignal[2] ? 0x10 : 0)
+            | (clearingMemory ? 0x08 : 0)
+            | (storedAcquisition ? 0x04 : 0)
+            | (!getGpioInput(IN_WP) ? 0x02 : 0)
+            | (clearedMemoryBeforeSods ? 0x01 : 0);
+    return returner;
+}
+
+
+
 void Controller::clearMemFinished () {
     clearingMemory = false;
+    // set the cleared memory before sods flag to true, if the stored stored
+    // acquisition hasn't started yet
+    if (!storedAcquisition)
+        clearedMemoryBeforeSods = true;
     MsgHandler::getInstance().info("Memory finished clearing");
 }
 
@@ -258,11 +281,6 @@ Controller::Controller () {
         recCntThr = 1000;
         break;
     }
-
-    // inform about current configuration
-    MsgHandler::getInstance().info(std::string("Configuration loaded: \"")
-            + std::string(configuration.confName) + "\" running SPU version "
-            + SPU_VERSION);
 
     // enable MSS timer 2 for the timestamp generator
     MSS_TIM2_init(MSS_TIMER_PERIODIC_MODE);

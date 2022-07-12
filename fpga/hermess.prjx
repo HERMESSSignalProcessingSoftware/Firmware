@@ -51,9 +51,15 @@ CURREV=1
 ENDLIST
 LIST LIBRARIES
 COREAPB3_LIB
+COREUART_LIB
 ENDLIST
 LIST LIBRARY_COREAPB3_LIB
 ALIAS=COREAPB3_LIB
+COMPILE_OPTION=COMPILE
+CUSTOMPATH=false
+ENDLIST
+LIST LIBRARY_COREUART_LIB
+ALIAS=COREUART_LIB
 COMPILE_OPTION=COMPILE
 CUSTOMPATH=false
 ENDLIST
@@ -62,13 +68,13 @@ ENDLIST
 LIST FileManager
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf,actgen_cxf"
 STATE="utd"
-TIME="1655308664"
+TIME="1657203759"
 SIZE="3259"
 PARENT="<project>\component\work\root_sb\root_sb.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\coreparameters.vhd,tb_hdl"
 STATE="utd"
-TIME="1655308664"
+TIME="1657203759"
 SIZE="2013"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -189,7 +195,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreResetP\7.1.100\CoreResetP.cxf,actgen_cxf"
 STATE="utd"
-TIME="1655308664"
+TIME="1657203759"
 SIZE="582"
 PARENT="<project>\component\work\root_sb\root_sb.cxf"
 ENDFILE
@@ -207,15 +213,48 @@ SIZE="9297"
 PARENT="<project>\component\Actel\DirectCore\CoreResetP\7.1.100\CoreResetP.cxf"
 IS_READONLY="TRUE"
 ENDFILE
+VALUE "<project>\component\Actel\DirectCore\COREUART\5.7.100\COREUART.cxf,actgen_cxf"
+STATE="utd"
+TIME="1657208243"
+SIZE="994"
+PARENT="<project>\component\work\COREUART_C0\COREUART_C0.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\COREUART\5.7.100\rtl\vhdl\test\common\misc.vhd,tb_hdl"
+STATE="utd"
+TIME="1657208243"
+SIZE="13504"
+LIBRARY="COREUART_LIB"
+PARENT="<project>\component\Actel\DirectCore\COREUART\5.7.100\COREUART.cxf"
+PARENT="<project>\component\work\COREUART_C0\COREUART_C0_0\COREUART_C0_COREUART_C0_0_COREUART.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\COREUART\5.7.100\rtl\vhdl\test\common\tbpack.vhd,tb_hdl"
+STATE="utd"
+TIME="1657208243"
+SIZE="17606"
+LIBRARY="COREUART_LIB"
+PARENT="<project>\component\Actel\DirectCore\COREUART\5.7.100\COREUART.cxf"
+PARENT="<project>\component\work\COREUART_C0\COREUART_C0_0\COREUART_C0_COREUART_C0_0_COREUART.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\COREUART\5.7.100\rtl\vhdl\test\common\textio.vhd,tb_hdl"
+STATE="utd"
+TIME="1657208243"
+SIZE="24120"
+LIBRARY="COREUART_LIB"
+PARENT="<project>\component\Actel\DirectCore\COREUART\5.7.100\COREUART.cxf"
+PARENT="<project>\component\work\COREUART_C0\COREUART_C0_0\COREUART_C0_COREUART_C0_0_COREUART.cxf"
+IS_READONLY="TRUE"
+ENDFILE
 VALUE "<project>\component\Actel\SgCore\FCCC\2.0.201\FCCC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1655308664"
+TIME="1657203759"
 SIZE="241"
 PARENT="<project>\component\work\root_sb\root_sb.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SgCore\OSC\2.0.101\OSC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1655308666"
+TIME="1657203761"
 SIZE="682"
 PARENT="<project>\component\work\root_sb\root_sb.cxf"
 ENDFILE
@@ -245,176 +284,275 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS\1.1.500\MSS.cxf,actgen_cxf"
 STATE="utd"
-TIME="1655308661"
+TIME="1657203756"
 SIZE="526"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_CCC\1.0.100\MSS_CCC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1655308657"
+TIME="1657203752"
 SIZE="253"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_CC\1.0.100\MSS_CC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1655308657"
+TIME="1657203752"
 SIZE="252"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_CFGM\1.1.100\MSS_CFGM.cxf,actgen_cxf"
 STATE="utd"
-TIME="1655308657"
+TIME="1657203752"
 SIZE="254"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_CM3\1.0.200\MSS_CM3.cxf,actgen_cxf"
 STATE="utd"
-TIME="1655308657"
+TIME="1657203752"
 SIZE="253"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_DDRB\1.0.200\MSS_DDRB.cxf,actgen_cxf"
 STATE="utd"
-TIME="1655308657"
+TIME="1657203752"
 SIZE="254"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_EDAC\1.0.101\MSS_EDAC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1655308657"
+TIME="1657203752"
 SIZE="254"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_ENVM\1.0.101\MSS_ENVM.cxf,actgen_cxf"
 STATE="utd"
-TIME="1655308657"
+TIME="1657203752"
 SIZE="254"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_FIC32\1.0.100\MSS_FIC32.cxf,actgen_cxf"
 STATE="utd"
-TIME="1655308657"
+TIME="1657203752"
 SIZE="255"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_GPIO\1.0.100\MSS_GPIO.cxf,actgen_cxf"
 STATE="utd"
-TIME="1655308657"
+TIME="1657203752"
 SIZE="254"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_INTR\1.0.200\MSS_INTR.cxf,actgen_cxf"
 STATE="utd"
-TIME="1655308657"
+TIME="1657203752"
 SIZE="254"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_MMUART\1.0.100\MSS_MMUART.cxf,actgen_cxf"
 STATE="utd"
-TIME="1655308657"
+TIME="1657203752"
 SIZE="256"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_RESET\1.0.100\MSS_RESET.cxf,actgen_cxf"
 STATE="utd"
-TIME="1655308657"
+TIME="1657203752"
 SIZE="255"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_SECURITY\1.0.100\MSS_SECURITY.cxf,actgen_cxf"
 STATE="utd"
-TIME="1655308657"
+TIME="1657203752"
 SIZE="258"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_SPI\1.0.100\MSS_SPI.cxf,actgen_cxf"
 STATE="utd"
-TIME="1655308657"
+TIME="1657203752"
 SIZE="253"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_SWITCH\1.0.101\MSS_SWITCH.cxf,actgen_cxf"
 STATE="utd"
-TIME="1655308657"
+TIME="1657203752"
 SIZE="256"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_WATCHDOG\1.0.100\MSS_WATCHDOG.cxf,actgen_cxf"
 STATE="utd"
-TIME="1655308657"
+TIME="1657203752"
 SIZE="258"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
+VALUE "<project>\component\work\COREUART_C0\COREUART_C0.cxf,actgen_cxf"
+STATE="utd"
+TIME="1657208244"
+SIZE="4795"
+ENDFILE
+VALUE "<project>\component\work\COREUART_C0\COREUART_C0.vhd,hdl"
+STATE="utd"
+TIME="1657208243"
+SIZE="7398"
+PARENT="<project>\component\work\COREUART_C0\COREUART_C0.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\COREUART_C0\COREUART_C0_0\coreparameters.vhd,tb_hdl"
+STATE="utd"
+TIME="1657208243"
+SIZE="761"
+LIBRARY="COREUART_LIB"
+PARENT="<project>\component\work\COREUART_C0\COREUART_C0_0\COREUART_C0_COREUART_C0_0_COREUART.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\COREUART_C0\COREUART_C0_0\COREUART_C0_COREUART_C0_0_COREUART.cxf,actgen_cxf"
+STATE="utd"
+TIME="1657208243"
+SIZE="3064"
+PARENT="<project>\component\work\COREUART_C0\COREUART_C0.cxf"
+ENDFILE
+VALUE "<project>\component\work\COREUART_C0\COREUART_C0_0\mti\scripts\wave_vhdl.do,do"
+STATE="utd"
+TIME="1657208243"
+SIZE="651"
+PARENT="<project>\component\work\COREUART_C0\COREUART_C0_0\COREUART_C0_COREUART_C0_0_COREUART.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\COREUART_C0\COREUART_C0_0\rtl\vhdl\core\Clock_gen.vhd,hdl"
+STATE="utd"
+TIME="1657208243"
+SIZE="12912"
+LIBRARY="COREUART_LIB"
+PARENT="<project>\component\work\COREUART_C0\COREUART_C0_0\COREUART_C0_COREUART_C0_0_COREUART.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\COREUART_C0\COREUART_C0_0\rtl\vhdl\core\components.vhd,hdl"
+STATE="utd"
+TIME="1657208243"
+SIZE="2731"
+LIBRARY="COREUART_LIB"
+PARENT="<project>\component\work\COREUART_C0\COREUART_C0_0\COREUART_C0_COREUART_C0_0_COREUART.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\COREUART_C0\COREUART_C0_0\rtl\vhdl\core\CoreUART.vhd,hdl"
+STATE="utd"
+TIME="1657208243"
+SIZE="22388"
+LIBRARY="COREUART_LIB"
+PARENT="<project>\component\work\COREUART_C0\COREUART_C0_0\COREUART_C0_COREUART_C0_0_COREUART.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\COREUART_C0\COREUART_C0_0\rtl\vhdl\core\coreuart_pkg.vhd,hdl"
+STATE="utd"
+TIME="1657208243"
+SIZE="519"
+LIBRARY="COREUART_LIB"
+PARENT="<project>\component\work\COREUART_C0\COREUART_C0_0\COREUART_C0_COREUART_C0_0_COREUART.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\COREUART_C0\COREUART_C0_0\rtl\vhdl\core\fifo_256x8.vhd,hdl"
+STATE="utd"
+TIME="1657208243"
+SIZE="15147"
+LIBRARY="COREUART_LIB"
+PARENT="<project>\component\work\COREUART_C0\COREUART_C0_0\COREUART_C0_COREUART_C0_0_COREUART.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\COREUART_C0\COREUART_C0_0\rtl\vhdl\core\Rx_async.vhd,hdl"
+STATE="utd"
+TIME="1657208243"
+SIZE="21576"
+LIBRARY="COREUART_LIB"
+PARENT="<project>\component\work\COREUART_C0\COREUART_C0_0\COREUART_C0_COREUART_C0_0_COREUART.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\COREUART_C0\COREUART_C0_0\rtl\vhdl\core\Tx_async.vhd,hdl"
+STATE="utd"
+TIME="1657208243"
+SIZE="11219"
+LIBRARY="COREUART_LIB"
+PARENT="<project>\component\work\COREUART_C0\COREUART_C0_0\COREUART_C0_COREUART_C0_0_COREUART.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\COREUART_C0\COREUART_C0_0\rtl\vhdl\test\user\testbnch.vhd,tb_hdl"
+STATE="utd"
+TIME="1657208243"
+SIZE="23663"
+LIBRARY="COREUART_LIB"
+PARENT="<project>\component\work\COREUART_C0\COREUART_C0_0\COREUART_C0_COREUART_C0_0_COREUART.cxf"
+MODULE_UNDER_TEST="testbnch"
+SIMULATION_TIME="-all"
+IS_READONLY="TRUE"
+ENDFILE
 VALUE "<project>\component\work\DESIGN_FIRMWARE\DESIGN_FIRMWARE.cxf,actgen_cxf"
 STATE="utd"
-TIME="1654198670"
-SIZE="2298"
+TIME="1657203844"
+SIZE="2499"
 ENDFILE
 VALUE "<project>\component\work\root\root.cxf,actgen_cxf"
 STATE="utd"
-TIME="1656174541"
+TIME="1657654437"
 SIZE="14691"
 ENDFILE
 VALUE "<project>\component\work\root\root.vhd,hdl"
 STATE="utd"
-TIME="1655319276"
-SIZE="34103"
+TIME="1657654206"
+SIZE="33244"
 PARENT="<project>\component\work\root\root.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\root_sb\CCC_0\root_sb_CCC_0_FCCC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1655308664"
+TIME="1657203759"
 SIZE="689"
 PARENT="<project>\component\work\root_sb\root_sb.cxf"
 ENDFILE
 VALUE "<project>\component\work\root_sb\CCC_0\root_sb_CCC_0_FCCC.vhd,hdl"
 STATE="utd"
-TIME="1655308664"
+TIME="1657203759"
 SIZE="5562"
 PARENT="<project>\component\work\root_sb\CCC_0\root_sb_CCC_0_FCCC.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\root_sb\FABOSC_0\root_sb_FABOSC_0_OSC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1655308666"
+TIME="1657203761"
 SIZE="462"
 PARENT="<project>\component\work\root_sb\root_sb.cxf"
 ENDFILE
 VALUE "<project>\component\work\root_sb\FABOSC_0\root_sb_FABOSC_0_OSC.vhd,hdl"
 STATE="utd"
-TIME="1655308666"
+TIME="1657203761"
 SIZE="1570"
 PARENT="<project>\component\work\root_sb\FABOSC_0\root_sb_FABOSC_0_OSC.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\root_sb\root_sb.cxf,actgen_cxf"
 STATE="utd"
-TIME="1655308667"
-SIZE="30469"
+TIME="1657203762"
+SIZE="28581"
 ENDFILE
 VALUE "<project>\component\work\root_sb\root_sb.vhd,hdl"
 STATE="utd"
-TIME="1655308666"
-SIZE="46061"
+TIME="1657203761"
+SIZE="45425"
 PARENT="<project>\component\work\root_sb\root_sb.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\root_sb_MSS\root_sb_MSS.cxf,actgen_cxf"
 STATE="utd"
-TIME="1655308661"
-SIZE="21327"
+TIME="1657203757"
+SIZE="22110"
 ENDFILE
 VALUE "<project>\component\work\root_sb_MSS\root_sb_MSS.vhd,hdl"
 STATE="utd"
-TIME="1655308661"
-SIZE="83764"
+TIME="1657203756"
+SIZE="84090"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\root_sb_MSS\root_sb_MSS_pre.vhd,hdl"
 STATE="utd"
-TIME="1655308660"
+TIME="1657203756"
 SIZE="70620"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 BEGIN_USE_CONSTRAINT
@@ -426,7 +564,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\root_sb_MSS\root_sb_MSS_syn.vhd,hdl"
 STATE="utd"
-TIME="1655308660"
+TIME="1657203756"
 SIZE="70600"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 BEGIN_USE_CONSTRAINT
@@ -480,7 +618,7 @@ PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 ENDFILE
 VALUE "<project>\simulation\CM3_compile_bfm.tcl,sim"
 STATE="utd"
-TIME="1655308660"
+TIME="1657203756"
 SIZE="504"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
@@ -498,14 +636,14 @@ PARENT="<project>\component\Actel\SmartFusion2MSS\MSS\1.1.500\MSS.cxf"
 ENDFILE
 VALUE "<project>\simulation\subsystem.bfm,sim"
 STATE="utd"
-TIME="1655319277"
-SIZE="952"
+TIME="1657203766"
+SIZE="927"
 PARENT="<project>\component\work\root\root.cxf"
 PARENT="<project>\component\work\root_sb\root_sb.cxf"
 ENDFILE
 VALUE "<project>\simulation\test.bfm,sim"
 STATE="utd"
-TIME="1655308660"
+TIME="1657203756"
 SIZE="734"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
@@ -517,22 +655,22 @@ PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\synthesis\root.so,so"
 STATE="utd"
-TIME="1655319303"
+TIME="1657203796"
 SIZE="237"
 ENDFILE
 VALUE "<project>\synthesis\root.vm,syn_vm"
 STATE="utd"
-TIME="1655319302"
-SIZE="1394547"
+TIME="1657203796"
+SIZE="1407612"
 ENDFILE
 VALUE "<project>\synthesis\root_syn.prj,prj"
 STATE="utd"
-TIME="1655319304"
+TIME="1657203797"
 SIZE="4381"
 ENDFILE
 VALUE "<project>\synthesis\root_vm.sdc,syn_sdc"
 STATE="utd"
-TIME="1655319303"
+TIME="1657203796"
 SIZE="1081"
 ENDFILE
 ENDLIST
@@ -613,6 +751,24 @@ VALUE "<project>\simulation\test.bfm,sim"
 VALUE "<project>\simulation\peripheral_init.bfm,sim"
 ENDLIST
 ENDLIST
+LIST "COREUART_C0_COREUART_C0_0_COREUART::coreuart_lib"
+FILE "<project>\component\work\COREUART_C0\COREUART_C0_0\rtl\vhdl\core\CoreUART.vhd,hdl"
+LIST Other_Association
+VALUE "<project>\component\work\COREUART_C0\COREUART_C0_0\coreparameters.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREUART\5.7.100\rtl\vhdl\test\common\misc.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREUART\5.7.100\rtl\vhdl\test\common\textio.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREUART\5.7.100\rtl\vhdl\test\common\tbpack.vhd,tb_hdl"
+VALUE "<project>\component\work\COREUART_C0\COREUART_C0_0\rtl\vhdl\test\user\testbnch.vhd,tb_hdl"
+VALUE "<project>\component\work\COREUART_C0\COREUART_C0_0\mti\scripts\wave_vhdl.do,do"
+ENDLIST
+LIST AssociatedStimulus
+VALUE "<project>\component\work\COREUART_C0\COREUART_C0_0\coreparameters.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREUART\5.7.100\rtl\vhdl\test\common\misc.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREUART\5.7.100\rtl\vhdl\test\common\textio.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREUART\5.7.100\rtl\vhdl\test\common\tbpack.vhd,tb_hdl"
+VALUE "<project>\component\work\COREUART_C0\COREUART_C0_0\rtl\vhdl\test\user\testbnch.vhd,tb_hdl"
+ENDLIST
+ENDLIST
 ENDLIST
 LIST AssociatedStimulus
 LIST root_sb
@@ -626,6 +782,13 @@ VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\b
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\bfm_apbslaveext.vhd,tb_hdl"
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\bfm_apbslave.vhd,tb_hdl"
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\test\user\testbench.vhd,tb_hdl"
+ENDLIST
+LIST COREUART_C0_COREUART_C0_0_COREUART
+VALUE "<project>\component\work\COREUART_C0\COREUART_C0_0\coreparameters.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREUART\5.7.100\rtl\vhdl\test\common\misc.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREUART\5.7.100\rtl\vhdl\test\common\textio.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREUART\5.7.100\rtl\vhdl\test\common\tbpack.vhd,tb_hdl"
+VALUE "<project>\component\work\COREUART_C0\COREUART_C0_0\rtl\vhdl\test\user\testbnch.vhd,tb_hdl"
 ENDLIST
 ENDLIST
 LIST Other_Association
@@ -653,6 +816,14 @@ VALUE "<project>\simulation\CM3_compile_bfm.tcl,sim"
 VALUE "<project>\simulation\user.bfm,sim"
 VALUE "<project>\simulation\test.bfm,sim"
 VALUE "<project>\simulation\peripheral_init.bfm,sim"
+ENDLIST
+LIST COREUART_C0_COREUART_C0_0_COREUART
+VALUE "<project>\component\work\COREUART_C0\COREUART_C0_0\coreparameters.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREUART\5.7.100\rtl\vhdl\test\common\misc.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREUART\5.7.100\rtl\vhdl\test\common\textio.vhd,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREUART\5.7.100\rtl\vhdl\test\common\tbpack.vhd,tb_hdl"
+VALUE "<project>\component\work\COREUART_C0\COREUART_C0_0\rtl\vhdl\test\user\testbnch.vhd,tb_hdl"
+VALUE "<project>\component\work\COREUART_C0\COREUART_C0_0\mti\scripts\wave_vhdl.do,do"
 ENDLIST
 ENDLIST
 LIST SimulationOptions
@@ -723,8 +894,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="J:\LiberoSoC\SynplifyPro\bin\synplify_pro.exe"
-PARAM=""
-BATCH=0
+PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
+BATCH=1
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -787,11 +958,26 @@ LIST OpenedFileList
 ORIENTATION;HORIZONTAL
 Reports;Reports;0
 ReportsCurrentItem;Export FlashPro Express Job:root_exportJob.log
+StartPage;StartPage;0
 SmartDesign;root;0
 ACTIVEVIEW;Reports
 ENDLIST
 LIST ModuleSubBlockList
 LIST "coreresetp_pcie_hotreset::work","component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp_pcie_hotreset.vhd","FALSE","FALSE"
+ENDLIST
+LIST "COREUART_C0::work","component\work\COREUART_C0\COREUART_C0.vhd","TRUE","FALSE"
+SUBBLOCK "COREUART_C0_COREUART_C0_0_COREUART::coreuart_lib","component\work\COREUART_C0\COREUART_C0_0\rtl\vhdl\core\CoreUART.vhd","FALSE","FALSE"
+ENDLIST
+LIST "DESIGN_FIRMWARE::work","component\work\DESIGN_FIRMWARE\DESIGN_FIRMWARE.cxf","TRUE","FALSE"
+SUBBLOCK "SmartFusion2_CMSIS::work","","FALSE","FALSE"
+SUBBLOCK "SmartFusion2_MSS_GPIO_Driver::work","","FALSE","FALSE"
+SUBBLOCK "SmartFusion2_MSS_HPDMA_Driver::work","","FALSE","FALSE"
+SUBBLOCK "SmartFusion2_MSS_MMUART_Driver::work","","FALSE","FALSE"
+SUBBLOCK "SmartFusion2_MSS_NVM_Driver::work","","FALSE","FALSE"
+SUBBLOCK "SmartFusion2_MSS_SPI_Driver::work","","FALSE","FALSE"
+SUBBLOCK "SmartFusion2_MSS_System_Services_Driver::work","","FALSE","FALSE"
+SUBBLOCK "SmartFusion2_MSS_Timer_Driver::work","","FALSE","FALSE"
+SUBBLOCK "SmartFusion2_MSS_Watchdog_Driver::work","","FALSE","FALSE"
 ENDLIST
 LIST "CoreResetP::work","component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd","FALSE","FALSE"
 SUBBLOCK "coreresetp_pcie_hotreset::work","component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp_pcie_hotreset.vhd","FALSE","FALSE"
@@ -827,6 +1013,24 @@ SUBBLOCK "RCOSC_25_50MHZ::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vh
 ENDLIST
 LIST "root_sb_MSS::work","component\work\root_sb_MSS\root_sb_MSS.vhd","TRUE","FALSE"
 SUBBLOCK "MSS_010::work","component\work\root_sb_MSS\root_sb_MSS_syn.vhd","FALSE","FALSE"
+ENDLIST
+LIST "SmartFusion2_CMSIS::work","","FALSE","FALSE"
+ENDLIST
+LIST "SmartFusion2_MSS_GPIO_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "SmartFusion2_MSS_HPDMA_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "SmartFusion2_MSS_MMUART_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "SmartFusion2_MSS_NVM_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "SmartFusion2_MSS_SPI_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "SmartFusion2_MSS_System_Services_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "SmartFusion2_MSS_Timer_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "SmartFusion2_MSS_Watchdog_Driver::work","","FALSE","FALSE"
 ENDLIST
 LIST "STAMP::work","hdl\STAMP.vhd","FALSE","FALSE"
 SUBBLOCK "spi_master::work","hdl\spi_master.vhd","FALSE","FALSE"
@@ -880,6 +1084,43 @@ LIST "testbench::coreapb3_lib","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\
 SUBBLOCK "BFM_apb::coreapb3_lib","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\bfm_apb.vhd","FALSE","TRUE"
 SUBBLOCK "BFM_apbSLAve::coreapb3_lib","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\bfm_apbslave.vhd","FALSE","TRUE"
 SUBBLOCK "CoreAPB3::coreapb3_lib","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd","FALSE","FALSE"
+ENDLIST
+LIST "COREUART_C0_COREUART_C0_0_Clock_gen::coreuart_lib","component\work\COREUART_C0\COREUART_C0_0\rtl\vhdl\core\Clock_gen.vhd","FALSE","FALSE"
+ENDLIST
+LIST "COREUART_C0_COREUART_C0_0_components::coreuart_lib","component\work\COREUART_C0\COREUART_C0_0\rtl\vhdl\core\components.vhd","FALSE","FALSE"
+ENDLIST
+LIST "COREUART_C0_COREUART_C0_0_COREUART::coreuart_lib","component\work\COREUART_C0\COREUART_C0_0\rtl\vhdl\core\CoreUART.vhd","FALSE","FALSE"
+SUBBLOCK "COREUART_C0_COREUART_C0_0_Clock_gen::coreuart_lib","component\work\COREUART_C0\COREUART_C0_0\rtl\vhdl\core\Clock_gen.vhd","FALSE","FALSE"
+SUBBLOCK "COREUART_C0_COREUART_C0_0_Rx_async::coreuart_lib","component\work\COREUART_C0\COREUART_C0_0\rtl\vhdl\core\Rx_async.vhd","FALSE","FALSE"
+SUBBLOCK "COREUART_C0_COREUART_C0_0_fifo_256x8::coreuart_lib","component\work\COREUART_C0\COREUART_C0_0\rtl\vhdl\core\fifo_256x8.vhd","FALSE","FALSE"
+SUBBLOCK "COREUART_C0_COREUART_C0_0_Tx_async::coreuart_lib","component\work\COREUART_C0\COREUART_C0_0\rtl\vhdl\core\Tx_async.vhd","FALSE","FALSE"
+ENDLIST
+LIST "COREUART_C0_COREUART_C0_0_coreuart_pkg::coreuart_lib","component\work\COREUART_C0\COREUART_C0_0\rtl\vhdl\core\coreuart_pkg.vhd","FALSE","FALSE"
+ENDLIST
+LIST "COREUART_C0_COREUART_C0_0_fifo_256x8::coreuart_lib","component\work\COREUART_C0\COREUART_C0_0\rtl\vhdl\core\fifo_256x8.vhd","FALSE","FALSE"
+SUBBLOCK "COREUART_C0_COREUART_C0_0_fifo_ctrl_256::coreuart_lib","component\work\COREUART_C0\COREUART_C0_0\rtl\vhdl\core\fifo_256x8.vhd","FALSE","FALSE"
+ENDLIST
+LIST "COREUART_C0_COREUART_C0_0_fifo_ctrl_256::coreuart_lib","component\work\COREUART_C0\COREUART_C0_0\rtl\vhdl\core\fifo_256x8.vhd","FALSE","FALSE"
+SUBBLOCK "COREUART_C0_COREUART_C0_0_ram16x8::coreuart_lib","component\work\COREUART_C0\COREUART_C0_0\rtl\vhdl\core\fifo_256x8.vhd","FALSE","FALSE"
+ENDLIST
+LIST "COREUART_C0_COREUART_C0_0_ram16x8::coreuart_lib","component\work\COREUART_C0\COREUART_C0_0\rtl\vhdl\core\fifo_256x8.vhd","FALSE","FALSE"
+ENDLIST
+LIST "COREUART_C0_COREUART_C0_0_Rx_async::coreuart_lib","component\work\COREUART_C0\COREUART_C0_0\rtl\vhdl\core\Rx_async.vhd","FALSE","FALSE"
+ENDLIST
+LIST "COREUART_C0_COREUART_C0_0_Tx_async::coreuart_lib","component\work\COREUART_C0\COREUART_C0_0\rtl\vhdl\core\Tx_async.vhd","FALSE","FALSE"
+ENDLIST
+LIST "coreparameters::coreuart_lib","component\work\COREUART_C0\COREUART_C0_0\coreparameters.vhd","FALSE","TRUE"
+ENDLIST
+LIST "misc::coreuart_lib","component\Actel\DirectCore\COREUART\5.7.100\rtl\vhdl\test\common\misc.vhd","FALSE","TRUE"
+ENDLIST
+LIST "tbpack::coreuart_lib","component\Actel\DirectCore\COREUART\5.7.100\rtl\vhdl\test\common\tbpack.vhd","FALSE","TRUE"
+ENDLIST
+LIST "testbnch::coreuart_lib","component\work\COREUART_C0\COREUART_C0_0\rtl\vhdl\test\user\testbnch.vhd","FALSE","TRUE"
+SUBBLOCK "COREUART_C0_COREUART_C0_0_COREUART::coreuart_lib","component\work\COREUART_C0\COREUART_C0_0\rtl\vhdl\core\CoreUART.vhd","FALSE","FALSE"
+ENDLIST
+LIST "textio::coreuart_lib","component\Actel\DirectCore\COREUART\5.7.100\rtl\vhdl\test\common\textio.vhd","FALSE","TRUE"
+ENDLIST
+LIST "textio_test::coreuart_lib","component\Actel\DirectCore\COREUART\5.7.100\rtl\vhdl\test\common\textio.vhd","FALSE","TRUE"
 ENDLIST
 ENDLIST
 LIST ActiveTestBenchList

@@ -28,7 +28,7 @@ public:
      *
      * Call this function in main loop. Evaluates RXSM signal lines (LO, SOE,
      * SODS). Toggles the MSS HB LED, toggles write protection LED
-     * (Memsync HB LED).
+     * (Memsync HB LED). Calls the methods requiring a specific clocking (TM).
      */
     void worker ();
 
@@ -65,6 +65,12 @@ public:
      */
     uint64_t getTimestamp () const;
 
+    /** Get the state byte
+     *
+     * @return The state byte according to TM spec
+     */
+    uint8_t getStateByte () const;
+
     /** Clearing of memory finished
      *
      * Call this function to inform the controller, that the clearing
@@ -93,6 +99,11 @@ private:
     bool clearingMemory = false; /**< Indicates, if the measurement storage
     is currently being cleared. This state must not be active, when stored
     acquisition is active. */
+
+    bool clearedMemoryBeforeSods = false; /**< Indicates, that the memory
+    was cleared before the SODS signal came in and demanded a start
+    of stored acquisition. This value is reset to false when SODS becomes
+    unset again. */
 
     uint64_t storedAcquisitionStarted = 0; /**< The timestamp when the
     stored acquisition has started */

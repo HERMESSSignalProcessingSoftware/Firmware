@@ -211,6 +211,7 @@ Running optimization stage 2 on CoreAPB3 .......
 @N: CL159 :"C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":75:0:75:4|Input IADDR is unused.
 @N: CL159 :"C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":76:0:76:6|Input PRESETN is unused.
 @N: CL159 :"C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":77:0:77:3|Input PCLK is unused.
+@N: CL159 :"C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":113:0:113:7|Input PRDATAS6 is unused.
 @N: CL159 :"C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":114:0:114:7|Input PRDATAS7 is unused.
 @N: CL159 :"C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":115:0:115:7|Input PRDATAS8 is unused.
 @N: CL159 :"C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":116:0:116:7|Input PRDATAS9 is unused.
@@ -220,6 +221,7 @@ Running optimization stage 2 on CoreAPB3 .......
 @N: CL159 :"C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":120:0:120:8|Input PRDATAS13 is unused.
 @N: CL159 :"C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":121:0:121:8|Input PRDATAS14 is unused.
 @N: CL159 :"C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":122:0:122:8|Input PRDATAS15 is unused.
+@N: CL159 :"C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":130:0:130:7|Input PREADYS6 is unused.
 @N: CL159 :"C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":131:0:131:7|Input PREADYS7 is unused.
 @N: CL159 :"C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":132:0:132:7|Input PREADYS8 is unused.
 @N: CL159 :"C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":133:0:133:7|Input PREADYS9 is unused.
@@ -229,6 +231,7 @@ Running optimization stage 2 on CoreAPB3 .......
 @N: CL159 :"C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":137:0:137:8|Input PREADYS13 is unused.
 @N: CL159 :"C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":138:0:138:8|Input PREADYS14 is unused.
 @N: CL159 :"C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":139:0:139:8|Input PREADYS15 is unused.
+@N: CL159 :"C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":147:0:147:8|Input PSLVERRS6 is unused.
 @N: CL159 :"C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":148:0:148:8|Input PSLVERRS7 is unused.
 @N: CL159 :"C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":149:0:149:8|Input PSLVERRS8 is unused.
 @N: CL159 :"C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":150:0:150:8|Input PSLVERRS9 is unused.
@@ -325,7 +328,7 @@ Running optimization stage 2 on root_sb .......
 Finished optimization stage 2 on root_sb (CPU Time 0h:00m:00s, Memory Used current: 109MB peak: 111MB)
 Running optimization stage 2 on spi_master .......
 @W: CL279 :"C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Pruning register bits 4 to 1 of last_bit_rx(5 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-Finished optimization stage 2 on spi_master (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 134MB)
+Finished optimization stage 2 on spi_master (CPU Time 0h:00m:00s, Memory Used current: 112MB peak: 134MB)
 Running optimization stage 2 on STAMP .......
 @W: CL190 :"C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\hdl\STAMP.vhd":199:8:199:9|Optimizing register bit delay_counter(31) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: CL260 :"C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\hdl\STAMP.vhd":199:8:199:9|Pruning register bit 31 of delay_counter(31 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
@@ -364,7 +367,7 @@ At c_vhdl Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memor
 Process took 0h:00m:04s realtime, 0h:00m:04s cputime
 
 Process completed successfully.
-# Wed Jun 15 20:54:48 2022
+# Tue Jul 12 21:30:29 2022
 
 ###########################################################]
 ###########################################################[
@@ -392,7 +395,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Jun 15 20:54:49 2022
+# Tue Jul 12 21:30:30 2022
 
 ###########################################################]
 
@@ -407,6 +410,6 @@ At c_hdl Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory
 Process took 0h:00m:05s realtime, 0h:00m:04s cputime
 
 Process completed successfully.
-# Wed Jun 15 20:54:49 2022
+# Tue Jul 12 21:30:30 2022
 
 ###########################################################]

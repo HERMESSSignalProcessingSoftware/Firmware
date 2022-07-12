@@ -7,6 +7,7 @@
 #include "components/dapi.h"
 #include "components/memory.h"
 #include "components/controller.h"
+#include "tools/msghandler.h"
 
 
 int main () {
@@ -32,6 +33,11 @@ int main () {
         controller.wdTriggered();
         MSS_WD_clear_timeout_event();
     }
+
+    // inform about current configuration
+    MsgHandler::getInstance().info(std::string("Configuration loaded: \"")
+            + std::string(controller.configuration.confName)
+            + "\" running SPU version " + SPU_VERSION);
 
     for (;;) {
         MSS_WD_reload();

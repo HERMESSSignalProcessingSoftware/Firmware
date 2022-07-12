@@ -1,21 +1,21 @@
 Detailed Resource Usage
-Module Name,Fabric 4LUT,Fabric DFF,Single-Ended I/O,PLLs and CCCs,Chip Globals,MSS,10/100/1000 Ethernet,RCOSC_50MHZ
+Module Name,Fabric 4LUT,Fabric DFF,Single-Ended I/O,PLLs and CCCs,Chip Globals,MSS,HS USB,RCOSC_50MHZ
 MSS/CCC_0/Primitives,0,0,0,1,1,0,0,0
 MSS/CORERESETP_0/Primitives,9,38,0,0,1,0,0,0
 MSS/CoreAPB3_0/Primitives,7,0,0,0,0,0,0,0
-MSS/CoreAPB3_0/u_mux_p_to_b3/Primitives,165,0,0,0,0,0,0,0
+MSS/CoreAPB3_0/u_mux_p_to_b3/Primitives,166,0,0,0,0,0,0,0
 MSS/FABOSC_0/Primitives,0,0,0,0,1,0,0,1
 MSS/root_sb_MSS_0/Primitives,5,0,0,0,0,1,0,0
 Primitives/Primitives,2,0,75,0,1,0,0,0
-STAMP1/Primitives,142,250,0,0,0,0,0,0
-STAMP1/spi/Primitives,349,93,0,0,0,0,0,0
-STAMP2/Primitives,141,250,0,0,0,0,0,0
-STAMP2/spi/Primitives,345,93,0,0,0,0,0,0
-STAMP3/Primitives,144,250,0,0,0,0,0,0
-STAMP3/spi/Primitives,342,93,0,0,0,0,0,0
-STAMP4/Primitives,144,250,0,0,0,0,0,0
-STAMP4/spi/Primitives,341,93,0,0,0,0,0,0
-STAMP5/Primitives,144,250,0,0,0,0,0,0
-STAMP5/spi/Primitives,341,93,0,0,0,0,0,0
-STAMP6/Primitives,142,250,0,0,0,0,0,0
-STAMP6/spi/Primitives,343,93,0,0,0,0,0,0
+STAMP1/Primitives,144,250,0,0,0,0,0,0
+STAMP1/spi/Primitives,353,93,0,0,0,0,0,0
+STAMP2/Primitives,145,250,0,0,0,0,0,0
+STAMP2/spi/Primitives,341,93,0,0,0,0,0,0
+STAMP3/Primitives,142,250,0,0,0,0,0,0
+STAMP3/spi/Primitives,348,93,0,0,0,0,0,0
+STAMP4/Primitives,141,250,0,0,0,0,0,0
+STAMP4/spi/Primitives,349,93,0,0,0,0,0,0
+STAMP5/Primitives,141,250,0,0,0,0,0,0
+STAMP5/spi/Primitives,347,93,0,0,0,0,0,0
+STAMP6/Primitives,141,250,0,0,0,0,0,0
+STAMP6/spi/Primitives,349,93,0,0,0,0,0,0

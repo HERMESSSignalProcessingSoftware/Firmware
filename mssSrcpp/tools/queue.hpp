@@ -34,7 +34,7 @@ template <typename T> T &Queue<T>::front () const {
 
 
 
-template <typename T> uint8_t Queue<T>::size () const {
+template <typename T> uint8_t Queue<T>::length () const {
     uint8_t counter = 0;
     QueueElement *curPtr = head;
     while (curPtr) {

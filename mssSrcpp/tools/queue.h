@@ -4,14 +4,19 @@
 #include <stdint.h>
 
 
+
 /** Small FIFO Queue
  *
  * Not more than 255 enqueued items allowed. This is an alternative to
  * the not functional std::queue STL.
- * @tparam T The type to use
+ * @tparam T The type to use. Must implement a uint32_t size member variable.
  */
 template <typename T> class Queue {
 public:
+    /** Insert a new element to the FIFO queue
+     *
+     * @param item The item to be pushed into the queue
+     */
     void push (T item);
 
     /** Remove first element
@@ -32,7 +37,7 @@ public:
      *
      * @return The number of enqueued elements
      */
-    uint8_t size () const;
+    uint8_t length () const;
 
     /** Check, if queue is empty
      *

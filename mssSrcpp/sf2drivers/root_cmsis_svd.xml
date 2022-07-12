@@ -2,7 +2,7 @@
 <device>
   <name>root</name>
   <version>1.0</version>
-  <description>CMSIS description for root.  Created by Microsemi SmartDesign on Sat Jun 25 18:28:28 2022</description>
+  <description>CMSIS description for root.  Created by Microsemi SmartDesign on Tue Jul 12 21:33:54 2022</description>
   <addressUnitBits>8</addressUnitBits>
   <width>32</width>
   <peripherals>
@@ -40,7 +40,7 @@
     </peripheral>
     <peripheral>
       <name>ENVM-conf</name>
-      <baseAddress>0x6002EE00</baseAddress>
+      <baseAddress>0x60032000</baseAddress>
     </peripheral>
     <peripheral>
       <name>STAMP1</name>
@@ -65,10 +65,6 @@
     <peripheral>
       <name>STAMP6</name>
       <baseAddress>0x50005000%0x30005000</baseAddress>
-    </peripheral>
-    <peripheral>
-      <name>MSS</name>
-      <baseAddress>0x50006000%0x30006000</baseAddress>
     </peripheral>
     <peripheral>
       <name>CACHE_BACKDOOR</name>
@@ -3702,6 +3698,10 @@
     <peripheral>
       <name>GPIO</name>
       <baseAddress>0x40013000</baseAddress>
+    </peripheral>
+    <peripheral>
+      <name>MMUART_1</name>
+      <baseAddress>0x40010000</baseAddress>
     </peripheral>
     <peripheral>
       <name>H2FINTERRUPT</name>

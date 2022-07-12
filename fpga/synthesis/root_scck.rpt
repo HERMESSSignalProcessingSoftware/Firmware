@@ -13,7 +13,7 @@ Hostname: LUS210
 
 Implementation : synthesis
 
-# Written on Wed Jun 15 20:54:51 2022
+# Written on Tue Jul 12 21:30:32 2022
 
 ##### FILES SYNTAX CHECKED ##############################################
 Constraint File(s):      "C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\designer\root\synthesis.fdc"

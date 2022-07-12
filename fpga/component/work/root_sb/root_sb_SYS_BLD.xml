@@ -3126,6 +3126,53 @@
 </data>
 <separator/>
 <data>
+<name>MM_UART_1</name>
+<table>
+<header>
+ <cell>Name</cell>
+ <cell>Subsystem</cell>
+ <cell>Vendor</cell>
+ <cell>Version</cell>
+</header>
+<row>
+ <cell>SF2_MSS_UART</cell>
+ <cell>MSS Peripherals</cell>
+ <cell>Actel</cell>
+ <cell>0.0.101</cell>
+</row>
+</table>
+<cdata>
+<name>Configuration</name>
+<table>
+<header>
+ <cell>Parameter</cell>
+ <cell>Value</cell>
+</header>
+<row>
+ <cell>MODE</cell>
+ <cell>MODE_ASYNC</cell>
+</row>
+<row>
+ <cell>MODE_DUPLEX</cell>
+ <cell>MODE_FULL</cell>
+</row>
+<row>
+ <cell>MODEM_MUX</cell>
+ <cell>MUX_IO</cell>
+</row>
+<row>
+ <cell>TX_RX_MUX</cell>
+ <cell>MUX_FABRIC</cell>
+</row>
+<row>
+ <cell>USE_MODEM</cell>
+ <cell>false</cell>
+</row>
+</table>
+</cdata>
+</data>
+<separator/>
+<data>
 <name>MSS_GPIO</name>
 <table>
 <header>
@@ -3655,41 +3702,6 @@
 </data>
 <separator/>
 <data>
-<name>TM</name>
-<table>
-<header>
- <cell>Name</cell>
- <cell>Subsystem</cell>
- <cell>Vendor</cell>
- <cell>Version</cell>
-</header>
-<row>
- <cell>AMBA_SLAVE</cell>
- <cell>MSS FIC_0 - MSS Master Subsystem</cell>
- <cell>Actel</cell>
- <cell>0.0.102</cell>
-</row>
-</table>
-<cdata>
-<name>Configuration</name>
-<table>
-<header>
- <cell>Parameter</cell>
- <cell>Value</cell>
-</header>
-<row>
- <cell>AMBA_INTERFACE_TYPE</cell>
- <cell>APB3</cell>
-</row>
-<row>
- <cell>NUM_OF_INTERRUPTS</cell>
- <cell>1</cell>
-</row>
-</table>
-</cdata>
-</data>
-<separator/>
-<data>
 <name>Interrupt Configuration</name>
 <table>
 <header>
@@ -3726,11 +3738,6 @@
  <cell>root_sb_MSS_0:MSS_INT_F2M[6]</cell>
  <cell>STAMP_5</cell>
  <cell>STAMP_5_INTR_0_top</cell>
-</row>
-<row>
- <cell>root_sb_MSS_0:MSS_INT_F2M[7]</cell>
- <cell>TM_0</cell>
- <cell>TM_0_INTR_0_top</cell>
 </row>
 </table>
 </data>
@@ -3791,11 +3798,6 @@
  <cell>-</cell>
 </row>
 <row>
- <cell>TM_0_INTR_0_top</cell>
- <cell>IN</cell>
- <cell>-</cell>
-</row>
-<row>
  <cell>STAMP</cell>
  <cell>MIRROREDSLAVE</cell>
  <cell>-</cell>
@@ -3826,11 +3828,6 @@
  <cell>Slave bus interface pin on  FIC0_Master_Subsystem</cell>
 </row>
 <row>
- <cell>TM</cell>
- <cell>MIRROREDSLAVE</cell>
- <cell>Slave bus interface pin on  FIC0_Master_Subsystem</cell>
-</row>
-<row>
  <cell>FIC_0_CLK</cell>
  <cell>OUT</cell>
  <cell>-</cell>
@@ -3857,6 +3854,16 @@
 </row>
 <row>
  <cell>MMUART_0_RXD_F2M</cell>
+ <cell>IN</cell>
+ <cell>-</cell>
+</row>
+<row>
+ <cell>MMUART_1_TXD_M2F</cell>
+ <cell>OUT</cell>
+ <cell>-</cell>
+</row>
+<row>
+ <cell>MMUART_1_RXD_F2M</cell>
  <cell>IN</cell>
  <cell>-</cell>
 </row>
@@ -3972,12 +3979,6 @@
  <cell>Connect Generic User Slave Peripheral</cell>
  <cell>STAMP is a slave on FIC0_Master_Subsystem subsystem.
 Connect your peripheral to STAMP_5 bus interface pin in the top design.</cell>
-</row>
-<separator/>
-<row>
- <cell>Connect Generic User Slave Peripheral</cell>
- <cell>TM is a slave on FIC0_Master_Subsystem subsystem.
-Connect your peripheral to TM bus interface pin in the top design.</cell>
 </row>
 <separator/>
 </table>

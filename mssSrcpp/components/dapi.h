@@ -6,6 +6,11 @@
 #include "../tools/queue.h"
 #include "../tools/datapackage.h"
 
+// The maximum number of content bytes stored in the message buffer. Potentially
+// exceeding this value on data storage will abort the addition of this data
+// frame.
+#define DAPI_MAX_BUFFER_SIZE 2000
+
 
 class Dapi {
 public:
@@ -121,6 +126,8 @@ private:
 
     Queue<Message> msgQueue; /**< A list of C style strings to be
     transmitted */
+
+    uint32_t queueSize = 0; /**< Number of content bytes in the msgQueue */
 
     uint8_t rxBuffer[64]; /**< The contents read via UART */
 
