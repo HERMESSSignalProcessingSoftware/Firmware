@@ -5,7 +5,7 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 *******************************************************************************************-->
 <report_table display_priority="2" name="Timing Summary">
 <report_link name="Detailed report">
-<data>C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\synthesis\synlog\root_fpga_mapper.srr</data>
+<data>B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\synlog\root_fpga_mapper.srr</data>
 <title>START OF TIMING REPORT</title>
 </report_link>
 <row>
@@ -17,8 +17,8 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <row>
 <data>root_sb_CCC_0_FCCC|GL0_net_inferred_clock</data>
 <data>100.0 MHz</data>
-<data>94.1 MHz</data>
-<data>-0.623</data>
+<data>84.1 MHz</data>
+<data>-1.886</data>
 </row>
 <row>
 <data>root_sb_FABOSC_0_OSC|RCOSC_25_50MHZ_CCC_inferred_clock</data>

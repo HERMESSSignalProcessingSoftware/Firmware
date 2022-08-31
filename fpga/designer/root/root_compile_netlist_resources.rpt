@@ -1,6 +1,6 @@
 Resource Report
 Microsemi Corporation - Microsemi Libero Software Release v2021.3 (Version 2021.3.0.10)
-Date: Tue Jul 12 21:30:55 2022
+Date: Wed Aug 31 21:57:08 2022
 
 Device Selection
 +--------------------------------+----------------+
@@ -20,11 +20,11 @@ Device Selection
 +--------------------------------+----------------+
 
 Source Files
-+---------+--------------------------------------------------------------------------+
-| Topcell | root                                                                     |
-| Format  | Verilog                                                                  |
-| Source  | C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\synthesis\root.vm |
-+---------+--------------------------------------------------------------------------+
++---------+-------------------------------------------------------+
+| Topcell | root                                                  |
+| Format  | Verilog                                               |
+| Source  | B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\root.vm |
++---------+-------------------------------------------------------+
 
 Options
 +----------------------------------------------------+-------+
@@ -37,8 +37,8 @@ Resource Usage
 +---------------------------+------+-------+------------+
 | Type                      | Used | Total | Percentage |
 +---------------------------+------+-------+------------+
-| 4LUT                      | 3130 | 12084 | 25.90      |
-| DFF                       | 2096 | 12084 | 17.35      |
+| 4LUT                      | 5445 | 12084 | 45.06      |
+| DFF                       | 3508 | 12084 | 29.03      |
 | I/O Register              | 0    | 252   | 0.00       |
 | User I/O                  | 75   | 84    | 89.29      |
 | -- Single-ended I/O       | 75   | 84    | 89.29      |
@@ -58,11 +58,11 @@ Detailed Logic Resource Usage
 +--------------------------+------+------+
 | Type                     | 4LUT | DFF  |
 +--------------------------+------+------+
-| Fabric Logic             | 3130 | 2096 |
+| Fabric Logic             | 5445 | 3508 |
 | RAM64x18 Interface Logic | 0    | 0    |
 | RAM1K18 Interface Logic  | 0    | 0    |
 | MACC Interface Logic     | 0    | 0    |
-| Total Used               | 3130 | 2096 |
+| Total Used               | 5445 | 3508 |
 +--------------------------+------+------+
 
 MSS Resource Usage
@@ -76,7 +76,7 @@ MSS Resource Usage
 | CAN           | 0    | 1     |
 | SPI           | 1    | 2     |
 | I2C           | 0    | 2     |
-| UART          | 2    | 2     |
+| UART          | 1    | 2     |
 | USB           | 0    | 1     |
 | MAC           | 0    | 1     |
 | MDDR          | 0    | 1     |
@@ -89,14 +89,18 @@ MSS Resource Usage
 Detailed Carry Chains Resource Usage
 +--------+------+
 | Length | Used |
+| 2      | 498  |
+| 5      | 65   |
 | 6      | 6    |
 | 7      | 6    |
 | 8      | 6    |
 | 9      | 6    |
+| 17     | 1    |
 | 19     | 6    |
 | 28     | 6    |
-| 32     | 6    |
-| Total  | 42   |
+| 32     | 10   |
+| 33     | 5    |
+| Total  | 615  |
 +--------+------+
 
 I/O Function
@@ -121,10 +125,10 @@ Nets assigned to chip global resources
 +--------+---------+----------------------------------------------------------------+
 | Fanout | Type    | Name                                                           |
 +--------+---------+----------------------------------------------------------------+
-| 2090   | INT_NET | Net   : MSS_FIC_0_CLK                                          |
+| 3502   | INT_NET | Net   : MSS_FIC_0_CLK                                          |
 |        |         | Driver: MSS/CCC_0/GL0_INST/U0_RGB1                             |
 |        |         | Source: NETLIST                                                |
-| 1020   | INT_NET | Net   : LED_FPGA_LOADED_arst                                   |
+| 2424   | INT_NET | Net   : LED_FPGA_LOADED_arst                                   |
 |        |         | Driver: AND3_0_RNILQT1/U0_RGB1                                 |
 |        |         | Source: NETLIST                                                |
 | 20     | INT_NET | Net   : MSS/CORERESETP_0/sm0_areset_n_clk_base_Z               |
@@ -142,54 +146,54 @@ Nets assigned to row global resources
 +--------+------+------+
 
 High fanout nets
-+--------+---------+-------------------------------------------------------+
-| Fanout | Type    | Name                                                  |
-+--------+---------+-------------------------------------------------------+
-| 376    | INT_NET | Net   : MSS_STAMP_PADDR[9]                            |
-|        |         | Driver: MSS/root_sb_MSS_0/MSS_ADLIB_INST              |
-| 180    | INT_NET | Net   : MSS_STAMP_PADDR[8]                            |
-|        |         | Driver: MSS/root_sb_MSS_0/MSS_ADLIB_INST              |
-| 104    | INT_NET | Net   : NN_1                                          |
-|        |         | Driver: AND3_0                                        |
-| 82     | INT_NET | Net   : MSS_STAMP_PADDR[7]                            |
-|        |         | Driver: MSS/root_sb_MSS_0/MSS_ADLIB_INST              |
-| 68     | INT_NET | Net   : STAMP2/component_state_0[5]                   |
-|        |         | Driver: STAMP2/component_state[5]                     |
-| 68     | INT_NET | Net   : MSS/PSELSBUS[1]                               |
-|        |         | Driver: MSS/CoreAPB3_0/u_mux_p_to_b3/PSELSBUS_0_a2[1] |
-| 68     | INT_NET | Net   : STAMP3/component_state_1[5]                   |
-|        |         | Driver: STAMP3/component_state[5]                     |
-| 67     | INT_NET | Net   : STAMP1/component_state_Z[5]                   |
-|        |         | Driver: STAMP1/component_state[5]                     |
-| 67     | INT_NET | Net   : STAMP6/component_state_4[5]                   |
-|        |         | Driver: STAMP6/component_state[5]                     |
-| 65     | INT_NET | Net   : STAMP5/component_state_3[5]                   |
-|        |         | Driver: STAMP5/component_state[5]                     |
-+--------+---------+-------------------------------------------------------+
++--------+---------+------------------------------------------+
+| Fanout | Type    | Name                                     |
++--------+---------+------------------------------------------+
+| 429    | INT_NET | Net   : MSS_STAMP_UND_TELEMETRY_PADDR[4] |
+|        |         | Driver: MSS/root_sb_MSS_0/MSS_ADLIB_INST |
+| 326    | INT_NET | Net   : telemetry_0/row_2_Z[2]           |
+|        |         | Driver: telemetry_0/row_2[2]             |
+| 311    | INT_NET | Net   : MSS_STAMP_UND_TELEMETRY_PADDR[9] |
+|        |         | Driver: MSS/root_sb_MSS_0/MSS_ADLIB_INST |
+| 255    | INT_NET | Net   : MSS_STAMP_UND_TELEMETRY_PADDR[2] |
+|        |         | Driver: MSS/root_sb_MSS_0/MSS_ADLIB_INST |
+| 205    | INT_NET | Net   : MSS_STAMP_UND_TELEMETRY_PADDR[3] |
+|        |         | Driver: MSS/root_sb_MSS_0/MSS_ADLIB_INST |
+| 165    | INT_NET | Net   : telemetry_0/row_2_Z[1]           |
+|        |         | Driver: telemetry_0/row_2[1]             |
+| 164    | INT_NET | Net   : MSS_STAMP_UND_TELEMETRY_PADDR[6] |
+|        |         | Driver: MSS/root_sb_MSS_0/MSS_ADLIB_INST |
+| 133    | INT_NET | Net   : telemetry_0/row_2_Z[4]           |
+|        |         | Driver: telemetry_0/row_2[4]             |
+| 120    | INT_NET | Net   : MSS_STAMP_UND_TELEMETRY_PADDR[8] |
+|        |         | Driver: MSS/root_sb_MSS_0/MSS_ADLIB_INST |
+| 105    | INT_NET | Net   : NN_1                             |
+|        |         | Driver: AND3_0                           |
++--------+---------+------------------------------------------+
 
 High fanout nets (through buffer trees)
-+--------+---------+-------------------------------------------------------+
-| Fanout | Type    | Name                                                  |
-+--------+---------+-------------------------------------------------------+
-| 376    | INT_NET | Net   : MSS_STAMP_PADDR[9]                            |
-|        |         | Driver: MSS/root_sb_MSS_0/MSS_ADLIB_INST              |
-| 180    | INT_NET | Net   : MSS_STAMP_PADDR[8]                            |
-|        |         | Driver: MSS/root_sb_MSS_0/MSS_ADLIB_INST              |
-| 104    | INT_NET | Net   : NN_1                                          |
-|        |         | Driver: AND3_0                                        |
-| 82     | INT_NET | Net   : MSS_STAMP_PADDR[7]                            |
-|        |         | Driver: MSS/root_sb_MSS_0/MSS_ADLIB_INST              |
-| 68     | INT_NET | Net   : STAMP2/component_state_0[5]                   |
-|        |         | Driver: STAMP2/component_state[5]                     |
-| 68     | INT_NET | Net   : MSS/PSELSBUS[1]                               |
-|        |         | Driver: MSS/CoreAPB3_0/u_mux_p_to_b3/PSELSBUS_0_a2[1] |
-| 68     | INT_NET | Net   : STAMP3/component_state_1[5]                   |
-|        |         | Driver: STAMP3/component_state[5]                     |
-| 67     | INT_NET | Net   : STAMP1/component_state_Z[5]                   |
-|        |         | Driver: STAMP1/component_state[5]                     |
-| 67     | INT_NET | Net   : STAMP6/component_state_4[5]                   |
-|        |         | Driver: STAMP6/component_state[5]                     |
-| 65     | INT_NET | Net   : STAMP5/component_state_3[5]                   |
-|        |         | Driver: STAMP5/component_state[5]                     |
-+--------+---------+-------------------------------------------------------+
++--------+---------+------------------------------------------+
+| Fanout | Type    | Name                                     |
++--------+---------+------------------------------------------+
+| 429    | INT_NET | Net   : MSS_STAMP_UND_TELEMETRY_PADDR[4] |
+|        |         | Driver: MSS/root_sb_MSS_0/MSS_ADLIB_INST |
+| 326    | INT_NET | Net   : telemetry_0/row_2_Z[2]           |
+|        |         | Driver: telemetry_0/row_2[2]             |
+| 311    | INT_NET | Net   : MSS_STAMP_UND_TELEMETRY_PADDR[9] |
+|        |         | Driver: MSS/root_sb_MSS_0/MSS_ADLIB_INST |
+| 255    | INT_NET | Net   : MSS_STAMP_UND_TELEMETRY_PADDR[2] |
+|        |         | Driver: MSS/root_sb_MSS_0/MSS_ADLIB_INST |
+| 205    | INT_NET | Net   : MSS_STAMP_UND_TELEMETRY_PADDR[3] |
+|        |         | Driver: MSS/root_sb_MSS_0/MSS_ADLIB_INST |
+| 165    | INT_NET | Net   : telemetry_0/row_2_Z[1]           |
+|        |         | Driver: telemetry_0/row_2[1]             |
+| 164    | INT_NET | Net   : MSS_STAMP_UND_TELEMETRY_PADDR[6] |
+|        |         | Driver: MSS/root_sb_MSS_0/MSS_ADLIB_INST |
+| 133    | INT_NET | Net   : telemetry_0/row_2_Z[4]           |
+|        |         | Driver: telemetry_0/row_2[4]             |
+| 120    | INT_NET | Net   : MSS_STAMP_UND_TELEMETRY_PADDR[8] |
+|        |         | Driver: MSS/root_sb_MSS_0/MSS_ADLIB_INST |
+| 105    | INT_NET | Net   : NN_1                             |
+|        |         | Driver: AND3_0                           |
++--------+---------+------------------------------------------+
 

@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- Created by SmartDesign Thu Jul  7 16:22:36 2022
+-- Created by SmartDesign Wed Aug 31 21:39:58 2022
 -- Version: 2021.3 2021.3.0.10
 ----------------------------------------------------------------------
 
@@ -31,7 +31,6 @@ entity root_sb_MSS is
         MCCC_CLK_BASE          : in  std_logic;
         MCCC_CLK_BASE_PLL_LOCK : in  std_logic;
         MMUART_0_RXD_F2M       : in  std_logic;
-        MMUART_1_RXD_F2M       : in  std_logic;
         MSS_INT_F2M            : in  std_logic_vector(15 downto 0);
         MSS_RESET_N_F2M        : in  std_logic;
         SPI_0_CLK_F2M          : in  std_logic;
@@ -56,7 +55,6 @@ entity root_sb_MSS is
         GPIO_30_M2F            : out std_logic;
         GPIO_31_M2F            : out std_logic;
         MMUART_0_TXD_M2F       : out std_logic;
-        MMUART_1_TXD_M2F       : out std_logic;
         MSS_RESET_N_M2F        : out std_logic;
         SPI_0_CLK_M2F          : out std_logic;
         SPI_0_DO_M2F           : out std_logic;
@@ -598,7 +596,6 @@ signal GPIO_29_M2F_net_0                : std_logic;
 signal GPIO_30_M2F_net_0                : std_logic;
 signal GPIO_31_M2F_net_0                : std_logic;
 signal MMUART_0_TXD_M2F_net_0           : std_logic;
-signal MMUART_1_TXD_M2F_net_0           : std_logic;
 signal MSS_RESET_N_M2F_net_0            : std_logic;
 signal SPI_0_CLK_M2F_net_0              : std_logic;
 signal SPI_0_DO_M2F_net_0               : std_logic;
@@ -606,7 +603,6 @@ signal SPI_0_SS0_M2F_net_0              : std_logic;
 signal SPI_0_SS0_M2F_OE_net_0           : std_logic;
 signal SPI_0_SS1_M2F_net_0              : std_logic;
 signal MMUART_0_TXD_M2F_net_1           : std_logic;
-signal MMUART_1_TXD_M2F_net_1           : std_logic;
 signal MSS_RESET_N_M2F_net_1            : std_logic;
 signal GPIO_26_M2F_net_1                : std_logic;
 signal GPIO_28_M2F_net_1                : std_logic;
@@ -709,8 +705,6 @@ begin
 ----------------------------------------------------------------------
  MMUART_0_TXD_M2F_net_1           <= MMUART_0_TXD_M2F_net_0;
  MMUART_0_TXD_M2F                 <= MMUART_0_TXD_M2F_net_1;
- MMUART_1_TXD_M2F_net_1           <= MMUART_1_TXD_M2F_net_0;
- MMUART_1_TXD_M2F                 <= MMUART_1_TXD_M2F_net_1;
  MSS_RESET_N_M2F_net_1            <= MSS_RESET_N_M2F_net_0;
  MSS_RESET_N_M2F                  <= MSS_RESET_N_M2F_net_1;
  GPIO_26_M2F_net_1                <= GPIO_26_M2F_net_0;
@@ -765,7 +759,7 @@ MSS_ADLIB_INST : MSS_010
     generic map( 
         ACT_UBITS         => ( x"FFFFFFFFFFFFFF" ),
         DDR_CLK_FREQ      => ( 100.0 ),
-        INIT              => ( "00" & x"000000000000030000000000000000000000C00000000000000000000000000000000000000000000000000000000300C030000000000000000000000000000000000000000000F00000000F000000000000000000000000000000007FFFFFFFDF5E101007C33C804000006092C0000003FFFFE4000000000024100000000F0F01C000001825F04010842108421000001FE34001FF8000000400000000020091007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF" ),
+        INIT              => ( "00" & x"000000000000030000000000000000000000000000000000000000000000000000000000000000000000000000000300C030000000000000000000000000000000000000000000F00000000F000000000000000000000000000000007FFFFFFFDF5E101007C33C804000006092C0000003FFFFE4000000000024100000000F0F01C000001825F44010842108421000001FE34001FF8000000400000000020091007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF" ),
         MEMORYFILE        => ( "ENVM_init.mem" ),
         RTC_MAIN_XTL_FREQ => ( 0.0 ),
         RTC_MAIN_XTL_MODE => ( "" )
@@ -862,7 +856,7 @@ MSS_ADLIB_INST : MSS_010
         MMUART1_DSR_F2H_SCP                     => VCC_net, -- tied to '1' from definition
         MMUART1_RI_F2H_SCP                      => VCC_net, -- tied to '1' from definition
         MMUART1_RTS_F2H_SCP                     => VCC_net, -- tied to '1' from definition
-        MMUART1_RXD_F2H_SCP                     => MMUART_1_RXD_F2M,
+        MMUART1_RXD_F2H_SCP                     => VCC_net, -- tied to '1' from definition
         MMUART1_SCK_F2H_SCP                     => VCC_net, -- tied to '1' from definition
         MMUART1_TXD_F2H_SCP                     => VCC_net, -- tied to '1' from definition
         PER2_FABRIC_PRDATA                      => FIC_2_APB_M_PRDATA,
@@ -1064,7 +1058,7 @@ MSS_ADLIB_INST : MSS_010
         MMUART1_RXD_MGPIO26B_H2F_B              => GPIO_26_M2F_net_0,
         MMUART1_SCK_MGPIO25B_H2F_A              => OPEN,
         MMUART1_SCK_MGPIO25B_H2F_B              => OPEN,
-        MMUART1_TXD_MGPIO24B_H2F_A              => MMUART_1_TXD_M2F_net_0,
+        MMUART1_TXD_MGPIO24B_H2F_A              => OPEN,
         MMUART1_TXD_MGPIO24B_H2F_B              => OPEN,
         MPLL_LOCK                               => OPEN,
         PER2_FABRIC_PADDR                       => FIC_2_APB_MASTER_0_PADDR,
