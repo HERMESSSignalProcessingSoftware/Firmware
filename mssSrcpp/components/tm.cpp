@@ -4,7 +4,7 @@
 #include "../sf2drivers/drivers/mss_uart/mss_uart.h"
 #define CRCPP_USE_CPP11
 #include "../tools/crc.h"
-
+#include "../apbdrivers/TELEMETRY/abp_telemetry.h"
 
 Tm &Tm::getInstance () {
     static Tm instance;
@@ -90,5 +90,11 @@ Tm::Tm () {
     // set always common transmission bytes
     txBuffer[62] = 0x17;
     txBuffer[63] = 0xF0;
+}
+
+void Tm::clearInterrupt(uint32_t interrupt) {
+    uint32_t statusReg = TelemetryStatusRegister_get();
+    statusReg &= ~(interrupt);
+    TelemetryStatusRegister_set(statusReg);
 }
 

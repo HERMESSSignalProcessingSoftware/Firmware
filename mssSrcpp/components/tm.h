@@ -10,7 +10,8 @@
 // frame.
 #define TM_MAX_BUFFER_SIZE 2000
 
-
+#define TELEMETRY_STATUS_INTERRUPT_TX     (1 << 31)
+#define TELEMETRY_STATUS_INTERRUPT_RX     (1 << 30)
 
 /** Telemetry class
  *
@@ -32,6 +33,14 @@ public:
      * schedule a new TM transmission with the most current data.
      */
     void worker2Hz ();
+
+    /** Clear Interrupt
+     *
+     * Call this function to clear the interrupt pending bit of the status register
+     *
+     * @param interrupt
+     */
+    void clearInterrupt(uint32_t interrupt);
 
     /** Text message transfer operator
      *

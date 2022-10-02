@@ -292,9 +292,17 @@ Controller::Controller () {
     resetTimestampGenerator();
 }
 
-
-
 void Controller::resetTimestampGenerator () {
     timestamp = 0;
     MSS_TIM2_load_immediate(25000);
+}
+
+void Controller::telemetryRXInterrupt() {
+    telemetryInterruptRXDR = true;
+    Tm::getInstance().clearInterrupt(TELEMETRY_STATUS_INTERRUPT_RX);
+}
+
+void Controller::telemetryTXInterrupt() {
+    telemetryInterruptEOTX = true;
+    Tm::getInstance().clearInterrupt(TELEMETRY_STATUS_INTERRUPT_TX);
 }
