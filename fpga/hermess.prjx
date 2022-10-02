@@ -643,8 +643,8 @@ PARENT="<project>\component\Actel\SmartFusion2MSS\MSS\1.1.500\MSS.cxf"
 ENDFILE
 VALUE "<project>\simulation\subsystem.bfm,sim"
 STATE="utd"
-TIME="1661281464"
-SIZE="927"
+TIME="1661975037"
+SIZE="960"
 PARENT="<project>\component\work\root\root.cxf"
 PARENT="<project>\component\work\root_sb\root_sb.cxf"
 ENDFILE
@@ -662,22 +662,22 @@ PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\synthesis\root.so,so"
 STATE="utd"
-TIME="1661281517"
+TIME="1661975817"
 SIZE="218"
 ENDFILE
 VALUE "<project>\synthesis\root.vm,syn_vm"
 STATE="utd"
-TIME="1661281515"
-SIZE="1407517"
+TIME="1661975816"
+SIZE="2401372"
 ENDFILE
 VALUE "<project>\synthesis\root_syn.prj,prj"
 STATE="utd"
-TIME="1661281518"
-SIZE="4058"
+TIME="1661975818"
+SIZE="4300"
 ENDFILE
 VALUE "<project>\synthesis\root_vm.sdc,syn_sdc"
 STATE="utd"
-TIME="1661281516"
+TIME="1661975816"
 SIZE="1081"
 ENDFILE
 ENDLIST
@@ -745,6 +745,28 @@ VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\b
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\bfm_apbslaveext.vhd,tb_hdl"
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\bfm_apbslave.vhd,tb_hdl"
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\test\user\testbench.vhd,tb_hdl"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+LIST Impl2
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
 ENDLIST
 ENDLIST
 LIST "root_sb_MSS::work"
@@ -921,8 +943,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_SoC_v2021.3\SynplifyPro\bin\synplify_pro.exe"
-PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
-BATCH=1
+PARAM=""
+BATCH=0
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -968,6 +990,28 @@ Used_File_List
 ENDUsed_File_List
 ENDLIST
 ENDLIST
+LIST "root_sb::work"
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+LIST Impl2
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
 LIST "COREUART_C0_COREUART_C0_0_COREUART::coreuart_lib"
 LIST Impl1
 ideSTIMULUS=StateSuccess
@@ -1004,27 +1048,16 @@ ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
 Reports;Reports;0
-ReportsCurrentItem;Generate Bitstream:root_generateBitstream.log
+ReportsCurrentItem;Run Programming Action:root_PROGRAM.log
 StartPage;StartPage;0
 SmartDesign;root;0
-ACTIVEVIEW;root
+ACTIVEVIEW;Reports
 ENDLIST
 LIST ModuleSubBlockList
 LIST "coreresetp_pcie_hotreset::work","component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp_pcie_hotreset.vhd","FALSE","FALSE"
 ENDLIST
 LIST "COREUART_C0::work","component\work\COREUART_C0\COREUART_C0.vhd","TRUE","FALSE"
 SUBBLOCK "COREUART_C0_COREUART_C0_0_COREUART::coreuart_lib","component\work\COREUART_C0\COREUART_C0_0\rtl\vhdl\core\CoreUART.vhd","FALSE","FALSE"
-ENDLIST
-LIST "DESIGN_FIRMWARE::work","component\work\DESIGN_FIRMWARE\DESIGN_FIRMWARE.cxf","TRUE","FALSE"
-SUBBLOCK "SmartFusion2_CMSIS::work","","FALSE","FALSE"
-SUBBLOCK "SmartFusion2_MSS_GPIO_Driver::work","","FALSE","FALSE"
-SUBBLOCK "SmartFusion2_MSS_HPDMA_Driver::work","","FALSE","FALSE"
-SUBBLOCK "SmartFusion2_MSS_MMUART_Driver::work","","FALSE","FALSE"
-SUBBLOCK "SmartFusion2_MSS_NVM_Driver::work","","FALSE","FALSE"
-SUBBLOCK "SmartFusion2_MSS_SPI_Driver::work","","FALSE","FALSE"
-SUBBLOCK "SmartFusion2_MSS_System_Services_Driver::work","","FALSE","FALSE"
-SUBBLOCK "SmartFusion2_MSS_Timer_Driver::work","","FALSE","FALSE"
-SUBBLOCK "SmartFusion2_MSS_Watchdog_Driver::work","","FALSE","FALSE"
 ENDLIST
 LIST "CoreResetP::work","component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd","FALSE","FALSE"
 SUBBLOCK "coreresetp_pcie_hotreset::work","component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp_pcie_hotreset.vhd","FALSE","FALSE"
@@ -1061,24 +1094,6 @@ SUBBLOCK "RCOSC_25_50MHZ::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vh
 ENDLIST
 LIST "root_sb_MSS::work","component\work\root_sb_MSS\root_sb_MSS.vhd","TRUE","FALSE"
 SUBBLOCK "MSS_010::work","component\work\root_sb_MSS\root_sb_MSS_syn.vhd","FALSE","FALSE"
-ENDLIST
-LIST "SmartFusion2_CMSIS::work","","FALSE","FALSE"
-ENDLIST
-LIST "SmartFusion2_MSS_GPIO_Driver::work","","FALSE","FALSE"
-ENDLIST
-LIST "SmartFusion2_MSS_HPDMA_Driver::work","","FALSE","FALSE"
-ENDLIST
-LIST "SmartFusion2_MSS_MMUART_Driver::work","","FALSE","FALSE"
-ENDLIST
-LIST "SmartFusion2_MSS_NVM_Driver::work","","FALSE","FALSE"
-ENDLIST
-LIST "SmartFusion2_MSS_SPI_Driver::work","","FALSE","FALSE"
-ENDLIST
-LIST "SmartFusion2_MSS_System_Services_Driver::work","","FALSE","FALSE"
-ENDLIST
-LIST "SmartFusion2_MSS_Timer_Driver::work","","FALSE","FALSE"
-ENDLIST
-LIST "SmartFusion2_MSS_Watchdog_Driver::work","","FALSE","FALSE"
 ENDLIST
 LIST "STAMP::work","hdl\STAMP.vhd","FALSE","FALSE"
 SUBBLOCK "spi_master::work","hdl\spi_master.vhd","FALSE","FALSE"
