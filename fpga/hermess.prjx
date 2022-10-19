@@ -497,7 +497,7 @@ SIZE="2499"
 ENDFILE
 VALUE "<project>\component\work\root\root.cxf,actgen_cxf"
 STATE="utd"
-TIME="1661975038"
+TIME="1664714090"
 SIZE="14870"
 ENDFILE
 VALUE "<project>\component\work\root\root.vhd,hdl"
@@ -1047,8 +1047,12 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
+Reports;Reports;0
+ReportsCurrentItem;Generate Memory Map:root_DataSheet.xml
 StartPage;StartPage;0
-ACTIVEVIEW;StartPage
+HDL;hdl\telemetry.vhd;0
+SmartDesign;root;0
+ACTIVEVIEW;hdl\telemetry.vhd
 ENDLIST
 LIST ModuleSubBlockList
 LIST "coreresetp_pcie_hotreset::work","component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp_pcie_hotreset.vhd","FALSE","FALSE"
