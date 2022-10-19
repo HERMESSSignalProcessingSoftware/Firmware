@@ -61,51 +61,51 @@ typedef struct {
  * @param baud
  * @param gap
  */
-void InitTMDriver(uint32_t baud, uint32_t gap, uint32_t config);
+void APBInitTMDriver(uint32_t baud, uint32_t gap, uint32_t config);
 
-void TelemetyLoadTXMemory(uint32_t data, uint32_t row);
+void APBTelemetyLoadTXMemory(uint32_t data, uint32_t row);
 
 /**
  * @param row: int \in [0:5]
  * @return content of the register
  */
-uint32_t TelemetryGetRXMemoryLine(uint32_t row);
+uint32_t ABPTelemetryGetRXMemoryLine(uint32_t row);
+
+/**
+ * Fabric resets the start bit config regiter(1 << 1) by default, you need to set it very time.
+ */
+void APBTelemetryTransmissionStart(void);
 
 /**
  *
  */
-void TelemetryTransmissionStart(void);
-
-/**
- *
- */
-void TelemetryTransmissionStop(void);
+void APBTelemetryTransmissionStop(void);
 
 /**
  *
  * @return returns the content of the status register
  */
-uint32_t TelemetryStatusRegister_get(void);
+uint32_t APBTelemetryStatusRegister_get(void);
 
 /**
  *Sets the value in the status register
  * @param value
  */
-void TelemetryStatusRegister_set(uint32_t value);
+void APBTelemetryStatusRegister_set(uint32_t value);
 
 /**
  * Returns the content of the  Config Reigster
  * @return int
  */
-uint32_t TelemetryGetConfigReg(void);
+uint32_t APBTelemetryGetConfigReg(void);
 
 /**
  *Sets the value of the content register
  * @param value int
  */
-void TelemetryWriteConfigReg(uint32_t value);
+void APBTelemetryWriteConfigReg(uint32_t value);
 
-void EnableSoftwareAutoStart(void);
+void APBEnableSoftwareAutoStart(void);
 
 #ifdef __cplusplus
 }

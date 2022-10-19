@@ -24,9 +24,15 @@ void Controller::worker () {
         hbLedOutputState[1] = !hbLedOutputState[1];
         MSS_GPIO_set_output(GPIO_PORT(LED_HB_MSS), hbLedOutputState[1]);
         // run the TM worker
-        Tm::getInstance().worker2Hz();
     }
 
+    if (telemetryInterruptEOTX) {
+        Tm::getInstance().worker_irq();
+    }
+
+    if (telemetryInterruptRXDR) {
+        // Read data via Tm::getInstance.xxxx() to get the message and parse it.
+    }
     // toggle write protection indicator LED
     MSS_GPIO_set_output(GPIO_PORT(LED_HB_MEMSYNC), getGpioInput(IN_WP));
 

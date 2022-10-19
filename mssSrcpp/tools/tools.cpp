@@ -78,7 +78,7 @@ extern "C" void F2M_INT_HANDLER(INT_STAMP6) () {
 }
 
 extern "C" void F2M_INT_HANDLER(INT_TELEMETRY) () {
-    uint32_t statusRegister = TelemetryStatusRegister_get();
+    uint32_t statusRegister = APBTelemetryStatusRegister_get();
     if (statusRegister & TELEMETRY_STATUS_INTERRUPT_RX) {
         Controller::getInstance().telemetryRXInterrupt();
     }

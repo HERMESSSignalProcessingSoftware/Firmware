@@ -2,7 +2,7 @@
 #define sb_HW_PLATFORM_H_
 
 
-#define SPU_VERSION                     "1.3.0"
+#define SPU_VERSION                     "1.3.1"
 
 /*-----------------------------------------------------------------------------
 * GPIO PORTS
