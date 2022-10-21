@@ -5,6 +5,8 @@
 #include <string>
 #include "../tools/queue.h"
 #include "../model/telemetry.h"
+#include "../sb_hw_platform.h"
+#include "../tools/tools.h"
 // The maximum number of content bytes stored in the message buffer. Potentially
 // exceeding this value on data storage will abort the addition of this data
 // frame.
@@ -26,13 +28,6 @@ public:
      * @return the instance
      */
     static Tm &getInstance ();
-
-    /** Worker method
-     *
-     * Run this method twice a second. This worker does
-     * schedule a new TM transmission with the most current data.
-     */
-    void worker2Hz ();
 
     /** Interrupt based worker method
      *
@@ -99,6 +94,8 @@ private:
      * bytes
      */
     Tm ();
+
+    friend void F2M_INT_HANDLER(INT_TELEMETRY) ();
 };
 
 #endif

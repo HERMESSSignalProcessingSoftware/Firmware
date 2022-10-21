@@ -3,7 +3,7 @@
 
 #include "measurement.h"
 #include "../tools/configuration.h"
-
+#include "../sb_hw_platform.h"
 
 
 /** The Controller Class

@@ -58,5 +58,6 @@ extern "C" void F2M_INT_HANDLER(INT_STAMP3) ();
 extern "C" void F2M_INT_HANDLER(INT_STAMP4) ();
 extern "C" void F2M_INT_HANDLER(INT_STAMP5) ();
 extern "C" void F2M_INT_HANDLER(INT_STAMP6) ();
+extern "C" void F2M_INT_HANDLER(INT_TELEMETRY) ();
 
 #endif
