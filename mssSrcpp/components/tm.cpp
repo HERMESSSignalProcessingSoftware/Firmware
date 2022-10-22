@@ -44,13 +44,16 @@ Tm& Tm::operator<<(std::string msg) {
 void Tm::addDataToQueue(const apb_stamp::StampDataframe &df, uint32_t stampid) {
     if (allowNewData) {
         if (stampid == 0) {
+            txBuffer = HERMESS::TelemetryData();
             txBuffer.addData((uint32_t)df.timestamp);
         } else if (stampid == 5) {
             allowNewData = false;
         }
         txBuffer.addData((uint32_t)(df.dataRtd | df.dataSgr1 << 16));
         txBuffer.addData((uint32_t)(df.dataSgr2 | df.status.bitfield() << 16));
-        dataQueue.push(txBuffer);
+        if (stampid == 5) {
+            dataQueue.push(txBuffer);
+        }
     }
 }
 
