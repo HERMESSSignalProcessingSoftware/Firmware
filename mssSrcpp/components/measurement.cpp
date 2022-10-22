@@ -3,7 +3,7 @@
 #include "../tools/msghandler.h"
 #include "../tools/tools.h"
 #include "controller.h"
-
+#include "tm.h"
 
 
 Measurement &Measurement::getInstance () {
@@ -20,6 +20,7 @@ void Measurement::worker () {
         for (uint8_t i = 0; i < 6; i++) {
             if ((stampDataAvailable >> i) & 0x1U) {
                 dp.readDf(const_cast<apb_stamp::StampDataframe&>(*dfs[i]));
+                Tm::getInstance().addDataToQueue(const_cast<apb_stamp::StampDataframe&>(*dfs[i]), i);
                 delete dfs[i];
                 stampDataAvailable &= ~(1u << i);
             }

@@ -48,7 +48,7 @@ public:
      *
      * @return the watermark
      */
-    uint32_t GetWatermark(void);
+    uint32_t getWatermark(void);
 private:
     /**
      * timestamp, all stamp data (64 bit per stamp therefore 12 uint32_t fields), statusReg1 and statusReg2

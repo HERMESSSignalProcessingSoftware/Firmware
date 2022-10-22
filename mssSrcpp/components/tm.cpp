@@ -41,8 +41,22 @@ Tm& Tm::operator<<(std::string msg) {
     return *this;
 }
 
+void Tm::addDataToQueue(const apb_stamp::StampDataframe &df, uint32_t stampid) {
+    if (allowNewData) {
+        if (stampid == 0) {
+            txBuffer.addData((uint32_t)df.timestamp);
+        } else if (stampid == 5) {
+            allowNewData = false;
+        }
+        txBuffer.addData((uint32_t)(df.dataRtd | df.dataSgr1 << 16));
+        txBuffer.addData((uint32_t)(df.dataSgr2 | df.status.bitfield() << 16));
+        dataQueue.push(txBuffer);
+    }
+}
+
 Tm::Tm() {
     // initialize the telemetry fabric IP
+    allowNewData = true;
     APBInitTMDriver(BAUD_38400, GAP_3MS,
             CONFIG_INTERRPUT_ENA | CONFIG_GLOBAL_START);
     NVIC_EnableIRQ(F2M_INT_PIN(INT_TELEMETRY));
@@ -56,6 +70,9 @@ void Tm::clearInterrupt(uint32_t interrupt) {
     uint32_t statusReg = APBTelemetryStatusRegister_get();
     statusReg &= ~(interrupt);
     APBTelemetryStatusRegister_set(statusReg);
+    if (interrupt & TELEMETRY_STATUS_INTERRUPT_TX) {
+        allowNewData = true;
+    }
 }
 
 void Tm::telemetryTransmissionStart(void) {

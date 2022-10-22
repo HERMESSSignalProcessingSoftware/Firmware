@@ -58,7 +58,7 @@ uint32_t TelemetryData::getIndex(void) {
     return tm_index;
 }
 
-uint32_t TelemetryData::GetWatermark(void) {
+uint32_t TelemetryData::getWatermark(void) {
     return watermark;
 }
 } /* namespace HERMESS */

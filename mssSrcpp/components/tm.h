@@ -4,6 +4,8 @@
 #include <stdint.h>
 #include <string>
 #include "../tools/queue.h"
+#include "../tools/datapackage.h"
+#include "../apbdrivers/STAMP/apb_stamp.h"
 #include "../model/telemetry.h"
 #include "../sb_hw_platform.h"
 #include "../tools/tools.h"
@@ -56,6 +58,14 @@ public:
      */
     void telemetryTransmissionStop(void);
 
+    /** Enqueue new data to the telemetry data queue
+     *
+     * Only after an  interrupt data will be pushed
+     *
+     * @param apb_stamp:StampDataFrame coverted to model/telemety dataframe.
+     */
+    void addDataToQueue(const apb_stamp::StampDataframe &df, uint32_t stampid);
+
     /** Text message transfer operator
      *
      * Enqueues a text message for asynchronous transmission via the TM. It
@@ -79,6 +89,8 @@ private:
     to be sent via TM. The front message is potentially partially
     transmitted already as indicated by sentBytes. */
 
+    HERMESS::TelemetryData txBuffer;
+
     Queue<HERMESS::TelemetryData> dataQueue; /**< The queue containing all data messages send via TM. */
 
     uint32_t msgQueueSize = 0; /**< The number of content bytes in msgQueue */
@@ -88,6 +100,7 @@ private:
     uint32_t sentMsgBytes = 0; /**< The number of bytes already sent from the
     front message */
 
+    bool allowNewData = false; /**< TODO: WRITE COMMENT */
     /** Telemetry class constructor
      *
      * Initializes Telemetry fabric interface and sets the always common transmission
