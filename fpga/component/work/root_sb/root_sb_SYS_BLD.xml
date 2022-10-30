@@ -3939,12 +3939,6 @@
 Connect your peripheral to STAMP_UND_TELEMETRY_6 bus interface pin in the top design.</cell>
 </row>
 <separator/>
-<row>
- <cell>Connect Generic User Slave Peripheral</cell>
- <cell>STAMP_UND_TELEMETRY is a slave on FIC0_Master_Subsystem subsystem.
-Connect your peripheral to STAMP_UND_TELEMETRY_6 bus interface pin in the top design.</cell>
-</row>
-<separator/>
 </table>
 </data>
 </Next>

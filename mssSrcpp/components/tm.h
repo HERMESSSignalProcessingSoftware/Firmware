@@ -38,6 +38,10 @@ public:
      */
     void worker_irq(void);
 
+    /**
+     * Enables Interrupt for Tm fabric
+     */
+    void enableInterrupt(void);
     /** Clear Interrupt
      *
      * Call this function to clear the interrupt pending bit of the status register
