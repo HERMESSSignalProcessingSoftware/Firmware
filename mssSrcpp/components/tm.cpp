@@ -62,11 +62,14 @@ Tm::Tm() {
     allowNewData = true;
     APBInitTMDriver(BAUD_38400, GAP_3MS,
             CONFIG_INTERRPUT_ENA | CONFIG_GLOBAL_START);
-    NVIC_EnableIRQ(F2M_INT_PIN(INT_TELEMETRY));
-    NVIC_ClearPendingIRQ(F2M_INT_PIN(INT_TELEMETRY));
     // set always common transmission bytes
 //    txBuffer[62] = 0x17;
 //    txBuffer[63] = 0xF0;
+}
+
+void Tm::enableInterrupt(void) {
+    NVIC_EnableIRQ(F2M_INT_PIN(INT_TELEMETRY));
+    NVIC_ClearPendingIRQ(F2M_INT_PIN(INT_TELEMETRY));
 }
 
 void Tm::clearInterrupt(uint32_t interrupt) {

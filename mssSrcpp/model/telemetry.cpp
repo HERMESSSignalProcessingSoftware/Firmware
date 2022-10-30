@@ -34,8 +34,9 @@ void TelemetryData::addData(uint32_t data) {
 uint32_t* TelemetryData::getNextFrame(void) {
    if (frameNumber < 4) {
        frame[0] = 0x0; // Meta data
-       for (int i = watermark; i < 4; i++) {
+       for (int i = 0; i < 4; i++) {
            if (watermark == 12 && i == 3) {
+               frame[4] = 0x0; //- No data here
                break;
            } else {
                frame[1 + i] = data[watermark + i];

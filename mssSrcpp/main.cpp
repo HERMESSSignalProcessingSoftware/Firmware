@@ -4,6 +4,7 @@
 #include "sf2drivers/drivers/mss_watchdog/mss_watchdog.h"
 #include "components/controller.h"
 #include "components/measurement.h"
+#include "components/tm.h"
 #include "components/dapi.h"
 #include "components/memory.h"
 #include "components/controller.h"
@@ -21,13 +22,13 @@ int main () {
 
     // initialize GPIOs
     MSS_GPIO_init();
-
+    Tm &tm = Tm::getInstance();
     // initiate the base components
     Controller &controller = Controller::getInstance();
     Measurement &measurement = Measurement::getInstance();
     Memory &memory = Memory::getInstance();
     Dapi &dapi = Dapi::getInstance();
-
+    tm.enableInterrupt();
     // send error message if this is a restart after a triggered watchdog
     if (MSS_WD_timeout_occured()) {
         controller.wdTriggered();
