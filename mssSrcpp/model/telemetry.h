@@ -10,19 +10,38 @@
 #ifndef MODEL_TELEMETRYDATA_H_
 #define MODEL_TELEMETRYDATA_H_
 
+#include "../tools/datapackage.h"
+#include "../apbdrivers/STAMP/apb_stamp.h"
+#include <string>
+
 namespace HERMESS {
+
+#define SYNC1 0x0
+#define SYNC1WORD SYNC1 << 24
+#define SYNC2 0x0
+#define SYNC2WORD SYNC2 << 16
+
+enum TelemetryDataType {
+    DATA, MESSAGE, NOT_SET
+};
 
 class TelemetryData {
 public:
     TelemetryData();
-    virtual ~TelemetryData();
 
+    virtual ~TelemetryData();
     /**
      *
-     * @param data
+     * @param df
+     * @param stampid
      */
-    void addData(uint32_t data);
-
+    void addDataFromStamp(const apb_stamp::StampDataframe &df,
+            uint32_t stampid);
+    /**
+     *
+     * @param s
+     */
+    void message(std::string s);
     /**
      *
      * @return
@@ -50,6 +69,16 @@ public:
      */
     uint32_t getWatermark(void);
 private:
+
+    /**
+     *
+     */
+    TelemetryDataType type;
+    /**
+     *
+     * @param data
+     */
+    void addData(uint32_t data);
     /**
      * timestamp, all stamp data (64 bit per stamp therefore 12 uint32_t fields), statusReg1 and statusReg2
      */
@@ -73,7 +102,12 @@ private:
     /**
      *
      */
-    uint32_t frameNumber;
+    uint32_t localFrameNumber;
+
+    /**
+     *
+     */
+    uint32_t metadata;
 
 };
 

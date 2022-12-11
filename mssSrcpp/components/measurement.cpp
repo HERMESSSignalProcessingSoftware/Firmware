@@ -17,14 +17,16 @@ void Measurement::worker () {
     if (stampDataAvailable) {
         // assemble data package
         psr_t isr = HAL_disable_interrupts();
+        HERMESS::TelemetryData tmData;
         for (uint8_t i = 0; i < 6; i++) {
+            tmData.addDataFromStamp(const_cast<apb_stamp::StampDataframe&>(*dfs[i]), i);
             if ((stampDataAvailable >> i) & 0x1U) {
                 dp.readDf(const_cast<apb_stamp::StampDataframe&>(*dfs[i]));
-                Tm::getInstance().addDataToQueue(const_cast<apb_stamp::StampDataframe&>(*dfs[i]), i);
                 delete dfs[i];
                 stampDataAvailable &= ~(1u << i);
             }
         }
+        Tm::getInstance().enqueue(tmData);
         HAL_restore_interrupts(isr);
         if (dp.numReceived >= 6) {
             Controller::getInstance().datapackageAvailable(dp);
@@ -121,7 +123,7 @@ Measurement::Measurement ():
     // enable continuous mode of the VHDL unit to prepare it
     conf.continuous = true;
 
-    for (uint8_t i = 0; i < 6; i++) {
+    for (uint8_t i = 1; i < 6; i++) { // Starting at 1 quick and dirty solution
         // enable continuous mode and set proper id
         conf.id = i;
         stamps[i].writeConfig(conf);

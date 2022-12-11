@@ -9,7 +9,7 @@
 #include "components/memory.h"
 #include "components/controller.h"
 #include "tools/msghandler.h"
-
+#include "model/telemetry.h"
 
 int main () {
     // perform general register startup
@@ -39,7 +39,11 @@ int main () {
     MsgHandler::getInstance().info(std::string("Configuration loaded: \"")
             + std::string(controller.configuration.confName)
             + "\" running SPU version " + SPU_VERSION);
-
+    HERMESS::TelemetryData msg;
+    msg.message(std::string("TM started running SPU version: ") + SPU_VERSION);
+    Tm::getInstance().enqueue(msg);
+    msg.message(std::string("1111111111111111111111111111111111111111111111111111111111"));
+    Tm::getInstance().enqueue(msg);
     for (;;) {
         MSS_WD_reload();
         controller.worker();
