@@ -282,17 +282,17 @@ State machine has 7 reachable states with original encodings of:
 @N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":186:4:186:24|Input SOFT_SDIF3_CORE_RESET is unused.
 @N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":190:4:190:26|Input SOFT_SDIF0_0_CORE_RESET is unused.
 @N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":191:4:191:26|Input SOFT_SDIF0_1_CORE_RESET is unused.
-Finished optimization stage 2 on CoreResetP (CPU Time 0h:00m:00s, Memory Used current: 117MB peak: 117MB)
+Finished optimization stage 2 on CoreResetP (CPU Time 0h:00m:00s, Memory Used current: 116MB peak: 117MB)
 Running optimization stage 2 on root_sb_FABOSC_0_OSC .......
 @N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root_sb\FABOSC_0\root_sb_FABOSC_0_OSC.vhd":10:10:10:12|Input XTL is unused.
-Finished optimization stage 2 on root_sb_FABOSC_0_OSC (CPU Time 0h:00m:00s, Memory Used current: 117MB peak: 117MB)
+Finished optimization stage 2 on root_sb_FABOSC_0_OSC (CPU Time 0h:00m:00s, Memory Used current: 116MB peak: 117MB)
 Running optimization stage 2 on root_sb_MSS .......
-Finished optimization stage 2 on root_sb_MSS (CPU Time 0h:00m:00s, Memory Used current: 117MB peak: 117MB)
+Finished optimization stage 2 on root_sb_MSS (CPU Time 0h:00m:00s, Memory Used current: 116MB peak: 117MB)
 Running optimization stage 2 on root_sb .......
-Finished optimization stage 2 on root_sb (CPU Time 0h:00m:00s, Memory Used current: 117MB peak: 117MB)
+Finished optimization stage 2 on root_sb (CPU Time 0h:00m:00s, Memory Used current: 116MB peak: 117MB)
 Running optimization stage 2 on spi_master .......
 @W: CL279 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Pruning register bits 4 to 1 of last_bit_rx(5 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-Finished optimization stage 2 on spi_master (CPU Time 0h:00m:00s, Memory Used current: 118MB peak: 137MB)
+Finished optimization stage 2 on spi_master (CPU Time 0h:00m:00s, Memory Used current: 118MB peak: 138MB)
 Running optimization stage 2 on STAMP .......
 @W: CL190 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\STAMP.vhd":199:8:199:9|Optimizing register bit delay_counter(31) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: CL260 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\STAMP.vhd":199:8:199:9|Pruning register bit 31 of delay_counter(31 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
@@ -317,7 +317,7 @@ State machine has 6 reachable states with original encodings of:
    100000
 @W: CL190 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\STAMP.vhd":199:8:199:9|Optimizing register bit delay_counter(28) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: CL260 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\STAMP.vhd":199:8:199:9|Pruning register bit 28 of delay_counter(28 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-Finished optimization stage 2 on STAMP (CPU Time 0h:00m:00s, Memory Used current: 121MB peak: 137MB)
+Finished optimization stage 2 on STAMP (CPU Time 0h:00m:00s, Memory Used current: 121MB peak: 138MB)
 Running optimization stage 2 on UART_TX .......
 @N: CL201 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\UART_TX.vhd":49:0:49:1|Trying to extract state machine for register current_state.
 Extracted state machine for register current_state
@@ -328,7 +328,7 @@ State machine has 4 reachable states with original encodings of:
    11
 @W: CL249 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\UART_TX.vhd":49:0:49:1|Initial value is not supported on state machine current_state
 @W: CL247 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\UART_TX.vhd":21:2:21:16|Input port bit 31 of baud_config_reg(31 downto 0) is unused 
-Finished optimization stage 2 on UART_TX (CPU Time 0h:00m:00s, Memory Used current: 120MB peak: 137MB)
+Finished optimization stage 2 on UART_TX (CPU Time 0h:00m:00s, Memory Used current: 120MB peak: 138MB)
 Running optimization stage 2 on UART_RX .......
 @N: CL201 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\UART_RX.vhd":41:0:41:1|Trying to extract state machine for register current_state.
 Extracted state machine for register current_state
@@ -339,7 +339,7 @@ State machine has 4 reachable states with original encodings of:
    11
 @W: CL249 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\UART_RX.vhd":41:0:41:1|Initial value is not supported on state machine current_state
 @W: CL247 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\UART_RX.vhd":20:2:20:16|Input port bit 31 of baud_config_reg(31 downto 0) is unused 
-Finished optimization stage 2 on UART_RX (CPU Time 0h:00m:00s, Memory Used current: 120MB peak: 137MB)
+Finished optimization stage 2 on UART_RX (CPU Time 0h:00m:00s, Memory Used current: 120MB peak: 138MB)
 Running optimization stage 2 on telemetry .......
 @N: CL201 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\telemetry.vhd":172:4:172:5|Trying to extract state machine for register UART_RX_State.
 Extracted state machine for register UART_RX_State

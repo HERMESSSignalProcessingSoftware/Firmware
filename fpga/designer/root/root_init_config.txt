@@ -1,6 +1,6 @@
 Configuration Report for MSS, SERDES(s), Fabric DDR and Fabric CCC(s)
 Microsemi Corporation - Microsemi Libero Software Release v2021.3 (Version 2021.3.0.10)
-Date: Sat Oct 29 19:23:28 2022
+Date: Fri Dec  9 20:24:07 2022
 
 MSS/CCC_0/CCC_INST/INST_CCC_IP
 +-------------------+--------------------+---------------+-------+
@@ -532,8 +532,8 @@ MSS/root_sb_MSS_0/MSS_ADLIB_INST/INST_MSS_010_IP
 | IOMUXCELL_18_CONFIG     | MSS_IOMUXSEL5LOWER          | INIT[1057:1057] | 1'h0         | INIT[108] | 1             |
 | IOMUXCELL_19_CONFIG     | MSS_IOMUXSEL0               | INIT[1058:1058] | 1'h0         | INIT[109] | 1             |
 | IOMUXCELL_19_CONFIG     | MSS_IOMUXSEL1               | INIT[1059:1059] | 1'h0         | INIT[109] | 1             |
-| IOMUXCELL_19_CONFIG     | MSS_IOMUXSEL2               | INIT[1060:1060] | 1'h1         | INIT[109] | 1             |
-| IOMUXCELL_19_CONFIG     | MSS_IOMUXSEL3               | INIT[1061:1061] | 1'h1         | INIT[109] | 1             |
+| IOMUXCELL_19_CONFIG     | MSS_IOMUXSEL2               | INIT[1060:1060] | 1'h0         | INIT[109] | 1             |
+| IOMUXCELL_19_CONFIG     | MSS_IOMUXSEL3               | INIT[1061:1061] | 1'h0         | INIT[109] | 1             |
 | IOMUXCELL_19_CONFIG     | MSS_IOMUXSEL4UPPER          | INIT[1062:1062] | 1'h0         | INIT[109] | 1             |
 | IOMUXCELL_19_CONFIG     | MSS_IOMUXSEL4MID            | INIT[1063:1063] | 1'h0         | INIT[109] | 1             |
 | IOMUXCELL_19_CONFIG     | MSS_IOMUXSEL4LOWER          | INIT[1064:1064] | 1'h0         | INIT[109] | 1             |

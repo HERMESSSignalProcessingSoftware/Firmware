@@ -16,6 +16,8 @@
 #define IN_RXSM_SOE                     1
 #define IN_RXSM_SODS                    2
 #define IN_WP                           3
+#define FLASH_CS_2                      GPIO_PORT(24)
+#define FLASH_CS_1                      GPIO_PORT(25)
 #define OUT_DAPI_CTS                    26
 #define OUT_ADC_START                   28
 #define LED_HB_MEMSYNC                  29

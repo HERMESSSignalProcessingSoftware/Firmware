@@ -90,7 +90,9 @@ bool Stamp::writeConfig (const StampConfig &conf) const {
 
 
 StampConfig Stamp::readConfig () const {
-    return StampConfig(HW_get_32bit_reg(baseAddr | STAMP_REG_CONF));
+    volatile uint32_t addr = baseAddr | STAMP_REG_CONF;
+    uint32_t stampConfig = HW_get_32bit_reg(addr);
+    return StampConfig(stampConfig);
 }
 
 

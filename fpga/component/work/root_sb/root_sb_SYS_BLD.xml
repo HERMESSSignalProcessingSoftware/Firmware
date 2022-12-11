@@ -3450,11 +3450,11 @@
 </row>
 <row>
  <cell>GPIO24_TYPE</cell>
- <cell>CONNECTION_IOA</cell>
+ <cell>CONNECTION_FABRICB</cell>
 </row>
 <row>
  <cell>GPIO24_USAGE</cell>
- <cell>NOT_USED</cell>
+ <cell>USAGE_OUTPUT</cell>
 </row>
 <row>
  <cell>GPIO25_FAB_CAPT</cell>
@@ -3462,11 +3462,11 @@
 </row>
 <row>
  <cell>GPIO25_TYPE</cell>
- <cell>CONNECTION_IOA</cell>
+ <cell>CONNECTION_FABRICB</cell>
 </row>
 <row>
  <cell>GPIO25_USAGE</cell>
- <cell>NOT_USED</cell>
+ <cell>USAGE_OUTPUT</cell>
 </row>
 <row>
  <cell>GPIO26_FAB_CAPT</cell>
@@ -3609,7 +3609,7 @@
 </header>
 <row>
  <cell>NB_SLAVES</cell>
- <cell>2</cell>
+ <cell>1</cell>
 </row>
 <row>
  <cell>SPI_MUX</cell>
@@ -3846,6 +3846,16 @@
  <cell>-</cell>
 </row>
 <row>
+ <cell>GPIO_24_M2F</cell>
+ <cell>OUT</cell>
+ <cell>-</cell>
+</row>
+<row>
+ <cell>GPIO_25_M2F</cell>
+ <cell>OUT</cell>
+ <cell>-</cell>
+</row>
+<row>
  <cell>GPIO_26_M2F</cell>
  <cell>OUT</cell>
  <cell>-</cell>
@@ -3902,11 +3912,6 @@
 </row>
 <row>
  <cell>SPI_0_SS0_M2F_OE</cell>
- <cell>OUT</cell>
- <cell>-</cell>
-</row>
-<row>
- <cell>SPI_0_SS1_M2F</cell>
  <cell>OUT</cell>
  <cell>-</cell>
 </row>

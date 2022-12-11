@@ -14,18 +14,22 @@ Tm& Tm::getInstance() {
 
 void Tm::worker_irq(void) {
     // Gather information here
-    uint32_t row = 0;
-    if (!dataQueue.empty()) {
-        HERMESS::TelemetryData &data = dataQueue.front();
-        dataQueue.pop();
-        while (data.hasNext()) {
-            uint32_t * frame  = data.getNextFrame();
-            for (int i = 0; i < 6; i++) {
-                APBTelemetyLoadTXMemory(frame[i], row + i);
+    if (interfaceFree) {
+        uint32_t row = 0;
+        if (!dataQueue.empty()) {
+            HERMESS::TelemetryData &data = dataQueue.front();
+            dataQueue.pop();
+            dataQueueSize--;
+            while (data.hasNext()) {
+                uint32_t *frame = data.getNextFrame();
+                for (int i = 0; i < 6; i++) {
+                    APBTelemetyLoadTXMemory(frame[i], row + i);
+                }
+                row += 6;
             }
-            row += 6;
+            APBTelemetryTransmissionStart();
+            interfaceFree = false;
         }
-        APBTelemetryTransmissionStart();
     }
 }
 
@@ -41,27 +45,35 @@ Tm& Tm::operator<<(std::string msg) {
     return *this;
 }
 
-void Tm::addDataToQueue(const apb_stamp::StampDataframe &df, uint32_t stampid) {
-    if (allowNewData) {
-        if (stampid == 0) {
-            txBuffer = HERMESS::TelemetryData();
-            txBuffer.addData((uint32_t)df.timestamp);
-        } else if (stampid == 5) {
-            allowNewData = false;
-        }
-        txBuffer.addData((uint32_t)(df.dataRtd | df.dataSgr1 << 16));
-        txBuffer.addData((uint32_t)(df.dataSgr2 | df.status.bitfield() << 16));
-        if (stampid == 5) {
-            dataQueue.push(txBuffer);
-        }
+void Tm::enqueue(HERMESS::TelemetryData data) {
+    if (dataQueueSize < 5) {
+        this->dataQueue.push(data);
+        dataQueueSize++;
     }
+}
+
+void Tm::addDataToQueue(const apb_stamp::StampDataframe &df, uint32_t stampid) {
+//    if (allowNewData) {
+//        if (stampid == 0) {
+//            txBuffer = HERMESS::TelemetryData();
+//            txBuffer.addData((uint32_t)df.timestamp);
+//        } else if (stampid == 5) {
+//            allowNewData = false;
+//        }
+//        txBuffer.addData((uint32_t)(df.dataRtd | df.dataSgr1 << 16));
+//        txBuffer.addData((uint32_t)(df.dataSgr2 | df.status.bitfield() << 16));
+//        if (stampid == 5) {
+//            dataQueue.push(txBuffer);
+//        }
+//    }
 }
 
 Tm::Tm() {
     // initialize the telemetry fabric IP
-    allowNewData = true;
+    interfaceFree = true;
+    //GAP_30kBits;
     APBInitTMDriver(BAUD_38400, GAP_3MS,
-            CONFIG_INTERRPUT_ENA | CONFIG_GLOBAL_START);
+    CONFIG_INTERRPUT_ENA | CONFIG_GLOBAL_START);
     // set always common transmission bytes
 //    txBuffer[62] = 0x17;
 //    txBuffer[63] = 0xF0;
@@ -77,7 +89,7 @@ void Tm::clearInterrupt(uint32_t interrupt) {
     statusReg &= ~(interrupt);
     APBTelemetryStatusRegister_set(statusReg);
     if (interrupt & TELEMETRY_STATUS_INTERRUPT_TX) {
-        allowNewData = true;
+        interfaceFree = true;
     }
 }
 

@@ -1,4 +1,4 @@
-# Sat Oct 29 19:21:44 2022
+# Fri Dec  9 20:22:24 2022
 
 
 Copyright (C) 1994-2021 Synopsys, Inc.
@@ -132,7 +132,7 @@ original code -> new code
 @W: MO160 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_rx.vhd":41:0:41:1|Register bit clk_baudrate[31] (in view view:work.UART_RX(diagram)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
 @N: MF179 :|Found 32 by 32 bit equality operator ('==') RX_state_machine\.un17_count_clk (in view: work.UART_RX(diagram))
 
-Starting factoring (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 186MB peak: 186MB)
+Starting factoring (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 185MB peak: 185MB)
 
 Auto Dissolve of spi (inst of view:work.spi_master(logic))
 @W: BN132 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_tx.vhd":49:0:49:1|Removing instance telemetry_0.c_TX.clk_baudrate[25] because it is equivalent to instance telemetry_0.c_RX.clk_baudrate[25]. To keep the instance, apply constraint syn_preserve=1 on the instance.
@@ -167,7 +167,7 @@ Auto Dissolve of spi (inst of view:work.spi_master(logic))
 @W: BN132 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_tx.vhd":49:0:49:1|Removing instance telemetry_0.c_TX.clk_baudrate[4] because it is equivalent to instance telemetry_0.c_RX.clk_baudrate[4]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_tx.vhd":49:0:49:1|Removing instance telemetry_0.c_TX.clk_baudrate[6] because it is equivalent to instance telemetry_0.c_RX.clk_baudrate[6]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 
-Finished factoring (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 203MB peak: 203MB)
+Finished factoring (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 202MB peak: 202MB)
 
 
 Available hyper_sources - for debug and ip models
@@ -192,7 +192,7 @@ Finished Early Timing Optimization (Real Time elapsed 0h:00m:16s; CPU Time elaps
 Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:16s; CPU Time elapsed 0h:00m:16s; Memory used current: 220MB peak: 244MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:18s; CPU Time elapsed 0h:00m:18s; Memory used current: 221MB peak: 244MB)
+Finished preparing to map (Real Time elapsed 0h:00m:19s; CPU Time elapsed 0h:00m:18s; Memory used current: 221MB peak: 244MB)
 
 
 Finished technology mapping (Real Time elapsed 0h:00m:20s; CPU Time elapsed 0h:00m:20s; Memory used current: 261MB peak: 261MB)
@@ -214,10 +214,10 @@ Added 0 Cells via replication
 	Added 0 Sequential Cells via replication
 	Added 0 Combinational Cells via replication
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:26s; CPU Time elapsed 0h:00m:26s; Memory used current: 266MB peak: 266MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:27s; CPU Time elapsed 0h:00m:27s; Memory used current: 266MB peak: 266MB)
 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:27s; CPU Time elapsed 0h:00m:27s; Memory used current: 267MB peak: 269MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:27s; CPU Time elapsed 0h:00m:27s; Memory used current: 268MB peak: 269MB)
 
 
 
@@ -242,17 +242,17 @@ Clock Tree ID     Driving Element                   Drive Element Type     Fanou
 ##### END OF CLOCK OPTIMIZATION REPORT ######]
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:27s; CPU Time elapsed 0h:00m:27s; Memory used current: 211MB peak: 269MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:28s; CPU Time elapsed 0h:00m:27s; Memory used current: 211MB peak: 269MB)
 
 Writing Analyst data base B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\synwork\root_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:29s; CPU Time elapsed 0h:00m:29s; Memory used current: 254MB peak: 269MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:29s; CPU Time elapsed 0h:00m:28s; Memory used current: 255MB peak: 269MB)
 
 Writing Verilog Simulation files
 @N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
 @N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
 
-Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:30s; CPU Time elapsed 0h:00m:30s; Memory used current: 255MB peak: 269MB)
+Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:31s; CPU Time elapsed 0h:00m:30s; Memory used current: 255MB peak: 269MB)
 
 
 Finished Writing Netlists (Real Time elapsed 0h:00m:31s; CPU Time elapsed 0h:00m:31s; Memory used current: 255MB peak: 269MB)
@@ -266,7 +266,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:31s; CPU Time elapsed 0h:0
 
 
 ##### START OF TIMING REPORT #####[
-# Timing report written on Sat Oct 29 19:22:16 2022
+# Timing report written on Fri Dec  9 20:22:56 2022
 #
 
 
@@ -650,10 +650,10 @@ Path delay compensated for clock skew. Clock skew is added to clock-to-out value
 
 Timing exceptions that could not be applied
 
-Finished final timing analysis (Real Time elapsed 0h:00m:31s; CPU Time elapsed 0h:00m:31s; Memory used current: 250MB peak: 269MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:32s; CPU Time elapsed 0h:00m:31s; Memory used current: 251MB peak: 269MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:32s; CPU Time elapsed 0h:00m:32s; Memory used current: 250MB peak: 269MB)
+Finished timing report (Real Time elapsed 0h:00m:32s; CPU Time elapsed 0h:00m:31s; Memory used current: 251MB peak: 269MB)
 
 ---------------------------------------
 Resource Usage Report for root 
@@ -708,6 +708,6 @@ Mapper successful!
 At Mapper Exit (Real Time elapsed 0h:00m:32s; CPU Time elapsed 0h:00m:32s; Memory used current: 82MB peak: 269MB)
 
 Process took 0h:00m:32s realtime, 0h:00m:32s cputime
-# Sat Oct 29 19:22:17 2022
+# Fri Dec  9 20:22:57 2022
 
 ###########################################################]

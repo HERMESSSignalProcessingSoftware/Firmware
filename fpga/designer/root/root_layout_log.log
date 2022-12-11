@@ -18,13 +18,12 @@ I/O Bank and Globals Assigner completed successfully.
 Total time spent in I/O Bank and Globals Assigner: 0 seconds
 
 Placer V5.0 - 2021.3.0 
-Design: root                            Started: Sat Oct 29 19:22:36 2022
+Design: root                            Started: Fri Dec  9 20:23:15 2022
 
 Initializing Normal-Effort Standard Placement ...
 Clustering ...
 Placing ...
 Improving placement ...
-@T 77
 
 CDC Report:
     Total number of CDC synchronizer driver/sink pairs     :  10
@@ -40,22 +39,22 @@ Improvement              : 5 seconds
 Placer completed successfully.
 
 Design: root                            
-Finished: Sat Oct 29 19:22:50 2022
-Total CPU Time:     00:00:17            Total Elapsed Time: 00:00:14
-Total Memory Usage: 153.5 Mbytes
+Finished: Fri Dec  9 20:23:30 2022
+Total CPU Time:     00:00:18            Total Elapsed Time: 00:00:15
+Total Memory Usage: 154.3 Mbytes
                         o - o - o - o - o - o
 
 
 Router 
-Design: B:\HERMESS_SPSoftware\Firmware\fpga\designer\root\rootStarted: Sat Oct 29 19:22:56 2022
+Design: B:\HERMESS_SPSoftware\Firmware\fpga\designer\root\rootStarted: Fri Dec  9 20:23:36 2022
 
 
 Router completed successfully.
 
 Design: B:\HERMESS_SPSoftware\Firmware\fpga\designer\root\root
-Finished: Sat Oct 29 19:23:16 2022
+Finished: Fri Dec  9 20:23:56 2022
 Total CPU Time:     00:00:19            Total Elapsed Time: 00:00:20
-Total Memory Usage: 448.4 Mbytes
+Total Memory Usage: 447.8 Mbytes
                         o - o - o - o - o - o
 
 Resource Usage

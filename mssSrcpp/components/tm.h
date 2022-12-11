@@ -62,6 +62,11 @@ public:
      */
     void telemetryTransmissionStop(void);
 
+    /**
+     *
+     * @param data
+     */
+    void enqueue(HERMESS::TelemetryData data);
     /** Enqueue new data to the telemetry data queue
      *
      * Only after an  interrupt data will be pushed
@@ -104,7 +109,7 @@ private:
     uint32_t sentMsgBytes = 0; /**< The number of bytes already sent from the
     front message */
 
-    bool allowNewData = false; /**< TODO: WRITE COMMENT */
+    bool interfaceFree = true;
     /** Telemetry class constructor
      *
      * Initializes Telemetry fabric interface and sets the always common transmission
