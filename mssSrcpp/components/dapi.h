@@ -9,7 +9,7 @@
 // The maximum number of content bytes stored in the message buffer. Potentially
 // exceeding this value on data storage will abort the addition of this data
 // frame.
-#define DAPI_MAX_BUFFER_SIZE 2000
+#define DAPI_MAX_BUFFER_SIZE 1000
 
 
 class Dapi {

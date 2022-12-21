@@ -1,5 +1,6 @@
 #include "memory.h"
 #include "../sf2drivers/drivers/mss_spi/mss_spi.h"
+#include "../sf2drivers/drivers/mss_gpio/mss_gpio.h"
 #include "../sb_hw_platform.h"
 #include "../tools/tools.h"
 #include <cstring>
@@ -23,9 +24,9 @@ void Memory::worker() {
                 this->CS_Pin = FLASH_CS_2;
             }
             /*Set internal values properly*/
-            this->write = false;
             this->memoryCounter = 0;
         }
+        this->write = false;
     }
 }
 
@@ -46,12 +47,25 @@ void Memory::abortClearMemory() {
 
 void Memory::saveDp(const Datapackage &dp) {
     if (this->memoryCounter <= 18) {
-        uint8_t array[28];
+        uint8_t array[56];
         dp.toBytes((unsigned char*) &array);
         /*TODO: Pointer arithmetic!*/
-        memcpy(this->memory + (28 * this->memoryCounter++), array, 28);
-        if (this->memoryCounter == 19) {
+
+        /*for (int i = (28 * this->memoryCounter++); i < 28; i++) {
+         this->memory[i] = array[i % 28];
+         }*/
+        memcpy(this->memory + (56 * this->memoryCounter++), array, 56);
+        if (this->memoryCounter == 9) {
             this->write = true;
+        }
+    }
+}
+
+void Memory::readMemory(uint8_t *data, uint32_t from, uint32_t to) {
+    if (data) {
+        for (uint32_t i = from; i < to; i++) {
+            this->readPage(data, PAGEADDR(i), FLASH_CS_1);
+            this->readPage(data + PAGESIZE, PAGEADDR(i), FLASH_CS_2);
         }
     }
 }
@@ -61,33 +75,30 @@ Memory::Memory() {
     this->CS_Pin = FLASH_CS_1;
     this->memoryCounter = 0;
     this->write = false;
-    this->pageCounter = 0x200;
+    this->pageCounter = 0;
+    for (int i = 0; i < PAGESIZE; i++)
+        this->memory[i] = 0;
     MSS_SPI_init(this->handle);
-    MSS_SPI_configure_master_mode(this->handle, MSS_SPI_SLAVE_0, MSS_SPI_MODE0,
-            4u, MSS_SPI_BLOCK_TRANSFER_FRAME_SIZE);
+    MSS_SPI_configure_master_mode(this->handle, MSS_SPI_SLAVE_0, MSS_SPI_MODE0, 16u, MSS_SPI_BLOCK_TRANSFER_FRAME_SIZE);
     /* Do set the nCSx signals to high */
     MSS_GPIO_set_output(FLASH_CS_1, 1);
     MSS_GPIO_set_output(FLASH_CS_2, 1);
     MSS_SPI_set_slave_select(this->handle, MSS_SPI_SLAVE_0);
-
-    //TODO: Where is the data stored at?
-    //TODO: Interrupts?
-    //TODO: Implementation?
 }
 
 uint8_t Memory::readStatus(mss_gpio_id_t nCSPin) {
     uint8_t data;
     uint8_t command = c_READSTATUSREG1;
-    //CS low
+//CS low
     MSS_GPIO_set_output(nCSPin, 0);
 
-    //delay(1);
+//delay(1);
 
-    //send command and read answer into data
+//send command and read answer into data
     MSS_SPI_transfer_frame(this->handle, command);
     data = MSS_SPI_transfer_frame(this->handle, 0x00);
 
-    //CS high
+//CS high
     MSS_GPIO_set_output(nCSPin, 1);
     return data;
 }
@@ -101,12 +112,12 @@ uint8_t Memory::readStatus(mss_gpio_id_t nCSPin) {
  */
 int Memory::writeByte(uint8_t data, mss_gpio_id_t nCSPin) {
     MSS_GPIO_set_output(nCSPin, 0);
-    //delay(1);
+//delay(1);
 
-    //send command and read answer into data
+//send command and read answer into data
     MSS_SPI_transfer_frame(this->handle, data);
 
-    //CS1 high
+//CS1 high
     MSS_GPIO_set_output(nCSPin, 1);
     return 0;
 }
@@ -134,14 +145,14 @@ int Memory::writePage(uint8_t *data, uint32_t address, mss_gpio_id_t nCSPin) {
     writeByte(c_WREN, nCSPin);
 
     MSS_GPIO_set_output(nCSPin, 0);
-    //commando schicken
+//commando schicken
     MSS_SPI_transfer_frame(this->handle, command);
-    //delay(1); /* !!! Do not use this in productiv application, build a function which is able to wait just a few us*/
+//delay(1); /* !!! Do not use this in productiv application, build a function which is able to wait just a few us*/
 
     /* end of waiting */
-    //Addressse schicken MSB to LSB
-    //address = 0x11223344;
-    //MSS_SPI_transfer_block(this->handle, &address, 4, recBuffer, 0); /* Reihnfolge der bytes ist nicht richtig */
+//Addressse schicken MSB to LSB
+//address = 0x11223344;
+//MSS_SPI_transfer_block(this->handle, &address, 4, recBuffer, 0); /* Reihnfolge der bytes ist nicht richtig */
     tmp_add = (uint8_t) ((address >> 24) & 0x000000FF);
     MSS_SPI_transfer_frame(this->handle, tmp_add);
 
@@ -153,7 +164,7 @@ int Memory::writePage(uint8_t *data, uint32_t address, mss_gpio_id_t nCSPin) {
 
     tmp_add = (uint8_t) (address & 0x000000FF);
     MSS_SPI_transfer_frame(this->handle, tmp_add);
-    //Daten schicken
+//Daten schicken
     for (i = 0; i < PAGESIZE; i++) {
         MSS_SPI_transfer_frame(this->handle, data[i]);
 
@@ -161,7 +172,7 @@ int Memory::writePage(uint8_t *data, uint32_t address, mss_gpio_id_t nCSPin) {
 
     MSS_GPIO_set_output(nCSPin, 1);
 
-    //Write disable
+//Write disable
     writeByte(c_WRDI, nCSPin);
     return i;
 }
@@ -189,10 +200,10 @@ int Memory::readPage(uint8_t *data, uint32_t address, mss_gpio_id_t nCSPin) {
 
     uint8_t command = c_READ;
     uint8_t tmp_add;
-    //CS low
+//CS low
     MSS_GPIO_set_output(nCSPin, 0);
 
-    //commando schicken
+//commando schicken
 //  writeByte(c_READ, SPI_val);
     MSS_SPI_transfer_frame(this->handle, command);
 
@@ -212,7 +223,7 @@ int Memory::readPage(uint8_t *data, uint32_t address, mss_gpio_id_t nCSPin) {
 
 //Daten lesen+
     for (uint32_t i = 0; i < PAGESIZE; i++) {
-        data[i] = MSS_SPI_transfer_frame(this->handle,  0x00);
+        data[i] = MSS_SPI_transfer_frame(this->handle, 0x00);
     }
 
 //CS high
@@ -228,33 +239,33 @@ int Memory::readPage(uint8_t *data, uint32_t address, mss_gpio_id_t nCSPin) {
  * @param bool fastReturn, waits until write in progress flag disappears.
  */
 int Memory::chipErase(mss_gpio_id_t nCSPin, bool fastReturn) {
-    //Write enable
+//Write enable
     writeByte(c_WREN, nCSPin);
-    //erase chip
+//erase chip
     writeByte(c_CE, nCSPin);
-    //Write Disable
+//Write Disable
     writeByte(c_WRDI, nCSPin);
-    //warte bis Schreiben beendet ist
+//warte bis Schreiben beendet ist
     if (fastReturn == false)
         writeReady(nCSPin);
 
     return 0;
 }
 
-
-uint32_t Memory::readBytes(uint8_t *data, uint32_t address, int count, mss_gpio_id_t nCSPin) {
+uint32_t Memory::readBytes(uint8_t *data, uint32_t address, int count,
+        mss_gpio_id_t nCSPin) {
     if (count > sizeof(data)) {
         return 1;
     }
 
     uint8_t command = c_READ;
     uint8_t tmp_add;
-    //CS low
+//CS low
     MSS_GPIO_set_output(nCSPin, 0);
-    //commando schicken
+//commando schicken
     MSS_SPI_transfer_frame(this->handle, command);
 
-    //4 Byte Addressse schicken MSB to LSB
+//4 Byte Addressse schicken MSB to LSB
     tmp_add = (uint8_t) ((address >> 24) & 0x000000FF);
     MSS_SPI_transfer_frame(this->handle, tmp_add);
 
@@ -267,27 +278,28 @@ uint32_t Memory::readBytes(uint8_t *data, uint32_t address, int count, mss_gpio_
     tmp_add = (uint8_t) (address & 0x000000FF);
     MSS_SPI_transfer_frame(this->handle, tmp_add);
 
-    //Daten lesen
+//Daten lesen
     for (uint32_t i = 0; i < count; i++) {
         data[i] = MSS_SPI_transfer_frame(this->handle, 0x00);
     }
 
-    //CS1 high
+//CS1 high
     MSS_GPIO_set_output(nCSPin, 1);
 
     return 0;
 }
 
-uint32_t Memory::updateMetadata(uint32_t pageAddr, uint32_t metaAddress, mss_gpio_id_t dev) {
+uint32_t Memory::updateMetadata(uint32_t pageAddr, uint32_t metaAddress,
+        mss_gpio_id_t dev) {
     uint8_t buffer[PAGESIZE] = { 0 };
-    uint32_t *ptr = (uint32_t*)buffer;
+    uint32_t *ptr = (uint32_t*) buffer;
     uint32_t value = 0;
     uint32_t offset = 0;
     uint32_t page;
     /*Iterate over all pages*/
     for (uint32_t i = metaAddress; i < START_OF_DATA_SEGMENT; i++) {
         readPage(buffer, PAGEADDR(i), dev);
-        ptr = (uint32_t*)(buffer ); //Reset the ptr to the start of the buffer
+        ptr = (uint32_t*) (buffer); //Reset the ptr to the start of the buffer
         for (uint32_t index = 0; index < 128; index++) {
             value = *(ptr);
             if (value == 0xFFFFFFFF) {
@@ -301,7 +313,7 @@ uint32_t Memory::updateMetadata(uint32_t pageAddr, uint32_t metaAddress, mss_gpi
         }
         if (value == 0xFFFFFFFF) {
             *ptr = pageAddr; //Pointer was added due to search function implemented above, remove one
-            write32Bit(pageAddr, PAGEADDR(i) + offset*4 , dev);
+            write32Bit(pageAddr, PAGEADDR(i) + offset * 4, dev);
             //writePage(buffer, i, dev);
             page = i;
             break;
@@ -325,14 +337,15 @@ void Memory::writeReady(mss_gpio_id_t nCSPin) {
     }
 }
 
-void Memory::write32Bit(uint32_t value, uint32_t address, mss_gpio_id_t nCSPin) {
+void Memory::write32Bit(uint32_t value, uint32_t address,
+        mss_gpio_id_t nCSPin) {
     writeByte(c_WREN, nCSPin);
 
     MSS_GPIO_set_output(nCSPin, 0);
 
     MSS_SPI_transfer_frame(this->handle, c_WRITEPAGE);
 
-    //Transfer address MSB to LSB
+//Transfer address MSB to LSB
     uint8_t tmp_add = (uint8_t) ((address >> 24) & 0x000000FF);
     MSS_SPI_transfer_frame(this->handle, tmp_add);
 
@@ -345,13 +358,13 @@ void Memory::write32Bit(uint32_t value, uint32_t address, mss_gpio_id_t nCSPin) 
     tmp_add = (uint8_t) (address & 0x000000FF);
     MSS_SPI_transfer_frame(this->handle, tmp_add);
 
-    uint8_t *ptr= (uint8_t*)&value;
+    uint8_t *ptr = (uint8_t*) &value;
     for (uint32_t i = 0; i < 4; i++) {
         MSS_SPI_transfer_frame(this->handle, ptr[i]);
     }
 
     MSS_GPIO_set_output(nCSPin, 1);
-    //Write disable
+//Write disable
     writeByte(c_WRDI, nCSPin);
 }
 

@@ -52,7 +52,16 @@ public:
     /* Fast prepare to save some datapackages */
     void abortClearMemory();
 
+
     void saveDp(const Datapackage &dp);
+
+    /**
+     * reads a page form memory
+     * @param uint8_t* output buffer double size of one page
+     * @param page from
+     * @param page to
+     */
+    void readMemory(uint8_t*, uint32_t, uint32_t);
 private:
     Memory();
     mss_gpio_id_t CS_Pin;       /*< */

@@ -44,12 +44,15 @@ int main () {
     Tm::getInstance().enqueue(msg);
     msg.message(std::string("1111111111111111111111111111111111111111111111111111111111"));
     Tm::getInstance().enqueue(msg);
+    uint8_t array[1024] = {0};
     for (;;) {
         MSS_WD_reload();
         controller.worker();
         measurement.worker();
         memory.worker();
         dapi.worker();
+        /*Testing purpos only*/
+        //memory.readMemory(array, 0x200, 0x201);
     }
     return 0;
 }

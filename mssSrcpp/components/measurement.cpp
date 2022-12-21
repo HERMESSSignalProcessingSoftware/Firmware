@@ -17,16 +17,16 @@ void Measurement::worker () {
     if (stampDataAvailable) {
         // assemble data package
         psr_t isr = HAL_disable_interrupts();
-        HERMESS::TelemetryData tmData;
+        //HERMESS::TelemetryData tmData;
         for (uint8_t i = 0; i < 6; i++) {
-            tmData.addDataFromStamp(const_cast<apb_stamp::StampDataframe&>(*dfs[i]), i);
+            //tmData.addDataFromStamp(const_cast<apb_stamp::StampDataframe&>(*dfs[i]), i);
             if ((stampDataAvailable >> i) & 0x1U) {
                 dp.readDf(const_cast<apb_stamp::StampDataframe&>(*dfs[i]));
                 delete dfs[i];
                 stampDataAvailable &= ~(1u << i);
             }
         }
-        Tm::getInstance().enqueue(tmData);
+        //Tm::getInstance().enqueue(tmData);
         HAL_restore_interrupts(isr);
         if (dp.numReceived >= 6) {
             Controller::getInstance().datapackageAvailable(dp);
