@@ -3,7 +3,7 @@
 <doc>
 <title>Resource Report</title>
 <text>Microsemi Corporation - Microsemi Libero Software Release v2021.3 (Version 2021.3.0.10)</text>
-<text>Date: Wed Feb  8 12:03:51 2023
+<text>Date: Wed Feb  8 15:28:24 2023
 </text>
 <section><name>Device Selection</name></section>
 <table>
@@ -124,15 +124,15 @@
 </row>
 <row>
  <cell>User I/O</cell>
- <cell>75</cell>
+ <cell>76</cell>
  <cell>84</cell>
- <cell>89.29</cell>
+ <cell>90.48</cell>
 </row>
 <row>
  <cell>-- Single-ended I/O</cell>
- <cell>75</cell>
+ <cell>76</cell>
  <cell>84</cell>
- <cell>89.29</cell>
+ <cell>90.48</cell>
 </row>
 <row>
  <cell>-- Differential I/O Pairs</cell>
@@ -360,7 +360,7 @@
 </row>
 <row>
  <cell>Output I/O</cell>
- <cell>44</cell>
+ <cell>45</cell>
  <cell>0</cell>
  <cell>0</cell>
 </row>
@@ -398,7 +398,7 @@
  <cell> 3.30v</cell>
  <cell> N/A</cell>
  <cell> 31</cell>
- <cell> 44</cell>
+ <cell> 45</cell>
  <cell> 0</cell>
 </row>
 </table>

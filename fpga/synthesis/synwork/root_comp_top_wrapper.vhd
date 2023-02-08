@@ -1,6 +1,6 @@
 --
 -- Synopsys
--- Vhdl wrapper for top level design, written on Wed Feb  8 12:03:19 2023
+-- Vhdl wrapper for top level design, written on Wed Feb  8 15:27:54 2023
 --
 library ieee;
 use ieee.std_logic_1164.all;
@@ -82,7 +82,8 @@ entity wrapper_for_root is
       STAMP6_CS_TEMP : out std_logic;
       STAMP6_MOSI : out std_logic;
       STAMP6_SCLK : out std_logic;
-      TM_TXD : out std_logic
+      TM_TXD : out std_logic;
+      IO_WP : in std_logic
    );
 end wrapper_for_root;
 
@@ -165,7 +166,8 @@ component root
    STAMP6_CS_TEMP : out std_logic;
    STAMP6_MOSI : out std_logic;
    STAMP6_SCLK : out std_logic;
-   TM_TXD : out std_logic
+   TM_TXD : out std_logic;
+   IO_WP : inout std_logic
  );
 end component;
 
@@ -245,6 +247,7 @@ signal tmp_STAMP6_CS_TEMP : std_logic;
 signal tmp_STAMP6_MOSI : std_logic;
 signal tmp_STAMP6_SCLK : std_logic;
 signal tmp_TM_TXD : std_logic;
+signal tmp_IO_WP : std_logic;
 
 begin
 
@@ -400,6 +403,8 @@ STAMP6_SCLK <= tmp_STAMP6_SCLK;
 
 TM_TXD <= tmp_TM_TXD;
 
+tmp_IO_WP <= IO_WP;
+
 
 
 u1:   root port map (
@@ -478,6 +483,7 @@ u1:   root port map (
 		STAMP6_CS_TEMP => tmp_STAMP6_CS_TEMP,
 		STAMP6_MOSI => tmp_STAMP6_MOSI,
 		STAMP6_SCLK => tmp_STAMP6_SCLK,
-		TM_TXD => tmp_TM_TXD
+		TM_TXD => tmp_TM_TXD,
+		IO_WP => tmp_IO_WP
        );
 end rtl;

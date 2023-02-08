@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- Created by SmartDesign Wed Feb  8 12:00:47 2023
+-- Created by SmartDesign Wed Feb  8 15:26:02 2023
 -- Version: 2021.3 2021.3.0.10
 ----------------------------------------------------------------------
 
@@ -27,6 +27,7 @@ entity root_sb is
         GPIO_1_F2M         : in  std_logic;
         GPIO_2_F2M         : in  std_logic;
         GPIO_3_F2M         : in  std_logic;
+        GPIO_4_F2M         : in  std_logic;
         MMUART_0_RXD_F2M   : in  std_logic;
         MMUART_1_RXD_F2M   : in  std_logic;
         SPI_0_CLK_F2M      : in  std_logic;
@@ -66,6 +67,8 @@ entity root_sb is
         GPIO_29_M2F        : out std_logic;
         GPIO_30_M2F        : out std_logic;
         GPIO_31_M2F        : out std_logic;
+        GPIO_3_M2F         : out std_logic;
+        GPIO_3_M2F_OE      : out std_logic;
         INIT_DONE          : out std_logic;
         MMUART_0_TXD_M2F   : out std_logic;
         MMUART_1_TXD_M2F   : out std_logic;
@@ -255,6 +258,7 @@ component root_sb_MSS
         GPIO_1_F2M             : in  std_logic;
         GPIO_2_F2M             : in  std_logic;
         GPIO_3_F2M             : in  std_logic;
+        GPIO_4_F2M             : in  std_logic;
         MCCC_CLK_BASE          : in  std_logic;
         MCCC_CLK_BASE_PLL_LOCK : in  std_logic;
         MMUART_0_RXD_F2M       : in  std_logic;
@@ -284,6 +288,8 @@ component root_sb_MSS
         GPIO_29_M2F            : out std_logic;
         GPIO_30_M2F            : out std_logic;
         GPIO_31_M2F            : out std_logic;
+        GPIO_3_M2F             : out std_logic;
+        GPIO_3_M2F_OE          : out std_logic;
         MMUART_0_TXD_M2F       : out std_logic;
         MMUART_1_TXD_M2F       : out std_logic;
         MSS_RESET_N_M2F        : out std_logic;
@@ -311,6 +317,8 @@ signal FABOSC_0_RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC : std_logic;
 signal FABOSC_0_RCOSC_25_50MHZ_O2F                        : std_logic;
 signal FIC_0_CLK_net_0                                    : std_logic;
 signal FIC_0_LOCK_net_0                                   : std_logic;
+signal GPIO_3_M2F_net_0                                   : std_logic;
+signal GPIO_3_M2F_OE_net_0                                : std_logic;
 signal GPIO_21_M2F_net_0                                  : std_logic;
 signal GPIO_22_M2F_net_0                                  : std_logic;
 signal GPIO_26_M2F_net_0                                  : std_logic;
@@ -384,6 +392,8 @@ signal FIC_0_LOCK_net_1                                   : std_logic;
 signal MSS_READY_net_1                                    : std_logic;
 signal MMUART_0_TXD_M2F_net_1                             : std_logic;
 signal MMUART_1_TXD_M2F_net_1                             : std_logic;
+signal GPIO_3_M2F_net_1                                   : std_logic;
+signal GPIO_3_M2F_OE_net_1                                : std_logic;
 signal GPIO_21_M2F_net_1                                  : std_logic;
 signal GPIO_22_M2F_net_1                                  : std_logic;
 signal GPIO_26_M2F_net_1                                  : std_logic;
@@ -523,6 +533,10 @@ begin
  MMUART_0_TXD_M2F             <= MMUART_0_TXD_M2F_net_1;
  MMUART_1_TXD_M2F_net_1       <= MMUART_1_TXD_M2F_net_0;
  MMUART_1_TXD_M2F             <= MMUART_1_TXD_M2F_net_1;
+ GPIO_3_M2F_net_1             <= GPIO_3_M2F_net_0;
+ GPIO_3_M2F                   <= GPIO_3_M2F_net_1;
+ GPIO_3_M2F_OE_net_1          <= GPIO_3_M2F_OE_net_0;
+ GPIO_3_M2F_OE                <= GPIO_3_M2F_OE_net_1;
  GPIO_21_M2F_net_1            <= GPIO_21_M2F_net_0;
  GPIO_21_M2F                  <= GPIO_21_M2F_net_1;
  GPIO_22_M2F_net_1            <= GPIO_22_M2F_net_0;
@@ -811,6 +825,7 @@ root_sb_MSS_0 : root_sb_MSS
         GPIO_1_F2M             => GPIO_1_F2M,
         GPIO_2_F2M             => GPIO_2_F2M,
         GPIO_3_F2M             => GPIO_3_F2M,
+        GPIO_4_F2M             => GPIO_4_F2M,
         SPI_0_DI_F2M           => SPI_0_DI_F2M,
         SPI_0_CLK_F2M          => SPI_0_CLK_F2M,
         SPI_0_SS0_F2M          => SPI_0_SS0_F2M,
@@ -825,6 +840,8 @@ root_sb_MSS_0 : root_sb_MSS
         MMUART_0_TXD_M2F       => MMUART_0_TXD_M2F_net_0,
         MMUART_1_TXD_M2F       => MMUART_1_TXD_M2F_net_0,
         MSS_RESET_N_M2F        => root_sb_MSS_TMP_0_MSS_RESET_N_M2F,
+        GPIO_3_M2F             => GPIO_3_M2F_net_0,
+        GPIO_3_M2F_OE          => GPIO_3_M2F_OE_net_0,
         GPIO_21_M2F            => GPIO_21_M2F_net_0,
         GPIO_22_M2F            => GPIO_22_M2F_net_0,
         GPIO_26_M2F            => GPIO_26_M2F_net_0,

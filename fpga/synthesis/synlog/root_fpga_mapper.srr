@@ -1,4 +1,4 @@
-# Wed Feb  8 12:03:25 2023
+# Wed Feb  8 15:28:00 2023
 
 
 Copyright (C) 1994-2021 Synopsys, Inc.
@@ -123,7 +123,7 @@ Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:06s; CP
 Finished preparing to map (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 195MB peak: 196MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:09s; Memory used current: 241MB peak: 241MB)
+Finished technology mapping (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 240MB peak: 240MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
@@ -140,9 +140,9 @@ Timing driven replication report
 Added 0 Registers via timing driven replication
 Added 18 LUTs via timing driven replication
 
-   4		0h:00m:11s		    -1.62ns		3332 /      2096
-   5		0h:00m:11s		    -1.46ns		3333 /      2096
-   6		0h:00m:11s		    -1.25ns		3333 /      2096
+   4		0h:00m:10s		    -1.62ns		3332 /      2096
+   5		0h:00m:10s		    -1.46ns		3333 /      2096
+   6		0h:00m:10s		    -1.25ns		3333 /      2096
 @N: FX271 :"b:\hermess_spsoftware\firmware\fpga\hdl\stamp.vhd":440:12:440:13|Replicating instance STAMP1.status_async_cycles_14_axb_0 (in view: work.root(rtl)) with 2 loads 1 time(s) to improve timing.
 @N: FX271 :"b:\hermess_spsoftware\firmware\fpga\hdl\stamp.vhd":440:12:440:13|Replicating instance STAMP2.status_async_cycles_14_axb_0 (in view: work.root(rtl)) with 2 loads 1 time(s) to improve timing.
 @N: FX271 :"b:\hermess_spsoftware\firmware\fpga\hdl\stamp.vhd":440:12:440:13|Replicating instance STAMP3.status_async_cycles_14_axb_0 (in view: work.root(rtl)) with 2 loads 1 time(s) to improve timing.
@@ -154,7 +154,7 @@ Added 0 Registers via timing driven replication
 Added 6 LUTs via timing driven replication
 
 
-   7		0h:00m:11s		    -1.25ns		3339 /      2096
+   7		0h:00m:10s		    -1.25ns		3339 /      2096
 @N: FP130 |Promoting Net LED_FPGA_LOADED_arst on CLKINT  I_1084 
 @N: FP130 |Promoting Net MSS.CORERESETP_0.sm0_areset_n_clk_base on CLKINT  I_1085 
 
@@ -163,10 +163,10 @@ Added 0 Cells via replication
 	Added 0 Sequential Cells via replication
 	Added 0 Combinational Cells via replication
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:00m:12s; Memory used current: 243MB peak: 243MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 243MB peak: 243MB)
 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:00m:12s; Memory used current: 243MB peak: 244MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:12s; Memory used current: 243MB peak: 244MB)
 
 
 
@@ -191,7 +191,7 @@ Clock Tree ID     Driving Element                   Drive Element Type     Fanou
 ##### END OF CLOCK OPTIMIZATION REPORT ######]
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:13s; Memory used current: 200MB peak: 244MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:00m:12s; Memory used current: 200MB peak: 244MB)
 
 Writing Analyst data base B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\synwork\root_m.srm
 
@@ -213,13 +213,13 @@ Writing Verilog Simulation files
 @N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
 @N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
 
-Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:15s; Memory used current: 241MB peak: 244MB)
+Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:14s; Memory used current: 241MB peak: 244MB)
 
 
-Finished Writing Netlists (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:15s; Memory used current: 241MB peak: 244MB)
+Finished Writing Netlists (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:14s; Memory used current: 241MB peak: 244MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:15s; Memory used current: 292MB peak: 292MB)
+Start final timing analysis (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:14s; Memory used current: 236MB peak: 244MB)
 
 @W: MT246 :"b:\hermess_spsoftware\firmware\fpga\component\work\root_sb\ccc_0\root_sb_ccc_0_fccc.vhd":106:4:106:11|Blackbox CCC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @W: MT420 |Found inferred clock root_sb_CCC_0_FCCC|GL0_net_inferred_clock with period 10.00ns. Please declare a user-defined clock on net MSS.CCC_0.GL0_net.
@@ -227,7 +227,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:0
 
 
 ##### START OF TIMING REPORT #####[
-# Timing report written on Wed Feb  8 12:03:41 2023
+# Timing report written on Wed Feb  8 15:28:15 2023
 #
 
 
@@ -596,10 +596,10 @@ Path delay compensated for clock skew. Clock skew is added to clock-to-out value
 
 Timing exceptions that could not be applied
 
-Finished final timing analysis (Real Time elapsed 0h:00m:16s; CPU Time elapsed 0h:00m:16s; Memory used current: 294MB peak: 294MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:15s; Memory used current: 238MB peak: 244MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:16s; CPU Time elapsed 0h:00m:16s; Memory used current: 294MB peak: 295MB)
+Finished timing report (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:15s; Memory used current: 238MB peak: 244MB)
 
 ---------------------------------------
 Resource Usage Report for root 
@@ -627,10 +627,10 @@ SLE            2096 uses
 
 DSP Blocks:    0 of 22 (0%)
 
-I/O ports: 76
-I/O primitives: 75
+I/O ports: 77
+I/O primitives: 76
 INBUF          31 uses
-OUTBUF         38 uses
+OUTBUF         39 uses
 TRIBUFF        6 uses
 
 
@@ -649,9 +649,9 @@ Total number of LUTs after P&R:  3130 + 0 + 0 + 0 = 3130;
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:16s; CPU Time elapsed 0h:00m:16s; Memory used current: 129MB peak: 295MB)
+At Mapper Exit (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:15s; Memory used current: 73MB peak: 244MB)
 
 Process took 0h:00m:16s realtime, 0h:00m:16s cputime
-# Wed Feb  8 12:03:42 2023
+# Wed Feb  8 15:28:16 2023
 
 ###########################################################]

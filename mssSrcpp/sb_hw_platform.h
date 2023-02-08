@@ -1,8 +1,11 @@
 #ifndef sb_HW_PLATFORM_H_
 #define sb_HW_PLATFORM_H_
 
+#ifndef PROTOTYP_SPU
+#define PROTOTYP_SPU
+#endif
 
-#define SPU_VERSION                     "1.3.0"
+#define SPU_VERSION                     "1.3.1"
 
 /*-----------------------------------------------------------------------------
 * GPIO PORTS
@@ -16,6 +19,8 @@
 #define IN_RXSM_SOE                     1
 #define IN_RXSM_SODS                    2
 #define IN_WP                           3
+#define FLASH_CS1                       21
+#define FLASH_CS2                       22
 #define OUT_DAPI_CTS                    26
 #define OUT_ADC_START                   28
 #define LED_HB_MEMSYNC                  29

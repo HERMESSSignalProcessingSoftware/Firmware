@@ -1,15 +1,15 @@
 C:\Microsemi\Libero_SoC_v2021.3\SynplifyPro\bin64\m_generic.exe  -mp  4  -prjfile  B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\scratchproject.prs  -prodtype  synplify_pro  -encrypt  -pro  -rundir  B:\HERMESS_SPSoftware\Firmware\fpga\synthesis   -part M2S010  -package VF400  -grade STD    -continue_on_error -report_preserve_cdc -min_cdc_sync_flops 2 -unsafe_cdc_netlist_property 0 -maxfan 10000 -infer_seqShift -clock_globalthreshold 2 -async_globalthreshold 12 -globalthreshold 5000 -low_power_ram_decomp 0 -seqshift_to_uram 0 -opcond COMTC -report_path 4000 -disable_ramindex 0 -rep_clkint_driver 1 -microsemi_enhanced_flow 1 -resolveMultipleDriver -ternary_adder_decomp 66 -pack_uram_addr_reg 1 -RWCheckOnRam 0 -local_tmr_rename -summaryfile B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\synlog\report\root_premap.xml -merge_inferred_clocks 0  -top_level_module  work.root  -implementation  synthesis  -ovm  B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\root.vm  -conchk_prepass  B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\root_cck.rpt   -freq 100.000   -tcl  B:\HERMESS_SPSoftware\Firmware\fpga\designer\root\synthesis.fdc  B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\synwork\root_mult.srs  -flow prepass  -gcc_prepass  -osrd  B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\synwork\root_prem.srd  -qsap  B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\root.sap  -devicelib  C:\Microsemi\Libero_SoC_v2021.3\SynplifyPro\lib\generic\smartfusion2.v  -ologparam  B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\syntmp\root.plg  -osyn  B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\synwork\root_prem.srd  -prjdir  B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\  -prjname  root_syn  -log  B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\synlog\root_premap.srr  -sn  2021.03  -jobname  "premap" 
 relcom:C:\Microsemi\Libero_SoC_v2021.3\SynplifyPro\bin64\m_generic.exe -mp 4 -prjfile ..\scratchproject.prs -prodtype synplify_pro -encrypt -pro -rundir ..\..\synthesis -part M2S010 -package VF400 -grade STD -continue_on_error -report_preserve_cdc -min_cdc_sync_flops 2 -unsafe_cdc_netlist_property 0 -maxfan 10000 -infer_seqShift -clock_globalthreshold 2 -async_globalthreshold 12 -globalthreshold 5000 -low_power_ram_decomp 0 -seqshift_to_uram 0 -opcond COMTC -report_path 4000 -disable_ramindex 0 -rep_clkint_driver 1 -microsemi_enhanced_flow 1 -resolveMultipleDriver -ternary_adder_decomp 66 -pack_uram_addr_reg 1 -RWCheckOnRam 0 -local_tmr_rename -summaryfile ..\synlog\report\root_premap.xml -merge_inferred_clocks 0 -top_level_module work.root -implementation synthesis -ovm ..\root.vm -conchk_prepass ..\root_cck.rpt -freq 100.000 -tcl ..\..\designer\root\synthesis.fdc ..\synwork\root_mult.srs -flow prepass -gcc_prepass -osrd ..\synwork\root_prem.srd -qsap ..\root.sap -devicelib C:\Microsemi\Libero_SoC_v2021.3\SynplifyPro\lib\generic\smartfusion2.v -ologparam root.plg -osyn ..\synwork\root_prem.srd -prjdir ..\ -prjname root_syn -log ..\synlog\root_premap.srr -sn 2021.03 -jobname "premap"
-rc:1 success:1 runtime:4
+rc:1 success:1 runtime:3
 file:..\scratchproject.prs|io:o|time:1675854187|size:4100|exec:0|csum:
-file:..\root.vm|io:o|time:1675853772|size:1407612|exec:0|csum:
-file:..\root_cck.rpt|io:o|time:1675854204|size:4504|exec:0|csum:
-file:..\..\designer\root\synthesis.fdc|io:i|time:1675854185|size:54|exec:0|csum:D29604BF47866EE51FF737BD444AE4F2
-file:..\synwork\root_mult.srs|io:i|time:1675854201|size:9851|exec:0|csum:D83318D67C52FE036ED861C18A7253BC
-file:..\synwork\root_prem.srd|io:o|time:1675854204|size:134724|exec:0|csum:
-file:..\root.sap|io:o|time:1675854205|size:7776|exec:0|csum:
+file:..\root.vm|io:o|time:1675866154|size:1407524|exec:0|csum:
+file:..\root_cck.rpt|io:o|time:1675866479|size:4560|exec:0|csum:
+file:..\..\designer\root\synthesis.fdc|io:i|time:1675866461|size:54|exec:0|csum:7CA6511C838B0E5AB656CE50A34DE9AC
+file:..\synwork\root_mult.srs|io:i|time:1675866477|size:9905|exec:0|csum:28E07BC256B97636A1BBCFDBA55D9630
+file:..\synwork\root_prem.srd|io:o|time:1675866479|size:136947|exec:0|csum:
+file:..\root.sap|io:o|time:1675866480|size:7776|exec:0|csum:
 file:C:\Microsemi\Libero_SoC_v2021.3\SynplifyPro\lib\generic\smartfusion2.v|io:i|time:1636456239|size:16415|exec:0|csum:9BAA6208AF4C76CF2C10809775E94DAF
-file:root.plg|io:o|time:1675854202|size:0|exec:0|csum:
-file:..\synwork\root_prem.srd|io:o|time:1675854204|size:134724|exec:0|csum:
-file:..\synlog\root_premap.srr|io:o|time:1675854205|size:21635|exec:0|csum:
+file:root.plg|io:o|time:1675866477|size:0|exec:0|csum:
+file:..\synwork\root_prem.srd|io:o|time:1675866479|size:136947|exec:0|csum:
+file:..\synlog\root_premap.srr|io:o|time:1675866480|size:21635|exec:0|csum:
 file:C:\Microsemi\Libero_SoC_v2021.3\SynplifyPro\bin64\m_generic.exe|io:i|time:1636456230|size:46264832|exec:1|csum:934281F8F08B94CBC7CFBDCAFE95F565

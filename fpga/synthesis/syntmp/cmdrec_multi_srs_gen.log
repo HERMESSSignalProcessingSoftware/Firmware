@@ -1,7 +1,7 @@
 C:\Microsemi\Libero_SoC_v2021.3\SynplifyPro\bin64\syn_nfilter.exe  -link  -top  work.root  -multisrs  B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\synwork\root_comp.srs  -osyn  B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\synwork\root_mult.srs  -log  B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\synlog\root_multi_srs_gen.srr 
 relcom:C:\Microsemi\Libero_SoC_v2021.3\SynplifyPro\bin64\syn_nfilter.exe -link -top work.root -multisrs ..\synwork\root_comp.srs -osyn ..\synwork\root_mult.srs -log ..\synlog\root_multi_srs_gen.srr
-rc:0 success:1 runtime:0
-file:..\synwork\root_comp.srs|io:i|time:1675854199|size:96427|exec:0|csum:87A07A0A6F2F80D40067BF2CDD4940F7
-file:..\synwork\root_mult.srs|io:o|time:1675854201|size:9851|exec:0|csum:
-file:..\synlog\root_multi_srs_gen.srr|io:o|time:1675854201|size:1249|exec:0|csum:
+rc:0 success:1 runtime:1
+file:..\synwork\root_comp.srs|io:i|time:1675866475|size:96589|exec:0|csum:A879F76BC6E17760451799D6F3EE71CB
+file:..\synwork\root_mult.srs|io:o|time:1675866477|size:9905|exec:0|csum:
+file:..\synlog\root_multi_srs_gen.srr|io:o|time:1675866477|size:1155|exec:0|csum:
 file:C:\Microsemi\Libero_SoC_v2021.3\SynplifyPro\bin64\syn_nfilter.exe|io:i|time:1636456230|size:8899584|exec:1|csum:05E28BA145955944CDBFD3C078A1CBAA

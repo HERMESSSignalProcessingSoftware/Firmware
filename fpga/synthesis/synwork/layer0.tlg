@@ -20,7 +20,7 @@ Running optimization stage 1 on spi_master .......
 @A: CL282 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Feedback mux created for signal slave[0:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
 @A: CL282 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Feedback mux created for signal clk_ratio[31:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
 @A: CL282 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Feedback mux created for signal assert_data. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-Finished optimization stage 1 on spi_master (CPU Time 0h:00m:00s, Memory Used current: 106MB peak: 106MB)
+Finished optimization stage 1 on spi_master (CPU Time 0h:00m:00s, Memory Used current: 105MB peak: 106MB)
 Post processing for work.stamp.architecture_stamp
 Running optimization stage 1 on STAMP .......
 @A: CL282 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\STAMP.vhd":199:8:199:9|Feedback mux created for signal PRDATA[31:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
@@ -113,10 +113,10 @@ Finished optimization stage 1 on CoreResetP (CPU Time 0h:00m:00s, Memory Used cu
 @N: CD630 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3_muxptob3.vhd":33:7:33:23|Synthesizing coreapb3_lib.coreapb3_muxptob3.coreapb3_muxptob3_arch.
 Post processing for coreapb3_lib.coreapb3_muxptob3.coreapb3_muxptob3_arch
 Running optimization stage 1 on COREAPB3_MUXPTOB3 .......
-Finished optimization stage 1 on COREAPB3_MUXPTOB3 (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 113MB)
+Finished optimization stage 1 on COREAPB3_MUXPTOB3 (CPU Time 0h:00m:00s, Memory Used current: 112MB peak: 113MB)
 Post processing for coreapb3_lib.coreapb3.coreapb3_arch
 Running optimization stage 1 on CoreAPB3 .......
-Finished optimization stage 1 on CoreAPB3 (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 113MB)
+Finished optimization stage 1 on CoreAPB3 (CPU Time 0h:00m:00s, Memory Used current: 112MB peak: 113MB)
 @N: CD630 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root_sb\CCC_0\root_sb_CCC_0_FCCC.vhd":8:7:8:24|Synthesizing work.root_sb_ccc_0_fccc.def_arch.
 @N: CD630 :"C:\Microsemi\Libero_SoC_v2021.3\SynplifyPro\lib\generic\smartfusion2.vhd":798:10:798:12|Synthesizing smartfusion2.ccc.syn_black_box.
 Post processing for smartfusion2.ccc.syn_black_box
@@ -126,15 +126,15 @@ Post processing for smartfusion2.gnd.syn_black_box
 Post processing for smartfusion2.vcc.syn_black_box
 Post processing for work.root_sb_ccc_0_fccc.def_arch
 Running optimization stage 1 on root_sb_CCC_0_FCCC .......
-Finished optimization stage 1 on root_sb_CCC_0_FCCC (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 113MB)
+Finished optimization stage 1 on root_sb_CCC_0_FCCC (CPU Time 0h:00m:00s, Memory Used current: 112MB peak: 113MB)
 Post processing for work.root_sb.rtl
 Running optimization stage 1 on root_sb .......
-Finished optimization stage 1 on root_sb (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 113MB)
+Finished optimization stage 1 on root_sb (CPU Time 0h:00m:00s, Memory Used current: 112MB peak: 113MB)
 @N: CD630 :"C:\Microsemi\Libero_SoC_v2021.3\SynplifyPro\lib\generic\smartfusion2.vhd":231:10:231:13|Synthesizing smartfusion2.and3.syn_black_box.
 Post processing for smartfusion2.and3.syn_black_box
 Post processing for work.root.rtl
 Running optimization stage 1 on root .......
-Finished optimization stage 1 on root (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 113MB)
+Finished optimization stage 1 on root (CPU Time 0h:00m:00s, Memory Used current: 112MB peak: 113MB)
 Running optimization stage 2 on root_sb_CCC_0_FCCC .......
 Finished optimization stage 2 on root_sb_CCC_0_FCCC (CPU Time 0h:00m:00s, Memory Used current: 111MB peak: 113MB)
 Running optimization stage 2 on COREAPB3_MUXPTOB3 .......
@@ -250,14 +250,14 @@ State machine has 7 reachable states with original encodings of:
 @N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":186:4:186:24|Input SOFT_SDIF3_CORE_RESET is unused.
 @N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":190:4:190:26|Input SOFT_SDIF0_0_CORE_RESET is unused.
 @N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":191:4:191:26|Input SOFT_SDIF0_1_CORE_RESET is unused.
-Finished optimization stage 2 on CoreResetP (CPU Time 0h:00m:00s, Memory Used current: 112MB peak: 114MB)
+Finished optimization stage 2 on CoreResetP (CPU Time 0h:00m:00s, Memory Used current: 111MB peak: 114MB)
 Running optimization stage 2 on root_sb_FABOSC_0_OSC .......
 @N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root_sb\FABOSC_0\root_sb_FABOSC_0_OSC.vhd":10:10:10:12|Input XTL is unused.
-Finished optimization stage 2 on root_sb_FABOSC_0_OSC (CPU Time 0h:00m:00s, Memory Used current: 112MB peak: 114MB)
+Finished optimization stage 2 on root_sb_FABOSC_0_OSC (CPU Time 0h:00m:00s, Memory Used current: 111MB peak: 114MB)
 Running optimization stage 2 on root_sb_MSS .......
-Finished optimization stage 2 on root_sb_MSS (CPU Time 0h:00m:00s, Memory Used current: 112MB peak: 114MB)
+Finished optimization stage 2 on root_sb_MSS (CPU Time 0h:00m:00s, Memory Used current: 111MB peak: 114MB)
 Running optimization stage 2 on root_sb .......
-Finished optimization stage 2 on root_sb (CPU Time 0h:00m:00s, Memory Used current: 112MB peak: 114MB)
+Finished optimization stage 2 on root_sb (CPU Time 0h:00m:00s, Memory Used current: 111MB peak: 114MB)
 Running optimization stage 2 on spi_master .......
 @W: CL279 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Pruning register bits 4 to 1 of last_bit_rx(5 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
 Finished optimization stage 2 on spi_master (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 137MB)

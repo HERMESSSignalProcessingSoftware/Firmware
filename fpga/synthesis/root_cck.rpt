@@ -13,7 +13,7 @@ Hostname: DESKTOP-NH8R733
 
 Implementation : synthesis
 
-# Written on Wed Feb  8 12:03:24 2023
+# Written on Wed Feb  8 15:27:59 2023
 
 ##### DESIGN INFO #######################################################
 
@@ -62,6 +62,8 @@ p:IN_RXSM_LO
 p:IN_RXSM_SODS
 p:IN_RXSM_SOE
 p:IN_WP
+p:IO_WP (bidir end point)
+p:IO_WP (bidir start point)
 p:LED_FPGA_LOADED
 p:LED_HB_MEMSYNC
 p:LED_HB_MSS

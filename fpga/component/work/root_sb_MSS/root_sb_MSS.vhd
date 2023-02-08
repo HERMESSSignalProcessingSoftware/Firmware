@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- Created by SmartDesign Wed Feb  8 12:00:41 2023
+-- Created by SmartDesign Wed Feb  8 15:25:57 2023
 -- Version: 2021.3 2021.3.0.10
 ----------------------------------------------------------------------
 
@@ -28,6 +28,7 @@ entity root_sb_MSS is
         GPIO_1_F2M             : in  std_logic;
         GPIO_2_F2M             : in  std_logic;
         GPIO_3_F2M             : in  std_logic;
+        GPIO_4_F2M             : in  std_logic;
         MCCC_CLK_BASE          : in  std_logic;
         MCCC_CLK_BASE_PLL_LOCK : in  std_logic;
         MMUART_0_RXD_F2M       : in  std_logic;
@@ -57,6 +58,8 @@ entity root_sb_MSS is
         GPIO_29_M2F            : out std_logic;
         GPIO_30_M2F            : out std_logic;
         GPIO_31_M2F            : out std_logic;
+        GPIO_3_M2F             : out std_logic;
+        GPIO_3_M2F_OE          : out std_logic;
         MMUART_0_TXD_M2F       : out std_logic;
         MMUART_1_TXD_M2F       : out std_logic;
         MSS_RESET_N_M2F        : out std_logic;
@@ -593,6 +596,8 @@ signal FIC_2_APB_MASTER_0_PENABLE       : std_logic;
 signal FIC_2_APB_MASTER_0_PSELx         : std_logic;
 signal FIC_2_APB_MASTER_0_PWDATA        : std_logic_vector(31 downto 0);
 signal FIC_2_APB_MASTER_0_PWRITE        : std_logic;
+signal GPIO_3_M2F_net_0                 : std_logic;
+signal GPIO_3_M2F_OE_net_0              : std_logic;
 signal GPIO_21_M2F_net_0                : std_logic;
 signal GPIO_22_M2F_net_0                : std_logic;
 signal GPIO_26_M2F_net_0                : std_logic;
@@ -610,6 +615,8 @@ signal SPI_0_SS0_M2F_OE_net_0           : std_logic;
 signal MMUART_0_TXD_M2F_net_1           : std_logic;
 signal MMUART_1_TXD_M2F_net_1           : std_logic;
 signal MSS_RESET_N_M2F_net_1            : std_logic;
+signal GPIO_3_M2F_net_1                 : std_logic;
+signal GPIO_3_M2F_OE_net_1              : std_logic;
 signal GPIO_21_M2F_net_1                : std_logic;
 signal GPIO_22_M2F_net_1                : std_logic;
 signal GPIO_26_M2F_net_1                : std_logic;
@@ -716,6 +723,10 @@ begin
  MMUART_1_TXD_M2F                 <= MMUART_1_TXD_M2F_net_1;
  MSS_RESET_N_M2F_net_1            <= MSS_RESET_N_M2F_net_0;
  MSS_RESET_N_M2F                  <= MSS_RESET_N_M2F_net_1;
+ GPIO_3_M2F_net_1                 <= GPIO_3_M2F_net_0;
+ GPIO_3_M2F                       <= GPIO_3_M2F_net_1;
+ GPIO_3_M2F_OE_net_1              <= GPIO_3_M2F_OE_net_0;
+ GPIO_3_M2F_OE                    <= GPIO_3_M2F_OE_net_1;
  GPIO_21_M2F_net_1                <= GPIO_21_M2F_net_0;
  GPIO_21_M2F                      <= GPIO_21_M2F_net_1;
  GPIO_22_M2F_net_1                <= GPIO_22_M2F_net_0;
@@ -847,7 +858,7 @@ MSS_ADLIB_INST : MSS_010
         MGPIO30B_F2H_GPIN                       => VCC_net, -- tied to '1' from definition
         MGPIO31B_F2H_GPIN                       => VCC_net, -- tied to '1' from definition
         MGPIO3A_F2H_GPIN                        => GPIO_3_F2M,
-        MGPIO4A_F2H_GPIN                        => VCC_net, -- tied to '1' from definition
+        MGPIO4A_F2H_GPIN                        => GPIO_4_F2M,
         MGPIO5A_F2H_GPIN                        => VCC_net, -- tied to '1' from definition
         MGPIO6A_F2H_GPIN                        => VCC_net, -- tied to '1' from definition
         MGPIO7A_F2H_GPIN                        => VCC_net, -- tied to '1' from definition
@@ -991,8 +1002,8 @@ MSS_ADLIB_INST : MSS_010
         SPI1_SS7_MGPIO24A_IN                    => GND_net,
         USBC_XCLK_IN                            => GND_net,
         -- Outputs
-        CAN_RXBUS_MGPIO3A_H2F_A                 => OPEN,
-        CAN_RXBUS_MGPIO3A_H2F_B                 => OPEN,
+        CAN_RXBUS_MGPIO3A_H2F_A                 => GPIO_3_M2F_OE_net_0,
+        CAN_RXBUS_MGPIO3A_H2F_B                 => GPIO_3_M2F_net_0,
         CAN_TX_EBL_MGPIO4A_H2F_A                => OPEN,
         CAN_TX_EBL_MGPIO4A_H2F_B                => OPEN,
         CAN_TXBUS_MGPIO2A_H2F_A                 => OPEN,

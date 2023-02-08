@@ -3,7 +3,7 @@
 #OS: Windows 8 6.2
 #Hostname: DESKTOP-NH8R733
 
-# Wed Feb  8 12:03:07 2023
+# Wed Feb  8 15:27:43 2023
 
 #Implementation: synthesis
 
@@ -43,7 +43,21 @@ Synopsys VHDL Compiler, Version comp202103synp2, Build 168R, Built Oct 12 2021 0
 
 @N|Running in 64-bit mode
 @N:"B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root\root.vhd":17:7:17:10|Top entity is set to root.
-Options changed - recompiling
+File B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3_muxptob3.vhd changed - recompiling
+File B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3_iaddr_reg.vhd changed - recompiling
+File B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp_pcie_hotreset.vhd changed - recompiling
+File B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root_sb\CCC_0\root_sb_CCC_0_FCCC.vhd changed - recompiling
+File C:\Microsemi\Libero_SoC_v2021.3\SynplifyPro\lib\generic\smartfusion2.vhd changed - recompiling
+File B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd changed - recompiling
+File B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root_sb_MSS\root_sb_MSS_syn.vhd changed - recompiling
+File B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\components.vhd changed - recompiling
+File B:\HERMESS_SPSoftware\Firmware\fpga\hdl\STAMP.vhd changed - recompiling
+File B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd changed - recompiling
+File B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd changed - recompiling
+File B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root_sb\FABOSC_0\root_sb_FABOSC_0_OSC.vhd changed - recompiling
+File B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root_sb_MSS\root_sb_MSS.vhd changed - recompiling
+File B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root_sb\root_sb.vhd changed - recompiling
+File B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root\root.vhd changed - recompiling
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'B:\HERMESS_SPSoftware\Firmware\fpga\hdl\spi_master.vhd'.
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3_muxptob3.vhd'.
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3_iaddr_reg.vhd'.
@@ -60,7 +74,12 @@ Options changed - recompiling
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root_sb\root_sb.vhd'.
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root\root.vhd'.
 VHDL syntax check successful!
-Options changed - recompiling
+File B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root_sb\CCC_0\root_sb_CCC_0_FCCC.vhd changed - recompiling
+File B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root_sb_MSS\root_sb_MSS_syn.vhd changed - recompiling
+File B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root_sb\FABOSC_0\root_sb_FABOSC_0_OSC.vhd changed - recompiling
+File B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root_sb_MSS\root_sb_MSS.vhd changed - recompiling
+File B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root_sb\root_sb.vhd changed - recompiling
+File B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root\root.vhd changed - recompiling
 @N: CD231 :"C:\Microsemi\Libero_SoC_v2021.3\SynplifyPro\lib\vhd2008\std1164.vhd":888:16:888:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
 @N: CD630 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root\root.vhd":17:7:17:10|Synthesizing work.root.rtl.
 @N: CD630 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\STAMP.vhd":32:7:32:11|Synthesizing work.stamp.architecture_stamp.
@@ -83,7 +102,7 @@ Running optimization stage 1 on spi_master .......
 @A: CL282 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Feedback mux created for signal slave[0:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
 @A: CL282 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Feedback mux created for signal clk_ratio[31:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
 @A: CL282 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Feedback mux created for signal assert_data. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-Finished optimization stage 1 on spi_master (CPU Time 0h:00m:00s, Memory Used current: 106MB peak: 106MB)
+Finished optimization stage 1 on spi_master (CPU Time 0h:00m:00s, Memory Used current: 105MB peak: 106MB)
 Post processing for work.stamp.architecture_stamp
 Running optimization stage 1 on STAMP .......
 @A: CL282 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\STAMP.vhd":199:8:199:9|Feedback mux created for signal PRDATA[31:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
@@ -176,10 +195,10 @@ Finished optimization stage 1 on CoreResetP (CPU Time 0h:00m:00s, Memory Used cu
 @N: CD630 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3_muxptob3.vhd":33:7:33:23|Synthesizing coreapb3_lib.coreapb3_muxptob3.coreapb3_muxptob3_arch.
 Post processing for coreapb3_lib.coreapb3_muxptob3.coreapb3_muxptob3_arch
 Running optimization stage 1 on COREAPB3_MUXPTOB3 .......
-Finished optimization stage 1 on COREAPB3_MUXPTOB3 (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 113MB)
+Finished optimization stage 1 on COREAPB3_MUXPTOB3 (CPU Time 0h:00m:00s, Memory Used current: 112MB peak: 113MB)
 Post processing for coreapb3_lib.coreapb3.coreapb3_arch
 Running optimization stage 1 on CoreAPB3 .......
-Finished optimization stage 1 on CoreAPB3 (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 113MB)
+Finished optimization stage 1 on CoreAPB3 (CPU Time 0h:00m:00s, Memory Used current: 112MB peak: 113MB)
 @N: CD630 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root_sb\CCC_0\root_sb_CCC_0_FCCC.vhd":8:7:8:24|Synthesizing work.root_sb_ccc_0_fccc.def_arch.
 @N: CD630 :"C:\Microsemi\Libero_SoC_v2021.3\SynplifyPro\lib\generic\smartfusion2.vhd":798:10:798:12|Synthesizing smartfusion2.ccc.syn_black_box.
 Post processing for smartfusion2.ccc.syn_black_box
@@ -189,15 +208,15 @@ Post processing for smartfusion2.gnd.syn_black_box
 Post processing for smartfusion2.vcc.syn_black_box
 Post processing for work.root_sb_ccc_0_fccc.def_arch
 Running optimization stage 1 on root_sb_CCC_0_FCCC .......
-Finished optimization stage 1 on root_sb_CCC_0_FCCC (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 113MB)
+Finished optimization stage 1 on root_sb_CCC_0_FCCC (CPU Time 0h:00m:00s, Memory Used current: 112MB peak: 113MB)
 Post processing for work.root_sb.rtl
 Running optimization stage 1 on root_sb .......
-Finished optimization stage 1 on root_sb (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 113MB)
+Finished optimization stage 1 on root_sb (CPU Time 0h:00m:00s, Memory Used current: 112MB peak: 113MB)
 @N: CD630 :"C:\Microsemi\Libero_SoC_v2021.3\SynplifyPro\lib\generic\smartfusion2.vhd":231:10:231:13|Synthesizing smartfusion2.and3.syn_black_box.
 Post processing for smartfusion2.and3.syn_black_box
 Post processing for work.root.rtl
 Running optimization stage 1 on root .......
-Finished optimization stage 1 on root (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 113MB)
+Finished optimization stage 1 on root (CPU Time 0h:00m:00s, Memory Used current: 112MB peak: 113MB)
 Running optimization stage 2 on root_sb_CCC_0_FCCC .......
 Finished optimization stage 2 on root_sb_CCC_0_FCCC (CPU Time 0h:00m:00s, Memory Used current: 111MB peak: 113MB)
 Running optimization stage 2 on COREAPB3_MUXPTOB3 .......
@@ -313,14 +332,14 @@ State machine has 7 reachable states with original encodings of:
 @N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":186:4:186:24|Input SOFT_SDIF3_CORE_RESET is unused.
 @N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":190:4:190:26|Input SOFT_SDIF0_0_CORE_RESET is unused.
 @N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":191:4:191:26|Input SOFT_SDIF0_1_CORE_RESET is unused.
-Finished optimization stage 2 on CoreResetP (CPU Time 0h:00m:00s, Memory Used current: 112MB peak: 114MB)
+Finished optimization stage 2 on CoreResetP (CPU Time 0h:00m:00s, Memory Used current: 111MB peak: 114MB)
 Running optimization stage 2 on root_sb_FABOSC_0_OSC .......
 @N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root_sb\FABOSC_0\root_sb_FABOSC_0_OSC.vhd":10:10:10:12|Input XTL is unused.
-Finished optimization stage 2 on root_sb_FABOSC_0_OSC (CPU Time 0h:00m:00s, Memory Used current: 112MB peak: 114MB)
+Finished optimization stage 2 on root_sb_FABOSC_0_OSC (CPU Time 0h:00m:00s, Memory Used current: 111MB peak: 114MB)
 Running optimization stage 2 on root_sb_MSS .......
-Finished optimization stage 2 on root_sb_MSS (CPU Time 0h:00m:00s, Memory Used current: 112MB peak: 114MB)
+Finished optimization stage 2 on root_sb_MSS (CPU Time 0h:00m:00s, Memory Used current: 111MB peak: 114MB)
 Running optimization stage 2 on root_sb .......
-Finished optimization stage 2 on root_sb (CPU Time 0h:00m:00s, Memory Used current: 112MB peak: 114MB)
+Finished optimization stage 2 on root_sb (CPU Time 0h:00m:00s, Memory Used current: 111MB peak: 114MB)
 Running optimization stage 2 on spi_master .......
 @W: CL279 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Pruning register bits 4 to 1 of last_bit_rx(5 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
 Finished optimization stage 2 on spi_master (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 137MB)
@@ -362,7 +381,7 @@ At c_vhdl Exit (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memor
 Process took 0h:00m:11s realtime, 0h:00m:11s cputime
 
 Process completed successfully.
-# Wed Feb  8 12:03:19 2023
+# Wed Feb  8 15:27:54 2023
 
 ###########################################################]
 ###########################################################[
@@ -383,15 +402,14 @@ Implementation : synthesis
 Synopsys Synopsys Netlist Linker, Version comp202103synp2, Build 168R, Built Oct 12 2021 09:17:10, @
 
 @N|Running in 64-bit mode
-File J:\LiberoSoC\SynplifyPro\bin64\syn_nfilter.exe changed - recompiling
-File C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\synthesis\synwork\layer0.srs changed - recompiling
+File B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\synwork\layer0.srs changed - recompiling
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 97MB peak: 97MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Feb  8 12:03:20 2023
+# Wed Feb  8 15:27:55 2023
 
 ###########################################################]
 
@@ -406,7 +424,7 @@ At c_hdl Exit (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:00m:12s; Memory
 Process took 0h:00m:12s realtime, 0h:00m:12s cputime
 
 Process completed successfully.
-# Wed Feb  8 12:03:20 2023
+# Wed Feb  8 15:27:55 2023
 
 ###########################################################]
 ###########################################################[
@@ -427,20 +445,19 @@ Implementation : synthesis
 Synopsys Synopsys Netlist Linker, Version comp202103synp2, Build 168R, Built Oct 12 2021 09:17:10, @
 
 @N|Running in 64-bit mode
-File J:\LiberoSoC\SynplifyPro\bin64\syn_nfilter.exe changed - recompiling
-File C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\synthesis\synwork\root_comp.srs changed - recompiling
+File B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\synwork\root_comp.srs changed - recompiling
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 99MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Feb  8 12:03:21 2023
+# Wed Feb  8 15:27:57 2023
 
 ###########################################################]
 Premap Report
 
-# Wed Feb  8 12:03:21 2023
+# Wed Feb  8 15:27:57 2023
 
 
 Copyright (C) 1994-2021 Synopsys, Inc.
@@ -471,7 +488,7 @@ See clock summary report "B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\root_scc
 @N: MF248 |Running in 64-bit mode.
 @N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
 
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 136MB)
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 135MB peak: 135MB)
 
 
 Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 136MB)
@@ -480,7 +497,7 @@ Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0
 Start loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 136MB peak: 136MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 137MB peak: 138MB)
+Finished loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 136MB peak: 138MB)
 
 @W: BN132 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1059:8:1059:9|Removing sequential instance MSS.CORERESETP_0.MDDR_DDR_AXI_S_CORE_RESET_N_int because it is equivalent to instance MSS.CORERESETP_0.FDDR_CORE_RESET_N_int. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: MO129 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":703:8:703:9|Sequential instance MSS.CORERESETP_0.SDIF0_PERST_N_q1 is reduced to a combinational gate by constant propagation.
@@ -530,7 +547,7 @@ Finished loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h
 @N: BN362 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":836:8:836:9|Removing sequential instance sdif3_areset_n_q1 (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
 @N: FX1184 |Applying syn_allowed_resources blockrams=21 on top level netlist root 
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 179MB peak: 179MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 178MB peak: 178MB)
 
 
 
@@ -565,7 +582,7 @@ root_sb_FABOSC_0_OSC|RCOSC_25_50MHZ_CCC_inferred_clock     15        MSS.FABOSC_
 Finished Pre Mapping Phase.
 @N: BN225 |Writing default property annotation file B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\root.sap.
 
-Starting constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 177MB peak: 179MB)
+Starting constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 176MB peak: 179MB)
 
 Encoding state machine sm0_state[0:6] (in view: work.CoreResetP(rtl))
 original code -> new code
@@ -662,15 +679,15 @@ Finished constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:0
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:03s; Memory used current: 96MB peak: 184MB)
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 96MB peak: 184MB)
 
 Process took 0h:00m:03s realtime, 0h:00m:03s cputime
-# Wed Feb  8 12:03:25 2023
+# Wed Feb  8 15:28:00 2023
 
 ###########################################################]
 Map & Optimize Report
 
-# Wed Feb  8 12:03:25 2023
+# Wed Feb  8 15:28:00 2023
 
 
 Copyright (C) 1994-2021 Synopsys, Inc.
@@ -795,7 +812,7 @@ Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:06s; CP
 Finished preparing to map (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 195MB peak: 196MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:09s; Memory used current: 241MB peak: 241MB)
+Finished technology mapping (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 240MB peak: 240MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
@@ -812,9 +829,9 @@ Timing driven replication report
 Added 0 Registers via timing driven replication
 Added 18 LUTs via timing driven replication
 
-   4		0h:00m:11s		    -1.62ns		3332 /      2096
-   5		0h:00m:11s		    -1.46ns		3333 /      2096
-   6		0h:00m:11s		    -1.25ns		3333 /      2096
+   4		0h:00m:10s		    -1.62ns		3332 /      2096
+   5		0h:00m:10s		    -1.46ns		3333 /      2096
+   6		0h:00m:10s		    -1.25ns		3333 /      2096
 @N: FX271 :"b:\hermess_spsoftware\firmware\fpga\hdl\stamp.vhd":440:12:440:13|Replicating instance STAMP1.status_async_cycles_14_axb_0 (in view: work.root(rtl)) with 2 loads 1 time(s) to improve timing.
 @N: FX271 :"b:\hermess_spsoftware\firmware\fpga\hdl\stamp.vhd":440:12:440:13|Replicating instance STAMP2.status_async_cycles_14_axb_0 (in view: work.root(rtl)) with 2 loads 1 time(s) to improve timing.
 @N: FX271 :"b:\hermess_spsoftware\firmware\fpga\hdl\stamp.vhd":440:12:440:13|Replicating instance STAMP3.status_async_cycles_14_axb_0 (in view: work.root(rtl)) with 2 loads 1 time(s) to improve timing.
@@ -826,7 +843,7 @@ Added 0 Registers via timing driven replication
 Added 6 LUTs via timing driven replication
 
 
-   7		0h:00m:11s		    -1.25ns		3339 /      2096
+   7		0h:00m:10s		    -1.25ns		3339 /      2096
 @N: FP130 |Promoting Net LED_FPGA_LOADED_arst on CLKINT  I_1084 
 @N: FP130 |Promoting Net MSS.CORERESETP_0.sm0_areset_n_clk_base on CLKINT  I_1085 
 
@@ -835,10 +852,10 @@ Added 0 Cells via replication
 	Added 0 Sequential Cells via replication
 	Added 0 Combinational Cells via replication
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:00m:12s; Memory used current: 243MB peak: 243MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 243MB peak: 243MB)
 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:00m:12s; Memory used current: 243MB peak: 244MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:12s; Memory used current: 243MB peak: 244MB)
 
 
 
@@ -863,7 +880,7 @@ Clock Tree ID     Driving Element                   Drive Element Type     Fanou
 ##### END OF CLOCK OPTIMIZATION REPORT ######]
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:13s; Memory used current: 200MB peak: 244MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:00m:12s; Memory used current: 200MB peak: 244MB)
 
 Writing Analyst data base B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\synwork\root_m.srm
 
@@ -885,13 +902,13 @@ Writing Verilog Simulation files
 @N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
 @N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
 
-Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:15s; Memory used current: 241MB peak: 244MB)
+Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:14s; Memory used current: 241MB peak: 244MB)
 
 
-Finished Writing Netlists (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:15s; Memory used current: 241MB peak: 244MB)
+Finished Writing Netlists (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:14s; Memory used current: 241MB peak: 244MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:15s; Memory used current: 292MB peak: 292MB)
+Start final timing analysis (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:14s; Memory used current: 236MB peak: 244MB)
 
 @W: MT246 :"b:\hermess_spsoftware\firmware\fpga\component\work\root_sb\ccc_0\root_sb_ccc_0_fccc.vhd":106:4:106:11|Blackbox CCC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @W: MT420 |Found inferred clock root_sb_CCC_0_FCCC|GL0_net_inferred_clock with period 10.00ns. Please declare a user-defined clock on net MSS.CCC_0.GL0_net.
@@ -899,7 +916,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:0
 
 
 ##### START OF TIMING REPORT #####[
-# Timing report written on Wed Feb  8 12:03:41 2023
+# Timing report written on Wed Feb  8 15:28:15 2023
 #
 
 
@@ -1268,10 +1285,10 @@ Path delay compensated for clock skew. Clock skew is added to clock-to-out value
 
 Timing exceptions that could not be applied
 
-Finished final timing analysis (Real Time elapsed 0h:00m:16s; CPU Time elapsed 0h:00m:16s; Memory used current: 294MB peak: 294MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:15s; Memory used current: 238MB peak: 244MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:16s; CPU Time elapsed 0h:00m:16s; Memory used current: 294MB peak: 295MB)
+Finished timing report (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:15s; Memory used current: 238MB peak: 244MB)
 
 ---------------------------------------
 Resource Usage Report for root 
@@ -1299,10 +1316,10 @@ SLE            2096 uses
 
 DSP Blocks:    0 of 22 (0%)
 
-I/O ports: 76
-I/O primitives: 75
+I/O ports: 77
+I/O primitives: 76
 INBUF          31 uses
-OUTBUF         38 uses
+OUTBUF         39 uses
 TRIBUFF        6 uses
 
 
@@ -1321,9 +1338,9 @@ Total number of LUTs after P&R:  3130 + 0 + 0 + 0 = 3130;
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:16s; CPU Time elapsed 0h:00m:16s; Memory used current: 129MB peak: 295MB)
+At Mapper Exit (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:15s; Memory used current: 73MB peak: 244MB)
 
 Process took 0h:00m:16s realtime, 0h:00m:16s cputime
-# Wed Feb  8 12:03:42 2023
+# Wed Feb  8 15:28:16 2023
 
 ###########################################################]

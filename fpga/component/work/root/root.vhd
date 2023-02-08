@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- Created by SmartDesign Wed Feb  8 12:02:43 2023
+-- Created by SmartDesign Wed Feb  8 15:27:33 2023
 -- Version: 2021.3 2021.3.0.10
 ----------------------------------------------------------------------
 
@@ -18,83 +18,85 @@ entity root is
     -- Port list
     port(
         -- Inputs
-        DAPI_RXD         : in  std_logic;
-        DEVRST_N         : in  std_logic;
-        F_MISO           : in  std_logic;
-        IN_RXSM_LO       : in  std_logic;
-        IN_RXSM_SODS     : in  std_logic;
-        IN_RXSM_SOE      : in  std_logic;
-        IN_WP            : in  std_logic;
-        STAMP1_DRDY_SGR1 : in  std_logic;
-        STAMP1_DRDY_SGR2 : in  std_logic;
-        STAMP1_DRDY_TEMP : in  std_logic;
-        STAMP1_MISO      : in  std_logic;
-        STAMP2_DRDY_SGR1 : in  std_logic;
-        STAMP2_DRDY_SGR2 : in  std_logic;
-        STAMP2_DRDY_TEMP : in  std_logic;
-        STAMP2_MISO      : in  std_logic;
-        STAMP3_DRDY_SGR1 : in  std_logic;
-        STAMP3_DRDY_SGR2 : in  std_logic;
-        STAMP3_DRDY_TEMP : in  std_logic;
-        STAMP3_MISO      : in  std_logic;
-        STAMP4_DRDY_SGR1 : in  std_logic;
-        STAMP4_DRDY_SGR2 : in  std_logic;
-        STAMP4_DRDY_TEMP : in  std_logic;
-        STAMP4_MISO      : in  std_logic;
-        STAMP5_DRDY_SGR1 : in  std_logic;
-        STAMP5_DRDY_SGR2 : in  std_logic;
-        STAMP5_DRDY_TEMP : in  std_logic;
-        STAMP5_MISO      : in  std_logic;
-        STAMP6_DRDY_SGR1 : in  std_logic;
-        STAMP6_DRDY_SGR2 : in  std_logic;
-        STAMP6_DRDY_TEMP : in  std_logic;
-        STAMP6_MISO      : in  std_logic;
-        TM_RXD           : in  std_logic;
+        DAPI_RXD         : in    std_logic;
+        DEVRST_N         : in    std_logic;
+        F_MISO           : in    std_logic;
+        IN_RXSM_LO       : in    std_logic;
+        IN_RXSM_SODS     : in    std_logic;
+        IN_RXSM_SOE      : in    std_logic;
+        IN_WP            : in    std_logic;
+        STAMP1_DRDY_SGR1 : in    std_logic;
+        STAMP1_DRDY_SGR2 : in    std_logic;
+        STAMP1_DRDY_TEMP : in    std_logic;
+        STAMP1_MISO      : in    std_logic;
+        STAMP2_DRDY_SGR1 : in    std_logic;
+        STAMP2_DRDY_SGR2 : in    std_logic;
+        STAMP2_DRDY_TEMP : in    std_logic;
+        STAMP2_MISO      : in    std_logic;
+        STAMP3_DRDY_SGR1 : in    std_logic;
+        STAMP3_DRDY_SGR2 : in    std_logic;
+        STAMP3_DRDY_TEMP : in    std_logic;
+        STAMP3_MISO      : in    std_logic;
+        STAMP4_DRDY_SGR1 : in    std_logic;
+        STAMP4_DRDY_SGR2 : in    std_logic;
+        STAMP4_DRDY_TEMP : in    std_logic;
+        STAMP4_MISO      : in    std_logic;
+        STAMP5_DRDY_SGR1 : in    std_logic;
+        STAMP5_DRDY_SGR2 : in    std_logic;
+        STAMP5_DRDY_TEMP : in    std_logic;
+        STAMP5_MISO      : in    std_logic;
+        STAMP6_DRDY_SGR1 : in    std_logic;
+        STAMP6_DRDY_SGR2 : in    std_logic;
+        STAMP6_DRDY_TEMP : in    std_logic;
+        STAMP6_MISO      : in    std_logic;
+        TM_RXD           : in    std_logic;
         -- Outputs
-        DAPI_RTS         : out std_logic;
-        DAPI_TXD         : out std_logic;
-        F_CLK            : out std_logic;
-        F_CS1            : out std_logic;
-        F_CS2            : out std_logic;
-        F_MOSI           : out std_logic;
-        LED_FPGA_LOADED  : out std_logic;
-        LED_HB_MEMSYNC   : out std_logic;
-        LED_HB_MSS       : out std_logic;
-        LED_RECORDING    : out std_logic;
-        OUT_ADC_START    : out std_logic;
-        PORT_A           : out std_logic;
-        PORT_B           : out std_logic;
-        STAMP1_CS_SGR1   : out std_logic;
-        STAMP1_CS_SGR2   : out std_logic;
-        STAMP1_CS_TEMP   : out std_logic;
-        STAMP1_MOSI      : out std_logic;
-        STAMP1_SCLK      : out std_logic;
-        STAMP2_CS_SGR1   : out std_logic;
-        STAMP2_CS_SGR2   : out std_logic;
-        STAMP2_CS_TEMP   : out std_logic;
-        STAMP2_MOSI      : out std_logic;
-        STAMP2_SCLK      : out std_logic;
-        STAMP3_CS_SGR1   : out std_logic;
-        STAMP3_CS_SGR2   : out std_logic;
-        STAMP3_CS_TEMP   : out std_logic;
-        STAMP3_MOSI      : out std_logic;
-        STAMP3_SCLK      : out std_logic;
-        STAMP4_CS_SGR1   : out std_logic;
-        STAMP4_CS_SGR2   : out std_logic;
-        STAMP4_CS_TEMP   : out std_logic;
-        STAMP4_MOSI      : out std_logic;
-        STAMP4_SCLK      : out std_logic;
-        STAMP5_CS_SGR1   : out std_logic;
-        STAMP5_CS_SGR2   : out std_logic;
-        STAMP5_CS_TEMP   : out std_logic;
-        STAMP5_MOSI      : out std_logic;
-        STAMP5_SCLK      : out std_logic;
-        STAMP6_CS_SGR1   : out std_logic;
-        STAMP6_CS_SGR2   : out std_logic;
-        STAMP6_CS_TEMP   : out std_logic;
-        STAMP6_MOSI      : out std_logic;
-        STAMP6_SCLK      : out std_logic;
-        TM_TXD           : out std_logic
+        DAPI_RTS         : out   std_logic;
+        DAPI_TXD         : out   std_logic;
+        F_CLK            : out   std_logic;
+        F_CS1            : out   std_logic;
+        F_CS2            : out   std_logic;
+        F_MOSI           : out   std_logic;
+        LED_FPGA_LOADED  : out   std_logic;
+        LED_HB_MEMSYNC   : out   std_logic;
+        LED_HB_MSS       : out   std_logic;
+        LED_RECORDING    : out   std_logic;
+        OUT_ADC_START    : out   std_logic;
+        PORT_A           : out   std_logic;
+        PORT_B           : out   std_logic;
+        STAMP1_CS_SGR1   : out   std_logic;
+        STAMP1_CS_SGR2   : out   std_logic;
+        STAMP1_CS_TEMP   : out   std_logic;
+        STAMP1_MOSI      : out   std_logic;
+        STAMP1_SCLK      : out   std_logic;
+        STAMP2_CS_SGR1   : out   std_logic;
+        STAMP2_CS_SGR2   : out   std_logic;
+        STAMP2_CS_TEMP   : out   std_logic;
+        STAMP2_MOSI      : out   std_logic;
+        STAMP2_SCLK      : out   std_logic;
+        STAMP3_CS_SGR1   : out   std_logic;
+        STAMP3_CS_SGR2   : out   std_logic;
+        STAMP3_CS_TEMP   : out   std_logic;
+        STAMP3_MOSI      : out   std_logic;
+        STAMP3_SCLK      : out   std_logic;
+        STAMP4_CS_SGR1   : out   std_logic;
+        STAMP4_CS_SGR2   : out   std_logic;
+        STAMP4_CS_TEMP   : out   std_logic;
+        STAMP4_MOSI      : out   std_logic;
+        STAMP4_SCLK      : out   std_logic;
+        STAMP5_CS_SGR1   : out   std_logic;
+        STAMP5_CS_SGR2   : out   std_logic;
+        STAMP5_CS_TEMP   : out   std_logic;
+        STAMP5_MOSI      : out   std_logic;
+        STAMP5_SCLK      : out   std_logic;
+        STAMP6_CS_SGR1   : out   std_logic;
+        STAMP6_CS_SGR2   : out   std_logic;
+        STAMP6_CS_TEMP   : out   std_logic;
+        STAMP6_MOSI      : out   std_logic;
+        STAMP6_SCLK      : out   std_logic;
+        TM_TXD           : out   std_logic;
+        -- Inouts
+        IO_WP            : inout std_logic
         );
 end root;
 ----------------------------------------------------------------------
@@ -127,6 +129,7 @@ component root_sb
         GPIO_1_F2M         : in  std_logic;
         GPIO_2_F2M         : in  std_logic;
         GPIO_3_F2M         : in  std_logic;
+        GPIO_4_F2M         : in  std_logic;
         MMUART_0_RXD_F2M   : in  std_logic;
         MMUART_1_RXD_F2M   : in  std_logic;
         SPI_0_CLK_F2M      : in  std_logic;
@@ -166,6 +169,8 @@ component root_sb
         GPIO_29_M2F        : out std_logic;
         GPIO_30_M2F        : out std_logic;
         GPIO_31_M2F        : out std_logic;
+        GPIO_3_M2F         : out std_logic;
+        GPIO_3_M2F_OE      : out std_logic;
         INIT_DONE          : out std_logic;
         MMUART_0_TXD_M2F   : out std_logic;
         MMUART_1_TXD_M2F   : out std_logic;
@@ -219,6 +224,7 @@ signal F_CS1_net_0           : std_logic;
 signal F_CS2_net_0           : std_logic;
 signal F_MOSI_net_0          : std_logic;
 signal IN_WP_net_0           : std_logic;
+signal IO_WP_net_0           : std_logic;
 signal LED_FPGA_LOADED_net_0 : std_logic;
 signal LED_HB_MEMSYNC_net_0  : std_logic;
 signal LED_HB_MSS_net_0      : std_logic;
@@ -348,6 +354,7 @@ signal STAMP3_CS_TEMP_net_1  : std_logic;
 signal LED_HB_MEMSYNC_net_1  : std_logic;
 signal TM_TXD_net_1          : std_logic;
 signal DAPI_RTS_net_1        : std_logic;
+signal IO_WP_net_1           : std_logic;
 ----------------------------------------------------------------------
 -- TiedOff Signals
 ----------------------------------------------------------------------
@@ -479,6 +486,8 @@ begin
  TM_TXD                <= TM_TXD_net_1;
  DAPI_RTS_net_1        <= DAPI_RTS_net_0;
  DAPI_RTS              <= DAPI_RTS_net_1;
+ IO_WP_net_1           <= IO_WP_net_0;
+ IO_WP                 <= IO_WP_net_1;
 ----------------------------------------------------------------------
 -- Bus Interface Nets Assignments - Unequal Pin Widths
 ----------------------------------------------------------------------
@@ -548,7 +557,8 @@ MSS : root_sb
         GPIO_0_F2M         => IN_RXSM_LO,
         GPIO_1_F2M         => IN_RXSM_SOE,
         GPIO_2_F2M         => IN_RXSM_SODS,
-        GPIO_3_F2M         => IN_WP,
+        GPIO_3_F2M         => IO_WP_net_0,
+        GPIO_4_F2M         => IN_WP,
         SPI_0_DI_F2M       => F_MISO,
         SPI_0_CLK_F2M      => GND_net,
         SPI_0_SS0_F2M      => GND_net,
@@ -590,6 +600,8 @@ MSS : root_sb
         MSS_READY          => MSS_MSS_READY,
         MMUART_0_TXD_M2F   => DAPI_TXD_net_0,
         MMUART_1_TXD_M2F   => TM_TXD_net_0,
+        GPIO_3_M2F         => IO_WP_net_0,
+        GPIO_3_M2F_OE      => OPEN,
         GPIO_21_M2F        => F_CS1_net_0,
         GPIO_22_M2F        => F_CS2_net_0,
         GPIO_26_M2F        => DAPI_RTS_net_0,

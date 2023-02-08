@@ -6,7 +6,7 @@
 
 # Family: SmartFusion2 , Die: M2S010 , Package: 144 TQ
 
-# Date generated: Wed Feb  8 12:06:27 2023 
+# Date generated: Wed Feb  8 15:23:40 2023 
 
 
 # 
@@ -42,6 +42,7 @@ set_io DAPI_TXD        \
 set_io F_CLK           \
     -pinname 100       \
     -fixed yes         \
+    -OUT_DRIVE 20      \
     -DIRECTION OUTPUT
 
 
@@ -66,6 +67,7 @@ set_io F_MISO         \
 set_io F_MOSI          \
     -pinname 102       \
     -fixed yes         \
+    -OUT_DRIVE 20      \
     -DIRECTION OUTPUT
 
 
@@ -93,10 +95,11 @@ set_io IN_RXSM_SOE    \
     -DIRECTION INPUT
 
 
-set_io IN_WP          \
+set_io IO_WP          \
     -pinname 30       \
     -fixed yes        \
     -iostd LVCMOS12   \
+    -RES_PULL Up      \
     -DIRECTION INPUT
 
 
