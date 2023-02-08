@@ -2,37 +2,37 @@
 // Written by Synplify Pro 
 // Product Version "R-2021.03M-SP1"
 // Program "Synplify Pro", Mapper "map202103act, Build 148R"
-// Tue Jul 12 21:30:44 2022
+// Wed Feb  8 12:03:40 2023
 //
 // Source file index table:
 // Object locations will have the form <file>:<line>
-// file 0 "\j:\liberosoc\synplifypro\lib\vhd2008\std.vhd "
-// file 1 "\j:\liberosoc\synplifypro\lib\vhd\snps_haps_pkg.vhd "
-// file 2 "\j:\liberosoc\synplifypro\lib\vhd2008\std1164.vhd "
-// file 3 "\j:\liberosoc\synplifypro\lib\vhd2008\std_textio.vhd "
-// file 4 "\j:\liberosoc\synplifypro\lib\vhd2008\numeric.vhd "
-// file 5 "\j:\liberosoc\synplifypro\lib\vhd\umr_capim.vhd "
-// file 6 "\j:\liberosoc\synplifypro\lib\vhd2008\arith.vhd "
-// file 7 "\j:\liberosoc\synplifypro\lib\vhd2008\unsigned.vhd "
-// file 8 "\j:\liberosoc\synplifypro\lib\vhd\hyperents.vhd "
-// file 9 "\c:\users\jl\source\repos\hermess\hermess-firmware\fpga\hdl\spi_master.vhd "
-// file 10 "\c:\users\jl\source\repos\hermess\hermess-firmware\fpga\component\actel\directcore\coreapb3\4.1.100\rtl\vhdl\core\coreapb3_muxptob3.vhd "
-// file 11 "\c:\users\jl\source\repos\hermess\hermess-firmware\fpga\component\actel\directcore\coreapb3\4.1.100\rtl\vhdl\core\coreapb3_iaddr_reg.vhd "
-// file 12 "\c:\users\jl\source\repos\hermess\hermess-firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp_pcie_hotreset.vhd "
-// file 13 "\c:\users\jl\source\repos\hermess\hermess-firmware\fpga\component\work\root_sb\ccc_0\root_sb_ccc_0_fccc.vhd "
-// file 14 "\j:\liberosoc\synplifypro\lib\generic\smartfusion2.vhd "
-// file 15 "\c:\users\jl\source\repos\hermess\hermess-firmware\fpga\component\actel\sgcore\osc\2.0.101\osc_comps.vhd "
-// file 16 "\c:\users\jl\source\repos\hermess\hermess-firmware\fpga\component\work\root_sb_mss\root_sb_mss_syn.vhd "
-// file 17 "\c:\users\jl\source\repos\hermess\hermess-firmware\fpga\component\actel\directcore\coreapb3\4.1.100\rtl\vhdl\core\components.vhd "
-// file 18 "\c:\users\jl\source\repos\hermess\hermess-firmware\fpga\hdl\stamp.vhd "
-// file 19 "\c:\users\jl\source\repos\hermess\hermess-firmware\fpga\component\actel\directcore\coreapb3\4.1.100\rtl\vhdl\core\coreapb3.vhd "
-// file 20 "\c:\users\jl\source\repos\hermess\hermess-firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd "
-// file 21 "\c:\users\jl\source\repos\hermess\hermess-firmware\fpga\component\work\root_sb\fabosc_0\root_sb_fabosc_0_osc.vhd "
-// file 22 "\c:\users\jl\source\repos\hermess\hermess-firmware\fpga\component\work\root_sb_mss\root_sb_mss.vhd "
-// file 23 "\c:\users\jl\source\repos\hermess\hermess-firmware\fpga\component\work\root_sb\root_sb.vhd "
-// file 24 "\c:\users\jl\source\repos\hermess\hermess-firmware\fpga\component\work\root\root.vhd "
-// file 25 "\j:\liberosoc\synplifypro\lib\nlconst.dat "
-// file 26 "\c:\users\jl\source\repos\hermess\hermess-firmware\fpga\designer\root\synthesis.fdc "
+// file 0 "\c:\microsemi\libero_soc_v2021.3\synplifypro\lib\vhd2008\std.vhd "
+// file 1 "\c:\microsemi\libero_soc_v2021.3\synplifypro\lib\vhd\snps_haps_pkg.vhd "
+// file 2 "\c:\microsemi\libero_soc_v2021.3\synplifypro\lib\vhd2008\std1164.vhd "
+// file 3 "\c:\microsemi\libero_soc_v2021.3\synplifypro\lib\vhd2008\std_textio.vhd "
+// file 4 "\c:\microsemi\libero_soc_v2021.3\synplifypro\lib\vhd2008\numeric.vhd "
+// file 5 "\c:\microsemi\libero_soc_v2021.3\synplifypro\lib\vhd\umr_capim.vhd "
+// file 6 "\c:\microsemi\libero_soc_v2021.3\synplifypro\lib\vhd2008\arith.vhd "
+// file 7 "\c:\microsemi\libero_soc_v2021.3\synplifypro\lib\vhd2008\unsigned.vhd "
+// file 8 "\c:\microsemi\libero_soc_v2021.3\synplifypro\lib\vhd\hyperents.vhd "
+// file 9 "\b:\hermess_spsoftware\firmware\fpga\hdl\spi_master.vhd "
+// file 10 "\b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreapb3\4.1.100\rtl\vhdl\core\coreapb3_muxptob3.vhd "
+// file 11 "\b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreapb3\4.1.100\rtl\vhdl\core\coreapb3_iaddr_reg.vhd "
+// file 12 "\b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp_pcie_hotreset.vhd "
+// file 13 "\b:\hermess_spsoftware\firmware\fpga\component\work\root_sb\ccc_0\root_sb_ccc_0_fccc.vhd "
+// file 14 "\c:\microsemi\libero_soc_v2021.3\synplifypro\lib\generic\smartfusion2.vhd "
+// file 15 "\b:\hermess_spsoftware\firmware\fpga\component\actel\sgcore\osc\2.0.101\osc_comps.vhd "
+// file 16 "\b:\hermess_spsoftware\firmware\fpga\component\work\root_sb_mss\root_sb_mss_syn.vhd "
+// file 17 "\b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreapb3\4.1.100\rtl\vhdl\core\components.vhd "
+// file 18 "\b:\hermess_spsoftware\firmware\fpga\hdl\stamp.vhd "
+// file 19 "\b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreapb3\4.1.100\rtl\vhdl\core\coreapb3.vhd "
+// file 20 "\b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd "
+// file 21 "\b:\hermess_spsoftware\firmware\fpga\component\work\root_sb\fabosc_0\root_sb_fabosc_0_osc.vhd "
+// file 22 "\b:\hermess_spsoftware\firmware\fpga\component\work\root_sb_mss\root_sb_mss.vhd "
+// file 23 "\b:\hermess_spsoftware\firmware\fpga\component\work\root_sb\root_sb.vhd "
+// file 24 "\b:\hermess_spsoftware\firmware\fpga\component\work\root\root.vhd "
+// file 25 "\c:\microsemi\libero_soc_v2021.3\synplifypro\lib\nlconst.dat "
+// file 26 "\b:\hermess_spsoftware\firmware\fpga\designer\root\synthesis.fdc "
 
 `timescale 100 ps/100 ps
 module root_sb_CCC_0_FCCC (
@@ -64,7 +64,7 @@ wire GL3 ;
 	.Y(MSS_FIC_0_CLK),
 	.A(GL0_net)
 );
-//@23:550
+//@23:556
 // @13:106
   CCC CCC_INST (
 	.Y0(Y0),
@@ -2477,7 +2477,7 @@ wire VCC ;
 	.Y(FABOSC_0_RCOSC_25_50MHZ_O2F),
 	.A(N_RCOSC_25_50MHZ_CLKINT)
 );
-//@23:783
+//@23:789
 // @21:53
   RCOSC_25_50MHZ I_RCOSC_25_50MHZ (
 	.CLKOUT(FABOSC_0_RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC)
@@ -2517,8 +2517,6 @@ module root_sb_MSS (
   STAMP3_new_avail,
   STAMP2_new_avail,
   STAMP1_new_avail,
-  F_CS2_c,
-  F_CS1_c,
   F_MOSI_c,
   F_CLK_c,
   TM_TXD_c,
@@ -2526,6 +2524,8 @@ module root_sb_MSS (
   DAPI_TXD_c,
   LED_HB_MEMSYNC_c,
   OUT_ADC_START_c,
+  F_CS1_c,
+  F_CS2_c,
   LED_RECORDING_c,
   LED_HB_MSS_c,
   MSS_RESET_N_M2F,
@@ -2563,8 +2563,6 @@ input STAMP4_new_avail ;
 input STAMP3_new_avail ;
 input STAMP2_new_avail ;
 input STAMP1_new_avail ;
-output F_CS2_c ;
-output F_CS1_c ;
 output F_MOSI_c ;
 output F_CLK_c ;
 output TM_TXD_c ;
@@ -2572,6 +2570,8 @@ output DAPI_RTS_c ;
 output DAPI_TXD_c ;
 output LED_HB_MEMSYNC_c ;
 output OUT_ADC_START_c ;
+output F_CS1_c ;
+output F_CS2_c ;
 output LED_RECORDING_c ;
 output LED_HB_MSS_c ;
 output MSS_RESET_N_M2F ;
@@ -2602,8 +2602,6 @@ wire STAMP4_new_avail ;
 wire STAMP3_new_avail ;
 wire STAMP2_new_avail ;
 wire STAMP1_new_avail ;
-wire F_CS2_c ;
-wire F_CS1_c ;
 wire F_MOSI_c ;
 wire F_CLK_c ;
 wire TM_TXD_c ;
@@ -2611,6 +2609,8 @@ wire DAPI_RTS_c ;
 wire DAPI_TXD_c ;
 wire LED_HB_MEMSYNC_c ;
 wire OUT_ADC_START_c ;
+wire F_CS1_c ;
+wire F_CS2_c ;
 wire LED_RECORDING_c ;
 wire LED_HB_MSS_c ;
 wire MSS_RESET_N_M2F ;
@@ -2700,13 +2700,11 @@ wire MDOF ;
 wire MMUART0_CTS_MGPIO19B_H2F_A ;
 wire MMUART0_CTS_MGPIO19B_H2F_B ;
 wire MMUART0_DCD_MGPIO22B_H2F_A ;
-wire MMUART0_DCD_MGPIO22B_H2F_B ;
 wire MMUART0_DSR_MGPIO20B_H2F_A ;
 wire MMUART0_DSR_MGPIO20B_H2F_B ;
 wire MMUART0_DTR_MGPIO18B_H2F_A ;
 wire MMUART0_DTR_MGPIO18B_H2F_B ;
 wire MMUART0_RI_MGPIO21B_H2F_A ;
-wire MMUART0_RI_MGPIO21B_H2F_B ;
 wire MMUART0_RTS_MGPIO17B_H2F_A ;
 wire MMUART0_RTS_MGPIO17B_H2F_B ;
 wire MMUART0_RXD_MGPIO28B_H2F_A ;
@@ -2734,7 +2732,9 @@ wire SMBSUS_NO1 ;
 wire SPI0_SDI_MGPIO5A_H2F_A ;
 wire SPI0_SDI_MGPIO5A_H2F_B ;
 wire SPI0_SDO_MGPIO6A_H2F_B ;
+wire SPI_0_SS0_M2F ;
 wire SPI_0_SS0_M2F_OE ;
+wire SPI0_SS1_MGPIO8A_H2F_A ;
 wire SPI0_SS1_MGPIO8A_H2F_B ;
 wire SPI0_SS2_MGPIO9A_H2F_A ;
 wire SPI0_SS2_MGPIO9A_H2F_B ;
@@ -2930,7 +2930,7 @@ defparam MSS_ADLIB_INST_RNO_0.INIT=16'h444E;
 	.Y(root_sb_MSS_TMP_0_FIC_0_APB_MASTER_PREADY)
 );
 defparam MSS_ADLIB_INST_RNO.INIT=8'h1B;
-// @22:764
+// @22:769
   MSS_010 MSS_ADLIB_INST (
 	.CAN_RXBUS_MGPIO3A_H2F_A(CAN_RXBUS_MGPIO3A_H2F_A),
 	.CAN_RXBUS_MGPIO3A_H2F_B(CAN_RXBUS_MGPIO3A_H2F_B),
@@ -2988,13 +2988,13 @@ defparam MSS_ADLIB_INST_RNO.INIT=8'h1B;
 	.MMUART0_CTS_MGPIO19B_H2F_A(MMUART0_CTS_MGPIO19B_H2F_A),
 	.MMUART0_CTS_MGPIO19B_H2F_B(MMUART0_CTS_MGPIO19B_H2F_B),
 	.MMUART0_DCD_MGPIO22B_H2F_A(MMUART0_DCD_MGPIO22B_H2F_A),
-	.MMUART0_DCD_MGPIO22B_H2F_B(MMUART0_DCD_MGPIO22B_H2F_B),
+	.MMUART0_DCD_MGPIO22B_H2F_B(F_CS2_c),
 	.MMUART0_DSR_MGPIO20B_H2F_A(MMUART0_DSR_MGPIO20B_H2F_A),
 	.MMUART0_DSR_MGPIO20B_H2F_B(MMUART0_DSR_MGPIO20B_H2F_B),
 	.MMUART0_DTR_MGPIO18B_H2F_A(MMUART0_DTR_MGPIO18B_H2F_A),
 	.MMUART0_DTR_MGPIO18B_H2F_B(MMUART0_DTR_MGPIO18B_H2F_B),
 	.MMUART0_RI_MGPIO21B_H2F_A(MMUART0_RI_MGPIO21B_H2F_A),
-	.MMUART0_RI_MGPIO21B_H2F_B(MMUART0_RI_MGPIO21B_H2F_B),
+	.MMUART0_RI_MGPIO21B_H2F_B(F_CS1_c),
 	.MMUART0_RTS_MGPIO17B_H2F_A(MMUART0_RTS_MGPIO17B_H2F_A),
 	.MMUART0_RTS_MGPIO17B_H2F_B(MMUART0_RTS_MGPIO17B_H2F_B),
 	.MMUART0_RXD_MGPIO28B_H2F_A(MMUART0_RXD_MGPIO28B_H2F_A),
@@ -3031,9 +3031,9 @@ defparam MSS_ADLIB_INST_RNO.INIT=8'h1B;
 	.SPI0_SDI_MGPIO5A_H2F_B(SPI0_SDI_MGPIO5A_H2F_B),
 	.SPI0_SDO_MGPIO6A_H2F_A(F_MOSI_c),
 	.SPI0_SDO_MGPIO6A_H2F_B(SPI0_SDO_MGPIO6A_H2F_B),
-	.SPI0_SS0_MGPIO7A_H2F_A(F_CS1_c),
+	.SPI0_SS0_MGPIO7A_H2F_A(SPI_0_SS0_M2F),
 	.SPI0_SS0_MGPIO7A_H2F_B(SPI_0_SS0_M2F_OE),
-	.SPI0_SS1_MGPIO8A_H2F_A(F_CS2_c),
+	.SPI0_SS1_MGPIO8A_H2F_A(SPI0_SS1_MGPIO8A_H2F_A),
 	.SPI0_SS1_MGPIO8A_H2F_B(SPI0_SS1_MGPIO8A_H2F_B),
 	.SPI0_SS2_MGPIO9A_H2F_A(SPI0_SS2_MGPIO9A_H2F_A),
 	.SPI0_SS2_MGPIO9A_H2F_B(SPI0_SS2_MGPIO9A_H2F_B),
@@ -3422,7 +3422,7 @@ defparam MSS_ADLIB_INST_RNO.INIT=8'h1B;
 	.SPI1_SS7_MGPIO24A_OE(SPI1_SS7_MGPIO24A_OE),
 	.USBC_XCLK_OE(USBC_XCLK_OE)
 );
-defparam MSS_ADLIB_INST.INIT=1438'h0000000000000030000000000000000000000C00000000000000000000000000000000000000000000000000000000300C030000000000000000000000000000000000000000000F00000000F000000000000000000000000000000007FFFFFFFDF5E101007C33C804000006092C0000003FFFFE4000000000024100000000F0F01C000001825F04010842108421000001FE34001FF8000000400000000020091007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF;
+defparam MSS_ADLIB_INST.INIT=1438'h0000000000000030000000000000000000000C00000000000000000000000000000000000000000000000000000000000C030000000000000000000000000000000000000000000F00000000F000000000000000000000000000000007FFFFFFFDF5E101007C33C804000006092C0000003FFFFE4000000000064100000000F0F01C000001825F04010842108421000001FE34001FF8000000400000000020091007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF;
 defparam MSS_ADLIB_INST.ACT_UBITS=56'hFFFFFFFFFFFFFF;
 defparam MSS_ADLIB_INST.MEMORYFILE="ENVM_init.mem";
 defparam MSS_ADLIB_INST.RTC_MAIN_XTL_FREQ=0.0;
@@ -3455,6 +3455,8 @@ module root_sb (
   MSS_STAMP_PWRITE,
   LED_HB_MSS_c,
   LED_RECORDING_c,
+  F_CS2_c,
+  F_CS1_c,
   OUT_ADC_START_c,
   LED_HB_MEMSYNC_c,
   DAPI_TXD_c,
@@ -3462,8 +3464,6 @@ module root_sb (
   TM_TXD_c,
   F_CLK_c,
   F_MOSI_c,
-  F_CS1_c,
-  F_CS2_c,
   STAMP1_new_avail,
   STAMP2_new_avail,
   STAMP3_new_avail,
@@ -3508,6 +3508,8 @@ output MSS_STAMP_PENABLE ;
 output MSS_STAMP_PWRITE ;
 output LED_HB_MSS_c ;
 output LED_RECORDING_c ;
+output F_CS2_c ;
+output F_CS1_c ;
 output OUT_ADC_START_c ;
 output LED_HB_MEMSYNC_c ;
 output DAPI_TXD_c ;
@@ -3515,8 +3517,6 @@ output DAPI_RTS_c ;
 output TM_TXD_c ;
 output F_CLK_c ;
 output F_MOSI_c ;
-output F_CS1_c ;
-output F_CS2_c ;
 input STAMP1_new_avail ;
 input STAMP2_new_avail ;
 input STAMP3_new_avail ;
@@ -3551,6 +3551,8 @@ wire MSS_STAMP_PENABLE ;
 wire MSS_STAMP_PWRITE ;
 wire LED_HB_MSS_c ;
 wire LED_RECORDING_c ;
+wire F_CS2_c ;
+wire F_CS1_c ;
 wire OUT_ADC_START_c ;
 wire LED_HB_MEMSYNC_c ;
 wire DAPI_TXD_c ;
@@ -3558,8 +3560,6 @@ wire DAPI_RTS_c ;
 wire TM_TXD_c ;
 wire F_CLK_c ;
 wire F_MOSI_c ;
-wire F_CS1_c ;
-wire F_CS2_c ;
 wire STAMP1_new_avail ;
 wire STAMP2_new_avail ;
 wire STAMP3_new_avail ;
@@ -3596,18 +3596,18 @@ wire FIC_2_APB_M_PRESET_N ;
 wire FABOSC_0_RCOSC_25_50MHZ_O2F ;
 wire GND ;
 wire VCC ;
-// @23:846
+// @23:853
   SYSRESET SYSRESET_POR (
 	.POWER_ON_RESET_N(POWER_ON_RESET_N),
 	.DEVRST_N(DEVRST_N)
 );
-// @23:550
+// @23:556
   root_sb_CCC_0_FCCC CCC_0 (
 	.FABOSC_0_RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC(FABOSC_0_RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC),
 	.FIC_0_LOCK(FIC_0_LOCK),
 	.MSS_FIC_0_CLK(MSS_FIC_0_CLK)
 );
-// @23:559
+// @23:565
   CoreAPB3 CoreAPB3_0 (
 	.MSS_STAMP_3_PRDATA(MSS_STAMP_3_PRDATA[31:0]),
 	.MSS_STAMP_1_PRDATA(MSS_STAMP_1_PRDATA[31:0]),
@@ -3627,7 +3627,7 @@ wire VCC ;
 	.root_sb_MSS_TMP_0_FIC_0_APB_MASTER_PSELx(root_sb_MSS_TMP_0_FIC_0_APB_MASTER_PSELx),
 	.MSS_STAMP_PSELx(MSS_STAMP_PSELx)
 );
-// @23:687
+// @23:693
   CoreResetP CORERESETP_0 (
 	.MSS_INIT_DONE(MSS_INIT_DONE),
 	.MSS_MSS_READY(MSS_MSS_READY),
@@ -3637,12 +3637,12 @@ wire VCC ;
 	.FIC_2_APB_M_PRESET_N(FIC_2_APB_M_PRESET_N),
 	.FABOSC_0_RCOSC_25_50MHZ_O2F(FABOSC_0_RCOSC_25_50MHZ_O2F)
 );
-// @23:783
+// @23:789
   root_sb_FABOSC_0_OSC FABOSC_0 (
 	.FABOSC_0_RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC(FABOSC_0_RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC),
 	.FABOSC_0_RCOSC_25_50MHZ_O2F(FABOSC_0_RCOSC_25_50MHZ_O2F)
 );
-// @23:796
+// @23:802
   root_sb_MSS root_sb_MSS_0 (
 	.root_sb_MSS_TMP_0_FIC_0_APB_MASTER_PRDATA(root_sb_MSS_TMP_0_FIC_0_APB_MASTER_PRDATA[31:0]),
 	.MSS_STAMP_PWDATA(MSS_STAMP_PWDATA[31:0]),
@@ -3664,8 +3664,6 @@ wire VCC ;
 	.STAMP3_new_avail(STAMP3_new_avail),
 	.STAMP2_new_avail(STAMP2_new_avail),
 	.STAMP1_new_avail(STAMP1_new_avail),
-	.F_CS2_c(F_CS2_c),
-	.F_CS1_c(F_CS1_c),
 	.F_MOSI_c(F_MOSI_c),
 	.F_CLK_c(F_CLK_c),
 	.TM_TXD_c(TM_TXD_c),
@@ -3673,6 +3671,8 @@ wire VCC ;
 	.DAPI_TXD_c(DAPI_TXD_c),
 	.LED_HB_MEMSYNC_c(LED_HB_MEMSYNC_c),
 	.OUT_ADC_START_c(OUT_ADC_START_c),
+	.F_CS1_c(F_CS1_c),
+	.F_CS2_c(F_CS2_c),
 	.LED_RECORDING_c(LED_RECORDING_c),
 	.LED_HB_MSS_c(LED_HB_MSS_c),
 	.MSS_RESET_N_M2F(MSS_RESET_N_M2F),
@@ -6625,7 +6625,7 @@ defparam un1_component_state_9_i_0.INIT=16'hD000;
 	.Y(un1_component_state_8_i_0_1z)
 );
 defparam un1_component_state_8_i_0.INIT=16'hD000;
-// @24:604
+// @24:606
   CFG4 polling_timeout_counter_0_sqmuxa_RNI5L3N1 (
 	.A(polling_timeout_counter_0_sqmuxa_1z),
 	.B(dummy_0_sqmuxa),
@@ -7283,7 +7283,7 @@ defparam un1_spi_rx_data_sn_m3_i_o2.INIT=8'h3A;
 	.Y(N_272)
 );
 defparam \un1_spi_rx_data_i_a2_0[31] .INIT=8'h10;
-// @24:604
+// @24:606
   CFG4 un14_paddr_RNIOB6J (
 	.A(apb_spi_finished),
 	.B(component_state[3]),
@@ -7499,7 +7499,7 @@ defparam N_96_i.INIT=4'hE;
 	.Y(N_197_i)
 );
 defparam busy_RNI1JMG.INIT=4'h8;
-// @24:604
+// @24:606
   CFG4 busy_RNI2A5R (
 	.A(component_state[1]),
 	.B(spi_busy),
@@ -8167,7 +8167,7 @@ defparam \component_state_ns_i_a2_0_a2[5] .INIT=4'h1;
 	.Y(N_299)
 );
 defparam un1_new_avail_1_sqmuxa_3_i_a2.INIT=4'h4;
-// @24:604
+// @24:606
   CFG3 \component_state_ns_0_0_o2_0_RNI9HCB[0]  (
 	.A(component_state[5]),
 	.B(N_202),
@@ -8175,7 +8175,7 @@ defparam un1_new_avail_1_sqmuxa_3_i_a2.INIT=4'h4;
 	.Y(N_1049)
 );
 defparam \component_state_ns_0_0_o2_0_RNI9HCB[0] .INIT=8'h37;
-// @24:604
+// @24:606
   CFG4 busy_RNIAPRM (
 	.A(spi_busy),
 	.B(component_state[0]),
@@ -8290,7 +8290,7 @@ defparam spi_dms2_cs_1_sqmuxa_1.INIT=16'h2000;
 	.Y(spi_dms2_cs_0_sqmuxa_Z)
 );
 defparam spi_dms2_cs_0_sqmuxa.INIT=16'hDF00;
-// @24:604
+// @24:606
   CFG4 busy_RNIGTFS1 (
 	.A(delay_counterlde_0_a2_0_0),
 	.B(N_149),
@@ -16531,7 +16531,7 @@ defparam dummy_0_sqmuxa_0_a2.INIT=4'h8;
 	.Y(N_677)
 );
 defparam \component_state_ns_0_o2_0_o2[2] .INIT=4'h7;
-// @24:632
+// @24:634
   CFG2 polling_timeout_counterlde_0_o2_0 (
 	.A(un28_paddr_i_0),
 	.B(apb_spi_finished),
@@ -17327,7 +17327,7 @@ defparam N_96_i.INIT=4'hE;
 	.Y(N_197_i)
 );
 defparam busy_RNI3F64.INIT=4'h8;
-// @24:632
+// @24:634
   CFG4 busy_RNI6CCB (
 	.A(component_state[1]),
 	.B(spi_busy),
@@ -17922,7 +17922,7 @@ defparam rx_buffer_0_sqmuxa_1_0_a2.INIT=16'h8000;
 	.Y(status_async_cycles_0_sqmuxa_Z)
 );
 defparam status_async_cycles_0_sqmuxa.INIT=16'h0040;
-// @24:632
+// @24:634
   CFG4 busy_RNIEBBC (
 	.A(spi_busy),
 	.B(component_state[0]),
@@ -17931,7 +17931,7 @@ defparam status_async_cycles_0_sqmuxa.INIT=16'h0040;
 	.Y(N_149)
 );
 defparam busy_RNIEBBC.INIT=16'h0BFF;
-// @24:632
+// @24:634
   CFG3 \component_state_ns_0_0_o2_0_RNICQNB[0]  (
 	.A(component_state_0_0),
 	.B(N_202),
@@ -18004,7 +18004,7 @@ defparam \un1_spi_rx_data_i_0_RNIU2MQ1[31] .INIT=16'h1110;
 	.Y(un7_count_NE_i)
 );
 defparam un7_count_NE_20_RNI0NN31.INIT=16'h0001;
-// @24:632
+// @24:634
   CFG2 polling_timeout_counter_0_sqmuxa_RNIVSDF (
 	.A(polling_timeout_counter_0_sqmuxa_1z),
 	.B(dummy_0_sqmuxa),
@@ -18065,7 +18065,7 @@ defparam \async_state_ns_0_a3[1] .INIT=16'h0020;
 	.Y(N_688)
 );
 defparam \component_state_ns_0_a3_1[1] .INIT=16'h0200;
-// @24:632
+// @24:634
   CFG4 busy_RNIQNTU (
 	.A(delay_counterlde_0_a2_0_0),
 	.B(N_149),
@@ -18125,7 +18125,7 @@ defparam \un1_status_async_cycles_1_sqmuxa[6] .INIT=16'h00F8;
 	.Y(spi_tx_data_0_sqmuxa_Z)
 );
 defparam spi_tx_data_0_sqmuxa.INIT=8'h08;
-// @24:632
+// @24:634
   CFG4 \component_state_ns_0_o2_0_o2_RNI2ALV1[2]  (
 	.A(polling_timeout_counterlde_0_0),
 	.B(N_81_i),
@@ -26318,7 +26318,7 @@ defparam dummy_0_sqmuxa_0_a2.INIT=4'h8;
 	.Y(N_333)
 );
 defparam \tx_buffer_RNO[0] .INIT=4'h4;
-// @24:660
+// @24:662
   CFG2 polling_timeout_counterlde_0_o2_0 (
 	.A(un28_paddr_i_0),
 	.B(apb_spi_finished),
@@ -27113,7 +27113,7 @@ defparam N_96_i.INIT=4'hE;
 	.Y(N_197_i)
 );
 defparam busy_RNI5BM7.INIT=4'h8;
-// @24:660
+// @24:662
   CFG4 busy_RNIAEJB (
 	.A(component_state[1]),
 	.B(spi_busy),
@@ -27755,7 +27755,7 @@ defparam rx_buffer_0_sqmuxa_1_0_a2.INIT=16'h8000;
 	.Y(status_async_cycles_0_sqmuxa_Z)
 );
 defparam status_async_cycles_0_sqmuxa.INIT=16'h0040;
-// @24:660
+// @24:662
   CFG4 busy_RNIITQH (
 	.A(spi_busy),
 	.B(component_state[0]),
@@ -27811,7 +27811,7 @@ defparam \component_state_ns_0_0_a2_0[0] .INIT=8'h08;
 	.Y(N_699)
 );
 defparam \component_state_ns_i_a2_0_a2[5] .INIT=4'h1;
-// @24:660
+// @24:662
   CFG3 \component_state_ns_0_0_o2_0_RNIF33C[0]  (
 	.A(component_state_1_0),
 	.B(N_202),
@@ -27837,7 +27837,7 @@ defparam \un1_spi_rx_data_i_a2_0_RNI0K2U1[31] .INIT=16'h1110;
 	.Y(un7_count_NE_i)
 );
 defparam un7_count_NE_20_RNI47IB.INIT=16'h0001;
-// @24:660
+// @24:662
   CFG2 polling_timeout_counter_0_sqmuxa_RNI1QTE (
 	.A(polling_timeout_counter_0_sqmuxa_1z),
 	.B(dummy_0_sqmuxa),
@@ -27889,7 +27889,7 @@ defparam \async_state_ns_0_a3[0] .INIT=16'h0020;
 	.Y(N_107)
 );
 defparam un1_new_avail_1_sqmuxa_3_i_0.INIT=16'hFFDC;
-// @24:660
+// @24:662
   CFG4 busy_RNI4IB11 (
 	.A(delay_counterlde_0_a2_0_0),
 	.B(N_149),
@@ -27949,7 +27949,7 @@ defparam \component_state_ns_i_a3_i_0_a2[4] .INIT=8'h20;
 	.Y(apb_spi_finished_0_sqmuxa_1)
 );
 defparam apb_spi_finished_0_sqmuxa_1_0_a2.INIT=8'h04;
-// @24:660
+// @24:662
   CFG4 \component_state_ns_0_o2_0_o2_RNI9K4P1[2]  (
 	.A(polling_timeout_counterlde_0_0),
 	.B(N_81_i),
@@ -36091,7 +36091,7 @@ defparam un10_count_0_a2_0.INIT=4'h1;
 	.Y(un10_count_0_a2_1_Z)
 );
 defparam un10_count_0_a2_1.INIT=4'h1;
-// @24:688
+// @24:690
   CFG2 delay_counterlde_0_a2_0_0 (
 	.A(component_state[2]),
 	.B(component_state[4]),
@@ -36119,7 +36119,7 @@ defparam dummy_0_sqmuxa_0_a2.INIT=4'h8;
 	.Y(N_677)
 );
 defparam \component_state_ns_0_o2_0_o2[2] .INIT=4'h7;
-// @24:688
+// @24:690
   CFG2 polling_timeout_counterlde_0_o2_0 (
 	.A(un28_paddr_i_0),
 	.B(apb_spi_finished),
@@ -36941,7 +36941,7 @@ defparam N_96_i.INIT=4'hE;
 	.Y(N_197_i)
 );
 defparam busy_RNI776B.INIT=4'h8;
-// @24:688
+// @24:690
   CFG4 busy_RNIEGQB (
 	.A(component_state[1]),
 	.B(spi_busy),
@@ -37564,7 +37564,7 @@ defparam rx_buffer_0_sqmuxa_1_0_a2.INIT=16'h8000;
 	.Y(status_async_cycles_0_sqmuxa_Z)
 );
 defparam status_async_cycles_0_sqmuxa.INIT=16'h0040;
-// @24:688
+// @24:690
   CFG4 busy_RNIMFAN (
 	.A(spi_busy),
 	.B(component_state[0]),
@@ -37573,7 +37573,7 @@ defparam status_async_cycles_0_sqmuxa.INIT=16'h0040;
 	.Y(N_149)
 );
 defparam busy_RNIMFAN.INIT=16'h0BFF;
-// @24:688
+// @24:690
   CFG3 \component_state_ns_0_0_o2_0_RNIICEC[0]  (
 	.A(component_state_2_0),
 	.B(N_202),
@@ -37653,7 +37653,7 @@ defparam \un1_spi_rx_data_i_a2_0_RNI39LL1[31] .INIT=16'h1110;
 	.Y(un7_count_NE_i)
 );
 defparam un7_count_NE_20_RNI8NCJ1.INIT=16'h0001;
-// @24:688
+// @24:690
   CFG2 polling_timeout_counter_0_sqmuxa_RNI3NDE (
 	.A(polling_timeout_counter_0_sqmuxa_1z),
 	.B(dummy_0_sqmuxa),
@@ -37713,7 +37713,7 @@ defparam \async_state_ns_0_a3[0] .INIT=16'h0020;
 	.Y(N_628)
 );
 defparam \async_state_ns_0_a3[1] .INIT=16'h0020;
-// @24:688
+// @24:690
   CFG3 busy_RNIECP31 (
 	.A(delay_counterlde_0_a2_0_0_Z),
 	.B(N_149),
@@ -37793,7 +37793,7 @@ defparam measurement_dms2_1_sqmuxa_0_a2_0_a2.INIT=16'h2000;
 	.Y(measurement_dms1_0_sqmuxa_1)
 );
 defparam measurement_dms1_0_sqmuxa_1_0_a2_0_a2.INIT=16'h1000;
-// @24:688
+// @24:690
   CFG4 \component_state_ns_0_o2_0_o2_RNI4JR62[2]  (
 	.A(polling_timeout_counterlde_0_0),
 	.B(N_81_i),
@@ -45944,7 +45944,7 @@ defparam dummy_0_sqmuxa_0_a2.INIT=4'h8;
 	.Y(N_677)
 );
 defparam \component_state_ns_0_o2_0_o2[2] .INIT=4'h7;
-// @24:716
+// @24:718
   CFG2 polling_timeout_counterlde_0_o2_0 (
 	.A(un28_paddr_i_0),
 	.B(apb_spi_finished),
@@ -46783,7 +46783,7 @@ defparam N_96_i.INIT=4'hE;
 	.Y(N_197_i)
 );
 defparam busy_RNI93ME.INIT=4'h8;
-// @24:716
+// @24:718
   CFG4 busy_RNIII1C1 (
 	.A(spi_busy),
 	.B(component_state[1]),
@@ -47373,7 +47373,7 @@ defparam rx_buffer_0_sqmuxa_1_0_a2.INIT=16'h8000;
 	.Y(status_async_cycles_0_sqmuxa_Z)
 );
 defparam status_async_cycles_0_sqmuxa.INIT=16'h0040;
-// @24:716
+// @24:718
   CFG3 \component_state_ns_0_0_o2_0_RNILLPC1[0]  (
 	.A(component_state_3_0),
 	.B(N_202),
@@ -47396,7 +47396,7 @@ defparam polling_timeout_counter_0_sqmuxa.INIT=4'h4;
 	.Y(N_278)
 );
 defparam \component_state_ns_0_0_a2_0[0] .INIT=8'h08;
-// @24:716
+// @24:718
   CFG4 busy_RNIQ1QC1 (
 	.A(spi_busy),
 	.B(component_state[0]),
@@ -47462,7 +47462,7 @@ defparam \un1_spi_rx_data_1_RNI72EH1[31] .INIT=16'h1110;
 	.Y(un7_count_NE_i)
 );
 defparam un7_count_NE_20_RNIC77R.INIT=16'h0001;
-// @24:716
+// @24:718
   CFG2 polling_timeout_counter_0_sqmuxa_RNI5KTD (
 	.A(polling_timeout_counter_0_sqmuxa_1z),
 	.B(dummy_0_sqmuxa),
@@ -47512,7 +47512,7 @@ defparam un1_new_avail_1_sqmuxa_3_i_0.INIT=8'hFE;
 	.Y(apb_spi_finished_0_sqmuxa_1)
 );
 defparam apb_spi_finished_0_sqmuxa_1_0_a2.INIT=8'h04;
-// @24:716
+// @24:718
   CFG4 busy_RNIO67M3 (
 	.A(delay_counterlde_0_a2_0_0),
 	.B(N_149),
@@ -47575,7 +47575,7 @@ defparam measurement_temp_1_sqmuxa_0_a2_2_a2.INIT=16'h4000;
 	.Y(measurement_dms2_1_sqmuxa)
 );
 defparam measurement_dms2_1_sqmuxa_0_a2_0_a2.INIT=16'h2000;
-// @24:716
+// @24:718
   CFG4 \component_state_ns_0_o2_0_o2_RNIN83C1[2]  (
 	.A(polling_timeout_counterlde_0_0),
 	.B(N_81_i),
@@ -55711,7 +55711,7 @@ defparam \component_state_ns_0_a3[2] .INIT=4'h8;
 	.Y(N_677)
 );
 defparam \component_state_ns_0_o2_0_o2[2] .INIT=4'h7;
-// @24:744
+// @24:746
   CFG2 polling_timeout_counterlde_0_o2_0 (
 	.A(un28_paddr_i_0),
 	.B(apb_spi_finished),
@@ -56524,7 +56524,7 @@ defparam N_96_i.INIT=4'hE;
 	.Y(N_197_i)
 );
 defparam busy_RNIBV5I.INIT=4'h8;
-// @24:744
+// @24:746
   CFG4 busy_RNIMK8C1 (
 	.A(spi_busy),
 	.B(component_state[1]),
@@ -57159,7 +57159,7 @@ defparam rx_buffer_0_sqmuxa_1_0_a2.INIT=16'h8000;
 	.Y(status_async_cycles_0_sqmuxa_Z)
 );
 defparam status_async_cycles_0_sqmuxa.INIT=16'h0040;
-// @24:744
+// @24:746
   CFG4 busy_RNIUJ921 (
 	.A(spi_busy),
 	.B(component_state[0]),
@@ -57168,7 +57168,7 @@ defparam status_async_cycles_0_sqmuxa.INIT=16'h0040;
 	.Y(N_149)
 );
 defparam busy_RNIUJ921.INIT=16'h0BFF;
-// @24:744
+// @24:746
   CFG3 \component_state_ns_0_0_o2_0_RNIOU4T[0]  (
 	.A(component_state_4_0),
 	.B(N_202),
@@ -57241,7 +57241,7 @@ defparam \un1_spi_rx_data_1_RNI9JQK1[31] .INIT=16'h1110;
 	.Y(un7_count_NE_i)
 );
 defparam un7_count_NE_20_RNIGN13.INIT=16'h0001;
-// @24:744
+// @24:746
   CFG2 polling_timeout_counter_0_sqmuxa_RNI7HDD (
 	.A(polling_timeout_counter_0_sqmuxa_1z),
 	.B(dummy_0_sqmuxa),
@@ -57284,7 +57284,7 @@ defparam \async_state_ns_0_a3[0] .INIT=16'h0020;
 	.Y(N_628)
 );
 defparam \async_state_ns_0_a3[1] .INIT=16'h0020;
-// @24:744
+// @24:746
   CFG4 busy_RNI21L83 (
 	.A(delay_counterlde_0_a2_0_0),
 	.B(N_149),
@@ -57388,7 +57388,7 @@ defparam measurement_dms2_1_sqmuxa_0_a2_0_a2.INIT=16'h2000;
 	.Y(measurement_dms1_0_sqmuxa_1)
 );
 defparam measurement_dms1_0_sqmuxa_1_0_a2_0_a2.INIT=16'h1000;
-// @24:744
+// @24:746
   CFG4 \component_state_ns_0_o2_0_o2_RNIUIIL1[2]  (
 	.A(polling_timeout_counterlde_0_0),
 	.B(N_81_i),
@@ -63279,14 +63279,14 @@ wire mosi_cl ;
 	.PAD(TM_TXD),
 	.D(TM_TXD_c)
 );
-// @24:506
+// @24:507
   AND3 AND3_0 (
 	.Y(NN_1),
 	.A(MSS_POWER_ON_RESET_N),
 	.B(MSS_MSS_READY),
 	.C(MSS_INIT_DONE)
 );
-// @24:516
+// @24:517
   root_sb MSS (
 	.MSS_STAMP_PADDR(MSS_STAMP_PADDR[11:0]),
 	.MSS_STAMP_PWDATA(MSS_STAMP_PWDATA[31:0]),
@@ -63306,6 +63306,8 @@ wire mosi_cl ;
 	.MSS_STAMP_PWRITE(MSS_STAMP_PWRITE),
 	.LED_HB_MSS_c(LED_HB_MSS_c),
 	.LED_RECORDING_c(LED_RECORDING_c),
+	.F_CS2_c(F_CS2_c),
+	.F_CS1_c(F_CS1_c),
 	.OUT_ADC_START_c(OUT_ADC_START_c),
 	.LED_HB_MEMSYNC_c(LED_HB_MEMSYNC_c),
 	.DAPI_TXD_c(DAPI_TXD_c),
@@ -63313,8 +63315,6 @@ wire mosi_cl ;
 	.TM_TXD_c(TM_TXD_c),
 	.F_CLK_c(F_CLK_c),
 	.F_MOSI_c(F_MOSI_c),
-	.F_CS1_c(F_CS1_c),
-	.F_CS2_c(F_CS2_c),
 	.STAMP1_new_avail(STAMP1_new_avail),
 	.STAMP2_new_avail(STAMP2_new_avail),
 	.STAMP3_new_avail(STAMP3_new_avail),
@@ -63340,7 +63340,7 @@ wire mosi_cl ;
 	.DEVRST_N(DEVRST_N),
 	.POWER_ON_RESET_N(MSS_POWER_ON_RESET_N)
 );
-// @24:604
+// @24:606
   STAMP_10 STAMP1 (
 	.MSS_STAMP_PADDR(MSS_STAMP_PADDR[11:0]),
 	.MSS_STAMP_PRDATA(MSS_STAMP_PRDATA[31:0]),
@@ -63370,7 +63370,7 @@ wire mosi_cl ;
 	.STAMP1_DRDY_SGR2_c(STAMP1_DRDY_SGR2_c),
 	.STAMP1_DRDY_SGR1_c(STAMP1_DRDY_SGR1_c)
 );
-// @24:632
+// @24:634
   STAMP_10_0 STAMP2 (
 	.MSS_STAMP_PADDR(MSS_STAMP_PADDR[11:4]),
 	.MSS_STAMP_1_PRDATA(MSS_STAMP_1_PRDATA[31:0]),
@@ -63400,7 +63400,7 @@ wire mosi_cl ;
 	.STAMP2_DRDY_SGR2_c(STAMP2_DRDY_SGR2_c),
 	.STAMP2_DRDY_SGR1_c(STAMP2_DRDY_SGR1_c)
 );
-// @24:660
+// @24:662
   STAMP_10_1 STAMP3 (
 	.MSS_STAMP_PADDR(MSS_STAMP_PADDR[11:4]),
 	.MSS_STAMP_2_PRDATA(MSS_STAMP_2_PRDATA[31:0]),
@@ -63430,7 +63430,7 @@ wire mosi_cl ;
 	.STAMP3_DRDY_SGR2_c(STAMP3_DRDY_SGR2_c),
 	.STAMP3_DRDY_SGR1_c(STAMP3_DRDY_SGR1_c)
 );
-// @24:688
+// @24:690
   STAMP_10_2 STAMP4 (
 	.MSS_STAMP_PADDR(MSS_STAMP_PADDR[11:4]),
 	.MSS_STAMP_3_PRDATA(MSS_STAMP_3_PRDATA[31:0]),
@@ -63460,7 +63460,7 @@ wire mosi_cl ;
 	.STAMP4_DRDY_SGR2_c(STAMP4_DRDY_SGR2_c),
 	.STAMP4_DRDY_TEMP_c(STAMP4_DRDY_TEMP_c)
 );
-// @24:716
+// @24:718
   STAMP_10_3 STAMP5 (
 	.MSS_STAMP_PADDR(MSS_STAMP_PADDR[11:2]),
 	.MSS_STAMP_4_PRDATA(MSS_STAMP_4_PRDATA[31:0]),
@@ -63488,7 +63488,7 @@ wire mosi_cl ;
 	.STAMP5_DRDY_SGR2_c(STAMP5_DRDY_SGR2_c),
 	.STAMP5_DRDY_SGR1_c(STAMP5_DRDY_SGR1_c)
 );
-// @24:744
+// @24:746
   STAMP_10_4 STAMP6 (
 	.MSS_STAMP_PADDR(MSS_STAMP_PADDR[11:4]),
 	.MSS_STAMP_5_PRDATA(MSS_STAMP_5_PRDATA[31:0]),

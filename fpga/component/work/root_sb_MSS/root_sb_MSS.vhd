@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- Created by SmartDesign Thu Jul  7 16:22:36 2022
+-- Created by SmartDesign Wed Feb  8 12:00:41 2023
 -- Version: 2021.3 2021.3.0.10
 ----------------------------------------------------------------------
 
@@ -50,6 +50,8 @@ entity root_sb_MSS is
         FIC_2_APB_M_PSEL       : out std_logic;
         FIC_2_APB_M_PWDATA     : out std_logic_vector(31 downto 0);
         FIC_2_APB_M_PWRITE     : out std_logic;
+        GPIO_21_M2F            : out std_logic;
+        GPIO_22_M2F            : out std_logic;
         GPIO_26_M2F            : out std_logic;
         GPIO_28_M2F            : out std_logic;
         GPIO_29_M2F            : out std_logic;
@@ -61,8 +63,7 @@ entity root_sb_MSS is
         SPI_0_CLK_M2F          : out std_logic;
         SPI_0_DO_M2F           : out std_logic;
         SPI_0_SS0_M2F          : out std_logic;
-        SPI_0_SS0_M2F_OE       : out std_logic;
-        SPI_0_SS1_M2F          : out std_logic
+        SPI_0_SS0_M2F_OE       : out std_logic
         );
 end root_sb_MSS;
 ----------------------------------------------------------------------
@@ -592,6 +593,8 @@ signal FIC_2_APB_MASTER_0_PENABLE       : std_logic;
 signal FIC_2_APB_MASTER_0_PSELx         : std_logic;
 signal FIC_2_APB_MASTER_0_PWDATA        : std_logic_vector(31 downto 0);
 signal FIC_2_APB_MASTER_0_PWRITE        : std_logic;
+signal GPIO_21_M2F_net_0                : std_logic;
+signal GPIO_22_M2F_net_0                : std_logic;
 signal GPIO_26_M2F_net_0                : std_logic;
 signal GPIO_28_M2F_net_0                : std_logic;
 signal GPIO_29_M2F_net_0                : std_logic;
@@ -604,10 +607,11 @@ signal SPI_0_CLK_M2F_net_0              : std_logic;
 signal SPI_0_DO_M2F_net_0               : std_logic;
 signal SPI_0_SS0_M2F_net_0              : std_logic;
 signal SPI_0_SS0_M2F_OE_net_0           : std_logic;
-signal SPI_0_SS1_M2F_net_0              : std_logic;
 signal MMUART_0_TXD_M2F_net_1           : std_logic;
 signal MMUART_1_TXD_M2F_net_1           : std_logic;
 signal MSS_RESET_N_M2F_net_1            : std_logic;
+signal GPIO_21_M2F_net_1                : std_logic;
+signal GPIO_22_M2F_net_1                : std_logic;
 signal GPIO_26_M2F_net_1                : std_logic;
 signal GPIO_28_M2F_net_1                : std_logic;
 signal GPIO_29_M2F_net_1                : std_logic;
@@ -617,7 +621,6 @@ signal SPI_0_DO_M2F_net_1               : std_logic;
 signal SPI_0_CLK_M2F_net_1              : std_logic;
 signal SPI_0_SS0_M2F_net_1              : std_logic;
 signal SPI_0_SS0_M2F_OE_net_1           : std_logic;
-signal SPI_0_SS1_M2F_net_1              : std_logic;
 signal FIC_0_APB_MASTER_PSELx_net_0     : std_logic;
 signal FIC_0_APB_MASTER_PWRITE_net_0    : std_logic;
 signal FIC_0_APB_MASTER_PENABLE_net_0   : std_logic;
@@ -713,6 +716,10 @@ begin
  MMUART_1_TXD_M2F                 <= MMUART_1_TXD_M2F_net_1;
  MSS_RESET_N_M2F_net_1            <= MSS_RESET_N_M2F_net_0;
  MSS_RESET_N_M2F                  <= MSS_RESET_N_M2F_net_1;
+ GPIO_21_M2F_net_1                <= GPIO_21_M2F_net_0;
+ GPIO_21_M2F                      <= GPIO_21_M2F_net_1;
+ GPIO_22_M2F_net_1                <= GPIO_22_M2F_net_0;
+ GPIO_22_M2F                      <= GPIO_22_M2F_net_1;
  GPIO_26_M2F_net_1                <= GPIO_26_M2F_net_0;
  GPIO_26_M2F                      <= GPIO_26_M2F_net_1;
  GPIO_28_M2F_net_1                <= GPIO_28_M2F_net_0;
@@ -731,8 +738,6 @@ begin
  SPI_0_SS0_M2F                    <= SPI_0_SS0_M2F_net_1;
  SPI_0_SS0_M2F_OE_net_1           <= SPI_0_SS0_M2F_OE_net_0;
  SPI_0_SS0_M2F_OE                 <= SPI_0_SS0_M2F_OE_net_1;
- SPI_0_SS1_M2F_net_1              <= SPI_0_SS1_M2F_net_0;
- SPI_0_SS1_M2F                    <= SPI_0_SS1_M2F_net_1;
  FIC_0_APB_MASTER_PSELx_net_0     <= FIC_0_APB_MASTER_PSELx;
  FIC_0_APB_M_PSEL                 <= FIC_0_APB_MASTER_PSELx_net_0;
  FIC_0_APB_MASTER_PWRITE_net_0    <= FIC_0_APB_MASTER_PWRITE;
@@ -765,7 +770,7 @@ MSS_ADLIB_INST : MSS_010
     generic map( 
         ACT_UBITS         => ( x"FFFFFFFFFFFFFF" ),
         DDR_CLK_FREQ      => ( 100.0 ),
-        INIT              => ( "00" & x"000000000000030000000000000000000000C00000000000000000000000000000000000000000000000000000000300C030000000000000000000000000000000000000000000F00000000F000000000000000000000000000000007FFFFFFFDF5E101007C33C804000006092C0000003FFFFE4000000000024100000000F0F01C000001825F04010842108421000001FE34001FF8000000400000000020091007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF" ),
+        INIT              => ( "00" & x"000000000000030000000000000000000000C00000000000000000000000000000000000000000000000000000000000C030000000000000000000000000000000000000000000F00000000F000000000000000000000000000000007FFFFFFFDF5E101007C33C804000006092C0000003FFFFE4000000000064100000000F0F01C000001825F04010842108421000001FE34001FF8000000400000000020091007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF" ),
         MEMORYFILE        => ( "ENVM_init.mem" ),
         RTC_MAIN_XTL_FREQ => ( 0.0 ),
         RTC_MAIN_XTL_MODE => ( "" )
@@ -1042,13 +1047,13 @@ MSS_ADLIB_INST : MSS_010
         MMUART0_CTS_MGPIO19B_H2F_A              => OPEN,
         MMUART0_CTS_MGPIO19B_H2F_B              => OPEN,
         MMUART0_DCD_MGPIO22B_H2F_A              => OPEN,
-        MMUART0_DCD_MGPIO22B_H2F_B              => OPEN,
+        MMUART0_DCD_MGPIO22B_H2F_B              => GPIO_22_M2F_net_0,
         MMUART0_DSR_MGPIO20B_H2F_A              => OPEN,
         MMUART0_DSR_MGPIO20B_H2F_B              => OPEN,
         MMUART0_DTR_MGPIO18B_H2F_A              => OPEN,
         MMUART0_DTR_MGPIO18B_H2F_B              => OPEN,
         MMUART0_RI_MGPIO21B_H2F_A               => OPEN,
-        MMUART0_RI_MGPIO21B_H2F_B               => OPEN,
+        MMUART0_RI_MGPIO21B_H2F_B               => GPIO_21_M2F_net_0,
         MMUART0_RTS_MGPIO17B_H2F_A              => OPEN,
         MMUART0_RTS_MGPIO17B_H2F_B              => OPEN,
         MMUART0_RXD_MGPIO28B_H2F_A              => OPEN,
@@ -1087,7 +1092,7 @@ MSS_ADLIB_INST : MSS_010
         SPI0_SDO_MGPIO6A_H2F_B                  => OPEN,
         SPI0_SS0_MGPIO7A_H2F_A                  => SPI_0_SS0_M2F_net_0,
         SPI0_SS0_MGPIO7A_H2F_B                  => SPI_0_SS0_M2F_OE_net_0,
-        SPI0_SS1_MGPIO8A_H2F_A                  => SPI_0_SS1_M2F_net_0,
+        SPI0_SS1_MGPIO8A_H2F_A                  => OPEN,
         SPI0_SS1_MGPIO8A_H2F_B                  => OPEN,
         SPI0_SS2_MGPIO9A_H2F_A                  => OPEN,
         SPI0_SS2_MGPIO9A_H2F_B                  => OPEN,

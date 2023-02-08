@@ -3,11 +3,11 @@ set_device \
     -die PA4M1000_N \
     -pkg tq144
 set_input_cfg \
-	-path {C:/Users/jl/source/repos/hermess/hermess-Firmware/fpga/component/work/root_sb_MSS/ENVM.cfg}
+	-path {B:/HERMESS_SPSoftware/Firmware/fpga/component/work/root_sb_MSS/ENVM.cfg}
 set_output_efc \
-    -path {C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\designer\root\root.efc}
+    -path {B:\HERMESS_SPSoftware\Firmware\fpga\designer\root\root.efc}
 set_proj_dir \
-    -path {C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga}
+    -path {B:\HERMESS_SPSoftware\Firmware\fpga}
 set_is_relative_path \
     -value {FALSE}
 set_root_path_dir \

@@ -3,7 +3,7 @@
 <doc>
 <title>Resource Report</title>
 <text>Microsemi Corporation - Microsemi Libero Software Release v2021.3 (Version 2021.3.0.10)</text>
-<text>Date: Tue Jul 12 21:30:55 2022
+<text>Date: Wed Feb  8 12:03:51 2023
 </text>
 <section><name>Device Selection</name></section>
 <table>
@@ -76,7 +76,7 @@
 </row>
 <row>
  <cell>Source</cell>
- <cell>C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\synthesis\root.vm</cell>
+ <cell>B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\root.vm</cell>
 </row>
 </table>
 <section><name>Options</name></section>
