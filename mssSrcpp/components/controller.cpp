@@ -25,6 +25,8 @@ void Controller::worker () {
         MSS_GPIO_set_output(GPIO_PORT(LED_HB_MSS), hbLedOutputState[1]);
         // run the TM worker
         Tm::getInstance().worker2Hz();
+        if (rxsmSignal[2])
+            Memory::getInstance().updateMetadata();
     }
 
     // toggle write protection indicator LED
@@ -54,6 +56,7 @@ void Controller::worker () {
                 msg.append(": Aborted clearing memory");
             }
         }
+        /*READ HERE: Something is wrong with this implementation. */
         else if (rxsmSignal[1] && !rxsmSignal[1] && !storedAcquisition
                 && configuration.enableClear && getGpioInput(IN_WP)) {
             // clear the memory on SOE, NOT LO and no current measurements
@@ -94,7 +97,7 @@ void Controller::worker () {
                 msg.append(": Configuration prohibits storage");
                 type = 1;
             }
-            else if (!storedAcquisition) {
+            else if (storedAcquisition) { //logic an dies
                 msg.append(": Stored acquisition already running");
                 type = 1;
             }
@@ -249,7 +252,8 @@ Controller::Controller () {
     MSS_GPIO_config(GPIO_PORT(IN_RXSM_LO), MSS_GPIO_INPUT_MODE);
     MSS_GPIO_config(GPIO_PORT(IN_RXSM_SOE), MSS_GPIO_INPUT_MODE);
     MSS_GPIO_config(GPIO_PORT(IN_RXSM_SODS), MSS_GPIO_INPUT_MODE);
-    MSS_GPIO_config(GPIO_PORT(IN_WP), MSS_GPIO_INPUT_MODE);
+    MSS_GPIO_config(GPIO_PORT(IN_WP), MSS_GPIO_INOUT_MODE);
+    MSS_GPIO_set_output(GPIO_PORT(IN_WP), 1);
 
     // set the heartbeatCounterThreshold depending on the SGR samplerate
     switch (configuration.sgrSps) {

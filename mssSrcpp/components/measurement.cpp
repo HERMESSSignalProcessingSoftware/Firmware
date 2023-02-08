@@ -119,8 +119,11 @@ Measurement::Measurement ():
     MSS_GPIO_set_output(GPIO_PORT(OUT_ADC_START), 0);
     // enable continuous mode of the VHDL unit to prepare it
     conf.continuous = true;
-
+#ifdef PROTOTYP_SPU
+    for (uint8_t i = 1; i < 6; i++) {
+#else
     for (uint8_t i = 0; i < 6; i++) {
+#endif
         // enable continuous mode and set proper id
         conf.id = i;
         stamps[i].writeConfig(conf);

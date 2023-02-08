@@ -19,7 +19,7 @@ typedef enum {
     c_CE = 0xC7
 } SPI_MemoryCommand_t;
 
-typedef enum { InterfaceOne, InterfaceTwo} ActiveInterface_t;
+typedef enum { InterfaceOne, InterfaceTwo, InterfaceMeta} ActiveInterface_t;
 
 #define PAGEADDR(i)         (i << 9)
 #define PAGESIZE            512
@@ -43,8 +43,9 @@ public:
      *
      * @param pin
      * @param handle
+     * @param addr
      */
-    MemorySPI(mss_gpio_id_t pin, mss_spi_instance_t *handle);
+    MemorySPI(mss_gpio_id_t pin, mss_spi_instance_t *handle,  uint32_t addr);
 
     /**
      *
@@ -90,17 +91,16 @@ public:
     /**
      *
      * @param data
-     * @param address
      * @return
      */
-    uint32_t writePage(uint8_t *data, uint32_t address);
+    uint32_t writePage(uint8_t *data);
 
     /**
      *
      * @param data
      * @param address
      */
-    void readPage(uint8_t *data, uint32_t address);
+    void readPage(uint8_t *data, uint32_t addr);
 
     /**
      *
@@ -112,9 +112,28 @@ public:
      * @param blocking
      */
     bool writeReady(bool blocking);
+
+    /**
+     *
+     * @return
+     */
+    uint32_t getAddress(void);
+
+    /**
+     *
+     * @param addr
+     */
+    void setAddress(uint32_t addr);
+
+    /**
+     *
+     */
+    void increaseAddress(void);
 private:
     mss_gpio_id_t CSPin;
     mss_spi_instance_t *spihandle;
+    uint32_t address;
+    uint32_t pagesWritten;
 };
 
 // Remove after finishing implementation of memory in SPI version 131
@@ -140,6 +159,10 @@ public:
     void abortClearMemory();
 
     void saveDp(const Datapackage &dp);
+
+    void updateMetadata(void);
+
+    void recovery(void);
 private:
     const uint32_t PageSize;
     const uint32_t PageCount;
@@ -147,7 +170,10 @@ private:
     const uint32_t DatasetsPerPage;
     MemorySPI interfaceOne;
     MemorySPI interfaceTwo;
+    MemorySPI metaInterface;
     ActiveInterface_t activeInterface;
+    uint8_t memory[PAGESIZE];
+    uint32_t savedDataPoints;
     Memory();
 };
 
