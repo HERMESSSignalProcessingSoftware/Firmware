@@ -1,5 +1,6 @@
 #include "tm.h"
 #include "controller.h"
+#include "memory.h"
 #include <cstring>
 #include "../sf2drivers/drivers/mss_uart/mss_uart.h"
 #define CRCPP_USE_CPP11
@@ -21,15 +22,16 @@ void Tm::worker2Hz () {
             sendingTimestampByte = 0;
             sendingTimestamp = Controller::getInstance().getTimestamp();
         }
-
+        uint16_t memStatus = Memory::getInstance().memoryStatus();
         // fill the txBuffer
         txBuffer[0] = frameId++;
         txBuffer[1] = Controller::getInstance().getStateByte();
         txBuffer[2] = sendingTimestampByte == 0 ? 0x01 : 0;
         txBuffer[3] = (sendingTimestamp>>((3-sendingTimestampByte++)*8))&0xFF;
-
+        txBuffer[4] = (uint8_t)((memStatus & 0xFF00) >> 8);
+        txBuffer[5] = (uint8_t)(memStatus & 0x00FF);
         // empty initialize text part
-        for (uint8_t i = 4; i < 60; i++)
+        for (uint8_t i = 6; i < 60; i++)
             txBuffer[i] = 0;
 
         // fill text part

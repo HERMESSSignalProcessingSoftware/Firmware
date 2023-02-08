@@ -56,6 +56,7 @@ void Memory::recovery(void) {
         if (index == -1) {
             metaInterface.increaseAddress();
         } else {
+            found = true;
             addr = ptrMemory[index];
         }
         if (addr + 0x200 < PAGE_COUNT) {
@@ -63,6 +64,10 @@ void Memory::recovery(void) {
             interfaceTwo = MemorySPI(GPIO_PORT(FLASH_CS2), &g_mss_spi0, addr + 0x200);
         }
     }
+}
+
+uint32_t Memory::memoryStatus(void) {
+    return (interfaceOne.readStatus() << 8) | (interfaceTwo.readStatus());
 }
 
 void Memory::updateMetadata(void) {

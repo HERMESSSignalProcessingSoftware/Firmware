@@ -129,6 +129,8 @@ public:
      *
      */
     void increaseAddress(void);
+
+
 private:
     mss_gpio_id_t CSPin;
     mss_spi_instance_t *spihandle;
@@ -160,9 +162,21 @@ public:
 
     void saveDp(const Datapackage &dp);
 
+    /**
+     *
+     */
     void updateMetadata(void);
 
+    /**
+     *
+     */
     void recovery(void);
+
+    /**
+     *
+     * @return
+     */
+    uint32_t memoryStatus(void);
 private:
     const uint32_t PageSize;
     const uint32_t PageCount;

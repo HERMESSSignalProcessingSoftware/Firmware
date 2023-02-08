@@ -57,7 +57,7 @@ void Controller::worker () {
             }
         }
         /*READ HERE: Something is wrong with this implementation. */
-        else if (rxsmSignal[1] && !rxsmSignal[1] && !storedAcquisition
+        else if (rxsmSignal[1] && !rxsmSignal[0] && !storedAcquisition
                 && configuration.enableClear && getGpioInput(IN_WP)) {
             // clear the memory on SOE, NOT LO and no current measurements
             clearingMemory = true;
