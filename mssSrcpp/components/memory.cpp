@@ -41,7 +41,7 @@ void Memory::worker() {
 
 void Memory::recovery(void) {
     uint8_t memory[PAGESIZE];
-    uint32_t ptrMemory = (uint32_t*)&memory;
+    uint32_t* ptrMemory = (uint32_t*)&memory;
     int32_t index = -1;
     uint32_t addr = 0;
     bool found = false;
