@@ -1,6 +1,6 @@
 Resource Report
 Microsemi Corporation - Microsemi Libero Software Release v2021.3 (Version 2021.3.0.10)
-Date: Wed Feb  8 15:28:24 2023
+Date: Sat Feb 11 17:28:42 2023
 
 Device Selection
 +--------------------------------+----------------+
@@ -23,7 +23,7 @@ Source Files
 +---------+-------------------------------------------------------+
 | Topcell | root                                                  |
 | Format  | Verilog                                               |
-| Source  | B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\root.vm |
+| Source  | C:\Users\RG\Documents\Firmware\fpga\synthesis\root.vm |
 +---------+-------------------------------------------------------+
 
 Options

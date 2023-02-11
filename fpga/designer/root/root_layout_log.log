@@ -8,8 +8,8 @@ High-effort              : OFF
 Repair min-delay         : OFF
 Incremental              : OFF
 
-INFO: Reading User PDC file B:\HERMESS_SPSoftware\Firmware\fpga\constraint\io\user1.pdc. 0 error(s) and 0 warning(s)
-INFO: Reading User PDC file B:\HERMESS_SPSoftware\Firmware\fpga\constraint\io\user.pdc. 0 error(s) and 0 warning(s)
+INFO: Reading User PDC file C:\Users\RG\Documents\Firmware\fpga\constraint\io\user1.pdc. 0 error(s) and 0 warning(s)
+INFO: Reading User PDC file C:\Users\RG\Documents\Firmware\fpga\constraint\io\user.pdc. 0 error(s) and 0 warning(s)
 
 Running the I/O Bank and Globals Assigner.
 Info:  I/O Bank and Globals Assigner identified 75 fixed I/O macros, 1 unfixed I/O macros
@@ -18,7 +18,7 @@ I/O Bank and Globals Assigner completed successfully.
 Total time spent in I/O Bank and Globals Assigner: 0 seconds
 
 Placer V5.0 - 2021.3.0 
-Design: root                            Started: Wed Feb  8 15:28:41 2023
+Design: root                            Started: Sat Feb 11 17:28:48 2023
 
 Initializing Normal-Effort Standard Placement ...
 Clustering ...
@@ -39,22 +39,22 @@ Improvement              : 2 seconds
 Placer completed successfully.
 
 Design: root                            
-Finished: Wed Feb  8 15:28:49 2023
-Total CPU Time:     00:00:08            Total Elapsed Time: 00:00:08
-Total Memory Usage: 135.0 Mbytes
+Finished: Sat Feb 11 17:28:56 2023
+Total CPU Time:     00:00:09            Total Elapsed Time: 00:00:08
+Total Memory Usage: 134.7 Mbytes
                         o - o - o - o - o - o
 
 
 Router 
-Design: B:\HERMESS_SPSoftware\Firmware\fpga\designer\root\rootStarted: Wed Feb  8 15:28:54 2023
+Design: C:\Users\RG\Documents\Firmware\fpga\designer\root\rootStarted: Sat Feb 11 17:29:01 2023
 
 
 Router completed successfully.
 
-Design: B:\HERMESS_SPSoftware\Firmware\fpga\designer\root\root
-Finished: Wed Feb  8 15:29:02 2023
-Total CPU Time:     00:00:08            Total Elapsed Time: 00:00:08
-Total Memory Usage: 448.1 Mbytes
+Design: C:\Users\RG\Documents\Firmware\fpga\designer\root\root
+Finished: Sat Feb 11 17:29:10 2023
+Total CPU Time:     00:00:08            Total Elapsed Time: 00:00:09
+Total Memory Usage: 448.5 Mbytes
                         o - o - o - o - o - o
 
 Resource Usage

@@ -1,3 +1,3 @@
-project -load "B:/HERMESS_SPSoftware/Firmware/fpga/synthesis/root_syn.prj"
+project -load "C:/Users/RG/Documents/Firmware/fpga/synthesis/root_syn.prj"
 project -run
 project -save

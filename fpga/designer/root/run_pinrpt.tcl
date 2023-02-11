@@ -1,6 +1,6 @@
 DESIGN=root
-DESDIR=B:\HERMESS_SPSoftware\Firmware\fpga\designer\root
-TARGET_DIR=B:\HERMESS_SPSoftware\Firmware\fpga\designer\root
+DESDIR=C:\Users\RG\Documents\Firmware\fpga\designer\root
+TARGET_DIR=C:\Users\RG\Documents\Firmware\fpga\designer\root
 FAM=SmartFusion2
 DIE=PA4M1000_N
 PACKAGE=tq144

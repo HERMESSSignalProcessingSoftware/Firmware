@@ -1,6 +1,6 @@
 <project name="root" version="1.2">
     <ProjectDirectory>
-        B:\HERMESS_SPSoftware\Firmware\fpga\designer\root\root_fp
+        C:\Users\RG\Documents\Firmware\fpga\designer\root\root_fp
     </ProjectDirectory>
     <View>
         ChainView
@@ -9,7 +9,7 @@
         M2S010
     </LiberoTargetDevice>
     <LogFile>
-        B:\HERMESS_SPSoftware\Firmware\fpga\designer\root\root_fp\root.log
+        C:\Users\RG\Documents\Firmware\fpga\designer\root\root_fp\root.log
     </LogFile>
     <SerializationOption>
         Skip
@@ -17,7 +17,7 @@
     <ProgrammingInterface>
         JTAGMode
     </ProgrammingInterface>
-    <programmer status="enable" type="FlashPro5" revision="UndefRev" connection="usb1.1">
+    <programmer status="enable" type="FlashPro5" revision="UndefRev" connection="UndefConn">
         <name>
             E2005KXNA3
         </name>

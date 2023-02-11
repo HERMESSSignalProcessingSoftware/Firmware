@@ -10,7 +10,7 @@ Build: R-2021.03M-SP1
 Install: C:\Microsemi\Libero_SoC_v2021.3\SynplifyPro
 OS: Windows 6.2
 
-Hostname: DESKTOP-NH8R733
+Hostname: DESKTOP-JON32I6
 
 Implementation : synthesis
 Synopsys Synopsys Netlist Linker, Version comp202103synp2, Build 168R, Built Oct 12 2021 09:17:10, @
@@ -23,6 +23,6 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Feb  8 15:27:57 2023
+# Sat Feb 11 17:28:17 2023
 
 ###########################################################]

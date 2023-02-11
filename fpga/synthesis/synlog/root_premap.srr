@@ -1,4 +1,4 @@
-# Wed Feb  8 15:27:57 2023
+# Sat Feb 11 17:28:18 2023
 
 
 Copyright (C) 1994-2021 Synopsys, Inc.
@@ -11,84 +11,84 @@ Build: R-2021.03M-SP1
 Install: C:\Microsemi\Libero_SoC_v2021.3\SynplifyPro
 OS: Windows 6.2
 
-Hostname: DESKTOP-NH8R733
+Hostname: DESKTOP-JON32I6
 
 Implementation : synthesis
 Synopsys Generic Technology Pre-mapping, Version map202103act, Build 148R, Built Oct 13 2021 00:41:25, @
 
 
-Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 120MB peak: 120MB)
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 150MB peak: 151MB)
 
 
-Done reading skeleton netlist (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 126MB peak: 132MB)
+Done reading skeleton netlist (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 192MB peak: 199MB)
 
-Reading constraint file: B:\HERMESS_SPSoftware\Firmware\fpga\designer\root\synthesis.fdc
-@L: B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\root_scck.rpt 
-See clock summary report "B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\root_scck.rpt"
+Reading constraint file: C:\Users\RG\Documents\Firmware\fpga\designer\root\synthesis.fdc
+@L: C:\Users\RG\Documents\Firmware\fpga\synthesis\root_scck.rpt 
+See clock summary report "C:\Users\RG\Documents\Firmware\fpga\synthesis\root_scck.rpt"
 @N: MF916 |Option synthesis_strategy=base is enabled. 
 @N: MF248 |Running in 64-bit mode.
 @N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
 
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 135MB peak: 135MB)
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 200MB peak: 200MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 136MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 200MB peak: 201MB)
 
 
-Start loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 136MB peak: 136MB)
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 201MB peak: 201MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 136MB peak: 138MB)
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 201MB peak: 203MB)
 
-@W: BN132 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1059:8:1059:9|Removing sequential instance MSS.CORERESETP_0.MDDR_DDR_AXI_S_CORE_RESET_N_int because it is equivalent to instance MSS.CORERESETP_0.FDDR_CORE_RESET_N_int. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: MO129 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":703:8:703:9|Sequential instance MSS.CORERESETP_0.SDIF0_PERST_N_q1 is reduced to a combinational gate by constant propagation.
-@W: MO129 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":719:8:719:9|Sequential instance MSS.CORERESETP_0.SDIF1_PERST_N_q1 is reduced to a combinational gate by constant propagation.
-@W: MO129 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":735:8:735:9|Sequential instance MSS.CORERESETP_0.SDIF2_PERST_N_q1 is reduced to a combinational gate by constant propagation.
-@W: MO129 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":751:8:751:9|Sequential instance MSS.CORERESETP_0.SDIF3_PERST_N_q1 is reduced to a combinational gate by constant propagation.
-@W: MO129 :"b:\hermess_spsoftware\firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Sequential instance STAMP1.spi.last_bit_rx[1] is reduced to a combinational gate by constant propagation.
-@W: MO129 :"b:\hermess_spsoftware\firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Sequential instance STAMP2.spi.last_bit_rx[1] is reduced to a combinational gate by constant propagation.
-@W: MO129 :"b:\hermess_spsoftware\firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Sequential instance STAMP3.spi.last_bit_rx[1] is reduced to a combinational gate by constant propagation.
-@W: MO129 :"b:\hermess_spsoftware\firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Sequential instance STAMP4.spi.last_bit_rx[1] is reduced to a combinational gate by constant propagation.
-@W: MO129 :"b:\hermess_spsoftware\firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Sequential instance STAMP5.spi.last_bit_rx[1] is reduced to a combinational gate by constant propagation.
-@W: MO129 :"b:\hermess_spsoftware\firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Sequential instance STAMP6.spi.last_bit_rx[1] is reduced to a combinational gate by constant propagation.
-@W: MO129 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":781:8:781:9|Sequential instance MSS.CORERESETP_0.sm1_areset_n_q1 is reduced to a combinational gate by constant propagation.
-@W: MO129 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":703:8:703:9|Sequential instance MSS.CORERESETP_0.SDIF0_PERST_N_q2 is reduced to a combinational gate by constant propagation.
-@W: MO129 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":719:8:719:9|Sequential instance MSS.CORERESETP_0.SDIF1_PERST_N_q2 is reduced to a combinational gate by constant propagation.
-@W: MO129 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":735:8:735:9|Sequential instance MSS.CORERESETP_0.SDIF2_PERST_N_q2 is reduced to a combinational gate by constant propagation.
-@W: MO129 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":751:8:751:9|Sequential instance MSS.CORERESETP_0.SDIF3_PERST_N_q2 is reduced to a combinational gate by constant propagation.
-@W: MO129 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":781:8:781:9|Sequential instance MSS.CORERESETP_0.sm1_areset_n_clk_base is reduced to a combinational gate by constant propagation.
-@W: MO129 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":703:8:703:9|Sequential instance MSS.CORERESETP_0.SDIF0_PERST_N_q3 is reduced to a combinational gate by constant propagation.
-@W: MO129 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":719:8:719:9|Sequential instance MSS.CORERESETP_0.SDIF1_PERST_N_q3 is reduced to a combinational gate by constant propagation.
-@W: MO129 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":735:8:735:9|Sequential instance MSS.CORERESETP_0.SDIF2_PERST_N_q3 is reduced to a combinational gate by constant propagation.
-@W: MO129 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":751:8:751:9|Sequential instance MSS.CORERESETP_0.SDIF3_PERST_N_q3 is reduced to a combinational gate by constant propagation.
-@W: MO129 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1331:8:1331:9|Sequential instance MSS.CORERESETP_0.RESET_N_F2M_int is reduced to a combinational gate by constant propagation.
-@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1059:8:1059:9|Removing sequential instance DDR_READY_int (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1059:8:1059:9|Removing sequential instance SDIF_READY_int (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1059:8:1059:9|Removing sequential instance SDIF_RELEASED_int (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1059:8:1059:9|Removing sequential instance FDDR_CORE_RESET_N_int (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1134:8:1134:9|Removing sequential instance SDIF0_PHY_RESET_N_int (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1134:8:1134:9|Removing sequential instance SDIF0_CORE_RESET_N_0 (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1193:8:1193:9|Removing sequential instance SDIF1_PHY_RESET_N_int (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1193:8:1193:9|Removing sequential instance SDIF1_CORE_RESET_N_0 (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1252:8:1252:9|Removing sequential instance SDIF2_PHY_RESET_N_int (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1252:8:1252:9|Removing sequential instance SDIF2_CORE_RESET_N_0 (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1311:8:1311:9|Removing sequential instance SDIF3_PHY_RESET_N_int (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1311:8:1311:9|Removing sequential instance SDIF3_CORE_RESET_N_0 (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1134:8:1134:9|Removing sequential instance sdif0_state[0:3] (in view: work.CoreResetP(rtl)) of type view:PrimLib.statemachine(prim) because it does not drive other instances.
-@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1193:8:1193:9|Removing sequential instance sdif1_state[0:3] (in view: work.CoreResetP(rtl)) of type view:PrimLib.statemachine(prim) because it does not drive other instances.
-@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1252:8:1252:9|Removing sequential instance sdif2_state[0:3] (in view: work.CoreResetP(rtl)) of type view:PrimLib.statemachine(prim) because it does not drive other instances.
-@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1311:8:1311:9|Removing sequential instance sdif3_state[0:3] (in view: work.CoreResetP(rtl)) of type view:PrimLib.statemachine(prim) because it does not drive other instances.
-@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":803:8:803:9|Removing sequential instance sdif0_areset_n_clk_base (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
-@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":814:8:814:9|Removing sequential instance sdif1_areset_n_clk_base (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
-@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":825:8:825:9|Removing sequential instance sdif2_areset_n_clk_base (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
-@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":836:8:836:9|Removing sequential instance sdif3_areset_n_clk_base (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
-@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":803:8:803:9|Removing sequential instance sdif0_areset_n_q1 (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
-@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":814:8:814:9|Removing sequential instance sdif1_areset_n_q1 (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
-@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":825:8:825:9|Removing sequential instance sdif2_areset_n_q1 (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
-@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":836:8:836:9|Removing sequential instance sdif3_areset_n_q1 (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@W: BN132 :"c:\users\rg\documents\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1059:8:1059:9|Removing sequential instance MSS.CORERESETP_0.MDDR_DDR_AXI_S_CORE_RESET_N_int because it is equivalent to instance MSS.CORERESETP_0.FDDR_CORE_RESET_N_int. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: MO129 :"c:\users\rg\documents\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":703:8:703:9|Sequential instance MSS.CORERESETP_0.SDIF0_PERST_N_q1 is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\rg\documents\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":719:8:719:9|Sequential instance MSS.CORERESETP_0.SDIF1_PERST_N_q1 is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\rg\documents\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":735:8:735:9|Sequential instance MSS.CORERESETP_0.SDIF2_PERST_N_q1 is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\rg\documents\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":751:8:751:9|Sequential instance MSS.CORERESETP_0.SDIF3_PERST_N_q1 is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\rg\documents\firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Sequential instance STAMP1.spi.last_bit_rx[1] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\rg\documents\firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Sequential instance STAMP2.spi.last_bit_rx[1] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\rg\documents\firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Sequential instance STAMP3.spi.last_bit_rx[1] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\rg\documents\firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Sequential instance STAMP4.spi.last_bit_rx[1] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\rg\documents\firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Sequential instance STAMP5.spi.last_bit_rx[1] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\rg\documents\firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Sequential instance STAMP6.spi.last_bit_rx[1] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\rg\documents\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":781:8:781:9|Sequential instance MSS.CORERESETP_0.sm1_areset_n_q1 is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\rg\documents\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":703:8:703:9|Sequential instance MSS.CORERESETP_0.SDIF0_PERST_N_q2 is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\rg\documents\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":719:8:719:9|Sequential instance MSS.CORERESETP_0.SDIF1_PERST_N_q2 is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\rg\documents\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":735:8:735:9|Sequential instance MSS.CORERESETP_0.SDIF2_PERST_N_q2 is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\rg\documents\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":751:8:751:9|Sequential instance MSS.CORERESETP_0.SDIF3_PERST_N_q2 is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\rg\documents\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":781:8:781:9|Sequential instance MSS.CORERESETP_0.sm1_areset_n_clk_base is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\rg\documents\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":703:8:703:9|Sequential instance MSS.CORERESETP_0.SDIF0_PERST_N_q3 is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\rg\documents\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":719:8:719:9|Sequential instance MSS.CORERESETP_0.SDIF1_PERST_N_q3 is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\rg\documents\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":735:8:735:9|Sequential instance MSS.CORERESETP_0.SDIF2_PERST_N_q3 is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\rg\documents\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":751:8:751:9|Sequential instance MSS.CORERESETP_0.SDIF3_PERST_N_q3 is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\rg\documents\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1331:8:1331:9|Sequential instance MSS.CORERESETP_0.RESET_N_F2M_int is reduced to a combinational gate by constant propagation.
+@N: BN362 :"c:\users\rg\documents\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1059:8:1059:9|Removing sequential instance DDR_READY_int (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rg\documents\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1059:8:1059:9|Removing sequential instance SDIF_READY_int (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rg\documents\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1059:8:1059:9|Removing sequential instance SDIF_RELEASED_int (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rg\documents\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1059:8:1059:9|Removing sequential instance FDDR_CORE_RESET_N_int (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rg\documents\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1134:8:1134:9|Removing sequential instance SDIF0_PHY_RESET_N_int (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rg\documents\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1134:8:1134:9|Removing sequential instance SDIF0_CORE_RESET_N_0 (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rg\documents\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1193:8:1193:9|Removing sequential instance SDIF1_PHY_RESET_N_int (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rg\documents\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1193:8:1193:9|Removing sequential instance SDIF1_CORE_RESET_N_0 (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rg\documents\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1252:8:1252:9|Removing sequential instance SDIF2_PHY_RESET_N_int (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rg\documents\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1252:8:1252:9|Removing sequential instance SDIF2_CORE_RESET_N_0 (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rg\documents\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1311:8:1311:9|Removing sequential instance SDIF3_PHY_RESET_N_int (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rg\documents\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1311:8:1311:9|Removing sequential instance SDIF3_CORE_RESET_N_0 (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rg\documents\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1134:8:1134:9|Removing sequential instance sdif0_state[0:3] (in view: work.CoreResetP(rtl)) of type view:PrimLib.statemachine(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rg\documents\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1193:8:1193:9|Removing sequential instance sdif1_state[0:3] (in view: work.CoreResetP(rtl)) of type view:PrimLib.statemachine(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rg\documents\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1252:8:1252:9|Removing sequential instance sdif2_state[0:3] (in view: work.CoreResetP(rtl)) of type view:PrimLib.statemachine(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rg\documents\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1311:8:1311:9|Removing sequential instance sdif3_state[0:3] (in view: work.CoreResetP(rtl)) of type view:PrimLib.statemachine(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rg\documents\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":803:8:803:9|Removing sequential instance sdif0_areset_n_clk_base (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rg\documents\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":814:8:814:9|Removing sequential instance sdif1_areset_n_clk_base (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rg\documents\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":825:8:825:9|Removing sequential instance sdif2_areset_n_clk_base (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rg\documents\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":836:8:836:9|Removing sequential instance sdif3_areset_n_clk_base (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rg\documents\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":803:8:803:9|Removing sequential instance sdif0_areset_n_q1 (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rg\documents\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":814:8:814:9|Removing sequential instance sdif1_areset_n_q1 (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rg\documents\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":825:8:825:9|Removing sequential instance sdif2_areset_n_q1 (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rg\documents\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":836:8:836:9|Removing sequential instance sdif3_areset_n_q1 (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
 @N: FX1184 |Applying syn_allowed_resources blockrams=21 on top level netlist root 
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 178MB peak: 178MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 240MB peak: 240MB)
 
 
 
@@ -116,14 +116,14 @@ root_sb_CCC_0_FCCC|GL0_net_inferred_clock                  2130      MSS.CCC_0.C
 root_sb_FABOSC_0_OSC|RCOSC_25_50MHZ_CCC_inferred_clock     15        MSS.FABOSC_0.I_RCOSC_25_50MHZ.CLKOUT(RCOSC_25_50MHZ)     MSS.CORERESETP_0.release_sdif0_core.C     -                 MSS.FABOSC_0.I_RCOSC_25_50MHZ_FAB.A(RCOSC_25_50MHZ_FAB)
 =================================================================================================================================================================================================================================================
 
-@W: MT530 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1059:8:1059:9|Found inferred clock root_sb_CCC_0_FCCC|GL0_net_inferred_clock which controls 2130 sequential elements including MSS.CORERESETP_0.sm0_state[0:6]. This clock has no specified timing constraint which may adversely impact design performance. 
-@W: MT530 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":894:8:894:9|Found inferred clock root_sb_FABOSC_0_OSC|RCOSC_25_50MHZ_CCC_inferred_clock which controls 15 sequential elements including MSS.CORERESETP_0.sdif3_areset_n_rcosc_q1. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\rg\documents\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1059:8:1059:9|Found inferred clock root_sb_CCC_0_FCCC|GL0_net_inferred_clock which controls 2130 sequential elements including MSS.CORERESETP_0.sm0_state[0:6]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\rg\documents\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":894:8:894:9|Found inferred clock root_sb_FABOSC_0_OSC|RCOSC_25_50MHZ_CCC_inferred_clock which controls 15 sequential elements including MSS.CORERESETP_0.sdif3_areset_n_rcosc_q1. This clock has no specified timing constraint which may adversely impact design performance. 
 
 @N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
 Finished Pre Mapping Phase.
-@N: BN225 |Writing default property annotation file B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\root.sap.
+@N: BN225 |Writing default property annotation file C:\Users\RG\Documents\Firmware\fpga\synthesis\root.sap.
 
-Starting constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 176MB peak: 179MB)
+Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 237MB peak: 240MB)
 
 Encoding state machine sm0_state[0:6] (in view: work.CoreResetP(rtl))
 original code -> new code
@@ -213,16 +213,16 @@ original code -> new code
    01 -> 01
    10 -> 10
 
-Finished constraint checker preprocessing (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 181MB peak: 181MB)
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 240MB peak: 240MB)
 
 
-Finished constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 183MB peak: 183MB)
+Finished constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 242MB peak: 242MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 96MB peak: 184MB)
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 155MB peak: 242MB)
 
-Process took 0h:00m:03s realtime, 0h:00m:03s cputime
-# Wed Feb  8 15:28:00 2023
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
+# Sat Feb 11 17:28:20 2023
 
 ###########################################################]
