@@ -3,7 +3,11 @@
 <doc>
 <title>Global Net Report</title>
 <text>Microsemi Corporation - Microsemi Libero Software Release v2021.3 (Version 2021.3.0.10)</text>
+<<<<<<< HEAD
 <text>Date: Mon Feb 13 08:54:40 2023
+=======
+<text>Date: Fri Dec  9 20:23:31 2022
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 </text>
 <section>
 <name>Global Nets Information</name>
@@ -17,30 +21,30 @@
 </header>
 <row>
  <cell>1</cell>
- <cell>GB[2] </cell>
- <cell>(220, 54)</cell>
+ <cell>GB[3] </cell>
+ <cell>(221, 54)</cell>
  <cell>MSS/CCC_0/GL0_INST/U0_YNn</cell>
- <cell>2090</cell>
+ <cell>3502</cell>
 </row>
 <row>
  <cell>2</cell>
  <cell>GB[1] </cell>
  <cell>(219, 54)</cell>
- <cell>AND3_0_RNILQT1/U0_YNn_GSouth</cell>
- <cell>1020</cell>
+ <cell>AND3_0_RNILQT1/U0_YNn</cell>
+ <cell>2424</cell>
 </row>
 <row>
  <cell>3</cell>
- <cell>GB[3] </cell>
- <cell>(221, 54)</cell>
- <cell>MSS/CORERESETP_0/sm0_areset_n_clk_base_RNIDQJD/U0_YNn_GSouth</cell>
+ <cell>GB[0] </cell>
+ <cell>(218, 54)</cell>
+ <cell>MSS/CORERESETP_0/sm0_areset_n_clk_base_RNIDQJD/U0_YNn</cell>
  <cell>20</cell>
 </row>
 <row>
  <cell>4</cell>
- <cell>GB[0] </cell>
- <cell>(218, 54)</cell>
- <cell>MSS/FABOSC_0/I_RCOSC_25_50MHZ_FAB_CLKINT/U0_YNn_GSouth</cell>
+ <cell>GB[2] </cell>
+ <cell>(220, 54)</cell>
+ <cell>MSS/FABOSC_0/I_RCOSC_25_50MHZ_FAB_CLKINT/U0_YNn</cell>
  <cell>7</cell>
 </row>
 </table>
@@ -65,17 +69,26 @@
 <row>
  <cell>1</cell>
  <cell>AND3_0:Y</cell>
+<<<<<<< HEAD
  <cell>(346, 12)</cell>
+=======
+ <cell>(325, 75)</cell>
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
  <cell>GB[1] </cell>
  <cell>NN_1</cell>
  <cell>ROUTED</cell>
- <cell>104</cell>
+ <cell>105</cell>
 </row>
 <row>
  <cell>2</cell>
  <cell>MSS/CORERESETP_0/sm0_areset_n_clk_base:Q</cell>
+<<<<<<< HEAD
  <cell>(240, 46)</cell>
  <cell>GB[3] </cell>
+=======
+ <cell>(326, 76)</cell>
+ <cell>GB[0] </cell>
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
  <cell>MSS/CORERESETP_0/sm0_areset_n_clk_base_0</cell>
  <cell>ROUTED</cell>
  <cell>1</cell>
@@ -84,7 +97,7 @@
  <cell>3</cell>
  <cell>MSS/FABOSC_0/I_RCOSC_25_50MHZ_FAB:CLKOUT</cell>
  <cell>(397, 92)</cell>
- <cell>GB[0] </cell>
+ <cell>GB[2] </cell>
  <cell>MSS/FABOSC_0/N_RCOSC_25_50MHZ_CLKINT</cell>
  <cell>ROUTED</cell>
  <cell>1</cell>
@@ -109,8 +122,8 @@
  <cell>1</cell>
  <cell>MSS/CCC_0/CCC_INST/INST_CCC_IP:GL0</cell>
  <cell>CCC-NE1 (390, 92)</cell>
- <cell>GL0 =&gt; GL2</cell>
- <cell>GB[2] </cell>
+ <cell>GL0 =&gt; GL3</cell>
+ <cell>GB[3] </cell>
  <cell>MSS/CCC_0/GL0_net</cell>
  <cell>HARDWIRED</cell>
  <cell>1</cell>
@@ -163,23 +176,18 @@
 </header>
 <row>
  <cell>1</cell>
- <cell>GB[2] </cell>
- <cell>(220, 54)</cell>
+ <cell>GB[3] </cell>
+ <cell>(221, 54)</cell>
  <cell>MSS/CCC_0/GL0_INST/U0_YNn</cell>
- <cell>2090</cell>
- <cell> </cell>
+ <cell>3502</cell>
+ <cell>1</cell>
  <cell>(218, 102)</cell>
  <cell>1</cell>
-</row>
-<row>
- <cell>2</cell>
- <cell>GB[1] </cell>
- <cell>(219, 54)</cell>
- <cell>AND3_0_RNILQT1/U0_YNn_GSouth</cell>
- <cell>1020</cell>
- <cell>1</cell>
+<<<<<<< HEAD
  <cell>(219, 3)</cell>
  <cell>18</cell>
+=======
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 </row>
 <row>
  <cell> </cell>
@@ -188,8 +196,13 @@
  <cell></cell>
  <cell></cell>
  <cell>2</cell>
+<<<<<<< HEAD
  <cell>(219, 6)</cell>
  <cell>44</cell>
+=======
+ <cell>(219, 57)</cell>
+ <cell>118</cell>
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 </row>
 <row>
  <cell> </cell>
@@ -198,8 +211,13 @@
  <cell></cell>
  <cell></cell>
  <cell>3</cell>
+<<<<<<< HEAD
  <cell>(219, 15)</cell>
  <cell>87</cell>
+=======
+ <cell>(219, 60)</cell>
+ <cell>100</cell>
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 </row>
 <row>
  <cell> </cell>
@@ -208,8 +226,13 @@
  <cell></cell>
  <cell></cell>
  <cell>4</cell>
+<<<<<<< HEAD
  <cell>(219, 18)</cell>
  <cell>125</cell>
+=======
+ <cell>(219, 63)</cell>
+ <cell>107</cell>
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 </row>
 <row>
  <cell> </cell>
@@ -218,8 +241,13 @@
  <cell></cell>
  <cell></cell>
  <cell>5</cell>
+<<<<<<< HEAD
  <cell>(219, 21)</cell>
  <cell>74</cell>
+=======
+ <cell>(219, 66)</cell>
+ <cell>120</cell>
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 </row>
 <row>
  <cell> </cell>
@@ -228,8 +256,13 @@
  <cell></cell>
  <cell></cell>
  <cell>6</cell>
+<<<<<<< HEAD
  <cell>(219, 24)</cell>
  <cell>109</cell>
+=======
+ <cell>(219, 69)</cell>
+ <cell>78</cell>
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 </row>
 <row>
  <cell> </cell>
@@ -238,8 +271,8 @@
  <cell></cell>
  <cell></cell>
  <cell>7</cell>
- <cell>(219, 27)</cell>
- <cell>89</cell>
+ <cell>(219, 72)</cell>
+ <cell>156</cell>
 </row>
 <row>
  <cell> </cell>
@@ -248,8 +281,13 @@
  <cell></cell>
  <cell></cell>
  <cell>8</cell>
+<<<<<<< HEAD
  <cell>(219, 30)</cell>
  <cell>91</cell>
+=======
+ <cell>(219, 81)</cell>
+ <cell>20</cell>
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 </row>
 <row>
  <cell> </cell>
@@ -258,8 +296,13 @@
  <cell></cell>
  <cell></cell>
  <cell>9</cell>
+<<<<<<< HEAD
  <cell>(219, 33)</cell>
  <cell>113</cell>
+=======
+ <cell>(219, 84)</cell>
+ <cell>23</cell>
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 </row>
 <row>
  <cell> </cell>
@@ -268,8 +311,13 @@
  <cell></cell>
  <cell></cell>
  <cell>10</cell>
+<<<<<<< HEAD
  <cell>(219, 36)</cell>
  <cell>28</cell>
+=======
+ <cell>(219, 87)</cell>
+ <cell>15</cell>
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 </row>
 <row>
  <cell> </cell>
@@ -278,8 +326,13 @@
  <cell></cell>
  <cell></cell>
  <cell>11</cell>
+<<<<<<< HEAD
  <cell>(219, 39)</cell>
  <cell>12</cell>
+=======
+ <cell>(221, 75)</cell>
+ <cell>169</cell>
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 </row>
 <row>
  <cell> </cell>
@@ -288,8 +341,18 @@
  <cell></cell>
  <cell></cell>
  <cell>12</cell>
- <cell>(219, 42)</cell>
- <cell>22</cell>
+ <cell>(221, 78)</cell>
+ <cell>58</cell>
+</row>
+<row>
+ <cell>2</cell>
+ <cell>GB[1] </cell>
+ <cell>(219, 54)</cell>
+ <cell>AND3_0_RNILQT1/U0_YNn</cell>
+ <cell>2424</cell>
+ <cell>1</cell>
+ <cell>(218, 57)</cell>
+ <cell>115</cell>
 </row>
 <row>
  <cell> </cell>
@@ -297,9 +360,15 @@
  <cell></cell>
  <cell></cell>
  <cell></cell>
+<<<<<<< HEAD
  <cell>13</cell>
  <cell>(219, 48)</cell>
  <cell>4</cell>
+=======
+ <cell>2</cell>
+ <cell>(218, 60)</cell>
+ <cell>87</cell>
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 </row>
 <row>
  <cell> </cell>
@@ -307,9 +376,15 @@
  <cell></cell>
  <cell></cell>
  <cell></cell>
+<<<<<<< HEAD
  <cell>14</cell>
  <cell>(219, 51)</cell>
  <cell>16</cell>
+=======
+ <cell>3</cell>
+ <cell>(218, 63)</cell>
+ <cell>67</cell>
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 </row>
 <row>
  <cell> </cell>
@@ -317,6 +392,7 @@
  <cell></cell>
  <cell></cell>
  <cell></cell>
+<<<<<<< HEAD
  <cell>15</cell>
  <cell>(220, 9)</cell>
  <cell>63</cell>
@@ -330,16 +406,96 @@
  <cell>16</cell>
  <cell>(220, 12)</cell>
  <cell>125</cell>
+=======
+ <cell>4</cell>
+ <cell>(218, 66)</cell>
+ <cell>60</cell>
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>5</cell>
+ <cell>(218, 69)</cell>
+ <cell>30</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>6</cell>
+ <cell>(218, 72)</cell>
+ <cell>34</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>7</cell>
+ <cell>(218, 81)</cell>
+ <cell>9</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>8</cell>
+ <cell>(218, 84)</cell>
+ <cell>23</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>9</cell>
+ <cell>(218, 87)</cell>
+ <cell>15</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>10</cell>
+ <cell>(219, 75)</cell>
+ <cell>39</cell>
+</row>
+<row>
+ <cell> </cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>11</cell>
+ <cell>(219, 78)</cell>
+ <cell>7</cell>
 </row>
 <row>
  <cell>3</cell>
- <cell>GB[3] </cell>
- <cell>(221, 54)</cell>
- <cell>MSS/CORERESETP_0/sm0_areset_n_clk_base_RNIDQJD/U0_YNn_GSouth</cell>
+ <cell>GB[0] </cell>
+ <cell>(218, 54)</cell>
+ <cell>MSS/CORERESETP_0/sm0_areset_n_clk_base_RNIDQJD/U0_YNn</cell>
  <cell>20</cell>
  <cell>1</cell>
+<<<<<<< HEAD
  <cell>(218, 9)</cell>
  <cell>19</cell>
+=======
+ <cell>(220, 75)</cell>
+ <cell>12</cell>
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 </row>
 <row>
  <cell> </cell>
@@ -348,18 +504,28 @@
  <cell></cell>
  <cell></cell>
  <cell>2</cell>
+<<<<<<< HEAD
  <cell>(218, 12)</cell>
  <cell>1</cell>
+=======
+ <cell>(220, 78)</cell>
+ <cell>8</cell>
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 </row>
 <row>
  <cell>4</cell>
- <cell>GB[0] </cell>
- <cell>(218, 54)</cell>
- <cell>MSS/FABOSC_0/I_RCOSC_25_50MHZ_FAB_CLKINT/U0_YNn_GSouth</cell>
+ <cell>GB[2] </cell>
+ <cell>(220, 54)</cell>
+ <cell>MSS/FABOSC_0/I_RCOSC_25_50MHZ_FAB_CLKINT/U0_YNn</cell>
  <cell>7</cell>
  <cell>1</cell>
+<<<<<<< HEAD
  <cell>(219, 45)</cell>
  <cell>2</cell>
+=======
+ <cell>(218, 75)</cell>
+ <cell>3</cell>
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 </row>
 <row>
  <cell> </cell>
@@ -368,8 +534,13 @@
  <cell></cell>
  <cell></cell>
  <cell>2</cell>
+<<<<<<< HEAD
  <cell>(221, 9)</cell>
  <cell>5</cell>
+=======
+ <cell>(218, 78)</cell>
+ <cell>4</cell>
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 </row>
 </table>
 <text></text>

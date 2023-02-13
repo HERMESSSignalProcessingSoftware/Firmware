@@ -1,5 +1,9 @@
 #===========================================================
+<<<<<<< HEAD
 # Created by Microsemi SmartDesign Mon Feb 13 08:40:25 2023
+=======
+# Created by Microsemi SmartDesign Fri Dec  9 20:18:47 2022
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 #
 # Syntax: 
 # ------- 
@@ -23,6 +27,7 @@ memmap STAMP3 0x5000_2000;
 memmap STAMP4 0x5000_3000;
 memmap STAMP5 0x5000_4000;
 memmap STAMP6 0x5000_5000;
+memmap telemetry_0 0x5000_6000;
 #-----------------------------------------------------------
 # Include resource scriptlets
 #-----------------------------------------------------------

@@ -1,4 +1,5 @@
 Software Version: 2021.3.0.10
+<<<<<<< HEAD
 Opened 'C:\Users\RG\Documents\Firmware\fpga\designer\root\root_fp\root.pro'
 PDB file 'C:\Users\RG\Documents\Firmware\fpga\designer\root\root.pdb' has been loaded successfully.
 DESIGN : root;  CHECKSUM : EAE6;  PDB_VERSION : 1.9
@@ -9,6 +10,17 @@ Fabric component bitstream digest: 77f1a44627d317fa34d9d681e0d4dc793acc49ebb16e2
 eNVM component bitstream digest: 421e5964f95e2dc1fa18606866e1cdd93487300c4a8fb0b31f2b5145611b7cb8
 Entire bitstream digest: df1d8f9391dc47064abdc545a99172c6c173be39ff968b7446c746b7eba7cba5
 Finished: Mon Feb 13 16:15:54 2023 (Elapsed time 00:00:07)
+=======
+Opened 'B:\HERMESS_SPSoftware\Firmware\fpga\designer\root\root_fp\root.pro'
+PDB file 'B:\HERMESS_SPSoftware\Firmware\fpga\designer\root\root.pdb' has been loaded successfully.
+DESIGN : root;  CHECKSUM : DF47;  PDB_VERSION : 1.9
+Info: Programming Interface selected is JTAG.
+File/Folder 'B:\HERMESS_SPSoftware\Firmware\fpga\designer\root\root.ppd' will be overwritten.
+Successfully exported PPD file for currently secured device: 'B:\HERMESS_SPSoftware\Firmware\fpga\designer\root\root.ppd'; file programs Fabric.
+Fabric component bitstream digest: ddbf8e7920dac0c440f3441d13cdeff3a7493eee44db4447af58aa5338ad70ec
+Entire bitstream digest: 9f4a8e5e488787f1d3f5c848ef30bb83bece2a2dd288f0327bf122b475f2e105
+Finished: Fri Dec 09 20:24:42 2022 (Elapsed time 00:00:06)
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 
 Project saved.
 Project closed.

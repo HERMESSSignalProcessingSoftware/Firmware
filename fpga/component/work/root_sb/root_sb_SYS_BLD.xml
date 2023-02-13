@@ -3126,53 +3126,6 @@
 </data>
 <separator/>
 <data>
-<name>MM_UART_1</name>
-<table>
-<header>
- <cell>Name</cell>
- <cell>Subsystem</cell>
- <cell>Vendor</cell>
- <cell>Version</cell>
-</header>
-<row>
- <cell>SF2_MSS_UART</cell>
- <cell>MSS Peripherals</cell>
- <cell>Actel</cell>
- <cell>0.0.101</cell>
-</row>
-</table>
-<cdata>
-<name>Configuration</name>
-<table>
-<header>
- <cell>Parameter</cell>
- <cell>Value</cell>
-</header>
-<row>
- <cell>MODE</cell>
- <cell>MODE_ASYNC</cell>
-</row>
-<row>
- <cell>MODE_DUPLEX</cell>
- <cell>MODE_FULL</cell>
-</row>
-<row>
- <cell>MODEM_MUX</cell>
- <cell>MUX_IO</cell>
-</row>
-<row>
- <cell>TX_RX_MUX</cell>
- <cell>MUX_FABRIC</cell>
-</row>
-<row>
- <cell>USE_MODEM</cell>
- <cell>false</cell>
-</row>
-</table>
-</cdata>
-</data>
-<separator/>
-<data>
 <name>MSS_GPIO</name>
 <table>
 <header>
@@ -3497,11 +3450,11 @@
 </row>
 <row>
  <cell>GPIO24_TYPE</cell>
- <cell>CONNECTION_IOA</cell>
+ <cell>CONNECTION_FABRICB</cell>
 </row>
 <row>
  <cell>GPIO24_USAGE</cell>
- <cell>NOT_USED</cell>
+ <cell>USAGE_OUTPUT</cell>
 </row>
 <row>
  <cell>GPIO25_FAB_CAPT</cell>
@@ -3509,11 +3462,11 @@
 </row>
 <row>
  <cell>GPIO25_TYPE</cell>
- <cell>CONNECTION_IOA</cell>
+ <cell>CONNECTION_FABRICB</cell>
 </row>
 <row>
  <cell>GPIO25_USAGE</cell>
- <cell>NOT_USED</cell>
+ <cell>USAGE_OUTPUT</cell>
 </row>
 <row>
  <cell>GPIO26_FAB_CAPT</cell>
@@ -3667,7 +3620,7 @@
 </data>
 <separator/>
 <data>
-<name>STAMP</name>
+<name>STAMP_UND_TELEMETRY</name>
 <table>
 <header>
  <cell>Name</cell>
@@ -3710,34 +3663,39 @@
  <cell>Instance Pins</cell>
 </header>
 <row>
+ <cell>root_sb_MSS_0:MSS_INT_F2M[0]</cell>
+ <cell>STAMP_UND_TELEMETRY_0</cell>
+ <cell>STAMP_UND_TELEMETRY_0_INTR_0_top</cell>
+</row>
+<row>
  <cell>root_sb_MSS_0:MSS_INT_F2M[1]</cell>
- <cell>STAMP_0</cell>
- <cell>STAMP_0_INTR_0_top</cell>
+ <cell>STAMP_UND_TELEMETRY_1</cell>
+ <cell>STAMP_UND_TELEMETRY_1_INTR_0_top</cell>
 </row>
 <row>
  <cell>root_sb_MSS_0:MSS_INT_F2M[2]</cell>
- <cell>STAMP_1</cell>
- <cell>STAMP_1_INTR_0_top</cell>
+ <cell>STAMP_UND_TELEMETRY_2</cell>
+ <cell>STAMP_UND_TELEMETRY_2_INTR_0_top</cell>
 </row>
 <row>
  <cell>root_sb_MSS_0:MSS_INT_F2M[3]</cell>
- <cell>STAMP_2</cell>
- <cell>STAMP_2_INTR_0_top</cell>
+ <cell>STAMP_UND_TELEMETRY_3</cell>
+ <cell>STAMP_UND_TELEMETRY_3_INTR_0_top</cell>
 </row>
 <row>
  <cell>root_sb_MSS_0:MSS_INT_F2M[4]</cell>
- <cell>STAMP_3</cell>
- <cell>STAMP_3_INTR_0_top</cell>
+ <cell>STAMP_UND_TELEMETRY_4</cell>
+ <cell>STAMP_UND_TELEMETRY_4_INTR_0_top</cell>
 </row>
 <row>
  <cell>root_sb_MSS_0:MSS_INT_F2M[5]</cell>
- <cell>STAMP_4</cell>
- <cell>STAMP_4_INTR_0_top</cell>
+ <cell>STAMP_UND_TELEMETRY_5</cell>
+ <cell>STAMP_UND_TELEMETRY_5_INTR_0_top</cell>
 </row>
 <row>
  <cell>root_sb_MSS_0:MSS_INT_F2M[6]</cell>
- <cell>STAMP_5</cell>
- <cell>STAMP_5_INTR_0_top</cell>
+ <cell>STAMP_UND_TELEMETRY_6</cell>
+ <cell>STAMP_UND_TELEMETRY_6_INTR_0_top</cell>
 </row>
 </table>
 </data>
@@ -3768,62 +3726,72 @@
  <cell>-</cell>
 </row>
 <row>
- <cell>STAMP_5_INTR_0_top</cell>
+ <cell>STAMP_UND_TELEMETRY_6_INTR_0_top</cell>
  <cell>IN</cell>
  <cell>-</cell>
 </row>
 <row>
- <cell>STAMP_4_INTR_0_top</cell>
+ <cell>STAMP_UND_TELEMETRY_5_INTR_0_top</cell>
  <cell>IN</cell>
  <cell>-</cell>
 </row>
 <row>
- <cell>STAMP_3_INTR_0_top</cell>
+ <cell>STAMP_UND_TELEMETRY_4_INTR_0_top</cell>
  <cell>IN</cell>
  <cell>-</cell>
 </row>
 <row>
- <cell>STAMP_2_INTR_0_top</cell>
+ <cell>STAMP_UND_TELEMETRY_3_INTR_0_top</cell>
  <cell>IN</cell>
  <cell>-</cell>
 </row>
 <row>
- <cell>STAMP_1_INTR_0_top</cell>
+ <cell>STAMP_UND_TELEMETRY_2_INTR_0_top</cell>
  <cell>IN</cell>
  <cell>-</cell>
 </row>
 <row>
- <cell>STAMP_0_INTR_0_top</cell>
+ <cell>STAMP_UND_TELEMETRY_1_INTR_0_top</cell>
  <cell>IN</cell>
  <cell>-</cell>
 </row>
 <row>
- <cell>STAMP</cell>
+ <cell>STAMP_UND_TELEMETRY_0_INTR_0_top</cell>
+ <cell>IN</cell>
+ <cell>-</cell>
+</row>
+<row>
+ <cell>STAMP_UND_TELEMETRY</cell>
  <cell>MIRROREDSLAVE</cell>
  <cell>-</cell>
 </row>
 <row>
- <cell>STAMP_1</cell>
+ <cell>STAMP_UND_TELEMETRY_1</cell>
  <cell>MIRROREDSLAVE</cell>
  <cell>-</cell>
 </row>
 <row>
- <cell>STAMP_2</cell>
+ <cell>STAMP_UND_TELEMETRY_2</cell>
  <cell>MIRROREDSLAVE</cell>
  <cell>-</cell>
 </row>
 <row>
- <cell>STAMP_3</cell>
+ <cell>STAMP_UND_TELEMETRY_3</cell>
  <cell>MIRROREDSLAVE</cell>
  <cell>-</cell>
 </row>
 <row>
- <cell>STAMP_4</cell>
+ <cell>STAMP_UND_TELEMETRY_4</cell>
  <cell>MIRROREDSLAVE</cell>
  <cell>-</cell>
 </row>
 <row>
- <cell>STAMP_5</cell>
+ <cell>STAMP_UND_TELEMETRY_5</cell>
+ <cell>MIRROREDSLAVE</cell>
+ <cell>-</cell>
+</row>
+<row>
+ <cell>STAMP_UND_TELEMETRY_6</cell>
  <cell>MIRROREDSLAVE</cell>
  <cell>Slave bus interface pin on  FIC0_Master_Subsystem</cell>
 </row>
@@ -3858,16 +3826,6 @@
  <cell>-</cell>
 </row>
 <row>
- <cell>MMUART_1_TXD_M2F</cell>
- <cell>OUT</cell>
- <cell>-</cell>
-</row>
-<row>
- <cell>MMUART_1_RXD_F2M</cell>
- <cell>IN</cell>
- <cell>-</cell>
-</row>
-<row>
  <cell>GPIO_0_F2M</cell>
  <cell>IN</cell>
  <cell>-</cell>
@@ -3885,6 +3843,16 @@
 <row>
  <cell>GPIO_3_F2M</cell>
  <cell>IN</cell>
+ <cell>-</cell>
+</row>
+<row>
+ <cell>GPIO_24_M2F</cell>
+ <cell>OUT</cell>
+ <cell>-</cell>
+</row>
+<row>
+ <cell>GPIO_25_M2F</cell>
+ <cell>OUT</cell>
  <cell>-</cell>
 </row>
 <row>
@@ -3992,8 +3960,8 @@
 </header>
 <row>
  <cell>Connect Generic User Slave Peripheral</cell>
- <cell>STAMP is a slave on FIC0_Master_Subsystem subsystem.
-Connect your peripheral to STAMP_5 bus interface pin in the top design.</cell>
+ <cell>STAMP_UND_TELEMETRY is a slave on FIC0_Master_Subsystem subsystem.
+Connect your peripheral to STAMP_UND_TELEMETRY_6 bus interface pin in the top design.</cell>
 </row>
 <separator/>
 </table>

@@ -5,7 +5,11 @@ The file contains the job information from mapper to be displayed as part of the
 *******************************************************************************************-->
 <job_run_status name="Mapper">
 <report_link name="Detailed report">
+<<<<<<< HEAD
 <data>C:\Users\RG\Documents\Firmware\fpga\synthesis\synlog\root_fpga_mapper.srr</data>
+=======
+<data>B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\synlog\root_fpga_mapper.srr</data>
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 <title></title>
 </report_link>
 <job_status>
@@ -13,20 +17,29 @@ The file contains the job information from mapper to be displayed as part of the
 </job_status>
 <job_info>
 <info name="Notes">
-<data>32</data>
+<data>28</data>
 <report_link name="more">
+<<<<<<< HEAD
 <data>C:\Users\RG\Documents\Firmware\fpga\synthesis\synlog\report\root_fpga_mapper_notes.txt</data>
+=======
+<data>B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\synlog\report\root_fpga_mapper_notes.txt</data>
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 </report_link>
 </info>
 <info name="Warnings">
-<data>27</data>
+<data>54</data>
 <report_link name="more">
+<<<<<<< HEAD
 <data>C:\Users\RG\Documents\Firmware\fpga\synthesis\synlog\report\root_fpga_mapper_warnings.txt</data>
+=======
+<data>B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\synlog\report\root_fpga_mapper_warnings.txt</data>
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 </report_link>
 </info>
 <info name="Errors">
 <data>0</data>
 <report_link name="more">
+<<<<<<< HEAD
 <data>C:\Users\RG\Documents\Firmware\fpga\synthesis\synlog\report\root_fpga_mapper_errors.txt</data>
 </report_link>
 </info>
@@ -41,6 +54,22 @@ The file contains the job information from mapper to be displayed as part of the
 </info>
 <info name="Date &amp; Time">
 <data type="timestamp">1676274290</data>
+=======
+<data>B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\synlog\report\root_fpga_mapper_errors.txt</data>
+</report_link>
+</info>
+<info name="CPU Time">
+<data>0h:00m:32s</data>
+</info>
+<info name="Real Time">
+<data>0h:00m:32s</data>
+</info>
+<info name="Peak Memory">
+<data>269MB</data>
+</info>
+<info name="Date &amp; Time">
+<data type="timestamp">1670613777</data>
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 </info>
 </job_info>
 </job_run_status>

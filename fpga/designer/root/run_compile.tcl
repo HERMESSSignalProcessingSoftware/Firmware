@@ -82,7 +82,11 @@ set_compile_info \
 set_compile_info \
     -category {"Source Files"} \
     -name {"Source"} \
+<<<<<<< HEAD
     -value {"C:\Users\RG\Documents\Firmware\fpga\synthesis\root.vm"}
+=======
+    -value {"B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\root.vm"}
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 set_compile_info \
     -category {"Options"} \
     -name {"Enable Single Event Transient mitigation"} \
@@ -96,7 +100,11 @@ set_compile_info \
     -name {"Limit the number of high fanout nets to display to"} \
     -value {"10"}
 compile \
+<<<<<<< HEAD
     -desdir {C:\Users\RG\Documents\Firmware\fpga\designer\root} \
+=======
+    -desdir {B:\HERMESS_SPSoftware\Firmware\fpga\designer\root} \
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
     -design root \
     -fam SmartFusion2 \
     -die PA4M1000_N \

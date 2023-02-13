@@ -300,7 +300,7 @@ void MSS_SPI_configure_slave_mode
  * MSS_SPI_configure_master_mode()
  * See "mss_spi.h" for details of how to use this function.
  */
-void MSS_SPI_configure_master_mode
+void  q
 (
     mss_spi_instance_t *    this_spi,
     mss_spi_slave_t         slave,

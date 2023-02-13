@@ -19,8 +19,13 @@
 #define IN_RXSM_SOE                     1
 #define IN_RXSM_SODS                    2
 #define IN_WP                           3
+<<<<<<< HEAD
 #define FLASH_CS1                       21
 #define FLASH_CS2                       22
+=======
+#define FLASH_CS_2                      GPIO_PORT(24)
+#define FLASH_CS_1                      GPIO_PORT(25)
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 #define OUT_DAPI_CTS                    26
 #define OUT_ADC_START                   28
 #define LED_HB_MEMSYNC                  29
@@ -38,7 +43,7 @@
 #define ADDR_STAMP4                     0x50003000U
 #define ADDR_STAMP5                     0x50004000U
 #define ADDR_STAMP6                     0x50005000U
-
+#define ADDR_TEMELEMTRY                 0x50006000U
 
 /*-----------------------------------------------------------------------------
 * F2M INTERRUPTS
@@ -48,13 +53,13 @@
 #define _F2M_INT_HANDLER(num)           FabricIrq##num##_IRQHandler
 #define F2M_INT_HANDLER(num)            _F2M_INT_HANDLER(num)
 
-#define INT_STAMP1                      1
-#define INT_STAMP2                      2
-#define INT_STAMP3                      3
-#define INT_STAMP4                      4
-#define INT_STAMP5                      5
-#define INT_STAMP6                      6
-
+#define INT_STAMP1                      0
+#define INT_STAMP2                      1
+#define INT_STAMP3                      2
+#define INT_STAMP4                      3
+#define INT_STAMP5                      4
+#define INT_STAMP6                      5
+#define INT_TELEMETRY                   6
 
 /*-----------------------------------------------------------------------------
 * eNVM Addresses

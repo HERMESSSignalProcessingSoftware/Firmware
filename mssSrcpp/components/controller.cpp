@@ -20,11 +20,23 @@ void Controller::worker() {
         hbLedOutputState[1] = !hbLedOutputState[1];
         MSS_GPIO_set_output(GPIO_PORT(LED_HB_MSS), hbLedOutputState[1]);
         // run the TM worker
+<<<<<<< HEAD
         Tm::getInstance().worker2Hz();
         if (rxsmSignal[2])
             Memory::getInstance().updateMetadata();
+=======
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
+    }
+    Tm::getInstance().worker_irq();
+    if (telemetryInterruptEOTX) {
+
+        telemetryInterruptEOTX = false;
     }
 
+    if (telemetryInterruptRXDR) {
+        telemetryInterruptRXDR = false;
+        // Read data via Tm::getInstance.xxxx() to get the message and parse it.
+    }
     // toggle write protection indicator LED
     MSS_GPIO_set_output(GPIO_PORT(LED_HB_MEMSYNC), getGpioInput(IN_WP));
 
@@ -90,22 +102,33 @@ void Controller::worker() {
         // SODS was set
         if (rxsmSignal[2]) {
             // write protection was set
-            if (!getGpioInput(IN_WP)) {
+            if (getGpioInput(IN_WP)) { // TODO: not WP, memory has internal pull up resistor, currently its floating there for its set for this software DEBUG: change negation here
                 msg.append(": Write protection set");
                 type = 2;
             } else if (!configuration.enableStorage) {
                 msg.append(": Configuration prohibits storage");
                 type = 1;
+<<<<<<< HEAD
             } else if (storedAcquisition) {
+=======
+            }
+            else if (storedAcquisition) {
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
                 msg.append(": Stored acquisition already running");
                 type = 1;
             } else {
                 setStoredDataAcquisition(true);
                 msg.append(": Measurement started");
             }
+<<<<<<< HEAD
         } else
+=======
+        }
+        else {
+            setStoredDataAcquisition(false);
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
             clearedMemoryBeforeSods = false;
-
+        }
         // send message
         if (type == 0)
             MsgHandler::getInstance().info(msg);
@@ -116,9 +139,16 @@ void Controller::worker() {
     }
 
     // check, if conditions are met to shut down the stored measurement
+<<<<<<< HEAD
     if (storedAcquisition
             && ((!rxsmSignal[2] && timestamp >= configuration.minTimestamp)
                     || timestamp >= configuration.maxTimestamp)) {
+=======
+    if (storedAcquisition && (rxsmSignal[2] && timestamp >= configuration.maxTimestamp)) {
+//    if (storedAcquisition
+//            && ((rxsmSignal[2] && timestamp >= configuration.minTimestamp)
+//            || timestamp >= configuration.maxTimestamp)) {
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
         setStoredDataAcquisition(false);
         MsgHandler::getInstance().info("Stored measurement stopped");
     }
@@ -269,7 +299,21 @@ Controller::Controller() {
     resetTimestampGenerator();
 }
 
+<<<<<<< HEAD
 void Controller::resetTimestampGenerator() {
+=======
+void Controller::resetTimestampGenerator () {
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
     timestamp = 0;
     MSS_TIM2_load_immediate(25000);
+}
+
+void Controller::telemetryRXInterrupt() {
+    telemetryInterruptRXDR = true;
+    Tm::getInstance().clearInterrupt(TELEMETRY_STATUS_INTERRUPT_RX);
+}
+
+void Controller::telemetryTXInterrupt() {
+    telemetryInterruptEOTX = true;
+    Tm::getInstance().clearInterrupt(TELEMETRY_STATUS_INTERRUPT_TX);
 }

@@ -1,3 +1,4 @@
+Your license will expire in 6 days!
 
                                Synplify Pro (R) 
 
@@ -11,8 +12,13 @@
 
 Starting:    C:\Microsemi\Libero_SoC_v2021.3\SynplifyPro\bin64\mbin\synbatch.exe
 Install:     C:\Microsemi\Libero_SoC_v2021.3\SynplifyPro
+<<<<<<< HEAD
 Hostname:    DESKTOP-JON32I6
 Date:        Mon Feb 13 08:44:31 2023
+=======
+Hostname:    DESKTOP-NH8R733
+Date:        Fri Dec  9 20:22:05 2022
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 Version:     R-2021.03M-SP1
 
 Arguments:   -product synplify_pro -licensetype synplifypro_actel -batch -log synplify.log root_syn.tcl
@@ -26,12 +32,17 @@ License Option: actel_oem
 Running in Vendor Mode
 
 auto_infer_blackbox is not supported in current product.
+<<<<<<< HEAD
 log file: "C:\Users\RG\Documents\Firmware\fpga\synthesis\root.srr"
+=======
+log file: "B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\root.srr"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 Running: synthesis in foreground
 
 Running root_syn|synthesis
 
 Running Flow: compile (Compile) on root_syn|synthesis
+<<<<<<< HEAD
 # Mon Feb 13 08:44:32 2023
 
 Running Flow: compile_flow (Compile Process) on root_syn|synthesis
@@ -56,12 +67,46 @@ Running: premap (Premap) on root_syn|synthesis
 
 premap completed with warnings
 # Mon Feb 13 08:44:35 2023
+=======
+# Fri Dec  9 20:22:06 2022
+
+Running Flow: compile_flow (Compile Process) on root_syn|synthesis
+# Fri Dec  9 20:22:06 2022
+
+Running: compiler (Compile Input) on root_syn|synthesis
+# Fri Dec  9 20:22:06 2022
+Copied B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\synwork\root_comp.srs to B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\root.srs
+
+compiler completed
+# Fri Dec  9 20:22:20 2022
+
+Return Code: 0
+Run Time:00h:00m:14s
+
+Running: multi_srs_gen (Multi-srs Generator) on root_syn|synthesis
+# Fri Dec  9 20:22:20 2022
+
+multi_srs_gen completed
+# Fri Dec  9 20:22:20 2022
+
+Return Code: 0
+Run Time:00h:00m:00s
+Copied B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\synwork\root_mult.srs to B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\root.srs
+Complete: Compile Process on root_syn|synthesis
+
+Running: premap (Premap) on root_syn|synthesis
+# Fri Dec  9 20:22:20 2022
+
+premap completed with warnings
+# Fri Dec  9 20:22:24 2022
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 
 Return Code: 1
-Run Time:00h:00m:02s
+Run Time:00h:00m:04s
 Complete: Compile on root_syn|synthesis
 
 Running Flow: map (Map) on root_syn|synthesis
+<<<<<<< HEAD
 # Mon Feb 13 08:44:35 2023
 License granted for 4 parallel jobs
 
@@ -74,6 +119,20 @@ fpga_mapper completed with warnings
 
 Return Code: 1
 Run Time:00h:00m:15s
+=======
+# Fri Dec  9 20:22:24 2022
+License granted for 4 parallel jobs
+
+Running: fpga_mapper (Map & Optimize) on root_syn|synthesis
+# Fri Dec  9 20:22:24 2022
+Copied B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\synwork\root_m.srm to B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\root.srm
+
+fpga_mapper completed with warnings
+# Fri Dec  9 20:22:57 2022
+
+Return Code: 1
+Run Time:00h:00m:33s
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 Complete: Map on root_syn|synthesis
 Complete: Logic Synthesis on root_syn|synthesis
 TCL script complete: "root_syn.tcl"

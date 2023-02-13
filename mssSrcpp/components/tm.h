@@ -4,13 +4,18 @@
 #include <stdint.h>
 #include <string>
 #include "../tools/queue.h"
-
+#include "../tools/datapackage.h"
+#include "../apbdrivers/STAMP/apb_stamp.h"
+#include "../model/telemetry.h"
+#include "../sb_hw_platform.h"
+#include "../tools/tools.h"
 // The maximum number of content bytes stored in the message buffer. Potentially
 // exceeding this value on data storage will abort the addition of this data
 // frame.
 #define TM_MAX_BUFFER_SIZE 1000
 
-
+#define TELEMETRY_STATUS_INTERRUPT_TX     (1 << 31)
+#define TELEMETRY_STATUS_INTERRUPT_RX     (1 << 30)
 
 /** Telemetry class
  *
@@ -26,12 +31,49 @@ public:
      */
     static Tm &getInstance ();
 
-    /** Worker method
+    /** Interrupt based worker method
      *
-     * Run this method twice a second. This worker does
-     * schedule a new TM transmission with the most current data.
+     * Run this method every time the Tm fabric completed a transmission
+     * load most current data to the fabric.
      */
-    void worker2Hz ();
+    void worker_irq(void);
+
+    /**
+     * Enables Interrupt for Tm fabric
+     */
+    void enableInterrupt(void);
+    /** Clear Interrupt
+     *
+     * Call this function to clear the interrupt pending bit of the status register
+     *
+     * @param interrupt
+     */
+    void clearInterrupt(uint32_t interrupt);
+
+    /**
+     * Sets the CONFIG_START (1 << 1) bit in the config register
+     *
+     * To automatically start a transistion, you need to enable CONFIG_AUTO_START (1 << 2) in the config register
+     */
+    void telemetryTransmissionStart(void);
+
+    /**
+     * Removes the CONFIG_START and the CONFIG_AUTO_START bit from the config register
+     */
+    void telemetryTransmissionStop(void);
+
+    /**
+     *
+     * @param data
+     */
+    void enqueue(HERMESS::TelemetryData data);
+    /** Enqueue new data to the telemetry data queue
+     *
+     * Only after an  interrupt data will be pushed
+     *
+     * @param apb_stamp:StampDataFrame coverted to model/telemety dataframe.
+     */
+    void addDataToQueue(const apb_stamp::StampDataframe &df, uint32_t stampid);
 
     /** Text message transfer operator
      *
@@ -43,9 +85,6 @@ public:
     Tm &operator<< (std::string msg);
 
 private:
-    uint8_t txBuffer[64]; /**< The transmission buffer handed over to the
-    UART interface */
-
     uint8_t frameId = 0; /**< A wrapping id of the number of frames
     sent by the TM component for the GSS to detect missing packages */
 
@@ -59,17 +98,26 @@ private:
     to be sent via TM. The front message is potentially partially
     transmitted already as indicated by sentBytes. */
 
-    uint32_t queueSize = 0; /**< The number of content bytes in msgQueue */
+    HERMESS::TelemetryData txBuffer;
+
+    Queue<HERMESS::TelemetryData> dataQueue; /**< The queue containing all data messages send via TM. */
+
+    uint32_t msgQueueSize = 0; /**< The number of content bytes in msgQueue */
+
+    uint32_t dataQueueSize = 0; /**< The number of data bytes in the dataQueue*/
 
     uint32_t sentMsgBytes = 0; /**< The number of bytes already sent from the
     front message */
 
+    bool interfaceFree = true;
     /** Telemetry class constructor
      *
-     * Initializes UART 1 interface and sets the always common transmission
+     * Initializes Telemetry fabric interface and sets the always common transmission
      * bytes
      */
     Tm ();
+
+    friend void F2M_INT_HANDLER(INT_TELEMETRY) ();
 };
 
 #endif

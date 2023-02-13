@@ -1,15 +1,28 @@
 Microsemi Corporation - Microsemi Libero Software Release v2021.3 (Version 2021.3.0.10)
 
+<<<<<<< HEAD
 Date      :  Mon Feb 13 08:40:26 2023
 Project   :  C:\Users\RG\Documents\Firmware\fpga
+=======
+Date      :  Fri Dec  9 20:18:48 2022
+Project   :  B:\HERMESS_SPSoftware\Firmware\fpga
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 Component :  root
 Family    :  SmartFusion2
 
 
 HDL source files for all Synthesis and Simulation tools:
+<<<<<<< HEAD
     C:/Users/RG/Documents/Firmware/fpga/component/work/root/root.vhd
 
 Stimulus files for all Simulation tools:
     C:/Users/RG/Documents/Firmware/fpga/component/work/root/subsystem.bfm
     C:/Users/RG/Documents/Firmware/fpga/component/work/root/subsystem.bfm
+=======
+    B:/HERMESS_SPSoftware/Firmware/fpga/component/work/root/root.vhd
+
+Stimulus files for all Simulation tools:
+    B:/HERMESS_SPSoftware/Firmware/fpga/component/work/root/subsystem.bfm
+    B:/HERMESS_SPSoftware/Firmware/fpga/component/work/root/subsystem.bfm
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 

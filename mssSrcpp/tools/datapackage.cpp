@@ -5,7 +5,7 @@
 #define TIMESTAMP_LAG_THRESHOLD         1
 
 
-
+/*TODO: Find out array size for this one. Make sure the array is big enough. */
 void Datapackage::toBytes (uint8_t arr[]) const {
     arr[0] = numReceived;
     toByteArray(&arr[1], timestamp);

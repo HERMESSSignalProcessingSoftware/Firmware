@@ -11,8 +11,13 @@
     <hdl-type>VHDL</hdl-type>
     <project-description>
     </project-description>
+<<<<<<< HEAD
     <location>C:/Users/RG/Documents/Firmware/fpga/component/work/root</location>
     <state>GENERATED ( Mon Feb 13 08:57:04 2023 )</state>
+=======
+    <location>B:/HERMESS_SPSoftware/Firmware/fpga/component/work/root</location>
+    <state>GENERATED ( Fri Oct 28 12:32:50 2022 )</state>
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
     <swide-toolchain>SoftConsole workspace has not been generated</swide-toolchain>
   </project-settings>
   <site-map>
@@ -97,9 +102,15 @@
           <fullPinName>
           </fullPinName>
           <remapAddress>0x6000_0000</remapAddress>
+<<<<<<< HEAD
           <fullAddressSpace>0x6000_0000 - 0x6000_4E7F</fullAddressSpace>
           <range>0x4E80</range>
           <Size>19KB</Size>
+=======
+          <fullAddressSpace>0x6000_0000 - 0x6001_387F</fullAddressSpace>
+          <range>0x1_3880</range>
+          <Size>78KB</Size>
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
         </slave>
         <slave>
           <name>ENVM-conf</name>
@@ -167,6 +178,16 @@
           <combinedAddressSpace>0x5000_5000 - 0x5000_5FFF</combinedAddressSpace>
           <remapAddress>0x3000_5000</remapAddress>
           <combinedAddressSpace>0x3000_5000 - 0x3000_5FFF</combinedAddressSpace>
+          <range>0x0000_1000</range>
+          <Size>4KB</Size>
+        </slave>
+        <slave>
+          <name>telemetry_0:APB</name>
+          <fullPinName>telemetry_0:APB</fullPinName>
+          <remapAddress>0x5000_6000</remapAddress>
+          <combinedAddressSpace>0x5000_6000 - 0x5000_6FFF</combinedAddressSpace>
+          <remapAddress>0x3000_6000</remapAddress>
+          <combinedAddressSpace>0x3000_6000 - 0x3000_6FFF</combinedAddressSpace>
           <range>0x0000_1000</range>
           <Size>4KB</Size>
         </slave>
@@ -3830,15 +3851,6 @@
           </fullPinName>
           <remapAddress>0x4001_3000</remapAddress>
           <fullAddressSpace>0x4001_3000 - 0x4001_3FFF</fullAddressSpace>
-          <range>0x1000</range>
-          <Size>4KB</Size>
-        </slave>
-        <slave>
-          <name>MMUART_1</name>
-          <fullPinName>
-          </fullPinName>
-          <remapAddress>0x4001_0000</remapAddress>
-          <fullAddressSpace>0x4001_0000 - 0x4001_0FFF</fullAddressSpace>
           <range>0x1000</range>
           <Size>4KB</Size>
         </slave>

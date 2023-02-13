@@ -32,7 +32,11 @@ KEY VendorTechnology_VCCI_1.8_VOLTR "COM"
 KEY VendorTechnology_VCCI_2.5_VOLTR "COM"
 KEY VendorTechnology_VCCI_3.3_VOLTR "COM"
 KEY VendorTechnology_VOLTR "IND"
+<<<<<<< HEAD
 KEY ProjectLocation "C:\Users\RG\Documents\Firmware\fpga"
+=======
+KEY ProjectLocation "B:\HERMESS_SPSoftware\Firmware\fpga"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 KEY ProjectDescription ""
 KEY UseRootLocationForLinkedFiles "FALSE"
 KEY RootLocationENVForLinkedFiles ""
@@ -53,6 +57,7 @@ ENDLIST
 LIST LIBRARIES
 COREAPB3_LIB
 COREUART_LIB
+UserComponents
 ENDLIST
 LIST LIBRARY_COREAPB3_LIB
 ALIAS=COREAPB3_LIB
@@ -64,18 +69,31 @@ ALIAS=COREUART_LIB
 COMPILE_OPTION=COMPILE
 CUSTOMPATH=false
 ENDLIST
+LIST LIBRARY_UserComponents
+ALIAS=UserComponents
+COMPILE_OPTION=COMPILE
+CUSTOMPATH=false
+ENDLIST
 LIST GlobalIncludeFileList
 ENDLIST
 LIST FileManager
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf,actgen_cxf"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1675609803"
+=======
+TIME="1669568695"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="3259"
 PARENT="<project>\component\work\root_sb\root_sb.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\coreparameters.vhd,tb_hdl"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1676133657"
+=======
+TIME="1669568695"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="2013"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -83,14 +101,22 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\mti\scripts\wave_user.do,do"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1640691677"
+=======
+TIME="1640694197"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="912"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\bfm_ahbtoapb.vhd,tb_hdl"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1640691677"
+=======
+TIME="1640694197"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="4009"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -98,7 +124,11 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\bfm_apb.vhd,tb_hdl"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1640691677"
+=======
+TIME="1640694197"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="9540"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -106,7 +136,11 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\bfm_apbslave.vhd,tb_hdl"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1640691677"
+=======
+TIME="1640694197"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="2074"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -114,7 +148,11 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\bfm_apbslaveext.vhd,tb_hdl"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1640691677"
+=======
+TIME="1640694197"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="12455"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -122,7 +160,11 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\bfm_main.vhd,tb_hdl"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1640691677"
+=======
+TIME="1640694197"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="82848"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -130,7 +172,11 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\bfm_package.vhd,tb_hdl"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1640691677"
+=======
+TIME="1640694197"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="45675"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -138,23 +184,37 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\misc.vhd,tb_hdl"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1640691677"
 SIZE="12780"
+=======
+TIME="1640694197"
+SIZE="12889"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\textio.vhd,tb_hdl"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1640691677"
 SIZE="23829"
+=======
+TIME="1640694197"
+SIZE="23849"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\components.vhd,hdl"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1640691677"
+=======
+TIME="1640694197"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="6172"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -162,7 +222,11 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd,hdl"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1640691677"
+=======
+TIME="1640694197"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="78851"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -170,7 +234,11 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3_iaddr_reg.vhd,hdl"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1640691677"
+=======
+TIME="1640694197"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="5757"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -178,7 +246,11 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3_muxptob3.vhd,hdl"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1640691677"
+=======
+TIME="1640694197"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="9523"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -186,7 +258,11 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\test\user\testbench.vhd,tb_hdl"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1640691677"
+=======
+TIME="1640694197"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="28895"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -196,33 +272,53 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreResetP\7.1.100\CoreResetP.cxf,actgen_cxf"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1675609803"
+=======
+TIME="1669568695"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="582"
 PARENT="<project>\component\work\root_sb\root_sb.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd,hdl"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1640691677"
+=======
+TIME="1640694197"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="75054"
 PARENT="<project>\component\Actel\DirectCore\CoreResetP\7.1.100\CoreResetP.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp_pcie_hotreset.vhd,hdl"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1640691677"
+=======
+TIME="1640694197"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="9297"
 PARENT="<project>\component\Actel\DirectCore\CoreResetP\7.1.100\CoreResetP.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\COREUART\5.7.100\COREUART.cxf,actgen_cxf"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1673782114"
+=======
+TIME="1661193190"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="994"
 PARENT="<project>\component\work\COREUART_C0\COREUART_C0.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\COREUART\5.7.100\rtl\vhdl\test\common\misc.vhd,tb_hdl"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1673782114"
+=======
+TIME="1661193190"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="13638"
 LIBRARY="COREUART_LIB"
 PARENT="<project>\component\Actel\DirectCore\COREUART\5.7.100\COREUART.cxf"
@@ -231,7 +327,11 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\COREUART\5.7.100\rtl\vhdl\test\common\tbpack.vhd,tb_hdl"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1673782114"
+=======
+TIME="1661193190"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="17606"
 LIBRARY="COREUART_LIB"
 PARENT="<project>\component\Actel\DirectCore\COREUART\5.7.100\COREUART.cxf"
@@ -240,7 +340,11 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\COREUART\5.7.100\rtl\vhdl\test\common\textio.vhd,tb_hdl"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1673782114"
+=======
+TIME="1661193190"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="24124"
 LIBRARY="COREUART_LIB"
 PARENT="<project>\component\Actel\DirectCore\COREUART\5.7.100\COREUART.cxf"
@@ -249,20 +353,33 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\SgCore\FCCC\2.0.201\FCCC.cxf,actgen_cxf"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1675609803"
+=======
+TIME="1669568695"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="241"
 PARENT="<project>\component\work\root_sb\root_sb.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SgCore\OSC\2.0.101\OSC.cxf,actgen_cxf"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1675609805"
+=======
+TIME="1669568697"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="682"
 PARENT="<project>\component\work\root_sb\root_sb.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd,hdl"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1640691678"
 SIZE="2164"
+=======
+TIME="1640694198"
+SIZE="2270"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 PARENT="<project>\component\Actel\SgCore\OSC\2.0.101\OSC.cxf"
 BEGIN_USE_CONSTRAINT
 TOOL_CONSTRAINT_TYPE="ideSYNTHESIS"
@@ -273,8 +390,13 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\SgCore\OSC\2.0.101\osc_comps_pre.vhd,hdl"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1640691678"
 SIZE="2108"
+=======
+TIME="1640694198"
+SIZE="2214"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 PARENT="<project>\component\Actel\SgCore\OSC\2.0.101\OSC.cxf"
 BEGIN_USE_CONSTRAINT
 TOOL_CONSTRAINT_TYPE="ideSYNTHESIS"
@@ -285,121 +407,201 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS\1.1.500\MSS.cxf,actgen_cxf"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1675609800"
+=======
+TIME="1669568690"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="526"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_CCC\1.0.100\MSS_CCC.cxf,actgen_cxf"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1675609797"
+=======
+TIME="1669568686"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="253"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_CC\1.0.100\MSS_CC.cxf,actgen_cxf"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1675609797"
+=======
+TIME="1669568686"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="252"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_CFGM\1.1.100\MSS_CFGM.cxf,actgen_cxf"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1675609797"
+=======
+TIME="1669568686"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="254"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_CM3\1.0.200\MSS_CM3.cxf,actgen_cxf"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1675609797"
+=======
+TIME="1669568686"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="253"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_DDRB\1.0.200\MSS_DDRB.cxf,actgen_cxf"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1675609797"
+=======
+TIME="1669568686"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="254"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_EDAC\1.0.101\MSS_EDAC.cxf,actgen_cxf"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1675609797"
+=======
+TIME="1669568686"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="254"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_ENVM\1.0.101\MSS_ENVM.cxf,actgen_cxf"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1675609797"
+=======
+TIME="1669568686"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="254"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_FIC32\1.0.100\MSS_FIC32.cxf,actgen_cxf"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1675609797"
+=======
+TIME="1669568686"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="255"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_GPIO\1.0.100\MSS_GPIO.cxf,actgen_cxf"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1675609797"
+=======
+TIME="1669568686"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="254"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_INTR\1.0.200\MSS_INTR.cxf,actgen_cxf"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1675609797"
+=======
+TIME="1669568686"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="254"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_MMUART\1.0.100\MSS_MMUART.cxf,actgen_cxf"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1675609797"
+=======
+TIME="1669568686"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="256"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_RESET\1.0.100\MSS_RESET.cxf,actgen_cxf"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1675609797"
+=======
+TIME="1669568686"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="255"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_SECURITY\1.0.100\MSS_SECURITY.cxf,actgen_cxf"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1675609797"
+=======
+TIME="1669568686"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="258"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_SPI\1.0.100\MSS_SPI.cxf,actgen_cxf"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1675609797"
+=======
+TIME="1669568686"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="253"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_SWITCH\1.0.101\MSS_SWITCH.cxf,actgen_cxf"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1675609797"
+=======
+TIME="1669568686"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="256"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_WATCHDOG\1.0.100\MSS_WATCHDOG.cxf,actgen_cxf"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1675609797"
+=======
+TIME="1669568686"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="258"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\work\COREUART_C0\COREUART_C0.cxf,actgen_cxf"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1673782114"
+=======
+TIME="1661193190"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="4795"
 ENDFILE
 VALUE "<project>\component\work\COREUART_C0\COREUART_C0.vhd,hdl"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1673782114"
+=======
+TIME="1661193190"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="7398"
 PARENT="<project>\component\work\COREUART_C0\COREUART_C0.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\COREUART_C0\COREUART_C0_0\coreparameters.vhd,tb_hdl"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1673782114"
+=======
+TIME="1661193190"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="761"
 LIBRARY="COREUART_LIB"
 PARENT="<project>\component\work\COREUART_C0\COREUART_C0_0\COREUART_C0_COREUART_C0_0_COREUART.cxf"
@@ -407,20 +609,32 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\COREUART_C0\COREUART_C0_0\COREUART_C0_COREUART_C0_0_COREUART.cxf,actgen_cxf"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1673782114"
+=======
+TIME="1661193190"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="3064"
 PARENT="<project>\component\work\COREUART_C0\COREUART_C0.cxf"
 ENDFILE
 VALUE "<project>\component\work\COREUART_C0\COREUART_C0_0\mti\scripts\wave_vhdl.do,do"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1673782114"
+=======
+TIME="1661193190"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="651"
 PARENT="<project>\component\work\COREUART_C0\COREUART_C0_0\COREUART_C0_COREUART_C0_0_COREUART.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\COREUART_C0\COREUART_C0_0\rtl\vhdl\core\Clock_gen.vhd,hdl"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1673782114"
+=======
+TIME="1661193190"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="12912"
 LIBRARY="COREUART_LIB"
 PARENT="<project>\component\work\COREUART_C0\COREUART_C0_0\COREUART_C0_COREUART_C0_0_COREUART.cxf"
@@ -428,7 +642,11 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\COREUART_C0\COREUART_C0_0\rtl\vhdl\core\components.vhd,hdl"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1673782114"
+=======
+TIME="1661193190"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="2731"
 LIBRARY="COREUART_LIB"
 PARENT="<project>\component\work\COREUART_C0\COREUART_C0_0\COREUART_C0_COREUART_C0_0_COREUART.cxf"
@@ -436,7 +654,11 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\COREUART_C0\COREUART_C0_0\rtl\vhdl\core\CoreUART.vhd,hdl"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1673782114"
+=======
+TIME="1661193190"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="22388"
 LIBRARY="COREUART_LIB"
 PARENT="<project>\component\work\COREUART_C0\COREUART_C0_0\COREUART_C0_COREUART_C0_0_COREUART.cxf"
@@ -444,7 +666,11 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\COREUART_C0\COREUART_C0_0\rtl\vhdl\core\coreuart_pkg.vhd,hdl"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1673782114"
+=======
+TIME="1661193190"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="519"
 LIBRARY="COREUART_LIB"
 PARENT="<project>\component\work\COREUART_C0\COREUART_C0_0\COREUART_C0_COREUART_C0_0_COREUART.cxf"
@@ -452,7 +678,11 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\COREUART_C0\COREUART_C0_0\rtl\vhdl\core\fifo_256x8.vhd,hdl"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1673782114"
+=======
+TIME="1661193190"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="15147"
 LIBRARY="COREUART_LIB"
 PARENT="<project>\component\work\COREUART_C0\COREUART_C0_0\COREUART_C0_COREUART_C0_0_COREUART.cxf"
@@ -460,7 +690,11 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\COREUART_C0\COREUART_C0_0\rtl\vhdl\core\Rx_async.vhd,hdl"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1673782114"
+=======
+TIME="1661193190"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="21576"
 LIBRARY="COREUART_LIB"
 PARENT="<project>\component\work\COREUART_C0\COREUART_C0_0\COREUART_C0_COREUART_C0_0_COREUART.cxf"
@@ -468,7 +702,11 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\COREUART_C0\COREUART_C0_0\rtl\vhdl\core\Tx_async.vhd,hdl"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1673782114"
+=======
+TIME="1661193190"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="11219"
 LIBRARY="COREUART_LIB"
 PARENT="<project>\component\work\COREUART_C0\COREUART_C0_0\COREUART_C0_COREUART_C0_0_COREUART.cxf"
@@ -476,7 +714,11 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\COREUART_C0\COREUART_C0_0\rtl\vhdl\test\user\testbnch.vhd,tb_hdl"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1673782114"
+=======
+TIME="1661193190"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="23663"
 LIBRARY="COREUART_LIB"
 PARENT="<project>\component\work\COREUART_C0\COREUART_C0_0\COREUART_C0_COREUART_C0_0_COREUART.cxf"
@@ -486,11 +728,16 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\DESIGN_FIRMWARE\DESIGN_FIRMWARE.cxf,actgen_cxf"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1673782114"
+=======
+TIME="1661193190"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="2499"
 ENDFILE
 VALUE "<project>\component\work\root\root.cxf,actgen_cxf"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1676133657"
 SIZE="14846"
 ENDFILE
@@ -498,37 +745,63 @@ VALUE "<project>\component\work\root\root.vhd,hdl"
 STATE="utd"
 TIME="1676133657"
 SIZE="33968"
+=======
+TIME="1670613528"
+SIZE="14870"
+ENDFILE
+VALUE "<project>\component\work\root\root.vhd,hdl"
+STATE="utd"
+TIME="1670613526"
+SIZE="42035"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 PARENT="<project>\component\work\root\root.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\root_sb\CCC_0\root_sb_CCC_0_FCCC.cxf,actgen_cxf"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1675609803"
+=======
+TIME="1669568694"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="689"
 PARENT="<project>\component\work\root_sb\root_sb.cxf"
 ENDFILE
 VALUE "<project>\component\work\root_sb\CCC_0\root_sb_CCC_0_FCCC.vhd,hdl"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1675609803"
+=======
+TIME="1669568694"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="5562"
 PARENT="<project>\component\work\root_sb\CCC_0\root_sb_CCC_0_FCCC.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\root_sb\FABOSC_0\root_sb_FABOSC_0_OSC.cxf,actgen_cxf"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1675609805"
+=======
+TIME="1669568697"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="462"
 PARENT="<project>\component\work\root_sb\root_sb.cxf"
 ENDFILE
 VALUE "<project>\component\work\root_sb\FABOSC_0\root_sb_FABOSC_0_OSC.vhd,hdl"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1675609805"
+=======
+TIME="1669568697"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="1570"
 PARENT="<project>\component\work\root_sb\FABOSC_0\root_sb_FABOSC_0_OSC.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\root_sb\root_sb.cxf,actgen_cxf"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1676133657"
 SIZE="29452"
 ENDFILE
@@ -536,11 +809,21 @@ VALUE "<project>\component\work\root_sb\root_sb.vhd,hdl"
 STATE="utd"
 TIME="1676133657"
 SIZE="46757"
+=======
+TIME="1669568698"
+SIZE="32377"
+ENDFILE
+VALUE "<project>\component\work\root_sb\root_sb.vhd,hdl"
+STATE="utd"
+TIME="1669568697"
+SIZE="50728"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 PARENT="<project>\component\work\root_sb\root_sb.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\root_sb_MSS\root_sb_MSS.cxf,actgen_cxf"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1676133657"
 SIZE="22981"
 ENDFILE
@@ -548,12 +831,25 @@ VALUE "<project>\component\work\root_sb_MSS\root_sb_MSS.vhd,hdl"
 STATE="utd"
 TIME="1676133657"
 SIZE="84960"
+=======
+TIME="1669568691"
+SIZE="21383"
+ENDFILE
+VALUE "<project>\component\work\root_sb_MSS\root_sb_MSS.vhd,hdl"
+STATE="utd"
+TIME="1669568691"
+SIZE="84042"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\root_sb_MSS\root_sb_MSS_pre.vhd,hdl"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1676133657"
+=======
+TIME="1669568690"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="70888"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 BEGIN_USE_CONSTRAINT
@@ -565,7 +861,11 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\root_sb_MSS\root_sb_MSS_syn.vhd,hdl"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1676133657"
+=======
+TIME="1669568690"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="70868"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 BEGIN_USE_CONSTRAINT
@@ -577,90 +877,154 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\constraint\io\user.pdc,io_pdc"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1673782114"
+=======
+TIME="1661193190"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="919"
 ENDFILE
 VALUE "<project>\constraint\io\user1.pdc,io_pdc"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1676132767"
 SIZE="9621"
+=======
+TIME="1661193190"
+SIZE="9437"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 IS_TARGET="TRUE"
 ENDFILE
 VALUE "<project>\hdl\spi_master.vhd,hdl"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1673782115"
+=======
+TIME="1661193190"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="9207"
 ENDFILE
 VALUE "<project>\hdl\STAMP.vhd,hdl"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1673782115"
+=======
+TIME="1667064072"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="22274"
 ENDFILE
 VALUE "<project>\hdl\telemetry.vhd,hdl"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1673782115"
+=======
+TIME="1661193190"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="15792"
 ENDFILE
 VALUE "<project>\hdl\UART_RX.vhd,hdl"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1673782115"
+=======
+TIME="1661193190"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="3379"
 ENDFILE
 VALUE "<project>\hdl\UART_TX.vhd,hdl"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1673782115"
+=======
+TIME="1661193190"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="3348"
 ENDFILE
 VALUE "<project>\simulation\bfmtovec_compile.tcl,sim"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1640691677"
+=======
+TIME="1640694197"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="1229"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 ENDFILE
 VALUE "<project>\simulation\CM3_compile_bfm.tcl,sim"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1676133657"
+=======
+TIME="1669568690"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="504"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\simulation\coreapb3_usertb_master.bfm,sim"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1673782115"
+=======
+TIME="1661193191"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="8016"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 ENDFILE
 VALUE "<project>\simulation\peripheral_init.bfm,sim"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1640691673"
 SIZE="8450"
+=======
+TIME="1640694198"
+SIZE="8744"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 PARENT="<project>\component\Actel\SmartFusion2MSS\MSS\1.1.500\MSS.cxf"
 ENDFILE
 VALUE "<project>\simulation\subsystem.bfm,sim"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1676133657"
 SIZE="927"
+=======
+TIME="1661975037"
+SIZE="960"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 PARENT="<project>\component\work\root\root.cxf"
 PARENT="<project>\component\work\root_sb\root_sb.cxf"
 ENDFILE
 VALUE "<project>\simulation\test.bfm,sim"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1676133657"
+=======
+TIME="1669568690"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="734"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\simulation\user.bfm,sim"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1673782115"
+=======
+TIME="1661193191"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="555"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\synthesis\root.so,so"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1676133657"
+=======
+TIME="1667064136"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="218"
 ENDFILE
 VALUE "<project>\synthesis\root.vm,syn_vm"
 STATE="utd"
+<<<<<<< HEAD
 TIME="1676133657"
 SIZE="1407678"
 ENDFILE
@@ -672,6 +1036,19 @@ ENDFILE
 VALUE "<project>\synthesis\root_vm.sdc,syn_sdc"
 STATE="utd"
 TIME="1676133657"
+=======
+TIME="1667064134"
+SIZE="2401372"
+ENDFILE
+VALUE "<project>\synthesis\root_syn.prj,prj"
+STATE="utd"
+TIME="1667064137"
+SIZE="4300"
+ENDFILE
+VALUE "<project>\synthesis\root_vm.sdc,syn_sdc"
+STATE="utd"
+TIME="1667064135"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 SIZE="1081"
 ENDFILE
 ENDLIST
@@ -740,6 +1117,7 @@ VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\b
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\amba_bfm\bfm_apbslave.vhd,tb_hdl"
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\test\user\testbench.vhd,tb_hdl"
 ENDLIST
+<<<<<<< HEAD
 LIST ProjectState5.1
 LIST Impl1
 ideSTIMULUS=StateSuccess
@@ -762,6 +1140,8 @@ Used_File_List
 ENDUsed_File_List
 ENDLIST
 ENDLIST
+=======
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 ENDLIST
 LIST "root_sb_MSS::work"
 FILE "<project>\component\work\root_sb_MSS\root_sb_MSS.vhd,hdl"
@@ -937,8 +1317,13 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_SoC_v2021.3\SynplifyPro\bin\synplify_pro.exe"
+<<<<<<< HEAD
 PARAM=""
 BATCH=0
+=======
+PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
+BATCH=1
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -984,7 +1369,7 @@ Used_File_List
 ENDUsed_File_List
 ENDLIST
 ENDLIST
-LIST "root_sb::work"
+LIST "COREUART_C0_COREUART_C0_0_COREUART::coreuart_lib"
 LIST Impl1
 ideSTIMULUS=StateSuccess
 LIST FlowOptions
@@ -1005,6 +1390,7 @@ ENDLIST
 Used_File_List
 ENDUsed_File_List
 ENDLIST
+<<<<<<< HEAD
 ENDLIST
 LIST "COREUART_C0_COREUART_C0_0_COREUART::coreuart_lib"
 LIST Impl1
@@ -1027,6 +1413,8 @@ ENDLIST
 Used_File_List
 ENDUsed_File_List
 ENDLIST
+=======
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 ENDLIST
 ENDLIST
 LIST ExcludePackageForSimulation
@@ -1041,6 +1429,13 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
+<<<<<<< HEAD
+=======
+Reports;Reports;0
+ReportsCurrentItem;Generate Bitstream:root_generateBitstream.log
+HDL;hdl\STAMP.vhd;0
+HDL;hdl\telemetry.vhd;0
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 StartPage;StartPage;0
 ACTIVEVIEW;StartPage
 ENDLIST
@@ -1068,6 +1463,7 @@ ENDLIST
 LIST "root::work","component\work\root\root.vhd","TRUE","FALSE"
 SUBBLOCK "STAMP::work","hdl\STAMP.vhd","FALSE","FALSE"
 SUBBLOCK "root_sb::work","component\work\root_sb\root_sb.vhd","TRUE","FALSE"
+SUBBLOCK "telemetry::work","hdl\telemetry.vhd","FALSE","FALSE"
 ENDLIST
 LIST "root_sb::work","component\work\root_sb\root_sb.vhd","TRUE","FALSE"
 SUBBLOCK "CoreAPB3::coreapb3_lib","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd","FALSE","FALSE"

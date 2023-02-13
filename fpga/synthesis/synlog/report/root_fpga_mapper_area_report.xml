@@ -5,18 +5,26 @@ The file contains the area information from mapper to be displayed as part of th
 *******************************************************************************************-->
 <report_table display_priority="1" name="Area Summary">
 <report_link name="Detailed report">
+<<<<<<< HEAD
 <data>C:\Users\RG\Documents\Firmware\fpga\synthesis\synlog\report\root_fpga_mapper_resourceusage.rpt</data>
 <title>Resource Usage</title>
 </report_link>
 <report_link name="Hierarchical Area report">
 <data>C:\Users\RG\Documents\Firmware\fpga\synthesis\synlog\report\root_fpga_mapper_hier_area_report.xml</data>
+=======
+<data>B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\synlog\report\root_fpga_mapper_resourceusage.rpt</data>
+<title>Resource Usage</title>
+</report_link>
+<report_link name="Hierarchical Area report">
+<data>B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\synlog\report\root_fpga_mapper_hier_area_report.xml</data>
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 <title>Hierarchical Area Report</title>
 </report_link>
 <parameter tooltip="Total Carry Cells used" name="Carry Cells">
-<data>648</data>
+<data>2276</data>
 </parameter>
 <parameter tooltip="Total Sequential Cells used" name="Sequential Cells">
-<data>2096</data>
+<data>3508</data>
 </parameter>
 <parameter tcl_name="dsp_used" tooltip="Total DSP Blocks used" name="DSP Blocks">
 <data>0</data>
@@ -28,6 +36,6 @@ The file contains the area information from mapper to be displayed as part of th
 <data>4</data>
 </parameter>
 <parameter tcl_name="total_luts" tooltip="Total LUTs used" name="LUTs">
-<data>3130</data>
+<data>5445</data>
 </parameter>
 </report_table>

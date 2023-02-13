@@ -6,7 +6,11 @@ The file contains the job information from compiler to be displayed as part of t
 
 <job_run_status name="compiler"> 
   <report_link name="Detailed report">
+<<<<<<< HEAD
     <data>C:\Users\RG\Documents\Firmware\fpga\synthesis\synlog\root_compiler.srr</data>
+=======
+    <data>B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\synlog\root_compiler.srr</data>
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
     <title>Synopsys HDL Compiler</title>
   </report_link> 
   <job_status>
@@ -14,6 +18,7 @@ The file contains the job information from compiler to be displayed as part of t
   </job_status>
 <job_info> 
 			<info name="Notes">
+<<<<<<< HEAD
   <data>119</data>
   <report_link name="more"><data>C:\Users\RG\Documents\Firmware\fpga\synthesis\synlog\report\root_compiler_notes.txt</data></report_link>
   </info>
@@ -24,18 +29,38 @@ The file contains the job information from compiler to be displayed as part of t
 			<info name="Errors">
   <data>0</data>
   <report_link name="more"><data>C:\Users\RG\Documents\Firmware\fpga\synthesis\synlog\report\root_compiler_errors.txt</data></report_link>
+=======
+  <data>138</data>
+  <report_link name="more"><data>B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\synlog\report\root_compiler_notes.txt</data></report_link>
+  </info>
+			<info name="Warnings">
+  <data>81</data>
+  <report_link name="more"><data>B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\synlog\report\root_compiler_warnings.txt</data></report_link>
+  </info>
+			<info name="Errors">
+  <data>0</data>
+  <report_link name="more"><data>B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\synlog\report\root_compiler_errors.txt</data></report_link>
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
   </info>
 			<info name="CPU Time">
   <data>-</data>
   </info>
 			<info name="Real Time">
+<<<<<<< HEAD
   <data>00h:00m:00s</data>
+=======
+  <data>00h:00m:13s</data>
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
   </info>
 			<info name="Peak Memory">
   <data>-</data>
   </info>
 			<info name="Date &amp;Time">
+<<<<<<< HEAD
   <data type="timestamp">1676274272</data>
+=======
+  <data type="timestamp">1670613739</data>
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
   </info>
 			</job_info>
 </job_run_status>

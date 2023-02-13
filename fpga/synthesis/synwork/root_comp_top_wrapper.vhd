@@ -1,6 +1,10 @@
 --
 -- Synopsys
+<<<<<<< HEAD
 -- Vhdl wrapper for top level design, written on Mon Feb 13 08:41:07 2023
+=======
+-- Vhdl wrapper for top level design, written on Fri Dec  9 20:22:18 2022
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 --
 library ieee;
 use ieee.std_logic_1164.all;

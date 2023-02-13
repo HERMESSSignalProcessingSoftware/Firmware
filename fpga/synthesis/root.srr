@@ -1,9 +1,15 @@
 #Build: Synplify Pro (R) R-2021.03M-SP1, Build 169R, Oct 12 2021
 #install: C:\Microsemi\Libero_SoC_v2021.3\SynplifyPro
 #OS: Windows 8 6.2
+<<<<<<< HEAD
 #Hostname: DESKTOP-JON32I6
 
 # Mon Feb 13 08:44:32 2023
+=======
+#Hostname: DESKTOP-NH8R733
+
+# Fri Dec  9 20:22:06 2022
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 
 #Implementation: synthesis
 
@@ -18,7 +24,11 @@ Build: R-2021.03M-SP1
 Install: C:\Microsemi\Libero_SoC_v2021.3\SynplifyPro
 OS: Windows 6.2
 
+<<<<<<< HEAD
 Hostname: DESKTOP-JON32I6
+=======
+Hostname: DESKTOP-NH8R733
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 
 Implementation : synthesis
 Synopsys HDL Compiler, Version comp202103synp2, Build 168R, Built Oct 12 2021 09:17:10, @
@@ -36,12 +46,17 @@ Build: R-2021.03M-SP1
 Install: C:\Microsemi\Libero_SoC_v2021.3\SynplifyPro
 OS: Windows 6.2
 
+<<<<<<< HEAD
 Hostname: DESKTOP-JON32I6
+=======
+Hostname: DESKTOP-NH8R733
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 
 Implementation : synthesis
 Synopsys VHDL Compiler, Version comp202103synp2, Build 168R, Built Oct 12 2021 09:17:10, @
 
 @N|Running in 64-bit mode
+<<<<<<< HEAD
 @N:"C:\Users\RG\Documents\Firmware\fpga\component\work\root\root.vhd":17:7:17:10|Top entity is set to root.
 File C:\Users\RG\Documents\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3_muxptob3.vhd changed - recompiling
 File C:\Users\RG\Documents\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3_iaddr_reg.vhd changed - recompiling
@@ -197,6 +212,207 @@ Post processing for coreapb3_lib.coreapb3.coreapb3_arch
 Running optimization stage 1 on CoreAPB3 .......
 Finished optimization stage 1 on CoreAPB3 (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 113MB)
 @N: CD630 :"C:\Users\RG\Documents\Firmware\fpga\component\work\root_sb\CCC_0\root_sb_CCC_0_FCCC.vhd":8:7:8:24|Synthesizing work.root_sb_ccc_0_fccc.def_arch.
+=======
+@N:"B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root\root.vhd":17:7:17:10|Top entity is set to root.
+File B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3_muxptob3.vhd changed - recompiling
+File B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3_iaddr_reg.vhd changed - recompiling
+File B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp_pcie_hotreset.vhd changed - recompiling
+File B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root_sb\CCC_0\root_sb_CCC_0_FCCC.vhd changed - recompiling
+File C:\Microsemi\Libero_SoC_v2021.3\SynplifyPro\lib\generic\smartfusion2.vhd changed - recompiling
+File B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd changed - recompiling
+File B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root_sb_MSS\root_sb_MSS_syn.vhd changed - recompiling
+File B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\components.vhd changed - recompiling
+File B:\HERMESS_SPSoftware\Firmware\fpga\hdl\UART_RX.vhd changed - recompiling
+File B:\HERMESS_SPSoftware\Firmware\fpga\hdl\UART_TX.vhd changed - recompiling
+File B:\HERMESS_SPSoftware\Firmware\fpga\hdl\STAMP.vhd changed - recompiling
+File B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd changed - recompiling
+File B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd changed - recompiling
+File B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root_sb\FABOSC_0\root_sb_FABOSC_0_OSC.vhd changed - recompiling
+File B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root_sb_MSS\root_sb_MSS.vhd changed - recompiling
+File B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root_sb\root_sb.vhd changed - recompiling
+File B:\HERMESS_SPSoftware\Firmware\fpga\hdl\telemetry.vhd changed - recompiling
+File B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root\root.vhd changed - recompiling
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'B:\HERMESS_SPSoftware\Firmware\fpga\hdl\spi_master.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3_muxptob3.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3_iaddr_reg.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp_pcie_hotreset.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root_sb\CCC_0\root_sb_CCC_0_FCCC.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root_sb_MSS\root_sb_MSS_syn.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\components.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'B:\HERMESS_SPSoftware\Firmware\fpga\hdl\UART_RX.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'B:\HERMESS_SPSoftware\Firmware\fpga\hdl\UART_TX.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'B:\HERMESS_SPSoftware\Firmware\fpga\hdl\STAMP.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root_sb\FABOSC_0\root_sb_FABOSC_0_OSC.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root_sb_MSS\root_sb_MSS.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root_sb\root_sb.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'B:\HERMESS_SPSoftware\Firmware\fpga\hdl\telemetry.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root\root.vhd'.
+VHDL syntax check successful!
+File B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root_sb\CCC_0\root_sb_CCC_0_FCCC.vhd changed - recompiling
+File B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root_sb_MSS\root_sb_MSS_syn.vhd changed - recompiling
+File B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root_sb\FABOSC_0\root_sb_FABOSC_0_OSC.vhd changed - recompiling
+File B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root_sb_MSS\root_sb_MSS.vhd changed - recompiling
+File B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root_sb\root_sb.vhd changed - recompiling
+File B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root\root.vhd changed - recompiling
+@N: CD231 :"C:\Microsemi\Libero_SoC_v2021.3\SynplifyPro\lib\vhd2008\std1164.vhd":888:16:888:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
+@N: CD630 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root\root.vhd":17:7:17:10|Synthesizing work.root.rtl.
+@N: CD630 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\telemetry.vhd":14:7:14:15|Synthesizing work.telemetry.arch.
+@N: CD233 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\telemetry.vhd":47:20:47:21|Using sequential encoding for type apbstatetype.
+@N: CD231 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\telemetry.vhd":50:25:50:26|Using onehot encoding for type uart_tx_statetype. For example, enumeration blocked is mapped to "100000".
+@N: CD233 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\telemetry.vhd":53:25:53:26|Using sequential encoding for type uart_rx_statetype.
+@N: CD233 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\telemetry.vhd":56:20:56:21|Using sequential encoding for type gapstatetype.
+@W: CD609 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\telemetry.vhd":251:12:251:26|Index value 0 to 7 could be out of prefix range 0 to 5 
+@W: CD609 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\telemetry.vhd":251:12:251:26|Index value 0 to 7 could be out of prefix range 0 to 5 
+@N: CD604 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\telemetry.vhd":265:8:265:21|OTHERS clause is not synthesized.
+@W: CD609 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\telemetry.vhd":301:27:301:37|Index value 0 to 31 could be out of prefix range 0 to 23 
+@N: CD604 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\telemetry.vhd":341:8:341:21|OTHERS clause is not synthesized.
+@W: CD609 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\telemetry.vhd":358:24:358:52|Index value 0 to 24 could be out of prefix range 0 to 23 
+@W: CD609 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\telemetry.vhd":361:24:361:54|Index value 0 to 7 could be out of prefix range 0 to 5 
+@W: CD609 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\telemetry.vhd":386:16:386:44|Index value 0 to 24 could be out of prefix range 0 to 23 
+@W: CD609 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\telemetry.vhd":386:16:386:44|Index value 0 to 24 could be out of prefix range 0 to 23 
+@W: CD609 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\telemetry.vhd":389:16:389:46|Index value 0 to 7 could be out of prefix range 0 to 5 
+@W: CD609 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\telemetry.vhd":389:16:389:46|Index value 0 to 7 could be out of prefix range 0 to 5 
+@N: CD604 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\telemetry.vhd":416:8:416:21|OTHERS clause is not synthesized.
+@N: CD630 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\UART_RX.vhd":16:7:16:13|Synthesizing work.uart_rx.diagram.
+@N: CD233 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\UART_RX.vhd":27:17:27:18|Using sequential encoding for type state_type.
+@N: CD604 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\UART_RX.vhd":114:2:114:15|OTHERS clause is not synthesized.
+Post processing for work.uart_rx.diagram
+Running optimization stage 1 on UART_RX .......
+Finished optimization stage 1 on UART_RX (CPU Time 0h:00m:00s, Memory Used current: 104MB peak: 104MB)
+@N: CD630 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\UART_TX.vhd":16:7:16:13|Synthesizing work.uart_tx.diagram.
+@N: CD233 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\UART_TX.vhd":32:17:32:18|Using sequential encoding for type state_type.
+@N: CD604 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\UART_TX.vhd":124:2:124:15|OTHERS clause is not synthesized.
+Post processing for work.uart_tx.diagram
+Running optimization stage 1 on UART_TX .......
+@A: CL282 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\UART_TX.vhd":49:0:49:1|Feedback mux created for signal TX_in[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+Finished optimization stage 1 on UART_TX (CPU Time 0h:00m:00s, Memory Used current: 104MB peak: 105MB)
+Post processing for work.telemetry.arch
+Running optimization stage 1 on telemetry .......
+@W: CL169 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\telemetry.vhd":172:4:172:5|Pruning unused register gap_reg_5(31 downto 0). Make sure that there are no unused intermediate registers.
+@W: CL111 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\telemetry.vhd":172:4:172:5|All reachable assignments to PSLVERR are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+Finished optimization stage 1 on telemetry (CPU Time 0h:00m:00s, Memory Used current: 110MB peak: 115MB)
+@N: CD630 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\STAMP.vhd":32:7:32:11|Synthesizing work.stamp.architecture_stamp.
+@N: CD231 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\STAMP.vhd":69:27:69:28|Using onehot encoding for type component_state_t. For example, enumeration fsm_idle is mapped to "100000".
+@N: CD233 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\STAMP.vhd":72:27:72:28|Using sequential encoding for type spi_request_for_t.
+@N: CD233 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\STAMP.vhd":74:23:74:24|Using sequential encoding for type async_state_t.
+@N: CD604 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\STAMP.vhd":431:16:431:29|OTHERS clause is not synthesized.
+@N: CD630 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\spi_master.vhd":30:7:30:16|Synthesizing work.spi_master.logic.
+@N: CD233 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\spi_master.vhd":53:15:53:16|Using sequential encoding for type machine.
+Post processing for work.spi_master.logic
+Running optimization stage 1 on spi_master .......
+@W: CL271 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Pruning unused bits 31 to 1 of slave_6(31 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@A: CL282 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Feedback mux created for signal rx_buffer[15:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Feedback mux created for signal clk_toggles[5:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Feedback mux created for signal tx_buffer[15:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Feedback mux created for signal continue. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Feedback mux created for signal sclk_buffer. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Feedback mux created for signal last_bit_rx[5:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Feedback mux created for signal count[31:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Feedback mux created for signal slave[0:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Feedback mux created for signal clk_ratio[31:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Feedback mux created for signal assert_data. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+Finished optimization stage 1 on spi_master (CPU Time 0h:00m:00s, Memory Used current: 109MB peak: 115MB)
+Post processing for work.stamp.architecture_stamp
+Running optimization stage 1 on STAMP .......
+@A: CL282 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\STAMP.vhd":199:8:199:9|Feedback mux created for signal PRDATA[31:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\STAMP.vhd":199:8:199:9|Feedback mux created for signal apb_spi_finished. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\STAMP.vhd":199:8:199:9|Feedback mux created for signal measurement_temp[15:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\STAMP.vhd":199:8:199:9|Feedback mux created for signal spi_request_for[1:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\STAMP.vhd":199:8:199:9|Feedback mux created for signal measurement_dms2[15:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\STAMP.vhd":199:8:199:9|Feedback mux created for signal measurement_dms1[15:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\STAMP.vhd":199:8:199:9|Feedback mux created for signal spi_tx_data[15:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\STAMP.vhd":199:8:199:9|Feedback mux created for signal apb_is_reset. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\STAMP.vhd":199:8:199:9|Feedback mux created for signal apb_is_atomic. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+Finished optimization stage 1 on STAMP (CPU Time 0h:00m:00s, Memory Used current: 110MB peak: 115MB)
+@N: CD630 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root_sb\root_sb.vhd":20:7:20:13|Synthesizing work.root_sb.rtl.
+@N: CD630 :"C:\Microsemi\Libero_SoC_v2021.3\SynplifyPro\lib\generic\smartfusion2.vhd":790:10:790:17|Synthesizing smartfusion2.sysreset.syn_black_box.
+Post processing for smartfusion2.sysreset.syn_black_box
+@N: CD630 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root_sb_MSS\root_sb_MSS.vhd":17:7:17:17|Synthesizing work.root_sb_mss.rtl.
+@N: CD630 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root_sb_MSS\root_sb_MSS_syn.vhd":10:7:10:13|Synthesizing work.mss_010.def_arch.
+Post processing for work.mss_010.def_arch
+Post processing for work.root_sb_mss.rtl
+Running optimization stage 1 on root_sb_MSS .......
+Finished optimization stage 1 on root_sb_MSS (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 115MB)
+@N: CD630 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root_sb\FABOSC_0\root_sb_FABOSC_0_OSC.vhd":8:7:8:26|Synthesizing work.root_sb_fabosc_0_osc.def_arch.
+@N: CD630 :"C:\Microsemi\Libero_SoC_v2021.3\SynplifyPro\lib\generic\smartfusion2.vhd":562:10:562:15|Synthesizing smartfusion2.clkint.syn_black_box.
+Post processing for smartfusion2.clkint.syn_black_box
+@N: CD630 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd":19:7:19:20|Synthesizing work.rcosc_25_50mhz.def_arch.
+Post processing for work.rcosc_25_50mhz.def_arch
+@N: CD630 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd":79:7:79:24|Synthesizing work.rcosc_25_50mhz_fab.def_arch.
+Post processing for work.rcosc_25_50mhz_fab.def_arch
+Post processing for work.root_sb_fabosc_0_osc.def_arch
+Running optimization stage 1 on root_sb_FABOSC_0_OSC .......
+@W: CL240 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root_sb\FABOSC_0\root_sb_FABOSC_0_OSC.vhd":16:10:16:19|Signal XTLOSC_O2F is floating; a simulation mismatch is possible.
+@W: CL240 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root_sb\FABOSC_0\root_sb_FABOSC_0_OSC.vhd":15:10:15:19|Signal XTLOSC_CCC is floating; a simulation mismatch is possible.
+@W: CL240 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root_sb\FABOSC_0\root_sb_FABOSC_0_OSC.vhd":14:10:14:23|Signal RCOSC_1MHZ_O2F is floating; a simulation mismatch is possible.
+@W: CL240 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root_sb\FABOSC_0\root_sb_FABOSC_0_OSC.vhd":13:10:13:23|Signal RCOSC_1MHZ_CCC is floating; a simulation mismatch is possible.
+Finished optimization stage 1 on root_sb_FABOSC_0_OSC (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 115MB)
+@N: CD630 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":27:7:27:16|Synthesizing work.coreresetp.rtl.
+@W: CD434 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":477:8:477:25|Signal soft_ext_reset_out in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@W: CD434 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":478:8:478:21|Signal soft_reset_f2m in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@W: CD434 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":479:8:479:20|Signal soft_m3_reset in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@W: CD434 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":480:8:480:37|Signal soft_mddr_ddr_axi_s_core_reset in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@W: CD434 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":481:8:481:27|Signal soft_fddr_core_reset in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@W: CD434 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":482:8:482:27|Signal soft_sdif0_phy_reset in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@W: CD434 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":483:8:483:28|Signal soft_sdif0_core_reset in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@W: CD434 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":484:8:484:27|Signal soft_sdif1_phy_reset in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@W: CD434 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":485:8:485:28|Signal soft_sdif1_core_reset in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@W: CD434 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":486:8:486:27|Signal soft_sdif2_phy_reset in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@W: CD434 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":487:8:487:28|Signal soft_sdif2_core_reset in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@W: CD434 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":488:8:488:27|Signal soft_sdif3_phy_reset in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@W: CD434 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":489:8:489:28|Signal soft_sdif3_core_reset in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@W: CD434 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":490:8:490:30|Signal soft_sdif0_0_core_reset in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@W: CD434 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":491:8:491:30|Signal soft_sdif0_1_core_reset in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+Post processing for work.coreresetp.rtl
+Running optimization stage 1 on CoreResetP .......
+@W: CL169 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":1519:8:1519:9|Pruning unused register count_ddr_2(13 downto 0). Make sure that there are no unused intermediate registers.
+@W: CL169 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":1495:8:1495:9|Pruning unused register count_sdif3_1(12 downto 0). Make sure that there are no unused intermediate registers.
+@W: CL169 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":1471:8:1471:9|Pruning unused register count_sdif2_1(12 downto 0). Make sure that there are no unused intermediate registers.
+@W: CL169 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":1447:8:1447:9|Pruning unused register count_sdif1_1(12 downto 0). Make sure that there are no unused intermediate registers.
+@W: CL169 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":1423:8:1423:9|Pruning unused register count_sdif0_2(12 downto 0). Make sure that there are no unused intermediate registers.
+@W: CL169 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":1395:8:1395:9|Pruning unused register count_ddr_enable_rcosc_2. Make sure that there are no unused intermediate registers.
+@W: CL169 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":1395:8:1395:9|Pruning unused register count_ddr_enable_q1_2. Make sure that there are no unused intermediate registers.
+@W: CL169 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":1395:8:1395:9|Pruning unused register count_sdif3_enable_rcosc_2. Make sure that there are no unused intermediate registers.
+@W: CL169 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":1395:8:1395:9|Pruning unused register count_sdif2_enable_rcosc_2. Make sure that there are no unused intermediate registers.
+@W: CL169 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":1395:8:1395:9|Pruning unused register count_sdif1_enable_rcosc_2. Make sure that there are no unused intermediate registers.
+@W: CL169 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":1395:8:1395:9|Pruning unused register count_sdif0_enable_rcosc_2. Make sure that there are no unused intermediate registers.
+@W: CL169 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":1395:8:1395:9|Pruning unused register count_sdif3_enable_q1_2. Make sure that there are no unused intermediate registers.
+@W: CL169 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":1395:8:1395:9|Pruning unused register count_sdif2_enable_q1_2. Make sure that there are no unused intermediate registers.
+@W: CL169 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":1395:8:1395:9|Pruning unused register count_sdif1_enable_q1_2. Make sure that there are no unused intermediate registers.
+@W: CL169 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":1395:8:1395:9|Pruning unused register count_sdif0_enable_q1_2. Make sure that there are no unused intermediate registers.
+@W: CL169 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":1311:8:1311:9|Pruning unused register count_sdif3_enable_3. Make sure that there are no unused intermediate registers.
+@W: CL169 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":1252:8:1252:9|Pruning unused register count_sdif2_enable_3. Make sure that there are no unused intermediate registers.
+@W: CL169 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":1193:8:1193:9|Pruning unused register count_sdif1_enable_3. Make sure that there are no unused intermediate registers.
+@W: CL169 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":1134:8:1134:9|Pruning unused register count_sdif0_enable_3. Make sure that there are no unused intermediate registers.
+@W: CL169 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":1059:8:1059:9|Pruning unused register count_ddr_enable_3. Make sure that there are no unused intermediate registers.
+@W: CL177 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":1331:8:1331:9|Sharing sequential element M3_RESET_N_int and merging RESET_N_F2M_int. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":936:8:936:9|Sharing sequential element sdif2_spll_lock_q1 and merging sdif3_spll_lock_q1. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":936:8:936:9|Sharing sequential element sdif1_spll_lock_q1 and merging sdif3_spll_lock_q1. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":936:8:936:9|Sharing sequential element sdif0_spll_lock_q1 and merging sdif3_spll_lock_q1. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":936:8:936:9|Sharing sequential element fpll_lock_q1 and merging sdif3_spll_lock_q1. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL190 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":1376:8:1376:9|Optimizing register bit EXT_RESET_OUT_int to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL169 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":1059:8:1059:9|Pruning unused register release_ext_reset. Make sure that there are no unused intermediate registers.
+@W: CL169 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":1376:8:1376:9|Pruning unused register EXT_RESET_OUT_int. Make sure that there are no unused intermediate registers.
+@W: CL169 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":1376:8:1376:9|Pruning unused register sm2_state(2 downto 0). Make sure that there are no unused intermediate registers.
+@W: CL169 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":792:8:792:9|Pruning unused register sm2_areset_n_q1. Make sure that there are no unused intermediate registers.
+@W: CL169 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":792:8:792:9|Pruning unused register sm2_areset_n_clk_base. Make sure that there are no unused intermediate registers.
+Finished optimization stage 1 on CoreResetP (CPU Time 0h:00m:00s, Memory Used current: 114MB peak: 115MB)
+@N: CD630 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":34:7:34:14|Synthesizing coreapb3_lib.coreapb3.coreapb3_arch.
+@N: CD604 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":665:16:665:29|OTHERS clause is not synthesized.
+@W: CD434 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":1453:41:1453:46|Signal infill in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@W: CD638 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":616:7:616:15|Signal ia_prdata is undriven. Either assign the signal a value or remove the signal declaration.
+@N: CD630 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3_muxptob3.vhd":33:7:33:23|Synthesizing coreapb3_lib.coreapb3_muxptob3.coreapb3_muxptob3_arch.
+Post processing for coreapb3_lib.coreapb3_muxptob3.coreapb3_muxptob3_arch
+Running optimization stage 1 on COREAPB3_MUXPTOB3 .......
+Finished optimization stage 1 on COREAPB3_MUXPTOB3 (CPU Time 0h:00m:00s, Memory Used current: 117MB peak: 117MB)
+Post processing for coreapb3_lib.coreapb3.coreapb3_arch
+Running optimization stage 1 on CoreAPB3 .......
+Finished optimization stage 1 on CoreAPB3 (CPU Time 0h:00m:00s, Memory Used current: 117MB peak: 117MB)
+@N: CD630 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root_sb\CCC_0\root_sb_CCC_0_FCCC.vhd":8:7:8:24|Synthesizing work.root_sb_ccc_0_fccc.def_arch.
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 @N: CD630 :"C:\Microsemi\Libero_SoC_v2021.3\SynplifyPro\lib\generic\smartfusion2.vhd":798:10:798:12|Synthesizing smartfusion2.ccc.syn_black_box.
 Post processing for smartfusion2.ccc.syn_black_box
 @N: CD630 :"C:\Microsemi\Libero_SoC_v2021.3\SynplifyPro\lib\generic\smartfusion2.vhd":576:10:576:12|Synthesizing smartfusion2.gnd.syn_black_box.
@@ -205,14 +421,22 @@ Post processing for smartfusion2.gnd.syn_black_box
 Post processing for smartfusion2.vcc.syn_black_box
 Post processing for work.root_sb_ccc_0_fccc.def_arch
 Running optimization stage 1 on root_sb_CCC_0_FCCC .......
+<<<<<<< HEAD
 Finished optimization stage 1 on root_sb_CCC_0_FCCC (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 113MB)
 Post processing for work.root_sb.rtl
 Running optimization stage 1 on root_sb .......
 Finished optimization stage 1 on root_sb (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 113MB)
+=======
+Finished optimization stage 1 on root_sb_CCC_0_FCCC (CPU Time 0h:00m:00s, Memory Used current: 117MB peak: 117MB)
+Post processing for work.root_sb.rtl
+Running optimization stage 1 on root_sb .......
+Finished optimization stage 1 on root_sb (CPU Time 0h:00m:00s, Memory Used current: 117MB peak: 117MB)
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 @N: CD630 :"C:\Microsemi\Libero_SoC_v2021.3\SynplifyPro\lib\generic\smartfusion2.vhd":231:10:231:13|Synthesizing smartfusion2.and3.syn_black_box.
 Post processing for smartfusion2.and3.syn_black_box
 Post processing for work.root.rtl
 Running optimization stage 1 on root .......
+<<<<<<< HEAD
 Finished optimization stage 1 on root (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 113MB)
 Running optimization stage 2 on root_sb_CCC_0_FCCC .......
 Finished optimization stage 2 on root_sb_CCC_0_FCCC (CPU Time 0h:00m:00s, Memory Used current: 111MB peak: 113MB)
@@ -259,34 +483,95 @@ Running optimization stage 2 on CoreResetP .......
 @W: CL177 :"C:\Users\RG\Documents\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":936:8:936:9|Sharing sequential element sdif1_spll_lock_q2 and merging sdif3_spll_lock_q2. Add a syn_preserve attribute to the element to prevent sharing.
 @W: CL177 :"C:\Users\RG\Documents\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":936:8:936:9|Sharing sequential element sdif2_spll_lock_q2 and merging sdif3_spll_lock_q2. Add a syn_preserve attribute to the element to prevent sharing.
 @N: CL201 :"C:\Users\RG\Documents\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":1311:8:1311:9|Trying to extract state machine for register sdif3_state.
+=======
+Finished optimization stage 1 on root (CPU Time 0h:00m:00s, Memory Used current: 117MB peak: 117MB)
+Running optimization stage 2 on root_sb_CCC_0_FCCC .......
+Finished optimization stage 2 on root_sb_CCC_0_FCCC (CPU Time 0h:00m:00s, Memory Used current: 117MB peak: 117MB)
+Running optimization stage 2 on COREAPB3_MUXPTOB3 .......
+Finished optimization stage 2 on COREAPB3_MUXPTOB3 (CPU Time 0h:00m:00s, Memory Used current: 116MB peak: 117MB)
+Running optimization stage 2 on CoreAPB3 .......
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":75:0:75:4|Input IADDR is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":76:0:76:6|Input PRESETN is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":77:0:77:3|Input PCLK is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":114:0:114:7|Input PRDATAS7 is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":115:0:115:7|Input PRDATAS8 is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":116:0:116:7|Input PRDATAS9 is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":117:0:117:8|Input PRDATAS10 is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":118:0:118:8|Input PRDATAS11 is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":119:0:119:8|Input PRDATAS12 is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":120:0:120:8|Input PRDATAS13 is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":121:0:121:8|Input PRDATAS14 is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":122:0:122:8|Input PRDATAS15 is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":131:0:131:7|Input PREADYS7 is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":132:0:132:7|Input PREADYS8 is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":133:0:133:7|Input PREADYS9 is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":134:0:134:8|Input PREADYS10 is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":135:0:135:8|Input PREADYS11 is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":136:0:136:8|Input PREADYS12 is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":137:0:137:8|Input PREADYS13 is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":138:0:138:8|Input PREADYS14 is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":139:0:139:8|Input PREADYS15 is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":148:0:148:8|Input PSLVERRS7 is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":149:0:149:8|Input PSLVERRS8 is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":150:0:150:8|Input PSLVERRS9 is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":151:0:151:9|Input PSLVERRS10 is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":152:0:152:9|Input PSLVERRS11 is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":153:0:153:9|Input PSLVERRS12 is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":154:0:154:9|Input PSLVERRS13 is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":155:0:155:9|Input PSLVERRS14 is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd":156:0:156:9|Input PSLVERRS15 is unused.
+Finished optimization stage 2 on CoreAPB3 (CPU Time 0h:00m:00s, Memory Used current: 116MB peak: 117MB)
+Running optimization stage 2 on CoreResetP .......
+@W: CL177 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":936:8:936:9|Sharing sequential element sdif0_spll_lock_q2 and merging sdif3_spll_lock_q2. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":936:8:936:9|Sharing sequential element fpll_lock_q2 and merging sdif3_spll_lock_q2. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":936:8:936:9|Sharing sequential element sdif1_spll_lock_q2 and merging sdif3_spll_lock_q2. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":936:8:936:9|Sharing sequential element sdif2_spll_lock_q2 and merging sdif3_spll_lock_q2. Add a syn_preserve attribute to the element to prevent sharing.
+@N: CL201 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":1311:8:1311:9|Trying to extract state machine for register sdif3_state.
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 Extracted state machine for register sdif3_state
 State machine has 4 reachable states with original encodings of:
    000
    001
    010
    011
+<<<<<<< HEAD
 @N: CL201 :"C:\Users\RG\Documents\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":1252:8:1252:9|Trying to extract state machine for register sdif2_state.
+=======
+@N: CL201 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":1252:8:1252:9|Trying to extract state machine for register sdif2_state.
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 Extracted state machine for register sdif2_state
 State machine has 4 reachable states with original encodings of:
    000
    001
    010
    011
+<<<<<<< HEAD
 @N: CL201 :"C:\Users\RG\Documents\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":1193:8:1193:9|Trying to extract state machine for register sdif1_state.
+=======
+@N: CL201 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":1193:8:1193:9|Trying to extract state machine for register sdif1_state.
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 Extracted state machine for register sdif1_state
 State machine has 4 reachable states with original encodings of:
    000
    001
    010
    011
+<<<<<<< HEAD
 @N: CL201 :"C:\Users\RG\Documents\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":1134:8:1134:9|Trying to extract state machine for register sdif0_state.
+=======
+@N: CL201 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":1134:8:1134:9|Trying to extract state machine for register sdif0_state.
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 Extracted state machine for register sdif0_state
 State machine has 4 reachable states with original encodings of:
    000
    001
    010
    011
+<<<<<<< HEAD
 @N: CL201 :"C:\Users\RG\Documents\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":1059:8:1059:9|Trying to extract state machine for register sm0_state.
+=======
+@N: CL201 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":1059:8:1059:9|Trying to extract state machine for register sm0_state.
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 Extracted state machine for register sm0_state
 State machine has 7 reachable states with original encodings of:
    000
@@ -296,6 +581,7 @@ State machine has 7 reachable states with original encodings of:
    100
    101
    110
+<<<<<<< HEAD
 @N: CL159 :"C:\Users\RG\Documents\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":96:4:96:12|Input CLK_LTSSM is unused.
 @N: CL159 :"C:\Users\RG\Documents\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":123:4:123:12|Input FPLL_LOCK is unused.
 @N: CL159 :"C:\Users\RG\Documents\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":126:4:126:18|Input SDIF0_SPLL_LOCK is unused.
@@ -348,12 +634,70 @@ Running optimization stage 2 on STAMP .......
 @W: CL190 :"C:\Users\RG\Documents\Firmware\fpga\hdl\STAMP.vhd":199:8:199:9|Optimizing register bit delay_counter(29) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: CL260 :"C:\Users\RG\Documents\Firmware\fpga\hdl\STAMP.vhd":199:8:199:9|Pruning register bit 29 of delay_counter(29 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
 @N: CL201 :"C:\Users\RG\Documents\Firmware\fpga\hdl\STAMP.vhd":199:8:199:9|Trying to extract state machine for register async_state.
+=======
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":96:4:96:12|Input CLK_LTSSM is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":123:4:123:12|Input FPLL_LOCK is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":126:4:126:18|Input SDIF0_SPLL_LOCK is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":135:4:135:18|Input SDIF1_SPLL_LOCK is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":139:4:139:18|Input SDIF2_SPLL_LOCK is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":143:4:143:18|Input SDIF3_SPLL_LOCK is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":157:4:157:13|Input SDIF0_PSEL is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":158:4:158:15|Input SDIF0_PWRITE is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":159:4:159:15|Input SDIF0_PRDATA is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":160:4:160:13|Input SDIF1_PSEL is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":161:4:161:15|Input SDIF1_PWRITE is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":162:4:162:15|Input SDIF1_PRDATA is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":163:4:163:13|Input SDIF2_PSEL is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":164:4:164:15|Input SDIF2_PWRITE is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":165:4:165:15|Input SDIF2_PRDATA is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":166:4:166:13|Input SDIF3_PSEL is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":167:4:167:15|Input SDIF3_PWRITE is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":168:4:168:15|Input SDIF3_PRDATA is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":174:4:174:21|Input SOFT_EXT_RESET_OUT is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":175:4:175:17|Input SOFT_RESET_F2M is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":176:4:176:16|Input SOFT_M3_RESET is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":177:4:177:33|Input SOFT_MDDR_DDR_AXI_S_CORE_RESET is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":178:4:178:23|Input SOFT_FDDR_CORE_RESET is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":179:4:179:23|Input SOFT_SDIF0_PHY_RESET is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":180:4:180:24|Input SOFT_SDIF0_CORE_RESET is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":181:4:181:23|Input SOFT_SDIF1_PHY_RESET is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":182:4:182:24|Input SOFT_SDIF1_CORE_RESET is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":183:4:183:23|Input SOFT_SDIF2_PHY_RESET is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":184:4:184:24|Input SOFT_SDIF2_CORE_RESET is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":185:4:185:23|Input SOFT_SDIF3_PHY_RESET is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":186:4:186:24|Input SOFT_SDIF3_CORE_RESET is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":190:4:190:26|Input SOFT_SDIF0_0_CORE_RESET is unused.
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd":191:4:191:26|Input SOFT_SDIF0_1_CORE_RESET is unused.
+Finished optimization stage 2 on CoreResetP (CPU Time 0h:00m:00s, Memory Used current: 116MB peak: 117MB)
+Running optimization stage 2 on root_sb_FABOSC_0_OSC .......
+@N: CL159 :"B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root_sb\FABOSC_0\root_sb_FABOSC_0_OSC.vhd":10:10:10:12|Input XTL is unused.
+Finished optimization stage 2 on root_sb_FABOSC_0_OSC (CPU Time 0h:00m:00s, Memory Used current: 116MB peak: 117MB)
+Running optimization stage 2 on root_sb_MSS .......
+Finished optimization stage 2 on root_sb_MSS (CPU Time 0h:00m:00s, Memory Used current: 116MB peak: 117MB)
+Running optimization stage 2 on root_sb .......
+Finished optimization stage 2 on root_sb (CPU Time 0h:00m:00s, Memory Used current: 116MB peak: 117MB)
+Running optimization stage 2 on spi_master .......
+@W: CL279 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Pruning register bits 4 to 1 of last_bit_rx(5 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+Finished optimization stage 2 on spi_master (CPU Time 0h:00m:00s, Memory Used current: 118MB peak: 138MB)
+Running optimization stage 2 on STAMP .......
+@W: CL190 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\STAMP.vhd":199:8:199:9|Optimizing register bit delay_counter(31) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\STAMP.vhd":199:8:199:9|Pruning register bit 31 of delay_counter(31 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL190 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\STAMP.vhd":199:8:199:9|Optimizing register bit delay_counter(30) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\STAMP.vhd":199:8:199:9|Pruning register bit 30 of delay_counter(30 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL190 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\STAMP.vhd":199:8:199:9|Optimizing register bit delay_counter(29) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\STAMP.vhd":199:8:199:9|Pruning register bit 29 of delay_counter(29 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL201 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\STAMP.vhd":199:8:199:9|Trying to extract state machine for register async_state.
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 Extracted state machine for register async_state
 State machine has 3 reachable states with original encodings of:
    00
    01
    10
+<<<<<<< HEAD
 @N: CL201 :"C:\Users\RG\Documents\Firmware\fpga\hdl\STAMP.vhd":199:8:199:9|Trying to extract state machine for register component_state.
+=======
+@N: CL201 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\STAMP.vhd":199:8:199:9|Trying to extract state machine for register component_state.
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 Extracted state machine for register component_state
 State machine has 6 reachable states with original encodings of:
    000001
@@ -362,6 +706,7 @@ State machine has 6 reachable states with original encodings of:
    001000
    010000
    100000
+<<<<<<< HEAD
 @W: CL190 :"C:\Users\RG\Documents\Firmware\fpga\hdl\STAMP.vhd":199:8:199:9|Optimizing register bit delay_counter(28) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: CL260 :"C:\Users\RG\Documents\Firmware\fpga\hdl\STAMP.vhd":199:8:199:9|Pruning register bit 28 of delay_counter(28 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
 Finished optimization stage 2 on STAMP (CPU Time 0h:00m:00s, Memory Used current: 118MB peak: 137MB)
@@ -379,6 +724,71 @@ Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
 # Mon Feb 13 08:44:32 2023
+=======
+@W: CL190 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\STAMP.vhd":199:8:199:9|Optimizing register bit delay_counter(28) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\STAMP.vhd":199:8:199:9|Pruning register bit 28 of delay_counter(28 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+Finished optimization stage 2 on STAMP (CPU Time 0h:00m:00s, Memory Used current: 121MB peak: 138MB)
+Running optimization stage 2 on UART_TX .......
+@N: CL201 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\UART_TX.vhd":49:0:49:1|Trying to extract state machine for register current_state.
+Extracted state machine for register current_state
+State machine has 4 reachable states with original encodings of:
+   00
+   01
+   10
+   11
+@W: CL249 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\UART_TX.vhd":49:0:49:1|Initial value is not supported on state machine current_state
+@W: CL247 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\UART_TX.vhd":21:2:21:16|Input port bit 31 of baud_config_reg(31 downto 0) is unused 
+Finished optimization stage 2 on UART_TX (CPU Time 0h:00m:00s, Memory Used current: 120MB peak: 138MB)
+Running optimization stage 2 on UART_RX .......
+@N: CL201 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\UART_RX.vhd":41:0:41:1|Trying to extract state machine for register current_state.
+Extracted state machine for register current_state
+State machine has 4 reachable states with original encodings of:
+   00
+   01
+   10
+   11
+@W: CL249 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\UART_RX.vhd":41:0:41:1|Initial value is not supported on state machine current_state
+@W: CL247 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\UART_RX.vhd":20:2:20:16|Input port bit 31 of baud_config_reg(31 downto 0) is unused 
+Finished optimization stage 2 on UART_RX (CPU Time 0h:00m:00s, Memory Used current: 120MB peak: 138MB)
+Running optimization stage 2 on telemetry .......
+@N: CL201 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\telemetry.vhd":172:4:172:5|Trying to extract state machine for register UART_RX_State.
+Extracted state machine for register UART_RX_State
+State machine has 4 reachable states with original encodings of:
+   00
+   01
+   10
+   11
+@N: CL201 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\telemetry.vhd":172:4:172:5|Trying to extract state machine for register APBState.
+Extracted state machine for register APBState
+State machine has 3 reachable states with original encodings of:
+   00
+   01
+   10
+@N: CL201 :"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\telemetry.vhd":172:4:172:5|Trying to extract state machine for register UART_TX_State.
+Extracted state machine for register UART_TX_State
+State machine has 6 reachable states with original encodings of:
+   000001
+   000010
+   000100
+   001000
+   010000
+   100000
+Finished optimization stage 2 on telemetry (CPU Time 0h:00m:01s, Memory Used current: 135MB peak: 154MB)
+Running optimization stage 2 on root .......
+Finished optimization stage 2 on root (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 154MB)
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\synwork\layer0.rt.csv
+
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 136MB peak: 154MB)
+
+Process took 0h:00m:11s realtime, 0h:00m:11s cputime
+
+Process completed successfully.
+# Fri Dec  9 20:22:18 2022
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 
 ###########################################################]
 ###########################################################[
@@ -393,37 +803,91 @@ Build: R-2021.03M-SP1
 Install: C:\Microsemi\Libero_SoC_v2021.3\SynplifyPro
 OS: Windows 6.2
 
+<<<<<<< HEAD
 Hostname: DESKTOP-JON32I6
+=======
+Hostname: DESKTOP-NH8R733
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 
 Implementation : synthesis
 Synopsys Synopsys Netlist Linker, Version comp202103synp2, Build 168R, Built Oct 12 2021 09:17:10, @
 
 @N|Running in 64-bit mode
+<<<<<<< HEAD
 
 Linker output is up to date. No re-linking necessary
 
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 93MB peak: 93MB)
+=======
+File B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\synwork\layer0.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 116MB peak: 116MB)
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
+<<<<<<< HEAD
 # Mon Feb 13 08:44:32 2023
+=======
+# Fri Dec  9 20:22:19 2022
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 
 ###########################################################]
 
 For a summary of runtime and memory usage for all design units, please see file:
 ==========================================================
+<<<<<<< HEAD
 @L: C:\Users\RG\Documents\Firmware\fpga\synthesis\synwork\root_comp.rt.csv
 
 @END
 
 At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 25MB peak: 26MB)
+=======
+@L: B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\synwork\root_comp.rt.csv
+
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:00m:11s; Memory used current: 43MB peak: 43MB)
+
+Process took 0h:00m:12s realtime, 0h:00m:11s cputime
+
+Process completed successfully.
+# Fri Dec  9 20:22:19 2022
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: R-2021.03M-SP1
+Install: C:\Microsemi\Libero_SoC_v2021.3\SynplifyPro
+OS: Windows 6.2
+
+Hostname: DESKTOP-NH8R733
+
+Implementation : synthesis
+Synopsys Synopsys Netlist Linker, Version comp202103synp2, Build 168R, Built Oct 12 2021 09:17:10, @
+
+@N|Running in 64-bit mode
+File B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\synwork\root_comp.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 101MB)
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
+<<<<<<< HEAD
 # Mon Feb 13 08:44:32 2023
+=======
+# Fri Dec  9 20:22:20 2022
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 
 ###########################################################]
 
@@ -434,7 +898,11 @@ Multi-srs Generator Report
 @R:"C:\Users\RG\Documents\Firmware\fpga\synthesis\synlog\root_multi_srs_gen.srr"
 Premap Report
 
+<<<<<<< HEAD
 # Mon Feb 13 08:44:33 2023
+=======
+# Fri Dec  9 20:22:21 2022
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 
 
 Copyright (C) 1994-2021 Synopsys, Inc.
@@ -447,12 +915,17 @@ Build: R-2021.03M-SP1
 Install: C:\Microsemi\Libero_SoC_v2021.3\SynplifyPro
 OS: Windows 6.2
 
+<<<<<<< HEAD
 Hostname: DESKTOP-JON32I6
+=======
+Hostname: DESKTOP-NH8R733
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 
 Implementation : synthesis
 Synopsys Generic Technology Pre-mapping, Version map202103act, Build 148R, Built Oct 13 2021 00:41:25, @
 
 
+<<<<<<< HEAD
 Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 120MB peak: 120MB)
 
 
@@ -461,10 +934,21 @@ Done reading skeleton netlist (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 Reading constraint file: C:\Users\RG\Documents\Firmware\fpga\designer\root\synthesis.fdc
 @L: C:\Users\RG\Documents\Firmware\fpga\synthesis\root_scck.rpt 
 See clock summary report "C:\Users\RG\Documents\Firmware\fpga\synthesis\root_scck.rpt"
+=======
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 152MB peak: 152MB)
+
+
+Done reading skeleton netlist (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 193MB peak: 197MB)
+
+Reading constraint file: B:\HERMESS_SPSoftware\Firmware\fpga\designer\root\synthesis.fdc
+@L: B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\root_scck.rpt 
+See clock summary report "B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\root_scck.rpt"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 @N: MF916 |Option synthesis_strategy=base is enabled. 
 @N: MF248 |Running in 64-bit mode.
 @N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
 
+<<<<<<< HEAD
 Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 135MB peak: 135MB)
 
 
@@ -525,6 +1009,76 @@ Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 @N: FX1184 |Applying syn_allowed_resources blockrams=21 on top level netlist root 
 
 Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 178MB peak: 178MB)
+=======
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 203MB peak: 203MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 203MB peak: 203MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 204MB peak: 204MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 204MB peak: 206MB)
+
+@W: BN132 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1059:8:1059:9|Removing sequential instance MSS.CORERESETP_0.MDDR_DDR_AXI_S_CORE_RESET_N_int because it is equivalent to instance MSS.CORERESETP_0.FDDR_CORE_RESET_N_int. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: FX1172 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_tx.vhd":49:0:49:1|User-specified initial value defined for instance telemetry_0.c_TX.count_8[2:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_tx.vhd":49:0:49:1|User-specified initial value defined for instance telemetry_0.c_TX.TX_end is being ignored due to limitations in architecture. 
+@W: FX1172 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_tx.vhd":49:0:49:1|User-specified initial value defined for instance telemetry_0.c_TX.TX_active is being ignored due to limitations in architecture. 
+@W: FX1172 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_tx.vhd":49:0:49:1|User-specified initial value defined for instance telemetry_0.c_TX.TX_out is being ignored due to limitations in architecture. 
+@W: FX1172 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_tx.vhd":49:0:49:1|User-specified initial value defined for instance telemetry_0.c_TX.TX_in[7:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_rx.vhd":41:0:41:1|User-specified initial value defined for instance telemetry_0.c_RX.RX_end is being ignored due to limitations in architecture. 
+@W: FX1172 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_rx.vhd":41:0:41:1|User-specified initial value defined for instance telemetry_0.c_RX.count_8[2:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_rx.vhd":41:0:41:1|User-specified initial value defined for instance telemetry_0.c_RX.RX_out[7:0] is being ignored due to limitations in architecture. 
+@W: MO129 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":703:8:703:9|Sequential instance MSS.CORERESETP_0.SDIF0_PERST_N_q1 is reduced to a combinational gate by constant propagation.
+@W: MO129 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":719:8:719:9|Sequential instance MSS.CORERESETP_0.SDIF1_PERST_N_q1 is reduced to a combinational gate by constant propagation.
+@W: MO129 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":735:8:735:9|Sequential instance MSS.CORERESETP_0.SDIF2_PERST_N_q1 is reduced to a combinational gate by constant propagation.
+@W: MO129 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":751:8:751:9|Sequential instance MSS.CORERESETP_0.SDIF3_PERST_N_q1 is reduced to a combinational gate by constant propagation.
+@W: MO129 :"b:\hermess_spsoftware\firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Sequential instance STAMP1.spi.last_bit_rx[1] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"b:\hermess_spsoftware\firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Sequential instance STAMP2.spi.last_bit_rx[1] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"b:\hermess_spsoftware\firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Sequential instance STAMP3.spi.last_bit_rx[1] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"b:\hermess_spsoftware\firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Sequential instance STAMP4.spi.last_bit_rx[1] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"b:\hermess_spsoftware\firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Sequential instance STAMP5.spi.last_bit_rx[1] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"b:\hermess_spsoftware\firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Sequential instance STAMP6.spi.last_bit_rx[1] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":781:8:781:9|Sequential instance MSS.CORERESETP_0.sm1_areset_n_q1 is reduced to a combinational gate by constant propagation.
+@W: MO129 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":703:8:703:9|Sequential instance MSS.CORERESETP_0.SDIF0_PERST_N_q2 is reduced to a combinational gate by constant propagation.
+@W: MO129 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":719:8:719:9|Sequential instance MSS.CORERESETP_0.SDIF1_PERST_N_q2 is reduced to a combinational gate by constant propagation.
+@W: MO129 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":735:8:735:9|Sequential instance MSS.CORERESETP_0.SDIF2_PERST_N_q2 is reduced to a combinational gate by constant propagation.
+@W: MO129 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":751:8:751:9|Sequential instance MSS.CORERESETP_0.SDIF3_PERST_N_q2 is reduced to a combinational gate by constant propagation.
+@W: MO129 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":781:8:781:9|Sequential instance MSS.CORERESETP_0.sm1_areset_n_clk_base is reduced to a combinational gate by constant propagation.
+@W: MO129 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":703:8:703:9|Sequential instance MSS.CORERESETP_0.SDIF0_PERST_N_q3 is reduced to a combinational gate by constant propagation.
+@W: MO129 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":719:8:719:9|Sequential instance MSS.CORERESETP_0.SDIF1_PERST_N_q3 is reduced to a combinational gate by constant propagation.
+@W: MO129 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":735:8:735:9|Sequential instance MSS.CORERESETP_0.SDIF2_PERST_N_q3 is reduced to a combinational gate by constant propagation.
+@W: MO129 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":751:8:751:9|Sequential instance MSS.CORERESETP_0.SDIF3_PERST_N_q3 is reduced to a combinational gate by constant propagation.
+@W: MO129 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1331:8:1331:9|Sequential instance MSS.CORERESETP_0.RESET_N_F2M_int is reduced to a combinational gate by constant propagation.
+@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1059:8:1059:9|Removing sequential instance DDR_READY_int (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1059:8:1059:9|Removing sequential instance SDIF_READY_int (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1059:8:1059:9|Removing sequential instance SDIF_RELEASED_int (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1059:8:1059:9|Removing sequential instance FDDR_CORE_RESET_N_int (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1134:8:1134:9|Removing sequential instance SDIF0_PHY_RESET_N_int (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1134:8:1134:9|Removing sequential instance SDIF0_CORE_RESET_N_0 (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1193:8:1193:9|Removing sequential instance SDIF1_PHY_RESET_N_int (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1193:8:1193:9|Removing sequential instance SDIF1_CORE_RESET_N_0 (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1252:8:1252:9|Removing sequential instance SDIF2_PHY_RESET_N_int (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1252:8:1252:9|Removing sequential instance SDIF2_CORE_RESET_N_0 (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1311:8:1311:9|Removing sequential instance SDIF3_PHY_RESET_N_int (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1311:8:1311:9|Removing sequential instance SDIF3_CORE_RESET_N_0 (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1134:8:1134:9|Removing sequential instance sdif0_state[0:3] (in view: work.CoreResetP(rtl)) of type view:PrimLib.statemachine(prim) because it does not drive other instances.
+@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1193:8:1193:9|Removing sequential instance sdif1_state[0:3] (in view: work.CoreResetP(rtl)) of type view:PrimLib.statemachine(prim) because it does not drive other instances.
+@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1252:8:1252:9|Removing sequential instance sdif2_state[0:3] (in view: work.CoreResetP(rtl)) of type view:PrimLib.statemachine(prim) because it does not drive other instances.
+@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1311:8:1311:9|Removing sequential instance sdif3_state[0:3] (in view: work.CoreResetP(rtl)) of type view:PrimLib.statemachine(prim) because it does not drive other instances.
+@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":803:8:803:9|Removing sequential instance sdif0_areset_n_clk_base (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":814:8:814:9|Removing sequential instance sdif1_areset_n_clk_base (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":825:8:825:9|Removing sequential instance sdif2_areset_n_clk_base (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":836:8:836:9|Removing sequential instance sdif3_areset_n_clk_base (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":803:8:803:9|Removing sequential instance sdif0_areset_n_q1 (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":814:8:814:9|Removing sequential instance sdif1_areset_n_q1 (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":825:8:825:9|Removing sequential instance sdif2_areset_n_q1 (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":836:8:836:9|Removing sequential instance sdif3_areset_n_q1 (in view: work.CoreResetP(rtl)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: FX1184 |Applying syn_allowed_resources blockrams=21 on top level netlist root 
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 245MB peak: 245MB)
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 
 
 
@@ -534,7 +1088,7 @@ Clock Summary
           Start                                                      Requested     Requested     Clock        Clock                   Clock
 Level     Clock                                                      Frequency     Period        Type         Group                   Load 
 -------------------------------------------------------------------------------------------------------------------------------------------
-0 -       root_sb_CCC_0_FCCC|GL0_net_inferred_clock                  100.0 MHz     10.000        inferred     Inferred_clkgroup_0     2130 
+0 -       root_sb_CCC_0_FCCC|GL0_net_inferred_clock                  100.0 MHz     10.000        inferred     Inferred_clkgroup_0     3582 
                                                                                                                                            
 0 -       root_sb_FABOSC_0_OSC|RCOSC_25_50MHZ_CCC_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_1     15   
 ===========================================================================================================================================
@@ -547,11 +1101,12 @@ Clock Load Summary
                                                            Clock     Source                                                   Clock Pin                                 Non-clock Pin     Non-clock Pin                                          
 Clock                                                      Load      Pin                                                      Seq Example                               Seq Example       Comb Example                                           
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-root_sb_CCC_0_FCCC|GL0_net_inferred_clock                  2130      MSS.CCC_0.CCC_INST.GL0(CCC)                              STAMP6.apb_is_atomic.C                    -                 MSS.CCC_0.GL0_INST.I(BUFG)                             
+root_sb_CCC_0_FCCC|GL0_net_inferred_clock                  3582      MSS.CCC_0.CCC_INST.GL0(CCC)                              telemetry_0.PREADY.C                      -                 MSS.CCC_0.GL0_INST.I(BUFG)                             
                                                                                                                                                                                                                                                  
 root_sb_FABOSC_0_OSC|RCOSC_25_50MHZ_CCC_inferred_clock     15        MSS.FABOSC_0.I_RCOSC_25_50MHZ.CLKOUT(RCOSC_25_50MHZ)     MSS.CORERESETP_0.release_sdif0_core.C     -                 MSS.FABOSC_0.I_RCOSC_25_50MHZ_FAB.A(RCOSC_25_50MHZ_FAB)
 =================================================================================================================================================================================================================================================
 
+<<<<<<< HEAD
 @W: MT530 :"c:\users\rg\documents\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1059:8:1059:9|Found inferred clock root_sb_CCC_0_FCCC|GL0_net_inferred_clock which controls 2130 sequential elements including MSS.CORERESETP_0.sm0_state[0:6]. This clock has no specified timing constraint which may adversely impact design performance. 
 @W: MT530 :"c:\users\rg\documents\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":894:8:894:9|Found inferred clock root_sb_FABOSC_0_OSC|RCOSC_25_50MHZ_CCC_inferred_clock which controls 15 sequential elements including MSS.CORERESETP_0.sdif3_areset_n_rcosc_q1. This clock has no specified timing constraint which may adversely impact design performance. 
 
@@ -560,6 +1115,16 @@ Finished Pre Mapping Phase.
 @N: BN225 |Writing default property annotation file C:\Users\RG\Documents\Firmware\fpga\synthesis\root.sap.
 
 Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 176MB peak: 179MB)
+=======
+@W: MT530 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":1059:8:1059:9|Found inferred clock root_sb_CCC_0_FCCC|GL0_net_inferred_clock which controls 3582 sequential elements including MSS.CORERESETP_0.sm0_state[0:6]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":894:8:894:9|Found inferred clock root_sb_FABOSC_0_OSC|RCOSC_25_50MHZ_CCC_inferred_clock which controls 15 sequential elements including MSS.CORERESETP_0.sdif3_areset_n_rcosc_q1. This clock has no specified timing constraint which may adversely impact design performance. 
+
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\root.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 240MB peak: 245MB)
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 
 Encoding state machine sm0_state[0:6] (in view: work.CoreResetP(rtl))
 original code -> new code
@@ -648,7 +1213,42 @@ original code -> new code
    00 -> 00
    01 -> 01
    10 -> 10
+Encoding state machine current_state[0:3] (in view: work.UART_TX(diagram))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@N: MO225 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_tx.vhd":49:0:49:1|There are no possible illegal states for state machine current_state[0:3] (in view: work.UART_TX(diagram)); safe FSM implementation is not required.
+Encoding state machine current_state[0:3] (in view: work.UART_RX(diagram))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@N: MO225 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_rx.vhd":41:0:41:1|There are no possible illegal states for state machine current_state[0:3] (in view: work.UART_RX(diagram)); safe FSM implementation is not required.
+Encoding state machine UART_TX_State[0:5] (in view: work.telemetry(arch))
+original code -> new code
+   000001 -> 000001
+   000010 -> 000010
+   000100 -> 000100
+   001000 -> 001000
+   010000 -> 010000
+   100000 -> 100000
+Encoding state machine UART_RX_State[0:3] (in view: work.telemetry(arch))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@N: MO225 :"b:\hermess_spsoftware\firmware\fpga\hdl\telemetry.vhd":172:4:172:5|There are no possible illegal states for state machine UART_RX_State[0:3] (in view: work.telemetry(arch)); safe FSM implementation is not required.
+Encoding state machine APBState[0:2] (in view: work.telemetry(arch))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
 
+<<<<<<< HEAD
 Finished constraint checker preprocessing (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 181MB peak: 181MB)
 
 
@@ -660,11 +1260,28 @@ At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memor
 
 Process took 0h:00m:02s realtime, 0h:00m:02s cputime
 # Mon Feb 13 08:44:35 2023
+=======
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 245MB peak: 245MB)
+
+
+Finished constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 248MB peak: 248MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 161MB peak: 249MB)
+
+Process took 0h:00m:03s realtime, 0h:00m:03s cputime
+# Fri Dec  9 20:22:24 2022
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 
 ###########################################################]
 Map & Optimize Report
 
+<<<<<<< HEAD
 # Mon Feb 13 08:44:36 2023
+=======
+# Fri Dec  9 20:22:24 2022
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 
 
 Copyright (C) 1994-2021 Synopsys, Inc.
@@ -677,7 +1294,11 @@ Build: R-2021.03M-SP1
 Install: C:\Microsemi\Libero_SoC_v2021.3\SynplifyPro
 OS: Windows 6.2
 
+<<<<<<< HEAD
 Hostname: DESKTOP-JON32I6
+=======
+Hostname: DESKTOP-NH8R733
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 
 Implementation : synthesis
 Synopsys Generic Technology Mapper, Version map202103act, Build 148R, Built Oct 13 2021 00:41:25, @
@@ -702,6 +1323,7 @@ Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 
 
 
+<<<<<<< HEAD
 Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 165MB peak: 165MB)
 
 @W: BN132 :"c:\users\rg\documents\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":936:8:936:9|Removing sequential instance MSS.CORERESETP_0.sdif3_spll_lock_q1 because it is equivalent to instance MSS.CORERESETP_0.CONFIG2_DONE_q1. To keep the instance, apply constraint syn_preserve=1 on the instance.
@@ -716,15 +1338,39 @@ Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapse
 @W: BN132 :"c:\users\rg\documents\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":894:8:894:9|Removing sequential instance MSS.CORERESETP_0.sdif3_areset_n_rcosc because it is equivalent to instance MSS.CORERESETP_0.sm0_areset_n_rcosc. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\rg\documents\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":872:8:872:9|Removing sequential instance MSS.CORERESETP_0.sdif1_areset_n_rcosc because it is equivalent to instance MSS.CORERESETP_0.sm0_areset_n_rcosc. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\rg\documents\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":861:8:861:9|Removing sequential instance MSS.CORERESETP_0.sdif0_areset_n_rcosc because it is equivalent to instance MSS.CORERESETP_0.sm0_areset_n_rcosc. To keep the instance, apply constraint syn_preserve=1 on the instance.
+=======
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 168MB peak: 168MB)
+
+@W: BN132 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":936:8:936:9|Removing sequential instance MSS.CORERESETP_0.sdif3_spll_lock_q1 because it is equivalent to instance MSS.CORERESETP_0.CONFIG2_DONE_q1. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":922:8:922:9|Removing sequential instance MSS.CORERESETP_0.CONFIG2_DONE_q1 because it is equivalent to instance MSS.CORERESETP_0.CONFIG1_DONE_q1. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":922:8:922:9|Removing sequential instance MSS.CORERESETP_0.CONFIG2_DONE_clk_base because it is equivalent to instance MSS.CORERESETP_0.sdif3_spll_lock_q2. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":908:8:908:9|Removing sequential instance MSS.CORERESETP_0.CONFIG1_DONE_clk_base because it is equivalent to instance MSS.CORERESETP_0.sdif3_spll_lock_q2. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":894:8:894:9|Removing sequential instance MSS.CORERESETP_0.sdif3_areset_n_rcosc_q1 because it is equivalent to instance MSS.CORERESETP_0.sdif2_areset_n_rcosc_q1. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":883:8:883:9|Removing sequential instance MSS.CORERESETP_0.sdif2_areset_n_rcosc_q1 because it is equivalent to instance MSS.CORERESETP_0.sdif1_areset_n_rcosc_q1. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":872:8:872:9|Removing sequential instance MSS.CORERESETP_0.sdif1_areset_n_rcosc_q1 because it is equivalent to instance MSS.CORERESETP_0.sdif0_areset_n_rcosc_q1. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":850:8:850:9|Removing sequential instance MSS.CORERESETP_0.sm0_areset_n_rcosc_q1 because it is equivalent to instance MSS.CORERESETP_0.sdif0_areset_n_rcosc_q1. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":883:8:883:9|Removing sequential instance MSS.CORERESETP_0.sdif2_areset_n_rcosc because it is equivalent to instance MSS.CORERESETP_0.sm0_areset_n_rcosc. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":894:8:894:9|Removing sequential instance MSS.CORERESETP_0.sdif3_areset_n_rcosc because it is equivalent to instance MSS.CORERESETP_0.sm0_areset_n_rcosc. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":872:8:872:9|Removing sequential instance MSS.CORERESETP_0.sdif1_areset_n_rcosc because it is equivalent to instance MSS.CORERESETP_0.sm0_areset_n_rcosc. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreresetp\7.1.100\rtl\vhdl\core\coreresetp.vhd":861:8:861:9|Removing sequential instance MSS.CORERESETP_0.sdif0_areset_n_rcosc because it is equivalent to instance MSS.CORERESETP_0.sm0_areset_n_rcosc. To keep the instance, apply constraint syn_preserve=1 on the instance.
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 
 #### START OF SSF LOG MESSAGES ####
 
 #### END OF SSF LOG MESSAGES ####
+<<<<<<< HEAD
 @W: FA239 :"c:\users\rg\documents\firmware\fpga\component\actel\directcore\coreapb3\4.1.100\rtl\vhdl\core\coreapb3.vhd":648:12:648:15|ROM iPSELS_raw_9[5:0] (in view: coreapb3_lib.CoreAPB3(coreapb3_arch)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
 @W: FA239 :"c:\users\rg\documents\firmware\fpga\component\actel\directcore\coreapb3\4.1.100\rtl\vhdl\core\coreapb3.vhd":648:12:648:15|ROM iPSELS_raw_9[5:0] (in view: coreapb3_lib.CoreAPB3(coreapb3_arch)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
 @N: MO106 :"c:\users\rg\documents\firmware\fpga\component\actel\directcore\coreapb3\4.1.100\rtl\vhdl\core\coreapb3.vhd":648:12:648:15|Found ROM iPSELS_raw_9[5:0] (in view: coreapb3_lib.CoreAPB3(coreapb3_arch)) with 16 words by 6 bits.
 
 Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
+=======
+@W: FA239 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreapb3\4.1.100\rtl\vhdl\core\coreapb3.vhd":648:12:648:15|ROM iPSELS_raw_10[6:0] (in view: coreapb3_lib.CoreAPB3(coreapb3_arch)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@W: FA239 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreapb3\4.1.100\rtl\vhdl\core\coreapb3.vhd":648:12:648:15|ROM iPSELS_raw_10[6:0] (in view: coreapb3_lib.CoreAPB3(coreapb3_arch)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@N: MO106 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreapb3\4.1.100\rtl\vhdl\core\coreapb3.vhd":648:12:648:15|Found ROM iPSELS_raw_10[6:0] (in view: coreapb3_lib.CoreAPB3(coreapb3_arch)) with 16 words by 7 bits.
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 178MB peak: 178MB)
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 
 Encoding state machine sm0_state[0:6] (in view: work.CoreResetP(rtl))
 original code -> new code
@@ -748,6 +1394,7 @@ original code -> new code
    00 -> 00
    01 -> 01
    10 -> 10
+<<<<<<< HEAD
 @N: MO231 :"c:\users\rg\documents\firmware\fpga\hdl\stamp.vhd":199:8:199:9|Found counter in view:work.STAMP(architecture_stamp) instance delay_counter[27:0] 
 @N: MO231 :"c:\users\rg\documents\firmware\fpga\hdl\stamp.vhd":199:8:199:9|Found counter in view:work.STAMP(architecture_stamp) instance polling_timeout_counter[7:0] 
 @N: MO231 :"c:\users\rg\documents\firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Found counter in view:work.spi_master(logic) instance clk_toggles[5:0] 
@@ -762,12 +1409,101 @@ Starting factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; M
 Auto Dissolve of spi (inst of view:work.spi_master(logic))
 
 Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 180MB peak: 180MB)
+=======
+@N: MO231 :"b:\hermess_spsoftware\firmware\fpga\hdl\stamp.vhd":199:8:199:9|Found counter in view:work.STAMP(architecture_stamp) instance delay_counter[27:0] 
+@N: MO231 :"b:\hermess_spsoftware\firmware\fpga\hdl\stamp.vhd":199:8:199:9|Found counter in view:work.STAMP(architecture_stamp) instance polling_timeout_counter[7:0] 
+@N: MO231 :"b:\hermess_spsoftware\firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Found counter in view:work.spi_master(logic) instance clk_toggles[5:0] 
+@N: MO231 :"b:\hermess_spsoftware\firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Found counter in view:work.spi_master(logic) instance count[31:0] 
+@W: MO161 :"b:\hermess_spsoftware\firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Register bit clk_ratio[3] (in view view:work.spi_master(logic)) is always 1. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO161 :"b:\hermess_spsoftware\firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Register bit clk_ratio[2] (in view view:work.spi_master(logic)) is always 1. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO161 :"b:\hermess_spsoftware\firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Register bit clk_ratio[1] (in view view:work.spi_master(logic)) is always 1. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO161 :"b:\hermess_spsoftware\firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Register bit clk_ratio[0] (in view view:work.spi_master(logic)) is always 1. To keep the instance, apply syn_preserve=1 on the instance.
+Encoding state machine UART_TX_State[0:5] (in view: work.telemetry(arch))
+original code -> new code
+   000001 -> 000001
+   000010 -> 000010
+   000100 -> 000100
+   001000 -> 001000
+   010000 -> 010000
+   100000 -> 100000
+Encoding state machine UART_RX_State[0:3] (in view: work.telemetry(arch))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@N: MO225 :"b:\hermess_spsoftware\firmware\fpga\hdl\telemetry.vhd":172:4:172:5|There are no possible illegal states for state machine UART_RX_State[0:3] (in view: work.telemetry(arch)); safe FSM implementation is not required.
+Encoding state machine APBState[0:2] (in view: work.telemetry(arch))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+@N: MO231 :"b:\hermess_spsoftware\firmware\fpga\hdl\telemetry.vhd":172:4:172:5|Found counter in view:work.telemetry(arch) instance byte_counter[4:0] 
+@N: MO231 :"b:\hermess_spsoftware\firmware\fpga\hdl\telemetry.vhd":172:4:172:5|Found counter in view:work.telemetry(arch) instance gap_counter[31:0] 
+Encoding state machine current_state[0:3] (in view: work.UART_TX(diagram))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@N: MO225 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_tx.vhd":49:0:49:1|There are no possible illegal states for state machine current_state[0:3] (in view: work.UART_TX(diagram)); safe FSM implementation is not required.
+@N: MO231 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_tx.vhd":49:0:49:1|Found counter in view:work.UART_TX(diagram) instance count_clk[31:0] 
+@W: MO160 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_tx.vhd":49:0:49:1|Register bit clk_baudrate[31] (in view view:work.UART_TX(diagram)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+Encoding state machine current_state[0:3] (in view: work.UART_RX(diagram))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@N: MO225 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_rx.vhd":41:0:41:1|There are no possible illegal states for state machine current_state[0:3] (in view: work.UART_RX(diagram)); safe FSM implementation is not required.
+@N: MO231 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_rx.vhd":41:0:41:1|Found counter in view:work.UART_RX(diagram) instance count_clk[31:0] 
+@W: MO160 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_rx.vhd":41:0:41:1|Register bit clk_baudrate[31] (in view view:work.UART_RX(diagram)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@N: MF179 :|Found 32 by 32 bit equality operator ('==') RX_state_machine\.un17_count_clk (in view: work.UART_RX(diagram))
+
+Starting factoring (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 185MB peak: 185MB)
+
+Auto Dissolve of spi (inst of view:work.spi_master(logic))
+@W: BN132 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_tx.vhd":49:0:49:1|Removing instance telemetry_0.c_TX.clk_baudrate[25] because it is equivalent to instance telemetry_0.c_RX.clk_baudrate[25]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_tx.vhd":49:0:49:1|Removing instance telemetry_0.c_TX.clk_baudrate[26] because it is equivalent to instance telemetry_0.c_RX.clk_baudrate[26]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_tx.vhd":49:0:49:1|Removing instance telemetry_0.c_TX.clk_baudrate[27] because it is equivalent to instance telemetry_0.c_RX.clk_baudrate[27]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_tx.vhd":49:0:49:1|Removing instance telemetry_0.c_TX.clk_baudrate[28] because it is equivalent to instance telemetry_0.c_RX.clk_baudrate[28]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_tx.vhd":49:0:49:1|Removing instance telemetry_0.c_TX.clk_baudrate[29] because it is equivalent to instance telemetry_0.c_RX.clk_baudrate[29]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_tx.vhd":49:0:49:1|Removing instance telemetry_0.c_TX.clk_baudrate[30] because it is equivalent to instance telemetry_0.c_RX.clk_baudrate[30]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_tx.vhd":49:0:49:1|Removing instance telemetry_0.c_TX.clk_baudrate[11] because it is equivalent to instance telemetry_0.c_RX.clk_baudrate[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_tx.vhd":49:0:49:1|Removing instance telemetry_0.c_TX.clk_baudrate[13] because it is equivalent to instance telemetry_0.c_RX.clk_baudrate[13]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_tx.vhd":49:0:49:1|Removing instance telemetry_0.c_TX.clk_baudrate[14] because it is equivalent to instance telemetry_0.c_RX.clk_baudrate[14]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_tx.vhd":49:0:49:1|Removing instance telemetry_0.c_TX.clk_baudrate[15] because it is equivalent to instance telemetry_0.c_RX.clk_baudrate[15]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_tx.vhd":49:0:49:1|Removing instance telemetry_0.c_TX.clk_baudrate[16] because it is equivalent to instance telemetry_0.c_RX.clk_baudrate[16]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_tx.vhd":49:0:49:1|Removing instance telemetry_0.c_TX.clk_baudrate[17] because it is equivalent to instance telemetry_0.c_RX.clk_baudrate[17]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_tx.vhd":49:0:49:1|Removing instance telemetry_0.c_TX.clk_baudrate[18] because it is equivalent to instance telemetry_0.c_RX.clk_baudrate[18]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_tx.vhd":49:0:49:1|Removing instance telemetry_0.c_TX.clk_baudrate[19] because it is equivalent to instance telemetry_0.c_RX.clk_baudrate[19]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_tx.vhd":49:0:49:1|Removing instance telemetry_0.c_TX.clk_baudrate[20] because it is equivalent to instance telemetry_0.c_RX.clk_baudrate[20]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_tx.vhd":49:0:49:1|Removing instance telemetry_0.c_TX.clk_baudrate[21] because it is equivalent to instance telemetry_0.c_RX.clk_baudrate[21]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_tx.vhd":49:0:49:1|Removing instance telemetry_0.c_TX.clk_baudrate[22] because it is equivalent to instance telemetry_0.c_RX.clk_baudrate[22]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_tx.vhd":49:0:49:1|Removing instance telemetry_0.c_TX.clk_baudrate[0] because it is equivalent to instance telemetry_0.c_RX.clk_baudrate[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_tx.vhd":49:0:49:1|Removing instance telemetry_0.c_TX.clk_baudrate[1] because it is equivalent to instance telemetry_0.c_RX.clk_baudrate[1]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_tx.vhd":49:0:49:1|Removing instance telemetry_0.c_TX.clk_baudrate[2] because it is equivalent to instance telemetry_0.c_RX.clk_baudrate[2]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_tx.vhd":49:0:49:1|Removing instance telemetry_0.c_TX.clk_baudrate[5] because it is equivalent to instance telemetry_0.c_RX.clk_baudrate[5]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_tx.vhd":49:0:49:1|Removing instance telemetry_0.c_TX.clk_baudrate[7] because it is equivalent to instance telemetry_0.c_RX.clk_baudrate[7]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_tx.vhd":49:0:49:1|Removing instance telemetry_0.c_TX.clk_baudrate[23] because it is equivalent to instance telemetry_0.c_RX.clk_baudrate[23]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_tx.vhd":49:0:49:1|Removing instance telemetry_0.c_TX.clk_baudrate[24] because it is equivalent to instance telemetry_0.c_RX.clk_baudrate[24]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_tx.vhd":49:0:49:1|Removing instance telemetry_0.c_TX.clk_baudrate[8] because it is equivalent to instance telemetry_0.c_RX.clk_baudrate[8]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_tx.vhd":49:0:49:1|Removing instance telemetry_0.c_TX.clk_baudrate[9] because it is equivalent to instance telemetry_0.c_RX.clk_baudrate[9]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_tx.vhd":49:0:49:1|Removing instance telemetry_0.c_TX.clk_baudrate[10] because it is equivalent to instance telemetry_0.c_RX.clk_baudrate[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_tx.vhd":49:0:49:1|Removing instance telemetry_0.c_TX.clk_baudrate[12] because it is equivalent to instance telemetry_0.c_RX.clk_baudrate[12]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_tx.vhd":49:0:49:1|Removing instance telemetry_0.c_TX.clk_baudrate[3] because it is equivalent to instance telemetry_0.c_RX.clk_baudrate[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_tx.vhd":49:0:49:1|Removing instance telemetry_0.c_TX.clk_baudrate[4] because it is equivalent to instance telemetry_0.c_RX.clk_baudrate[4]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_tx.vhd":49:0:49:1|Removing instance telemetry_0.c_TX.clk_baudrate[6] because it is equivalent to instance telemetry_0.c_RX.clk_baudrate[6]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+
+Finished factoring (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 202MB peak: 202MB)
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 
 
 Available hyper_sources - for debug and ip models
 	None Found
 
 
+<<<<<<< HEAD
 Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 192MB peak: 196MB)
 
 @N: BN362 :"c:\users\rg\documents\firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Removing sequential instance STAMP1.spi.continue (in view: work.root(rtl)) because it does not drive other instances.
@@ -823,16 +1559,59 @@ Added 6 LUTs via timing driven replication
    7		0h:00m:09s		    -1.25ns		3339 /      2096
 @N: FP130 |Promoting Net LED_FPGA_LOADED_arst on CLKINT  I_1084 
 @N: FP130 |Promoting Net MSS.CORERESETP_0.sm0_areset_n_clk_base on CLKINT  I_1085 
+=======
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:09s; Memory used current: 219MB peak: 244MB)
+
+@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Removing sequential instance STAMP1.spi.continue (in view: work.root(rtl)) because it does not drive other instances.
+@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Removing sequential instance STAMP2.spi.continue (in view: work.root(rtl)) because it does not drive other instances.
+@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Removing sequential instance STAMP3.spi.continue (in view: work.root(rtl)) because it does not drive other instances.
+@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Removing sequential instance STAMP4.spi.continue (in view: work.root(rtl)) because it does not drive other instances.
+@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Removing sequential instance STAMP5.spi.continue (in view: work.root(rtl)) because it does not drive other instances.
+@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Removing sequential instance STAMP6.spi.continue (in view: work.root(rtl)) because it does not drive other instances.
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:10s; Memory used current: 220MB peak: 244MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:16s; CPU Time elapsed 0h:00m:16s; Memory used current: 220MB peak: 244MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:16s; CPU Time elapsed 0h:00m:16s; Memory used current: 220MB peak: 244MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:19s; CPU Time elapsed 0h:00m:18s; Memory used current: 221MB peak: 244MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:20s; CPU Time elapsed 0h:00m:20s; Memory used current: 261MB peak: 261MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:21s		    -4.61ns		6922 /      3508
+   2		0h:00m:21s		    -4.33ns		6481 /      3508
+
+   3		0h:00m:24s		    -3.61ns		6484 /      3508
+
+
+   4		0h:00m:24s		    -2.87ns		6486 /      3508
+@N: FP130 |Promoting Net LED_FPGA_LOADED_arst on CLKINT  I_2198 
+@N: FP130 |Promoting Net MSS.CORERESETP_0.sm0_areset_n_clk_base on CLKINT  I_2199 
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 
 Added 0 Buffers
 Added 0 Cells via replication
 	Added 0 Sequential Cells via replication
 	Added 0 Combinational Cells via replication
 
+<<<<<<< HEAD
 Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:10s; Memory used current: 242MB peak: 242MB)
 
 
 Finished restoring hierarchy (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:10s; Memory used current: 243MB peak: 243MB)
+=======
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:27s; CPU Time elapsed 0h:00m:27s; Memory used current: 266MB peak: 266MB)
+
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:27s; CPU Time elapsed 0h:00m:27s; Memory used current: 268MB peak: 269MB)
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 
 
 
@@ -843,13 +1622,13 @@ Finished restoring hierarchy (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:
 
 Clock optimization not enabled
 0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
-2 gated/generated clock tree(s) driving 2097 clock pin(s) of sequential element(s)
-0 instances converted, 2097 sequential instances remain driven by gated/generated clocks
+2 gated/generated clock tree(s) driving 3509 clock pin(s) of sequential element(s)
+0 instances converted, 3509 sequential instances remain driven by gated/generated clocks
 
 =================================================================================== Gated/Generated Clocks ===================================================================================
 Clock Tree ID     Driving Element                   Drive Element Type     Fanout     Sample Instance                              Explanation                                                
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-@K:CKID0001       MSS.CCC_0.CCC_INST                CCC                    2090       MSS.root_sb_MSS_0.MSS_ADLIB_INST             No gated clock conversion method for cell cell:work.MSS_010
+@K:CKID0001       MSS.CCC_0.CCC_INST                CCC                    3502       MSS.root_sb_MSS_0.MSS_ADLIB_INST             No gated clock conversion method for cell cell:work.MSS_010
 @K:CKID0002       MSS.FABOSC_0.I_RCOSC_25_50MHZ     RCOSC_25_50MHZ         7          MSS.CORERESETP_0.sdif0_areset_n_rcosc_q1     No gated clock conversion method for cell cell:ACG4.SLE    
 ==============================================================================================================================================================================================
 
@@ -857,28 +1636,25 @@ Clock Tree ID     Driving Element                   Drive Element Type     Fanou
 ##### END OF CLOCK OPTIMIZATION REPORT ######]
 
 
+<<<<<<< HEAD
 Start Writing Netlists (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 200MB peak: 243MB)
 
 Writing Analyst data base C:\Users\RG\Documents\Firmware\fpga\synthesis\synwork\root_m.srm
 
 Finished Writing Netlist Databases (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 240MB peak: 243MB)
+=======
+Start Writing Netlists (Real Time elapsed 0h:00m:28s; CPU Time elapsed 0h:00m:27s; Memory used current: 211MB peak: 269MB)
+
+Writing Analyst data base B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\synwork\root_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:29s; CPU Time elapsed 0h:00m:28s; Memory used current: 255MB peak: 269MB)
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 
 Writing Verilog Simulation files
-@W: BW110 :|Renaming port spi_master_5 due to collision with Verilog/ System Verilog reserved word 
-    config[31:0] --> config_Z[31:0]
-@W: BW110 :|Renaming port spi_master_5_0 due to collision with Verilog/ System Verilog reserved word 
-    config[31:0] --> config_Z[31:0]
-@W: BW110 :|Renaming port spi_master_5_1 due to collision with Verilog/ System Verilog reserved word 
-    config[31:0] --> config_Z[31:0]
-@W: BW110 :|Renaming port spi_master_5_2 due to collision with Verilog/ System Verilog reserved word 
-    config[31:0] --> config_Z[31:0]
-@W: BW110 :|Renaming port spi_master_5_3 due to collision with Verilog/ System Verilog reserved word 
-    config[31:0] --> config_Z[31:0]
-@W: BW110 :|Renaming port spi_master_5_4 due to collision with Verilog/ System Verilog reserved word 
-    config[31:0] --> config_Z[31:0]
 @N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
 @N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
 
+<<<<<<< HEAD
 Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:13s; Memory used current: 241MB peak: 243MB)
 
 
@@ -888,12 +1664,27 @@ Finished Writing Netlists (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m
 Start final timing analysis (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:13s; Memory used current: 236MB peak: 243MB)
 
 @W: MT246 :"c:\users\rg\documents\firmware\fpga\component\work\root_sb\ccc_0\root_sb_ccc_0_fccc.vhd":106:4:106:11|Blackbox CCC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+=======
+Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:31s; CPU Time elapsed 0h:00m:30s; Memory used current: 255MB peak: 269MB)
+
+
+Finished Writing Netlists (Real Time elapsed 0h:00m:31s; CPU Time elapsed 0h:00m:31s; Memory used current: 255MB peak: 269MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:31s; CPU Time elapsed 0h:00m:31s; Memory used current: 248MB peak: 269MB)
+
+@W: MT246 :"b:\hermess_spsoftware\firmware\fpga\component\work\root_sb\ccc_0\root_sb_ccc_0_fccc.vhd":106:4:106:11|Blackbox CCC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 @W: MT420 |Found inferred clock root_sb_CCC_0_FCCC|GL0_net_inferred_clock with period 10.00ns. Please declare a user-defined clock on net MSS.CCC_0.GL0_net.
 @W: MT420 |Found inferred clock root_sb_FABOSC_0_OSC|RCOSC_25_50MHZ_CCC_inferred_clock with period 10.00ns. Please declare a user-defined clock on net MSS.FABOSC_0.FABOSC_0_RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC.
 
 
 ##### START OF TIMING REPORT #####[
+<<<<<<< HEAD
 # Timing report written on Mon Feb 13 08:44:49 2023
+=======
+# Timing report written on Fri Dec  9 20:22:56 2022
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 #
 
 
@@ -901,7 +1692,11 @@ Top view:               root
 Requested Frequency:    100.0 MHz
 Wire load mode:         top
 Paths requested:        5
+<<<<<<< HEAD
 Constraint File(s):    C:\Users\RG\Documents\Firmware\fpga\designer\root\synthesis.fdc
+=======
+Constraint File(s):    B:\HERMESS_SPSoftware\Firmware\fpga\designer\root\synthesis.fdc
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
                        
 @N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
 
@@ -913,12 +1708,12 @@ Performance Summary
 *******************
 
 
-Worst slack in design: -0.623
+Worst slack in design: -1.886
 
                                                            Requested     Estimated      Requested     Estimated                Clock        Clock              
 Starting Clock                                             Frequency     Frequency      Period        Period        Slack      Type         Group              
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
-root_sb_CCC_0_FCCC|GL0_net_inferred_clock                  100.0 MHz     94.1 MHz       10.000        10.623        -0.623     inferred     Inferred_clkgroup_0
+root_sb_CCC_0_FCCC|GL0_net_inferred_clock                  100.0 MHz     84.1 MHz       10.000        11.886        -1.886     inferred     Inferred_clkgroup_0
 root_sb_FABOSC_0_OSC|RCOSC_25_50MHZ_CCC_inferred_clock     100.0 MHz     1691.2 MHz     10.000        0.591         9.409      inferred     Inferred_clkgroup_1
 ===============================================================================================================================================================
 
@@ -933,7 +1728,7 @@ Clocks                                                                          
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Starting                                                Ending                                                  |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-root_sb_CCC_0_FCCC|GL0_net_inferred_clock               root_sb_CCC_0_FCCC|GL0_net_inferred_clock               |  10.000      -0.623  |  No paths    -      |  No paths    -      |  No paths    -    
+root_sb_CCC_0_FCCC|GL0_net_inferred_clock               root_sb_CCC_0_FCCC|GL0_net_inferred_clock               |  10.000      -1.886  |  No paths    -      |  No paths    -      |  No paths    -    
 root_sb_FABOSC_0_OSC|RCOSC_25_50MHZ_CCC_inferred_clock  root_sb_CCC_0_FCCC|GL0_net_inferred_clock               |  Diff grp    -       |  No paths    -      |  No paths    -      |  No paths    -    
 root_sb_FABOSC_0_OSC|RCOSC_25_50MHZ_CCC_inferred_clock  root_sb_FABOSC_0_OSC|RCOSC_25_50MHZ_CCC_inferred_clock  |  10.000      9.409   |  No paths    -      |  No paths    -      |  No paths    -    
 =======================================================================================================================================================================================================
@@ -962,37 +1757,37 @@ Starting Points with Worst Slack
 Instance                             Reference                                     Type        Pin                Net                                          Time        Slack 
                                      Clock                                                                                                                                       
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-MSS.root_sb_MSS_0.MSS_ADLIB_INST     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[9]      MSS_STAMP_PADDR[9]                           3.771       -0.623
-MSS.root_sb_MSS_0.MSS_ADLIB_INST     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[3]      MSS_STAMP_PADDR[3]                           3.610       -0.553
-MSS.root_sb_MSS_0.MSS_ADLIB_INST     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[8]      MSS_STAMP_PADDR[8]                           3.983       -0.520
-MSS.root_sb_MSS_0.MSS_ADLIB_INST     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[2]      MSS_STAMP_PADDR[2]                           3.611       -0.511
-MSS.root_sb_MSS_0.MSS_ADLIB_INST     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[13]     STAMP_PADDRS[13]                             3.682       -0.134
-MSS.root_sb_MSS_0.MSS_ADLIB_INST     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[14]     STAMP_PADDRS[14]                             3.688       -0.023
-MSS.root_sb_MSS_0.MSS_ADLIB_INST     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[0]      MSS_STAMP_PADDR[0]                           3.695       0.022 
-MSS.root_sb_MSS_0.MSS_ADLIB_INST     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[15]     STAMP_PADDRS[15]                             3.614       0.027 
-MSS.root_sb_MSS_0.MSS_ADLIB_INST     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[1]      MSS_STAMP_PADDR[1]                           3.632       0.042 
-MSS.root_sb_MSS_0.MSS_ADLIB_INST     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_SEL          root_sb_MSS_TMP_0_FIC_0_APB_MASTER_PSELx     3.524       0.053 
+MSS.root_sb_MSS_0.MSS_ADLIB_INST     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[8]      MSS_STAMP_UND_TELEMETRY_PADDR[8]             3.983       -1.886
+MSS.root_sb_MSS_0.MSS_ADLIB_INST     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[4]      MSS_STAMP_UND_TELEMETRY_PADDR[4]             3.594       -1.868
+MSS.root_sb_MSS_0.MSS_ADLIB_INST     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[6]      MSS_STAMP_UND_TELEMETRY_PADDR[6]             3.783       -1.837
+MSS.root_sb_MSS_0.MSS_ADLIB_INST     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[3]      MSS_STAMP_UND_TELEMETRY_PADDR[3]             3.610       -1.678
+MSS.root_sb_MSS_0.MSS_ADLIB_INST     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[5]      MSS_STAMP_UND_TELEMETRY_PADDR[5]             3.695       -1.652
+MSS.root_sb_MSS_0.MSS_ADLIB_INST     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[2]      MSS_STAMP_UND_TELEMETRY_PADDR[2]             3.611       -1.504
+MSS.root_sb_MSS_0.MSS_ADLIB_INST     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[9]      MSS_STAMP_UND_TELEMETRY_PADDR[9]             3.771       -1.394
+MSS.root_sb_MSS_0.MSS_ADLIB_INST     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[15]     STAMP_UND_TELEMETRY_PADDRS[15]               3.614       -1.281
+MSS.root_sb_MSS_0.MSS_ADLIB_INST     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_SEL          root_sb_MSS_TMP_0_FIC_0_APB_MASTER_PSELx     3.524       -1.255
+MSS.root_sb_MSS_0.MSS_ADLIB_INST     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[12]     STAMP_UND_TELEMETRY_PADDRS[12]               3.713       -1.148
 =================================================================================================================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                      Starting                                                                                        Required           
-Instance              Reference                                     Type     Pin     Net                              Time         Slack 
-                      Clock                                                                                                              
------------------------------------------------------------------------------------------------------------------------------------------
-STAMP5.PRDATA[16]     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     SLE      EN      un89_paddr_3_0_0_tz_RNI6O0B1     9.662        -0.623
-STAMP5.PRDATA[17]     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     SLE      EN      un89_paddr_3_0_0_tz_RNI6O0B1     9.662        -0.623
-STAMP5.PRDATA[18]     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     SLE      EN      un89_paddr_3_0_0_tz_RNI6O0B1     9.662        -0.623
-STAMP5.PRDATA[19]     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     SLE      EN      un89_paddr_3_0_0_tz_RNI6O0B1     9.662        -0.623
-STAMP5.PRDATA[20]     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     SLE      EN      un89_paddr_3_0_0_tz_RNI6O0B1     9.662        -0.623
-STAMP5.PRDATA[21]     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     SLE      EN      un89_paddr_3_0_0_tz_RNI6O0B1     9.662        -0.623
-STAMP5.PRDATA[22]     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     SLE      EN      un89_paddr_3_0_0_tz_RNI6O0B1     9.662        -0.623
-STAMP5.PRDATA[23]     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     SLE      EN      un89_paddr_3_0_0_tz_RNI6O0B1     9.662        -0.623
-STAMP5.PRDATA[25]     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     SLE      EN      un89_paddr_3_0_0_tz_RNI6O0B1     9.662        -0.623
-STAMP5.PRDATA[26]     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     SLE      EN      un89_paddr_3_0_0_tz_RNI6O0B1     9.662        -0.623
-=========================================================================================================================================
+                                Starting                                                                             Required           
+Instance                        Reference                                     Type     Pin     Net                   Time         Slack 
+                                Clock                                                                                                   
+----------------------------------------------------------------------------------------------------------------------------------------
+telemetry_0.receive_reg[10]     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     SLE      D       receive_reg_7[10]     9.745        -1.886
+telemetry_0.receive_reg[12]     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     SLE      D       receive_reg_7[12]     9.745        -1.886
+telemetry_0.receive_reg[15]     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     SLE      D       receive_reg_7[15]     9.745        -1.886
+telemetry_0.receive_reg[22]     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     SLE      D       receive_reg_7[22]     9.745        -1.886
+telemetry_0.receive_reg[25]     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     SLE      D       receive_reg_7[25]     9.745        -1.886
+telemetry_0.receive_reg[27]     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     SLE      D       receive_reg_7[27]     9.745        -1.886
+telemetry_0.receive_reg[28]     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     SLE      D       receive_reg_7[28]     9.745        -1.886
+telemetry_0.receive_reg[29]     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     SLE      D       receive_reg_7[29]     9.745        -1.886
+telemetry_0.receive_reg[30]     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     SLE      D       receive_reg_7[30]     9.745        -1.886
+telemetry_0.receive_reg[31]     root_sb_CCC_0_FCCC|GL0_net_inferred_clock     SLE      D       receive_reg_7[31]     9.745        -1.886
+========================================================================================================================================
 
 
 
@@ -1002,196 +1797,211 @@ Worst Path Information
 
 Path information for path number 1: 
       Requested Period:                      10.000
-    - Setup time:                            0.338
+    - Setup time:                            0.255
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         9.662
+    = Required time:                         9.745
 
-    - Propagation time:                      10.285
+    - Propagation time:                      11.631
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     -0.623
+    = Slack (critical) :                     -1.886
 
-    Number of logic level(s):                4
-    Starting point:                          MSS.root_sb_MSS_0.MSS_ADLIB_INST / F_HM0_ADDR[9]
-    Ending point:                            STAMP5.PRDATA[16] / EN
+    Number of logic level(s):                5
+    Starting point:                          MSS.root_sb_MSS_0.MSS_ADLIB_INST / F_HM0_ADDR[8]
+    Ending point:                            telemetry_0.receive_reg[10] / D
     The start point is clocked by            root_sb_CCC_0_FCCC|GL0_net_inferred_clock [rising] (rise=0.000 fall=5.000 period=10.000) on pin CLK_BASE
     The end   point is clocked by            root_sb_CCC_0_FCCC|GL0_net_inferred_clock [rising] (rise=0.000 fall=5.000 period=10.000) on pin CLK
 
-Instance / Net                                          Pin               Pin               Arrival      No. of    
-Name                                        Type        Name              Dir     Delay     Time         Fan Out(s)
--------------------------------------------------------------------------------------------------------------------
-MSS.root_sb_MSS_0.MSS_ADLIB_INST            MSS_010     F_HM0_ADDR[9]     Out     3.771     3.771 f      -         
-MSS_STAMP_PADDR[9]                          Net         -                 -       2.520     -            376       
-STAMP5.spi.un80_paddr_0_a2_0                CFG4        D                 In      -         6.291 f      -         
-STAMP5.spi.un80_paddr_0_a2_0                CFG4        Y                 Out     0.288     6.579 f      -         
-un80_paddr_0_a2_0                           Net         -                 -       0.248     -            1         
-STAMP5.spi.un80_paddr_0_a2                  CFG2        B                 In      -         6.827 f      -         
-STAMP5.spi.un80_paddr_0_a2                  CFG2        Y                 Out     0.164     6.991 f      -         
-un80_paddr                                  Net         -                 -       0.745     -            3         
-STAMP5.spi.un89_paddr_3_0_0_tz_RNIC4CJ      CFG4        C                 In      -         7.737 f      -         
-STAMP5.spi.un89_paddr_3_0_0_tz_RNIC4CJ      CFG4        Y                 Out     0.210     7.946 f      -         
-un1_reset_n_inv_i                           Net         -                 -       1.155     -            19        
-STAMP5.spi.un89_paddr_3_0_0_tz_RNI6O0B1     CFG2        A                 In      -         9.101 f      -         
-STAMP5.spi.un89_paddr_3_0_0_tz_RNI6O0B1     CFG2        Y                 Out     0.087     9.188 f      -         
-un89_paddr_3_0_0_tz_RNI6O0B1                Net         -                 -       1.097     -            14        
-STAMP5.PRDATA[16]                           SLE         EN                In      -         10.285 f     -         
-===================================================================================================================
-Total path delay (propagation time + setup) of 10.623 is 4.857(45.7%) logic and 5.766(54.3%) route.
+Instance / Net                                       Pin               Pin               Arrival      No. of    
+Name                                     Type        Name              Dir     Delay     Time         Fan Out(s)
+----------------------------------------------------------------------------------------------------------------
+MSS.root_sb_MSS_0.MSS_ADLIB_INST         MSS_010     F_HM0_ADDR[8]     Out     3.983     3.983 f      -         
+MSS_STAMP_UND_TELEMETRY_PADDR[8]         Net         -                 -       2.190     -            120       
+telemetry_0.g0_1                         CFG4        C                 In      -         6.173 f      -         
+telemetry_0.g0_1                         CFG4        Y                 Out     0.223     6.396 r      -         
+g0_1_0                                   Net         -                 -       0.248     -            1         
+telemetry_0.g0                           CFG4        C                 In      -         6.645 r      -         
+telemetry_0.g0                           CFG4        Y                 Out     0.203     6.848 r      -         
+prdata29                                 Net         -                 -       1.299     -            33        
+telemetry_0.APBState_RNIPBB04[1]         CFG2        A                 In      -         8.147 r      -         
+telemetry_0.APBState_RNIPBB04[1]         CFG2        Y                 Out     0.077     8.224 r      -         
+N_1484_i                                 Net         -                 -       1.465     -            49        
+telemetry_0.receive_reg_7_sn_m9_0_a2     CFG4        D                 In      -         9.689 r      -         
+telemetry_0.receive_reg_7_sn_m9_0_a2     CFG4        Y                 Out     0.326     10.015 f     -         
+receive_reg_7_1[0]                       Net         -                 -       1.144     -            16        
+telemetry_0.receive_reg_7[10]            CFG4        C                 In      -         11.159 f     -         
+telemetry_0.receive_reg_7[10]            CFG4        Y                 Out     0.223     11.382 r     -         
+receive_reg_7[10]                        Net         -                 -       0.248     -            1         
+telemetry_0.receive_reg[10]              SLE         D                 In      -         11.631 r     -         
+================================================================================================================
+Total path delay (propagation time + setup) of 11.886 is 5.291(44.5%) logic and 6.595(55.5%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 2: 
       Requested Period:                      10.000
-    - Setup time:                            0.338
+    - Setup time:                            0.255
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         9.662
+    = Required time:                         9.745
 
-    - Propagation time:                      10.285
+    - Propagation time:                      11.631
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     -0.623
+    = Slack (critical) :                     -1.886
 
-    Number of logic level(s):                4
-    Starting point:                          MSS.root_sb_MSS_0.MSS_ADLIB_INST / F_HM0_ADDR[9]
-    Ending point:                            STAMP5.PRDATA[17] / EN
+    Number of logic level(s):                5
+    Starting point:                          MSS.root_sb_MSS_0.MSS_ADLIB_INST / F_HM0_ADDR[8]
+    Ending point:                            telemetry_0.receive_reg[25] / D
     The start point is clocked by            root_sb_CCC_0_FCCC|GL0_net_inferred_clock [rising] (rise=0.000 fall=5.000 period=10.000) on pin CLK_BASE
     The end   point is clocked by            root_sb_CCC_0_FCCC|GL0_net_inferred_clock [rising] (rise=0.000 fall=5.000 period=10.000) on pin CLK
 
-Instance / Net                                          Pin               Pin               Arrival      No. of    
-Name                                        Type        Name              Dir     Delay     Time         Fan Out(s)
--------------------------------------------------------------------------------------------------------------------
-MSS.root_sb_MSS_0.MSS_ADLIB_INST            MSS_010     F_HM0_ADDR[9]     Out     3.771     3.771 f      -         
-MSS_STAMP_PADDR[9]                          Net         -                 -       2.520     -            376       
-STAMP5.spi.un80_paddr_0_a2_0                CFG4        D                 In      -         6.291 f      -         
-STAMP5.spi.un80_paddr_0_a2_0                CFG4        Y                 Out     0.288     6.579 f      -         
-un80_paddr_0_a2_0                           Net         -                 -       0.248     -            1         
-STAMP5.spi.un80_paddr_0_a2                  CFG2        B                 In      -         6.827 f      -         
-STAMP5.spi.un80_paddr_0_a2                  CFG2        Y                 Out     0.164     6.991 f      -         
-un80_paddr                                  Net         -                 -       0.745     -            3         
-STAMP5.spi.un89_paddr_3_0_0_tz_RNIC4CJ      CFG4        C                 In      -         7.737 f      -         
-STAMP5.spi.un89_paddr_3_0_0_tz_RNIC4CJ      CFG4        Y                 Out     0.210     7.946 f      -         
-un1_reset_n_inv_i                           Net         -                 -       1.155     -            19        
-STAMP5.spi.un89_paddr_3_0_0_tz_RNI6O0B1     CFG2        A                 In      -         9.101 f      -         
-STAMP5.spi.un89_paddr_3_0_0_tz_RNI6O0B1     CFG2        Y                 Out     0.087     9.188 f      -         
-un89_paddr_3_0_0_tz_RNI6O0B1                Net         -                 -       1.097     -            14        
-STAMP5.PRDATA[17]                           SLE         EN                In      -         10.285 f     -         
-===================================================================================================================
-Total path delay (propagation time + setup) of 10.623 is 4.857(45.7%) logic and 5.766(54.3%) route.
+Instance / Net                                       Pin               Pin               Arrival      No. of    
+Name                                     Type        Name              Dir     Delay     Time         Fan Out(s)
+----------------------------------------------------------------------------------------------------------------
+MSS.root_sb_MSS_0.MSS_ADLIB_INST         MSS_010     F_HM0_ADDR[8]     Out     3.983     3.983 f      -         
+MSS_STAMP_UND_TELEMETRY_PADDR[8]         Net         -                 -       2.190     -            120       
+telemetry_0.g0_1                         CFG4        C                 In      -         6.173 f      -         
+telemetry_0.g0_1                         CFG4        Y                 Out     0.223     6.396 r      -         
+g0_1_0                                   Net         -                 -       0.248     -            1         
+telemetry_0.g0                           CFG4        C                 In      -         6.645 r      -         
+telemetry_0.g0                           CFG4        Y                 Out     0.203     6.848 r      -         
+prdata29                                 Net         -                 -       1.299     -            33        
+telemetry_0.APBState_RNIPBB04[1]         CFG2        A                 In      -         8.147 r      -         
+telemetry_0.APBState_RNIPBB04[1]         CFG2        Y                 Out     0.077     8.224 r      -         
+N_1484_i                                 Net         -                 -       1.465     -            49        
+telemetry_0.receive_reg_7_sn_m9_0_a2     CFG4        D                 In      -         9.689 r      -         
+telemetry_0.receive_reg_7_sn_m9_0_a2     CFG4        Y                 Out     0.326     10.015 f     -         
+receive_reg_7_1[0]                       Net         -                 -       1.144     -            16        
+telemetry_0.receive_reg_7[25]            CFG4        C                 In      -         11.159 f     -         
+telemetry_0.receive_reg_7[25]            CFG4        Y                 Out     0.223     11.382 r     -         
+receive_reg_7[25]                        Net         -                 -       0.248     -            1         
+telemetry_0.receive_reg[25]              SLE         D                 In      -         11.631 r     -         
+================================================================================================================
+Total path delay (propagation time + setup) of 11.886 is 5.291(44.5%) logic and 6.595(55.5%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 3: 
       Requested Period:                      10.000
-    - Setup time:                            0.338
+    - Setup time:                            0.255
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         9.662
+    = Required time:                         9.745
 
-    - Propagation time:                      10.285
+    - Propagation time:                      11.631
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     -0.623
+    = Slack (critical) :                     -1.886
 
-    Number of logic level(s):                4
-    Starting point:                          MSS.root_sb_MSS_0.MSS_ADLIB_INST / F_HM0_ADDR[9]
-    Ending point:                            STAMP5.PRDATA[30] / EN
+    Number of logic level(s):                5
+    Starting point:                          MSS.root_sb_MSS_0.MSS_ADLIB_INST / F_HM0_ADDR[8]
+    Ending point:                            telemetry_0.receive_reg[22] / D
     The start point is clocked by            root_sb_CCC_0_FCCC|GL0_net_inferred_clock [rising] (rise=0.000 fall=5.000 period=10.000) on pin CLK_BASE
     The end   point is clocked by            root_sb_CCC_0_FCCC|GL0_net_inferred_clock [rising] (rise=0.000 fall=5.000 period=10.000) on pin CLK
 
-Instance / Net                                          Pin               Pin               Arrival      No. of    
-Name                                        Type        Name              Dir     Delay     Time         Fan Out(s)
--------------------------------------------------------------------------------------------------------------------
-MSS.root_sb_MSS_0.MSS_ADLIB_INST            MSS_010     F_HM0_ADDR[9]     Out     3.771     3.771 f      -         
-MSS_STAMP_PADDR[9]                          Net         -                 -       2.520     -            376       
-STAMP5.spi.un80_paddr_0_a2_0                CFG4        D                 In      -         6.291 f      -         
-STAMP5.spi.un80_paddr_0_a2_0                CFG4        Y                 Out     0.288     6.579 f      -         
-un80_paddr_0_a2_0                           Net         -                 -       0.248     -            1         
-STAMP5.spi.un80_paddr_0_a2                  CFG2        B                 In      -         6.827 f      -         
-STAMP5.spi.un80_paddr_0_a2                  CFG2        Y                 Out     0.164     6.991 f      -         
-un80_paddr                                  Net         -                 -       0.745     -            3         
-STAMP5.spi.un89_paddr_3_0_0_tz_RNIC4CJ      CFG4        C                 In      -         7.737 f      -         
-STAMP5.spi.un89_paddr_3_0_0_tz_RNIC4CJ      CFG4        Y                 Out     0.210     7.946 f      -         
-un1_reset_n_inv_i                           Net         -                 -       1.155     -            19        
-STAMP5.spi.un89_paddr_3_0_0_tz_RNI6O0B1     CFG2        A                 In      -         9.101 f      -         
-STAMP5.spi.un89_paddr_3_0_0_tz_RNI6O0B1     CFG2        Y                 Out     0.087     9.188 f      -         
-un89_paddr_3_0_0_tz_RNI6O0B1                Net         -                 -       1.097     -            14        
-STAMP5.PRDATA[30]                           SLE         EN                In      -         10.285 f     -         
-===================================================================================================================
-Total path delay (propagation time + setup) of 10.623 is 4.857(45.7%) logic and 5.766(54.3%) route.
+Instance / Net                                       Pin               Pin               Arrival      No. of    
+Name                                     Type        Name              Dir     Delay     Time         Fan Out(s)
+----------------------------------------------------------------------------------------------------------------
+MSS.root_sb_MSS_0.MSS_ADLIB_INST         MSS_010     F_HM0_ADDR[8]     Out     3.983     3.983 f      -         
+MSS_STAMP_UND_TELEMETRY_PADDR[8]         Net         -                 -       2.190     -            120       
+telemetry_0.g0_1                         CFG4        C                 In      -         6.173 f      -         
+telemetry_0.g0_1                         CFG4        Y                 Out     0.223     6.396 r      -         
+g0_1_0                                   Net         -                 -       0.248     -            1         
+telemetry_0.g0                           CFG4        C                 In      -         6.645 r      -         
+telemetry_0.g0                           CFG4        Y                 Out     0.203     6.848 r      -         
+prdata29                                 Net         -                 -       1.299     -            33        
+telemetry_0.APBState_RNIPBB04[1]         CFG2        A                 In      -         8.147 r      -         
+telemetry_0.APBState_RNIPBB04[1]         CFG2        Y                 Out     0.077     8.224 r      -         
+N_1484_i                                 Net         -                 -       1.465     -            49        
+telemetry_0.receive_reg_7_sn_m9_0_a2     CFG4        D                 In      -         9.689 r      -         
+telemetry_0.receive_reg_7_sn_m9_0_a2     CFG4        Y                 Out     0.326     10.015 f     -         
+receive_reg_7_1[0]                       Net         -                 -       1.144     -            16        
+telemetry_0.receive_reg_7[22]            CFG4        C                 In      -         11.159 f     -         
+telemetry_0.receive_reg_7[22]            CFG4        Y                 Out     0.223     11.382 r     -         
+receive_reg_7[22]                        Net         -                 -       0.248     -            1         
+telemetry_0.receive_reg[22]              SLE         D                 In      -         11.631 r     -         
+================================================================================================================
+Total path delay (propagation time + setup) of 11.886 is 5.291(44.5%) logic and 6.595(55.5%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 4: 
       Requested Period:                      10.000
-    - Setup time:                            0.338
+    - Setup time:                            0.255
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         9.662
+    = Required time:                         9.745
 
-    - Propagation time:                      10.285
+    - Propagation time:                      11.631
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     -0.623
+    = Slack (critical) :                     -1.886
 
-    Number of logic level(s):                4
-    Starting point:                          MSS.root_sb_MSS_0.MSS_ADLIB_INST / F_HM0_ADDR[9]
-    Ending point:                            STAMP5.PRDATA[29] / EN
+    Number of logic level(s):                5
+    Starting point:                          MSS.root_sb_MSS_0.MSS_ADLIB_INST / F_HM0_ADDR[8]
+    Ending point:                            telemetry_0.receive_reg[27] / D
     The start point is clocked by            root_sb_CCC_0_FCCC|GL0_net_inferred_clock [rising] (rise=0.000 fall=5.000 period=10.000) on pin CLK_BASE
     The end   point is clocked by            root_sb_CCC_0_FCCC|GL0_net_inferred_clock [rising] (rise=0.000 fall=5.000 period=10.000) on pin CLK
 
-Instance / Net                                          Pin               Pin               Arrival      No. of    
-Name                                        Type        Name              Dir     Delay     Time         Fan Out(s)
--------------------------------------------------------------------------------------------------------------------
-MSS.root_sb_MSS_0.MSS_ADLIB_INST            MSS_010     F_HM0_ADDR[9]     Out     3.771     3.771 f      -         
-MSS_STAMP_PADDR[9]                          Net         -                 -       2.520     -            376       
-STAMP5.spi.un80_paddr_0_a2_0                CFG4        D                 In      -         6.291 f      -         
-STAMP5.spi.un80_paddr_0_a2_0                CFG4        Y                 Out     0.288     6.579 f      -         
-un80_paddr_0_a2_0                           Net         -                 -       0.248     -            1         
-STAMP5.spi.un80_paddr_0_a2                  CFG2        B                 In      -         6.827 f      -         
-STAMP5.spi.un80_paddr_0_a2                  CFG2        Y                 Out     0.164     6.991 f      -         
-un80_paddr                                  Net         -                 -       0.745     -            3         
-STAMP5.spi.un89_paddr_3_0_0_tz_RNIC4CJ      CFG4        C                 In      -         7.737 f      -         
-STAMP5.spi.un89_paddr_3_0_0_tz_RNIC4CJ      CFG4        Y                 Out     0.210     7.946 f      -         
-un1_reset_n_inv_i                           Net         -                 -       1.155     -            19        
-STAMP5.spi.un89_paddr_3_0_0_tz_RNI6O0B1     CFG2        A                 In      -         9.101 f      -         
-STAMP5.spi.un89_paddr_3_0_0_tz_RNI6O0B1     CFG2        Y                 Out     0.087     9.188 f      -         
-un89_paddr_3_0_0_tz_RNI6O0B1                Net         -                 -       1.097     -            14        
-STAMP5.PRDATA[29]                           SLE         EN                In      -         10.285 f     -         
-===================================================================================================================
-Total path delay (propagation time + setup) of 10.623 is 4.857(45.7%) logic and 5.766(54.3%) route.
+Instance / Net                                       Pin               Pin               Arrival      No. of    
+Name                                     Type        Name              Dir     Delay     Time         Fan Out(s)
+----------------------------------------------------------------------------------------------------------------
+MSS.root_sb_MSS_0.MSS_ADLIB_INST         MSS_010     F_HM0_ADDR[8]     Out     3.983     3.983 f      -         
+MSS_STAMP_UND_TELEMETRY_PADDR[8]         Net         -                 -       2.190     -            120       
+telemetry_0.g0_1                         CFG4        C                 In      -         6.173 f      -         
+telemetry_0.g0_1                         CFG4        Y                 Out     0.223     6.396 r      -         
+g0_1_0                                   Net         -                 -       0.248     -            1         
+telemetry_0.g0                           CFG4        C                 In      -         6.645 r      -         
+telemetry_0.g0                           CFG4        Y                 Out     0.203     6.848 r      -         
+prdata29                                 Net         -                 -       1.299     -            33        
+telemetry_0.APBState_RNIPBB04[1]         CFG2        A                 In      -         8.147 r      -         
+telemetry_0.APBState_RNIPBB04[1]         CFG2        Y                 Out     0.077     8.224 r      -         
+N_1484_i                                 Net         -                 -       1.465     -            49        
+telemetry_0.receive_reg_7_sn_m9_0_a2     CFG4        D                 In      -         9.689 r      -         
+telemetry_0.receive_reg_7_sn_m9_0_a2     CFG4        Y                 Out     0.326     10.015 f     -         
+receive_reg_7_1[0]                       Net         -                 -       1.144     -            16        
+telemetry_0.receive_reg_7[27]            CFG4        C                 In      -         11.159 f     -         
+telemetry_0.receive_reg_7[27]            CFG4        Y                 Out     0.223     11.382 r     -         
+receive_reg_7[27]                        Net         -                 -       0.248     -            1         
+telemetry_0.receive_reg[27]              SLE         D                 In      -         11.631 r     -         
+================================================================================================================
+Total path delay (propagation time + setup) of 11.886 is 5.291(44.5%) logic and 6.595(55.5%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 5: 
       Requested Period:                      10.000
-    - Setup time:                            0.338
+    - Setup time:                            0.255
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         9.662
+    = Required time:                         9.745
 
-    - Propagation time:                      10.285
+    - Propagation time:                      11.631
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     -0.623
+    = Slack (critical) :                     -1.886
 
-    Number of logic level(s):                4
-    Starting point:                          MSS.root_sb_MSS_0.MSS_ADLIB_INST / F_HM0_ADDR[9]
-    Ending point:                            STAMP5.PRDATA[28] / EN
+    Number of logic level(s):                5
+    Starting point:                          MSS.root_sb_MSS_0.MSS_ADLIB_INST / F_HM0_ADDR[8]
+    Ending point:                            telemetry_0.receive_reg[12] / D
     The start point is clocked by            root_sb_CCC_0_FCCC|GL0_net_inferred_clock [rising] (rise=0.000 fall=5.000 period=10.000) on pin CLK_BASE
     The end   point is clocked by            root_sb_CCC_0_FCCC|GL0_net_inferred_clock [rising] (rise=0.000 fall=5.000 period=10.000) on pin CLK
 
-Instance / Net                                          Pin               Pin               Arrival      No. of    
-Name                                        Type        Name              Dir     Delay     Time         Fan Out(s)
--------------------------------------------------------------------------------------------------------------------
-MSS.root_sb_MSS_0.MSS_ADLIB_INST            MSS_010     F_HM0_ADDR[9]     Out     3.771     3.771 f      -         
-MSS_STAMP_PADDR[9]                          Net         -                 -       2.520     -            376       
-STAMP5.spi.un80_paddr_0_a2_0                CFG4        D                 In      -         6.291 f      -         
-STAMP5.spi.un80_paddr_0_a2_0                CFG4        Y                 Out     0.288     6.579 f      -         
-un80_paddr_0_a2_0                           Net         -                 -       0.248     -            1         
-STAMP5.spi.un80_paddr_0_a2                  CFG2        B                 In      -         6.827 f      -         
-STAMP5.spi.un80_paddr_0_a2                  CFG2        Y                 Out     0.164     6.991 f      -         
-un80_paddr                                  Net         -                 -       0.745     -            3         
-STAMP5.spi.un89_paddr_3_0_0_tz_RNIC4CJ      CFG4        C                 In      -         7.737 f      -         
-STAMP5.spi.un89_paddr_3_0_0_tz_RNIC4CJ      CFG4        Y                 Out     0.210     7.946 f      -         
-un1_reset_n_inv_i                           Net         -                 -       1.155     -            19        
-STAMP5.spi.un89_paddr_3_0_0_tz_RNI6O0B1     CFG2        A                 In      -         9.101 f      -         
-STAMP5.spi.un89_paddr_3_0_0_tz_RNI6O0B1     CFG2        Y                 Out     0.087     9.188 f      -         
-un89_paddr_3_0_0_tz_RNI6O0B1                Net         -                 -       1.097     -            14        
-STAMP5.PRDATA[28]                           SLE         EN                In      -         10.285 f     -         
-===================================================================================================================
-Total path delay (propagation time + setup) of 10.623 is 4.857(45.7%) logic and 5.766(54.3%) route.
+Instance / Net                                       Pin               Pin               Arrival      No. of    
+Name                                     Type        Name              Dir     Delay     Time         Fan Out(s)
+----------------------------------------------------------------------------------------------------------------
+MSS.root_sb_MSS_0.MSS_ADLIB_INST         MSS_010     F_HM0_ADDR[8]     Out     3.983     3.983 f      -         
+MSS_STAMP_UND_TELEMETRY_PADDR[8]         Net         -                 -       2.190     -            120       
+telemetry_0.g0_1                         CFG4        C                 In      -         6.173 f      -         
+telemetry_0.g0_1                         CFG4        Y                 Out     0.223     6.396 r      -         
+g0_1_0                                   Net         -                 -       0.248     -            1         
+telemetry_0.g0                           CFG4        C                 In      -         6.645 r      -         
+telemetry_0.g0                           CFG4        Y                 Out     0.203     6.848 r      -         
+prdata29                                 Net         -                 -       1.299     -            33        
+telemetry_0.APBState_RNIPBB04[1]         CFG2        A                 In      -         8.147 r      -         
+telemetry_0.APBState_RNIPBB04[1]         CFG2        Y                 Out     0.077     8.224 r      -         
+N_1484_i                                 Net         -                 -       1.465     -            49        
+telemetry_0.receive_reg_7_sn_m9_0_a2     CFG4        D                 In      -         9.689 r      -         
+telemetry_0.receive_reg_7_sn_m9_0_a2     CFG4        Y                 Out     0.326     10.015 f     -         
+receive_reg_7_1[0]                       Net         -                 -       1.144     -            16        
+telemetry_0.receive_reg_7[12]            CFG4        C                 In      -         11.159 f     -         
+telemetry_0.receive_reg_7[12]            CFG4        Y                 Out     0.223     11.382 r     -         
+receive_reg_7[12]                        Net         -                 -       0.248     -            1         
+telemetry_0.receive_reg[12]              SLE         D                 In      -         11.631 r     -         
+================================================================================================================
+Total path delay (propagation time + setup) of 11.886 is 5.291(44.5%) logic and 6.595(55.5%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -1262,10 +2072,17 @@ Path delay compensated for clock skew. Clock skew is added to clock-to-out value
 
 Timing exceptions that could not be applied
 
+<<<<<<< HEAD
 Finished final timing analysis (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:13s; Memory used current: 238MB peak: 243MB)
 
 
 Finished timing report (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:13s; Memory used current: 238MB peak: 243MB)
+=======
+Finished final timing analysis (Real Time elapsed 0h:00m:32s; CPU Time elapsed 0h:00m:31s; Memory used current: 251MB peak: 269MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:32s; CPU Time elapsed 0h:00m:31s; Memory used current: 251MB peak: 269MB)
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 
 ---------------------------------------
 Resource Usage Report for root 
@@ -1279,17 +2096,19 @@ MSS_010         1 use
 RCOSC_25_50MHZ  1 use
 RCOSC_25_50MHZ_FAB  1 use
 SYSRESET        1 use
-CFG1           32 uses
-CFG2           534 uses
-CFG3           737 uses
-CFG4           1179 uses
+CFG1           37 uses
+CFG2           662 uses
+CFG3           889 uses
+CFG4           1581 uses
 
 Carry cells:
-ARI1            648 uses - used for arithmetic functions
+ARI1            955 uses - used for arithmetic functions
+ARI1            1321 uses - used for Wide-Mux implementation
+Total ARI1      2276 uses
 
 
 Sequential Cells: 
-SLE            2096 uses
+SLE            3508 uses
 
 DSP Blocks:    0 of 22 (0%)
 
@@ -1302,7 +2121,7 @@ TRIBUFF        6 uses
 
 Global Clock Buffers: 4
 
-Total LUTs:    3130
+Total LUTs:    5445
 
 Extra resources required for RAM and MACC interface logic during P&R:
 
@@ -1310,14 +2129,21 @@ RAM64x18 Interface Logic : SLEs = 0; LUTs = 0;
 RAM1K18  Interface Logic : SLEs = 0; LUTs = 0;
 MACC     Interface Logic : SLEs = 0; LUTs = 0;
 
-Total number of SLEs after P&R:  2096 + 0 + 0 + 0 = 2096;
-Total number of LUTs after P&R:  3130 + 0 + 0 + 0 = 3130;
+Total number of SLEs after P&R:  3508 + 0 + 0 + 0 = 3508;
+Total number of LUTs after P&R:  5445 + 0 + 0 + 0 = 5445;
 
 Mapper successful!
 
+<<<<<<< HEAD
 At Mapper Exit (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:14s; Memory used current: 73MB peak: 243MB)
 
 Process took 0h:00m:14s realtime, 0h:00m:14s cputime
 # Mon Feb 13 08:44:50 2023
+=======
+At Mapper Exit (Real Time elapsed 0h:00m:32s; CPU Time elapsed 0h:00m:32s; Memory used current: 82MB peak: 269MB)
+
+Process took 0h:00m:32s realtime, 0h:00m:32s cputime
+# Fri Dec  9 20:22:57 2022
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 
 ###########################################################]

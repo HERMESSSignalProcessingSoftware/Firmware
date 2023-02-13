@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #OPTIONS:"|-layerid|0|-orig_srs|C:\\Users\\RG\\Documents\\Firmware\\fpga\\synthesis\\synwork\\root_comp.srs|-top|work.root|-prodtype|synplify_pro|-infer_seqShift|-primux|-dspmac|-pqdpadd|-fixsmult|-sdff_counter|-divnmod|-nram|-actel|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-vhdl2008|-ignore_undefined_lib|-lib|work|-lib|work|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|COREAPB3_LIB|-lib|work|-lib|work"
+=======
+#OPTIONS:"|-layerid|0|-orig_srs|B:\\HERMESS_SPSoftware\\Firmware\\fpga\\synthesis\\synwork\\root_comp.srs|-top|work.root|-prodtype|synplify_pro|-infer_seqShift|-primux|-dspmac|-pqdpadd|-fixsmult|-sdff_counter|-divnmod|-nram|-actel|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-vhdl2008|-ignore_undefined_lib|-lib|work|-lib|work|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|COREAPB3_LIB|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 #CUR:"C:\\Microsemi\\Libero_SoC_v2021.3\\SynplifyPro\\bin64\\c_vhdl.exe":1636456230
 #CUR:"C:\\Microsemi\\Libero_SoC_v2021.3\\SynplifyPro\\lib\\vhd2008\\location.map":1636456240
 #CUR:"C:\\Microsemi\\Libero_SoC_v2021.3\\SynplifyPro\\lib\\vhd2008\\std.vhd":1636456240
@@ -10,6 +14,7 @@
 #CUR:"C:\\Microsemi\\Libero_SoC_v2021.3\\SynplifyPro\\lib\\vhd2008\\arith.vhd":1636456240
 #CUR:"C:\\Microsemi\\Libero_SoC_v2021.3\\SynplifyPro\\lib\\vhd2008\\unsigned.vhd":1636456240
 #CUR:"C:\\Microsemi\\Libero_SoC_v2021.3\\SynplifyPro\\lib\\vhd\\hyperents.vhd":1636456240
+<<<<<<< HEAD
 #CUR:"C:\\Users\\RG\\Documents\\Firmware\\fpga\\hdl\\spi_master.vhd":1673782115
 #CUR:"C:\\Users\\RG\\Documents\\Firmware\\fpga\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vhdl\\core\\coreapb3_muxptob3.vhd":1640691677
 #CUR:"C:\\Users\\RG\\Documents\\Firmware\\fpga\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vhdl\\core\\coreapb3_iaddr_reg.vhd":1640691677
@@ -41,6 +46,45 @@
 12			"C:\Users\RG\Documents\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\components.vhd" vhdl
 13			"C:\Users\RG\Documents\Firmware\fpga\component\work\root_sb\root_sb.vhd" vhdl
 14			"C:\Users\RG\Documents\Firmware\fpga\component\work\root\root.vhd" vhdl
+=======
+#CUR:"B:\\HERMESS_SPSoftware\\Firmware\\fpga\\hdl\\spi_master.vhd":1661193190
+#CUR:"B:\\HERMESS_SPSoftware\\Firmware\\fpga\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vhdl\\core\\coreapb3_muxptob3.vhd":1640694197
+#CUR:"B:\\HERMESS_SPSoftware\\Firmware\\fpga\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vhdl\\core\\coreapb3_iaddr_reg.vhd":1640694197
+#CUR:"B:\\HERMESS_SPSoftware\\Firmware\\fpga\\component\\Actel\\DirectCore\\CoreResetP\\7.1.100\\rtl\\vhdl\\core\\coreresetp_pcie_hotreset.vhd":1640694197
+#CUR:"B:\\HERMESS_SPSoftware\\Firmware\\fpga\\component\\work\\root_sb\\CCC_0\\root_sb_CCC_0_FCCC.vhd":1669568694
+#CUR:"C:\\Microsemi\\Libero_SoC_v2021.3\\SynplifyPro\\lib\\generic\\smartfusion2.vhd":1636456239
+#CUR:"B:\\HERMESS_SPSoftware\\Firmware\\fpga\\component\\Actel\\SgCore\\OSC\\2.0.101\\osc_comps.vhd":1640694198
+#CUR:"B:\\HERMESS_SPSoftware\\Firmware\\fpga\\component\\work\\root_sb_MSS\\root_sb_MSS_syn.vhd":1669568690
+#CUR:"B:\\HERMESS_SPSoftware\\Firmware\\fpga\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vhdl\\core\\components.vhd":1640694197
+#CUR:"B:\\HERMESS_SPSoftware\\Firmware\\fpga\\hdl\\UART_RX.vhd":1661193190
+#CUR:"B:\\HERMESS_SPSoftware\\Firmware\\fpga\\hdl\\UART_TX.vhd":1661193190
+#CUR:"B:\\HERMESS_SPSoftware\\Firmware\\fpga\\hdl\\STAMP.vhd":1667064072
+#CUR:"B:\\HERMESS_SPSoftware\\Firmware\\fpga\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vhdl\\core\\coreapb3.vhd":1640694197
+#CUR:"B:\\HERMESS_SPSoftware\\Firmware\\fpga\\component\\Actel\\DirectCore\\CoreResetP\\7.1.100\\rtl\\vhdl\\core\\coreresetp.vhd":1640694197
+#CUR:"B:\\HERMESS_SPSoftware\\Firmware\\fpga\\component\\work\\root_sb\\FABOSC_0\\root_sb_FABOSC_0_OSC.vhd":1669568697
+#CUR:"B:\\HERMESS_SPSoftware\\Firmware\\fpga\\component\\work\\root_sb_MSS\\root_sb_MSS.vhd":1669568691
+#CUR:"B:\\HERMESS_SPSoftware\\Firmware\\fpga\\component\\work\\root_sb\\root_sb.vhd":1669568697
+#CUR:"B:\\HERMESS_SPSoftware\\Firmware\\fpga\\hdl\\telemetry.vhd":1661193190
+#CUR:"B:\\HERMESS_SPSoftware\\Firmware\\fpga\\component\\work\\root\\root.vhd":1670613526
+0			"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\spi_master.vhd" vhdl
+1			"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\STAMP.vhd" vhdl
+2			"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3_muxptob3.vhd" vhdl
+3			"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3_iaddr_reg.vhd" vhdl
+4			"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd" vhdl
+5			"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp_pcie_hotreset.vhd" vhdl
+6			"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd" vhdl
+7			"B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root_sb\CCC_0\root_sb_CCC_0_FCCC.vhd" vhdl
+8			"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd" vhdl
+9			"B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root_sb\FABOSC_0\root_sb_FABOSC_0_OSC.vhd" vhdl
+10			"B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root_sb_MSS\root_sb_MSS_syn.vhd" vhdl
+11			"B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root_sb_MSS\root_sb_MSS.vhd" vhdl
+12			"B:\HERMESS_SPSoftware\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\components.vhd" vhdl
+13			"B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root_sb\root_sb.vhd" vhdl
+14			"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\UART_RX.vhd" vhdl
+15			"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\UART_TX.vhd" vhdl
+16			"B:\HERMESS_SPSoftware\Firmware\fpga\hdl\telemetry.vhd" vhdl
+17			"B:\HERMESS_SPSoftware\Firmware\fpga\component\work\root\root.vhd" vhdl
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 #Dependency Lists(Uses List)
 0 -1
 1 0
@@ -56,10 +100,13 @@
 11 10
 12 -1
 13 12 11 9 6 4 7
-14 1 13
+14 -1
+15 -1
+16 14 15
+17 16 1 13
 #Dependency Lists(Users Of)
 0 1
-1 14
+1 17
 2 4
 3 4
 4 13
@@ -71,11 +118,20 @@
 10 11
 11 13
 12 13
-13 14
-14 -1
+13 17
+14 16
+15 16
+16 17
+17 -1
 #Design Unit to File Association
-module work root 14
-arch work root rtl 14
+module work root 17
+arch work root rtl 17
+module work telemetry 16
+arch work telemetry arch 16
+module work uart_tx 15
+arch work uart_tx diagram 15
+module work uart_rx 14
+arch work uart_rx diagram 14
 module work root_sb 13
 arch work root_sb rtl 13
 module work root_sb_mss 11

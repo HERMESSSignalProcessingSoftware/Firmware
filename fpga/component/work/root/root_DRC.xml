@@ -5,8 +5,105 @@
   <drc>
     <status>C:\Microsemi\Libero_SoC_v2021.3\Designer/data/drcreport\warn.png</status>
     <StatusMessage>Warning</StatusMessage>
+<<<<<<< HEAD
     <message>Floating Driver</message>
     <detail>Floating output pin root:IN_WP</detail>
     <crossprobe>liberoaction://cross_probe/smartdesign/root/pins/root:IN_WP</crossprobe>
+=======
+    <message>Unconnected Bus Interface</message>
+    <detail>Unconnected bus interface pin MSS:STAMP_UND_TELEMETRY</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/root/pins/MSS:STAMP_UND_TELEMETRY</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v2021.3\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Unconnected Bus Interface</message>
+    <detail>Unconnected bus interface pin MSS:STAMP_UND_TELEMETRY_1</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/root/pins/MSS:STAMP_UND_TELEMETRY_1</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v2021.3\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Unconnected Bus Interface</message>
+    <detail>Unconnected bus interface pin MSS:STAMP_UND_TELEMETRY_2</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/root/pins/MSS:STAMP_UND_TELEMETRY_2</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v2021.3\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Unconnected Bus Interface</message>
+    <detail>Unconnected bus interface pin MSS:STAMP_UND_TELEMETRY_3</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/root/pins/MSS:STAMP_UND_TELEMETRY_3</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v2021.3\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Unconnected Bus Interface</message>
+    <detail>Unconnected bus interface pin MSS:STAMP_UND_TELEMETRY_4</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/root/pins/MSS:STAMP_UND_TELEMETRY_4</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v2021.3\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Unconnected Bus Interface</message>
+    <detail>Unconnected bus interface pin MSS:STAMP_UND_TELEMETRY_5</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/root/pins/MSS:STAMP_UND_TELEMETRY_5</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v2021.3\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Unconnected Bus Interface</message>
+    <detail>Unconnected bus interface pin MSS:STAMP_UND_TELEMETRY_6</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/root/pins/MSS:STAMP_UND_TELEMETRY_6</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v2021.3\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Unconnected Bus Interface</message>
+    <detail>Unconnected bus interface pin STAMP1:APB</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/root/pins/STAMP1:APB</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v2021.3\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Unconnected Bus Interface</message>
+    <detail>Unconnected bus interface pin STAMP2:APB</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/root/pins/STAMP2:APB</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v2021.3\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Unconnected Bus Interface</message>
+    <detail>Unconnected bus interface pin STAMP3:APB</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/root/pins/STAMP3:APB</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v2021.3\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Unconnected Bus Interface</message>
+    <detail>Unconnected bus interface pin STAMP4:APB</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/root/pins/STAMP4:APB</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v2021.3\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Unconnected Bus Interface</message>
+    <detail>Unconnected bus interface pin STAMP5:APB</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/root/pins/STAMP5:APB</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v2021.3\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Unconnected Bus Interface</message>
+    <detail>Unconnected bus interface pin STAMP6:APB</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/root/pins/STAMP6:APB</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v2021.3\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Unconnected Bus Interface</message>
+    <detail>Unconnected bus interface pin telemetry_0:APB</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/root/pins/telemetry_0:APB</crossprobe>
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
   </drc>
 </drcreport>

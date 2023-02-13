@@ -1,5 +1,9 @@
 ----------------------------------------------------------------------
+<<<<<<< HEAD
 -- Created by Microsemi SmartDesign Mon Feb 13 08:37:25 2023
+=======
+-- Created by Microsemi SmartDesign Sun Nov 27 18:04:55 2022
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 -- Parameters for CoreResetP
 ----------------------------------------------------------------------
 

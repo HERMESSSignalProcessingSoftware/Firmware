@@ -1,6 +1,10 @@
 <project name="root" version="1.2">
     <ProjectDirectory>
+<<<<<<< HEAD
         C:\Users\RG\Documents\Firmware\fpga\designer\root\root_fp
+=======
+        B:\HERMESS_SPSoftware\Firmware\fpga\designer\root\root_fp
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
     </ProjectDirectory>
     <View>
         ChainView
@@ -9,7 +13,11 @@
         M2S010
     </LiberoTargetDevice>
     <LogFile>
+<<<<<<< HEAD
         C:\Users\RG\Documents\Firmware\fpga\designer\root\root_fp\root.log
+=======
+        B:\HERMESS_SPSoftware\Firmware\fpga\designer\root\root_fp\root.log
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
     </LogFile>
     <SerializationOption>
         Skip
@@ -19,10 +27,10 @@
     </ProgrammingInterface>
     <programmer status="enable" type="FlashPro5" revision="UndefRev" connection="usb1.1">
         <name>
-            E2006QE3OZ
+            E2005KXNA3
         </name>
         <id>
-            E2006QE3OZ
+            E2005KXNA3
         </id>
     </programmer>
     <Server>

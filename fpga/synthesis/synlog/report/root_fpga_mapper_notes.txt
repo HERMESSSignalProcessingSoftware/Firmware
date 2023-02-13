@@ -1,6 +1,7 @@
 @N: MF916 |Option synthesis_strategy=base is enabled. 
 @N: MF248 |Running in 64-bit mode.
 @N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+<<<<<<< HEAD
 @N: MO106 :"c:\users\rg\documents\firmware\fpga\component\actel\directcore\coreapb3\4.1.100\rtl\vhdl\core\coreapb3.vhd":648:12:648:15|Found ROM iPSELS_raw_9[5:0] (in view: coreapb3_lib.CoreAPB3(coreapb3_arch)) with 16 words by 6 bits.
 @N: MO231 :"c:\users\rg\documents\firmware\fpga\hdl\stamp.vhd":199:8:199:9|Found counter in view:work.STAMP(architecture_stamp) instance delay_counter[27:0] 
 @N: MO231 :"c:\users\rg\documents\firmware\fpga\hdl\stamp.vhd":199:8:199:9|Found counter in view:work.STAMP(architecture_stamp) instance polling_timeout_counter[7:0] 
@@ -26,6 +27,29 @@
 @N: FX271 :"c:\users\rg\documents\firmware\fpga\hdl\stamp.vhd":440:12:440:13|Replicating instance STAMP6.status_async_cycles_14_axb_0 (in view: work.root(rtl)) with 2 loads 1 time(s) to improve timing.
 @N: FP130 |Promoting Net LED_FPGA_LOADED_arst on CLKINT  I_1084 
 @N: FP130 |Promoting Net MSS.CORERESETP_0.sm0_areset_n_clk_base on CLKINT  I_1085 
+=======
+@N: MO106 :"b:\hermess_spsoftware\firmware\fpga\component\actel\directcore\coreapb3\4.1.100\rtl\vhdl\core\coreapb3.vhd":648:12:648:15|Found ROM iPSELS_raw_10[6:0] (in view: coreapb3_lib.CoreAPB3(coreapb3_arch)) with 16 words by 7 bits.
+@N: MO231 :"b:\hermess_spsoftware\firmware\fpga\hdl\stamp.vhd":199:8:199:9|Found counter in view:work.STAMP(architecture_stamp) instance delay_counter[27:0] 
+@N: MO231 :"b:\hermess_spsoftware\firmware\fpga\hdl\stamp.vhd":199:8:199:9|Found counter in view:work.STAMP(architecture_stamp) instance polling_timeout_counter[7:0] 
+@N: MO231 :"b:\hermess_spsoftware\firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Found counter in view:work.spi_master(logic) instance clk_toggles[5:0] 
+@N: MO231 :"b:\hermess_spsoftware\firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Found counter in view:work.spi_master(logic) instance count[31:0] 
+@N: MO225 :"b:\hermess_spsoftware\firmware\fpga\hdl\telemetry.vhd":172:4:172:5|There are no possible illegal states for state machine UART_RX_State[0:3] (in view: work.telemetry(arch)); safe FSM implementation is not required.
+@N: MO231 :"b:\hermess_spsoftware\firmware\fpga\hdl\telemetry.vhd":172:4:172:5|Found counter in view:work.telemetry(arch) instance byte_counter[4:0] 
+@N: MO231 :"b:\hermess_spsoftware\firmware\fpga\hdl\telemetry.vhd":172:4:172:5|Found counter in view:work.telemetry(arch) instance gap_counter[31:0] 
+@N: MO225 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_tx.vhd":49:0:49:1|There are no possible illegal states for state machine current_state[0:3] (in view: work.UART_TX(diagram)); safe FSM implementation is not required.
+@N: MO231 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_tx.vhd":49:0:49:1|Found counter in view:work.UART_TX(diagram) instance count_clk[31:0] 
+@N: MO225 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_rx.vhd":41:0:41:1|There are no possible illegal states for state machine current_state[0:3] (in view: work.UART_RX(diagram)); safe FSM implementation is not required.
+@N: MO231 :"b:\hermess_spsoftware\firmware\fpga\hdl\uart_rx.vhd":41:0:41:1|Found counter in view:work.UART_RX(diagram) instance count_clk[31:0] 
+@N: MF179 :|Found 32 by 32 bit equality operator ('==') RX_state_machine\.un17_count_clk (in view: work.UART_RX(diagram))
+@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Removing sequential instance STAMP1.spi.continue (in view: work.root(rtl)) because it does not drive other instances.
+@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Removing sequential instance STAMP2.spi.continue (in view: work.root(rtl)) because it does not drive other instances.
+@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Removing sequential instance STAMP3.spi.continue (in view: work.root(rtl)) because it does not drive other instances.
+@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Removing sequential instance STAMP4.spi.continue (in view: work.root(rtl)) because it does not drive other instances.
+@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Removing sequential instance STAMP5.spi.continue (in view: work.root(rtl)) because it does not drive other instances.
+@N: BN362 :"b:\hermess_spsoftware\firmware\fpga\hdl\spi_master.vhd":74:4:74:5|Removing sequential instance STAMP6.spi.continue (in view: work.root(rtl)) because it does not drive other instances.
+@N: FP130 |Promoting Net LED_FPGA_LOADED_arst on CLKINT  I_2198 
+@N: FP130 |Promoting Net MSS.CORERESETP_0.sm0_areset_n_clk_base on CLKINT  I_2199 
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 @N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
 @N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
 @N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.

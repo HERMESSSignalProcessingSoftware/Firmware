@@ -1,174 +1,243 @@
 
-fsm_encoding {201059810595} onehot
+fsm_encoding {221059810595} onehot
 
-fsm_state_encoding {201059810595} s0 {0000001}
+fsm_state_encoding {221059810595} s0 {0000001}
 
-fsm_state_encoding {201059810595} s1 {0000010}
+fsm_state_encoding {221059810595} s1 {0000010}
 
-fsm_state_encoding {201059810595} s2 {0000100}
+fsm_state_encoding {221059810595} s2 {0000100}
 
-fsm_state_encoding {201059810595} s3 {0001000}
+fsm_state_encoding {221059810595} s3 {0001000}
 
-fsm_state_encoding {201059810595} s4 {0010000}
+fsm_state_encoding {221059810595} s4 {0010000}
 
-fsm_state_encoding {201059810595} s5 {0100000}
+fsm_state_encoding {221059810595} s5 {0100000}
 
-fsm_state_encoding {201059810595} s6 {1000000}
+fsm_state_encoding {221059810595} s6 {1000000}
 
-fsm_registers {201059810595} {sm0_state[0]}  {sm0_state[1]}  {sm0_state[2]}  {sm0_state[3]}  {sm0_state[4]}  {sm0_state[5]}  {sm0_state[6]} 
+fsm_registers {221059810595} {sm0_state[0]}  {sm0_state[1]}  {sm0_state[2]}  {sm0_state[3]}  {sm0_state[4]}  {sm0_state[5]}  {sm0_state[6]} 
 
-fsm_encoding {1819981997} onehot
+fsm_encoding {2019981997} onehot
 
-fsm_state_encoding {1819981997} fsm_idle {000001}
+fsm_state_encoding {2019981997} fsm_idle {000001}
 
-fsm_state_encoding {1819981997} fsm_apb_setup {000010}
+fsm_state_encoding {2019981997} fsm_apb_setup {000010}
 
-fsm_state_encoding {1819981997} fsm_apb_access {000100}
+fsm_state_encoding {2019981997} fsm_apb_access {000100}
 
-fsm_state_encoding {1819981997} fsm_apb_teardown {001000}
+fsm_state_encoding {2019981997} fsm_apb_teardown {001000}
 
-fsm_state_encoding {1819981997} fsm_spi_setup {010000}
+fsm_state_encoding {2019981997} fsm_spi_setup {010000}
 
-fsm_state_encoding {1819981997} fsm_spi_access {100000}
+fsm_state_encoding {2019981997} fsm_spi_access {100000}
 
-fsm_registers {1819981997} {component_state[0]}  {component_state[1]}  {component_state[2]}  {component_state[3]}  {component_state[4]}  {component_state[5]} 
+fsm_registers {2019981997} {component_state[0]}  {component_state[1]}  {component_state[2]}  {component_state[3]}  {component_state[4]}  {component_state[5]} 
 
-fsm_encoding {1819981996} sequential
+fsm_encoding {2019981996} sequential
 
-fsm_state_encoding {1819981996} as_stop {00}
+fsm_state_encoding {2019981996} as_stop {00}
 
-fsm_state_encoding {1819981996} as_increment {01}
+fsm_state_encoding {2019981996} as_increment {01}
 
-fsm_state_encoding {1819981996} as_decrement {10}
+fsm_state_encoding {2019981996} as_decrement {10}
 
-fsm_registers {1819981996} {async_state[1]}  {async_state[0]} 
+fsm_registers {2019981996} {async_state[1]}  {async_state[0]} 
 
-fsm_encoding {1819981997} onehot
+fsm_encoding {26172417212} onehot
 
-fsm_state_encoding {1819981997} fsm_idle {000001}
+fsm_state_encoding {26172417212} blocked {000001}
 
-fsm_state_encoding {1819981997} fsm_apb_setup {000010}
+fsm_state_encoding {26172417212} prepare {000010}
 
-fsm_state_encoding {1819981997} fsm_apb_access {000100}
+fsm_state_encoding {26172417212} load8bit {000100}
 
-fsm_state_encoding {1819981997} fsm_apb_teardown {001000}
+fsm_state_encoding {26172417212} starttransmission {001000}
 
-fsm_state_encoding {1819981997} fsm_spi_setup {010000}
+fsm_state_encoding {26172417212} resetstartbit {010000}
 
-fsm_state_encoding {1819981997} fsm_spi_access {100000}
+fsm_state_encoding {26172417212} gap {100000}
 
-fsm_registers {1819981997} {component_state[0]}  {component_state[1]}  {component_state[2]}  {component_state[3]}  {component_state[4]}  {component_state[5]} 
+fsm_registers {26172417212} {UART_TX_State[0]}  {UART_TX_State[1]}  {UART_TX_State[2]}  {UART_TX_State[3]}  {UART_TX_State[4]}  {UART_TX_State[5]} 
 
-fsm_encoding {1819981996} sequential
+fsm_encoding {26172417210} sequential
 
-fsm_state_encoding {1819981996} as_stop {00}
+fsm_state_encoding {26172417210} start {00}
 
-fsm_state_encoding {1819981996} as_increment {01}
+fsm_state_encoding {26172417210} selectreg {01}
 
-fsm_state_encoding {1819981996} as_decrement {10}
+fsm_state_encoding {26172417210} update {10}
 
-fsm_registers {1819981996} {async_state[1]}  {async_state[0]} 
+fsm_state_encoding {26172417210} interruptstate {11}
 
-fsm_encoding {1819981997} onehot
+fsm_registers {26172417210} {UART_RX_State[1]}  {UART_RX_State[0]} 
 
-fsm_state_encoding {1819981997} fsm_idle {000001}
+fsm_encoding {26172417211} sequential
 
-fsm_state_encoding {1819981997} fsm_apb_setup {000010}
+fsm_state_encoding {26172417211} apbwaiting {00}
 
-fsm_state_encoding {1819981997} fsm_apb_access {000100}
+fsm_state_encoding {26172417211} apbreading {01}
 
-fsm_state_encoding {1819981997} fsm_apb_teardown {001000}
+fsm_state_encoding {26172417211} apbwriting {10}
 
-fsm_state_encoding {1819981997} fsm_spi_setup {010000}
+fsm_registers {26172417211} {APBState[1]}  {APBState[0]} 
 
-fsm_state_encoding {1819981997} fsm_spi_access {100000}
+fsm_encoding {19490498} sequential
 
-fsm_registers {1819981997} {component_state[0]}  {component_state[1]}  {component_state[2]}  {component_state[3]}  {component_state[4]}  {component_state[5]} 
+fsm_state_encoding {19490498} idle_state {00}
 
-fsm_encoding {1819981996} sequential
+fsm_state_encoding {19490498} start_state {01}
 
-fsm_state_encoding {1819981996} as_stop {00}
+fsm_state_encoding {19490498} data_state {10}
 
-fsm_state_encoding {1819981996} as_increment {01}
+fsm_state_encoding {19490498} stop_state {11}
 
-fsm_state_encoding {1819981996} as_decrement {10}
+fsm_registers {19490498} {current_state[1]}  {current_state[0]} 
 
-fsm_registers {1819981996} {async_state[1]}  {async_state[0]} 
+fsm_encoding {18410419} sequential
 
-fsm_encoding {1819981997} onehot
+fsm_state_encoding {18410419} idle_state {00}
 
-fsm_state_encoding {1819981997} fsm_idle {000001}
+fsm_state_encoding {18410419} start_state {01}
 
-fsm_state_encoding {1819981997} fsm_apb_setup {000010}
+fsm_state_encoding {18410419} data_state {10}
 
-fsm_state_encoding {1819981997} fsm_apb_access {000100}
+fsm_state_encoding {18410419} stop_state {11}
 
-fsm_state_encoding {1819981997} fsm_apb_teardown {001000}
+fsm_registers {18410419} {current_state[1]}  {current_state[0]} 
+1}
 
-fsm_state_encoding {1819981997} fsm_spi_setup {010000}
+fsm_state_encoding {2019981997} fsm_apb_setup {000010}
 
-fsm_state_encoding {1819981997} fsm_spi_access {100000}
+fsm_state_encoding {2019981997} fsm_apb_access {000100}
 
-fsm_registers {1819981997} {component_state[0]}  {component_state[1]}  {component_state[2]}  {component_state[3]}  {component_state[4]}  {component_state[5]} 
+fsm_state_encoding {2019981997} fsm_apb_teardown {001000}
 
-fsm_encoding {1819981996} sequential
+fsm_state_encoding {2019981997} fsm_spi_setup {010000}
 
-fsm_state_encoding {1819981996} as_stop {00}
+fsm_state_encoding {2019981997} fsm_spi_access {100000}
 
-fsm_state_encoding {1819981996} as_increment {01}
+fsm_registers {2019981997} {component_state[0]}  {component_state[1]}  {component_state[2]}  {component_state[3]}  {component_state[4]}  {component_state[5]} 
 
-fsm_state_encoding {1819981996} as_decrement {10}
+fsm_encoding {2019981996} sequential
 
-fsm_registers {1819981996} {async_state[1]}  {async_state[0]} 
+fsm_state_encoding {2019981996} as_stop {00}
 
-fsm_encoding {1819981997} onehot
+fsm_state_encoding {2019981996} as_increment {01}
 
-fsm_state_encoding {1819981997} fsm_idle {000001}
+fsm_state_encoding {2019981996} as_decrement {10}
 
-fsm_state_encoding {1819981997} fsm_apb_setup {000010}
+fsm_registers {2019981996} {async_state[1]}  {async_state[0]} 
 
-fsm_state_encoding {1819981997} fsm_apb_access {000100}
+fsm_encoding {2019981997} onehot
 
-fsm_state_encoding {1819981997} fsm_apb_teardown {001000}
+fsm_state_encoding {2019981997} fsm_idle {000001}
 
-fsm_state_encoding {1819981997} fsm_spi_setup {010000}
+fsm_state_encoding {2019981997} fsm_apb_setup {000010}
 
-fsm_state_encoding {1819981997} fsm_spi_access {100000}
+fsm_state_encoding {2019981997} fsm_apb_access {000100}
 
-fsm_registers {1819981997} {component_state[0]}  {component_state[1]}  {component_state[2]}  {component_state[3]}  {component_state[4]}  {component_state[5]} 
+fsm_state_encoding {2019981997} fsm_apb_teardown {001000}
 
-fsm_encoding {1819981996} sequential
+fsm_state_encoding {2019981997} fsm_spi_setup {010000}
 
-fsm_state_encoding {1819981996} as_stop {00}
+fsm_state_encoding {2019981997} fsm_spi_access {100000}
 
-fsm_state_encoding {1819981996} as_increment {01}
+fsm_registers {2019981997} {component_state[0]}  {component_state[1]}  {component_state[2]}  {component_state[3]}  {component_state[4]}  {component_state[5]} 
 
-fsm_state_encoding {1819981996} as_decrement {10}
+fsm_encoding {2019981996} sequential
 
-fsm_registers {1819981996} {async_state[1]}  {async_state[0]} 
+fsm_state_encoding {2019981996} as_stop {00}
 
-fsm_encoding {1819981997} onehot
+fsm_state_encoding {2019981996} as_increment {01}
 
-fsm_state_encoding {1819981997} fsm_idle {000001}
+fsm_state_encoding {2019981996} as_decrement {10}
 
-fsm_state_encoding {1819981997} fsm_apb_setup {000010}
+fsm_registers {2019981996} {async_state[1]}  {async_state[0]} 
 
-fsm_state_encoding {1819981997} fsm_apb_access {000100}
+fsm_encoding {2019981997} onehot
 
-fsm_state_encoding {1819981997} fsm_apb_teardown {001000}
+fsm_state_encoding {2019981997} fsm_idle {000001}
 
-fsm_state_encoding {1819981997} fsm_spi_setup {010000}
+fsm_state_encoding {2019981997} fsm_apb_setup {000010}
 
-fsm_state_encoding {1819981997} fsm_spi_access {100000}
+fsm_state_encoding {2019981997} fsm_apb_access {000100}
 
-fsm_registers {1819981997} {component_state[0]}  {component_state[1]}  {component_state[2]}  {component_state[3]}  {component_state[4]}  {component_state[5]} 
+fsm_state_encoding {2019981997} fsm_apb_teardown {001000}
 
-fsm_encoding {1819981996} sequential
+fsm_state_encoding {2019981997} fsm_spi_setup {010000}
 
-fsm_state_encoding {1819981996} as_stop {00}
+fsm_state_encoding {2019981997} fsm_spi_access {100000}
 
-fsm_state_encoding {1819981996} as_increment {01}
+fsm_registers {2019981997} {component_state[0]}  {component_state[1]}  {component_state[2]}  {component_state[3]}  {component_state[4]}  {component_state[5]} 
 
-fsm_state_encoding {1819981996} as_decrement {10}
+fsm_encoding {2019981996} sequential
 
-fsm_registers {1819981996} {async_state[1]}  {async_state[0]} 
+fsm_state_encoding {2019981996} as_stop {00}
+
+fsm_state_encoding {2019981996} as_increment {01}
+
+fsm_state_encoding {2019981996} as_decrement {10}
+
+fsm_registers {2019981996} {async_state[1]}  {async_state[0]} 
+
+fsm_encoding {19490498} sequential
+
+fsm_state_encoding {19490498} idle_state {00}
+
+fsm_state_encoding {19490498} start_state {01}
+
+fsm_state_encoding {19490498} data_state {10}
+
+fsm_state_encoding {19490498} stop_state {11}
+
+fsm_registers {19490498} {current_state[1]}  {current_state[0]} 
+
+fsm_encoding {18410419} sequential
+
+fsm_state_encoding {18410419} idle_state {00}
+
+fsm_state_encoding {18410419} start_state {01}
+
+fsm_state_encoding {18410419} data_state {10}
+
+fsm_state_encoding {18410419} stop_state {11}
+
+fsm_registers {18410419} {current_state[1]}  {current_state[0]} 
+
+fsm_encoding {26172417212} onehot
+
+fsm_state_encoding {26172417212} blocked {000001}
+
+fsm_state_encoding {26172417212} prepare {000010}
+
+fsm_state_encoding {26172417212} load8bit {000100}
+
+fsm_state_encoding {26172417212} starttransmission {001000}
+
+fsm_state_encoding {26172417212} resetstartbit {010000}
+
+fsm_state_encoding {26172417212} gap {100000}
+
+fsm_registers {26172417212} {UART_TX_State[0]}  {UART_TX_State[1]}  {UART_TX_State[2]}  {UART_TX_State[3]}  {UART_TX_State[4]}  {UART_TX_State[5]} 
+
+fsm_encoding {26172417210} sequential
+
+fsm_state_encoding {26172417210} start {00}
+
+fsm_state_encoding {26172417210} selectreg {01}
+
+fsm_state_encoding {26172417210} update {10}
+
+fsm_state_encoding {26172417210} interruptstate {11}
+
+fsm_registers {26172417210} {UART_RX_State[1]}  {UART_RX_State[0]} 
+
+fsm_encoding {26172417211} sequential
+
+fsm_state_encoding {26172417211} apbwaiting {00}
+
+fsm_state_encoding {26172417211} apbreading {01}
+
+fsm_state_encoding {26172417211} apbwriting {10}
+
+fsm_registers {26172417211} {APBState[1]}  {APBState[0]} 

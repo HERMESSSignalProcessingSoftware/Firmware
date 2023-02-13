@@ -3,7 +3,7 @@
 
 #include "measurement.h"
 #include "../tools/configuration.h"
-
+#include "../sb_hw_platform.h"
 
 
 /** The Controller Class
@@ -86,6 +86,18 @@ public:
      */
     void wdTriggered ();
 
+    /** Telemetry RX Interrupt handler
+     *
+     *  Call this function when INT_TELEMETRY and TELEMETRY_STATUS_INTERRUPT_RX is set in the status register.
+     */
+    void telemetryRXInterrupt(void);
+
+    /**
+     * Telemetry TX Interrupt handler
+     *
+     * Call this function when INT_TELEMETRY and TELEMETRY_STATUS_INTERRUPT_TX is set in the status register.
+     */
+    void telemetryTXInterrupt(void);
 private:
     volatile uint64_t timestamp = 0; /**< Timestamp in units of
     250us (=1/4kHz) */
@@ -128,6 +140,8 @@ private:
     bool wdTriggeredFlag = false; /**< The MCU was restarted after a
     WD reset */
 
+    volatile bool telemetryInterruptEOTX = false; /**< Telemetry fabric finished data transmission (end of transmission)*/
+    volatile bool telemetryInterruptRXDR = false; /**< Telemetry fabric received data (RX Data ready Interrupt) */
     /** Private Controller instance
      *
      * Initializes globally used GPIOs

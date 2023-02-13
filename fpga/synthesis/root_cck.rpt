@@ -9,16 +9,28 @@ Build: R-2021.03M-SP1
 Install: C:\Microsemi\Libero_SoC_v2021.3\SynplifyPro
 OS: Windows 6.2
 
+<<<<<<< HEAD
 Hostname: DESKTOP-JON32I6
 
 Implementation : synthesis
 
 # Written on Mon Feb 13 08:44:35 2023
+=======
+Hostname: DESKTOP-NH8R733
+
+Implementation : synthesis
+
+# Written on Fri Dec  9 20:22:23 2022
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 
 ##### DESIGN INFO #######################################################
 
 Top View:                "root"
+<<<<<<< HEAD
 Constraint File(s):      "C:\Users\RG\Documents\Firmware\fpga\designer\root\synthesis.fdc"
+=======
+Constraint File(s):      "B:\HERMESS_SPSoftware\Firmware\fpga\designer\root\synthesis.fdc"
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 
 
 

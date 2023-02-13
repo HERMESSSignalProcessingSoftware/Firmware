@@ -3,7 +3,11 @@
 <doc>
 <title>I/O Register Combining Report</title>
 <text>Microsemi Corporation - Microsemi Libero Software Release v2021.3 (Version 2021.3.0.10)</text>
+<<<<<<< HEAD
 <text>Date: Mon Feb 13 08:54:53 2023
+=======
+<text>Date: Fri Dec  9 20:24:00 2022
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 </text>
 <section><name>I/O Register Combining Summary</name></section>
 <table>

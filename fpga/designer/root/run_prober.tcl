@@ -1,5 +1,9 @@
 probe \
+<<<<<<< HEAD
     -desdir {C:\Users\RG\Documents\Firmware\fpga\designer\root} \
+=======
+    -desdir {B:\HERMESS_SPSoftware\Firmware\fpga\designer\root} \
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
     -design root \
     -fam SmartFusion2 \
     -die PA4M1000_N \

@@ -3,7 +3,7 @@
 #include "../tools/msghandler.h"
 #include "../tools/tools.h"
 #include "controller.h"
-
+#include "tm.h"
 
 
 Measurement &Measurement::getInstance () {
@@ -17,13 +17,16 @@ void Measurement::worker () {
     if (stampDataAvailable) {
         // assemble data package
         psr_t isr = HAL_disable_interrupts();
+        //HERMESS::TelemetryData tmData;
         for (uint8_t i = 0; i < 6; i++) {
+            //tmData.addDataFromStamp(const_cast<apb_stamp::StampDataframe&>(*dfs[i]), i);
             if ((stampDataAvailable >> i) & 0x1U) {
                 dp.readDf(const_cast<apb_stamp::StampDataframe&>(*dfs[i]));
                 delete dfs[i];
                 stampDataAvailable &= ~(1u << i);
             }
         }
+        //Tm::getInstance().enqueue(tmData);
         HAL_restore_interrupts(isr);
         if (dp.numReceived >= 6) {
             Controller::getInstance().datapackageAvailable(dp);
@@ -119,11 +122,16 @@ Measurement::Measurement ():
     MSS_GPIO_set_output(GPIO_PORT(OUT_ADC_START), 0);
     // enable continuous mode of the VHDL unit to prepare it
     conf.continuous = true;
+<<<<<<< HEAD
 #ifdef PROTOTYP_SPU
     for (uint8_t i = 1; i < 6; i++) {
 #else
     for (uint8_t i = 0; i < 6; i++) {
 #endif
+=======
+
+    for (uint8_t i = 1; i < 6; i++) { // Starting at 1 quick and dirty solution
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
         // enable continuous mode and set proper id
         conf.id = i;
         stamps[i].writeConfig(conf);

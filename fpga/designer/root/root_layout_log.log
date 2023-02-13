@@ -8,8 +8,13 @@ High-effort              : OFF
 Repair min-delay         : OFF
 Incremental              : OFF
 
+<<<<<<< HEAD
 INFO: Reading User PDC file C:\Users\RG\Documents\Firmware\fpga\constraint\io\user1.pdc. 0 error(s) and 0 warning(s)
 INFO: Reading User PDC file C:\Users\RG\Documents\Firmware\fpga\constraint\io\user.pdc. 0 error(s) and 0 warning(s)
+=======
+INFO: Reading User PDC file B:\HERMESS_SPSoftware\Firmware\fpga\constraint\io\user1.pdc. 0 error(s) and 0 warning(s)
+INFO: Reading User PDC file B:\HERMESS_SPSoftware\Firmware\fpga\constraint\io\user.pdc. 0 error(s) and 0 warning(s)
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 
 Running the I/O Bank and Globals Assigner.
 Info:  I/O Bank and Globals Assigner identified 75 fixed I/O macros, 0 unfixed I/O macros
@@ -18,7 +23,11 @@ I/O Bank and Globals Assigner completed successfully.
 Total time spent in I/O Bank and Globals Assigner: 1 seconds
 
 Placer V5.0 - 2021.3.0 
+<<<<<<< HEAD
 Design: root                            Started: Mon Feb 13 08:54:32 2023
+=======
+Design: root                            Started: Fri Dec  9 20:23:15 2022
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 
 Initializing Normal-Effort Standard Placement ...
 Clustering ...
@@ -32,39 +41,60 @@ CDC Report:
 End of placement.
 
 Placer Runtime Summary   :
-Clustering (1 pass)      : 0 seconds
-Placement                : 0 seconds
-Improvement              : 1 seconds
+Clustering (1 pass)      : 2 seconds
+Placement                : 1 seconds
+Improvement              : 5 seconds
 
 Placer completed successfully.
 
 Design: root                            
+<<<<<<< HEAD
 Finished: Mon Feb 13 08:54:39 2023
 Total CPU Time:     00:00:07            Total Elapsed Time: 00:00:07
 Total Memory Usage: 133.7 Mbytes
+=======
+Finished: Fri Dec  9 20:23:30 2022
+Total CPU Time:     00:00:18            Total Elapsed Time: 00:00:15
+Total Memory Usage: 154.3 Mbytes
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
                         o - o - o - o - o - o
 
 
 Router 
+<<<<<<< HEAD
 Design: C:\Users\RG\Documents\Firmware\fpga\designer\root\rootStarted: Mon Feb 13 08:54:43 2023
+=======
+Design: B:\HERMESS_SPSoftware\Firmware\fpga\designer\root\rootStarted: Fri Dec  9 20:23:36 2022
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 
 
 Router completed successfully.
 
+<<<<<<< HEAD
 Design: C:\Users\RG\Documents\Firmware\fpga\designer\root\root
 Finished: Mon Feb 13 08:54:50 2023
 Total CPU Time:     00:00:07            Total Elapsed Time: 00:00:07
 Total Memory Usage: 448.2 Mbytes
+=======
+Design: B:\HERMESS_SPSoftware\Firmware\fpga\designer\root\root
+Finished: Fri Dec  9 20:23:56 2022
+Total CPU Time:     00:00:19            Total Elapsed Time: 00:00:20
+Total Memory Usage: 447.8 Mbytes
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
                         o - o - o - o - o - o
 
 Resource Usage
 +---------------+------+-------+------------+
 | Type          | Used | Total | Percentage |
 +---------------+------+-------+------------+
-| 4LUT          | 3130 | 12084 | 25.90      |
-| DFF           | 2096 | 12084 | 17.35      |
+| 4LUT          | 5445 | 12084 | 45.06      |
+| DFF           | 3508 | 12084 | 29.03      |
 | I/O Register  | 0    | 252   | 0.00       |
+<<<<<<< HEAD
 | Logic Element | 3569 | 12084 | 29.53      |
+=======
+| Logic Element | 6441 | 12084 | 53.30      |
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376
 +---------------+------+-------+------------+
 
 I/O Placement

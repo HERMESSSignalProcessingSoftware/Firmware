@@ -1,16 +1,20 @@
-@P:  Worst Slack : -0.623
-@P:  root_sb_CCC_0_FCCC|GL0_net_inferred_clock - Estimated Frequency : 94.1 MHz
+@P:  Worst Slack : -1.886
+@P:  root_sb_CCC_0_FCCC|GL0_net_inferred_clock - Estimated Frequency : 84.1 MHz
 @P:  root_sb_CCC_0_FCCC|GL0_net_inferred_clock - Requested Frequency : 100.0 MHz
-@P:  root_sb_CCC_0_FCCC|GL0_net_inferred_clock - Estimated Period : 10.623
+@P:  root_sb_CCC_0_FCCC|GL0_net_inferred_clock - Estimated Period : 11.886
 @P:  root_sb_CCC_0_FCCC|GL0_net_inferred_clock - Requested Period : 10.000
-@P:  root_sb_CCC_0_FCCC|GL0_net_inferred_clock - Slack : -0.623
+@P:  root_sb_CCC_0_FCCC|GL0_net_inferred_clock - Slack : -1.886
 @P:  root_sb_FABOSC_0_OSC|RCOSC_25_50MHZ_CCC_inferred_clock - Estimated Frequency : 1691.2 MHz
 @P:  root_sb_FABOSC_0_OSC|RCOSC_25_50MHZ_CCC_inferred_clock - Requested Frequency : 100.0 MHz
 @P:  root_sb_FABOSC_0_OSC|RCOSC_25_50MHZ_CCC_inferred_clock - Estimated Period : 0.591
 @P:  root_sb_FABOSC_0_OSC|RCOSC_25_50MHZ_CCC_inferred_clock - Requested Period : 10.000
 @P:  root_sb_FABOSC_0_OSC|RCOSC_25_50MHZ_CCC_inferred_clock - Slack : 9.409
 @P: root Part : m2s010vf400std
-@P: root Register bits  : 2096 
+@P: root Register bits  : 3508 
 @P: root DSP Blocks  : 0
 @P: root I/O primitives : 75
+<<<<<<< HEAD
 @P:  CPU Time : 0h:00m:14s
+=======
+@P:  CPU Time : 0h:00m:32s
+>>>>>>> e34d31ef438c63e3bfd3979803f72878cb389376

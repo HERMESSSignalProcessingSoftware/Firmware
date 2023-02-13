@@ -1,9 +1,11 @@
+#include <stdint.h>
 #include "tools.h"
 #include "../sf2drivers/drivers/mss_timer/mss_timer.h"
 #include "../sf2drivers/drivers/mss_gpio/mss_gpio.h"
 #include "../sf2drivers/drivers/mss_watchdog/mss_watchdog.h"
 #include "../components/controller.h"
-
+#include "../apbdrivers/TELEMETRY/abp_telemetry.h"
+#include "../components/tm.h"
 
 static volatile uint32_t delayCompleted = 0;
 static volatile uint32_t delayCounter = 0;
@@ -73,4 +75,15 @@ extern "C" void F2M_INT_HANDLER(INT_STAMP5) () {
 
 extern "C" void F2M_INT_HANDLER(INT_STAMP6) () {
     Measurement::getInstance().handleStampInterrupt(5);
+}
+
+extern "C" void F2M_INT_HANDLER(INT_TELEMETRY) () {
+    uint32_t statusRegister = APBTelemetryStatusRegister_get();
+    if (statusRegister & TELEMETRY_STATUS_INTERRUPT_RX) {
+        Controller::getInstance().telemetryRXInterrupt();
+    }
+    if (statusRegister & TELEMETRY_STATUS_INTERRUPT_TX) {
+        Controller::getInstance().telemetryTXInterrupt();
+    }
+    NVIC_ClearPendingIRQ(F2M_INT_PIN(INT_TELEMETRY));
 }
