@@ -1,7 +1,7 @@
 #--  Synopsys, Inc.
 #--  Version R-2021.03M-SP1
 #--  Project file C:\Users\RG\Documents\Firmware\fpga\synthesis\run_options.txt
-#--  Written on Sat Feb 11 17:28:09 2023
+#--  Written on Mon Feb 13 08:44:32 2023
 
 
 #project files

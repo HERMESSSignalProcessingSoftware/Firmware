@@ -1,6 +1,6 @@
 --
 -- Synopsys
--- Vhdl wrapper for top level design, written on Sat Feb 11 17:28:15 2023
+-- Vhdl wrapper for top level design, written on Mon Feb 13 08:41:07 2023
 --
 library ieee;
 use ieee.std_logic_1164.all;
@@ -13,7 +13,6 @@ entity wrapper_for_root is
       IN_RXSM_LO : in std_logic;
       IN_RXSM_SODS : in std_logic;
       IN_RXSM_SOE : in std_logic;
-      IN_WP : in std_logic;
       STAMP1_DRDY_SGR1 : in std_logic;
       STAMP1_DRDY_SGR2 : in std_logic;
       STAMP1_DRDY_TEMP : in std_logic;
@@ -97,7 +96,6 @@ component root
    IN_RXSM_LO : in std_logic;
    IN_RXSM_SODS : in std_logic;
    IN_RXSM_SOE : in std_logic;
-   IN_WP : in std_logic;
    STAMP1_DRDY_SGR1 : in std_logic;
    STAMP1_DRDY_SGR2 : in std_logic;
    STAMP1_DRDY_TEMP : in std_logic;
@@ -177,7 +175,6 @@ signal tmp_F_MISO : std_logic;
 signal tmp_IN_RXSM_LO : std_logic;
 signal tmp_IN_RXSM_SODS : std_logic;
 signal tmp_IN_RXSM_SOE : std_logic;
-signal tmp_IN_WP : std_logic;
 signal tmp_STAMP1_DRDY_SGR1 : std_logic;
 signal tmp_STAMP1_DRDY_SGR2 : std_logic;
 signal tmp_STAMP1_DRDY_TEMP : std_logic;
@@ -262,8 +259,6 @@ tmp_IN_RXSM_LO <= IN_RXSM_LO;
 tmp_IN_RXSM_SODS <= IN_RXSM_SODS;
 
 tmp_IN_RXSM_SOE <= IN_RXSM_SOE;
-
-tmp_IN_WP <= IN_WP;
 
 tmp_STAMP1_DRDY_SGR1 <= STAMP1_DRDY_SGR1;
 
@@ -414,7 +409,6 @@ u1:   root port map (
 		IN_RXSM_LO => tmp_IN_RXSM_LO,
 		IN_RXSM_SODS => tmp_IN_RXSM_SODS,
 		IN_RXSM_SOE => tmp_IN_RXSM_SOE,
-		IN_WP => tmp_IN_WP,
 		STAMP1_DRDY_SGR1 => tmp_STAMP1_DRDY_SGR1,
 		STAMP1_DRDY_SGR2 => tmp_STAMP1_DRDY_SGR2,
 		STAMP1_DRDY_TEMP => tmp_STAMP1_DRDY_TEMP,

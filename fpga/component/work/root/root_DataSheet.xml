@@ -11,8 +11,8 @@
     <hdl-type>VHDL</hdl-type>
     <project-description>
     </project-description>
-    <location>C:/Users/jl/source/repos/hermess/hermess-Firmware/fpga/component/work/root</location>
-    <state>GENERATED ( Tue Jul 12 21:33:57 2022 )</state>
+    <location>C:/Users/RG/Documents/Firmware/fpga/component/work/root</location>
+    <state>GENERATED ( Mon Feb 13 08:57:04 2023 )</state>
     <swide-toolchain>SoftConsole workspace has not been generated</swide-toolchain>
   </project-settings>
   <site-map>
@@ -97,9 +97,9 @@
           <fullPinName>
           </fullPinName>
           <remapAddress>0x6000_0000</remapAddress>
-          <fullAddressSpace>0x6000_0000 - 0x6003_0D7F</fullAddressSpace>
-          <range>0x3_0D80</range>
-          <Size>195KB</Size>
+          <fullAddressSpace>0x6000_0000 - 0x6000_4E7F</fullAddressSpace>
+          <range>0x4E80</range>
+          <Size>19KB</Size>
         </slave>
         <slave>
           <name>ENVM-conf</name>

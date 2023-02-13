@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- Created by SmartDesign Wed Feb  8 15:26:02 2023
+-- Created by SmartDesign Mon Feb 13 08:37:27 2023
 -- Version: 2021.3 2021.3.0.10
 ----------------------------------------------------------------------
 
@@ -27,7 +27,6 @@ entity root_sb is
         GPIO_1_F2M         : in  std_logic;
         GPIO_2_F2M         : in  std_logic;
         GPIO_3_F2M         : in  std_logic;
-        GPIO_4_F2M         : in  std_logic;
         MMUART_0_RXD_F2M   : in  std_logic;
         MMUART_1_RXD_F2M   : in  std_logic;
         SPI_0_CLK_F2M      : in  std_logic;
@@ -258,7 +257,6 @@ component root_sb_MSS
         GPIO_1_F2M             : in  std_logic;
         GPIO_2_F2M             : in  std_logic;
         GPIO_3_F2M             : in  std_logic;
-        GPIO_4_F2M             : in  std_logic;
         MCCC_CLK_BASE          : in  std_logic;
         MCCC_CLK_BASE_PLL_LOCK : in  std_logic;
         MMUART_0_RXD_F2M       : in  std_logic;
@@ -825,7 +823,6 @@ root_sb_MSS_0 : root_sb_MSS
         GPIO_1_F2M             => GPIO_1_F2M,
         GPIO_2_F2M             => GPIO_2_F2M,
         GPIO_3_F2M             => GPIO_3_F2M,
-        GPIO_4_F2M             => GPIO_4_F2M,
         SPI_0_DI_F2M           => SPI_0_DI_F2M,
         SPI_0_CLK_F2M          => SPI_0_CLK_F2M,
         SPI_0_SS0_F2M          => SPI_0_SS0_F2M,

@@ -17,12 +17,12 @@
     <ProgrammingInterface>
         JTAGMode
     </ProgrammingInterface>
-    <programmer status="enable" type="FlashPro5" revision="UndefRev" connection="UndefConn">
+    <programmer status="enable" type="FlashPro5" revision="UndefRev" connection="usb1.1">
         <name>
-            E2005KXNA3
+            E2006QE3OZ
         </name>
         <id>
-            E2005KXNA3
+            E2006QE3OZ
         </id>
     </programmer>
     <Server>

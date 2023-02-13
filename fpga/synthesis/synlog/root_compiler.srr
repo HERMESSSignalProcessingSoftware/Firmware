@@ -34,7 +34,21 @@ Synopsys VHDL Compiler, Version comp202103synp2, Build 168R, Built Oct 12 2021 0
 
 @N|Running in 64-bit mode
 @N:"C:\Users\RG\Documents\Firmware\fpga\component\work\root\root.vhd":17:7:17:10|Top entity is set to root.
-Options changed - recompiling
+File C:\Users\RG\Documents\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3_muxptob3.vhd changed - recompiling
+File C:\Users\RG\Documents\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3_iaddr_reg.vhd changed - recompiling
+File C:\Users\RG\Documents\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp_pcie_hotreset.vhd changed - recompiling
+File C:\Users\RG\Documents\Firmware\fpga\component\work\root_sb\CCC_0\root_sb_CCC_0_FCCC.vhd changed - recompiling
+File C:\Microsemi\Libero_SoC_v2021.3\SynplifyPro\lib\generic\smartfusion2.vhd changed - recompiling
+File C:\Users\RG\Documents\Firmware\fpga\component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd changed - recompiling
+File C:\Users\RG\Documents\Firmware\fpga\component\work\root_sb_MSS\root_sb_MSS_syn.vhd changed - recompiling
+File C:\Users\RG\Documents\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\components.vhd changed - recompiling
+File C:\Users\RG\Documents\Firmware\fpga\hdl\STAMP.vhd changed - recompiling
+File C:\Users\RG\Documents\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3.vhd changed - recompiling
+File C:\Users\RG\Documents\Firmware\fpga\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd changed - recompiling
+File C:\Users\RG\Documents\Firmware\fpga\component\work\root_sb\FABOSC_0\root_sb_FABOSC_0_OSC.vhd changed - recompiling
+File C:\Users\RG\Documents\Firmware\fpga\component\work\root_sb_MSS\root_sb_MSS.vhd changed - recompiling
+File C:\Users\RG\Documents\Firmware\fpga\component\work\root_sb\root_sb.vhd changed - recompiling
+File C:\Users\RG\Documents\Firmware\fpga\component\work\root\root.vhd changed - recompiling
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\RG\Documents\Firmware\fpga\hdl\spi_master.vhd'.
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\RG\Documents\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3_muxptob3.vhd'.
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\RG\Documents\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3_iaddr_reg.vhd'.
@@ -51,7 +65,9 @@ Options changed - recompiling
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\RG\Documents\Firmware\fpga\component\work\root_sb\root_sb.vhd'.
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\Users\RG\Documents\Firmware\fpga\component\work\root\root.vhd'.
 VHDL syntax check successful!
-Options changed - recompiling
+
+Compiler output is up to date.  No re-compile necessary
+
 @N: CD231 :"C:\Microsemi\Libero_SoC_v2021.3\SynplifyPro\lib\vhd2008\std1164.vhd":888:16:888:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
 @N: CD630 :"C:\Users\RG\Documents\Firmware\fpga\component\work\root\root.vhd":17:7:17:10|Synthesizing work.root.rtl.
 @N: CD630 :"C:\Users\RG\Documents\Firmware\fpga\hdl\STAMP.vhd":32:7:32:11|Synthesizing work.stamp.architecture_stamp.
@@ -167,10 +183,10 @@ Finished optimization stage 1 on CoreResetP (CPU Time 0h:00m:00s, Memory Used cu
 @N: CD630 :"C:\Users\RG\Documents\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3_muxptob3.vhd":33:7:33:23|Synthesizing coreapb3_lib.coreapb3_muxptob3.coreapb3_muxptob3_arch.
 Post processing for coreapb3_lib.coreapb3_muxptob3.coreapb3_muxptob3_arch
 Running optimization stage 1 on COREAPB3_MUXPTOB3 .......
-Finished optimization stage 1 on COREAPB3_MUXPTOB3 (CPU Time 0h:00m:00s, Memory Used current: 112MB peak: 113MB)
+Finished optimization stage 1 on COREAPB3_MUXPTOB3 (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 113MB)
 Post processing for coreapb3_lib.coreapb3.coreapb3_arch
 Running optimization stage 1 on CoreAPB3 .......
-Finished optimization stage 1 on CoreAPB3 (CPU Time 0h:00m:00s, Memory Used current: 112MB peak: 113MB)
+Finished optimization stage 1 on CoreAPB3 (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 113MB)
 @N: CD630 :"C:\Users\RG\Documents\Firmware\fpga\component\work\root_sb\CCC_0\root_sb_CCC_0_FCCC.vhd":8:7:8:24|Synthesizing work.root_sb_ccc_0_fccc.def_arch.
 @N: CD630 :"C:\Microsemi\Libero_SoC_v2021.3\SynplifyPro\lib\generic\smartfusion2.vhd":798:10:798:12|Synthesizing smartfusion2.ccc.syn_black_box.
 Post processing for smartfusion2.ccc.syn_black_box
@@ -180,15 +196,15 @@ Post processing for smartfusion2.gnd.syn_black_box
 Post processing for smartfusion2.vcc.syn_black_box
 Post processing for work.root_sb_ccc_0_fccc.def_arch
 Running optimization stage 1 on root_sb_CCC_0_FCCC .......
-Finished optimization stage 1 on root_sb_CCC_0_FCCC (CPU Time 0h:00m:00s, Memory Used current: 112MB peak: 113MB)
+Finished optimization stage 1 on root_sb_CCC_0_FCCC (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 113MB)
 Post processing for work.root_sb.rtl
 Running optimization stage 1 on root_sb .......
-Finished optimization stage 1 on root_sb (CPU Time 0h:00m:00s, Memory Used current: 112MB peak: 113MB)
+Finished optimization stage 1 on root_sb (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 113MB)
 @N: CD630 :"C:\Microsemi\Libero_SoC_v2021.3\SynplifyPro\lib\generic\smartfusion2.vhd":231:10:231:13|Synthesizing smartfusion2.and3.syn_black_box.
 Post processing for smartfusion2.and3.syn_black_box
 Post processing for work.root.rtl
 Running optimization stage 1 on root .......
-Finished optimization stage 1 on root (CPU Time 0h:00m:00s, Memory Used current: 112MB peak: 113MB)
+Finished optimization stage 1 on root (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 113MB)
 Running optimization stage 2 on root_sb_CCC_0_FCCC .......
 Finished optimization stage 2 on root_sb_CCC_0_FCCC (CPU Time 0h:00m:00s, Memory Used current: 111MB peak: 113MB)
 Running optimization stage 2 on COREAPB3_MUXPTOB3 .......
@@ -348,12 +364,12 @@ For a summary of runtime and memory usage per design unit, please see file:
 @L: C:\Users\RG\Documents\Firmware\fpga\synthesis\synwork\layer0.rt.csv
 
 
-At c_vhdl Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 119MB peak: 137MB)
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 97MB peak: 98MB)
 
-Process took 0h:00m:05s realtime, 0h:00m:05s cputime
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sat Feb 11 17:28:15 2023
+# Mon Feb 13 08:44:32 2023
 
 ###########################################################]
 ###########################################################[
@@ -374,14 +390,16 @@ Implementation : synthesis
 Synopsys Synopsys Netlist Linker, Version comp202103synp2, Build 168R, Built Oct 12 2021 09:17:10, @
 
 @N|Running in 64-bit mode
-File B:\HERMESS_SPSoftware\Firmware\fpga\synthesis\synwork\layer0.srs changed - recompiling
 
-At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 113MB peak: 113MB)
+Linker output is up to date. No re-linking necessary
+
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 93MB peak: 93MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sat Feb 11 17:28:16 2023
+# Mon Feb 13 08:44:32 2023
 
 ###########################################################]
 
@@ -391,11 +409,11 @@ For a summary of runtime and memory usage for all design units, please see file:
 
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:05s; Memory used current: 43MB peak: 43MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 25MB peak: 26MB)
 
-Process took 0h:00m:06s realtime, 0h:00m:05s cputime
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sat Feb 11 17:28:16 2023
+# Mon Feb 13 08:44:32 2023
 
 ###########################################################]

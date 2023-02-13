@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- Created by SmartDesign Wed Feb  8 15:25:57 2023
+-- Created by SmartDesign Mon Feb 13 08:37:22 2023
 -- Version: 2021.3 2021.3.0.10
 ----------------------------------------------------------------------
 
@@ -28,7 +28,6 @@ entity root_sb_MSS is
         GPIO_1_F2M             : in  std_logic;
         GPIO_2_F2M             : in  std_logic;
         GPIO_3_F2M             : in  std_logic;
-        GPIO_4_F2M             : in  std_logic;
         MCCC_CLK_BASE          : in  std_logic;
         MCCC_CLK_BASE_PLL_LOCK : in  std_logic;
         MMUART_0_RXD_F2M       : in  std_logic;
@@ -858,7 +857,7 @@ MSS_ADLIB_INST : MSS_010
         MGPIO30B_F2H_GPIN                       => VCC_net, -- tied to '1' from definition
         MGPIO31B_F2H_GPIN                       => VCC_net, -- tied to '1' from definition
         MGPIO3A_F2H_GPIN                        => GPIO_3_F2M,
-        MGPIO4A_F2H_GPIN                        => GPIO_4_F2M,
+        MGPIO4A_F2H_GPIN                        => VCC_net, -- tied to '1' from definition
         MGPIO5A_F2H_GPIN                        => VCC_net, -- tied to '1' from definition
         MGPIO6A_F2H_GPIN                        => VCC_net, -- tied to '1' from definition
         MGPIO7A_F2H_GPIN                        => VCC_net, -- tied to '1' from definition

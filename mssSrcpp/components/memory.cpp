@@ -94,7 +94,7 @@ void Memory::updateMetadata(void) {
                 }
             }
         }
-        if (metaInterface.getAddress() < 128)
+        if (metaInterface.getAddress() < 0x200)
             metaInterface.writePage(metaData);
     }
 }

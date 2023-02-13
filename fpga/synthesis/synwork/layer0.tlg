@@ -113,10 +113,10 @@ Finished optimization stage 1 on CoreResetP (CPU Time 0h:00m:00s, Memory Used cu
 @N: CD630 :"C:\Users\RG\Documents\Firmware\fpga\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vhdl\core\coreapb3_muxptob3.vhd":33:7:33:23|Synthesizing coreapb3_lib.coreapb3_muxptob3.coreapb3_muxptob3_arch.
 Post processing for coreapb3_lib.coreapb3_muxptob3.coreapb3_muxptob3_arch
 Running optimization stage 1 on COREAPB3_MUXPTOB3 .......
-Finished optimization stage 1 on COREAPB3_MUXPTOB3 (CPU Time 0h:00m:00s, Memory Used current: 112MB peak: 113MB)
+Finished optimization stage 1 on COREAPB3_MUXPTOB3 (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 113MB)
 Post processing for coreapb3_lib.coreapb3.coreapb3_arch
 Running optimization stage 1 on CoreAPB3 .......
-Finished optimization stage 1 on CoreAPB3 (CPU Time 0h:00m:00s, Memory Used current: 112MB peak: 113MB)
+Finished optimization stage 1 on CoreAPB3 (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 113MB)
 @N: CD630 :"C:\Users\RG\Documents\Firmware\fpga\component\work\root_sb\CCC_0\root_sb_CCC_0_FCCC.vhd":8:7:8:24|Synthesizing work.root_sb_ccc_0_fccc.def_arch.
 @N: CD630 :"C:\Microsemi\Libero_SoC_v2021.3\SynplifyPro\lib\generic\smartfusion2.vhd":798:10:798:12|Synthesizing smartfusion2.ccc.syn_black_box.
 Post processing for smartfusion2.ccc.syn_black_box
@@ -126,15 +126,15 @@ Post processing for smartfusion2.gnd.syn_black_box
 Post processing for smartfusion2.vcc.syn_black_box
 Post processing for work.root_sb_ccc_0_fccc.def_arch
 Running optimization stage 1 on root_sb_CCC_0_FCCC .......
-Finished optimization stage 1 on root_sb_CCC_0_FCCC (CPU Time 0h:00m:00s, Memory Used current: 112MB peak: 113MB)
+Finished optimization stage 1 on root_sb_CCC_0_FCCC (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 113MB)
 Post processing for work.root_sb.rtl
 Running optimization stage 1 on root_sb .......
-Finished optimization stage 1 on root_sb (CPU Time 0h:00m:00s, Memory Used current: 112MB peak: 113MB)
+Finished optimization stage 1 on root_sb (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 113MB)
 @N: CD630 :"C:\Microsemi\Libero_SoC_v2021.3\SynplifyPro\lib\generic\smartfusion2.vhd":231:10:231:13|Synthesizing smartfusion2.and3.syn_black_box.
 Post processing for smartfusion2.and3.syn_black_box
 Post processing for work.root.rtl
 Running optimization stage 1 on root .......
-Finished optimization stage 1 on root (CPU Time 0h:00m:00s, Memory Used current: 112MB peak: 113MB)
+Finished optimization stage 1 on root (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 113MB)
 Running optimization stage 2 on root_sb_CCC_0_FCCC .......
 Finished optimization stage 2 on root_sb_CCC_0_FCCC (CPU Time 0h:00m:00s, Memory Used current: 111MB peak: 113MB)
 Running optimization stage 2 on COREAPB3_MUXPTOB3 .......

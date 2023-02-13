@@ -23,9 +23,9 @@ SLE            2096 uses
 
 DSP Blocks:    0 of 22 (0%)
 
-I/O ports: 77
-I/O primitives: 76
-INBUF          31 uses
+I/O ports: 76
+I/O primitives: 75
+INBUF          30 uses
 OUTBUF         39 uses
 TRIBUFF        6 uses
 

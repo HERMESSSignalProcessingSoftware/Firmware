@@ -1,5 +1,5 @@
 ----------------------------------------------------------------
--Pin Report - Date: Sat Feb 11 17:29:13 2023 Pinchecksum: NOT-AVAILABLE
+-Pin Report - Date: Mon Feb 13 08:54:53 2023 Pinchecksum: NOT-AVAILABLE
 -Product: Designer
 -Release: v2021.3
 -Version: 2021.3.0.10
@@ -23,7 +23,6 @@ F_MOSI            102  Yes    MSIO13PB2/SPI_0_SDO/GPIO_6_A  Bank2     LVCMOS33  
 IN_RXSM_LO        125  Yes    DDRIO44PB0                    Bank0     LVCMOS12   Input                           TRISTATE                        Up                                  No                                  Off              Off            50              Off             Off          ---           ---                ---                ---               
 IN_RXSM_SODS      124  Yes    DDRIO44NB0                    Bank0     LVCMOS12   Input                           TRISTATE                        Up                                  No                                  Off              Off            50              Off             Off          ---           ---                ---                ---               
 IN_RXSM_SOE       123  Yes    DDRIO43PB0                    Bank0     LVCMOS12   Input                           TRISTATE                        Up                                  No                                  Off              Off            50              Off             Off          ---           ---                ---                ---               
-IN_WP             112  No     DDRIO30NB0                    Bank0     LVCMOS12   Input                           TRISTATE                        Up                                  No                                  Off              Off            50              Off             Off          ---           ---                ---                ---               
 IO_WP             30   Yes    MSIOD93PB6                    Bank6     LVCMOS12   Output                          TRISTATE                        Up                                  No                                  ---              ---            ---             ---             ---          SLOW          ---                4                  5                 
 LED_FPGA_LOADED   23   Yes    MSIOD84PB6/CCC_NE1_CLKI2      Bank6     LVCMOS12   Output                          TRISTATE                        None                                No                                  ---              ---            ---             ---             ---          SLOW          ---                4                  5                 
 LED_HB_MEMSYNC    28   Yes    MSIOD90PB6                    Bank6     LVCMOS12   Output                          TRISTATE                        None                                No                                  ---              ---            ---             ---             ---          SLOW          ---                4                  5                 

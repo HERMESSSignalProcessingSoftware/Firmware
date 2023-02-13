@@ -6,7 +6,7 @@
 
 # Family: SmartFusion2 , Die: M2S010 , Package: 144 TQ
 
-# Date generated: Wed Feb  8 15:23:40 2023 
+# Date generated: Mon Feb 13 08:53:42 2023 
 
 
 # 
@@ -95,12 +95,12 @@ set_io IN_RXSM_SOE    \
     -DIRECTION INPUT
 
 
-set_io IO_WP          \
-    -pinname 30       \
-    -fixed yes        \
-    -iostd LVCMOS12   \
-    -RES_PULL Up      \
-    -DIRECTION INPUT
+set_io IO_WP           \
+    -pinname 30        \
+    -fixed yes         \
+    -iostd LVCMOS12    \
+    -RES_PULL Up       \
+    -DIRECTION OUTPUT
 
 
 set_io LED_FPGA_LOADED  \
@@ -521,4 +521,9 @@ set_io TM_TXD          \
 #Ports using Dedicated Pins
 
 #
+
+set_io DEVRST_N       \
+    -pinname 72       \
+    -DIRECTION INPUT
+
 

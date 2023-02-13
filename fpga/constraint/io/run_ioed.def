@@ -1,8 +1,8 @@
 data HELP_TYPE_DES 2
 data DESIGN root
-data HPATH 'B:/HERMESS_SPSoftware/Firmware/fpga/designer/root'
-data CPATH 'B:/HERMESS_SPSoftware/Firmware/fpga/constraint/io'
-data CDIR 'B:/HERMESS_SPSoftware/Firmware/fpga/constraint'
+data HPATH 'C:/Users/RG/Documents/Firmware/fpga/designer/root'
+data CPATH 'C:/Users/RG/Documents/Firmware/fpga/constraint/io'
+data CDIR 'C:/Users/RG/Documents/Firmware/fpga/constraint'
 data NLV_HIDE_OPTION_DLG 1
 data REGION_DEFCOLOR_EMPTY 2143322112
 data REGION_DEFCOLOR_INCLUSIVE 2147442270
@@ -22,15 +22,16 @@ data VCCI_2.5_VOLTR COM
 data VCCI_3.3_VOLTR COM
 data FLOW_TYPE NEW
 data PLANNER_IOMODE 1
-data AFL 'B:/HERMESS_SPSoftware/Firmware/fpga/designer/root/COMPILE/root.afl'
-data ADL 'B:/HERMESS_SPSoftware/Firmware/fpga/designer/root/root.adl'
-data LOC 'B:/HERMESS_SPSoftware/Firmware/fpga/designer/root/COMPILE/root.loc'
-data SEG 'B:/HERMESS_SPSoftware/Firmware/fpga/designer/root/COMPILE/root.seg'
+data AFL 'C:/Users/RG/Documents/Firmware/fpga/designer/root/root.afl'
+data ADL 'C:/Users/RG/Documents/Firmware/fpga/designer/root/root.adl'
+data LOC 'C:/Users/RG/Documents/Firmware/fpga/designer/root/root.loc'
+data SEG 'C:/Users/RG/Documents/Firmware/fpga/designer/root/root.seg'
+data NMAT_PDC 'C:/Users/RG/Documents/Firmware/fpga/designer/root/root.nmatinit.pdc'
 
-data IO_PDC_0 'B:/HERMESS_SPSoftware/Firmware/fpga/constraint/io/user1.pdc'
-data IO_PDC_1 'B:/HERMESS_SPSoftware/Firmware/fpga/constraint/io/user.pdc'
-data TARGET_IOPDC  'B:/HERMESS_SPSoftware/Firmware/fpga/constraint/io/user1.pdc'
-data TARGET_FPPDC  'B:/HERMESS_SPSoftware/Firmware/fpga/constraint/fp/user.pdc'
+data IO_PDC_0 'C:/Users/RG/Documents/Firmware/fpga/constraint/io/user1.pdc'
+data IO_PDC_1 'C:/Users/RG/Documents/Firmware/fpga/constraint/io/user.pdc'
+data TARGET_IOPDC  'C:/Users/RG/Documents/Firmware/fpga/constraint/io/user1.pdc'
+data TARGET_FPPDC  'C:/Users/RG/Documents/Firmware/fpga/constraint/fp/user.pdc'
 data RESTRICTPROBEPINS 0
 data RESTRICTSPIPINS 0
 data GDEV_SKIP_UNASSIGN_CMP_CHECK    1 

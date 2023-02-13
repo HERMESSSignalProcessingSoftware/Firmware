@@ -18,7 +18,7 @@
         </version>
     </header>
     <nvm>
-        <region name="firmware" address="0x000000" retrieveAddressFromFile="false" size="20000" format="HEX" type="Data Storage" wordSize="32" numberWords="5000" memFile="C:\Users\RG\Documents\Firmware\fpga" memType="" memFileTimeStamp="1676132989" clientType="public" program="true">
+        <region name="firmware" address="0x000000" retrieveAddressFromFile="false" size="20000" format="HEX" type="Data Storage" wordSize="32" numberWords="5000" memFile="C:\Users\RG\Documents\Firmware\fpga" memType="" memFileTimeStamp="1676274915" clientType="public" program="true">
             <read_protect/>
             <fabric_accessible/>
             <mss_accessible/>
@@ -693,7 +693,7 @@
                 0000
             </crc>
         </region>
-        <region name="conf" address="0x064000" retrieveAddressFromFile="false" size="128" format="HEX" type="Data Storage" wordSize="8" numberWords="128" memFile="C:\Users\RG\Documents\Firmware\fpga" memType="" memFileTimeStamp="1676132989" clientType="public" program="false">
+        <region name="conf" address="0x064000" retrieveAddressFromFile="false" size="128" format="HEX" type="Data Storage" wordSize="8" numberWords="128" memFile="C:\Users\RG\Documents\Firmware\fpga" memType="" memFileTimeStamp="1676274915" clientType="public" program="false">
             <fabric_accessible/>
             <mss_accessible/>
             000000000000000000000000000000000000000000000000000000000000

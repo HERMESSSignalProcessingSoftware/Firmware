@@ -1,0 +1,41 @@
+Software Version: 2021.3.0.10
+Programmer 'E2006QE3OZ' : JTAG TCK / SPI SCK frequency = 1 MHz
+programmer 'E2006QE3OZ' : FlashPro5
+Opened 'C:\Users\RG\Documents\Firmware\fpga\designer\root\root_fp\root.pro'
+The 'open_project' command succeeded.
+Info: Programming is already enabled for device 'M2S010'.
+The 'enable_device' command succeeded.
+PPD file 'C:/Users/RG/Documents/Firmware/fpga/designer/root/root.ppd' has been loaded successfully.
+DESIGN : root;  CHECKSUM : EAE6;  PDB_VERSION : 1.0
+The 'set_programming_file' command succeeded.
+The 'set_programming_action' command succeeded.
+programmer 'E2006QE3OZ' : Scan Chain...
+Programmer 'E2006QE3OZ' : JTAG TCK / SPI SCK frequency = 1 MHz
+programmer 'E2006QE3OZ' : Check Chain...
+programmer 'E2006QE3OZ' : Scan and Check Chain PASSED.
+Warning: programmer 'E2006QE3OZ' : device 'M2S010' : Device authentication failure: Failed to validate device certificate.
+programmer 'E2006QE3OZ' : device 'M2S010' : Executing action PROGRAM
+Programmer 'E2006QE3OZ' : JTAG TCK / SPI SCK frequency = 4 MHz
+programmer 'E2006QE3OZ' : device 'M2S010' : Programming Interface Protocol: JTAG
+programmer 'E2006QE3OZ' : device 'M2S010' : EXPORT ISC_ENABLE_RESULT[32] = 007c6b44
+programmer 'E2006QE3OZ' : device 'M2S010' : EXPORT CRCERR[1] = 0
+programmer 'E2006QE3OZ' : device 'M2S010' : EXPORT EDCERR[1] = 0
+programmer 'E2006QE3OZ' : device 'M2S010' : Programming FPGA Array and eNVM...
+programmer 'E2006QE3OZ' : device 'M2S010' : EXPORT Fabric component digest[256] = 77f1a44627d317fa34d9d681e0d4dc793acc49ebb16e213cf6b6bc30a6167089
+programmer 'E2006QE3OZ' : device 'M2S010' : EXPORT eNVM component digest[256] = 514dcbf788126854deb0caee217e080c4c59392ef8687bf8c9753329cc18f1de
+programmer 'E2006QE3OZ' : device 'M2S010' : ===================================================================================
+programmer 'E2006QE3OZ' : device 'M2S010' : EXPORT DSN[128] = bb71370179e52ed2328268dd9a9be778
+programmer 'E2006QE3OZ' : device 'M2S010' : ===================================================================================
+programmer 'E2006QE3OZ' : device 'M2S010' : Finished: Mon Feb 13 08:56:11 2023 (Elapsed time 00:00:33)
+programmer 'E2006QE3OZ' : device 'M2S010' : Executing action PROGRAM PASSED.
+programmer 'E2006QE3OZ' : Chain programming PASSED.
+Chain Programming Finished: Mon Feb 13 08:56:11 2023 (Elapsed time 00:00:33)
+
+                        o - o - o - o - o - o
+
+The 'run_selected_actions' command succeeded.
+Project saved.
+The 'save_project' command succeeded.
+Project closed.
+The 'close_project' command succeeded.
+The Execute Script command succeeded.

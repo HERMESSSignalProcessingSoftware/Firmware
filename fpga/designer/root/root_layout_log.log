@@ -12,13 +12,13 @@ INFO: Reading User PDC file C:\Users\RG\Documents\Firmware\fpga\constraint\io\us
 INFO: Reading User PDC file C:\Users\RG\Documents\Firmware\fpga\constraint\io\user.pdc. 0 error(s) and 0 warning(s)
 
 Running the I/O Bank and Globals Assigner.
-Info:  I/O Bank and Globals Assigner identified 75 fixed I/O macros, 1 unfixed I/O macros
+Info:  I/O Bank and Globals Assigner identified 75 fixed I/O macros, 0 unfixed I/O macros
 
 I/O Bank and Globals Assigner completed successfully.
-Total time spent in I/O Bank and Globals Assigner: 0 seconds
+Total time spent in I/O Bank and Globals Assigner: 1 seconds
 
 Placer V5.0 - 2021.3.0 
-Design: root                            Started: Sat Feb 11 17:28:48 2023
+Design: root                            Started: Mon Feb 13 08:54:32 2023
 
 Initializing Normal-Effort Standard Placement ...
 Clustering ...
@@ -34,27 +34,27 @@ End of placement.
 Placer Runtime Summary   :
 Clustering (1 pass)      : 0 seconds
 Placement                : 0 seconds
-Improvement              : 2 seconds
+Improvement              : 1 seconds
 
 Placer completed successfully.
 
 Design: root                            
-Finished: Sat Feb 11 17:28:56 2023
-Total CPU Time:     00:00:09            Total Elapsed Time: 00:00:08
-Total Memory Usage: 134.7 Mbytes
+Finished: Mon Feb 13 08:54:39 2023
+Total CPU Time:     00:00:07            Total Elapsed Time: 00:00:07
+Total Memory Usage: 133.7 Mbytes
                         o - o - o - o - o - o
 
 
 Router 
-Design: C:\Users\RG\Documents\Firmware\fpga\designer\root\rootStarted: Sat Feb 11 17:29:01 2023
+Design: C:\Users\RG\Documents\Firmware\fpga\designer\root\rootStarted: Mon Feb 13 08:54:43 2023
 
 
 Router completed successfully.
 
 Design: C:\Users\RG\Documents\Firmware\fpga\designer\root\root
-Finished: Sat Feb 11 17:29:10 2023
-Total CPU Time:     00:00:08            Total Elapsed Time: 00:00:09
-Total Memory Usage: 448.5 Mbytes
+Finished: Mon Feb 13 08:54:50 2023
+Total CPU Time:     00:00:07            Total Elapsed Time: 00:00:07
+Total Memory Usage: 448.2 Mbytes
                         o - o - o - o - o - o
 
 Resource Usage
@@ -64,14 +64,14 @@ Resource Usage
 | 4LUT          | 3130 | 12084 | 25.90      |
 | DFF           | 2096 | 12084 | 17.35      |
 | I/O Register  | 0    | 252   | 0.00       |
-| Logic Element | 3597 | 12084 | 29.77      |
+| Logic Element | 3569 | 12084 | 29.53      |
 +---------------+------+-------+------------+
 
 I/O Placement
 +--------+-------+------------+
 | Type   | Count | Percentage |
 +--------+-------+------------+
-| Locked |  75   | 98.68%     |
-| Placed |  1    | 1.32%      |
+| Locked |  75   | 100.00%    |
+| Placed |  0    | 0.00%      |
 +--------+-------+------------+
 

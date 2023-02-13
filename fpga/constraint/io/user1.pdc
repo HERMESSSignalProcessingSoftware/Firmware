@@ -6,7 +6,7 @@
 
 # Family: SmartFusion2 , Die: M2S010 , Package: 144 TQ
 
-# Date generated: Wed Feb  8 15:21:13 2023 
+# Date generated: Mon Feb 13 08:53:42 2023 
 
 
 # 
@@ -515,12 +515,6 @@ set_io TM_TXD          \
 # The I/Os in this section are unplaced or placed but are not locked
 # the other listed attributes have been applied
 # 
-
-set_io IN_WP          \
-    -iostd LVCMOS12   \
-    -RES_PULL Up      \
-    -DIRECTION INPUT
-
 
 
 #

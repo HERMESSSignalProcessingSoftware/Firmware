@@ -1,5 +1,5 @@
 ----------------------------------------------------------------
--Pin Report - Date: Sat Feb 11 17:29:13 2023 Pinchecksum: NOT-AVAILABLE
+-Pin Report - Date: Mon Feb 13 08:54:53 2023 Pinchecksum: NOT-AVAILABLE
 -Product: Designer
 -Release: v2021.3
 -Version: 2021.3.0.10
@@ -122,7 +122,7 @@ Number |Port             |Function                     |State      |I/O Std  |Di
 109                       CCC_NE0_PLL_VDDA              Reserved    
 110     DAPI_RXD          DDRIO29PB0                    Fixed       LVCMOS12  Input      TRISTATE                        None           No                                  Off              Off         50             Off             Off          ---   ---           ---                ---               
 111     DAPI_TXD          DDRIO30PB0                    Fixed       LVCMOS12  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          SLOW  ---           4                  5                 
-112     IN_WP             DDRIO30NB0                    Assigned    LVCMOS12  Input      TRISTATE                        Up             No                                  Off              Off         50             Off             Off          ---   ---           ---                ---               
+112                       DDRIO30NB0                    Unassigned  
 113                       VSS                           Reserved    
 114                       VDDI0                         Reserved    
 115     DAPI_RTS          DDRIO35NB0                    Fixed       LVCMOS12  Output     TRISTATE                        None           No                                  ---              ---         ---            ---             ---          SLOW  ---           4                  5                 

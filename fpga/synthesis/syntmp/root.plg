@@ -12,5 +12,5 @@
 @P: root Part : m2s010vf400std
 @P: root Register bits  : 2096 
 @P: root DSP Blocks  : 0
-@P: root I/O primitives : 76
-@P:  CPU Time : 0h:00m:12s
+@P: root I/O primitives : 75
+@P:  CPU Time : 0h:00m:14s

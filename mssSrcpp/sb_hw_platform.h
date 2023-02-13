@@ -1,9 +1,9 @@
 #ifndef sb_HW_PLATFORM_H_
 #define sb_HW_PLATFORM_H_
 
-#ifndef PROTOTYP_SPU
-#define PROTOTYP_SPU
-#endif
+//#ifndef PROTOTYP_SPU
+//#define PROTOTYP_SPU
+//#endif
 
 #define SPU_VERSION                     "1.3.1"
 

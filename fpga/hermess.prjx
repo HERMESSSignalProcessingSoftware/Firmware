@@ -75,7 +75,7 @@ PARENT="<project>\component\work\root_sb\root_sb.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\coreparameters.vhd,tb_hdl"
 STATE="utd"
-TIME="1676132767"
+TIME="1676133657"
 SIZE="2013"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -491,12 +491,12 @@ SIZE="2499"
 ENDFILE
 VALUE "<project>\component\work\root\root.cxf,actgen_cxf"
 STATE="utd"
-TIME="1676132877"
+TIME="1676133657"
 SIZE="14846"
 ENDFILE
 VALUE "<project>\component\work\root\root.vhd,hdl"
 STATE="utd"
-TIME="1676132875"
+TIME="1676133657"
 SIZE="33968"
 PARENT="<project>\component\work\root\root.cxf"
 IS_READONLY="TRUE"
@@ -529,31 +529,31 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\root_sb\root_sb.cxf,actgen_cxf"
 STATE="utd"
-TIME="1676132767"
+TIME="1676133657"
 SIZE="29452"
 ENDFILE
 VALUE "<project>\component\work\root_sb\root_sb.vhd,hdl"
 STATE="utd"
-TIME="1676132767"
+TIME="1676133657"
 SIZE="46757"
 PARENT="<project>\component\work\root_sb\root_sb.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\root_sb_MSS\root_sb_MSS.cxf,actgen_cxf"
 STATE="utd"
-TIME="1676132767"
+TIME="1676133657"
 SIZE="22981"
 ENDFILE
 VALUE "<project>\component\work\root_sb_MSS\root_sb_MSS.vhd,hdl"
 STATE="utd"
-TIME="1676132767"
+TIME="1676133657"
 SIZE="84960"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\root_sb_MSS\root_sb_MSS_pre.vhd,hdl"
 STATE="utd"
-TIME="1675609800"
+TIME="1676133657"
 SIZE="70888"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 BEGIN_USE_CONSTRAINT
@@ -565,7 +565,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\root_sb_MSS\root_sb_MSS_syn.vhd,hdl"
 STATE="utd"
-TIME="1675609800"
+TIME="1676133657"
 SIZE="70868"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 BEGIN_USE_CONSTRAINT
@@ -619,7 +619,7 @@ PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 ENDFILE
 VALUE "<project>\simulation\CM3_compile_bfm.tcl,sim"
 STATE="utd"
-TIME="1676132767"
+TIME="1676133657"
 SIZE="504"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
@@ -637,14 +637,14 @@ PARENT="<project>\component\Actel\SmartFusion2MSS\MSS\1.1.500\MSS.cxf"
 ENDFILE
 VALUE "<project>\simulation\subsystem.bfm,sim"
 STATE="utd"
-TIME="1676132767"
+TIME="1676133657"
 SIZE="927"
 PARENT="<project>\component\work\root\root.cxf"
 PARENT="<project>\component\work\root_sb\root_sb.cxf"
 ENDFILE
 VALUE "<project>\simulation\test.bfm,sim"
 STATE="utd"
-TIME="1676132767"
+TIME="1676133657"
 SIZE="734"
 PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
@@ -656,22 +656,22 @@ PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\synthesis\root.so,so"
 STATE="utd"
-TIME="1676132767"
+TIME="1676133657"
 SIZE="218"
 ENDFILE
 VALUE "<project>\synthesis\root.vm,syn_vm"
 STATE="utd"
-TIME="1676132767"
+TIME="1676133657"
 SIZE="1407678"
 ENDFILE
 VALUE "<project>\synthesis\root_syn.prj,prj"
 STATE="utd"
-TIME="1676132767"
+TIME="1676133657"
 SIZE="4058"
 ENDFILE
 VALUE "<project>\synthesis\root_vm.sdc,syn_sdc"
 STATE="utd"
-TIME="1676132767"
+TIME="1676133657"
 SIZE="1081"
 ENDFILE
 ENDLIST
@@ -937,8 +937,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_SoC_v2021.3\SynplifyPro\bin\synplify_pro.exe"
-PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
-BATCH=1
+PARAM=""
+BATCH=0
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -1041,29 +1041,14 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
-Reports;Reports;0
-ReportsCurrentItem;Generate Bitstream:root_generateBitstream.log
-Constraint Manager;Constraint Manager;0
 StartPage;StartPage;0
-SmartDesign;root;0
-ACTIVEVIEW;Reports
+ACTIVEVIEW;StartPage
 ENDLIST
 LIST ModuleSubBlockList
 LIST "coreresetp_pcie_hotreset::work","component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp_pcie_hotreset.vhd","FALSE","FALSE"
 ENDLIST
 LIST "COREUART_C0::work","component\work\COREUART_C0\COREUART_C0.vhd","TRUE","FALSE"
 SUBBLOCK "COREUART_C0_COREUART_C0_0_COREUART::coreuart_lib","component\work\COREUART_C0\COREUART_C0_0\rtl\vhdl\core\CoreUART.vhd","FALSE","FALSE"
-ENDLIST
-LIST "DESIGN_FIRMWARE::work","component\work\DESIGN_FIRMWARE\DESIGN_FIRMWARE.cxf","TRUE","FALSE"
-SUBBLOCK "SmartFusion2_CMSIS::work","","FALSE","FALSE"
-SUBBLOCK "SmartFusion2_MSS_GPIO_Driver::work","","FALSE","FALSE"
-SUBBLOCK "SmartFusion2_MSS_HPDMA_Driver::work","","FALSE","FALSE"
-SUBBLOCK "SmartFusion2_MSS_MMUART_Driver::work","","FALSE","FALSE"
-SUBBLOCK "SmartFusion2_MSS_NVM_Driver::work","","FALSE","FALSE"
-SUBBLOCK "SmartFusion2_MSS_SPI_Driver::work","","FALSE","FALSE"
-SUBBLOCK "SmartFusion2_MSS_System_Services_Driver::work","","FALSE","FALSE"
-SUBBLOCK "SmartFusion2_MSS_Timer_Driver::work","","FALSE","FALSE"
-SUBBLOCK "SmartFusion2_MSS_Watchdog_Driver::work","","FALSE","FALSE"
 ENDLIST
 LIST "CoreResetP::work","component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp.vhd","FALSE","FALSE"
 SUBBLOCK "coreresetp_pcie_hotreset::work","component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp_pcie_hotreset.vhd","FALSE","FALSE"
@@ -1099,24 +1084,6 @@ SUBBLOCK "RCOSC_25_50MHZ::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.vh
 ENDLIST
 LIST "root_sb_MSS::work","component\work\root_sb_MSS\root_sb_MSS.vhd","TRUE","FALSE"
 SUBBLOCK "MSS_010::work","component\work\root_sb_MSS\root_sb_MSS_syn.vhd","FALSE","FALSE"
-ENDLIST
-LIST "SmartFusion2_CMSIS::work","","FALSE","FALSE"
-ENDLIST
-LIST "SmartFusion2_MSS_GPIO_Driver::work","","FALSE","FALSE"
-ENDLIST
-LIST "SmartFusion2_MSS_HPDMA_Driver::work","","FALSE","FALSE"
-ENDLIST
-LIST "SmartFusion2_MSS_MMUART_Driver::work","","FALSE","FALSE"
-ENDLIST
-LIST "SmartFusion2_MSS_NVM_Driver::work","","FALSE","FALSE"
-ENDLIST
-LIST "SmartFusion2_MSS_SPI_Driver::work","","FALSE","FALSE"
-ENDLIST
-LIST "SmartFusion2_MSS_System_Services_Driver::work","","FALSE","FALSE"
-ENDLIST
-LIST "SmartFusion2_MSS_Timer_Driver::work","","FALSE","FALSE"
-ENDLIST
-LIST "SmartFusion2_MSS_Watchdog_Driver::work","","FALSE","FALSE"
 ENDLIST
 LIST "STAMP::work","hdl\STAMP.vhd","FALSE","FALSE"
 SUBBLOCK "spi_master::work","hdl\spi_master.vhd","FALSE","FALSE"

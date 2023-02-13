@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- Created by SmartDesign Sat Feb 11 17:27:54 2023
+-- Created by SmartDesign Mon Feb 13 08:40:24 2023
 -- Version: 2021.3 2021.3.0.10
 ----------------------------------------------------------------------
 
@@ -24,7 +24,6 @@ entity root is
         IN_RXSM_LO       : in    std_logic;
         IN_RXSM_SODS     : in    std_logic;
         IN_RXSM_SOE      : in    std_logic;
-        IN_WP            : in    std_logic;
         STAMP1_DRDY_SGR1 : in    std_logic;
         STAMP1_DRDY_SGR2 : in    std_logic;
         STAMP1_DRDY_TEMP : in    std_logic;
@@ -129,7 +128,6 @@ component root_sb
         GPIO_1_F2M         : in  std_logic;
         GPIO_2_F2M         : in  std_logic;
         GPIO_3_F2M         : in  std_logic;
-        GPIO_4_F2M         : in  std_logic;
         MMUART_0_RXD_F2M   : in  std_logic;
         MMUART_1_RXD_F2M   : in  std_logic;
         SPI_0_CLK_F2M      : in  std_logic;
@@ -223,7 +221,7 @@ signal F_CLK_net_0           : std_logic;
 signal F_CS1_net_0           : std_logic;
 signal F_CS2_net_0           : std_logic;
 signal F_MOSI_net_0          : std_logic;
-signal IN_WP_net_0           : std_logic;
+signal IN_WP                 : std_logic;
 signal IO_WP_net_0           : std_logic;
 signal LED_FPGA_LOADED_net_0 : std_logic;
 signal LED_HB_MEMSYNC_net_0  : std_logic;
@@ -329,7 +327,7 @@ signal STAMP6_CS_TEMP_net_1  : std_logic;
 signal STAMP1_CS_TEMP_net_1  : std_logic;
 signal STAMP1_MOSI_net_1     : std_logic;
 signal STAMP1_SCLK_net_1     : std_logic;
-signal IN_WP_net_1           : std_logic;
+signal IN_WP_net_0           : std_logic;
 signal STAMP1_CS_SGR2_net_1  : std_logic;
 signal STAMP2_CS_SGR2_net_1  : std_logic;
 signal STAMP2_SCLK_net_1     : std_logic;
@@ -436,8 +434,8 @@ begin
  STAMP1_MOSI           <= STAMP1_MOSI_net_1;
  STAMP1_SCLK_net_1     <= STAMP1_SCLK_net_0;
  STAMP1_SCLK           <= STAMP1_SCLK_net_1;
- IN_WP_net_1           <= IN_WP_net_0;
- STAMP1_CS_SGR1        <= IN_WP_net_1;
+ IN_WP_net_0           <= IN_WP;
+ STAMP1_CS_SGR1        <= IN_WP_net_0;
  STAMP1_CS_SGR2_net_1  <= STAMP1_CS_SGR2_net_0;
  STAMP1_CS_SGR2        <= STAMP1_CS_SGR2_net_1;
  STAMP2_CS_SGR2_net_1  <= STAMP2_CS_SGR2_net_0;
@@ -533,16 +531,22 @@ MSS : root_sb
         STAMP_2_INTR_0_top => STAMP3_new_avail,
         STAMP_1_INTR_0_top => STAMP2_new_avail,
         STAMP_0_INTR_0_top => STAMP1_new_avail,
+        STAMP_PRDATAS0     => MSS_STAMP_PRDATA,
         STAMP_PREADYS0     => MSS_STAMP_PREADY,
         STAMP_PSLVERRS0    => MSS_STAMP_PSLVERR,
+        STAMP_1_PRDATAS1   => MSS_STAMP_1_PRDATA,
         STAMP_1_PREADYS1   => MSS_STAMP_1_PREADY,
         STAMP_1_PSLVERRS1  => MSS_STAMP_1_PSLVERR,
+        STAMP_2_PRDATAS2   => MSS_STAMP_2_PRDATA,
         STAMP_2_PREADYS2   => MSS_STAMP_2_PREADY,
         STAMP_2_PSLVERRS2  => MSS_STAMP_2_PSLVERR,
+        STAMP_3_PRDATAS3   => MSS_STAMP_3_PRDATA,
         STAMP_3_PREADYS3   => MSS_STAMP_3_PREADY,
         STAMP_3_PSLVERRS3  => MSS_STAMP_3_PSLVERR,
+        STAMP_4_PRDATAS4   => MSS_STAMP_4_PRDATA,
         STAMP_4_PREADYS4   => MSS_STAMP_4_PREADY,
         STAMP_4_PSLVERRS4  => MSS_STAMP_4_PSLVERR,
+        STAMP_5_PRDATAS5   => MSS_STAMP_5_PRDATA,
         STAMP_5_PREADYS5   => MSS_STAMP_5_PREADY,
         STAMP_5_PSLVERRS5  => MSS_STAMP_5_PSLVERR,
         DEVRST_N           => DEVRST_N,
@@ -552,37 +556,42 @@ MSS : root_sb
         GPIO_1_F2M         => IN_RXSM_SOE,
         GPIO_2_F2M         => IN_RXSM_SODS,
         GPIO_3_F2M         => IO_WP_net_0,
-        GPIO_4_F2M         => IN_WP,
         SPI_0_DI_F2M       => F_MISO,
         SPI_0_CLK_F2M      => GND_net,
         SPI_0_SS0_F2M      => GND_net,
-        STAMP_PRDATAS0     => MSS_STAMP_PRDATA,
-        STAMP_1_PRDATAS1   => MSS_STAMP_1_PRDATA,
-        STAMP_2_PRDATAS2   => MSS_STAMP_2_PRDATA,
-        STAMP_3_PRDATAS3   => MSS_STAMP_3_PRDATA,
-        STAMP_4_PRDATAS4   => MSS_STAMP_4_PRDATA,
-        STAMP_5_PRDATAS5   => MSS_STAMP_5_PRDATA,
         -- Outputs
         POWER_ON_RESET_N   => MSS_POWER_ON_RESET_N,
         INIT_DONE          => MSS_INIT_DONE,
+        STAMP_PADDRS       => MSS_STAMP_PADDR,
         STAMP_PSELS0       => MSS_STAMP_PSELx,
         STAMP_PENABLES     => MSS_STAMP_PENABLE,
         STAMP_PWRITES      => MSS_STAMP_PWRITE,
+        STAMP_PWDATAS      => MSS_STAMP_PWDATA,
+        STAMP_1_PADDRS     => MSS_STAMP_1_PADDR,
         STAMP_1_PSELS1     => MSS_STAMP_1_PSELx,
         STAMP_1_PENABLES   => MSS_STAMP_1_PENABLE,
         STAMP_1_PWRITES    => MSS_STAMP_1_PWRITE,
+        STAMP_1_PWDATAS    => MSS_STAMP_1_PWDATA,
+        STAMP_2_PADDRS     => MSS_STAMP_2_PADDR,
         STAMP_2_PSELS2     => MSS_STAMP_2_PSELx,
         STAMP_2_PENABLES   => MSS_STAMP_2_PENABLE,
         STAMP_2_PWRITES    => MSS_STAMP_2_PWRITE,
+        STAMP_2_PWDATAS    => MSS_STAMP_2_PWDATA,
+        STAMP_3_PADDRS     => MSS_STAMP_3_PADDR,
         STAMP_3_PSELS3     => MSS_STAMP_3_PSELx,
         STAMP_3_PENABLES   => MSS_STAMP_3_PENABLE,
         STAMP_3_PWRITES    => MSS_STAMP_3_PWRITE,
+        STAMP_3_PWDATAS    => MSS_STAMP_3_PWDATA,
+        STAMP_4_PADDRS     => MSS_STAMP_4_PADDR,
         STAMP_4_PSELS4     => MSS_STAMP_4_PSELx,
         STAMP_4_PENABLES   => MSS_STAMP_4_PENABLE,
         STAMP_4_PWRITES    => MSS_STAMP_4_PWRITE,
+        STAMP_4_PWDATAS    => MSS_STAMP_4_PWDATA,
+        STAMP_5_PADDRS     => MSS_STAMP_5_PADDR,
         STAMP_5_PSELS5     => MSS_STAMP_5_PSELx,
         STAMP_5_PENABLES   => MSS_STAMP_5_PENABLE,
         STAMP_5_PWRITES    => MSS_STAMP_5_PWRITE,
+        STAMP_5_PWDATAS    => MSS_STAMP_5_PWDATA,
         FIC_0_CLK          => MSS_FIC_0_CLK,
         FIC_0_LOCK         => OPEN,
         MSS_READY          => MSS_MSS_READY,
@@ -600,19 +609,7 @@ MSS : root_sb
         SPI_0_DO_M2F       => F_MOSI_net_0,
         SPI_0_CLK_M2F      => F_CLK_net_0,
         SPI_0_SS0_M2F      => OPEN,
-        SPI_0_SS0_M2F_OE   => OPEN,
-        STAMP_PADDRS       => MSS_STAMP_PADDR,
-        STAMP_PWDATAS      => MSS_STAMP_PWDATA,
-        STAMP_1_PADDRS     => MSS_STAMP_1_PADDR,
-        STAMP_1_PWDATAS    => MSS_STAMP_1_PWDATA,
-        STAMP_2_PADDRS     => MSS_STAMP_2_PADDR,
-        STAMP_2_PWDATAS    => MSS_STAMP_2_PWDATA,
-        STAMP_3_PADDRS     => MSS_STAMP_3_PADDR,
-        STAMP_3_PWDATAS    => MSS_STAMP_3_PWDATA,
-        STAMP_4_PADDRS     => MSS_STAMP_4_PADDR,
-        STAMP_4_PWDATAS    => MSS_STAMP_4_PWDATA,
-        STAMP_5_PADDRS     => MSS_STAMP_5_PADDR,
-        STAMP_5_PWDATAS    => MSS_STAMP_5_PWDATA 
+        SPI_0_SS0_M2F_OE   => OPEN 
         );
 -- STAMP1
 STAMP1 : entity work.STAMP
@@ -636,7 +633,7 @@ STAMP1 : entity work.STAMP
         PSLVERR      => MSS_STAMP_PSLVERR,
         spi_clock    => STAMP1_SCLK_net_0,
         spi_mosi     => STAMP1_MOSI_net_0,
-        spi_dms1_cs  => IN_WP_net_0,
+        spi_dms1_cs  => IN_WP,
         spi_dms2_cs  => STAMP1_CS_SGR2_net_0,
         spi_temp_cs  => STAMP1_CS_TEMP_net_0,
         data_frame   => OPEN,
