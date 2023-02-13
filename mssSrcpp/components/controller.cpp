@@ -7,16 +7,12 @@
 #include "../tools/msghandler.h"
 #include "../tools/tools.h"
 
-
-
-Controller &Controller::getInstance () {
+Controller& Controller::getInstance() {
     static Controller instance;
     return instance;
 }
 
-
-
-void Controller::worker () {
+void Controller::worker() {
     // run this every 500ms
     if ((timestamp - last2HzTimestamp) >= 2000) {
         // toggle the MSS LED
@@ -35,36 +31,35 @@ void Controller::worker () {
     // run this, if the LO occurred
     if (getGpioInput(IN_RXSM_LO) == rxsmSignal[0]) {
         rxsmSignal[0] = !rxsmSignal[0];
-        if (rxsmSignal[0])
+        if (rxsmSignal[0]) {
             MsgHandler::getInstance().info("LO asserted");
-        else
+            MsgHandler::getInstance().error("FLOMESS MODE ACTIVATED! Self destruction in progress.");
+        } else {
             MsgHandler::getInstance().info("LO released");
+        }
     }
 
     // run this, if SOE change occurred
     if (getGpioInput(IN_RXSM_SOE) == rxsmSignal[1]) {
         rxsmSignal[1] = !rxsmSignal[1];
 
-        std::string msg = std::string("SOE ") +
-                (rxsmSignal[1] ? "asserted" : "released");
+        std::string msg = std::string("SOE ")
+                + (rxsmSignal[1] ? "asserted" : "released");
         bool warning = false;
         if (!rxsmSignal[1]) {
             if (clearingMemory) {
                 // abort clearing memory
                 Memory::getInstance().abortClearMemory();
                 clearingMemory = false;
-                msg.append(": Aborted clearing memory");
+                msg.append(": Nice Try LOL clearing memory");
             }
-        }
-        /*READ HERE: Something is wrong with this implementation. */
-        else if (rxsmSignal[1] && !rxsmSignal[0] && !storedAcquisition
+        } else if (rxsmSignal[1] && !rxsmSignal[0] && !storedAcquisition
                 && configuration.enableClear && getGpioInput(IN_WP)) {
             // clear the memory on SOE, NOT LO and no current measurements
             clearingMemory = true;
             Memory::getInstance().clearMemory();
             msg.append(": Clearing memory");
-        }
-        else {
+        } else {
             // do not clear memory
             msg.append(": Not clearing memory because measurements are "
                     "running or LO is asserted or configuration "
@@ -77,13 +72,19 @@ void Controller::worker () {
         else
             MsgHandler::getInstance().info(msg);
     }
-
+    uint16_t memStatus = Memory::getInstance().memoryStatus();
+    uint8_t SR_Controller1 = (memStatus & 0xFF00) >> 8;
+    uint8_t SR_Controller2 = (memStatus & 0x00FF);
+    if (clearingMemory && ((SR_Controller1 & 0x01) == 0)
+            && ((SR_Controller2 & 0x01) == 0)) {
+        clearMemFinished();
+    }
     // run this, if SODS change occurred
     if (getGpioInput(IN_RXSM_SODS) == rxsmSignal[2]) {
         rxsmSignal[2] = !rxsmSignal[2];
 
-        std::string msg = std::string("SODS ") +
-                (rxsmSignal[2] ? "asserted" : "released");
+        std::string msg = std::string("SODS ")
+                + (rxsmSignal[2] ? "asserted" : "released");
         uint8_t type = 0;
 
         // SODS was set
@@ -92,21 +93,17 @@ void Controller::worker () {
             if (!getGpioInput(IN_WP)) {
                 msg.append(": Write protection set");
                 type = 2;
-            }
-            else if (!configuration.enableStorage) {
+            } else if (!configuration.enableStorage) {
                 msg.append(": Configuration prohibits storage");
                 type = 1;
-            }
-            else if (storedAcquisition) { //logic an dies
+            } else if (storedAcquisition) {
                 msg.append(": Stored acquisition already running");
                 type = 1;
-            }
-            else {
+            } else {
                 setStoredDataAcquisition(true);
                 msg.append(": Measurement started");
             }
-        }
-        else
+        } else
             clearedMemoryBeforeSods = false;
 
         // send message
@@ -120,16 +117,14 @@ void Controller::worker () {
 
     // check, if conditions are met to shut down the stored measurement
     if (storedAcquisition
-            && ((rxsmSignal[2] && timestamp >= configuration.minTimestamp)
-            || timestamp >= configuration.maxTimestamp)) {
+            && ((!rxsmSignal[2] && timestamp >= configuration.minTimestamp)
+                    || timestamp >= configuration.maxTimestamp)) {
         setStoredDataAcquisition(false);
         MsgHandler::getInstance().info("Stored measurement stopped");
     }
 }
 
-
-
-void Controller::datapackageAvailable (const Datapackage &dp) {
+void Controller::datapackageAvailable(const Datapackage &dp) {
     // forward to memory
     if (storedAcquisition)
         Memory::getInstance().saveDp(dp);
@@ -146,9 +141,7 @@ void Controller::datapackageAvailable (const Datapackage &dp) {
     }
 }
 
-
-
-void Controller::setStoredDataAcquisition (bool running) {
+void Controller::setStoredDataAcquisition(bool running) {
     // abort, if stored acquisition already the same state
     if (running == storedAcquisition)
         return;
@@ -157,23 +150,19 @@ void Controller::setStoredDataAcquisition (bool running) {
     if (running && liveAcquisition) {
         resetTimestampGenerator();
         MsgHandler::getInstance().warning("Live data timestamp reset to 0");
-    }
-    else if (running && !liveAcquisition) {
+    } else if (running && !liveAcquisition) {
         resetTimestampGenerator();
         Measurement::getInstance().setDataAcquisition(true);
-    }
-    else if (!running && !liveAcquisition)
+    } else if (!running && !liveAcquisition)
         Measurement::getInstance().setDataAcquisition(false);
 }
 
-
-
-void Controller::setLiveDataAcquisition (bool running) {
+void Controller::setLiveDataAcquisition(bool running) {
     std::string msg = "Live data acquisition ";
     // abort, if live data acquisition is already running
     if (running == liveAcquisition) {
-        MsgHandler::getInstance().warning(msg +
-                (running ? "already running" : "already stopped"));
+        MsgHandler::getInstance().warning(
+                msg + (running ? "already running" : "already stopped"));
         return;
     }
     liveAcquisition = running;
@@ -183,43 +172,31 @@ void Controller::setLiveDataAcquisition (bool running) {
         resetTimestampGenerator();
         Measurement::getInstance().setDataAcquisition(true);
         MsgHandler::getInstance().info(msg + "started");
-    }
-    else if (running && storedAcquisition) {
+    } else if (running && storedAcquisition) {
         MsgHandler::getInstance().warning(msg + "started, but timestamps "
                 "will be off");
-    }
-    else if (!running && !storedAcquisition) {
+    } else if (!running && !storedAcquisition) {
         Measurement::getInstance().setDataAcquisition(false);
         MsgHandler::getInstance().info(msg + "stopped");
-    }
-    else {
+    } else {
         MsgHandler::getInstance().info(msg + "stopped");
     }
 }
 
-
-
-uint64_t Controller::getTimestamp () const {
+uint64_t Controller::getTimestamp() const {
     return timestamp;
 }
 
-
-
-uint8_t Controller::getStateByte () const {
-    uint8_t returner = (wdTriggeredFlag ? 0x80 : 0)
-            | (rxsmSignal[0] ? 0x40 : 0)
-            | (rxsmSignal[1] ? 0x20 : 0)
-            | (rxsmSignal[2] ? 0x10 : 0)
-            | (clearingMemory ? 0x08 : 0)
-            | (storedAcquisition ? 0x04 : 0)
+uint8_t Controller::getStateByte() const {
+    uint8_t returner = (wdTriggeredFlag ? 0x80 : 0) | (rxsmSignal[0] ? 0x40 : 0)
+            | (rxsmSignal[1] ? 0x20 : 0) | (rxsmSignal[2] ? 0x10 : 0)
+            | (clearingMemory ? 0x08 : 0) | (storedAcquisition ? 0x04 : 0)
             | (!getGpioInput(IN_WP) ? 0x02 : 0)
             | (clearedMemoryBeforeSods ? 0x01 : 0);
     return returner;
 }
 
-
-
-void Controller::clearMemFinished () {
+void Controller::clearMemFinished() {
     clearingMemory = false;
     // set the cleared memory before sods flag to true, if the stored stored
     // acquisition hasn't started yet
@@ -228,18 +205,14 @@ void Controller::clearMemFinished () {
     MsgHandler::getInstance().info("Memory finished clearing");
 }
 
-
-
-void Controller::wdTriggered () {
+void Controller::wdTriggered() {
     wdTriggeredFlag = true;
     MsgHandler::getInstance().error("Watchdog triggered");
     /* TODO !!! reload status (current timestamp, current address,
-    currently measuring values?) */
+     currently measuring values?) */
 }
 
-
-
-Controller::Controller () {
+Controller::Controller() {
     // initialize LEDs
     MSS_GPIO_config(GPIO_PORT(LED_HB_MEMSYNC), MSS_GPIO_OUTPUT_MODE);
     MSS_GPIO_set_output(GPIO_PORT(LED_HB_MEMSYNC), 0);
@@ -296,9 +269,7 @@ Controller::Controller () {
     resetTimestampGenerator();
 }
 
-
-
-void Controller::resetTimestampGenerator () {
+void Controller::resetTimestampGenerator() {
     timestamp = 0;
     MSS_TIM2_load_immediate(25000);
 }

@@ -56,6 +56,8 @@ void Dapi::worker () {
                 transmitRaw(rxBuffer, endIdx+1);
                 (*this) << "\x0F\x17\xF0";
                 break;
+            case 0x02:
+                break;
             case 0x03:
                 // Start live data acquisition
                 Controller::getInstance().setLiveDataAcquisition(true);

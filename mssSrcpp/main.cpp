@@ -37,7 +37,6 @@ int main () {
     MsgHandler::getInstance().info(std::string("Configuration loaded: \"")
             + std::string(controller.configuration.confName)
             + "\" running SPU version " + SPU_VERSION);
-   // Memory::getInstance().clearMemory();
     Memory::getInstance().recovery();
     for (;;) {
         MSS_WD_reload();

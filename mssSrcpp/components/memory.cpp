@@ -268,7 +268,6 @@ void MemorySPI::chipErase(void) {
     writeByte((uint8_t) c_CE);
     writeByte((uint8_t) c_WRDI);
     writeReady(false);
-
 }
 
 bool MemorySPI::writeReady(bool blocking) {

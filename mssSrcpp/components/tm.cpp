@@ -18,7 +18,7 @@ void Tm::worker2Hz () {
     // this check should honestly never fail
     if (MSS_UART_tx_complete(&g_mss_uart1)) {
         // reset the timestamp byte counter and the timestamp itself
-        if (sendingTimestampByte >= 4) {
+        if (sendingTimestampByte >= 8) {
             sendingTimestampByte = 0;
             sendingTimestamp = Controller::getInstance().getTimestamp();
         }
@@ -27,7 +27,7 @@ void Tm::worker2Hz () {
         txBuffer[0] = frameId++;
         txBuffer[1] = Controller::getInstance().getStateByte();
         txBuffer[2] = sendingTimestampByte == 0 ? 0x01 : 0;
-        txBuffer[3] = (sendingTimestamp>>((3-sendingTimestampByte++)*8))&0xFF;
+        txBuffer[3] = (sendingTimestamp>>((7-sendingTimestampByte++)*8)) & 0xFF;
         txBuffer[4] = (uint8_t)((memStatus & 0xFF00) >> 8);
         txBuffer[5] = (uint8_t)(memStatus & 0x00FF);
         // empty initialize text part
@@ -41,11 +41,11 @@ void Tm::worker2Hz () {
             // calculate the number of characters to be transmitted, including
             // one terminating null character
             uint8_t copyLength = text.size() + 1 - sentMsgBytes;
-            if (copyLength > 56)
-                copyLength = 56;
+            if (copyLength > 54)
+                copyLength = 54;
 
             // copy the characters to the tx buffer
-            std::memcpy(&txBuffer[4], &(text.c_str()[sentMsgBytes]),
+            std::memcpy(&txBuffer[6], &(text.c_str()[sentMsgBytes]),
                     copyLength);
             sentMsgBytes += copyLength;
 
