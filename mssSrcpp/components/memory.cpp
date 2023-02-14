@@ -137,7 +137,7 @@ void Memory::saveDp(const Datapackage &dp) {
 }
 
 Memory::Memory() :
-        PageSize(512), PageCount(125000), PageAddressShift(1 << 9), DatasetsPerPage(
+        PageSize(PAGESIZE), PageCount(PAGE_COUNT), PageAddressShift(1 << 9), DatasetsPerPage(
                 9), savedDataPoints(0) {
     interfaceOne = MemorySPI(GPIO_PORT(FLASH_CS1), &g_mss_spi0, 0x200);
     interfaceTwo = MemorySPI(GPIO_PORT(FLASH_CS2), &g_mss_spi0, 0x200);
