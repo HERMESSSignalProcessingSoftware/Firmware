@@ -18,7 +18,7 @@
         </version>
     </header>
     <nvm>
-        <region name="firmware" address="0x000000" retrieveAddressFromFile="false" size="33360" format="HEX" type="Data Storage" wordSize="32" numberWords="8340" memFile="C:/Users/RG/Documents/Firmware/mssSrcpp/Release/HERMESS.hex" memType="INTELHEX" memFileTimeStamp="1676386576" clientType="public" program="true">
+        <region name="firmware" address="0x000000" retrieveAddressFromFile="false" size="33360" format="HEX" type="Data Storage" wordSize="32" numberWords="8340" memFile="C:/Users/RG/Documents/Firmware/mssSrcpp/Release/HERMESS.hex" memType="INTELHEX" memFileTimeStamp="1676394850" clientType="public" program="true">
             <read_protect/>
             <fabric_accessible/>
             <mss_accessible/>
@@ -531,11 +531,11 @@
             072b6d462bd800f13006a26bb2f5007f25d2520229463046fff784ff2a46
             002311460868043201300bd00133802bf7d13046fff7d3ffe8e729463046
             fff738ff0de0a26933b103f18043013b55f82330934200d00a60a36bb3f5
-            007fecd3bd46f8bd70b500246ff001052646adf5047d00f130016846fff7
-            d5fe0294029ab2f5007f26d26846520204a9fff74bffd4b9234604aa52f8
-            041b013107d15d1e6b1c08d1029b0124013b0293e7e70133802bf0d1f4e7
-            002d08db84ab03eb8503a3f500731e68dae77f25f6e76846fff786ffd4e7
-            684600f0a4fe30460df5047d70bd10b50446fff7bdff094b00f500709842
+            007fecd3bd46f8bd30b50024adf5057d00f130016846fff7d8fe02946ff0
+            0105029ab2f5007f2bd26846520204a9fff74cffbcb9224604ab53f8041b
+            013108d1531e82b9029b0124013b4ff0ff350293e6e70132802aefd10135
+            f3d06846fff790ffdbe77f2384aa02eb8303a3f500731c68684600f0a7fe
+            20460df5057d30bd0024f6e7000010b50446fff7bdff094b00f500709842
             0cd81523162123740023064ae361c4e90520c4e9092084f82010e36210bd
             00bf47e801002406002070b5d0f844320446082b86b016d9002590f84030
             c0f8445293b9426883699a4221d900f1100500f141012846fff7b4fe2846
@@ -1116,7 +1116,7 @@
             ff7fc8fcff7f5cb8ff7f0100000058b8ff7fb0a90e8098b8ff7fb0aa0180
             30b9ff7fd0fcff7f70b9ff7f010000008eb9ff7fa908b180ecb9ff7fb0b0
             aa80b6baff7fb0b0a88008bbff7f010000000ebbff7fb8fcff7f7ebbff7f
-            aa03b280f4bbff7fb0b0a88024bcff7facfcff7fc0bcff7fb0b0ac80ecbd
+            a904b280f4bbff7fb0b0a88024bcff7facfcff7fc0bcff7fb0b0ac80ecbd
             ff7fb8fcff7f68beff7fb0b0aa80a4beff7fccfcff7fd4beff7f01000000
             44bfff7faf08b180b8bfff7fb0b0a880d2bfff7f01000000ccbfff7fbcfc
             ff7f54c0ff7f010000007cc0ff7fc8fcff7f28c1ff7f01000000b8c1ff7f
@@ -1135,10 +1135,10 @@
             000000000000000000000000000000000000000000000000000000000000
             000000000000000000000000000000000000000000000000000000000000
             <crc>
-                46f9
+                4056
             </crc>
         </region>
-        <region name="conf" address="0x064000" retrieveAddressFromFile="false" size="128" format="HEX" type="Data Storage" wordSize="8" numberWords="128" memFile="C:\Users\RG\Documents\Firmware\fpga" memType="" memFileTimeStamp="1676386699" clientType="public" program="false">
+        <region name="conf" address="0x064000" retrieveAddressFromFile="false" size="128" format="HEX" type="Data Storage" wordSize="8" numberWords="128" memFile="C:\Users\RG\Documents\Firmware\fpga" memType="" memFileTimeStamp="1676394917" clientType="public" program="true">
             <fabric_accessible/>
             <mss_accessible/>
             000000000000000000000000000000000000000000000000000000000000

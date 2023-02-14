@@ -65,6 +65,7 @@ uint32_t Memory::metaDataHighestAddress(void) {
             possibleFoundOnLastPage = true;
         } else if (index >= 0) {
             addr = ptr[index];
+            break;
         } else {
             tmpMetaDevive.increaseAddress();
             // Index < -1 -> means -2 nothing found

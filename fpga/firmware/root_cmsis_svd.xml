@@ -2,7 +2,7 @@
 <device>
   <name>root</name>
   <version>1.0</version>
-  <description>CMSIS description for root.  Created by Microsemi SmartDesign on Tue Feb 14 11:09:57 2023</description>
+  <description>CMSIS description for root.  Created by Microsemi SmartDesign on Tue Feb 14 18:12:18 2023</description>
   <addressUnitBits>8</addressUnitBits>
   <width>32</width>
   <peripherals>

@@ -491,7 +491,7 @@ SIZE="2499"
 ENDFILE
 VALUE "<project>\component\work\root\root.cxf,actgen_cxf"
 STATE="utd"
-TIME="1676369400"
+TIME="1676394746"
 SIZE="14694"
 ENDFILE
 VALUE "<project>\component\work\root\root.vhd,hdl"
@@ -1042,7 +1042,7 @@ ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
 Reports;Reports;0
-ReportsCurrentItem;Export FlashPro Express Job:root_exportJob.log
+ReportsCurrentItem;Run Programming Action:root_PROGRAM.log
 Constraint Manager;Constraint Manager;0
 StartPage;StartPage;0
 SmartDesign;root;0
