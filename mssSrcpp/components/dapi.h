@@ -115,6 +115,17 @@ private:
      */
     static void rxHandler (mss_uart_instance_t *this_uart);
 
+    /**
+     * Read the memory until highAddress is reached.
+     *
+     * Starts with FLASH_CS1, continues with FLASH_CS2 with the same address
+     * increases address after reading of FLASH_CS2
+     *
+     * Wraps the data with some meta data and transmits it via DAPI.
+     *
+     * @param highAddress uint32_t
+     */
+    void readAndTransmitMemory(uint32_t highAddress);
     /** Constructor
      *
      * initializes the UART0 interface for DAPI usage

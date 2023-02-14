@@ -17,7 +17,7 @@ void Memory::worker() {
         savedDataPoints = 0;
         if (this->activeInterface == InterfaceOne) {
             if (interfaceOne.getAddress() < PageCount) {
-                interfaceOne.writePage((uint8_t*)this->memory);
+                interfaceOne.writePage((uint8_t*) this->memory);
                 interfaceOne.increaseAddress();
                 activeInterface = InterfaceTwo;
             } else {
@@ -25,7 +25,7 @@ void Memory::worker() {
             }
         } else if (this->activeInterface == InterfaceTwo) {
             if (interfaceTwo.getAddress() < PageCount) {
-                interfaceTwo.writePage((uint8_t*)this->memory);
+                interfaceTwo.writePage((uint8_t*) this->memory);
                 interfaceTwo.increaseAddress();
                 activeInterface = InterfaceOne;
             } else {
@@ -39,30 +39,48 @@ void Memory::worker() {
         MsgHandler::getInstance().error("Memory full!");
 }
 
-void Memory::recovery(void) {
+uint32_t Memory::metaDataHighestAddress(void) {
     uint8_t memory[PAGESIZE];
-    uint32_t* ptrMemory = (uint32_t*)&memory;
-    int32_t index = -1;
-    uint32_t addr = 0;
-    bool found = false;
-    while(!found) {
-        metaInterface.readPage(memory, PAGEADDR(metaInterface.getAddress()));
-        for (int i = 0; i < 128; i++) {
-            if (ptrMemory[i] == 0xFFFFFFFF) {
-                index = i;
-                break;
+    uint32_t *ptr = (uint32_t*) &memory;
+    uint32_t addr = 0x0;
+    int32_t index = -2;
+    bool possibleFoundOnLastPage = false;
+    MemorySPI tmpMetaDevive = metaInterface;
+    tmpMetaDevive.setAddress(0x0);
+    while (tmpMetaDevive.getAddress() < 0x200) {
+        tmpMetaDevive.readPage(memory, PAGEADDR(tmpMetaDevive.getAddress()));
+        if (possibleFoundOnLastPage) {
+            index = 127;
+        } else {
+            for (int i = 0; i < 128; i++) {
+                if (ptr[i] == 0xFFFFFFFF) {
+                    index = i - 1;
+                    break;
+                }
             }
         }
-        if (index == -1) {
-            metaInterface.increaseAddress();
+
+        if (index == -1) { // found proceed to previous page
+            tmpMetaDevive.decreaseAddress();
+            possibleFoundOnLastPage = true;
+        } else if (index >= 0) {
+            addr = ptr[index];
         } else {
-            found = true;
-            addr = ptrMemory[index];
+            tmpMetaDevive.increaseAddress();
+            // Index < -1 -> means -2 nothing found
         }
-        if (addr + 0x200 < PAGE_COUNT) {
-            interfaceOne = MemorySPI(GPIO_PORT(FLASH_CS1), &g_mss_spi0, addr + 0x200);
-            interfaceTwo = MemorySPI(GPIO_PORT(FLASH_CS2), &g_mss_spi0, addr + 0x200);
-        }
+    }
+    delete &tmpMetaDevive;
+    return addr;
+}
+
+void Memory::recovery(void) {
+    uint32_t addr = metaDataHighestAddress();
+    if (addr + 0x200 < PAGE_COUNT) {
+        interfaceOne = MemorySPI(GPIO_PORT(FLASH_CS1), &g_mss_spi0,
+                addr + 0x200);
+        interfaceTwo = MemorySPI(GPIO_PORT(FLASH_CS2), &g_mss_spi0,
+                addr + 0x200);
     }
 }
 
@@ -72,13 +90,14 @@ uint32_t Memory::memoryStatus(void) {
 
 void Memory::updateMetadata(void) {
     uint8_t metaData[PageSize];
-    uint32_t *ptrMetadata = (uint32_t*)&metaData;
+    uint32_t *ptrMetadata = (uint32_t*) &metaData;
     int32_t index = -1;
     bool found = false;
     if (savedDataPoints <= 7) {
-        while(!found) {
-            metaInterface.readPage(metaData, PAGEADDR(metaInterface.getAddress()));
-            for(int i = 0; i < 128; i++) {
+        while (!found && metaInterface.getAddress() < 0x200) {
+            metaInterface.readPage(metaData,
+                    PAGEADDR(metaInterface.getAddress()));
+            for (int i = 0; i < 128; i++) {
                 if (ptrMetadata[i] == 0xFFFFFFFF) {
                     index = i;
                     break;
@@ -88,8 +107,9 @@ void Memory::updateMetadata(void) {
                 metaInterface.increaseAddress();
             } else {
                 found = true;
-                if ((index > 0 && interfaceOne.getAddress() != ptrMetadata[index - 1]) ||
-                        (index == 0)) {
+                if ((index > 0
+                        && interfaceOne.getAddress() != ptrMetadata[index - 1])
+                        || (index == 0)) {
                     ptrMetadata[index] = interfaceOne.getAddress();
                 }
             }
@@ -134,22 +154,25 @@ Memory::Memory() :
             4u, MSS_SPI_BLOCK_TRANSFER_FRAME_SIZE);
     MSS_SPI_set_slave_select(&g_mss_spi0, MSS_SPI_SLAVE_0);
 
-    uint32_t* memoryPtr = (uint32_t*)&this->memory;
+    uint32_t *memoryPtr = (uint32_t*) &this->memory;
     for (int i = 0; i < 128; i++) {
         memoryPtr[i] = 0;
     }
 }
 
 MemorySPI::MemorySPI() :
-        CSPin(GPIO_PORT(FLASH_CS1)), spihandle(&g_mss_spi0),  address(0), pagesWritten(0){
+        CSPin(GPIO_PORT(FLASH_CS1)), spihandle(&g_mss_spi0), address(0), pagesWritten(
+                0) {
 }
 
 MemorySPI::MemorySPI(const MemorySPI &old) :
-        CSPin(old.CSPin), spihandle(old.spihandle), address(old.address), pagesWritten(old.pagesWritten) {
+        CSPin(old.CSPin), spihandle(old.spihandle), address(old.address), pagesWritten(
+                old.pagesWritten) {
 
 }
 
-MemorySPI::MemorySPI(mss_gpio_id_t pin, mss_spi_instance_t *handle, uint32_t addr) :
+MemorySPI::MemorySPI(mss_gpio_id_t pin, mss_spi_instance_t *handle,
+        uint32_t addr) :
         CSPin(pin), spihandle(handle), address(addr), pagesWritten(0) {
 }
 
@@ -274,7 +297,7 @@ bool MemorySPI::writeReady(bool blocking) {
     uint32_t status = 0;
     uint8_t StatusReg1 = 0;
     if (blocking) {
-        while(status == 0) {
+        while (status == 0) {
             StatusReg1 = readStatus();
             if ((StatusReg1 & 0x01) == 0)
                 status = 1;
@@ -296,4 +319,8 @@ void MemorySPI::setAddress(uint32_t addr) {
 void MemorySPI::increaseAddress(void) {
     this->pagesWritten++;
     this->address++;
+}
+
+void MemorySPI::decreaseAddress(void) {
+    this->address--;
 }

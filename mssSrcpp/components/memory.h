@@ -130,6 +130,10 @@ public:
      */
     void increaseAddress(void);
 
+    /**
+     *
+     */
+    void decreaseAddress(void);
 
 private:
     mss_gpio_id_t CSPin;
@@ -161,6 +165,15 @@ public:
     void abortClearMemory();
 
     void saveDp(const Datapackage &dp);
+
+    /**
+     * Searches the highest entry in the pages form 0 to 0x200
+     *
+     * At first it looks for the first unwritten entry (0xFFFFFFFF)
+     * Second the index will be decreased by one to return the last saved address.
+     * @return uint32_t address
+     */
+    uint32_t metaDataHighestAddress(void);
 
     /**
      *
