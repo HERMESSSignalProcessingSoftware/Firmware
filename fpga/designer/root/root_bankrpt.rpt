@@ -1,5 +1,5 @@
 ********************************************************************
-I/O Bank Report - Date: Tue Jul 12 21:31:24 2022
+I/O Bank Report - Date: Tue Feb 14 11:08:19 2023
 Product: Designer
 Release: v2021.3
 Version: 2021.3.0.10
@@ -14,8 +14,8 @@ I/O Function:
 
     Type                                  | w/o register  | w/ register  | w/ DDR register
     --------------------------------------|---------------|--------------|----------------
-    Input I/O                             | 31            | 0            | 0
-    Output I/O                            | 44            | 0            | 0
+    Input I/O                             | 30            | 0            | 0
+    Output I/O                            | 45            | 0            | 0
     Bidirectional I/O                     | 0             | 0            | 0
     Differential Input I/O Pairs          | 0             | 0            | 0
     Differential Output I/O Pairs         | 0             | 0            | 0
@@ -27,7 +27,7 @@ I/O Technology:
     I/O Standard(s)                 | Vddi  | Vref  | Input | Output | Bidirectional
     --------------------------------|-------|-------|-------|--------|--------------
     LVCMOS33                        | 3.30v | N/A   | 17    | 28     | 0            
-    LVCMOS12                        | 1.20v | N/A   | 14    | 16     | 0            
+    LVCMOS12                        | 1.20v | N/A   | 13    | 17     | 0            
 
 I/O Bank Resource Usage:
 

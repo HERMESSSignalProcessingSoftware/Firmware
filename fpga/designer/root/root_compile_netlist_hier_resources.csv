@@ -1,5 +1,5 @@
 Detailed Resource Usage
-Module Name,Fabric 4LUT,Fabric DFF,Single-Ended I/O,PLLs and CCCs,Chip Globals,MSS,HS USB,RCOSC_50MHZ
+Module Name,Fabric 4LUT,Fabric DFF,Single-Ended I/O,PLLs and CCCs,Chip Globals,MSS,10/100/1000 Ethernet,RCOSC_50MHZ
 MSS/CCC_0/Primitives,0,0,0,1,1,0,0,0
 MSS/CORERESETP_0/Primitives,9,38,0,0,1,0,0,0
 MSS/CoreAPB3_0/Primitives,7,0,0,0,0,0,0,0

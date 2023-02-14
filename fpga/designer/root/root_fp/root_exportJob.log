@@ -1,13 +1,13 @@
 Software Version: 2021.3.0.10
-Opened 'C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\designer\root\root_fp\root.pro'
-PDB file 'C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\designer\root\root.pdb' has been loaded successfully.
-DESIGN : root;  CHECKSUM : 93F2;  PDB_VERSION : 1.9
+Opened 'C:\Users\RG\Documents\Firmware\fpga\designer\root\root_fp\root.pro'
+PDB file 'C:\Users\RG\Documents\Firmware\fpga\designer\root\root.pdb' has been loaded successfully.
+DESIGN : root;  CHECKSUM : EAE6;  PDB_VERSION : 1.9
 Info: Programming Interface selected is JTAG.
 Successfully generated bitstream file and it has been added to the job container; file programs Fabric and eNVM.
-Fabric component bitstream digest: fd9b8666af9fc47ff293aeb5d199d56f062e638a5e659e89bd554e76fe53ec43
-eNVM component bitstream digest: 353eaa1343019c3a7949db8089e726052c6122233409a0e3da07257975e0c0d8
-Entire bitstream digest: 826a0cc38e73857e364f09ad297a27c827f4840fd26a12e33ba92e84d7dc351e
-Finished: Tue Jul 12 22:21:58 2022 (Elapsed time 00:00:09)
+Fabric component bitstream digest: 77f1a44627d317fa34d9d681e0d4dc793acc49ebb16e213cf6b6bc30a6167089
+eNVM component bitstream digest: d7c6a40e40de42cb895a3cf86b4d33ce853de332f1aa6e40dbcbb9974f4dcd49
+Entire bitstream digest: 837e347e8bbec781d2f648f61eaa11826f72c40290e19a898f41aab2383c60e9
+Finished: Tue Feb 14 11:09:44 2023 (Elapsed time 00:00:08)
 
 Project saved.
 Project closed.

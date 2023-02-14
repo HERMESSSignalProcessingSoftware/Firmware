@@ -1,6 +1,6 @@
 G5PLACER_32_64_BIT_EXT=64
 DESIGN=root
-DESDIR=C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\designer\root
+DESDIR=C:\Users\RG\Documents\Firmware\fpga\designer\root
 FAM=SmartFusion2
 DIE=PA4M1000_N
 PACKAGE=tq144
@@ -30,7 +30,7 @@ NETLIST_TYPE=EDIF
 MINDELAYG4_REPAIR=0
 MINDELAYG5_REPAIR=0
 LAYOUT_STATE=NOT_VALID
-PDC_FILE=C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\constraint\io\user1.pdc,,C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\constraint\io\user.pdc,,
+PDC_FILE=C:\Users\RG\Documents\Firmware\fpga\constraint\io\user1.pdc,,C:\Users\RG\Documents\Firmware\fpga\constraint\io\user.pdc,,
 USE_CONSTRAINT_FLOW=1
 RESTRICTPROBEPINS=0
 RESTRICTSPIPINS=0

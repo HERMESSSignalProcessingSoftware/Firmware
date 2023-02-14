@@ -1,7 +1,7 @@
-J:\LiberoSoC\SynplifyPro\bin64\syn_nfilter.exe  -link  -top  work.root  -multisrs  C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\synthesis\synwork\root_comp.srs  -osyn  C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\synthesis\synwork\root_mult.srs  -log  C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\synthesis\synlog\root_multi_srs_gen.srr 
-relcom:J:\LiberoSoC\SynplifyPro\bin64\syn_nfilter.exe -link -top work.root -multisrs ..\synwork\root_comp.srs -osyn ..\synwork\root_mult.srs -log ..\synlog\root_multi_srs_gen.srr
-rc:0 success:1 runtime:0
-file:..\synwork\root_comp.srs|io:i|time:1657654230|size:96166|exec:0|csum:9AC57CBBC0BBBB6D8D6F0C7DAAB85D6A
-file:..\synwork\root_mult.srs|io:o|time:1657654231|size:9811|exec:0|csum:
-file:..\synlog\root_multi_srs_gen.srr|io:o|time:1657654231|size:1146|exec:0|csum:
-file:J:\LiberoSoC\SynplifyPro\bin64\syn_nfilter.exe|io:i|time:1636456230|size:8899584|exec:1|csum:05E28BA145955944CDBFD3C078A1CBAA
+C:\Microsemi\Libero_SoC_v2021.3\SynplifyPro\bin64\syn_nfilter.exe  -link  -top  work.root  -multisrs  C:\Users\RG\Documents\Firmware\fpga\synthesis\synwork\root_comp.srs  -osyn  C:\Users\RG\Documents\Firmware\fpga\synthesis\synwork\root_mult.srs  -log  C:\Users\RG\Documents\Firmware\fpga\synthesis\synlog\root_multi_srs_gen.srr 
+relcom:..\..\..\..\..\..\..\Microsemi\Libero_SoC_v2021.3\SynplifyPro\bin64\syn_nfilter.exe -link -top work.root -multisrs ..\synwork\root_comp.srs -osyn ..\synwork\root_mult.srs -log ..\synlog\root_multi_srs_gen.srr
+rc:0 success:1 runtime:1
+file:..\synwork\root_comp.srs|io:i|time:1676369242|size:96410|exec:0|csum:AC7BD50913E061D168F4B2D564CA04E2
+file:..\synwork\root_mult.srs|io:o|time:1676369243|size:9927|exec:0|csum:
+file:..\synlog\root_multi_srs_gen.srr|io:o|time:1676369244|size:1155|exec:0|csum:
+file:..\..\..\..\..\..\..\Microsemi\Libero_SoC_v2021.3\SynplifyPro\bin64\syn_nfilter.exe|io:i|time:1636456230|size:8899584|exec:1|csum:05E28BA145955944CDBFD3C078A1CBAA

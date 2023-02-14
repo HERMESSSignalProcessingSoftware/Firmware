@@ -8,8 +8,8 @@ High-effort              : OFF
 Repair min-delay         : OFF
 Incremental              : OFF
 
-INFO: Reading User PDC file C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\constraint\io\user1.pdc. 0 error(s) and 0 warning(s)
-INFO: Reading User PDC file C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\constraint\io\user.pdc. 0 error(s) and 0 warning(s)
+INFO: Reading User PDC file C:\Users\RG\Documents\Firmware\fpga\constraint\io\user1.pdc. 0 error(s) and 0 warning(s)
+INFO: Reading User PDC file C:\Users\RG\Documents\Firmware\fpga\constraint\io\user.pdc. 0 error(s) and 0 warning(s)
 
 Running the I/O Bank and Globals Assigner.
 Info:  I/O Bank and Globals Assigner identified 75 fixed I/O macros, 0 unfixed I/O macros
@@ -18,7 +18,7 @@ I/O Bank and Globals Assigner completed successfully.
 Total time spent in I/O Bank and Globals Assigner: 0 seconds
 
 Placer V5.0 - 2021.3.0 
-Design: root                            Started: Tue Jul 12 21:31:01 2022
+Design: root                            Started: Tue Feb 14 11:07:56 2023
 
 Initializing Normal-Effort Standard Placement ...
 Clustering ...
@@ -34,27 +34,27 @@ End of placement.
 Placer Runtime Summary   :
 Clustering (1 pass)      : 0 seconds
 Placement                : 0 seconds
-Improvement              : 1 seconds
+Improvement              : 2 seconds
 
 Placer completed successfully.
 
 Design: root                            
-Finished: Tue Jul 12 21:31:09 2022
-Total CPU Time:     00:00:08            Total Elapsed Time: 00:00:08
-Total Memory Usage: 134.1 Mbytes
+Finished: Tue Feb 14 11:08:03 2023
+Total CPU Time:     00:00:08            Total Elapsed Time: 00:00:07
+Total Memory Usage: 132.5 Mbytes
                         o - o - o - o - o - o
 
 
 Router 
-Design: C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\designer\root\rootStarted: Tue Jul 12 21:31:13 2022
+Design: C:\Users\RG\Documents\Firmware\fpga\designer\root\rootStarted: Tue Feb 14 11:08:08 2023
 
 
 Router completed successfully.
 
-Design: C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\designer\root\root
-Finished: Tue Jul 12 21:31:22 2022
-Total CPU Time:     00:00:08            Total Elapsed Time: 00:00:09
-Total Memory Usage: 445.9 Mbytes
+Design: C:\Users\RG\Documents\Firmware\fpga\designer\root\root
+Finished: Tue Feb 14 11:08:16 2023
+Total CPU Time:     00:00:08            Total Elapsed Time: 00:00:08
+Total Memory Usage: 448.5 Mbytes
                         o - o - o - o - o - o
 
 Resource Usage
@@ -64,7 +64,7 @@ Resource Usage
 | 4LUT          | 3130 | 12084 | 25.90      |
 | DFF           | 2096 | 12084 | 17.35      |
 | I/O Register  | 0    | 252   | 0.00       |
-| Logic Element | 3623 | 12084 | 29.98      |
+| Logic Element | 3569 | 12084 | 29.53      |
 +---------------+------+-------+------------+
 
 I/O Placement

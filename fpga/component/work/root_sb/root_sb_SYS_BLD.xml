@@ -2223,7 +2223,7 @@
 </row>
 <row>
  <cell>WDOG_MODE</cell>
- <cell>MODE_RESET</cell>
+ <cell>MODE_INTERRUPT</cell>
 </row>
 <row>
  <cell>WDOG_MVRP</cell>
@@ -3249,7 +3249,7 @@
 </row>
 <row>
  <cell>GPIO3_USAGE</cell>
- <cell>USAGE_INPUT</cell>
+ <cell>USAGE_BI</cell>
 </row>
 <row>
  <cell>GPIO4_FAB_CAPT</cell>
@@ -3461,11 +3461,11 @@
 </row>
 <row>
  <cell>GPIO21_TYPE</cell>
- <cell>CONNECTION_IOA</cell>
+ <cell>CONNECTION_FABRICB</cell>
 </row>
 <row>
  <cell>GPIO21_USAGE</cell>
- <cell>NOT_USED</cell>
+ <cell>USAGE_OUTPUT</cell>
 </row>
 <row>
  <cell>GPIO22_FAB_CAPT</cell>
@@ -3473,11 +3473,11 @@
 </row>
 <row>
  <cell>GPIO22_TYPE</cell>
- <cell>CONNECTION_IOA</cell>
+ <cell>CONNECTION_FABRICB</cell>
 </row>
 <row>
  <cell>GPIO22_USAGE</cell>
- <cell>NOT_USED</cell>
+ <cell>USAGE_OUTPUT</cell>
 </row>
 <row>
  <cell>GPIO23_FAB_CAPT</cell>
@@ -3656,7 +3656,7 @@
 </header>
 <row>
  <cell>NB_SLAVES</cell>
- <cell>2</cell>
+ <cell>1</cell>
 </row>
 <row>
  <cell>SPI_MUX</cell>
@@ -3888,6 +3888,26 @@
  <cell>-</cell>
 </row>
 <row>
+ <cell>GPIO_3_M2F</cell>
+ <cell>OUT</cell>
+ <cell>-</cell>
+</row>
+<row>
+ <cell>GPIO_3_M2F_OE</cell>
+ <cell>OUT</cell>
+ <cell>-</cell>
+</row>
+<row>
+ <cell>GPIO_21_M2F</cell>
+ <cell>OUT</cell>
+ <cell>-</cell>
+</row>
+<row>
+ <cell>GPIO_22_M2F</cell>
+ <cell>OUT</cell>
+ <cell>-</cell>
+</row>
+<row>
  <cell>GPIO_26_M2F</cell>
  <cell>OUT</cell>
  <cell>-</cell>
@@ -3944,11 +3964,6 @@
 </row>
 <row>
  <cell>SPI_0_SS0_M2F_OE</cell>
- <cell>OUT</cell>
- <cell>-</cell>
-</row>
-<row>
- <cell>SPI_0_SS1_M2F</cell>
  <cell>OUT</cell>
  <cell>-</cell>
 </row>

@@ -1,6 +1,6 @@
 Resource Report
 Microsemi Corporation - Microsemi Libero Software Release v2021.3 (Version 2021.3.0.10)
-Date: Tue Jul 12 21:30:55 2022
+Date: Tue Feb 14 11:07:51 2023
 
 Device Selection
 +--------------------------------+----------------+
@@ -20,11 +20,11 @@ Device Selection
 +--------------------------------+----------------+
 
 Source Files
-+---------+--------------------------------------------------------------------------+
-| Topcell | root                                                                     |
-| Format  | Verilog                                                                  |
-| Source  | C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\synthesis\root.vm |
-+---------+--------------------------------------------------------------------------+
++---------+-------------------------------------------------------+
+| Topcell | root                                                  |
+| Format  | Verilog                                               |
+| Source  | C:\Users\RG\Documents\Firmware\fpga\synthesis\root.vm |
++---------+-------------------------------------------------------+
 
 Options
 +----------------------------------------------------+-------+
@@ -103,8 +103,8 @@ I/O Function
 +-------------------------------+--------------+-------------+-----------------+
 | Type                          | w/o register | w/ register | w/ DDR register |
 +-------------------------------+--------------+-------------+-----------------+
-| Input I/O                     | 31           | 0           | 0               |
-| Output I/O                    | 44           | 0           | 0               |
+| Input I/O                     | 30           | 0           | 0               |
+| Output I/O                    | 45           | 0           | 0               |
 | Bidirectional I/O             | 0            | 0           | 0               |
 | Differential Input I/O Pairs  | 0            | 0           | 0               |
 | Differential Output I/O Pairs | 0            | 0           | 0               |
@@ -114,7 +114,7 @@ I/O Technology
 +--------------+--------+------+-------+--------+---------------+
 | I/O Standard | Vddi   | Vref | Input | Output | Bidirectional |
 +--------------+--------+------+-------+--------+---------------+
-| LVCMOS33     |  3.30v |  N/A |  31   |  44    |  0            |
+| LVCMOS33     |  3.30v |  N/A |  30   |  45    |  0            |
 +--------------+--------+------+-------+--------+---------------+
 
 Nets assigned to chip global resources

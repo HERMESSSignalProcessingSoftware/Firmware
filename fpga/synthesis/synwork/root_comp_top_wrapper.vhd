@@ -1,6 +1,6 @@
 --
 -- Synopsys
--- Vhdl wrapper for top level design, written on Tue Jul 12 21:30:29 2022
+-- Vhdl wrapper for top level design, written on Tue Feb 14 11:07:21 2023
 --
 library ieee;
 use ieee.std_logic_1164.all;
@@ -13,7 +13,6 @@ entity wrapper_for_root is
       IN_RXSM_LO : in std_logic;
       IN_RXSM_SODS : in std_logic;
       IN_RXSM_SOE : in std_logic;
-      IN_WP : in std_logic;
       STAMP1_DRDY_SGR1 : in std_logic;
       STAMP1_DRDY_SGR2 : in std_logic;
       STAMP1_DRDY_TEMP : in std_logic;
@@ -82,7 +81,8 @@ entity wrapper_for_root is
       STAMP6_CS_TEMP : out std_logic;
       STAMP6_MOSI : out std_logic;
       STAMP6_SCLK : out std_logic;
-      TM_TXD : out std_logic
+      TM_TXD : out std_logic;
+      IO_WP : in std_logic
    );
 end wrapper_for_root;
 
@@ -96,7 +96,6 @@ component root
    IN_RXSM_LO : in std_logic;
    IN_RXSM_SODS : in std_logic;
    IN_RXSM_SOE : in std_logic;
-   IN_WP : in std_logic;
    STAMP1_DRDY_SGR1 : in std_logic;
    STAMP1_DRDY_SGR2 : in std_logic;
    STAMP1_DRDY_TEMP : in std_logic;
@@ -165,7 +164,8 @@ component root
    STAMP6_CS_TEMP : out std_logic;
    STAMP6_MOSI : out std_logic;
    STAMP6_SCLK : out std_logic;
-   TM_TXD : out std_logic
+   TM_TXD : out std_logic;
+   IO_WP : inout std_logic
  );
 end component;
 
@@ -175,7 +175,6 @@ signal tmp_F_MISO : std_logic;
 signal tmp_IN_RXSM_LO : std_logic;
 signal tmp_IN_RXSM_SODS : std_logic;
 signal tmp_IN_RXSM_SOE : std_logic;
-signal tmp_IN_WP : std_logic;
 signal tmp_STAMP1_DRDY_SGR1 : std_logic;
 signal tmp_STAMP1_DRDY_SGR2 : std_logic;
 signal tmp_STAMP1_DRDY_TEMP : std_logic;
@@ -245,6 +244,7 @@ signal tmp_STAMP6_CS_TEMP : std_logic;
 signal tmp_STAMP6_MOSI : std_logic;
 signal tmp_STAMP6_SCLK : std_logic;
 signal tmp_TM_TXD : std_logic;
+signal tmp_IO_WP : std_logic;
 
 begin
 
@@ -259,8 +259,6 @@ tmp_IN_RXSM_LO <= IN_RXSM_LO;
 tmp_IN_RXSM_SODS <= IN_RXSM_SODS;
 
 tmp_IN_RXSM_SOE <= IN_RXSM_SOE;
-
-tmp_IN_WP <= IN_WP;
 
 tmp_STAMP1_DRDY_SGR1 <= STAMP1_DRDY_SGR1;
 
@@ -400,6 +398,8 @@ STAMP6_SCLK <= tmp_STAMP6_SCLK;
 
 TM_TXD <= tmp_TM_TXD;
 
+tmp_IO_WP <= IO_WP;
+
 
 
 u1:   root port map (
@@ -409,7 +409,6 @@ u1:   root port map (
 		IN_RXSM_LO => tmp_IN_RXSM_LO,
 		IN_RXSM_SODS => tmp_IN_RXSM_SODS,
 		IN_RXSM_SOE => tmp_IN_RXSM_SOE,
-		IN_WP => tmp_IN_WP,
 		STAMP1_DRDY_SGR1 => tmp_STAMP1_DRDY_SGR1,
 		STAMP1_DRDY_SGR2 => tmp_STAMP1_DRDY_SGR2,
 		STAMP1_DRDY_TEMP => tmp_STAMP1_DRDY_TEMP,
@@ -478,6 +477,7 @@ u1:   root port map (
 		STAMP6_CS_TEMP => tmp_STAMP6_CS_TEMP,
 		STAMP6_MOSI => tmp_STAMP6_MOSI,
 		STAMP6_SCLK => tmp_STAMP6_SCLK,
-		TM_TXD => tmp_TM_TXD
+		TM_TXD => tmp_TM_TXD,
+		IO_WP => tmp_IO_WP
        );
 end rtl;

@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- Created by SmartDesign Thu Jul  7 16:22:41 2022
+-- Created by SmartDesign Mon Feb 13 08:37:27 2023
 -- Version: 2021.3 2021.3.0.10
 ----------------------------------------------------------------------
 
@@ -59,11 +59,15 @@ entity root_sb is
         -- Outputs
         FIC_0_CLK          : out std_logic;
         FIC_0_LOCK         : out std_logic;
+        GPIO_21_M2F        : out std_logic;
+        GPIO_22_M2F        : out std_logic;
         GPIO_26_M2F        : out std_logic;
         GPIO_28_M2F        : out std_logic;
         GPIO_29_M2F        : out std_logic;
         GPIO_30_M2F        : out std_logic;
         GPIO_31_M2F        : out std_logic;
+        GPIO_3_M2F         : out std_logic;
+        GPIO_3_M2F_OE      : out std_logic;
         INIT_DONE          : out std_logic;
         MMUART_0_TXD_M2F   : out std_logic;
         MMUART_1_TXD_M2F   : out std_logic;
@@ -73,7 +77,6 @@ entity root_sb is
         SPI_0_DO_M2F       : out std_logic;
         SPI_0_SS0_M2F      : out std_logic;
         SPI_0_SS0_M2F_OE   : out std_logic;
-        SPI_0_SS1_M2F      : out std_logic;
         STAMP_1_PADDRS     : out std_logic_vector(31 downto 0);
         STAMP_1_PENABLES   : out std_logic;
         STAMP_1_PSELS1     : out std_logic;
@@ -276,19 +279,22 @@ component root_sb_MSS
         FIC_2_APB_M_PSEL       : out std_logic;
         FIC_2_APB_M_PWDATA     : out std_logic_vector(31 downto 0);
         FIC_2_APB_M_PWRITE     : out std_logic;
+        GPIO_21_M2F            : out std_logic;
+        GPIO_22_M2F            : out std_logic;
         GPIO_26_M2F            : out std_logic;
         GPIO_28_M2F            : out std_logic;
         GPIO_29_M2F            : out std_logic;
         GPIO_30_M2F            : out std_logic;
         GPIO_31_M2F            : out std_logic;
+        GPIO_3_M2F             : out std_logic;
+        GPIO_3_M2F_OE          : out std_logic;
         MMUART_0_TXD_M2F       : out std_logic;
         MMUART_1_TXD_M2F       : out std_logic;
         MSS_RESET_N_M2F        : out std_logic;
         SPI_0_CLK_M2F          : out std_logic;
         SPI_0_DO_M2F           : out std_logic;
         SPI_0_SS0_M2F          : out std_logic;
-        SPI_0_SS0_M2F_OE       : out std_logic;
-        SPI_0_SS1_M2F          : out std_logic
+        SPI_0_SS0_M2F_OE       : out std_logic
         );
 end component;
 -- SYSRESET
@@ -309,6 +315,10 @@ signal FABOSC_0_RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC : std_logic;
 signal FABOSC_0_RCOSC_25_50MHZ_O2F                        : std_logic;
 signal FIC_0_CLK_net_0                                    : std_logic;
 signal FIC_0_LOCK_net_0                                   : std_logic;
+signal GPIO_3_M2F_net_0                                   : std_logic;
+signal GPIO_3_M2F_OE_net_0                                : std_logic;
+signal GPIO_21_M2F_net_0                                  : std_logic;
+signal GPIO_22_M2F_net_0                                  : std_logic;
 signal GPIO_26_M2F_net_0                                  : std_logic;
 signal GPIO_28_M2F_net_0                                  : std_logic;
 signal GPIO_29_M2F_net_0                                  : std_logic;
@@ -333,7 +343,6 @@ signal SPI_0_CLK_M2F_net_0                                : std_logic;
 signal SPI_0_DO_M2F_net_0                                 : std_logic;
 signal SPI_0_SS0_M2F_net_0                                : std_logic;
 signal SPI_0_SS0_M2F_OE_net_0                             : std_logic;
-signal SPI_0_SS1_M2F_net_0                                : std_logic;
 signal STAMP_PADDR                                        : std_logic_vector(31 downto 0);
 signal STAMP_PENABLE                                      : std_logic;
 signal STAMP_PSELx                                        : std_logic;
@@ -381,6 +390,10 @@ signal FIC_0_LOCK_net_1                                   : std_logic;
 signal MSS_READY_net_1                                    : std_logic;
 signal MMUART_0_TXD_M2F_net_1                             : std_logic;
 signal MMUART_1_TXD_M2F_net_1                             : std_logic;
+signal GPIO_3_M2F_net_1                                   : std_logic;
+signal GPIO_3_M2F_OE_net_1                                : std_logic;
+signal GPIO_21_M2F_net_1                                  : std_logic;
+signal GPIO_22_M2F_net_1                                  : std_logic;
 signal GPIO_26_M2F_net_1                                  : std_logic;
 signal GPIO_28_M2F_net_1                                  : std_logic;
 signal GPIO_29_M2F_net_1                                  : std_logic;
@@ -390,7 +403,6 @@ signal SPI_0_DO_M2F_net_1                                 : std_logic;
 signal SPI_0_CLK_M2F_net_1                                : std_logic;
 signal SPI_0_SS0_M2F_net_1                                : std_logic;
 signal SPI_0_SS0_M2F_OE_net_1                             : std_logic;
-signal SPI_0_SS1_M2F_net_1                                : std_logic;
 signal MSS_INT_F2M_net_0                                  : std_logic_vector(15 downto 0);
 ----------------------------------------------------------------------
 -- TiedOff Signals
@@ -519,6 +531,14 @@ begin
  MMUART_0_TXD_M2F             <= MMUART_0_TXD_M2F_net_1;
  MMUART_1_TXD_M2F_net_1       <= MMUART_1_TXD_M2F_net_0;
  MMUART_1_TXD_M2F             <= MMUART_1_TXD_M2F_net_1;
+ GPIO_3_M2F_net_1             <= GPIO_3_M2F_net_0;
+ GPIO_3_M2F                   <= GPIO_3_M2F_net_1;
+ GPIO_3_M2F_OE_net_1          <= GPIO_3_M2F_OE_net_0;
+ GPIO_3_M2F_OE                <= GPIO_3_M2F_OE_net_1;
+ GPIO_21_M2F_net_1            <= GPIO_21_M2F_net_0;
+ GPIO_21_M2F                  <= GPIO_21_M2F_net_1;
+ GPIO_22_M2F_net_1            <= GPIO_22_M2F_net_0;
+ GPIO_22_M2F                  <= GPIO_22_M2F_net_1;
  GPIO_26_M2F_net_1            <= GPIO_26_M2F_net_0;
  GPIO_26_M2F                  <= GPIO_26_M2F_net_1;
  GPIO_28_M2F_net_1            <= GPIO_28_M2F_net_0;
@@ -537,8 +557,6 @@ begin
  SPI_0_SS0_M2F                <= SPI_0_SS0_M2F_net_1;
  SPI_0_SS0_M2F_OE_net_1       <= SPI_0_SS0_M2F_OE_net_0;
  SPI_0_SS0_M2F_OE             <= SPI_0_SS0_M2F_OE_net_1;
- SPI_0_SS1_M2F_net_1          <= SPI_0_SS1_M2F_net_0;
- SPI_0_SS1_M2F                <= SPI_0_SS1_M2F_net_1;
 ----------------------------------------------------------------------
 -- Concatenation assignments
 ----------------------------------------------------------------------
@@ -819,6 +837,10 @@ root_sb_MSS_0 : root_sb_MSS
         MMUART_0_TXD_M2F       => MMUART_0_TXD_M2F_net_0,
         MMUART_1_TXD_M2F       => MMUART_1_TXD_M2F_net_0,
         MSS_RESET_N_M2F        => root_sb_MSS_TMP_0_MSS_RESET_N_M2F,
+        GPIO_3_M2F             => GPIO_3_M2F_net_0,
+        GPIO_3_M2F_OE          => GPIO_3_M2F_OE_net_0,
+        GPIO_21_M2F            => GPIO_21_M2F_net_0,
+        GPIO_22_M2F            => GPIO_22_M2F_net_0,
         GPIO_26_M2F            => GPIO_26_M2F_net_0,
         GPIO_28_M2F            => GPIO_28_M2F_net_0,
         GPIO_29_M2F            => GPIO_29_M2F_net_0,
@@ -828,7 +850,6 @@ root_sb_MSS_0 : root_sb_MSS
         SPI_0_CLK_M2F          => SPI_0_CLK_M2F_net_0,
         SPI_0_SS0_M2F          => SPI_0_SS0_M2F_net_0,
         SPI_0_SS0_M2F_OE       => SPI_0_SS0_M2F_OE_net_0,
-        SPI_0_SS1_M2F          => SPI_0_SS1_M2F_net_0,
         FIC_0_APB_M_PSEL       => root_sb_MSS_TMP_0_FIC_0_APB_MASTER_PSELx,
         FIC_0_APB_M_PWRITE     => root_sb_MSS_TMP_0_FIC_0_APB_MASTER_PWRITE,
         FIC_0_APB_M_PENABLE    => root_sb_MSS_TMP_0_FIC_0_APB_MASTER_PENABLE,

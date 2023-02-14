@@ -1,26 +1,26 @@
 #--  Synopsys, Inc.
 #--  Version R-2021.03M-SP1
-#--  Project file C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\synthesis\run_options.txt
-#--  Written on Tue Jul 12 21:30:24 2022
+#--  Project file C:\Users\RG\Documents\Firmware\fpga\synthesis\run_options.txt
+#--  Written on Tue Feb 14 11:07:12 2023
 
 
 #project files
-add_file -vhdl -lib work "C:/Users/jl/source/repos/hermess/hermess-Firmware/fpga/hdl/spi_master.vhd"
-add_file -vhdl -lib work "C:/Users/jl/source/repos/hermess/hermess-Firmware/fpga/hdl/STAMP.vhd"
-add_file -vhdl -lib COREAPB3_LIB "C:/Users/jl/source/repos/hermess/hermess-Firmware/fpga/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/coreapb3_muxptob3.vhd"
-add_file -vhdl -lib COREAPB3_LIB "C:/Users/jl/source/repos/hermess/hermess-Firmware/fpga/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/coreapb3_iaddr_reg.vhd"
-add_file -vhdl -lib COREAPB3_LIB "C:/Users/jl/source/repos/hermess/hermess-Firmware/fpga/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/coreapb3.vhd"
-add_file -vhdl -lib work "C:/Users/jl/source/repos/hermess/hermess-Firmware/fpga/component/Actel/DirectCore/CoreResetP/7.1.100/rtl/vhdl/core/coreresetp_pcie_hotreset.vhd"
-add_file -vhdl -lib work "C:/Users/jl/source/repos/hermess/hermess-Firmware/fpga/component/Actel/DirectCore/CoreResetP/7.1.100/rtl/vhdl/core/coreresetp.vhd"
-add_file -vhdl -lib work "C:/Users/jl/source/repos/hermess/hermess-Firmware/fpga/component/work/root_sb/CCC_0/root_sb_CCC_0_FCCC.vhd"
-add_file -vhdl -lib work "C:/Users/jl/source/repos/hermess/hermess-Firmware/fpga/component/Actel/SgCore/OSC/2.0.101/osc_comps.vhd"
-add_file -vhdl -lib work "C:/Users/jl/source/repos/hermess/hermess-Firmware/fpga/component/work/root_sb/FABOSC_0/root_sb_FABOSC_0_OSC.vhd"
-add_file -vhdl -lib work "C:/Users/jl/source/repos/hermess/hermess-Firmware/fpga/component/work/root_sb_MSS/root_sb_MSS_syn.vhd"
-add_file -vhdl -lib work "C:/Users/jl/source/repos/hermess/hermess-Firmware/fpga/component/work/root_sb_MSS/root_sb_MSS.vhd"
-add_file -vhdl -lib COREAPB3_LIB "C:/Users/jl/source/repos/hermess/hermess-Firmware/fpga/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/components.vhd"
-add_file -vhdl -lib work "C:/Users/jl/source/repos/hermess/hermess-Firmware/fpga/component/work/root_sb/root_sb.vhd"
-add_file -vhdl -lib work "C:/Users/jl/source/repos/hermess/hermess-Firmware/fpga/component/work/root/root.vhd"
-add_file -fpga_constraint "C:/Users/jl/source/repos/hermess/hermess-Firmware/fpga/designer/root/synthesis.fdc"
+add_file -vhdl -lib work "C:/Users/RG/Documents/Firmware/fpga/hdl/spi_master.vhd"
+add_file -vhdl -lib work "C:/Users/RG/Documents/Firmware/fpga/hdl/STAMP.vhd"
+add_file -vhdl -lib COREAPB3_LIB "C:/Users/RG/Documents/Firmware/fpga/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/coreapb3_muxptob3.vhd"
+add_file -vhdl -lib COREAPB3_LIB "C:/Users/RG/Documents/Firmware/fpga/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/coreapb3_iaddr_reg.vhd"
+add_file -vhdl -lib COREAPB3_LIB "C:/Users/RG/Documents/Firmware/fpga/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/coreapb3.vhd"
+add_file -vhdl -lib work "C:/Users/RG/Documents/Firmware/fpga/component/Actel/DirectCore/CoreResetP/7.1.100/rtl/vhdl/core/coreresetp_pcie_hotreset.vhd"
+add_file -vhdl -lib work "C:/Users/RG/Documents/Firmware/fpga/component/Actel/DirectCore/CoreResetP/7.1.100/rtl/vhdl/core/coreresetp.vhd"
+add_file -vhdl -lib work "C:/Users/RG/Documents/Firmware/fpga/component/work/root_sb/CCC_0/root_sb_CCC_0_FCCC.vhd"
+add_file -vhdl -lib work "C:/Users/RG/Documents/Firmware/fpga/component/Actel/SgCore/OSC/2.0.101/osc_comps.vhd"
+add_file -vhdl -lib work "C:/Users/RG/Documents/Firmware/fpga/component/work/root_sb/FABOSC_0/root_sb_FABOSC_0_OSC.vhd"
+add_file -vhdl -lib work "C:/Users/RG/Documents/Firmware/fpga/component/work/root_sb_MSS/root_sb_MSS_syn.vhd"
+add_file -vhdl -lib work "C:/Users/RG/Documents/Firmware/fpga/component/work/root_sb_MSS/root_sb_MSS.vhd"
+add_file -vhdl -lib COREAPB3_LIB "C:/Users/RG/Documents/Firmware/fpga/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/components.vhd"
+add_file -vhdl -lib work "C:/Users/RG/Documents/Firmware/fpga/component/work/root_sb/root_sb.vhd"
+add_file -vhdl -lib work "C:/Users/RG/Documents/Firmware/fpga/component/work/root/root.vhd"
+add_file -fpga_constraint "C:/Users/RG/Documents/Firmware/fpga/designer/root/synthesis.fdc"
 
 
 #implementation: "synthesis"

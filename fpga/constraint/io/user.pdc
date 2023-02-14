@@ -6,11 +6,13 @@
 
 # Family: SmartFusion2 , Die: M2S010 , Package: 144 TQ
 
-# Date generated: Tue Jun 14 23:09:53 2022 
+# Date generated: Mon Feb 13 08:54:05 2023 
+
 
 # 
 # User Locked I/O Bank Settings
 # 
+
 
 # 
 # Unlocked I/O Bank Settings
@@ -18,10 +20,10 @@
 # or by making changes in the I/O Attribute Editor
 # 
 
+
 # 
 # User Locked I/O settings
 # 
-
 
 set_io DAPI_RTS        \
     -pinname 115       \
@@ -47,9 +49,4 @@ set_io DAPI_RTS        \
 #Ports using Dedicated Pins
 
 #
-
-set_io DEVRST_N       \
-    -pinname 72       \
-    -DIRECTION INPUT
-
 

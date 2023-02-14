@@ -1,6 +1,6 @@
 <project name="root" version="1.2">
     <ProjectDirectory>
-        C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\designer\root\root_fp
+        C:\Users\RG\Documents\Firmware\fpga\designer\root\root_fp
     </ProjectDirectory>
     <View>
         ChainView
@@ -9,7 +9,7 @@
         M2S010
     </LiberoTargetDevice>
     <LogFile>
-        C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\designer\root\root_fp\root.log
+        C:\Users\RG\Documents\Firmware\fpga\designer\root\root_fp\root.log
     </LogFile>
     <SerializationOption>
         Skip

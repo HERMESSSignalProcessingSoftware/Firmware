@@ -3,7 +3,7 @@
 <doc>
 <title>Resource Report</title>
 <text>Microsemi Corporation - Microsemi Libero Software Release v2021.3 (Version 2021.3.0.10)</text>
-<text>Date: Tue Jul 12 21:30:55 2022
+<text>Date: Tue Feb 14 11:07:51 2023
 </text>
 <section><name>Device Selection</name></section>
 <table>
@@ -76,7 +76,7 @@
 </row>
 <row>
  <cell>Source</cell>
- <cell>C:\Users\jl\source\repos\hermess\hermess-Firmware\fpga\synthesis\root.vm</cell>
+ <cell>C:\Users\RG\Documents\Firmware\fpga\synthesis\root.vm</cell>
 </row>
 </table>
 <section><name>Options</name></section>
@@ -354,13 +354,13 @@
 </header>
 <row>
  <cell>Input I/O</cell>
- <cell>31</cell>
+ <cell>30</cell>
  <cell>0</cell>
  <cell>0</cell>
 </row>
 <row>
  <cell>Output I/O</cell>
- <cell>44</cell>
+ <cell>45</cell>
  <cell>0</cell>
  <cell>0</cell>
 </row>
@@ -397,8 +397,8 @@
  <cell>LVCMOS33</cell>
  <cell> 3.30v</cell>
  <cell> N/A</cell>
- <cell> 31</cell>
- <cell> 44</cell>
+ <cell> 30</cell>
+ <cell> 45</cell>
  <cell> 0</cell>
 </row>
 </table>
