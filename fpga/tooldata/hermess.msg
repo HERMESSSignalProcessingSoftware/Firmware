@@ -283,5 +283,5 @@ Implementation;Synthesis||MT420||@W:Found inferred clock root_sb_CCC_0_FCCC|GL0_
 Implementation;Synthesis||MT420||@W:Found inferred clock root_sb_FABOSC_0_OSC|RCOSC_25_50MHZ_CCC_inferred_clock with period 10.00ns. Please declare a user-defined clock on net MSS.FABOSC_0.FABOSC_0_RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC.||root.srr(913);liberoaction://cross_probe/hdl/file/'<project>\synthesis\root.srr'/linenumber/913||null;null
 Implementation;Place and Route;RootName:root
 Implementation;Place and Route||(null)||Please refer to the log file for details about 5 Info(s)||root_layout_log.log;liberoaction://open_report/file/root_layout_log.log||(null);(null)
-Implementation;Generate Bitstream||(null)||Please refer to the log file for details about 1 Info(s)||root_generateBitstream.log;liberoaction://open_report/file/root_generateBitstream.log||(null);(null)
 Implementation;Generate Bitstream;RootName:root
+Implementation;Generate Bitstream||(null)||Please refer to the log file for details about 1 Info(s)||root_generateBitstream.log;liberoaction://open_report/file/root_generateBitstream.log||(null);(null)

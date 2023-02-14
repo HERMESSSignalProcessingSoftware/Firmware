@@ -656,22 +656,22 @@ PARENT="<project>\component\work\root_sb_MSS\root_sb_MSS.cxf"
 ENDFILE
 VALUE "<project>\synthesis\root.so,so"
 STATE="utd"
-TIME="1676364479"
+TIME="1676369261"
 SIZE="218"
 ENDFILE
 VALUE "<project>\synthesis\root.vm,syn_vm"
 STATE="utd"
-TIME="1676364479"
+TIME="1676369260"
 SIZE="1407421"
 ENDFILE
 VALUE "<project>\synthesis\root_syn.prj,prj"
 STATE="utd"
-TIME="1676364479"
+TIME="1676369262"
 SIZE="4058"
 ENDFILE
 VALUE "<project>\synthesis\root_vm.sdc,syn_sdc"
 STATE="utd"
-TIME="1676364479"
+TIME="1676369260"
 SIZE="1081"
 ENDFILE
 ENDLIST
@@ -937,8 +937,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_SoC_v2021.3\SynplifyPro\bin\synplify_pro.exe"
-PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
-BATCH=1
+PARAM=""
+BATCH=0
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -1042,11 +1042,11 @@ ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
 Reports;Reports;0
-ReportsCurrentItem;Generate Memory Map:root_DataSheet.xml
-StartPage;StartPage;0
+ReportsCurrentItem;Export FlashPro Express Job:root_exportJob.log
 Constraint Manager;Constraint Manager;0
+StartPage;StartPage;0
 SmartDesign;root;0
-ACTIVEVIEW;Constraint Manager
+ACTIVEVIEW;Reports
 ENDLIST
 LIST ModuleSubBlockList
 LIST "coreresetp_pcie_hotreset::work","component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vhdl\core\coreresetp_pcie_hotreset.vhd","FALSE","FALSE"
