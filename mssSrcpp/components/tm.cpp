@@ -36,22 +36,22 @@ void Tm::worker2Hz () {
 
         // fill text part
         if (!msgQueue.empty()) {
-            std::string &text = msgQueue.front();
+            Message text = msgQueue.front();
 
             // calculate the number of characters to be transmitted, including
             // one terminating null character
-            uint8_t copyLength = text.size() + 1 - sentMsgBytes;
+            uint8_t copyLength = text.size + 1 - sentMsgBytes;
             if (copyLength > 54)
                 copyLength = 54;
 
             // copy the characters to the tx buffer
-            std::memcpy(&txBuffer[6], &(text.c_str()[sentMsgBytes]),
+            std::memcpy(&txBuffer[6], &(text.ptr[sentMsgBytes]),
                     copyLength);
             sentMsgBytes += copyLength;
 
             // pop last message, if it has been fully copied already
-            if (sentMsgBytes >= (text.size() + 1)) {
-                queueSize -= msgQueue.front().size();
+            if (sentMsgBytes >= (text.size + 1)) {
+                queueSize -= msgQueue.front().size;
                 msgQueue.pop();
                 sentMsgBytes = 0;
             }
@@ -75,7 +75,7 @@ Tm &Tm::operator<< (std::string msg) {
     // do not push message, if not allowed by configuration
     if (Controller::getInstance().configuration.enableTm
             && (queueSize + size) <= TM_MAX_BUFFER_SIZE) {
-        msgQueue.push(msg);
+        msgQueue.push(Message((const uint8_t*) msg.c_str(), msg.size()));
         queueSize += size;
     }
     return *this;
@@ -93,4 +93,3 @@ Tm::Tm () {
     txBuffer[62] = 0x17;
     txBuffer[63] = 0xF0;
 }
-

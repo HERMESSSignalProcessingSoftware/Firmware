@@ -3,6 +3,7 @@
 
 #include <stdint.h>
 #include <string>
+#include "../tools/message.h"
 #include "../tools/queue.h"
 
 // The maximum number of content bytes stored in the message buffer. Potentially
@@ -55,7 +56,7 @@ private:
     uint8_t sendingTimestampByte = 5; /**< Number of bytes of the timestamp
     already sent */
 
-    Queue<std::string> msgQueue; /**< The queue containing all messages
+    Queue<Message> msgQueue; /**< The queue containing all messages
     to be sent via TM. The front message is potentially partially
     transmitted already as indicated by sentBytes. */
 

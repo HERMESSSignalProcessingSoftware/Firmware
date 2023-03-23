@@ -157,27 +157,6 @@ Dapi& Dapi::sendLiveData(const Datapackage &dp) {
     return this->transmitRaw(toTransmit, transmissionSize);
 }
 
-Dapi::Message::Message(const uint8_t *const ptr, const uint32_t size) :
-        size { size }, ptr { nullptr } {
-    // get appropriately sized array and make string copy
-    uint8_t *copy = new uint8_t[size];
-    std::memcpy(copy, ptr, size);
-    this->ptr = copy;
-}
-
-Dapi::Message::Message(const Message &other) :
-        size { other.size }, ptr { nullptr } {
-    // get appropriately sized array and make string copy
-    uint8_t *copy = new uint8_t[size];
-    std::memcpy(copy, other.ptr, size);
-    this->ptr = copy;
-}
-
-Dapi::Message::~Message() {
-    // delete array
-    delete[] ptr;
-}
-
 void Dapi::rxHandler(mss_uart_instance_t *this_uart) {
     MSS_GPIO_set_output(GPIO_PORT(OUT_DAPI_CTS), 1);
     Dapi &dapi = Dapi::getInstance();

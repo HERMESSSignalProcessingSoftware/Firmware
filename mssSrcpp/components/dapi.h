@@ -3,6 +3,7 @@
 
 #include <string>
 #include "../sf2drivers/drivers/mss_uart/mss_uart.h"
+#include "../tools/message.h"
 #include "../tools/queue.h"
 #include "../tools/datapackage.h"
 
@@ -75,38 +76,6 @@ public:
     Dapi &sendLiveData (const Datapackage &dp);
 
 private:
-    /** Message container class
-     *
-     * An internal class for RAII management of message arrays
-     */
-    struct Message {
-        /** Message object constructor
-         *
-         * Copies the entire message to be transmitted into a self
-         * managed memory area
-         * @param ptr the starting address
-         * @param size the size to be transmitted in bytes
-         */
-        Message (const uint8_t * const ptr, const uint32_t size);
-
-        /** Copy constructor
-         *
-         * Also copies the underlying string
-         * @param other The object to copy
-         */
-        Message (const Message &other);
-
-        /** Message object destructor
-         *
-         * Deletes the array behind ptr
-         */
-        ~Message ();
-
-        const uint8_t *ptr; /**< the start address of the array */
-
-        const uint32_t size; /**< size of the array */
-    };
-
     /**
      * UART RX receiver function
      *
