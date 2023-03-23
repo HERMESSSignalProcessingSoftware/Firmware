@@ -32,10 +32,9 @@ void Controller::worker() {
     if (getGpioInput(IN_RXSM_LO) == rxsmSignal[0]) {
         rxsmSignal[0] = !rxsmSignal[0];
         if (rxsmSignal[0]) {
-            MsgHandler::getInstance().info("LO asserted");
-            MsgHandler::getInstance().info("FLOMESS MODE ACTIVATED! Self destruction in progress.");
+            MsgHandler::getInstance().info("LO high");
         } else {
-            MsgHandler::getInstance().info("LO released");
+            MsgHandler::getInstance().info("LO low");
         }
     }
 
@@ -44,14 +43,14 @@ void Controller::worker() {
         rxsmSignal[1] = !rxsmSignal[1];
 
         std::string msg = std::string("SOE ")
-                + (rxsmSignal[1] ? "asserted" : "released");
+                + (rxsmSignal[1] ? "high" : "low");
         bool warning = false;
         if (!rxsmSignal[1]) {
             if (clearingMemory) {
                 // abort clearing memory
                 Memory::getInstance().abortClearMemory();
                 clearingMemory = false;
-                msg.append(": Nice Try LOL clearing memory");
+                msg.append(": already clearing");
             }
         } else if (rxsmSignal[1] && !rxsmSignal[0] && !storedAcquisition
                 && configuration.enableClear && getGpioInput(IN_WP)) {
@@ -61,9 +60,7 @@ void Controller::worker() {
             msg.append(": Clearing memory");
         } else {
             // do not clear memory
-            msg.append(": Not clearing memory because measurements are "
-                    "running or LO is asserted or configuration "
-                    "prohibition or write protection");
+            msg.append(": Ignored.");
             warning = true;
         }
 

@@ -6,9 +6,9 @@ Info: Programming Interface selected is JTAG.
 File/Folder 'C:\Users\RG\Documents\Firmware\fpga\designer\root\root.ppd' will be overwritten.
 Successfully exported PPD file for currently secured device: 'C:\Users\RG\Documents\Firmware\fpga\designer\root\root.ppd'; file programs Fabric and eNVM.
 Fabric component bitstream digest: 77f1a44627d317fa34d9d681e0d4dc793acc49ebb16e213cf6b6bc30a6167089
-eNVM component bitstream digest: c2f12f57f699ada6a9648c12d8a22be4ad7bc3700a0d1f4b4b4089769d749717
-Entire bitstream digest: ef3f5a2272ad71337a93f143071f1d492211efc7ecd0a4ce24597565924bde01
-Finished: Tue Feb 14 18:15:29 2023 (Elapsed time 00:00:07)
+eNVM component bitstream digest: a9fb496b3a89cac35f976fcf79c407317519a266faa6dd7ca6320667c3160eae
+Entire bitstream digest: d7869d49dfdb539736d334c23b3808ccf15c423ca9014ea83e0f9e871b7b1732
+Finished: Thu Mar 23 09:11:02 2023 (Elapsed time 00:00:08)
 
 Project saved.
 Project closed.

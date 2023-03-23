@@ -5,7 +5,6 @@
 
 template <typename T> void Queue<T>::push (T item) {
     QueueElement *newPtr = new QueueElement(item);
-
     // append to existing list
     if (head) {
         QueueElement *curPtr = head;

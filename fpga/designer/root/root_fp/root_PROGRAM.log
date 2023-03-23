@@ -19,19 +19,19 @@ programmer 'E2006QE3OZ' : device 'M2S010' : Family: SmartFusion2
 programmer 'E2006QE3OZ' : device 'M2S010' : Product:      M2S010
 programmer 'E2006QE3OZ' : device 'M2S010' : Cortex-M3 Enabled (M3_ALLOWED = 1)
 programmer 'E2006QE3OZ' : device 'M2S010' : Programming Interface Protocol: JTAG
-programmer 'E2006QE3OZ' : device 'M2S010' : EXPORT ISC_ENABLE_RESULT[32] = 007c6844
+programmer 'E2006QE3OZ' : device 'M2S010' : EXPORT ISC_ENABLE_RESULT[32] = 007c6c44
 programmer 'E2006QE3OZ' : device 'M2S010' : EXPORT CRCERR[1] = 0
 programmer 'E2006QE3OZ' : device 'M2S010' : EXPORT EDCERR[1] = 0
 programmer 'E2006QE3OZ' : device 'M2S010' : Programming FPGA Array and eNVM...
 programmer 'E2006QE3OZ' : device 'M2S010' : EXPORT Fabric component digest[256] = 77f1a44627d317fa34d9d681e0d4dc793acc49ebb16e213cf6b6bc30a6167089
-programmer 'E2006QE3OZ' : device 'M2S010' : EXPORT eNVM component digest[256] = c2f12f57f699ada6a9648c12d8a22be4ad7bc3700a0d1f4b4b4089769d749717
+programmer 'E2006QE3OZ' : device 'M2S010' : EXPORT eNVM component digest[256] = a9fb496b3a89cac35f976fcf79c407317519a266faa6dd7ca6320667c3160eae
 programmer 'E2006QE3OZ' : device 'M2S010' : ===================================================================================
 programmer 'E2006QE3OZ' : device 'M2S010' : EXPORT DSN[128] = bb71370179e52ed2328268dd9a9be778
 programmer 'E2006QE3OZ' : device 'M2S010' : ===================================================================================
-programmer 'E2006QE3OZ' : device 'M2S010' : Finished: Tue Feb 14 18:16:22 2023 (Elapsed time 00:00:38)
+programmer 'E2006QE3OZ' : device 'M2S010' : Finished: Thu Mar 23 09:12:33 2023 (Elapsed time 00:00:36)
 programmer 'E2006QE3OZ' : device 'M2S010' : Executing action PROGRAM PASSED.
 programmer 'E2006QE3OZ' : Chain programming PASSED.
-Chain Programming Finished: Tue Feb 14 18:16:22 2023 (Elapsed time 00:00:38)
+Chain Programming Finished: Thu Mar 23 09:12:33 2023 (Elapsed time 00:00:36)
 
                         o - o - o - o - o - o
 
