@@ -82,11 +82,9 @@ void Dapi::worker() {
                 break;
             case 0x03:
                 // Start live data acquisition
-                Controller::getInstance().setLiveDataAcquisition(true);
                 break;
             case 0x04:
                 // Stop live data acquisition
-                Controller::getInstance().setLiveDataAcquisition(false);
                 break;
             case 0x05:
                 // Read SPU configuration data

@@ -47,30 +47,30 @@ extern "C" void Timer1_IRQHandler () {
 
 
 extern "C" void Timer2_IRQHandler () {
-    Controller::getInstance().timestamp++;
+    Controller::getInstance().increaseTimestamp();
     MSS_TIM2_clear_irq();
 }
 
 extern "C" void F2M_INT_HANDLER(INT_STAMP1) () {
-    Measurement::getInstance().handleStampInterrupt(0);
 }
 
 extern "C" void F2M_INT_HANDLER(INT_STAMP2) () {
-    Measurement::getInstance().handleStampInterrupt(1);
+
 }
 
 extern "C" void F2M_INT_HANDLER(INT_STAMP3) () {
-    Measurement::getInstance().handleStampInterrupt(2);
+
 }
 
 extern "C" void F2M_INT_HANDLER(INT_STAMP4) () {
-    Measurement::getInstance().handleStampInterrupt(3);
+
 }
 
 extern "C" void F2M_INT_HANDLER(INT_STAMP5) () {
-    Measurement::getInstance().handleStampInterrupt(4);
+
 }
 
 extern "C" void F2M_INT_HANDLER(INT_STAMP6) () {
-    Measurement::getInstance().handleStampInterrupt(5);
+
 }
+

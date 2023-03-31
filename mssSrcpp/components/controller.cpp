@@ -1,7 +1,6 @@
 #include "controller.h"
 #include "dapi.h"
 #include "memory.h"
-#include "tm.h"
 #include "../sf2drivers/drivers/mss_gpio/mss_gpio.h"
 #include "../sf2drivers/drivers/mss_timer/mss_timer.h"
 #include "../tools/msghandler.h"
@@ -20,164 +19,11 @@ void Controller::worker() {
         hbLedOutputState[1] = !hbLedOutputState[1];
         MSS_GPIO_set_output(GPIO_PORT(LED_HB_MSS), hbLedOutputState[1]);
         // run the TM worker
-        Tm::getInstance().worker2Hz();
-        if (rxsmSignal[2])
-            Memory::getInstance().updateMetadata();
-    }
-
-    // toggle write protection indicator LED
-    MSS_GPIO_set_output(GPIO_PORT(LED_HB_MEMSYNC), getGpioInput(IN_WP));
-
-    // run this, if the LO occurred
-    if (getGpioInput(IN_RXSM_LO) == rxsmSignal[0]) {
-        rxsmSignal[0] = !rxsmSignal[0];
-        if (rxsmSignal[0]) {
-            MsgHandler::getInstance().info("LO high");
-        } else {
-            MsgHandler::getInstance().info("LO low");
-        }
-    }
-
-    // run this, if SOE change occurred
-    if (getGpioInput(IN_RXSM_SOE) == rxsmSignal[1]) {
-        rxsmSignal[1] = !rxsmSignal[1];
-
-        std::string msg = std::string("SOE ")
-                + (rxsmSignal[1] ? "high" : "low");
-        bool warning = false;
-        if (!rxsmSignal[1]) {
-            if (clearingMemory) {
-                // abort clearing memory
-                Memory::getInstance().abortClearMemory();
-                clearingMemory = false;
-                msg.append(": already clearing");
-            }
-        } else if (rxsmSignal[1] && !rxsmSignal[0] && !storedAcquisition
-                && configuration.enableClear && getGpioInput(IN_WP)) {
-            // clear the memory on SOE, NOT LO and no current measurements
-            clearingMemory = true;
-            Memory::getInstance().clearMemory();
-            msg.append(": Clearing memory");
-        } else {
-            // do not clear memory
-            msg.append(": Ignored.");
-            warning = true;
-        }
-
-        if (warning)
-            MsgHandler::getInstance().warning(msg);
-        else
-            MsgHandler::getInstance().info(msg);
-    }
-    uint16_t memStatus = Memory::getInstance().memoryStatus();
-    uint8_t SR_Controller1 = (memStatus & 0xFF00) >> 8;
-    uint8_t SR_Controller2 = (memStatus & 0x00FF);
-    if (clearingMemory && ((SR_Controller1 & 0x01) == 0)
-            && ((SR_Controller2 & 0x01) == 0)) {
-        clearMemFinished();
-    }
-    // run this, if SODS change occurred
-    if (getGpioInput(IN_RXSM_SODS) == rxsmSignal[2]) {
-        rxsmSignal[2] = !rxsmSignal[2];
-
-        std::string msg = std::string("SODS ")
-                + (rxsmSignal[2] ? "asserted" : "released");
-        uint8_t type = 0;
-
-        // SODS was set
-        if (rxsmSignal[2]) {
-            // write protection was set
-            if (!getGpioInput(IN_WP)) {
-                msg.append(": Write protection set");
-                type = 2;
-            } else if (!configuration.enableStorage) {
-                msg.append(": Configuration prohibits storage");
-                type = 1;
-            } else if (storedAcquisition) {
-                msg.append(": Stored acquisition already running");
-                type = 1;
-            } else {
-                setStoredDataAcquisition(true);
-                msg.append(": Measurement started");
-            }
-        } else
-            clearedMemoryBeforeSods = false;
-
-        // send message
-        if (type == 0)
-            MsgHandler::getInstance().info(msg);
-        else if (type == 1)
-            MsgHandler::getInstance().warning(msg);
-        else
-            MsgHandler::getInstance().error(msg);
-    }
-
-    // check, if conditions are met to shut down the stored measurement
-    if (storedAcquisition
-            && ((!rxsmSignal[2] && timestamp >= configuration.minTimestamp)
-                    || timestamp >= configuration.maxTimestamp)) {
-        setStoredDataAcquisition(false);
-        MsgHandler::getInstance().info("Stored measurement stopped");
     }
 }
 
-void Controller::datapackageAvailable(const Datapackage &dp) {
-    // forward to memory
-    if (storedAcquisition)
-        Memory::getInstance().saveDp(dp);
-
-    // enter this if clause with 2Hz
-    if (++recCnt >= recCntThr) {
-        recCnt = 0;
-        hbLedOutputState[0] = !hbLedOutputState[0];
-        MSS_GPIO_set_output(GPIO_PORT(LED_RECORDING),
-                hbLedOutputState[0] ? 1 : 0);
-
-        if (liveAcquisition)
-            Dapi::getInstance().sendLiveData(dp);
-    }
-}
-
-void Controller::setStoredDataAcquisition(bool running) {
-    // abort, if stored acquisition already the same state
-    if (running == storedAcquisition)
-        return;
-    storedAcquisition = running;
-
-    if (running && liveAcquisition) {
-        resetTimestampGenerator();
-        MsgHandler::getInstance().warning("Live data timestamp reset to 0");
-    } else if (running && !liveAcquisition) {
-        resetTimestampGenerator();
-        Measurement::getInstance().setDataAcquisition(true);
-    } else if (!running && !liveAcquisition)
-        Measurement::getInstance().setDataAcquisition(false);
-}
-
-void Controller::setLiveDataAcquisition(bool running) {
-    std::string msg = "Live data acquisition ";
-    // abort, if live data acquisition is already running
-    if (running == liveAcquisition) {
-        MsgHandler::getInstance().warning(
-                msg + (running ? "already running" : "already stopped"));
-        return;
-    }
-    liveAcquisition = running;
-
-    // start continuous measurements
-    if (running && !storedAcquisition) {
-        resetTimestampGenerator();
-        Measurement::getInstance().setDataAcquisition(true);
-        MsgHandler::getInstance().info(msg + "started");
-    } else if (running && storedAcquisition) {
-        MsgHandler::getInstance().warning(msg + "started, but timestamps "
-                "will be off");
-    } else if (!running && !storedAcquisition) {
-        Measurement::getInstance().setDataAcquisition(false);
-        MsgHandler::getInstance().info(msg + "stopped");
-    } else {
-        MsgHandler::getInstance().info(msg + "stopped");
-    }
+void Controller::increaseTimestamp(void) {
+    timestamp++;
 }
 
 uint64_t Controller::getTimestamp() const {
@@ -194,12 +40,7 @@ uint8_t Controller::getStateByte() const {
 }
 
 void Controller::clearMemFinished() {
-    clearingMemory = false;
-    // set the cleared memory before sods flag to true, if the stored stored
-    // acquisition hasn't started yet
-    if (!storedAcquisition)
-        clearedMemoryBeforeSods = true;
-    MsgHandler::getInstance().info("Memory finished clearing");
+
 }
 
 void Controller::wdTriggered() {
@@ -217,53 +58,6 @@ Controller::Controller() {
     MSS_GPIO_set_output(GPIO_PORT(LED_HB_MSS), 0);
     MSS_GPIO_config(GPIO_PORT(LED_RECORDING), MSS_GPIO_OUTPUT_MODE);
     MSS_GPIO_set_output(GPIO_PORT(LED_RECORDING), 0);
-
-    // initialize inputs
-    MSS_GPIO_config(GPIO_PORT(IN_RXSM_LO), MSS_GPIO_INPUT_MODE);
-    MSS_GPIO_config(GPIO_PORT(IN_RXSM_SOE), MSS_GPIO_INPUT_MODE);
-    MSS_GPIO_config(GPIO_PORT(IN_RXSM_SODS), MSS_GPIO_INPUT_MODE);
-    MSS_GPIO_config(GPIO_PORT(IN_WP), MSS_GPIO_INOUT_MODE);
-    MSS_GPIO_set_output(GPIO_PORT(IN_WP), 1);
-
-    // set the heartbeatCounterThreshold depending on the SGR samplerate
-    switch (configuration.sgrSps) {
-    case apb_stamp::AdcCommandConfigure::SPS5:
-        recCntThr = 2;
-        break;
-    case apb_stamp::AdcCommandConfigure::SPS10:
-        recCntThr = 5;
-        break;
-    case apb_stamp::AdcCommandConfigure::SPS20:
-        recCntThr = 10;
-        break;
-    case apb_stamp::AdcCommandConfigure::SPS40:
-        recCntThr = 20;
-        break;
-    case apb_stamp::AdcCommandConfigure::SPS160:
-        recCntThr = 80;
-        break;
-    case apb_stamp::AdcCommandConfigure::SPS320:
-        recCntThr = 160;
-        break;
-    case apb_stamp::AdcCommandConfigure::SPS640:
-        recCntThr = 320;
-        break;
-    case apb_stamp::AdcCommandConfigure::SPS1000:
-        recCntThr = 500;
-        break;
-    default:
-        recCntThr = 1000;
-        break;
-    }
-
-    // enable MSS timer 2 for the timestamp generator
-    MSS_TIM2_init(MSS_TIMER_PERIODIC_MODE);
-    MSS_TIM2_load_background(25000);
-    MSS_TIM2_enable_irq();
-    MSS_TIM2_start();
-
-    // start timestamp generator
-    resetTimestampGenerator();
 }
 
 void Controller::resetTimestampGenerator() {

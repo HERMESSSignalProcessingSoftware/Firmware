@@ -12,31 +12,6 @@ Memory& Memory::getInstance() {
 }
 
 void Memory::worker() {
-    bool errorMemoryFull = false;
-    if (savedDataPoints >= 9) {
-        savedDataPoints = 0;
-        if (this->activeInterface == InterfaceOne) {
-            if (interfaceOne.getAddress() < PageCount) {
-                interfaceOne.writePage((uint8_t*) this->memory);
-                interfaceOne.increaseAddress();
-                activeInterface = InterfaceTwo;
-            } else {
-                errorMemoryFull = true;
-            }
-        } else if (this->activeInterface == InterfaceTwo) {
-            if (interfaceTwo.getAddress() < PageCount) {
-                interfaceTwo.writePage((uint8_t*) this->memory);
-                interfaceTwo.increaseAddress();
-                activeInterface = InterfaceOne;
-            } else {
-                errorMemoryFull = true;
-            }
-        } else {
-            // Meta interface read here
-        }
-    }
-    if (errorMemoryFull)
-        MsgHandler::getInstance().error("Memory full!");
 }
 
 uint32_t Memory::metaDataHighestAddress(void) {
@@ -90,39 +65,9 @@ uint32_t Memory::memoryStatus(void) {
 }
 
 void Memory::updateMetadata(void) {
-    uint8_t metaData[PageSize];
-    uint32_t *ptrMetadata = (uint32_t*) &metaData;
-    int32_t index = -1;
-    bool found = false;
-    if (savedDataPoints <= 7) {
-        while (!found && metaInterface.getAddress() < 0x200) {
-            metaInterface.readPage(metaData,
-                    PAGEADDR(metaInterface.getAddress()));
-            for (int i = 0; i < 128; i++) {
-                if (ptrMetadata[i] == 0xFFFFFFFF) {
-                    index = i;
-                    break;
-                }
-            }
-            if (index == -1) {
-                metaInterface.increaseAddress();
-            } else {
-                found = true;
-                if ((index > 0
-                        && interfaceOne.getAddress() != ptrMetadata[index - 1])
-                        || (index == 0)) {
-                    ptrMetadata[index] = interfaceOne.getAddress();
-                }
-            }
-        }
-        if (metaInterface.getAddress() < 0x200)
-            metaInterface.writePage(metaData);
-    }
 }
 
 void Memory::clearMemory() {
-    this->interfaceOne.chipErase();
-    this->interfaceTwo.chipErase();
 }
 
 void Memory::abortClearMemory() {
@@ -131,9 +76,6 @@ void Memory::abortClearMemory() {
 
 void Memory::saveDp(const Datapackage &dp) {
     if (savedDataPoints < DatasetsPerPage) {
-        uint8_t array[56];
-        dp.toBytes((unsigned char*) &array);
-        memcpy(this->memory + (56 * this->savedDataPoints++), array, 56);
     }
 }
 

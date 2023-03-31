@@ -1,7 +1,6 @@
 #ifndef COMPONENTS_CONTROLLER_H_
 #define COMPONENTS_CONTROLLER_H_
 
-#include "measurement.h"
 #include "../tools/configuration.h"
 
 
@@ -32,12 +31,6 @@ public:
      */
     void worker ();
 
-    /** Data package handler
-     *
-     * Transfers any assembled data package consisting of six STAMP data frames
-     * @param dp
-     */
-    void datapackageAvailable (const Datapackage &dp);
 
     /** Start / Stop data measurement for storage
      *
@@ -86,6 +79,7 @@ public:
      */
     void wdTriggered ();
 
+    void increaseTimestamp(void);
 private:
     volatile uint64_t timestamp = 0; /**< Timestamp in units of
     250us (=1/4kHz) */
@@ -141,7 +135,7 @@ private:
     void resetTimestampGenerator ();
 
     // define friend function for accessing timestamp
-    friend void Timer2_IRQHandler ();
+    //friend void Timer2_IRQHandler ();
 };
 
 
