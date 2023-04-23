@@ -46,7 +46,6 @@ uint32_t Memory::metaDataHighestAddress(void) {
             // Index < -1 -> means -2 nothing found
         }
     }
-    delete &tmpMetaDevive;
     return addr;
 }
 
@@ -156,43 +155,7 @@ void MemorySPI::writeByte(uint8_t data) {
 }
 
 uint32_t MemorySPI::writePage(uint8_t *data) {
-    SPI_MemoryCommand_t command = c_WRITEPAGE;
-    uint8_t tmp_add;
-    uint32_t i = 0;
-    //Write enable
-    writeByte((uint8_t) c_WREN);
-
-    MSS_GPIO_set_output(CSPin, 0);
-    //commando schicken
-    MSS_SPI_transfer_frame(spihandle, (uint8_t) command);
-    //delay(1); /* !!! Do not use this in productiv application, build a function which is able to wait just a few us*/
-
-    /* end of waiting */
-    //Addressse schicken MSB to LSB
-    //address = 0x11223344;
-    //MSS_SPI_transfer_block(&g_mss_spi0, &address, 4, recBuffer, 0); /* Reihnfolge der bytes ist nicht richtig */
-    tmp_add = (uint8_t) ((PAGEADDR(address) >> 24) & 0x000000FF);
-    MSS_SPI_transfer_frame(spihandle, tmp_add);
-
-    tmp_add = (uint8_t) ((PAGEADDR(address) >> 16) & 0x000000FF);
-    MSS_SPI_transfer_frame(spihandle, tmp_add);
-
-    tmp_add = (uint8_t) ((PAGEADDR(address) >> 8) & 0x000000FF);
-    MSS_SPI_transfer_frame(spihandle, tmp_add);
-
-    tmp_add = (uint8_t) (PAGEADDR(address) & 0x000000FF);
-    MSS_SPI_transfer_frame(spihandle, tmp_add);
-    //Daten schicken
-    for (i = 0; i < PAGESIZE; i++) {
-        MSS_SPI_transfer_frame(spihandle, data[i]);
-
-    }
-
-    MSS_GPIO_set_output(CSPin, 1);
-
-    //Write disable
-    writeByte((uint8_t) c_WRDI);
-    return i;
+  return 0;
 }
 
 void MemorySPI::readPage(uint8_t *data, uint32_t addr) {
@@ -230,10 +193,7 @@ void MemorySPI::readPage(uint8_t *data, uint32_t addr) {
 }
 
 void MemorySPI::chipErase(void) {
-    writeByte((uint8_t) c_WREN);
-    writeByte((uint8_t) c_CE);
-    writeByte((uint8_t) c_WRDI);
-    writeReady(false);
+
 }
 
 bool MemorySPI::writeReady(bool blocking) {

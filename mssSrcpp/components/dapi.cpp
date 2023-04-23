@@ -14,24 +14,28 @@ Dapi& Dapi::getInstance() {
 }
 
 void Dapi::readAndTransmitMemory(uint32_t highAddress) {
-    uint8_t frame[PAGESIZE + 7] = { 0 };
+    uint8_t frame[PAGESIZE + 9] = { 0 };
     uint32_t numberOfPages = (highAddress - 0x200) << 1;
     uint32_t pageCounter = 0;
-    frame[0] = (numberOfPages >> 16) & 0xFF;
-    frame[1] = (numberOfPages >> 8) & 0xFF;
+    frame[0] = 0x05;
+    frame[1] = (numberOfPages >> 16) & 0xFF;
+    frame[2] = (numberOfPages >> 8) & 0xFF;
     frame[3] = (numberOfPages & 0xFF);
-    frame[PAGESIZE + 5] = 0x17;
-    frame[PAGESIZE + 6] = 0xF0;
+    frame[PAGESIZE + 5] = 0x0f;
+    frame[PAGESIZE + 6] = 0x17;
+    frame[PAGESIZE + 7] = 0xF0;
     MemorySPI readOutDevice = MemorySPI(GPIO_PORT(FLASH_CS1), &g_mss_spi0, 0x200);
     for (uint32_t address = 0x200; address <= highAddress; address++) {
-        readOutDevice.readPage(&frame[4], address);
-        transmitRaw(frame, PAGESIZE + 7);
+        readOutDevice.readPage(&frame[4], PAGEADDR(address));
+        MSS_UART_polled_tx(&g_mss_uart0, frame, PAGESIZE + 9);
         readOutDevice.setCSPin(GPIO_PORT(FLASH_CS2));
-        readOutDevice.readPage(&frame[4], address);
-        transmitRaw(frame, PAGESIZE + 7);
+        readOutDevice.readPage(&frame[4], PAGEADDR(address));
+        //while (MSS_UART_get_tx_status(&g_mss_uart0) == MSS_UART_TX_BUSY);
+        MSS_UART_polled_tx(&g_mss_uart0, frame, PAGESIZE + 9);
         readOutDevice.setCSPin(GPIO_PORT(FLASH_CS1));
+        pageCounter = address;
     }
-    delete &readOutDevice;
+    pageCounter = 0;
 }
 
 void Dapi::worker() {
@@ -39,18 +43,7 @@ void Dapi::worker() {
     if (MSS_UART_tx_complete(&g_mss_uart0)) {
 
         // delete previous item
-        if (transferInProgress) {
-            queueSize -= msgQueue.front().size;
-            msgQueue.pop();
-            transferInProgress = false;
-        }
 
-        // transmit the next item
-        if (!msgQueue.empty()) {
-            Message &msg = msgQueue.front();
-            MSS_UART_irq_tx(&g_mss_uart0, msg.ptr, msg.size);
-            transferInProgress = true;
-        }
     }
 
     // handle incoming transmission
@@ -120,26 +113,15 @@ void Dapi::worker() {
 }
 
 Dapi& Dapi::transmitRaw(const uint8_t *const ptr, const uint32_t size) {
-    if ((queueSize + size) <= DAPI_MAX_BUFFER_SIZE) {
-        msgQueue.push(Message(ptr, size));
-        queueSize += size;
-    }
+
     return *this;
 }
 
 Dapi& Dapi::operator<<(const std::string msg) {
-    return this->transmitRaw((const uint8_t*) msg.c_str(), msg.size());
+    return *this;
 }
 
 Dapi& Dapi::operator<<(const char *const msg) {
-    // get message length
-    uint32_t strLen = std::strlen(msg);
-
-    // append to transmission queue
-    if ((queueSize + strLen) <= DAPI_MAX_BUFFER_SIZE) {
-        msgQueue.push(Message((uint8_t*) msg, strLen));
-        queueSize += strLen;
-    }
 
     return *this;
 }
