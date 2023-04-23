@@ -23,6 +23,7 @@ int main () {
     // initiate the base components
     Controller &controller = Controller::getInstance();
     Dapi &dapi = Dapi::getInstance();
+    Memory &memory = Memory::getInstance();
 
     // send error message if this is a restart after a triggered watchdog
     if (MSS_WD_timeout_occured()) {
@@ -33,7 +34,9 @@ int main () {
     for (;;) {
         MSS_WD_reload();
         controller.worker();
+        memory.worker();
         dapi.worker();
+
     }
     return 0;
 }

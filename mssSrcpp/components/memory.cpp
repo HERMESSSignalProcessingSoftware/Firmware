@@ -5,13 +5,49 @@
 #include "../sb_hw_platform.h"
 #include <cstring>
 #include "../tools/msghandler.h"
+#include "dapi.h"
 
 Memory& Memory::getInstance() {
     static Memory instance;
     return instance;
 }
 
+bool Memory::dumpInProgress(void) {
+    return dumpInProgressVar;
+}
+
+void Memory::dumpMemory(uint32_t startAddr, uint32_t endAddr) {
+    uint32_t data[128] = { 0 };
+    if (dumpInProgressVar == false) {
+        dumpInProgressVar = true;
+        interfaceOne.setAddress(startAddr);
+        interfaceOne.setCSPin(GPIO_PORT(FLASH_CS1));
+        interfaceOne.setSPIHandle(&g_mss_spi0);
+        this->endAddr = endAddr;
+    } else {
+        if (interfaceOne.getCSPin() == GPIO_PORT(FLASH_CS1)) {
+            interfaceOne.readPage((uint8_t*) data,
+                    PAGEADDR(interfaceOne.getAddress()));
+            Dapi::getInstance().transmitRaw((uint8_t*) data, 512);
+            interfaceOne.setCSPin(GPIO_PORT(FLASH_CS2));
+        } else {
+            interfaceOne.readPage((uint8_t*) data,
+                    PAGEADDR(interfaceOne.getAddress()));
+            Dapi::getInstance().transmitRaw((uint8_t*) data, 512);
+            interfaceOne.setCSPin(GPIO_PORT(FLASH_CS1));
+            interfaceOne.increaseAddress();
+        }
+        if(interfaceOne.getAddress() >= this->endAddr) {
+            dumpInProgressVar = false;
+        }
+    }
+}
+
 void Memory::worker() {
+    if (dumpInProgress) {
+        /*dump values, will not be used. Real address will be set during call from dapi*/
+        dumpMemory(0x0, 0xFFFFFFFF);
+    }
 }
 
 uint32_t Memory::metaDataHighestAddress(void) {
@@ -80,7 +116,8 @@ void Memory::saveDp(const Datapackage &dp) {
 
 Memory::Memory() :
         PageSize(PAGESIZE), PageCount(PAGE_COUNT), PageAddressShift(1 << 9), DatasetsPerPage(
-                9), savedDataPoints(0) {
+                9), savedDataPoints(0), dumpInProgressVar(false), endAddr(
+                0xFFFFFFFF) {
     interfaceOne = MemorySPI(GPIO_PORT(FLASH_CS1), &g_mss_spi0, 0x200);
     interfaceTwo = MemorySPI(GPIO_PORT(FLASH_CS2), &g_mss_spi0, 0x200);
     metaInterface = MemorySPI(GPIO_PORT(FLASH_CS1), &g_mss_spi0, 0x00);
@@ -155,7 +192,7 @@ void MemorySPI::writeByte(uint8_t data) {
 }
 
 uint32_t MemorySPI::writePage(uint8_t *data) {
-  return 0;
+    return 0;
 }
 
 void MemorySPI::readPage(uint8_t *data, uint32_t addr) {

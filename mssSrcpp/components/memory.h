@@ -222,6 +222,21 @@ public:
      * @return 32 bit value of the status registers
      */
     uint32_t memoryStatus(void);
+
+    /** Dump memory function
+     *
+     *
+     *
+     * @param startAddr 32bit unsigned value
+     * @param endAddr   32bit unsigned value
+     */
+    void dumpMemory(uint32_t startAddr, uint32_t endAddr);
+
+    /** Dump in progress function
+     *
+     * @return bool True: if dump is in progress.
+     */
+    bool dumpInProgress(void);
 private:
     const uint32_t PageSize; /*!< The size of one page, usually 512 bytes*/
     const uint32_t PageCount; /*!< Total number of pages on one flash device*/
@@ -233,6 +248,8 @@ private:
     ActiveInterface_t activeInterface; /*!< Indicating the active device to the worker function. Starting with interfaceOne, continuing with interfaceTwo*/
     uint8_t memory[PAGESIZE]; /*!< Buffer to store the data packages until the page is full*/
     uint32_t savedDataPoints; /*!< Counter for all datapoints*/
+    bool dumpInProgressVar; /*!< True, if memory dump is requested*/
+    uint32_t endAddr; /*!< Stores the end address of the memory dump*/
     Memory();
 };
 
