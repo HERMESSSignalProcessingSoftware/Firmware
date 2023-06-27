@@ -39,6 +39,9 @@ void Memory::convertAndTransmit(uint8_t data[512], uint32_t currentPage,
             memcpy(framePtr, &data[i * 56], 56U);
             Dapi::getInstance().transmitRawPufferd(frame, 67);
         }
+        frame[7] = 0xff;
+        memcpy(framePtr, &data[504], 8U);
+        Dapi::getInstance().transmitRawPufferd(frame, 67);
     }
 }
 
