@@ -13,27 +13,6 @@ Dapi& Dapi::getInstance() {
     return instance;
 }
 
-void Dapi::readAndTransmitMemory(uint32_t highAddress) {
-    uint8_t frame[PAGESIZE + 7] = { 0 };
-    uint32_t numberOfPages = (highAddress - 0x200) << 1;
-    uint32_t pageCounter = 0;
-    frame[0] = (numberOfPages >> 16) & 0xFF;
-    frame[1] = (numberOfPages >> 8) & 0xFF;
-    frame[3] = (numberOfPages & 0xFF);
-    frame[PAGESIZE + 5] = 0x17;
-    frame[PAGESIZE + 6] = 0xF0;
-    MemorySPI readOutDevice = MemorySPI(GPIO_PORT(FLASH_CS1), &g_mss_spi0, 0x200);
-    for (uint32_t address = 0x200; address <= highAddress; address++) {
-        readOutDevice.readPage(&frame[4], address);
-        transmitRaw(frame, PAGESIZE + 7);
-        readOutDevice.setCSPin(GPIO_PORT(FLASH_CS2));
-        readOutDevice.readPage(&frame[4], address);
-        transmitRaw(frame, PAGESIZE + 7);
-        readOutDevice.setCSPin(GPIO_PORT(FLASH_CS1));
-    }
-    delete &readOutDevice;
-}
-
 void Dapi::worker() {
     // check if no outgoing transmission is in progress
     if (MSS_UART_tx_complete(&g_mss_uart0)) {
@@ -42,7 +21,13 @@ void Dapi::worker() {
         if (transferInProgress) {
             queueSize -= msgQueue.front().size;
             msgQueue.pop();
+
             transferInProgress = false;
+        }
+
+        if (!transmitPufferEmpty()) {
+            MSS_UART_irq_tx(&g_mss_uart0, this->puffer, this->pufferSize);
+            this->pufferSize = 0;
         }
 
         // transmit the next item
@@ -79,16 +64,16 @@ void Dapi::worker() {
                 /*Use the Memory instance*/
                 if (Memory::getInstance().dumpInProgress() == false) {
                     uint32_t endAddr = Memory::getInstance().metaDataHighestAddress();
-                    Memory::getInstance().dumpMemory(0x200, endAddr);
+                    Memory::getInstance().dumpMemory(0x200, endAddr, 0x02);
                 }
                 break;
             case 0x03:
                 // Start live data acquisition
-                Controller::getInstance().setLiveDataAcquisition(true);
+                //Controller::getInstance().setLiveDataAcquisition(true);
                 break;
             case 0x04:
                 // Stop live data acquisition
-                Controller::getInstance().setLiveDataAcquisition(false);
+                //Controller::getInstance().setLiveDataAcquisition(false);
                 break;
             case 0x05:
                 // Read SPU configuration data
@@ -111,7 +96,7 @@ void Dapi::worker() {
                 break;
             case 0x07:
                 if (Memory::getInstance().dumpInProgress() == false)
-                    Memory::getInstance().dumpMemory(0x0, PAGEADDR(PAGE_COUNT));
+                    Memory::getInstance().dumpMemory(0x0, PAGE_COUNT, 0x07);
                 break;
             default:
                 MsgHandler::getInstance().warning("Unknown command byte");
@@ -127,12 +112,28 @@ void Dapi::worker() {
     }
 }
 
+bool Dapi::transmitPufferEmpty(void) {
+    return this->pufferSize == 0;
+}
+
+Dapi & Dapi::transmitRawPufferd (const uint8_t * const ptr, uint32_t size) {
+    if ((pufferSize + size) < DAPI_MAX_BUFFER_SIZE) {
+        memcpy(this->puffer + pufferSize, ptr, size);
+        pufferSize += size;
+    }
+    return *this;
+}
+
 Dapi& Dapi::transmitRaw(const uint8_t *const ptr, const uint32_t size) {
     if ((queueSize + size) <= DAPI_MAX_BUFFER_SIZE) {
         msgQueue.push(Message(ptr, size));
         queueSize += size;
     }
     return *this;
+}
+
+bool Dapi::queueIsEmpty(void) {
+    return msgQueue.empty();
 }
 
 Dapi& Dapi::operator<<(const std::string msg) {
