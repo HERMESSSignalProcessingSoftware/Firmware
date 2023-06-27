@@ -10,7 +10,7 @@
 // The maximum number of content bytes stored in the message buffer. Potentially
 // exceeding this value on data storage will abort the addition of this data
 // frame.
-#define DAPI_MAX_BUFFER_SIZE 1000
+#define DAPI_MAX_BUFFER_SIZE 1024
 
 
 class Dapi {
@@ -40,6 +40,20 @@ public:
      * @return A Dapi instance for further use
      */
     Dapi &transmitRaw (const uint8_t * const ptr, const uint32_t size);
+
+    /**
+     *
+     * @param ptr
+     * @param size
+     * @return
+     */
+    Dapi &transmitRawPufferd (const uint8_t * const ptr, uint32_t size);
+
+    /**
+     *
+     * @return
+     */
+    bool transmitPufferEmpty(void);
 
     /** String transfer operator
      *
@@ -75,6 +89,11 @@ public:
      */
     Dapi &sendLiveData (const Datapackage &dp);
 
+    /**
+     *
+     * @return boolean true: is empty
+     */
+    bool queueIsEmpty(void);
 private:
     /**
      * UART RX receiver function
@@ -106,6 +125,9 @@ private:
 
     Queue<Message> msgQueue; /**< A list of C style strings to be
     transmitted */
+
+    uint8_t puffer[DAPI_MAX_BUFFER_SIZE]; /**< */
+    uint32_t pufferSize = 0; /**< */
 
     uint32_t queueSize = 0; /**< Number of content bytes in the msgQueue */
 

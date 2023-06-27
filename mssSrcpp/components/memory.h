@@ -229,8 +229,9 @@ public:
      *
      * @param startAddr 32bit unsigned value
      * @param endAddr   32bit unsigned value
+     * @param cmd
      */
-    void dumpMemory(uint32_t startAddr, uint32_t endAddr);
+    void dumpMemory(uint32_t startAddr, uint32_t endAddr, uint8_t cmd);
 
     /** Dump in progress function
      *
@@ -250,7 +251,20 @@ private:
     uint32_t savedDataPoints; /*!< Counter for all datapoints*/
     bool dumpInProgressVar; /*!< True, if memory dump is requested*/
     uint32_t endAddr; /*!< Stores the end address of the memory dump*/
+    uint8_t cmd;
     Memory();
+
+    /**
+     *
+     * @param data
+     * @param currentPage
+     * @param totalNumberOfPages
+     */
+    void convertAndTransmit(uint8_t data[512], uint32_t currentPage, uint32_t totalNumberOfPages);
+    /**
+     *
+     */
+    void resetLocalInRAMMemory(void);
 };
 
 #endif /* COMPONENTS_MEMORY_H_ */
