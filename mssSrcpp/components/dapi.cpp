@@ -63,7 +63,8 @@ void Dapi::worker() {
             case 0x02:
                 /*Use the Memory instance*/
                 if (Memory::getInstance().dumpInProgress() == false) {
-                    uint32_t endAddr = Memory::getInstance().metaDataHighestAddress();
+                    uint32_t endAddr =
+                            Memory::getInstance().metaDataHighestAddress();
                     Memory::getInstance().dumpMemory(0x200, endAddr, 0x02);
                 }
                 break;
@@ -116,7 +117,7 @@ bool Dapi::transmitPufferEmpty(void) {
     return this->pufferSize == 0;
 }
 
-Dapi & Dapi::transmitRawPufferd (const uint8_t * const ptr, uint32_t size) {
+Dapi& Dapi::transmitRawPufferd(const uint8_t *const ptr, uint32_t size) {
     if ((pufferSize + size) < DAPI_MAX_BUFFER_SIZE) {
         memcpy(this->puffer + pufferSize, ptr, size);
         pufferSize += size;
