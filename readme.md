@@ -17,3 +17,7 @@ with silver license.
 3. Install SoftConsole 2021.3
 4. Open Libero project. Initial errors may occur due to invalid paths. Those will be gone by the next time you start up the application
 5. In eNVM configuration remove the option to program the `program` and `conf` client.
+
+## Data extraction 
+Do download the Data from the SPU to a local binary file takes some time.
+Download the python script available at [Download here](https://dl.grimsmann.eu/PyStationSimple.py)
